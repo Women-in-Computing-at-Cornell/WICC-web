@@ -7,7 +7,7 @@ class NavBar extends React.Component {
   render() {
     return (
       <Navbar bg="light" expand="lg">
-        <Navbar.Brand className="mr-auto" href="/home">
+        <Navbar.Brand className="mr-auto" href="/">
           <img
             src={Watermark}
             width="30"

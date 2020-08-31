@@ -10,7 +10,7 @@ class Footer extends React.Component {
   render() {
     return (
       <Navbar className="fixed-bottom" bg="light" variant="light">
-        <Navbar.Brand className="mr-auto" href="/home">Women in Computing at Cornell</Navbar.Brand>
+        <Navbar.Brand className="mr-auto" href="/">Women in Computing at Cornell</Navbar.Brand>
         <Nav>
           <Nav.Link href="mailto:wicc@cornell.edu">
           <img className="icon" src={Email} alt="Email"/></Nav.Link>
