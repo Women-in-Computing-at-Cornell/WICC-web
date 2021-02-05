@@ -1,0 +1,32 @@
+.home-container {
+  margin: 5%;
+}
+
+.hero-container, .mission-container, .call-to-action-container {
+  margin: 5% 0;
+}
+
+.hero-container {
+  overflow: hidden;
+}
+
+#home-illustration {
+  width: 40%;
+  float: right;
+}
+
+.call-to-action-container {
+  margin-bottom: 15%;
+  text-align: center;
+}
+
+/* react-bootstrap button style overriding */
+.btn {
+  border-radius: 5em;
+}
+
+.btn-primary {
+  color: black;
+  background-color: #9CE2D3;
+  border-color: #9CE2D3;
+}
