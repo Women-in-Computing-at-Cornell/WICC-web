@@ -11,7 +11,7 @@ const Home = () => {
       <section class="hero-container">
         <Image src={illustration} id="home-illustration" />
         <div style={{ margin: "5% 0" }}>
-          <h1 style={{ marginBottom: "2.5%" }}>Women in Computing at Cornell</h1>
+          <h1 style={{ marginBottom: "2.5%" }} class='headerName'>Women in Computing at Cornell</h1>
           <h2>strives to make computing inclusive for all.</h2>
         </div>
       </section>

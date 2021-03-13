@@ -7,7 +7,7 @@ class Card extends React.Component() {
     return (
       <Card style={{ width: '18rem' }}>
         <Card.Body>
-          <Card.Title>{title}}</Card.Title>
+          <Card.Title>{title}</Card.Title>
           <Card.Text>{text}</Card.Text>
           <Card.Img variant="bottom" src={img} />
         </Card.Body>

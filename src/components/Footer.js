@@ -13,13 +13,13 @@ class Footer extends React.Component {
         <Navbar.Brand className="mr-auto" href="/">Women in Computing at Cornell</Navbar.Brand>
         <Nav>
           <Nav.Link href="mailto:wicc@cornell.edu">
-          <img className="icon" src={Email} alt="Email"/></Nav.Link>
+            <img className="icon" src={Email} alt="Email" /></Nav.Link>
           <Nav.Link href="https://www.facebook.com/CornellWomenInComputing/">
-          <img className="icon" src={Facebook} alt="Facebook"/></Nav.Link>
+            <img className="icon" src={Facebook} alt="Facebook" /></Nav.Link>
           <Nav.Link href="https://www.instagram.com/rewritingthecode/">
-          <img className="icon" src={Instagram} alt="Instagram"/></Nav.Link>
+            <img className="icon" src={Instagram} alt="Instagram" /></Nav.Link>
           <Nav.Link href="https://www.linkedin.com/groups/8480565">
-          <img className="icon" src={LinkedIn} alt="LinkedIn"/></Nav.Link>
+            <img className="icon" src={LinkedIn} alt="LinkedIn" /></Nav.Link>
         </Nav>
       </Navbar>
     );

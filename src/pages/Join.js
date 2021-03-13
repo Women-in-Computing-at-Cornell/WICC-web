@@ -16,7 +16,7 @@ let styles = {
   col: {
     width: "30%",
     margin: "2.5% 0",
-    backgroundColor: "#D3F8F0",
+    backgroundColor: "#9CE2D3",
     padding: "2.5%",
     paddingBottom: "5%",
     borderRadius: ".5em"
