@@ -2,6 +2,8 @@ import React from 'react';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Watermark from '../images/thick-wicc-logo.png';
+import './nav.css';
+
 
 class NavBar extends React.Component {
   render() {
@@ -16,7 +18,7 @@ class NavBar extends React.Component {
           />
         </Navbar.Brand>
         <Nav>
-          <Nav.Link href="/about">About</Nav.Link>
+          <Nav.Link href="/about" class="navLink">About</Nav.Link>
           <Nav.Link href="/board">Who We Are</Nav.Link>
           <Nav.Link href="/programs">Programs</Nav.Link>
           <Nav.Link href="/resources">Resources</Nav.Link>

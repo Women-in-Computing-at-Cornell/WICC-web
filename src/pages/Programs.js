@@ -22,6 +22,9 @@ let styles = {
     padding: "2.5%",
     paddingBottom: "5%",
     borderRadius: ".5em",
+  },
+  link: {
+    textDecoration: 'underline'
   }
 };
 
@@ -30,39 +33,39 @@ const Programs = () => {
 
     <div style={styles.container}>
 
-      <h1>Get Involved</h1>
+      <h1>Programs</h1>
       <div style={styles.row}>
         <div style={styles.col}>
-          <Link to="/membership"><h2>Active Membership</h2>
+          <Link to="/membership" style={styles.link} ><h2>Active Membership</h2>
           </Link>
         </div>
         <div style={styles.col}>
-          <Link to="/discussions"><h2>Community Discussion</h2>
+          <Link to="/discussions" style={styles.link}><h2>Community Discussion</h2>
           </Link>
         </div>
         <div style={styles.col}>
-          <Link to="/lunch"><h2>Lunch Bunch</h2>
+          <Link to="/lunch" style={styles.link}><h2>Lunch Bunch</h2>
           </Link>
         </div>
         <div style={styles.col}>
-          <Link to="/mentorship"><h2>Mentorship</h2>
+          <Link to="/mentorship" style={styles.link}><h2>Mentorship</h2>
           </Link>
         </div>
       </div>
       <div style={styles.row}>
         <div style={styles.col}>
-          <Link to="/prospective"><h2>Prospective Students</h2>
+          <Link to="/prospective" style={styles.link}><h2>Prospective Students</h2>
           </Link>
         </div>
         <div style={styles.col}>
-          <Link to="/outreach"><h2> Outreach</h2>
+          <Link to="/outreach" style={styles.link}><h2> Outreach</h2>
           </Link>
         </div>
         <div style={styles.col}>
-          <Link to="/campaigns"><h2>Campaigns</h2>
+          <Link to="/campaigns" style={styles.link}><h2>Campaigns</h2>
           </Link>
         </div><div style={styles.col}>
-          <Link to="/events"><h2>Events</h2>
+          <Link to="/events" style={styles.link}><h2>Events</h2>
           </Link>
         </div>
 

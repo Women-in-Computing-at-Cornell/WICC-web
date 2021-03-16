@@ -1,0 +1,45 @@
+.boardImg{
+  width: 70%;
+  height:70%;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-left: 18%
+}
+
+a {
+  color: black;
+  text-decoration: none
+}
+a:hover {
+  transition: .5s ease;
+  color:#9CE2D3;
+  text-decoration: none
+}
+
+
+.overlay {
+  position: absolute;
+  /* top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%; */
+  opacity: 0;
+  transition: .5s ease;
+  background-color: white;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.emailImg:hover{
+  opacity: 0;
+}
+
+
+.custom-modal-style {
+  max-width: none;
+  width: 90%
+}

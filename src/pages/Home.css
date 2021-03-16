@@ -1,9 +1,9 @@
 .home-container {
-  margin: 5%;
+  margin: 3%;
 }
 
 .hero-container, .mission-container, .call-to-action-container {
-  margin: 5% 0;
+  margin: 3% 0;
 }
 
 .hero-container {
@@ -11,12 +11,12 @@
 }
 
 #home-illustration {
-  width: 40%;
+  width: 35%;
   float: right;
 }
 
 .call-to-action-container {
-  margin-bottom: 15%;
+  /* margin-bottom: %; */
   text-align: center;
 }
 
