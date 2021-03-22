@@ -1,4 +1,4 @@
-.home-container {
+/* .home-container {
   margin: 5%;
 }
 
@@ -18,10 +18,10 @@
 .call-to-action-container {
   margin-bottom: 15%;
   text-align: center;
-}
+} */
 
 /* react-bootstrap button style overriding */
-.btn {
+/* .btn {
   border-radius: 5em;
 }
 
@@ -33,4 +33,27 @@
 
 .headerName {
   font-size: 50px;
+} */
+
+
+.column {
+  float: left;
+  padding: 30px;
+}
+
+.left {
+  padding-left: 100px;
+  width: 40%;
+}
+
+.right {
+  width: 60%;
+  text-align: center;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }

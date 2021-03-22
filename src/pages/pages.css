@@ -3,6 +3,29 @@ color: black
 }
 
 .container{
-  margin: 5%;
+  /* margin: 5%; */
   margin-top: 25px;
+}
+
+.rowC{
+  display:flex; 
+  flex-direction:row;
+  columns: 2 auto;
+
+}
+
+.fakeCard {
+  margin-bottom: 200px;
+}
+
+/* .col {
+  float: left
+} */
+
+
+.sponsorStyle {
+  margin-top: 0px;
+  margin-bottom: 60px;
+  
+
 }

@@ -27,7 +27,7 @@ class Footer extends React.Component {
             <img className="icon" src={Email} alt="Email" /></Nav.Link>
           <Nav.Link href="https://www.facebook.com/CornellWomenInComputing/">
             <img className="icon" src={Facebook} alt="Facebook" /></Nav.Link>
-          <Nav.Link href="https://www.instagram.com/rewritingthecode/">
+          <Nav.Link href="https://www.instagram.com/wiccornell/">
             <img className="icon" src={Instagram} alt="Instagram" /></Nav.Link>
           <Nav.Link href="https://www.linkedin.com/groups/8480565">
             <img className="icon" src={LinkedIn} alt="LinkedIn" /></Nav.Link>
