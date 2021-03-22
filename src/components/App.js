@@ -23,6 +23,7 @@ import Join from '../pages/Join';
 import Footer from './Footer';
 
 function App() {
+
   return (
     <BrowserRouter>
       <div style={{ fontFamily: 'Inter' }}>

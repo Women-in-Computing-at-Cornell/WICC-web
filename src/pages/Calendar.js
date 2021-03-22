@@ -6,13 +6,6 @@ import Col from 'react-bootstrap/Col';
 import CreateCalendar from "@ericz1803/react-google-calendar";
 
 
-import { getEvents } from './gcal'
-
-
-
-
-
-
 import './Join.css';
 
 
@@ -57,7 +50,7 @@ export default class Calendar extends Component {
       }
 
     };
-    const API_KEY = "AIzaSyA1NZCV0X4h5BU8zd4fGZtw62n6Ar-wgXE";
+    const API_KEY = process.env.REACT_APP_GOOGLE_API_KEY
     let calendars = [
       {
         calendarId: "cornell.edu_98tsboucmi53v2rlt7kdj43vkc@group.calendar.google.com",

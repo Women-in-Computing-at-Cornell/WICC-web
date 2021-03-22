@@ -6,8 +6,6 @@ import Col from 'react-bootstrap/Col';
 import Calendar from "@ericz1803/react-google-calendar";
 
 
-import { getEvents } from './gcal'
-
 
 
 
