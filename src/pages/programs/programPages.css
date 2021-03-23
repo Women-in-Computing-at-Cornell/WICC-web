@@ -20,7 +20,11 @@ li {
   padding-bottom: 6px;
 }
 
+.boardText {
+  font-size: 80%;
+}
 
-
-/* Vector 1 */
-
+.vertLine {
+  border-left: 6px solid  #9CE2D3;
+  padding-right: 1%
+}

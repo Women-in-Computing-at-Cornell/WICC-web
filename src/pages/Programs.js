@@ -8,10 +8,10 @@ import './pages.css';
 
 let styles = {
   container: {
-    margin: "5%",
+    margin: "4%",
   },
   row: {
-    margin: "0",
+    margin: "",
     display: "flex",
     justifyContent: "space-evenly"
   },
@@ -20,7 +20,8 @@ let styles = {
     margin: "2.3% 0",
     backgroundColor: "#9CE2D3",
     padding: "2.5%",
-    paddingBottom: "5%",
+    paddingBottom: "4%",
+    marginRight: "5%",
     borderRadius: ".5em",
   },
   link: {
@@ -34,7 +35,7 @@ const Programs = () => {
     <div style={styles.container}>
 
       <h1>Programs</h1>
-      <div style={styles.row}>
+      {/* <div style={styles.row}>
         <div style={styles.col}>
           <Link to="/membership" style={styles.link} ><h2>Active Membership</h2>
           </Link>
@@ -70,7 +71,53 @@ const Programs = () => {
         </div>
 
       </div>
+ */}
+      <Container>
+        <Row style={{ paddingBottom: "2%" }}>
 
+
+          <Col style={styles.col}>
+            <Link to="/membership" style={styles.link} ><h3 className="text-center">Active Membership</h3>
+            </Link>
+
+          </Col>
+          <Col style={styles.col}>
+            <Link to="/discussions" style={styles.link}><h3 className="text-center">Community Discussion</h3>
+            </Link>
+          </Col>
+          <Col style={styles.col}>
+            <Link to="/lunch" style={styles.link}><h3 className="text-center">Lunch Bunch</h3>
+            </Link>
+
+          </Col>
+          <Col style={styles.col}>
+            <Link to="/mentorship" style={styles.link}><h3 className="text-center">Mentorship</h3>
+            </Link>
+          </Col>
+
+        </Row>
+        <Row style={{ paddingBottom: "1%" }}>
+          <Col style={styles.col}>
+            <Link to="/prospective" style={styles.link}><h3 className="text-center">Prospective Students</h3>
+            </Link>
+
+          </Col>
+          <Col style={styles.col}>
+            <Link to="/outreach" style={styles.link}><h3 className="text-center"> Outreach</h3>
+            </Link>
+          </Col>
+          <Col style={styles.col}>
+            <Link to="/campaigns" style={styles.link}><h3 className="text-center">Campaigns</h3>
+            </Link>
+
+          </Col>
+          <Col style={styles.col}>
+            <Link to="/events" style={styles.link}><h3 className="text-center">Events</h3>
+            </Link>
+
+          </Col>
+        </Row>
+      </Container>
 
     </div>
 

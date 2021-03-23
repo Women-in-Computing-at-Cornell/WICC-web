@@ -5,7 +5,6 @@ import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom';
 import { boardData } from '../boardData';
-import BoardCard from "../../components/BoardCard.js";
 
 
 
@@ -20,8 +19,8 @@ import './programPages.css';
 
 export default class Membership extends Component {
   render() {
-    console.log(boardData)
     let sec = boardData.find(record => record.title === "Secretary")
+
 
     function importAll(r) {
       let images = {};
@@ -149,11 +148,15 @@ export default class Membership extends Component {
         <p class='sub'>We will keep you updated with all the required information and progress! Meanwhile, enjoy your experience with WICC and we look forward to interacting with you!</p>
 
         <center>
-          <p style={{ paddingTop: '10%' }}>Questions?</p>
-          <BoardCard title={sec.name} text={sec.title}
-            img={(boardHeadshots[sec.netId + '.jpg'])} netId={sec.netId}
-            class="col" />
-
+          <h5 style={{ paddingTop: '10%' }}>Questions?</h5>
+          <Image src={(boardHeadshots[sec.netId + '.jpg'])} roundedCircle style={{ width: "25%", height: 'auto' }}></Image>
+          <br /><br />
+          <div class='boardText'>
+            <p >{sec.name}, {sec.title}</p>
+            <a href={"mailto:" + sec.netId + "@cornell.edu"} class="emailLink">
+              {sec.netId}@cornell.edu
+                  </a>
+          </div>
         </center>
       </div>
     );
