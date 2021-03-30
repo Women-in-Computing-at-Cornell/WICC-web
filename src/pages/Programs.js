@@ -119,7 +119,7 @@ const Programs = () => {
         </Row>
       </Container>
 
-    </div>
+    </div >
 
   );
 }

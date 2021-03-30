@@ -5,6 +5,10 @@ import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom';
 import { boardData } from '../boardData';
+import discussion from "../../images/programs-pictures/discussions.jpg";
+import ReactGoogleSlides from "react-google-slides";
+
+
 
 
 
@@ -36,20 +40,28 @@ export default class Discussions extends Component {
         <h1>Community Discussions</h1>
 
         <Container>
-          <Row style={{ paddingBottom: "1%" }}>
-            <Col xs lg="6" style={{ paddingRight: "5%", paddingLeft: "0%" }}>
+          <Row style={{ paddingBottom: "5%" }}>
+            <Col xs lg="6" style={{ paddingRight: "10%", paddingLeft: "0%" }}>
               <p style={{ paddingRight: '5%', paddingTop: '2%' }}>WICC is dedicated towards fostering an inclusive space for individuals of all identities to feel empowered to speak on issues in the CIS community, both on- and off-campus. We hold monthly discussions encompassing topics such as diversity in tech, the definition of success, and more. It is our goal to have a greater number of voices heard and to have a greater breadth of women and allies voicing their opinions at the table.</p>
 
 
             </Col>
             <Col >
-              <h3>Requirements</h3>
-              <p style={{ paddingRight: '5%', paddingTop: '2%' }}>WICC is dedicated towards fostering an inclusive space for individuals of all identities to feel empowered to speak on issues in the CIS community, both on- and off-campus. We hold monthly discussions encompassing topics such as diversity in tech, the definition of success, and more. It is our goal to have a greater number of voices heard and to have a greater breadth of women and allies voicing their opinions at the table.</p>
+              <Image src={discussion} style={{ width: "80%", height: 'auto' }}></Image>
 
             </Col>
           </Row>
         </Container>
         <h4>Last Community Discussion: </h4>
+        <br />
+        <h5>March 2021</h5>
+        <ReactGoogleSlides
+          width={640}
+          height={480}
+          slidesLink="https://docs.google.com/presentation/d/1Ir1ZjeHnfYbw8pXkKqRfAbz9wNrHA8E6QqTnWgDt6DY/edit?usp=sharing"
+          showControls
+        />
+
         <center>
           <h5 style={{ paddingTop: '10%' }}>Questions?</h5>
           <Container>

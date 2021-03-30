@@ -149,7 +149,7 @@ export default class Membership extends Component {
 
         <center>
           <h5 style={{ paddingTop: '10%' }}>Questions?</h5>
-          <Image src={(boardHeadshots[sec.netId + '.jpg'])} roundedCircle style={{ width: "25%", height: 'auto' }}></Image>
+          <Image src={(boardHeadshots[sec.netId + '.jpg'])} roundedCircle style={{ width: "15%", height: 'auto' }}></Image>
           <br /><br />
           <div class='boardText'>
             <p >{sec.name}, {sec.title}</p>

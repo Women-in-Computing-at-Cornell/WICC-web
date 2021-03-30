@@ -75,7 +75,11 @@ export default class Calendar extends Component {
 
     return (
 
+
       <div style={styles.container}>
+
+
+
         <h1>WICC Events</h1>
         <div style={{
           width: "90%",

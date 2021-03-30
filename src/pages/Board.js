@@ -6,6 +6,8 @@ import Navbar from 'react-bootstrap/Navbar';
 import { Nav, NavItem, NavDropdown } from 'react-bootstrap';
 import { boardData } from './boardData';
 import Sponsors from './Sponsors';
+import Faculty from './Faculty';
+
 
 
 
@@ -133,7 +135,7 @@ export default class Board extends Component {
                 <NavDropdown.Item href="#outreach" eventKey="outreach">Outreach</NavDropdown.Item>
                 <NavDropdown.Item href="#advisors" eventKey="advisors">Advisors</NavDropdown.Item>
               </NavDropdown>
-              <Nav.Link href="#link" >Faculty Board</Nav.Link>
+              <Nav.Link href="#faculty" eventKey="faculty">Faculty Board</Nav.Link>
               <Nav.Link href="#sponsors" eventKey="sponsors">Sponsors</Nav.Link>
               <Nav.Link href="#link2">Alumni</Nav.Link>
 
@@ -264,6 +266,12 @@ export default class Board extends Component {
           </div>
 
         </center>
+        <div id="faculty" style={{ width: '100%' }}>
+          {this.state.value === "faculty" &&
+            <Faculty />
+          }
+        </div>
+
 
 
 

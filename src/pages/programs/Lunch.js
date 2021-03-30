@@ -5,6 +5,8 @@ import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom';
 import { boardData } from '../boardData';
+import lunchbunchgroup from "../../images/programs-pictures/lunchbunchgroup.jpg";
+
 
 
 
@@ -52,9 +54,9 @@ export default class Lunch extends Component {
 
             </Col>
             <Col >
-              <h3>Requirements</h3>
-              <p style={{ paddingRight: '5%', paddingTop: '2%' }}>WICC is dedicated towards fostering an inclusive space for individuals of all identities to feel empowered to speak on issues in the CIS community, both on- and off-campus. We hold monthly discussions encompassing topics such as diversity in tech, the definition of success, and more. It is our goal to have a greater number of voices heard and to have a greater breadth of women and allies voicing their opinions at the table.</p>
               <center>
+                <Image src={lunchbunchgroup} style={{ width: "80%", height: 'auto', paddingBottom: "7%" }}></Image>
+
                 <h5>Applications are closed for this semester.</h5>
                 {/* <h5>Applications now open!</h5>
                 <p class='sub'>Due Wednesday, Feb. 27th 11:59PM</p>

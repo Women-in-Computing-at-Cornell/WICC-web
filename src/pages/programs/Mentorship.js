@@ -5,6 +5,12 @@ import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom';
 import { boardData } from '../boardData';
+import mentorship1 from "../../images/programs-pictures/mentorship1.jpg";
+import mentorship from "../../images/programs-pictures/mentorship.jpg";
+import mentorship2 from "../../images/programs-pictures/mentorship2.jpg";
+import mentorship3 from "../../images/programs-pictures/mentorship3.jpg";
+
+
 
 
 
@@ -43,8 +49,7 @@ export default class Mentorship extends Component {
 
             </Col>
             <Col >
-              <h3>Requirements</h3>
-              <p style={{ paddingRight: '5%', paddingTop: '2%' }}>WICC is dedicated towards fostering an inclusive space for individuals of all identities to feel empowered to speak on issues in the CIS community, both on- and off-campus. We hold monthly discussions encompassing topics such as diversity in tech, the definition of success, and more. It is our goal to have a greater number of voices heard and to have a greater breadth of women and allies voicing their opinions at the table.</p>
+              <Image src={mentorship1} style={{ width: "90%", height: 'auto', paddingBottom: "7%" }}></Image>
 
             </Col>
           </Row>
@@ -111,6 +116,22 @@ export default class Mentorship extends Component {
             </Col>
           </Row>
         </Container>
+        <Container>
+
+          <Row style={{ paddingBottom: "1%" }}>
+
+            <Col style={{ paddingRight: "5%", paddingLeft: "5%", }}>
+              <Image src={mentorship2} style={{ width: "80%", height: 'auto', paddingBottom: "7%" }}></Image>
+
+            </Col>
+            <Col style={{ paddingRight: "2%", paddingLeft: "0%", }}>
+              <Image src={mentorship3} style={{ width: "80%", height: 'auto', paddingBottom: "7%" }}></Image>
+
+            </Col>
+
+          </Row>
+        </Container>
+
 
 
         <center>
