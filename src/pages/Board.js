@@ -7,6 +7,12 @@ import { Nav, NavItem, NavDropdown } from 'react-bootstrap';
 import { boardData } from './boardData';
 import Sponsors from './Sponsors';
 import Faculty from './Faculty';
+import Alumni from './Alumni';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+
+
 
 
 
@@ -77,6 +83,8 @@ export default class Board extends Component {
     }
 
     const boardHeadshots = importAll(require.context('../images/headshots/board', false, /\.jpg/));
+    const advisorHeadshots = importAll(require.context('../images/headshots/board/advisors', false, /\.jpg/));
+
 
     const gridCols = [[], []];
     corporate.forEach((data, i) => {
@@ -93,7 +101,9 @@ export default class Board extends Component {
     function createCols(arr) {
       let gridColsTeam;
       if (arr == academic || arr == brand || arr == community || arr == outreach) {
-        gridColsTeam = [[], [<BoardCard class="fakeCard" />, <p style={{ marginBottom: '38%' }}></p>]];
+        gridColsTeam = [[], []];
+        arr = arr.slice(1)
+
       }
       else {
         gridColsTeam = [[], []];
@@ -137,7 +147,7 @@ export default class Board extends Component {
               </NavDropdown>
               <Nav.Link href="#faculty" eventKey="faculty">Faculty Board</Nav.Link>
               <Nav.Link href="#sponsors" eventKey="sponsors">Sponsors</Nav.Link>
-              <Nav.Link href="#link2">Alumni</Nav.Link>
+              <Nav.Link href="#alumni" eventKey="alumni">Alumni</Nav.Link>
 
             </Nav>
           </Navbar.Collapse>
@@ -151,65 +161,69 @@ export default class Board extends Component {
                 bio={member.bio} major={member.major} year={member.year} class="col" />
             })}
         </div>
-        {/* <div id="academic">
-          {this.state.value === "academic" && academic.map((value) => {
-            return <BoardCard title={value.name} text={value.title} img={(boardHeadshots[value.netId + '.jpg'])}
-              netId={value.netId} bio={value.bio} />
-          })}
-        </div> */}
-        <div id="academic" className="container">
-          {this.state.value === "academic" &&
-            <div className="row">
-              <div className="col-sm-6">
-                {/* {gridCols[0]} */}
-                {createCols(academic)[0]}
 
-              </div>
-              <div className="col-md-6">
-                {/* {gridCols[1]} */}
-                {createCols(academic)[1]}
+        <div id="academic" className="container">
+
+          {this.state.value === "academic" &&
+            <div>
+              <BoardCard title={academic[0].name} text={academic[0].title} img={(boardHeadshots[academic[0].netId + '.jpg'])}
+                netId={academic[0].netId} bio={academic[0].bio} />
+
+              <div className="row">
+                <div className="col-sm-6">
+                  {/* {gridCols[0]} */}
+                  {createCols(academic)[0]}
+
+                </div>
+                <div className="col-md-6">
+                  {/* {gridCols[1]} */}
+                  {createCols(academic)[1]}
+                </div>
               </div>
             </div>
+
           }
         </div>
-        {/* <div id="brand">
-          {this.state.value === "brand" && brand.map((value) => {
-            return <BoardCard title={value.name} text={value.title} img={(boardHeadshots[value.netId + '.jpg'])}
-              netId={value.netId} bio={value.bio} />
-          })}
-        </div> */}
+
         <div id="brand" className="container">
           {this.state.value === "brand" &&
-            <div className="row">
-              <div className="col-sm-6">
-                {/* {gridCols[0]} */}
-                {createCols(brand)[0]}
+            <div>
+              <BoardCard title={brand[0].name} text={brand[0].title} img={(boardHeadshots[brand[0].netId + '.jpg'])}
+                netId={brand[0].netId} bio={brand[0].bio} />
+              <div className="row">
 
-              </div>
-              <div className="col-md-6">
-                {/* {gridCols[1]} */}
-                {createCols(brand)[1]}
+                <div className="col-sm-6">
+                  {/* {gridCols[0]} */}
+
+                  {createCols(brand)[0]}
+
+                </div>
+                <div className="col-md-6">
+                  {createCols(brand)[1]}
+                </div>
               </div>
             </div>
+
           }
         </div>
-        {/* <div id="community">
-          {this.state.value === "community" && community.map((value) => {
-            return <BoardCard title={value.name} text={value.title} img={(boardHeadshots[value.netId + '.jpg'])}
-              netId={value.netId} bio={value.bio} />
-          })}
-        </div> */}
+
         <div id="community" className="container">
           {this.state.value === "community" &&
-            <div className="row">
-              <div className="col-sm-6">
-                {/* {gridCols[0]} */}
-                {createCols(community)[0]}
+            <div>
+              <BoardCard title={community[0].name} text={community[0].title} img={(boardHeadshots[community[0].netId + '.jpg'])}
+                netId={community[0].netId} bio={community[0].bio} />
 
-              </div>
-              <div className="col-md-6">
-                {/* {gridCols[1]} */}
-                {createCols(community)[1]}
+              <div className="row">
+                <div className="col-md-6">
+                  {/* {gridCols[0]} */}
+
+                  {createCols(community)[0]}
+
+                </div>
+                <div className="col-md-5">
+                  {/* {gridCols[1]} */}
+                  {createCols(community)[1]}
+                </div>
               </div>
             </div>
           }
@@ -231,31 +245,31 @@ export default class Board extends Component {
           }
         </div>
 
-        {/* <div id="outreach">
-          {this.state.value === "outreach" && outreach.map((value) => {
-            return <BoardCard title={value.name} text={value.title} img={(boardHeadshots[value.netId + '.jpg'])}
-              netId={value.netId} bio={value.bio} />
-          })}
-        </div> */}
         <div id="outreach" className="container">
-          {this.state.value === "outreach" &&
-            <div className="row">
-              <div className="col-sm-6">
-                {/* {gridCols[0]} */}
-                {createCols(outreach)[0]}
 
-              </div>
-              <div className="col-md-6">
-                {/* {gridCols[1]} */}
-                {createCols(outreach)[1]}
+          {this.state.value === "outreach" &&
+            <div>
+              <BoardCard title={outreach[0].name} text={outreach[0].title} img={(boardHeadshots[outreach[0].netId + '.jpg'])}
+                netId={outreach[0].netId} bio={outreach[0].bio} />
+
+              <div className="row">
+                <div className="col-sm-6">
+                  {/* {gridCols[0]} */}
+                  {createCols(outreach)[0]}
+
+                </div>
+                <div className="col-md-6">
+                  {/* {gridCols[1]} */}
+                  {createCols(outreach)[1]}
+                </div>
               </div>
             </div>
           }
         </div>
-        <div id="advisors">
+        <div id="advisors" className="container" style={{ paddingLeft: "10%" }}>
           {this.state.value === "advisors" && advisors.map((value) => {
-            return <BoardCard title={value.name} text={value.title} img={(boardHeadshots[value.netId + '.jpg'])}
-              netId={value.netId} bio={value.bio} />
+            return <BoardCard title={value.name} text={value.title} img={(advisorHeadshots[value.netId + '.jpg'])}
+              netId={value.netId} bio={value.bio} year={value.year} />
           })}
         </div>
         <center>
@@ -271,6 +285,12 @@ export default class Board extends Component {
             <Faculty />
           }
         </div>
+        <div id="alumni" style={{ width: '100%' }}>
+          {this.state.value === "alumni" &&
+            <Alumni />
+          }
+        </div>
+
 
 
 

@@ -1,6 +1,6 @@
 .boardImg{
-  width: 70%;
-  height:70%;
+  width: 150px;
+  height:150px;
   object-fit: cover;
   border-radius: 50%;
   margin-left: 18%

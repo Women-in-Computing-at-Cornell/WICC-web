@@ -204,7 +204,7 @@ export const boardData = [
     "name": "Tise Alatise",
     "title": "Vice President, Community",
     "team": "Community",
-    "bio": "dlkfjald",
+    "bio": "",
     "netId": "ofa2"
   },
   {
@@ -257,5 +257,199 @@ export const boardData = [
     "netId": "ete26"
   },
 
+
+  //ADVISORS
+  {
+    "name": "Angel Nugroho",
+    "title": "Advisor, Co-President",
+    "team": "Advisors",
+    "bio": "",
+    "year": "Spring 2022",
+    "netId": "akn35"
+  },
+  {
+    "name": "Caitlin Stanton",
+    "title": "Advisor, Academic Team",
+    "team": "Advisors",
+    "bio": "",
+    "year": "Spring 2020",
+    "netId": "cs968"
+  },
+  {
+    "name": "Alexa Batino",
+    "title": "Advisor, VP Community",
+    "team": "Advisors",
+    "bio": "",
+    "year": "Fall 2020",
+    "netId": "afb75"
+  },
+  {
+    "name": "Komukill Loganathan",
+    "title": "Advisor, VP Outreach",
+    "team": "Advisors",
+    "bio": "",
+    "year": "Spring 2021",
+    "netId": "kl866"
+  },
+  {
+    "name": "Lina Takemaru",
+    "title": "Advisor, Outreach",
+    "team": "Advisors",
+    "bio": "",
+    "year": "Spring 2021",
+    "netId": "llt45"
+  },
+  {
+    "name": "Cindy Huang",
+    "title": "Advisor, Design ",
+    "team": "Advisors",
+    "bio": "",
+    "year": "Spring 2022",
+    "netId": "ch832"
+  },
+  {
+    "name": "Annie Qian",
+    "title": "Advisor, Treasurer",
+    "team": "Advisors",
+    "bio": "",
+    "year": "Spring 2022",
+    "netId": "sq62"
+  },
+  {
+    "name": "Rikako Onuma",
+    "title": "Advisor, Corporate Relations",
+    "team": "Advisors",
+    "bio": "",
+    "year": "Spring 2021",
+    "netId": "ro99"
+  },
+  {
+    "name": "Catalina Alonso",
+    "title": "Advisor, Corporate Relations",
+    "team": "Advisors",
+    "bio": "",
+    "year": "Spring 2023",
+    "netId": "caa98"
+  },
+  {
+    "name": "Bonnie Akhavan",
+    "title": "Advisor, Corporate Relations",
+    "team": "Advisors",
+    "bio": "",
+    "year": "Spring 2022",
+    "netId": "bca44"
+  },
+  {
+    "name": "Claire Cui",
+    "title": "Advisor, Co-Treasurer",
+    "team": "Advisors",
+    "bio": "",
+    "year": "Spring 2021",
+    "netId": "yc2296"
+  },
+  {
+    "name": "Julie Kim",
+    "title": " Advisor, Design Co-Director",
+    "team": "Advisors",
+    "bio": "",
+    "year": "Spring 2022",
+    "netId": "jsk358"
+  },
+  {
+    "name": "Alicia Wang",
+    "title": "Advisor, Design",
+    "team": "Advisors",
+    "bio": "",
+    "year": "Spring 2021",
+    "netId": "axw5"
+  },
+  {
+    "name": "Vy Nguyen",
+    "title": "Advisor, Outreach",
+    "team": "Advisors",
+    "bio": "",
+    "year": "Spring 2021",
+    "netId": "vqn2"
+  },
+  {
+    "name": "Katie Go",
+    "title": "Advisor, VP Brand",
+    "team": "Advisors",
+    "bio": "",
+    "year": "Spring 2022",
+    "netId": "ksg73"
+  },
+  {
+    "name": "Emma Condie",
+    "title": "Advisor, Underclassmen Outreach",
+    "team": "Advisors",
+    "bio": "",
+    "year": "Spring 2021",
+    "netId": "erc97"
+  },
+  {
+    "name": "Alicia Golden",
+    "title": "Advisor, Mentorship",
+    "team": "Advisors",
+    "bio": "",
+    "year": "Spring 2022",
+    "netId": "atg55"
+  },
+  {
+    "name": "Shreeya Gad",
+    "title": "Advisor, VP Community",
+    "team": "Advisors",
+    "bio": "",
+    "year": "Spring 2021",
+    "netId": "sg988"
+  },
+  {
+    "name": "Elizabeth Wardlow",
+    "title": "Advisor, Social",
+    "team": "Advisors",
+    "bio": "",
+    "year": "Spring 2021",
+    "netId": "emw248"
+  },
+  {
+    "name": "Femi Badero",
+    "title": "Advisor, Co-President",
+    "team": "Advisors",
+    "bio": "",
+    "year": "Spring 2021",
+    "netId": "bkb55"
+  },
+  {
+    "name": "Natalie Isak",
+    "title": "Advisor, Corporate Relations, Comm Disc Co-Director",
+    "team": "Advisors",
+    "bio": "",
+    "year": "Spring 2022",
+    "netId": "ngi2"
+  },
+  {
+    "name": "Catherine Zhang",
+    "title": "Advisor, Mentorship Co-Director",
+    "team": "Advisors",
+    "bio": "",
+    "year": "Spring 2022",
+    "netId": "crz27"
+  },
+  {
+    "name": "Tara Pratap",
+    "title": "Advisor, Corporate Relations Co-Director",
+    "team": "Advisors",
+    "bio": "",
+    "year": "Spring 2022",
+    "netId": "tp336"
+  },
+  {
+    "name": "Marcella Imoisili",
+    "title": "Advisor, Technical Director",
+    "team": "Advisors",
+    "bio": "",
+    "year": "Spring 2021",
+    "netId": "mii7"
+  },
 
 ];

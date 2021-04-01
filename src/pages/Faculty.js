@@ -8,6 +8,7 @@ import { facultyData } from './facultyData';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import FacultyCard from "../components/FacultyCard.js";
 
 
 import Image from 'react-bootstrap/Image';
@@ -25,6 +26,9 @@ export default class Faculty extends Component {
   }
 
 
+
+
+
   render() {
 
 
@@ -39,19 +43,31 @@ export default class Faculty extends Component {
     console.log(facultyHeadshots)
     console.log(facultyData[0])
 
-    return (
-      <div>
-        {facultyData.map((value) => {
-          return <Container>
-            <Row style={{ paddingBottom: "1%" }}>
-              <Col style={{ paddingRight: "10%" }}>
+    function newlineText(text) {
+      const newText = text.split('\n').map(str => <p>{str}</p>);
 
-                <Image src={(facultyHeadshots[value.name + '.jpg'])} width='25%' height='auto' roundedCircle />
+      return newText;
+    }
+
+
+    return (
+      <div class='faculty'>
+        {facultyData.map((value) => {
+          console.log(value.bio.split('\n'))
+          return <Container class='facultyAdjust'>
+            <Row style={{ paddingBottom: "3%" }}>
+              <Col >
+
+                {/* <Image src={(facultyHeadshots[value.name + '.jpg'])} width='25%' height='auto' roundedCircle />
                 <h4>{value.name}</h4>
-                <h6>{value.title}</h6>
+                <p>{newlineText(value.title)}</p> */}
+                <FacultyCard name={value.name} text={value.title} img={(facultyHeadshots[value.name + '.jpg'])}
+                />
+
               </Col>
               <Col >
-                <p>{value.bio}</p>
+                <h4 style={{ color: "#9CE2D3", textTransform: "uppercase", fontWeight: "bold" }}>{value.name}</h4>
+                <p>{newlineText(value.bio)}</p>
               </Col>
             </Row>
           </Container>

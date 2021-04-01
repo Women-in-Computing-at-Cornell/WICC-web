@@ -40,7 +40,7 @@ class BoardCard extends React.Component {
         <Card style={{ width: '15rem', height: '80%', border: "none" }} onClick={this.handleShow}>
           <Card.Body>
             {img != undefined &&
-              <Card.Img variant="top" src={img} alt="Card image cap" class="boardImg" />
+              <Card.Img variant="top" src={img} class="boardImg" />
             }
             <br />
             <br />
@@ -71,7 +71,7 @@ class BoardCard extends React.Component {
             <Container>
               <Row >
                 <Col>
-                  <Image src={img} alt="Card image cap" rounded style={{ width: "100%", height: 'auto' }} />
+                  <Image src={img} rounded style={{ width: "100%", height: 'auto' }} />
                   <br /><br />
                   <center>
                     <h5>{title}</h5>
