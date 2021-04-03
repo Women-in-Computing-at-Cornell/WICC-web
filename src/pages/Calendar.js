@@ -6,9 +6,6 @@ import Col from 'react-bootstrap/Col';
 import CreateCalendar from "@ericz1803/react-google-calendar";
 
 
-import './Join.css';
-
-
 
 export default class Calendar extends Component {
   constructor(props) {
