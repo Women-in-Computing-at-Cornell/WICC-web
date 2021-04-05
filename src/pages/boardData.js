@@ -222,20 +222,6 @@ export const boardData = [
     "netId": "si223"
   },
   {
-    "name": "Saranya Sivaram",
-    "title": "Community Discussions Co-Director",
-    "team": "Community",
-    "bio": "",
-    "netId": "ss2625"
-  },
-  {
-    "name": "Angelina Saliling",
-    "title": "Community Discussions Co-Director",
-    "team": "Community",
-    "bio": "",
-    "netId": "ajs649"
-  },
-  {
     "name": "Chelsie Beavers",
     "title": "Mentorship Co-Director",
     "team": "Community",
@@ -255,6 +241,20 @@ export const boardData = [
     "team": "Community",
     "bio": "",
     "netId": "ete26"
+  },
+  {
+    "name": "Saranya Sivaram",
+    "title": "Community Discussions Co-Director",
+    "team": "Community",
+    "bio": "",
+    "netId": "ss2625"
+  },
+  {
+    "name": "Angelina Saliling",
+    "title": "Community Discussions Co-Director",
+    "team": "Community",
+    "bio": "",
+    "netId": "ajs649"
   },
 
 
