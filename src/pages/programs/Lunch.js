@@ -6,6 +6,8 @@ import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom';
 import { boardData } from '../boardData';
 import lunchbunchgroup from "../../images/programs-pictures/lunchbunchgroup.jpg";
+import QuestionsCard from "./QuestionsCard.js";
+
 
 
 
@@ -108,7 +110,7 @@ export default class Lunch extends Component {
           <Container>
             <Row style={{ paddingBottom: "1%" }}>
               <Col >
-                <Image src={(boardHeadshots[directors[0].netId + '.jpg'])} roundedCircle style={{ width: "25%", height: 'auto' }}></Image>
+                {/* <Image src={(boardHeadshots[directors[0].netId + '.jpg'])} roundedCircle style={{ width: "25%", height: 'auto' }}></Image>
                 <br /><br />
                 <div class='boardText'>
                   <p >{directors[0].name}, {directors[0].title}</p>
@@ -116,18 +118,22 @@ export default class Lunch extends Component {
                     {directors[0].netId}@cornell.edu
                   </a>
 
-                </div>
+                </div> */}
+                <QuestionsCard name={directors[0].name} title={directors[0].title} img={(boardHeadshots[directors[0].netId + '.jpg'])} netId={directors[0].netId} />
+
 
               </Col>
               <Col >
-                <Image src={(boardHeadshots[directors[1].netId + '.jpg'])} roundedCircle style={{ width: "25%", height: 'auto' }}></Image>
+                {/* <Image src={(boardHeadshots[directors[1].netId + '.jpg'])} roundedCircle style={{ width: "25%", height: 'auto' }}></Image>
                 <br /><br />
                 <div class='boardText'>
                   <p > {directors[1].name}, {directors[1].title}</p>
                   <a href={"mailto:" + directors[1].netId + "@cornell.edu"} class="emailLink">
                     {directors[1].netId}@cornell.edu
                   </a>
-                </div>
+                </div> */}
+                <QuestionsCard name={directors[1].name} title={directors[1].title} img={(boardHeadshots[directors[1].netId + '.jpg'])} netId={directors[1].netId} />
+
               </Col>
             </Row>
           </Container>

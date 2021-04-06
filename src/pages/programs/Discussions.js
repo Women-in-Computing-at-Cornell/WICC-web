@@ -7,6 +7,8 @@ import { Link } from 'react-router-dom';
 import { boardData } from '../boardData';
 import discussion from "../../images/programs-pictures/discussions.jpg";
 import ReactGoogleSlides from "react-google-slides";
+import QuestionsCard from "./QuestionsCard.js";
+
 
 
 
@@ -67,7 +69,7 @@ export default class Discussions extends Component {
           <Container>
             <Row style={{ paddingBottom: "1%" }}>
               <Col >
-                <Image src={(boardHeadshots[discDirectors[0].netId + '.jpg'])} roundedCircle style={{ width: "25%", height: 'auto' }}></Image>
+                {/* <Image src={(boardHeadshots[discDirectors[0].netId + '.jpg'])} roundedCircle style={{ width: "25%", height: 'auto' }}></Image>
                 <br /><br />
 
                 <div class='boardText'>
@@ -76,19 +78,14 @@ export default class Discussions extends Component {
                     {discDirectors[0].netId}@cornell.edu
                   </a>
 
-                </div>
+                </div> */}
+                <QuestionsCard name={discDirectors[0].name} title={discDirectors[0].title} img={(boardHeadshots[discDirectors[0].netId + '.jpg'])} netId={discDirectors[0].netId} />
+
 
               </Col>
               <Col >
-                <Image src={(boardHeadshots[discDirectors[1].netId + '.jpg'])} roundedCircle style={{ width: "25%", height: 'auto' }}></Image>
-                <br /><br />
+                <QuestionsCard name={discDirectors[1].name} title={discDirectors[1].title} img={(boardHeadshots[discDirectors[1].netId + '.jpg'])} netId={discDirectors[1].netId} />
 
-                <div class='boardText'>
-                  <p > {discDirectors[1].name}, {discDirectors[1].title}</p>
-                  <a href={"mailto:" + discDirectors[1].netId + "@cornell.edu"} class="emailLink">
-                    {discDirectors[1].netId}@cornell.edu
-                  </a>
-                </div>
               </Col>
             </Row>
           </Container>

@@ -9,6 +9,9 @@ import mentorship1 from "../../images/programs-pictures/mentorship1.jpg";
 import mentorship from "../../images/programs-pictures/mentorship.jpg";
 import mentorship2 from "../../images/programs-pictures/mentorship2.jpg";
 import mentorship3 from "../../images/programs-pictures/mentorship3.jpg";
+import QuestionsCard from "./QuestionsCard.js";
+
+
 
 
 
@@ -139,28 +142,23 @@ export default class Mentorship extends Component {
           <Container>
             <Row style={{ paddingBottom: "1%" }}>
               <Col >
-                <Image src={(boardHeadshots[directors[0].netId + '.jpg'])} roundedCircle style={{ width: "25%", height: 'auto' }}></Image>
-                <br /><br />
-
-                <div class='boardText'>
-                  <p >{directors[0].name}, {directors[0].title}</p>
-                  <a href={"mailto:" + directors[0].netId + "@cornell.edu"} class="emailLink">
-                    {directors[0].netId}@cornell.edu
-                  </a>
-
-                </div>
+                <QuestionsCard name={directors[0].name} title={directors[0].title} img={(boardHeadshots[directors[0].netId + '.jpg'])} netId={directors[0].netId} />
 
               </Col>
               <Col >
-                <Image src={(boardHeadshots[directors[1].netId + '.jpg'])} roundedCircle style={{ width: "25%", height: 'auto' }}></Image>
-                <br /><br />
+                {/* <Image src={(boardHeadshots[directors[1].netId + '.jpg'])} roundedCircle style={{ width: "150px", height: '150px' }}></Image> */}
+                {/* <Card.Img variant="top" src={(boardHeadshots[directors[1].netId + '.jpg'])} class="boardImg" /> */}
+
+                {/* <br /><br />
 
                 <div class='boardText'>
                   <p > {directors[1].name}, {directors[1].title}</p>
                   <a href={"mailto:" + directors[1].netId + "@cornell.edu"} class="emailLink">
                     {directors[1].netId}@cornell.edu
                   </a>
-                </div>
+                </div> */}
+                <QuestionsCard name={directors[1].name} title={directors[1].title} img={(boardHeadshots[directors[1].netId + '.jpg'])} netId={directors[1].netId} />
+
               </Col>
             </Row>
           </Container>

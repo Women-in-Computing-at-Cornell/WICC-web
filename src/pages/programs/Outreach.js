@@ -10,6 +10,8 @@ import outreach from "../../images/outreach/outreach.jpg";
 import outreach1 from "../../images/outreach/outreach1.jpg";
 
 import outreach2 from "../../images/outreach/outreach2.jpg";
+import QuestionsCard from "./QuestionsCard.js";
+
 
 
 
@@ -341,52 +343,19 @@ export default class Outreach extends Component {
             <Row style={{ paddingBottom: "1%" }}>
 
               <Col >
-                <Image src={(boardHeadshots[directors[3].netId + '.jpg'])} roundedCircle style={{ width: "60%", height: 'auto' }}></Image>
-                <br /><br />
+                <QuestionsCard name={directors[3].name} title={directors[3].title} img={(boardHeadshots[directors[3].netId + '.jpg'])} netId={directors[3].netId} />
 
-                <div class='boardText'>
-                  <p >{directors[3].name}, {directors[3].title}</p>
-                  <a href={"mailto:" + directors[3].netId + "@cornell.edu"} class="emailLink">
-                    {directors[3].netId}@cornell.edu
-                  </a>
-
-                </div>
 
               </Col>
               <Col >
-                <Image src={(boardHeadshots[directors[0].netId + '.jpg'])} roundedCircle style={{ width: "60%", height: 'auto' }}></Image>
-                <br /><br />
-
-                <div class='boardText'>
-                  <p >{directors[0].name}, {directors[0].title}</p>
-                  <a href={"mailto:" + directors[0].netId + "@cornell.edu"} class="emailLink">
-                    {directors[0].netId}@cornell.edu
-                  </a>
-
-                </div>
+                <QuestionsCard name={directors[0].name} title={directors[0].title} img={(boardHeadshots[directors[0].netId + '.jpg'])} netId={directors[0].netId} />
 
               </Col>
               <Col >
-                <Image src={(boardHeadshots[directors[1].netId + '.jpg'])} roundedCircle style={{ width: "60%", height: 'auto' }}></Image>
-                <br /><br />
-
-                <div class='boardText'>
-                  <p > {directors[1].name}, {directors[1].title}</p>
-                  <a href={"mailto:" + directors[1].netId + "@cornell.edu"} class="emailLink">
-                    {directors[1].netId}@cornell.edu
-                  </a>
-                </div>
+                <QuestionsCard name={directors[1].name} title={directors[1].title} img={(boardHeadshots[directors[1].netId + '.jpg'])} netId={directors[1].netId} />
               </Col>
               <Col >
-                <Image src={(boardHeadshots[directors[2].netId + '.jpg'])} roundedCircle style={{ width: "60%", height: 'auto' }}></Image>
-                <br /><br />
-
-                <div class='boardText'>
-                  <p > {directors[2].name}, {directors[2].title}</p>
-                  <a href={"mailto:" + directors[2].netId + "@cornell.edu"} class="emailLink">
-                    {directors[2].netId}@cornell.edu
-                  </a>
-                </div>
+                <QuestionsCard name={directors[2].name} title={directors[2].title} img={(boardHeadshots[directors[2].netId + '.jpg'])} netId={directors[2].netId} />
               </Col>
             </Row>
           </Container>

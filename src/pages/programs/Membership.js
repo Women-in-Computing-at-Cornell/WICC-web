@@ -5,6 +5,8 @@ import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom';
 import { boardData } from '../boardData';
+import QuestionsCard from "./QuestionsCard.js";
+
 
 
 
@@ -149,14 +151,8 @@ export default class Membership extends Component {
 
         <center>
           <h5 style={{ paddingTop: '10%' }}>Questions?</h5>
-          <Image src={(boardHeadshots[sec.netId + '.jpg'])} roundedCircle style={{ width: "15%", height: 'auto' }}></Image>
-          <br /><br />
-          <div class='boardText'>
-            <p >{sec.name}, {sec.title}</p>
-            <a href={"mailto:" + sec.netId + "@cornell.edu"} class="emailLink">
-              {sec.netId}@cornell.edu
-                  </a>
-          </div>
+          <QuestionsCard name={sec.name} title={sec.title} img={(boardHeadshots[sec.netId + '.jpg'])} netId={sec.netId} />
+
         </center>
       </div>
     );

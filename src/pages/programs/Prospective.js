@@ -5,6 +5,9 @@ import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom';
 import { boardData } from '../boardData';
+import QuestionsCard from "./QuestionsCard.js";
+
+
 
 
 
@@ -101,18 +104,7 @@ export default class Prospective extends Component {
           <Container>
             <Row style={{ paddingBottom: "1%" }}>
               <Col >
-                <Image src={(boardHeadshots[directors[0].netId + '.jpg'])} roundedCircle style={{ width: "15%", height: 'auto' }}></Image>
-                <br /><br />
-
-                <div>
-                  <p >{directors[0].name}</p>
-
-                  <p>{directors[0].title}</p>
-                  <a href={"mailto:" + directors[0].netId + "@cornell.edu"} class="emailLink">
-                    {directors[0].netId}@cornell.edu
-                  </a>
-
-                </div>
+                <QuestionsCard name={directors[0].name} title={directors[0].title} img={(boardHeadshots[directors[0].netId + '.jpg'])} netId={directors[0].netId} />
 
               </Col>
 

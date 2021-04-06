@@ -7,6 +7,8 @@ import Calendar from "@ericz1803/react-google-calendar";
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import Sponsors from './Sponsors';
+import axios from 'axios';
+
 
 
 
@@ -19,6 +21,7 @@ import Sponsors from './Sponsors';
 import './Join.css';
 import { Center } from 'devextreme-react/map';
 
+const API_PATH = 'http://localhost/WICC-WEB/src/action.php';
 
 
 export default class Join extends Component {
@@ -30,6 +33,14 @@ export default class Join extends Component {
 
     this.state = {
       show: false,
+      fname: '',
+      lname: '',
+      email: '',
+      message: '',
+      mailSent: false,
+      error: null
+
+
     };
   }
   handleClose() {
@@ -39,6 +50,26 @@ export default class Join extends Component {
   handleShow() {
     this.setState({ show: true });
   }
+
+  handleFormSubmit = e => {
+    e.preventDefault();
+    axios({
+      method: 'post',
+      url: '../action.php',
+      headers: { 'content-type': 'application/json' },
+      data: this.state
+    })
+      .then(result => {
+        this.setState({
+          mailSent: result.data.sent
+        })
+      })
+      .catch(error => this.setState({ error: error.message }));
+  };
+
+
+
+
 
 
   render() {
@@ -132,6 +163,41 @@ export default class Join extends Component {
             </center>
           </Modal.Body>
         </Modal>
+
+        <form action="#" >
+          <label>First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name.."
+            value={this.state.fname}
+            onChange={e => this.setState({ fname: e.target.value })}
+          />
+          <label>Last Name</label>
+          <input type=" text" id="lname" name="lastname" placeholder="Your last name.."
+            value={this.state.lname}
+            onChange={e => this.setState({ lname: e.target.value })}
+          />
+
+
+          <label>Email</label>
+          <input type="email" id="email" name="email" placeholder="Your email"
+            value={this.state.email}
+            onChange={e => this.setState({ email: e.target.value })}
+          />
+
+
+          <label>Message</label>
+          <textarea id="message" name="message" placeholder="Write something.."
+            onChange={e => this.setState({ message: e.target.value })}
+            value={this.state.message}
+          ></textarea>
+          <input type="submit" onClick={e => this.handleFormSubmit(e)} value="Submit" />
+          <div>
+            {this.state.mailSent &&
+              <div>Thank you for contcting us.</div>
+            }
+          </div>
+
+        </form >
+
 
 
       </div >
