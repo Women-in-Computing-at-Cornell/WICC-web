@@ -11,13 +11,6 @@ import mentorship2 from "../../images/programs-pictures/mentorship2.jpg";
 import mentorship3 from "../../images/programs-pictures/mentorship3.jpg";
 import QuestionsCard from "./QuestionsCard.js";
 
-
-
-
-
-
-
-
 import Image from 'react-bootstrap/Image'
 
 import medal from "../../images/medal.jpg";
@@ -138,8 +131,11 @@ export default class Mentorship extends Component {
 
 
         <center>
-          <h5 style={{ paddingTop: '10%' }}>Questions?</h5>
-          <Container>
+          <h5 style={{ paddingTop: '5%' }}>Questions?</h5>
+          <Container style={{ paddingRight: "10%" }}>
+            <Row>
+
+            </Row>
             <Row style={{ paddingBottom: "1%" }}>
               <Col >
                 <QuestionsCard name={directors[0].name} title={directors[0].title} img={(boardHeadshots[directors[0].netId + '.jpg'])} netId={directors[0].netId} />

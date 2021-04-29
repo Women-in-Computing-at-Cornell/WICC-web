@@ -8,7 +8,7 @@ import './pages.css';
 
 let styles = {
   container: {
-    margin: "4%",
+    margin: "5%",
   },
   row: {
     margin: "",
@@ -19,8 +19,8 @@ let styles = {
     width: "20%",
     margin: "2.3% 0",
     backgroundColor: "#9CE2D3",
-    padding: "2.5%",
-    paddingBottom: "4%",
+    padding: "3.5%",
+    paddingBottom: "6%",
     marginRight: "5%",
     borderRadius: ".5em",
   },
@@ -34,7 +34,7 @@ const Programs = () => {
 
     <div style={styles.container}>
 
-      <h1>Programs</h1>
+      <h1 style={{ fontWeight: 'bold' }}>Programs</h1>
       {/* <div style={styles.row}>
         <div style={styles.col}>
           <Link to="/membership" style={styles.link} ><h2>Active Membership</h2>

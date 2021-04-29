@@ -338,8 +338,8 @@ export default class Outreach extends Component {
         </Container>
 
         <center>
-          <h5 style={{ paddingTop: '10%' }}>Questions?</h5>
-          <Container>
+          <h5 style={{ paddingTop: '5%' }}>Questions?</h5>
+          <Container style={{ paddingRight: "5%" }}>
             <Row style={{ paddingBottom: "1%" }}>
 
               <Col >

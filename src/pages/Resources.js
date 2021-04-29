@@ -34,7 +34,7 @@ export default class Resources extends Component {
 
     return (
       <div class='container'>
-        <h1 style={{ paddingBottom: "2%" }}>Resources</h1>
+        <h1 style={{ paddingBottom: "2%", fontWeight: 'bold' }}>Resources</h1>
         <h5 style={{ paddingBottom: "3%" }}>Curated list of resources we hope will help you pursue a
         career in technology</h5>
         <Container>

@@ -22,7 +22,7 @@ import './programPages.css';
 
 export default class Prospective extends Component {
   render() {
-    let directors = boardData.filter(record => record.title === "Vice President, Outreach")
+    let directors = boardData.filter(record => record.title === "Underclassmen Outreach Co-Director")
 
 
     function importAll(r) {
@@ -100,13 +100,18 @@ export default class Prospective extends Component {
         </Container>
 
         <center>
-          <h5 style={{ paddingTop: '10%' }}>Questions?</h5>
-          <Container>
+          <h5 style={{ paddingTop: '5%' }}>Questions?</h5>
+          <Container style={{ paddingRight: "10%" }}>
             <Row style={{ paddingBottom: "1%" }}>
               <Col >
                 <QuestionsCard name={directors[0].name} title={directors[0].title} img={(boardHeadshots[directors[0].netId + '.jpg'])} netId={directors[0].netId} />
 
               </Col>
+              <Col >
+                <QuestionsCard name={directors[1].name} title={directors[1].title} img={(boardHeadshots[directors[1].netId + '.jpg'])} netId={directors[1].netId} />
+
+              </Col>
+
 
             </Row>
           </Container>

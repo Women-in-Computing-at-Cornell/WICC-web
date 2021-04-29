@@ -103,14 +103,22 @@ export default class Join extends Component {
     return (
 
       <div style={styles.container}>
-        <h1>Get Involved</h1>
+        <h1 style={{ fontWeight: 'bold' }}>Get Involved</h1>
 
 
 
         <div style={styles.row}>
           <div style={styles.col}>
             <h2>Students</h2>
-            <p>Join Our Listserve</p>
+            <p>Join Our Listserve!</p>
+            <center>
+
+
+              <Button href='https://forms.gle/BUQynYasFRC7xCkb7'
+
+                style={{ backgroundColor: '#b5b5b5', width: '50%', marginTop: "10%" }}>Join</Button>
+            </center>
+
           </div>
           <div style={styles.col}>
             <h2>Corporate</h2>
@@ -118,7 +126,7 @@ export default class Join extends Component {
             <center>
               <Button onClick={this.handleShow}
 
-                style={{ backgroundColor: '#f2d2ce', width: '90%' }}>Current Sponsors</Button>
+                style={{ backgroundColor: '#b5b5b5', width: '90%' }}>Current Sponsors</Button>
 
             </center>
 
@@ -136,7 +144,7 @@ export default class Join extends Component {
             <center>
               <Button href='https://docs.google.com/forms/d/e/1FAIpQLSe_QtYzpq9knpmjDAj0bV3MwcsBtOy8IX7XhOHoroq0801sNw/viewform'
 
-                style={{ backgroundColor: '#f2d2ce', width: '50%' }}>Join</Button>
+                style={{ backgroundColor: '#b5b5b5', width: '50%' }}>Join</Button>
 
             </center>
 
@@ -164,7 +172,7 @@ export default class Join extends Component {
           </Modal.Body>
         </Modal>
 
-        <form action="#" >
+        {/* <form action="#" >
           <label>First Name</label>
           <input type="text" id="fname" name="firstname" placeholder="Your name.."
             value={this.state.fname}
@@ -196,7 +204,7 @@ export default class Join extends Component {
             }
           </div>
 
-        </form >
+        </form > */}
 
 
 

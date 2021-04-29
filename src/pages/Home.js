@@ -16,12 +16,12 @@ const Home = () => {
         }}>
           <Image src={illustration} id="home-illustration" />
           <div style={{ margin: "3% 0" }}>
-            <h1 style={{ marginBottom: "2%" }} class='headerName'>Women in Computing at Cornell</h1>
+            <h1 style={{ marginBottom: "2%", fontWeight: 'bold' }} class='headerName'>Women in Computing at Cornell</h1>
             <h2>strives to make computing inclusive for all.</h2>
           </div>
         </section>
         <section class="mission-container">
-          <h2>Our Mission</h2>
+          <h2 style={{ fontWeight: 'bold' }}>Our Mission</h2>
           <div>
             <p style={{ paddingLeft: '10%', paddingRight: '10%' }}>We aim to foster a <strong>supportive community</strong> of women and
         allies* equipped with the resources needed to recognize
@@ -33,7 +33,7 @@ const Home = () => {
             <p>* All gender identities are welcomed and supported!</p>
           </div>
           <br /><br />
-          <h2>Our Sponsors</h2>
+          <h2 style={{ fontWeight: 'bold' }}>Our Sponsors</h2>
         </section>
         <section class='sponsor-container'>
           <Sponsors />

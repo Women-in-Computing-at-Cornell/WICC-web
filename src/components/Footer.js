@@ -17,7 +17,7 @@ class Footer extends React.Component {
         <Navbar.Brand className="mr-auto" href="/">Women in Computing at Cornell
         <br />
           <Navbar.Text style={{ fontSize: "50%", color: "black" }}>
-            © 2019 Women in Computing at Cornell. All Rights Reserved.
+            © 2021 Women in Computing at Cornell. All Rights Reserved.
         </Navbar.Text>
 
         </Navbar.Brand>

@@ -77,7 +77,7 @@ export default class Calendar extends Component {
 
 
 
-        <h1>WICC Events</h1>
+        <h1 style={{ fontWeight: 'bold' }}>WICC Events</h1>
         <div style={{
           width: "90%",
           height: "80%",

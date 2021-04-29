@@ -12,7 +12,10 @@ a {
 }
 a:hover {
   transition: .5s ease;
-  color:#9CE2D3;
+  /* color:#9CE2D3; */
+  color:darkgray;
+  /* font-weight: bold; */
+
   text-decoration: none
 }
 

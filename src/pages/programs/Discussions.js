@@ -65,8 +65,8 @@ export default class Discussions extends Component {
         />
 
         <center>
-          <h5 style={{ paddingTop: '10%' }}>Questions?</h5>
-          <Container>
+          <h5 style={{ paddingTop: '5%' }}>Questions?</h5>
+          <Container style={{ paddingRight: "10%" }}>
             <Row style={{ paddingBottom: "1%" }}>
               <Col >
                 {/* <Image src={(boardHeadshots[discDirectors[0].netId + '.jpg'])} roundedCircle style={{ width: "25%", height: 'auto' }}></Image>

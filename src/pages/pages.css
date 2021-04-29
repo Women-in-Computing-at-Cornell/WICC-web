@@ -2,9 +2,12 @@ h2 {
 color: black
 }
 
-.container{
+.containerPage{
   /* margin: 5%; */
-  margin-top: 25px;
+  /* margin-top: 25px; */
+  margin: 5%;
+  margin-left: 12%;
+  margin-right: 12% 
 }
 
 .rowC{

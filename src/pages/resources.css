@@ -15,3 +15,7 @@
 .tab1{
   tab-size: 2;
 }
+
+Nav.Link {
+  color: red
+}

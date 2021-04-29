@@ -54,17 +54,21 @@ export default class Sponsors extends Component {
     const sponsorHeadshots = importAll(require.context('../images/sponsors', false, /\.jpg/));
 
     return (
-      <div>
-        {gold.map((value) => {
-          return <a href={value.link}><Image src={(sponsorHeadshots[value.sponsor + '.jpg'])} width='25%' height='10%' style={{ marginTop: '-6%', paddingRight: '20px' }} /></a>
-        })}
-        <br /><br />
-        {silver.map((value) => {
-          return <a href={value.link}><Image src={(sponsorHeadshots[value.sponsor + '.jpg'])} width='19%' height='5%' style={{ marginTop: '-2%', paddingRight: '20px' }} /></a>
-        })
-        }
-        <br /><br />
-
+      <div class='containerPage'>
+        <div style={{ marginBottom: '10%' }}>
+          <h4 style={{ marginBottom: '3%', fontWeight: 'bold' }}>Gold</h4>
+          {gold.map((value) => {
+            return <a href={value.link}><Image src={(sponsorHeadshots[value.sponsor + '.jpg'])} width='25%' height='10%' style={{ marginTop: '-6%', paddingRight: '20px' }} /></a>
+          })}
+        </div>
+        <div style={{ marginBottom: '10%' }}>
+          <h4 style={{ marginBottom: '3%', fontWeight: 'bold' }}>Silver</h4>
+          {silver.map((value) => {
+            return <a href={value.link}><Image src={(sponsorHeadshots[value.sponsor + '.jpg'])} width='19%' height='5%' style={{ marginTop: '-2%', paddingRight: '20px' }} /></a>
+          })
+          }
+        </div>
+        <h4 style={{ marginBottom: '3%', fontWeight: 'bold' }}>Platinum</h4>
         {
           platinum.map((value) => {
             return <a href={value.link}><Image src={(sponsorHeadshots[value.sponsor + '.jpg'])} width='15%' height='2%' style={{ marginBottom: '2%', paddingRight: '20px' }} /></a>
