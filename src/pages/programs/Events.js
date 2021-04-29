@@ -37,7 +37,7 @@ export default class Events extends Component {
               </p>
               <h5>List of Events coming soon!</h5>
               <h6>Check out the Calendar page for more:</h6>
-              <Button href="/calendar">Calendar</Button>
+              <Button href="/#calendar">Calendar</Button>
 
 
             </Col>

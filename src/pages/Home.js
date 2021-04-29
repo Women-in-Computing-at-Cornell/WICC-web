@@ -40,7 +40,7 @@ const Home = () => {
         </section>
         <section class="call-to-action-container">
           <h3>Believe in this mission?</h3>
-          <Button href="/join">Get Involved</Button>
+          <Button href="/#join">Get Involved</Button>
         </section>
       </div>
     </div>
