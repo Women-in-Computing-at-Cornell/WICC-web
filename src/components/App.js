@@ -1,7 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NavBar from './NavBar';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Switch, HashRouter } from 'react-router-dom';
 import Home from '../pages/Home';
 import About from '../pages/About';
 import Board from '../pages/Board';
@@ -25,7 +25,7 @@ import Footer from './Footer';
 function App() {
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div style={{ fontFamily: 'Inter' }}>
         <NavBar />
         <Switch>
@@ -50,7 +50,7 @@ function App() {
         </Switch>
         <Footer />
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 

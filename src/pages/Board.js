@@ -11,6 +11,8 @@ import Alumni from './Alumni';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import { HashLink as Link } from 'react-router-hash-link';
+
 
 
 
@@ -137,17 +139,17 @@ export default class Board extends Component {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
               <NavDropdown title="Student Board" id="basic-nav-dropdown">
-                <NavDropdown.Item href="#presidents" eventKey="pres">Presidents</NavDropdown.Item>
-                <NavDropdown.Item href="#corporate" eventKey="corporate">Corporate/Operations</NavDropdown.Item>
-                <NavDropdown.Item href="#academic" eventKey="academic">Academic</NavDropdown.Item>
-                <NavDropdown.Item href="#brand" eventKey="brand">Brand</NavDropdown.Item>
-                <NavDropdown.Item href="#community" eventKey="community">Community</NavDropdown.Item>
-                <NavDropdown.Item href="#outreach" eventKey="outreach">Outreach</NavDropdown.Item>
-                <NavDropdown.Item href="#advisors" eventKey="advisors">Advisors</NavDropdown.Item>
+                <NavDropdown.Item href="#board#presidents" eventKey="pres">Presidents</NavDropdown.Item>
+                <NavDropdown.Item href="#board#corporate" eventKey="corporate">Corporate/Operations</NavDropdown.Item>
+                <NavDropdown.Item href="#board#academic" eventKey="academic">Academic</NavDropdown.Item>
+                <NavDropdown.Item href="#board#brand" eventKey="brand">Brand</NavDropdown.Item>
+                <NavDropdown.Item href="#board#community" eventKey="community">Community</NavDropdown.Item>
+                <NavDropdown.Item href="#board#outreach" eventKey="outreach">Outreach</NavDropdown.Item>
+                <NavDropdown.Item href="#board#advisors" eventKey="advisors">Advisors</NavDropdown.Item>
               </NavDropdown>
-              <Nav.Link href="#faculty" eventKey="faculty">Faculty Board</Nav.Link>
-              <Nav.Link href="#sponsors" eventKey="sponsors">Sponsors</Nav.Link>
-              <Nav.Link href="#alumni" eventKey="alumni">Alumni</Nav.Link>
+              <Nav.Link href="#board#faculty" eventKey="faculty">Faculty Board</Nav.Link>
+              <Nav.Link href="#board#sponsors" eventKey="sponsors">Sponsors</Nav.Link>
+              <Nav.Link href="#board#alumni" eventKey="alumni">Alumni</Nav.Link>
 
             </Nav>
           </Navbar.Collapse>

@@ -24,6 +24,7 @@
     "react-google-slides": "^3.0.1",
     "react-responsive-carousel": "^3.2.15",
     "react-router-dom": "^5.2.0",
+    "react-router-hash-link": "^2.4.0",
     "react-scripts": "3.4.3",
     "react_google_calendar": "^2.2.4444"
   },
@@ -43,6 +44,7 @@
       "not op_mini all"
     ],
     "development": [
+      "ie 11",
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"

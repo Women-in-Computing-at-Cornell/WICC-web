@@ -19,12 +19,12 @@ class NavBar extends React.Component {
         </Navbar.Brand>
         <Nav>
           <Nav.Link href="/" class="navLink">Home</Nav.Link>
-          <Nav.Link href="/about" class="navLink">About</Nav.Link>
-          <Nav.Link href="/board">Who We Are</Nav.Link>
-          <Nav.Link href="/programs">Programs</Nav.Link>
-          <Nav.Link href="/resources">Resources</Nav.Link>
-          <Nav.Link href="/calendar">Calendar</Nav.Link>
-          <Nav.Link href="/join">Get Involved</Nav.Link>
+          <Nav.Link href="/#about" class="navLink">About</Nav.Link>
+          <Nav.Link href="/#board">Who We Are</Nav.Link>
+          <Nav.Link href="/#programs">Programs</Nav.Link>
+          <Nav.Link href="/#resources">Resources</Nav.Link>
+          <Nav.Link href="/#calendar">Calendar</Nav.Link>
+          <Nav.Link href="/#join">Get Involved</Nav.Link>
         </Nav>
       </Navbar>
     );
