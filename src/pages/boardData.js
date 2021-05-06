@@ -1,14 +1,14 @@
 export const boardData = [
   //PRESIDENTS
-  {
-    "name": "Olivia Zhu",
-    "title": "Co-President",
-    "team": "Presidents",
-    "bio": "I came to Cornell knowing that I wanted to study computer science, but I was a little hesitant about it. In my high school, only a handful of girls wanted to study engineering and hardly anybody wanted to study computer science. It was perceived as \"nerdy\" and simply entailed a lot of staring at a screen and monotonous coding, but I knew that computer science was more than that. To me, it's problem-solving, creativity, and innovating the future. I'm lucky enough to have an awesome mom that works in the tech industry and has been a role-model to me as I've grown up. Through her experiences, I've witnessed the hardships of being a woman in tech. As a member of WICC, I hope to break the stigma of computer science being some boring field and introduce people to its endless possibilities. I want to help create a more supportive environment for women and minorities in tech and motivate people to pursue their dreams no matter the obstacles.",
-    "netId": "oz28",
-    "year": 2022,
-    "major": "Computer Science"
-  },
+  // {
+  //   "name": "Olivia Zhu",
+  //   "title": "Co-President",
+  //   "team": "Presidents",
+  //   "bio": "I came to Cornell knowing that I wanted to study computer science, but I was a little hesitant about it. In my high school, only a handful of girls wanted to study engineering and hardly anybody wanted to study computer science. It was perceived as \"nerdy\" and simply entailed a lot of staring at a screen and monotonous coding, but I knew that computer science was more than that. To me, it's problem-solving, creativity, and innovating the future. I'm lucky enough to have an awesome mom that works in the tech industry and has been a role-model to me as I've grown up. Through her experiences, I've witnessed the hardships of being a woman in tech. As a member of WICC, I hope to break the stigma of computer science being some boring field and introduce people to its endless possibilities. I want to help create a more supportive environment for women and minorities in tech and motivate people to pursue their dreams no matter the obstacles.",
+  //   "netId": "oz28",
+  //   "year": 2022,
+  //   "major": "Computer Science"
+  // },
   {
     "name": "Jonna Chen",
     "title": "Co-President",
@@ -18,6 +18,15 @@ export const boardData = [
     "year": 2023,
     "major": "Computer Science"
 
+  },
+  {
+    "name": "Tise Alatise",
+    "title": "Co-President",
+    "team": "Presidents",
+    "bio": "Hello, just call me Tise \"TEE-SHAY.\" I'm a huge proponent of mentorship and constantly search for people to learn from or grow with 🌿. My downtime is filled with reading comics, watching animated works, dancing to k-pop, and grabbing boba with friends. Since March 2020, the COVID-19 pandemic challenged how I seek self-improvement. As an engineering student, I seek spaces where I can both succeed and fail but always have the chance to learn. ☕Don't be Shy: Say Hi! I'm always open to a virtual coffee chat because I love meeting new people. In fact, thanks to a WICC boba chat with my mentor Femi, I discovered my love for product design. WICC isn't an org; it's my family. I cannot describe its impact on my life, and I know you'll feel the same way soon!",
+    "netId": "ofa2",
+    "year": 2023,
+    "major": "Computer Science"
   },
 
 
