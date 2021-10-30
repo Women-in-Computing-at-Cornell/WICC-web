@@ -49,7 +49,7 @@ export default class Outreach extends Component {
         <h1>Girls Who Code</h1>
 
         <Container>
-          <Row style={{ paddingBottom: "4%" }}>
+          <Row style={{ paddingBottom: "2%" }}>
             <Col xs lg="6" style={{ paddingRight: "5%", paddingLeft: "0%" }}>
               <p style={{ paddingRight: '5%', paddingTop: '2%' }}>We provide free Computer Science classes for middle and high school students in the greater Ithaca community through Cornell Girls Who Code. Students learn the fundamentals of computing as well as cool technologies like Arduinos, web programming, and Ozobots.</p>
               <center>
@@ -60,31 +60,22 @@ export default class Outreach extends Component {
 
             </Col>
             <Col >
-              <Image src={outreach2} style={{ width: "90%", height: 'auto', paddingBottom: "7%" }}></Image>
+              <Image src={outreach2} style={{ width: "90%", height: 'auto', paddingBottom: "3%" }}></Image>
 
             </Col>
           </Row>
         </Container>
         <center>
-          <h5 style={{ fontWeight: "bold" }}>Registration for our Girls Who Code program for Spring 2021 has now closed! </h5>
+          {/* <h5 style={{ fontWeight: "bold" }}>Registration for our Girls Who Code program for Spring 2021 has been closed! </h5>*/}
 
-          {/* <p>Interested in our Girls Who Code program for this Spring 2021? Register here! </p>
-          <p>Our first class will be Sunday, February 28th.</p>
 
-          <p>The Middle School session will meet online from 12:00pm-1:30pm.</p>
-
-          <p>The High School session will meet online from 2:00pm-3:30pm.</p>
-
-          <p> More schedule details can be found below.
-          Please note we will NOT be having class on April 25th due to Cornell's academic break.
-</p>
-          <Button href='https://forms.gle/vZeTVhGveoqZ8AWs9'>Register Now!</Button> */}
-
+          <h5 style={{ fontWeight: "bold" }}>Interested in our Girls Who Code program for this Fall 2021? Register here! </h5>
+          <Button style={{ marginBottom: "3%" }} href='https://docs.google.com/forms/d/e/1FAIpQLScBHRS_-ZjYCC0H3A_R6-Lr2QnrgWduBw-K3fNWw89NLrHwvg/viewform'>Register Now!</Button>
         </center>
         <br />
         <h3>Schedule and Class Slides</h3>
 
-        <Container style={{ paddingBottom: "4%" }}>
+        <Container style={{ paddingBottom: "2%" }}>
 
           <Row style={{ paddingBottom: "1%" }}>
 
@@ -92,37 +83,34 @@ export default class Outreach extends Component {
               <p style={{ marginBottom: "1%", fontWeight: "bold" }}>
                 Middle School (MS)
               </p>
-              <p style={{ marginBottom: "0%" }}>12:00PM - 1:30PM</p>
-              <p>Online</p>
+              <p style={{ marginBottom: "7%" }}>12:00PM - 1:30PM</p>
+              {/* <p>Online</p> */}
 
               <p style={{ marginBottom: "1%", fontWeight: "bold" }}>
                 High School (HS)
               </p>
               <p style={{ marginBottom: "0%" }}>2:00pm-3:30pm</p>
-              <p>Online</p>
+              {/* <p>Online</p> */}
 
             </Col>
             <Col style={{ paddingRight: "0%", paddingLeft: "2%", }}>
               <div class='outreachDates'>
-                <p >February 28
+                <p >Sept. 19
                 </p>
-                <p>March 07
-
-
+                <p>Sept. 26
                 </p>
-                <p>March 14
-
+                <p>Oct. 3
                 </p>
-                <p>March 21
+                <p><span style={{ textDecoration: "line-through" }}>Oct. 10</span>  NO CLASS *</p>
+                <p>Oct. 17
                 </p>
-                <p>March 28
+                <p>Oct. 24
                 </p>
-                <p>April 4</p>
               </div>
 
 
             </Col>
-            <Col style={{ paddingRight: "1%", paddingLeft: "0%", }}>
+            {/* <Col style={{ paddingRight: "1%", paddingLeft: "0%", }}>
               <div class='outreachDates'>
                 <p >
                   <a href='https://docs.google.com/presentation/d/1-J0Fb6oV7CCiVo11qFYJcpId2jd-gDbXOlosHAJOFmE/edit?usp=sharing' class='outreachSlides' >MS</a>
@@ -150,18 +138,16 @@ export default class Outreach extends Component {
               </div>
 
 
-            </Col>
+            </Col> */}
 
 
             <Col style={{ paddingRight: "1%", paddingLeft: "0%", }}>
               <div class='outreachDates'>
-
-                <p>April 11</p>
-                <p>April 18</p>
-                <p><span style={{ textDecoration: "line-through" }}>April 25</span>  NO CLASS *</p>
-                <p>May 2</p>
-                <p>May 9 <span style={{ fontWeight: "bold" }}> Last Day of Class</span></p>
-                <p>May 16 <span style={{ fontWeight: "bold" }}> Mid-Year Celebration</span></p>
+                <p>Oct. 31</p>
+                <p>Nov. 7</p>
+                <p>Nov. 14</p>
+                <p>Nov. 21</p>
+                <p>Dec. 5  <span style={{ fontWeight: "bold" }}> Mid-Year Celebration</span></p>
 
               </div>
 
@@ -189,7 +175,7 @@ export default class Outreach extends Component {
 
           </Row>
           <center>
-            <p>* Please note we will NOT be having class on April 25th due to Cornell's academic break.</p>
+            <p>* Please note we will NOT be having class on October 10th due to Cornell's academic break.</p>
 
           </center>
 
@@ -266,6 +252,9 @@ export default class Outreach extends Component {
           <Row style={{ paddingBottom: "2%" }}>
 
             <Col >
+              <h6 style={{ fontWeight: "bold" }}>Interested in being a WICC Outreach Volunteer for this Fall 2021? Apply here! </h6>
+              <Button style={{ marginBottom: "5%" }} href='https://forms.gle/nacdKvrHdh5Jb5ct9'>Apply Now!</Button>
+
               <p>
                 Interested in sponsoring Girls Who Code?
                 Think you would make a good guest speaker?

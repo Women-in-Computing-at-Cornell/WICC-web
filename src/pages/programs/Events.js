@@ -26,6 +26,7 @@ export default class Events extends Component {
 
 
 
+
     return (
       <div class='page'>
         <h1>Events</h1>
@@ -46,6 +47,7 @@ export default class Events extends Component {
             </Col>
           </Row>
         </Container>
+
 
       </div>
     );

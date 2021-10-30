@@ -38,6 +38,7 @@ export default class Board extends Component {
     const brand = []
     const community = []
     const corporate = []
+    const operations = []
     const outreach = []
     const advisors = []
 
@@ -60,6 +61,9 @@ export default class Board extends Component {
       }
       if (d.team === "Corporate") {
         corporate.push(d)
+      }
+      if (d.team === "Operations") {
+        operations.push(d)
       }
       if (d.team === "Outreach") {
         outreach.push(d)
@@ -102,7 +106,7 @@ export default class Board extends Component {
 
     function createCols(arr) {
       let gridColsTeam;
-      if (arr == academic || arr == brand || arr == community || arr == outreach) {
+      if (arr == academic || arr == brand || arr == community || arr == corporate || arr == outreach) {
         gridColsTeam = [[], []];
         arr = arr.slice(1)
 
@@ -140,7 +144,8 @@ export default class Board extends Component {
             <Nav className="mr-auto">
               <NavDropdown title="Student Board" id="basic-nav-dropdown">
                 <NavDropdown.Item href="#board#presidents" eventKey="pres">Presidents</NavDropdown.Item>
-                <NavDropdown.Item href="#board#corporate" eventKey="corporate">Corporate/Operations</NavDropdown.Item>
+                <NavDropdown.Item href="#board#operations" eventKey="operations">Operations</NavDropdown.Item>
+                <NavDropdown.Item href="#board#corporate" eventKey="corporate">Corporate</NavDropdown.Item>
                 <NavDropdown.Item href="#board#academic" eventKey="academic">Academic</NavDropdown.Item>
                 <NavDropdown.Item href="#board#brand" eventKey="brand">Brand</NavDropdown.Item>
                 <NavDropdown.Item href="#board#community" eventKey="community">Community</NavDropdown.Item>
@@ -233,15 +238,35 @@ export default class Board extends Component {
 
         <div id="corporate" className="container">
           {this.state.value === "corporate" &&
+            <div>
+              <BoardCard title={corporate[0].name} text={corporate[0].title} img={(boardHeadshots[corporate[0].netId + '.jpg'])}
+                netId={corporate[0].netId} bio={corporate[0].bio} />
+              <div className="row">
+                <div className="col-sm-6">
+                  {/* {gridCols[0]} */}
+                  {createCols(corporate)[0]}
+
+                </div>
+                <div className="col-md-6">
+                  {/* {gridCols[1]} */}
+                  {createCols(corporate)[1]}
+                </div>
+              </div>
+            </div>
+          }
+        </div>
+
+        <div id="operations" className="container">
+          {this.state.value === "operations" &&
             <div className="row">
               <div className="col-sm-6">
                 {/* {gridCols[0]} */}
-                {createCols(corporate)[0]}
+                {createCols(operations)[0]}
 
               </div>
               <div className="col-md-6">
                 {/* {gridCols[1]} */}
-                {createCols(corporate)[1]}
+                {createCols(operations)[1]}
               </div>
             </div>
           }
