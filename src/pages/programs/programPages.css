@@ -2,19 +2,16 @@
   margin: 5%;
   margin-left: 9%;
   margin-right: 12%;
-
 }
-
 
 .sub {
-  font-Size: 90%;
-  color: #4D4D4D
+  font-size: 90%;
+  color: #4d4d4d;
 }
 
-.head{
+.head {
   font-weight: bold;
 }
-
 
 li {
   padding-bottom: 6px;
@@ -25,21 +22,19 @@ li {
 }
 
 .vertLine {
-  border-left: 6px solid  #9CE2D3;
-  padding-right: 1%
+  border-left: 6px solid #9ce2d3;
+  padding-right: 1%;
 }
 
-.outreachDates p{
-  margin-bottom: 1%
+.outreachDates p {
+  margin-bottom: 1%;
 }
 
-.localEvents p{
+.localEvents p {
   margin-bottom: 1%;
   font-size: 90%;
-  color: #4D4D4D
-
+  color: #4d4d4d;
 }
-
 
 .main {
   background-color: #000;
@@ -59,14 +54,14 @@ img {
 }
 
 .outreachSlides {
- padding-right: 5%;
- padding-left: 6%;
-color: grey
+  padding-right: 5%;
+  padding-left: 6%;
+  color: grey;
 }
 
-.questionsImg{
+.questionsImg {
   width: 150px;
-  height:150px;
+  height: 150px;
   object-fit: cover;
   border-radius: 50%;
 }

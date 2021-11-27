@@ -2,13 +2,14 @@
   margin: 8%;
 }
 
-.hero-container,  .call-to-action-container {
+.hero-container,
+.call-to-action-container {
   margin: 3% 0;
 }
 
 .mission-container {
   text-align: center;
-  margin-top: 5%
+  margin-top: 5%;
 }
 
 .hero-container {
@@ -32,15 +33,15 @@
 
 .btn-primary {
   color: black;
-  background-color: #9CE2D3;
-  border-color: #9CE2D3;
+  background-color: #9ce2d3;
+  border-color: #9ce2d3;
 }
 
 .headerName {
-  font-size:300%;
+  font-size: 300%;
 }
 
-.sponsor-container{
+.sponsor-container {
   padding: 3%;
   padding-bottom: 0.5%;
   padding-top: 0px;

@@ -1,20 +1,19 @@
 h2 {
-color: black
+  color: black;
 }
 
-.containerPage{
+.containerPage {
   /* margin: 5%; */
   /* margin-top: 25px; */
   margin: 5%;
   margin-left: 12%;
-  margin-right: 12% 
+  margin-right: 12%;
 }
 
-.rowC{
-  display:flex; 
-  flex-direction:row;
+.rowC {
+  display: flex;
+  flex-direction: row;
   columns: 2 auto;
-
 }
 
 .fakeCard {
@@ -25,20 +24,16 @@ color: black
   float: left
 } */
 
-
 .sponsorStyle {
   margin-top: 0px;
   margin-bottom: 60px;
-  
-
 }
 
-.faculty{
-  margin-left:5%;
-  margin-right:5%
-
+.faculty {
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .extra BoardCard {
-  color: white
+  color: white;
 }
