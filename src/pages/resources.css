@@ -1,21 +1,19 @@
-
-.container{
-  margin: 5%
+.container {
+  margin: 5%;
 }
 
-.linkResource{
-
+.linkResource {
   padding-bottom: 6%;
 }
 
 .linkColor {
-  color: gray
+  color: gray;
 }
 
-.tab1{
+.tab1 {
   tab-size: 2;
 }
 
 Nav.Link {
-  color: red
+  color: red;
 }
