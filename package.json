@@ -32,10 +32,40 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "eslint .",
+    "format": "prettier --write \"**/*.+(js|jsx|json|css|md)\""
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "plugins": [
+      "react",
+      "prettier"
+    ],
+    "extends": [
+      "react-app",
+      "prettier"
+    ],
+    "rules": {
+      "no-console": "warn",
+      "import/first": "error"
+    }
+  },
+  "prettier": {
+    "printWidth": 85,
+    "arrowParens": "always",
+    "semi": false,
+    "tabWidth": 2,
+    "trailingComma": "es5",
+    "singleQuote": true
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint && npm run format"
+    }
+  },
+  "lint-staged": {
+    "*.+(js|jsx)": "eslint --fix",
+    "*.+(json|css|md)": "prettier --write"
   },
   "browserslist": {
     "production": [
@@ -51,6 +81,11 @@
     ]
   },
   "devDependencies": {
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.1.2",
+    "prettier": "^2.5.0",
     "superagent": "^6.1.0"
   }
 }

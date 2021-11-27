@@ -23,4 +23,7 @@ yarn-debug.log*
 yarn-error.log*
 
 # api keys
-.env      
+.env
+
+# WebStorm
+/.idea
