@@ -1,126 +1,88 @@
 import React from 'react';
 import Container from 'react-bootstrap/Container';
-import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
 import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import About from './About.js';
 import './pages.css';
+import ProgramInfoCard from "../components/ProgramInfoCard";
+import Col from "react-bootstrap/Col";
 
 let styles = {
   container: {
-    margin: "5%",
+    margin: "5rem",
   },
   row: {
-    margin: "",
-    display: "flex",
+    // display: "flex",
     justifyContent: "space-evenly"
-  },
-  col: {
-    width: "20%",
-    margin: "2.3% 0",
-    backgroundColor: "#9CE2D3",
-    padding: "3.5%",
-    paddingBottom: "6%",
-    marginRight: "5%",
-    borderRadius: ".5em",
   },
   link: {
     textDecoration: 'underline'
   }
 };
 
+// code to store JSX elements in arrays corresponding to their rows
+const perRow = 4
+
+// stores all of the program info to be displayed. If you want more info, simply add it to the each of the objects.
+const programInfo = [
+  {
+    url: '/membership',
+    heading: 'Active Membership'
+  },
+  {
+    url: '/discussions',
+    heading: 'Community Discussion'
+  },
+  {
+    url: '/lunch',
+    heading: 'Lunch Bunch'
+  },
+  {
+    url: '/mentorship',
+    heading: 'Mentorship'
+  },
+  {
+    url: '/prospective',
+    heading: 'Prospective Students'
+  },
+  {
+    url: '/outreach',
+    heading: 'Outreach'
+  },
+  {
+    url: '/campaigns',
+    heading: 'Campaigns'
+  },
+  {
+    url: '/events',
+    heading: 'Events'
+  },
+]
+
+// creates arrays in this array based on how many perRow there needs to be
+const rows = [...Array( Math.ceil(programInfo.length / perRow) )];
+
+// adds programInfo based on layout of the rows
+const programRows = rows.map( (row, i) =>
+  programInfo.slice(i * perRow, i * perRow + perRow)
+);
+
+// this returns 4 elements per row. If you want to change this so that it doesn't do that, use the map function on the
+// programInfo variable and print out the information in a component
+// below function adds components based on layout of the programRows
+const content = programRows.map((row, i) => {
+  return (
+    <Row style={styles.row} key={i}>
+      { row.map( ({url, heading}, j) => <Col><ProgramInfoCard key={j} url={url} heading={heading} /></Col> )}
+    </Row>
+  )
+});
+
 const Programs = () => {
   return (
+    <Container>
 
-    <div style={styles.container}>
-
-      <h1 style={{ fontWeight: 'bold' }}>Programs</h1>
-      {/* <div style={styles.row}>
-        <div style={styles.col}>
-          <Link to="/membership" style={styles.link} ><h2>Active Membership</h2>
-          </Link>
-        </div>
-        <div style={styles.col}>
-          <Link to="/discussions" style={styles.link}><h2>Community Discussion</h2>
-          </Link>
-        </div>
-        <div style={styles.col}>
-          <Link to="/lunch" style={styles.link}><h2>Lunch Bunch</h2>
-          </Link>
-        </div>
-        <div style={styles.col}>
-          <Link to="/mentorship" style={styles.link}><h2>Mentorship</h2>
-          </Link>
-        </div>
-      </div>
-      <div style={styles.row}>
-        <div style={styles.col}>
-          <Link to="/prospective" style={styles.link}><h2>Prospective Students</h2>
-          </Link>
-        </div>
-        <div style={styles.col}>
-          <Link to="/outreach" style={styles.link}><h2> Outreach</h2>
-          </Link>
-        </div>
-        <div style={styles.col}>
-          <Link to="/campaigns" style={styles.link}><h2>Campaigns</h2>
-          </Link>
-        </div><div style={styles.col}>
-          <Link to="/events" style={styles.link}><h2>Events</h2>
-          </Link>
-        </div>
-
-      </div>
- */}
-      <Container>
-        <Row style={{ paddingBottom: "2%" }}>
-
-
-          <Col style={styles.col}>
-            <Link to="/membership" style={styles.link} ><h3 className="text-center">Active Membership</h3>
-            </Link>
-
-          </Col>
-          <Col style={styles.col}>
-            <Link to="/discussions" style={styles.link}><h3 className="text-center">Community Discussion</h3>
-            </Link>
-          </Col>
-          <Col style={styles.col}>
-            <Link to="/lunch" style={styles.link}><h3 className="text-center">Lunch Bunch</h3>
-            </Link>
-
-          </Col>
-          <Col style={styles.col}>
-            <Link to="/mentorship" style={styles.link}><h3 className="text-center">Mentorship</h3>
-            </Link>
-          </Col>
-
-        </Row>
-        <Row style={{ paddingBottom: "1%" }}>
-          <Col style={styles.col}>
-            <Link to="/prospective" style={styles.link}><h3 className="text-center">Prospective Students</h3>
-            </Link>
-
-          </Col>
-          <Col style={styles.col}>
-            <Link to="/outreach" style={styles.link}><h3 className="text-center"> Outreach</h3>
-            </Link>
-          </Col>
-          <Col style={styles.col}>
-            <Link to="/campaigns" style={styles.link}><h3 className="text-center">Campaigns</h3>
-            </Link>
-
-          </Col>
-          <Col style={styles.col}>
-            <Link to="/events" style={styles.link}><h3 className="text-center">Events</h3>
-            </Link>
-
-          </Col>
-        </Row>
-      </Container>
-
-    </div >
-
+    <h1 style={{ fontWeight: 'bold' }}>Programs</h1>
+        {content}
+    </Container >
   );
 }
 
