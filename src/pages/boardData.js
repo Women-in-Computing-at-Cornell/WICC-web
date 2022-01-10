@@ -1,16 +1,6 @@
 export const boardData = [
   //PRESIDENTS
   {
-    "name": "Jonna Chen",
-    "title": "Co-President",
-    "team": "Presidents",
-    "bio": "For some, I'm considered a late bloomer as a Computer Science major. I'd always been obsessed with my laptop, playing around with Scratch or iMovie, but I didn't begin formally coding until my senior year of high school in my AP Computer Science class. In that classroom, I was already able to create the very programs that run on my laptop – I was hooked. In coming to Cornell, I participated in WICC's Lunch Bunch Program and heard from the inspiring women teaching here. I learned from them how they came out of university and the workplace not just unscathed, but also stronger. It is stories like these and my love for creating through coding that inspire me to turn my efforts towards aiding other underrepresented minorities in STEM fields who feel the same way. Through my directorship in WICC, I hope that I can not just bring our community closer together, but also extend a hand towards other allies to carry on WICC's mission.",
-    "netId": "jc2627",
-    "year": 2023,
-    "major": "Computer Science"
-
-  },
-  {
     "name": "Tise Alatise",
     "title": "Co-President",
     "team": "Presidents",
@@ -18,6 +8,13 @@ export const boardData = [
     "netId": "ofa2",
     "year": 2023,
     "major": "Computer Science"
+  },
+  {
+    "name": "Ally Younkman",
+    "title": "Co-President",
+    "team": "Presidents",
+    "bio": "I've been interested in CS for basically as long as I can remember. I have taken every opportunity to learn more about CS since middle school and from those experiences, I have faced a wide array of problems from the male-dominated field. When I was looking at colleges I was really drawn to places that supported women in tech and I fell in love with Cornell for this reason. I remember looking up WICC before coming to Cornell and knew it was something I wanted to be a part of. After being a part of WICC Mentorship, Lunch Bunch, CTIC, Photo & Film Committee, and EBoard I can say with confidence that WICC has been one of the best decisions I've made in college and the best decision I have made to further my passion for CS and grow my confidence in my abilities and in a professional setting. I have met so many inspiring sweet women in WICC and I love helping connect other individuals to this amazing community.",
+    "netId": "ary25"
   },
 
   //OPERATIONS
@@ -149,7 +146,7 @@ export const boardData = [
     "name": "Avani Aggrwal",
     "title": "Technical Director",
     "team": "Brand",
-    "bio": "",
+    "bio": "Growing up in the Bay Area with software engineers for parents, I was exposed to computer science from an early age. However, I had never really thought about computer science as a career until I joined my high school’s Girls Who Code club. This really opened my eyes to all the possibilities that CS offered and inspired me to pursue computer science as my major in college. Joining WICC gave me the opportunity to meet other women who had the same passions and interests as me and showed me how diverse STEM can be. Now, as part of WICC board, I am able to work to further WICC's mission and help other women join this supportive community",
     "netId": "aa974"
   },
   {
@@ -284,6 +281,16 @@ export const boardData = [
 
 
   //ADVISORS
+  {
+    "name": "Jonna Chen",
+    "title": "Advisor, Co-President",
+    "team": "Advisors",
+    "bio": "For some, I'm considered a late bloomer as a Computer Science major. I'd always been obsessed with my laptop, playing around with Scratch or iMovie, but I didn't begin formally coding until my senior year of high school in my AP Computer Science class. In that classroom, I was already able to create the very programs that run on my laptop – I was hooked. In coming to Cornell, I participated in WICC's Lunch Bunch Program and heard from the inspiring women teaching here. I learned from them how they came out of university and the workplace not just unscathed, but also stronger. It is stories like these and my love for creating through coding that inspire me to turn my efforts towards aiding other underrepresented minorities in STEM fields who feel the same way. Through my directorship in WICC, I hope that I can not just bring our community closer together, but also extend a hand towards other allies to carry on WICC's mission.",
+    "netId": "jc2627",
+    "year": 2023,
+    "major": "Computer Science"
+
+  },
   {
     "name": "Olivia Zhu",
     "title": "Advisor, Co-President",
