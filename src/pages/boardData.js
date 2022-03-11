@@ -43,7 +43,7 @@ export const boardData = [
     "name": "Ruike Liang",
     "title": "Membership Relations Co-Director(Alumni)",
     "team": "Operations",
-    "bio": "",
+    "bio": "WICC makes me feel empowered. Computing is never something I thought I could do because I didn’t have easy access to it in high school so I came into college scared and nervous for CS classes. I frankly didn’t have many female friends in the community making me feel fairly alone. During my freshman year I found a community in WICC of people who not only understood what I was going through but were so willing to and proactive in helping. ",
     "netId": "rl582"
   },
   {
@@ -87,7 +87,7 @@ export const boardData = [
     "name": "Becky Han",
     "title": "Corporate Relations Co-Director",
     "team": "Corporate",
-    "bio": "",
+    "bio": "Hi! I'm Becky, a junior studying Information Science with an Asian American Studies minor. I joined WICC because I wanted to surround myself with inspiring, driven, and talented women who were passionate about our core mission to uplift anybody and everybody to succeed in tech! In my free time, I like to watch movies, make playlists on Spotify, and visit new cafes around town 😊",
     "netId": "bh449"
   },
 
@@ -104,7 +104,7 @@ export const boardData = [
     "name": "Tanvi Namjoshi",
     "title": "Faculty Relations Co-Director",
     "team": "Academic",
-    "bio": "Growing up, I was always interested in Computer Science, but often was one of the only girls in the room in tech clubs and classes. But, community-based programs (like the WICC events I joined freshman year), that make women in tech visible to others, have greatly affected how welcome and heard I have felt in CIS related spaces. Coming into Cornell, I knew I wanted to help foster an inclusive and diverse community to do the same! I hope to use my platform as WICC Social Co-Director to help bring our community closer, create spaces for important conversations, and help others become better allies! Here on campus I am also a part of the Milstein Program in Technology & Humanity, the Cornell Tech Policy Lab, and The Steminist Movement E-board. In my free time I love baking, hiking, and taking care of my plants!",
+    "bio": "Growing up, I was always interested in Computer Science, but often was one of the only girls in the room in tech clubs and classes. But, community-based programs (like the WICC events I joined freshman year), that make women in tech visible to others, have greatly affected how welcome and heard I have felt in CIS related spaces. Coming into Cornell, I knew I wanted to help foster an inclusive and diverse community to do the same! I hope to use my platform as WICC Faculty Relations Co-Director to help bring our community closer, create spaces for important conversations with professors, and help others become better allies! Here on campus I am also a part of the Milstein Program in Technology & Humanity, the Cornell Tech Policy Lab, and Cornell Nazaqat. In my free time I love baking, hiking, and taking care of my plants!",
     "netId": "tkn24"
   },
  {
@@ -139,7 +139,7 @@ export const boardData = [
     "name": "Arianna Curillo",
     "title": "Underclassmen Outreach Co-Director",
     "team": "Academic",
-    "bio": "",
+    "bio": "I’m Arianna and I’m one of the Underclassmen Outreach directors for WICC. Other roles I have on-campus include Co-President of Underrepresented Minorities in Computing, a Residential Advisor for first-year students, and a CS 3110 Consultant. WICC has been an incredible part of my Cornell experience and has allowed me to meet an incredible community of people who I can get work done with and also have fun. WICC has given me an important support system as a student at Cornell to pursue a career in tech and is why I am dedicated to give back to the organization in any way I can!",
     "netId": "asc327"
   },
 
@@ -155,14 +155,14 @@ export const boardData = [
     "name": "Ariani Gomez",
     "title": "Technical Director",
     "team": "Brand",
-    "bio": "",
+    "bio": "I am a current freshman intending to major in CS in the College of Art and Sciences. I love CS because there is not just one right way to do things. I can be creative and technical at the same time. WICC has given me a space where I feel comfortable trying new things and making mistakes. All the members are so helpful and kind, it really feels like a community. Besides WICC, I am also a member of Cornell Filipino Association, work on campus, and tutor Python. In my free time I enjoy watching rom coms, cooking, reading, and crocheting!",
     "netId": "amg374"
   },
   {
     "name": "Amida Akpan",
     "title": "Publicity Director",
     "team": "Brand",
-    "bio": "",
+    "bio": "Though computing you can create almost anything. There are so many artistic aspects of computing and there’s always something new to to learn!",
     "netId": "aua6"
   },
   {
@@ -243,7 +243,7 @@ export const boardData = [
     "name": "Jasmine Samadi",
     "title": "Social Co-Director",
     "team": "Community",
-    "bio": "",
+    "bio": "WICC creates a sense of family and guidance. I'm truly grateful that I found the amazing people at WICC to help discover the depths of computing. ",
     "netId": "jns222"
   },
   {
@@ -271,7 +271,7 @@ export const boardData = [
     "name": "Rachel Tong",
     "title": "Mentorship Co-Director",
     "team": "Community",
-    "bio": "",
+    "bio": "WICC introduced me to a close community of people who are not only passionate about computing but also extremely supportive and eager to help. I was first introduced to WICC freshman fall through the Lunch Bunch and Mentorship Program. Amidst the chaotic transition into college, those programs truly helped me ease into college and meet amazing upperclassmen and professors. I'm super excited to get more involved and meet more people!",
     "netId": "rt387"
   },
 
