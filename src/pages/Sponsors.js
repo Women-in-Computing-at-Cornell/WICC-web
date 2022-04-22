@@ -25,20 +25,23 @@ export default class Sponsors extends Component {
     const gold = []
     const silver = []
     const platinum = []
+    const graceHopper = []
 
     const displayTemp = []
 
     sponsorData.forEach((d, i) => {
+      if (d.level === "Platinum") {
+        platinum.push(d)
+      }
       if (d.level === "Gold") {
         gold.push(d)
+      }
+      if (d.level === "Grace Hopper") {
+        graceHopper.push(d)
       }
       if (d.level === "Silver") {
         silver.push(d)
       }
-      if (d.level === "Platinum") {
-        platinum.push(d)
-      }
-
     })
 
     console.log('check')
@@ -91,9 +94,14 @@ export default class Sponsors extends Component {
             return <a href={value.link}><Image src={(sponsorHeadshots[value.sponsor + '.jpg'])} width='15%' height='2%' style={{ marginBottom: '2%', paddingRight: '20px' }} /></a>
           })
         }
-
-
-      </div >
+        
+        <h4 style={{ marginBottom: '3%', fontWeight: 'bold' }}>Grace Hopper</h4>
+        {
+          graceHopper.map((value) => {
+            return <a href={value.link}><Image src={(sponsorHeadshots[value.sponsor + '.jpg'])} width='15%' height='2%' style={{ marginBottom: '2%', paddingRight: '20px' }} /></a>
+          })
+        }
+        </div>
     );
   }
 }
