@@ -54,16 +54,28 @@ export default class Discussions extends Component {
             </Col>
           </Row>
         </Container>
-        <h4>Last Community Discussion: </h4>
+        <h4>Last Community Discussions: </h4>
         <br />
-        <h5>March 2021</h5>
+        <h5>Febuary 2022</h5>
+        <h6>This was our G-Body #1 where kicked off the Spring semester. We met WICC faculty advisors and reflected on our Fall semester to get ready for the new semester. We learned about setting and completing goals through intention framing and journaling.</h6>
+        <br />
         <ReactGoogleSlides
           width={640}
           height={480}
-          slidesLink="https://docs.google.com/presentation/d/1Ir1ZjeHnfYbw8pXkKqRfAbz9wNrHA8E6QqTnWgDt6DY/edit?usp=sharing"
+          slidesLink="https://docs.google.com/presentation/d/1cHwUJEC7DM9ekD_KSajxkrtxeZPzD_jqQ4-uymKIZro/edit?usp=sharing"
           showControls
         />
-
+        <br />
+        <h5>March 2022</h5>
+        <h6>This was our G-Body #2 where we had discussions about taking care of ourselves and having empathy for others. At the end, we created a WICC wall of notes and got to know each other. </h6>
+        <br />
+        <ReactGoogleSlides
+          width={640}
+          height={480}
+          slidesLink="https://docs.google.com/presentation/d/1SNCHd_FxDbFiqw7yx5JubO15NsFeFsFfrTXV79L2Ap8/edit#slide=id.gfd5af8f16f_0_15"
+          showControls
+        />
+        <br />
         <center>
           <h5 style={{ paddingTop: '5%' }}>Questions?</h5>
           <Container style={{ paddingRight: "10%" }}>
