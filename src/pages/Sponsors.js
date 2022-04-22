@@ -31,7 +31,6 @@ export default class Sponsors extends Component {
     sponsorData.forEach((d, i) => {
       if (d.level === "Gold") {
         gold.push(d)
-
       }
       if (d.level === "Silver") {
         silver.push(d)
