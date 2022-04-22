@@ -29,7 +29,7 @@ export const boardData = [
     "name": "Nala Peng",
     "title": "Co-Treasurer",
     "team": "Operations",
-    "bio": "",
+    "bio": "In an ideal world I will be growing mushrooms.",
     "netId": "kp426"
   },
    {
@@ -57,7 +57,7 @@ export const boardData = [
     "name": "Tanisha Kore",
     "title": "Allyship Co-Director",
     "team": "Operations",
-    "bio": "",
+    "bio": "I'm super passionate about CS and creating technology that actively better society!",
     "netId": "tk494"
   },
 
@@ -264,7 +264,7 @@ export const boardData = [
     "name": "Kassie Wang",
     "title": "Mentorship Co-Director",
     "team": "Community",
-    "bio": "",
+    "bio": "Hi, I'm Kassie :) I've always been interested in computing for its various applications and pOwEr To ChAngE tHe WoRlD (cliche I know 🙄). But, I remember being feeling extremely lost as a freshman in the overwhelming Cornell community with such an extensive student body, especially studying CS, but fortunately, I have been able to find an empowering community and build meaningful connections through WICC's Lunch Bunch, volunteering with the Girls who Code program, and being both a mentee and mentor through the mentorship program. This then actually sparked me to join WICC E-Board as mentorship co-director to facilitate even more of these meaningful connections. Outside of the tech world though, I love to eat/cook/bake with friends and dance (I'm a part of BreakFree on campus 👐). Feel free to reach out any time for anything, I'm always open to making new friends and I hope to see you at some WICC events soon💙",
     "netId": "klw242"
   },
   {
