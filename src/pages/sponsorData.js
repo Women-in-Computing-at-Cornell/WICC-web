@@ -50,7 +50,7 @@ export const sponsorData = [
     "link": "https://www.mlp.com/"
   },
   {
-    "sponsor": "Sambanova",
+    "sponsor": "SambaNova",
     "level": "Gold",
     "link": "https://sambanova.ai/"
 },
