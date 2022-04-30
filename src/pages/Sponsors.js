@@ -88,13 +88,15 @@ export default class Sponsors extends Component {
           })
           }
         </div>
-        <h4 style={{ marginBottom: '3%', fontWeight: 'bold' }}>Silver</h4>
-        {
-          silver.map((value) => {
-            return <a href={value.link}><Image src={(sponsorHeadshots[value.sponsor + '.jpg'])} width='15%' height='2%' style={{ marginBottom: '2%', paddingRight: '20px' }} /></a>
-          })
-        }
-        
+        <div style={{ marginBottom: '8%' }}>
+          <h4 style={{ marginBottom: '3%', fontWeight: 'bold' }}>Silver</h4>
+          {
+            silver.map((value) => {
+              return <a href={value.link}><Image src={(sponsorHeadshots[value.sponsor + '.jpg'])} width='15%' height='2%' style={{ marginBottom: '2%', paddingRight: '20px' }} /></a>
+            })
+          }
+        </div>
+
         <h4 style={{ marginBottom: '3%', fontWeight: 'bold' }}>Grace Hopper</h4>
         {
           graceHopper.map((value) => {
