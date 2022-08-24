@@ -1,20 +1,19 @@
 export const boardData = [
   //PRESIDENTS
-  {
-    "name": "Tise Alatise",
-    "title": "Co-President",
-    "team": "Presidents",
-    "bio": "Hello, just call me Tise \"TEE-SHAY.\" I'm a huge proponent of mentorship and constantly search for people to learn from or grow with 🌿. My downtime is filled with reading comics, watching animated works, dancing to k-pop, and grabbing boba with friends. Since March 2020, the COVID-19 pandemic challenged how I seek self-improvement. As an engineering student, I seek spaces where I can both succeed and fail but always have the chance to learn. ☕Don't be Shy: Say Hi! I'm always open to a virtual coffee chat because I love meeting new people. In fact, thanks to a WICC boba chat with my mentor Femi, I discovered my love for product design. WICC isn't an org; it's my family. I cannot describe its impact on my life, and I know you'll feel the same way soon!",
-    "netId": "ofa2",
-    "year": 2023,
-    "major": "Computer Science"
-  },
+
   {
     "name": "Ally Younkman",
     "title": "Co-President",
     "team": "Presidents",
     "bio": "I've been interested in CS for basically as long as I can remember. I have taken every opportunity to learn more about CS since middle school and from those experiences, I have faced a wide array of problems from the male-dominated field. When I was looking at colleges I was really drawn to places that supported women in tech and I fell in love with Cornell for this reason. I remember looking up WICC before coming to Cornell and knew it was something I wanted to be a part of. After being a part of WICC Mentorship, Lunch Bunch, CTIC, Photo & Film Committee, and EBoard I can say with confidence that WICC has been one of the best decisions I've made in college and the best decision I have made to further my passion for CS and grow my confidence in my abilities and in a professional setting. I have met so many inspiring sweet women in WICC and I love helping connect other individuals to this amazing community.",
     "netId": "ary25"
+  },
+  {
+    "name": "Tina Ou",
+    "title": "Co-President",
+    "team": "Presidents",
+    "bio": "I came into Cornell thinking I would major in either sociology or psychology. I was really interested in learning about humans and how humans interacted with each other. When the pandemic hit in 2020, I wrote my first line of code. It wasn't fascinating to be honest. I wasn't amazed at the \"Hello World\" on my terminal but what I was amazed by the field of computer science and its applications. When I was still exploring majors, WICC allowed me to become part of a welcoming and determined community which allowed me to meet other passionate individuals while doing the semester at home. As a result, I hope that I can help others enjoy and create meaningful experiences and opportunities that WICC has to offer. ",
+    "netId": "to98"
   },
 
   //OPERATIONS
@@ -225,13 +224,6 @@ export const boardData = [
 
 
   //COMMUNITY
-  {
-    "name": "Tina Ou",
-    "title": "Vice President, Community",
-    "team": "Community",
-    "bio": "I came into Cornell thinking I would major in either sociology or psychology. I was really interested in learning about humans and how humans interacted with each other. When the pandemic hit in 2020, I wrote my first line of code. It wasn't fascinating to be honest. I wasn't amazed at the \"Hello World\" on my terminal but what I was amazed by the field of computer science and its applications. When I was still exploring majors, WICC allowed me to become part of a welcoming and determined community which allowed me to meet other passionate individuals while doing the semester at home. As a result, I hope that I can help others enjoy and create meaningful experiences and opportunities that WICC has to offer. ",
-    "netId": "to98"
-  },
   {
     "name": "Sally Han",
     "title": "Social Co-Director",
@@ -580,6 +572,15 @@ export const boardData = [
       "Last summer, Angela interned at an Electrical Engineering consulting startup called Second Order Effects, where she was able to work on designing and testing space systems. She got the opportunity to interface with company clients and also design a software and hardware product from scratch to release.  \n " +
       "This upcoming school year, Angela is looking forward to meeting new people, having fun with her friends, taking interesting courses, and exploring her interests further. ",
     "netId": "al2473"
+},
+  {
+    "name": "Tise Alatise",
+    "title": "Advisor, President",
+    "team": "Advisor",
+    "bio": "Hello, just call me Tise \"TEE-SHAY.\" I'm a huge proponent of mentorship and constantly search for people to learn from or grow with 🌿. My downtime is filled with reading comics, watching animated works, dancing to k-pop, and grabbing boba with friends. Since March 2020, the COVID-19 pandemic challenged how I seek self-improvement. As an engineering student, I seek spaces where I can both succeed and fail but always have the chance to learn. ☕Don't be Shy: Say Hi! I'm always open to a virtual coffee chat because I love meeting new people. In fact, thanks to a WICC boba chat with my mentor Femi, I discovered my love for product design. WICC isn't an org; it's my family. I cannot describe its impact on my life, and I know you'll feel the same way soon!",
+    "netId": "ofa2",
+    "year": 2023,
+    "major": "Computer Science"
   }
 
 ];
