@@ -5,39 +5,14 @@ export const sponsorData = [
     "link": "https://www.bloomberg.com/company/"
   },
   {
-    "sponsor": "D. E. Shaw",
-    "level": "Gold",
-    "link": 'https://www.deshaw.com/'
-  },
-  {
-    "sponsor": "DRW",
-    "level": "Gold",
-    "link": "https://drw.com/"
-  },
-  {
     "sponsor": "Jane Street",
     "level": "Platinum",
     "link": "https://www.janestreet.com/"
   },
   {
-    "sponsor": "Google",
+    "sponsor": "Stripe",
     "level": "Silver",
-    "link": "https://about.google/"
-  },
-  {
-    "sponsor": "Attentive",
-    "level": "Silver",
-    "link": "https://www.attentivemobile.com/careers/"
-  },
-  {
-    "sponsor": "Agora",
-    "level": "Silver",
-    "link": "https://www.agora.io/en/careers/"
-  },
-  {
-    "sponsor": "Sandia National Labs",
-    "level": "Gold",
-    "link": "https://www.sandia.gov/"
+    "link": "https://stripe.com/"
   },
   {
     "sponsor": "Uber",
@@ -51,18 +26,8 @@ export const sponsorData = [
   },
   {
     "sponsor": "Cruise",
-    "level": "Gold",
+    "level": "Platinum",
     "link": 'https://getcruise.com/'
-  },
-  {
-    "sponsor": "Goldman Sachs",
-    "level": "Gold",
-    "link": 'http://goldmansachs.com/'
-  },
-  {
-    "sponsor": "Human Capital",
-    "level": "Gold",
-    "link": "https://human.capital/"
   },
   {
     "sponsor": "MathWorks",
@@ -70,16 +35,28 @@ export const sponsorData = [
     "link": "https://www.mathworks.com/"
   },
   {
-    "sponsor": "Facebook",
-    "level": "Platinum",
-    "link": "https://www.facebook.com/careers/"
+    "sponsor": "Zoom",
+    "level": "Gold",
+    "link": "https://zoom.us/"
   },
   {
-    "sponsor": "WayFair",
-    "level": "Silver",
-    "link": "https://www.wayfair.com/careers"
+    "sponsor": "Capital One",
+    "level": "Gold",
+    "link": "https://www.capitalone.com/"
+  },
+  {
+    "sponsor": "Millennium Management",
+    "level": "Platinum",
+    "link": "https://www.mlp.com/"
+  },
+  {
+    "sponsor": "SambaNova",
+    "level": "Gold",
+    "link": "https://sambanova.ai/"
+},
+  {
+    "sponsor": "Yext",
+    "level": "Grace Hopper",
+    "link": "https://www.yext.com/?keyword=yext&utm_source=google&utm_medium=paid_search&utm_campaign=PM_GSearch_ACQ_Branded_04.2022&utm_adgroup=&gclid=Cj0KCQjwpImTBhCmARIsAKr58cw43EPGQJEhvvtMIEiu2VmH9vi1j8QsG9TGmvpaR1WS3gCoRxzWmT4aAsY6EALw_wcB"
   }
-
-
-
 ]
