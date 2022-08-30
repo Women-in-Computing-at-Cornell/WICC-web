@@ -67,7 +67,7 @@ export const boardData = [
     "name": "Jacqueline Chin",
     "title": "Corporate Relations Co-Director",
     "team": "Corporate",
-    "bio": "",
+    "bio": "I've always been a STEM girl, but being part of WICC adds a very personal and humanistic element to what seems very technical. Although I still have no idea what academic path I'll take, I'm quite glad and grateful to know that WICC is a welcoming and reliable support system. In my free time, I enjoy shooting hoops, the great outdoors, good music, pranks, and exploration.",
     "netId": "jc2745"
   },
   {
@@ -149,7 +149,7 @@ export const boardData = [
     "name": "Gaby Castro",
     "title": "Publicity Director",
     "team": "Brand",
-    "bio": "",
+    "bio": "I'm a current sophomore majoring in Information Science in CALS. I've been interested in so many aspects of technology since I was little. However, I didn't fully realize that I truly wanted to study it in college until recently. I came to Cornell as a completely different major (PAM). After my first semester, I decided that I wanted to explore the possibility of majoring in Computer Science or InfoSci, which were majors that I always thought were so cool but didn't think I would be able to succeed in for some reason. During my second semester, I took CS 1110 + an INFO class and I knew that I wanted to become an InfoSci major. I knew because I was actually interested in learning the material from both courses and taking classes like those just felt right to me. After coming to this realization, I applied to internally transfer and also decided that I wanted to become a part of WICC so that I could be surrounded by women that have the same passion for computing. Prior to college, I didn't have much experience with computing so I'm super grateful that I was able to become a part of WICC. WICC really is for anyone and everyone, no matter what major you're in or how much experience you have--which is what I love about it. It's only my first semester in WICC but I've already learned so much and I know that WICC is going to provide me with so many resources that I'm also so grateful to be able to help share with every WICC member as publicity director. One of the goals that I have is to make first-generation students feel more comfortable and confident about trying to pursue a career in tech. As a first-gen student myself, I know that having a support system and others encouraging you to achieve your goals is one of the best things you can have.",
     "netId": "gc422"
   },
   {
@@ -180,7 +180,7 @@ export const boardData = [
     "name": "Heysil Baez",
     "title": "Vice President, Outreach",
     "team": "Outreach",
-    "bio": "My passion for computer science started growing once I participated in the Girls Who Code Summer Immersion Program the summer before my junior year of high school. I really enjoy coding and challenging myself to then see it come to life right in front of my eyes. Knowing that I can change the world with code is one of the best feelings to me because I know that I can make a difference doing something I genuinely have a passion for. I'm involved with WICC because I know they recognize these passions and want to help me break through the glass ceiling and encourage other women to do the same. By being an Outreach co-Director, I am also able to give back to the Girls Who Code community, which exposed me to my passion for the first time.",
+    "bio": "I chose WICC because being a Latina woman in computing requires a support system that is not only there to uplift you when the journey gets tough but also one that guides you in the right direction based on your goals and that's exactly what WICC has provided me with. I enjoy inspiring the younger generation of Women* to come forward and tackle the tech industry so we work towards closing the wage gap and have a better gender represented field.",
     "netId": "hb365"
   },
   {
@@ -227,7 +227,7 @@ export const boardData = [
     "name": "Tiffany Lee",
     "title": "Social Co-Director",
     "team": "Community",
-    "bio": "",
+    "bio": "I love WICC because it's a community of people who may not all necessarily be computer science majors but all strive to support each other to succeed as women in the tech field. Outside of WICC and school, I enjoy watching my favorite Kdramas and TV shows, discovering new music and curating playlists, baking, and building legos!",
     "netId": "tl559"
   },
   {
