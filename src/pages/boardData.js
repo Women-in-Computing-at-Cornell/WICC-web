@@ -52,7 +52,7 @@ export const boardData = [
   {
     "name": "Jasmine Samadi",
     "title": "Corporate Relations Co-Director",
-    "team": "Corportate",
+    "team": "Corporate",
     "bio": "The transition from high school to Cornell CIS was truly a rollercoaster. I knew that I wanted to do something with computer science but was unsure about my direction. After going to WICC events, like the underclassman pre-enroll dinner, I found the guidance and support that I was missing. I am truly grateful for the family and bonds that WICC creates. WICC has helped me find my path in CS along with some of my closest friends.",
     "netId": "jns222"
   },
