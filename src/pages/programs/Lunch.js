@@ -5,14 +5,10 @@ import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom';
 import { boardData } from '../boardData';
-import lunchbunchgroup from "../../images/programs-pictures/lunchbunchgroup.jpg";
+import lunchbunch1 from "../../images/programs-pictures/lunchbunch/lunchbunch1.jpg";
+import lunchbunch2 from "../../images/programs-pictures/lunchbunch/lunchbunch2.jpg";
+import lunchbunch3 from "../../images/programs-pictures/lunchbunch/lunchbunch3.jpg";
 import QuestionsCard from "./QuestionsCard.js";
-
-
-
-
-
-
 import Image from 'react-bootstrap/Image'
 
 import medal from "../../images/medal.jpg";
@@ -44,7 +40,7 @@ export default class Lunch extends Component {
             <Col xs lg="6" style={{ paddingRight: "5%", paddingLeft: "0%" }}>
               <p style={{ paddingRight: '5%', paddingTop: '2%' }}>WICC’s weekly Lunch Bunch program is an exceptional opportunity for underclassmen women and minorities to make new friends and network within the computing community while learning from CIS professors and WICC alumni in a casual, conversational setting. Over free catered lunch, members talk about various disciplines in technology with professors, including David Gries, Jon Kleinberg, Eva Tardos, and Walker White.</p>
               <br />
-              <h4>Times</h4>
+              <h4 style={{ paddingTop: "5%" }} >Times</h4>
 
               <div class='sub'>
                 <p>Mondays, 11:15AM-12:05PM EST</p>
@@ -53,17 +49,17 @@ export default class Lunch extends Component {
 
               </div>
 
+              <h5 style={{ paddingTop: '25%' }}>Applications are closed for this semester.</h5>
+
 
             </Col>
             <Col >
               <center>
-                <Image src={lunchbunchgroup} style={{ width: "80%", height: 'auto', paddingBottom: "7%" }}></Image>
-
-                <h5>Applications are closed for this semester.</h5>
+                <Image src={lunchbunch2} style={{ width: "70%", height: 'auto', paddingBottom: "2%" }}></Image>
+                <Image src={lunchbunch3} style={{ width: "70%", height: 'auto', paddingBottom: "0%" }}></Image>
                 {/* <h5>Applications now open!</h5>
                 <p class='sub'>Due Wednesday, Feb. 27th 11:59PM</p>
                 <Button href='https://forms.gle/vZeTVhGveoqZ8AWs9'>Apply</Button> */}
-
               </center>
             </Col>
           </Row>
@@ -79,9 +75,9 @@ export default class Lunch extends Component {
 
             <Col style={{ paddingRight: "5%", paddingLeft: "0%" }}>
               <p >
-                "I learned about the different fields of CS and how they're used, which I previously had many misconceptions about. Lunch Bunch truly let me cement my decsision to major in CS, as through it I got an idea of the potential in the field.
+                "The program was a unique and enriching opportunity to connect with faculty. I’ve learned a great deal about different journeys in tech and feel more inspired to forge my own path."
               </p>
-              <p class='sub'>- Karen Zhang '21</p>
+              <p class='sub'>~ Candice ’22</p>
 
             </Col>
             <div class='vertLine'>
@@ -89,9 +85,9 @@ export default class Lunch extends Component {
             </div>
             <Col style={{ paddingRight: "5%", paddingLeft: "0%", }}>
               <p >
-                “It's much less intimidating talking to them at Lunch Bunch compared to going up to them after a big lecture class. Not only do you learn about their field, but you also get to know more about them on a personal level such as their personality and interests outside of the classroom.”
+                "I loved Lunch Bunch! I found a community of hardworking and inspiring women, and got to learn about the journey of many successful professors and the cool projects that they’re working on."
               </p>
-              <p class='sub'>- Aparna Calambur '21</p>
+              <p class='sub'>~ Emory ’24</p>
             </Col>
             <div class='vertLine'>
 
@@ -99,9 +95,9 @@ export default class Lunch extends Component {
 
             <Col style={{ paddingRight: "5%", paddingLeft: "0%", }}>
               <p >
-                “Lunch bunch was such a great experience. I ate great food and met great people, and it was awesome to meet with professors in a closer setting!”
+                "Lunch Bunch was an incredible opportunity for me to directly hear from professors in Cornell Computing, and take away valuable lessons from their varied experiences, journeys and advice!"
               </p>
-              <p class='sub'>- Rachel Shim '20</p>
+              <p class='sub'>~ Shreya ’24</p>
             </Col>
           </Row>
         </Container>

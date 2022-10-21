@@ -1,4 +1,6 @@
 export const sponsorData = [
+
+  //Platinum Sponspors
   {
     "sponsor": "Bloomberg",
     "level": "Gold",

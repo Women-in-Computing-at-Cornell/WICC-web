@@ -41,7 +41,20 @@ export default class Mentorship extends Component {
           <Row style={{ paddingBottom: "1%" }}>
             <Col xs lg="6" style={{ paddingRight: "5%", paddingLeft: "0%" }}>
               <p style={{ paddingRight: '5%', paddingTop: '2%' }}>Our mentorship program strives to encourage and support students who are pursuing studies or future employment in computing by connecting them with more experienced upperclassmen. The role of the mentor is to empower their mentees and enhance their interests in computing. Mentors and mentees will be matched primarily based on academic and career interests.</p>
-
+              <Container>
+                <Row style={{ paddingTop: '2%'}}>
+                  <h3>Mentorship Information: </h3>
+                  <ul>
+                    <li>
+                      Mondays: 5:30-6:30
+                    </li>
+                    <li>
+                      Thursdays: 5:30-6:30
+                    </li>
+                  </ul>
+                </Row>
+              
+              </Container>
 
             </Col>
             <Col >
@@ -57,8 +70,8 @@ export default class Mentorship extends Component {
 
             <Col style={{ paddingRight: "5%" }}>
               <p >
-                As a mentor you are expected to hold conversations with your mentees monthly, help your mentees establish meaningful connections, give advice on course selection, or otherwise. Any motivated undergraduates, graduate students, and grads majoring in or working CS or related technical fields can sign-up as a mentor.              </p>
-              <Button href='https://forms.gle/vZeTVhGveoqZ8AWs9'>Sign Up</Button>
+                As a mentor you are expected to hold conversations with your mentees monthly, help your mentees establish meaningful connections, give advice on course selection, or otherwise. Any motivated undergraduates, graduate students, and grads majoring in or working CS or related technical fields can sign-up as a mentor.
+              </p>
 
             </Col>
             <Col style={{ paddingRight: "5%", paddingLeft: "0%", }}>
@@ -94,8 +107,6 @@ export default class Mentorship extends Component {
               <p >
                 Mentees are matched with experienced upperclassmen or alumni mentors in groups of 2 mentors and 3-5 other mentees.
               </p>
-              <Button href='https://forms.gle/vZeTVhGveoqZ8AWs9'>Sign Up</Button>
-
             </Col>
             <Col style={{ paddingRight: "5%", paddingLeft: "0%", }}>
               <h4>Requirements</h4>
