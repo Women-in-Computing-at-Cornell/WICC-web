@@ -4,6 +4,7 @@ import community from "../images/about-pictures/community.jpg";
 import outreach from "../images/about-pictures/outreach.jpg";
 import academic from "../images/about-pictures/academic.jpg";
 import brand from "../images/about-pictures/brand.jpg";
+import corporate from "../images/about-pictures/corporate.jpg";
 
 
 import Image from 'react-bootstrap/Image'
@@ -102,6 +103,21 @@ const About = () => {
             </Col>
             <Col >
               <Image src={brand} style={{ width: "60%", height: 'auto', paddingBottom: "7%" }}></Image>
+
+            </Col>
+          </Row>
+
+          <Row style={{ paddingBottom: "4%", paddingLeft: '2%' }}>
+            <Col style={{ paddingRight: "5%", paddingLeft: "0%", marginRight: '3%' }}>
+              <h5><span style={{ color: "#9CE2D3", fontWeight: "bold" }}> {">"} </span> &nbsp;&nbsp;Corporate</h5>
+              <p>WICC partners with many corporate sponsors to host engaging information sessions and other fun events to 
+                provide opportunities to learn about internship and full-time roles.</p>
+              <p style={{ fontSize: "90%" }}><span style={{ fontWeight: "bold" }}> Focus: </span> Information Sessions, Tech Talks, Networking</p>
+
+
+            </Col>
+            <Col >
+              <Image src={corporate} style={{ width: "60%", height: 'auto', paddingBottom: "7%" }}></Image>
 
             </Col>
           </Row>
