@@ -149,16 +149,16 @@ export default class Join extends Component {
             </center>
 
           </div>
-          <div style={styles.col}>
+          {/* <div style={styles.col}>
             <Link to="/prospective" style={styles.link}><h2>Prospective Students</h2>
             </Link>
             <p>Learn more about CIS at Cornell!</p>
-          </div>
-          <div style={styles.col}>
+          </div> */}
+          {/* <div style={styles.col}>
             <Link to="/mentorship" style={styles.link}><h2>Mentorship</h2>
             </Link>
             <p>Learn how to become a mentor or a mentee</p>
-          </div>
+          </div> */}
         </div>
 
         <Modal show={this.state.show} onHide={this.handleClose} size="lg" aria-labelledby="contained-modal-title-vcenter"

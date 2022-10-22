@@ -111,11 +111,17 @@ const Programs = () => {
             </Link>
 
           </Col>
-          <Col style={styles.col}>
+          {/* <Col style={styles.col}>
             <Link to="/events" style={styles.link}><h3 className="text-center">Events</h3>
             </Link>
 
+          </Col> */}
+          
+          <Col style={styles.col}>
+            <Link to="/campaigns" style={styles.link}><h3 className="text-center">Cracking Your Career</h3>
+            </Link>
           </Col>
+
         </Row>
       </Container>
 
