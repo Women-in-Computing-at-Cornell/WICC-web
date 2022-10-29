@@ -103,9 +103,9 @@ export default class Membership extends Component {
                       Photo & Video Committee</span> or <span style={{ fontWeight: "bold" }}>Corporate Committee</span>
                       </li>
                       <li>
-                        Attend <span style={{ fontWeight: "bold" }}>four events</span> of any type during the semester. (Note: Maximum 2 Corporate Events would be counted towards this total)
+                        Attend <span style={{ fontWeight: "bold" }}>four events</span> of any type during the semester 
                   </li>
-
+                  {/* (Note: Maximum 2 Corporate Events would be counted towards this total) */}
                     </ul>
                   </li>
 
@@ -136,7 +136,7 @@ export default class Membership extends Component {
         <ul class='sub'>
           <li>
 
-            Subscribe to our listserv here
+          Subscribe to our listserv <a href="https://docs.google.com/forms/d/e/1FAIpQLScySy1E1PPJWFl1JQchwgWPg-XNQuYL_oXzvOI2ogsZXHbh5A/viewform">here</a>
           </li>
           <li>
             Check our <Link to="/calendar">website

@@ -5,10 +5,9 @@ import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom';
 import { boardData } from '../boardData';
-import mentorship1 from "../../images/programs-pictures/mentorship1.jpg";
-import mentorship from "../../images/programs-pictures/mentorship.jpg";
-import mentorship2 from "../../images/programs-pictures/mentorship2.jpg";
-import mentorship3 from "../../images/programs-pictures/mentorship3.jpg";
+import mentorship1 from "../../images/programs-pictures/mentorship1.jpeg";
+import mentorship2 from "../../images/programs-pictures/mentorship2updated1.jpg";
+import mentorship3 from "../../images/programs-pictures/mentorship3.jpeg";
 import QuestionsCard from "./QuestionsCard.js";
 
 import Image from 'react-bootstrap/Image'
@@ -85,15 +84,6 @@ export default class Mentorship extends Component {
                   <span style={{ fontWeight: "bold" }}>Five meetings with your mentees:</span> mentorship groups will meet biweekly.
 
                 </li>
-                <li>
-                  <span style={{ fontWeight: "bold" }}>Pre-Enroll Dinner:</span> share advice about what classes to take, open to anyone in computing majors!
-
-                </li>
-                <li>
-                  <span style={{ fontWeight: "bold" }}>One general meeting</span>, which could include: outings with other mentor groups, WICC social events with both the mentors and mentees attending, or additional group meetings.
-
-                </li>
-
               </ul>
             </Col>
           </Row>

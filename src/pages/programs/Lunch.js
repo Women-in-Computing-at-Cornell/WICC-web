@@ -43,9 +43,9 @@ export default class Lunch extends Component {
               <h4 style={{ paddingTop: "5%" }} >Times</h4>
 
               <div class='sub'>
-                <p>Mondays, 11:15AM-12:05PM EST</p>
-                <p>Wednesdays, 10:10AM-11:00AM EST</p>
-                <p>Thursdays, 1:25PM-2:15PM EST</p>
+                <p>Mondays, 12:10PM-1:10PM EST</p>
+                <p>Tuesdays, 1:25PM-2:15PM EST</p>
+                <p>Fridays, 12:20PM-1:10PM EST</p>
 
               </div>
 
