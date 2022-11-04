@@ -20,7 +20,7 @@ import './programPages.css';
 
 export default class CrackingYourCareer extends Component {
   render() {
-    let directors = boardData.filter(record => record.title === "Faculty Relations Co-Director")
+    let directors = boardData.filter(record => record.title === "Career Development Co-Director")
 
 
     function importAll(r) {

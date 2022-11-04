@@ -115,6 +115,13 @@ export const boardData = [
     "netId": "mr828"
   },
   {
+    "name": "Diya Bansal",
+    "title": "Career Development Co-Director",
+    "team": "Academic",
+    "bio": "",
+    "netId": "db688"
+  },
+  {
     "name": "Reva Jariwala",
     "title": "Underclassmen Outreach Director",
     "team": "Academic",
