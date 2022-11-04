@@ -102,32 +102,32 @@ export const boardData = [
   },
   {
     "name": "Neha Malepati",
-    "title": "Career Development Co-Director",
+    "title": "Social Co-Director",
     "team": "Academic",
     "bio": "I love WICC because of the supportive community — it’s amazing to see how we all uplift one another! I love coding, reading, baking, and watching stand-up comedy!",
     "netId": "nm458"
   },
   {
-     "name": "Meera Ramesh",
-     "title": "Career Development Co-Director",
-     "team": "Academic",
-     "bio": "Growing up, I internalized a lot of negative stereotypes about what types of people were meant for a career in tech, and these preconceptions pushed me away from considering the field despite my interest in problem solving. I entered Cornell as a biomedical engineer, but after attending a couple WICC events, I found myself a community of women in technology that didn't fit the stereotypes I thought to be true. WICC truly empowered me to feel confident in my eventual decision to pursue computer science. By being a career development co-director, I hope to spread this same empowerment and inclusivity to those who've felt the same way I did coming into college.",
-     "netId": "mr828"
-   },
-   {
-     "name": "Reva Jariwala",
-     "title": "Underclassmen Outreach Director",
-     "team": "Academic",
-     "bio": "",
-     "netId": "raj97"
-   },
-   {
-      "name": "Mikayla Lin",
-      "title": "Underclassmen Outreach Director",
-      "team": "Academic",
-      "bio": "Hi, I’m Mikayla :) I didn’t realize you could click on people’s pictures to see bios until I was asked to write a bio. I know Cornell can be a scary and stressful place, so come vibe with me at WICC! We have cookies (sometimes). Feel free to reach out for a coffee chat anytime!",
-      "netId": "ml953"
-    },
+    "name": "Meera Ramesh",
+    "title": "Career Development Co-Director",
+    "team": "Academic",
+    "bio": "Growing up, I internalized a lot of negative stereotypes about what types of people were meant for a career in tech, and these preconceptions pushed me away from considering the field despite my interest in problem solving. I entered Cornell as a biomedical engineer, but after attending a couple WICC events, I found myself a community of women in technology that didn't fit the stereotypes I thought to be true. WICC truly empowered me to feel confident in my eventual decision to pursue computer science. By being a career development co-director, I hope to spread this same empowerment and inclusivity to those who've felt the same way I did coming into college.",
+    "netId": "mr828"
+  },
+  {
+    "name": "Reva Jariwala",
+    "title": "Underclassmen Outreach Director",
+    "team": "Academic",
+    "bio": "",
+    "netId": "raj97"
+  },
+  {
+    "name": "Mikayla Lin",
+    "title": "Underclassmen Outreach Director",
+    "team": "Academic",
+    "bio": "Hi, I’m Mikayla :) I didn’t realize you could click on people’s pictures to see bios until I was asked to write a bio. I know Cornell can be a scary and stressful place, so come vibe with me at WICC! We have cookies (sometimes). Feel free to reach out for a coffee chat anytime!",
+    "netId": "ml953"
+  },
 
 
   //BRAND
@@ -217,13 +217,6 @@ export const boardData = [
     "netId": "tkn24"
   },
   {
-    "name": "Amida Akpan",
-    "title": "Social Co-Director",
-    "team": "Community",
-    "bio": "Though computing you can create almost anything. There are so many artistic aspects of computing and there’s always something new to to learn!",
-    "netId": "aua6"
-  },
-  {
     "name": "Tiffany Lee",
     "title": "Social Co-Director",
     "team": "Community",
@@ -277,90 +270,91 @@ export const boardData = [
     "team": "Advisors",
     "bio": "Hello, just call me Tise \"TEE-SHAY.\" I'm a huge proponent of mentorship and constantly search for people to learn from or grow with 🌿. My downtime is filled with reading comics, watching animated works, dancing to k-pop, and grabbing boba with friends. Since March 2020, the COVID-19 pandemic challenged how I seek self-improvement. As an engineering student, I seek spaces where I can both succeed and fail but always have the chance to learn. ☕Don't be Shy: Say Hi! I'm always open to a virtual coffee chat because I love meeting new people. In fact, thanks to a WICC boba chat with my mentor Femi, I discovered my love for product design. WICC isn't an org; it's my family. I cannot describe its impact on my life, and I know you'll feel the same way soon!",
     "netId": "ofa2",
-    "year":"2023",
+    "year": "2023",
     "major": "Computer Science"
-},
-{
-  "name": "Kassie Wang",
-  "title": "Advisor, Mentorship",
-  "team": "Advisors",
-  "bio": "Hi, I'm Kassie :) I've always been interested in computing for its various applications and pOwEr To ChAngE tHe WoRlD (cliche I know 🙄). But, I remember being feeling extremely lost as a freshman in the overwhelming Cornell community with such an extensive student body, especially studying CS, but fortunately, I have been able to find an empowering community and build meaningful connections through WICC's Lunch Bunch, volunteering with the Girls who Code program, and being both a mentee and mentor through the mentorship program. This then actually sparked me to join WICC E-Board as mentorship co-director to facilitate even more of these meaningful connections. Outside of the tech world though, I love to eat/cook/bake with friends and dance (I'm a part of BreakFree on campus 👐). Feel free to reach out any time for anything, I'm always open to making new friends and I hope to see you at some WICC events soon💙",
-  "netId": "klw242"
-},
-{  "name": "Sally Han",
-  "title": "Advisor, Secretary/ Faculty Relations /Social",
-  "team": "Advisors",
-  "bio": "Coming to Cornell, I had absolutely no idea what I wanted to do with my life. I had the unique opportunity of attending a high school that immersed you in any field of your choosing. There were many advantages to this, yet when I realized my chosen path was no longer something I wanted I was restricted, and could not explore other fields; I solely gained insight from conversing with my peers. After hearing about my interests, my Cornell advisor recommended trying out CIS, and although I initially assumed it was beyond my capabilities, I decided to muster up my courage and accept it as an opportunity to challenge myself- and I am so glad that I did. I’ve only started this exploration recently, and there have already been many times where I feel discouraged, especially when comparing my scarce amount of experience with my peers. But WICC has been my constant cheerleader, making me feel included and like I belong in this new environment. Everyone is so supportive, and it constantly motivates me to be my best self. I am honored and so grateful to be a part of WICC board, and I hope to be the light that WICC is to me to other people, especially for those who are new to the CIS community :)",
-  "netId": "sh822"
-},
-{
-  "name": "Revati Athavale",
-  "title": "Advisor, Vice President, Brand",
-  "team": "Advisors",
-  "bio": "For the longest time, I had no idea what I wanted to do when I got older. All I knew was that I wanted to help people solve problems and make a positive impact on the world. After taking engineering and computer science classes during my junior and senior years of high school, I realized that I wanted to help people through computer science. Once at Cornell, however, I felt lost and overwhelmed - that is, until WICC helped me find my place within CIS. I was able to find close friends, a personal and professional support system, and an openly inclusive community through WICC. Now, as part of board, I’m excited to nurture that same community and environment for other CIS students.",
-  "netId": "rpa46"
-},
-{
-  "name": "Arianna Curillo",
-  "title": "Advisor, Treasurer / Underclassmen Outreach",
-  "team": "Advisors",
-  "bio": "I’m Arianna and I’m one of the Underclassmen Outreach directors for WICC. Other roles I have on-campus include Co-President of Underrepresented Minorities in Computing, a Residential Advisor for first-year students, and a CS 3110 Consultant. WICC has been an incredible part of my Cornell experience and has allowed me to meet an incredible community of people who I can get work done with and also have fun. WICC has given me an important support system as a student at Cornell to pursue a career in tech and is why I am dedicated to give back to the organization in any way I can!",
-  "netId": "asc327"
-},
-{
-  "name": "Cynthia Ma",
-  "title": "Advisor, Photography / Corporate Relations / Career Development / Underclassmen Outreach",
-  "team": "Advisors",
-  "bio": "Having grown up with parents who were engineers, it felt inevitable that I also entered STEM. I wound up in the Computer Science wondering how I would ever keep up with the seemingly smartest people I'd ever met. Part of what helped keep me sane is the incredible group of people I've had the pleasure to work with in WICC and also exploring other areas that were not necessarily STEM-focused, like photography. I'm so happy being a part of WICC that not only allows me to explore more areas in STEM but also use my love of photography to help support this wonderful group of people who are passionate about the same things I am.",
-  "netId": "cm745"
-},
-{
-  "name": "Talia Attar",
-  "title": "Advisor, Allyship",
-  "team": "Advisors",
-  "bio": "As a confused high school senior, I almost randomly decided to check the box for computer science major in my Cornell application. My first semester I followed through with this choice and took CS 1110, and it was in that class that I became captivated by CS. I quite accidentally fell into the CS major, and I am so happy I did. It was through my involvement that I found WICC, which has come to be such an incredible community of amazing, inspiring people here at Cornell. I am so thankful for the opportunity I have to partake in this community through my role as Allyship Co-Director. When I am not coding, you can likely find me drawing, reading, running, crocheting, or playing with my bunny. ",
-  "netId": "tda25"
-},
-{
-   "name": "Anna Nguyen",
-   "title": "Advisor, VP Community / Design / Faculty Relations / Social",
-   "team": "Advisors",
-   "bio": "In high school, I loved computer science because it reminded me of art: the power to create and impact. However, I struggled a lot to find my place in the tech community and felt extremely unprepared and lost in the sauce sometimes, especially considering the broad range of computer science. Coming into the WICC community made me realize that what I felt lost in, I should feel empowered in because of the opportunity to learn so much from both my classes and the admirable women in tech around me. I could finally envision myself growing within computer science. I am thankful to be a part of WICC and hope to not only continue learning from the people around me, but also to give my best back to others!",
-   "netId": "axn3"
-},
-{
-  "name": "Connie Liu",
-  "title": "Advisor, VP Brand / Career Dev",
-  "team": "Advisors",
-  "bio": "In high school I stumbled upon someone's design portfolio one day and learned about human-computer interaction and design in tech. From then on I realized I wanted a career where I could tinker and create technology that would help people. However, a tiny part of me felt like I couldn't handle it, especially since the people I knew in tech were mostly men. Coming into Cornell I was intimidated by the difficulty of the CIS curriculum and felt like I didn't have a place in it simply because I struggled. WICC helped me in so many ways by connecting me to mentors in fields I was interested in to meeting other inspiring women who I'm honored to call my friends. Most of all WICC has made me feel like I belong in CIS. As part of board, I'm excited to continue leading WICC's mission to create more inclusive spaces in CIS.",
-  "netId": "cl2264"
-},
-{
-  "name": "Jessica Feng",
-  "title": "Advisor, Comm Discussion / Social / Career Dev / Corporate Relations",
-  "team": "Advisors",
-  "bio": "Having first-handedly experienced gender inequality, I know how challenging it can be to fight the stereotype of women pursuing STEM. I was skeptical about studying computer science until I went to and helped organize the Superposition Hackathon, an all-female and non-binary hackathon in Northern California. Meeting and collaborating with such driven and supportive women not only pushed me to pursue my fascination in computer science, but also motivated me to build a space for girls to comfortably and openly experiment with technology. Coming to college, one of the biggest things that factored into my decision was a strong community of women in tech. Joining WICC not only gave me an empowering and encouraging community to be depend on, but was also where I met upperclassmen I could look up to and had a group of wonderfully talented and ambitious friends working to close the gender gap in STEM.",
-  "netId": "jyf5"
-},
-{
-  "name": "Becky Han",
-  "title": "Advisor, Corporate Relations",
-  "team": "Advisors",
-  "bio": "Hi! I'm Becky, a junior studying Information Science with an Asian American Studies minor. I joined WICC because I wanted to surround myself with inspiring, driven, and talented women who were passionate about our core mission to uplift anybody and everybody to succeed in tech! In my free time, I like to watch movies, make playlists on Spotify, and visit new cafes around town 😊",
-  "netId": "bh449"
-},
-{
-  "name": "Ehi Esemuze",
-  "title": "Advisor, Allyship",
-  "team": "Advisors",
-  "bio": "I've always been drawn to creative pursuits -- my earliest identity was as a writer, and I spent my youth filming over-the-top music videos and creating (very bad) photoshop graphics. When I came to college, I felt trapped and creatively stunted in traditional engineering majors. After doing Lunch Bunch freshman spring and then taking Intro to DPD and being on WICCboard my sophomore fall (as well as soliciting lots of advice from upperclassmen), I decided to take the plunge and transfer to Arts to study Info Sci -- and I haven't looked back since! Info Sci is the perfect intersection between creativity, technical challenges, data science, and real-world impacts of tech. Now I'm passionate about technology for social impact and I hope to be a product designer one day. Here on campus I am the Business Lead of Cornell Design & Tech Initiative and the incoming Director of Diversity & Inclusion for Cornell Tri Delta sorority. In my free time, I journal, read, and learn new languages!",
-  "netId": "ete26"
-},
-{
-  "name": "Ishika Agrawal",
-  "title": "Advisor, Vice President, Academic",
-  "team": "Advisors",
-  "bio": "",
-  "netId": "ia83"
-}
+  },
+  {
+    "name": "Kassie Wang",
+    "title": "Advisor, Mentorship",
+    "team": "Advisors",
+    "bio": "Hi, I'm Kassie :) I've always been interested in computing for its various applications and pOwEr To ChAngE tHe WoRlD (cliche I know 🙄). But, I remember being feeling extremely lost as a freshman in the overwhelming Cornell community with such an extensive student body, especially studying CS, but fortunately, I have been able to find an empowering community and build meaningful connections through WICC's Lunch Bunch, volunteering with the Girls who Code program, and being both a mentee and mentor through the mentorship program. This then actually sparked me to join WICC E-Board as mentorship co-director to facilitate even more of these meaningful connections. Outside of the tech world though, I love to eat/cook/bake with friends and dance (I'm a part of BreakFree on campus 👐). Feel free to reach out any time for anything, I'm always open to making new friends and I hope to see you at some WICC events soon💙",
+    "netId": "klw242"
+  },
+  {
+    "name": "Sally Han",
+    "title": "Advisor, Secretary/ Faculty Relations /Social",
+    "team": "Advisors",
+    "bio": "Coming to Cornell, I had absolutely no idea what I wanted to do with my life. I had the unique opportunity of attending a high school that immersed you in any field of your choosing. There were many advantages to this, yet when I realized my chosen path was no longer something I wanted I was restricted, and could not explore other fields; I solely gained insight from conversing with my peers. After hearing about my interests, my Cornell advisor recommended trying out CIS, and although I initially assumed it was beyond my capabilities, I decided to muster up my courage and accept it as an opportunity to challenge myself- and I am so glad that I did. I’ve only started this exploration recently, and there have already been many times where I feel discouraged, especially when comparing my scarce amount of experience with my peers. But WICC has been my constant cheerleader, making me feel included and like I belong in this new environment. Everyone is so supportive, and it constantly motivates me to be my best self. I am honored and so grateful to be a part of WICC board, and I hope to be the light that WICC is to me to other people, especially for those who are new to the CIS community :)",
+    "netId": "sh822"
+  },
+  {
+    "name": "Revati Athavale",
+    "title": "Advisor, Vice President, Brand",
+    "team": "Advisors",
+    "bio": "For the longest time, I had no idea what I wanted to do when I got older. All I knew was that I wanted to help people solve problems and make a positive impact on the world. After taking engineering and computer science classes during my junior and senior years of high school, I realized that I wanted to help people through computer science. Once at Cornell, however, I felt lost and overwhelmed - that is, until WICC helped me find my place within CIS. I was able to find close friends, a personal and professional support system, and an openly inclusive community through WICC. Now, as part of board, I’m excited to nurture that same community and environment for other CIS students.",
+    "netId": "rpa46"
+  },
+  {
+    "name": "Arianna Curillo",
+    "title": "Advisor, Treasurer / Underclassmen Outreach",
+    "team": "Advisors",
+    "bio": "I’m Arianna and I’m one of the Underclassmen Outreach directors for WICC. Other roles I have on-campus include Co-President of Underrepresented Minorities in Computing, a Residential Advisor for first-year students, and a CS 3110 Consultant. WICC has been an incredible part of my Cornell experience and has allowed me to meet an incredible community of people who I can get work done with and also have fun. WICC has given me an important support system as a student at Cornell to pursue a career in tech and is why I am dedicated to give back to the organization in any way I can!",
+    "netId": "asc327"
+  },
+  {
+    "name": "Cynthia Ma",
+    "title": "Advisor, Photography / Corporate Relations / Career Development / Underclassmen Outreach",
+    "team": "Advisors",
+    "bio": "Having grown up with parents who were engineers, it felt inevitable that I also entered STEM. I wound up in the Computer Science wondering how I would ever keep up with the seemingly smartest people I'd ever met. Part of what helped keep me sane is the incredible group of people I've had the pleasure to work with in WICC and also exploring other areas that were not necessarily STEM-focused, like photography. I'm so happy being a part of WICC that not only allows me to explore more areas in STEM but also use my love of photography to help support this wonderful group of people who are passionate about the same things I am.",
+    "netId": "cm745"
+  },
+  {
+    "name": "Talia Attar",
+    "title": "Advisor, Allyship",
+    "team": "Advisors",
+    "bio": "As a confused high school senior, I almost randomly decided to check the box for computer science major in my Cornell application. My first semester I followed through with this choice and took CS 1110, and it was in that class that I became captivated by CS. I quite accidentally fell into the CS major, and I am so happy I did. It was through my involvement that I found WICC, which has come to be such an incredible community of amazing, inspiring people here at Cornell. I am so thankful for the opportunity I have to partake in this community through my role as Allyship Co-Director. When I am not coding, you can likely find me drawing, reading, running, crocheting, or playing with my bunny. ",
+    "netId": "tda25"
+  },
+  {
+    "name": "Anna Nguyen",
+    "title": "Advisor, VP Community / Design / Faculty Relations / Social",
+    "team": "Advisors",
+    "bio": "In high school, I loved computer science because it reminded me of art: the power to create and impact. However, I struggled a lot to find my place in the tech community and felt extremely unprepared and lost in the sauce sometimes, especially considering the broad range of computer science. Coming into the WICC community made me realize that what I felt lost in, I should feel empowered in because of the opportunity to learn so much from both my classes and the admirable women in tech around me. I could finally envision myself growing within computer science. I am thankful to be a part of WICC and hope to not only continue learning from the people around me, but also to give my best back to others!",
+    "netId": "axn3"
+  },
+  {
+    "name": "Connie Liu",
+    "title": "Advisor, VP Brand / Career Dev",
+    "team": "Advisors",
+    "bio": "In high school I stumbled upon someone's design portfolio one day and learned about human-computer interaction and design in tech. From then on I realized I wanted a career where I could tinker and create technology that would help people. However, a tiny part of me felt like I couldn't handle it, especially since the people I knew in tech were mostly men. Coming into Cornell I was intimidated by the difficulty of the CIS curriculum and felt like I didn't have a place in it simply because I struggled. WICC helped me in so many ways by connecting me to mentors in fields I was interested in to meeting other inspiring women who I'm honored to call my friends. Most of all WICC has made me feel like I belong in CIS. As part of board, I'm excited to continue leading WICC's mission to create more inclusive spaces in CIS.",
+    "netId": "cl2264"
+  },
+  {
+    "name": "Jessica Feng",
+    "title": "Advisor, Comm Discussion / Social / Career Dev / Corporate Relations",
+    "team": "Advisors",
+    "bio": "Having first-handedly experienced gender inequality, I know how challenging it can be to fight the stereotype of women pursuing STEM. I was skeptical about studying computer science until I went to and helped organize the Superposition Hackathon, an all-female and non-binary hackathon in Northern California. Meeting and collaborating with such driven and supportive women not only pushed me to pursue my fascination in computer science, but also motivated me to build a space for girls to comfortably and openly experiment with technology. Coming to college, one of the biggest things that factored into my decision was a strong community of women in tech. Joining WICC not only gave me an empowering and encouraging community to be depend on, but was also where I met upperclassmen I could look up to and had a group of wonderfully talented and ambitious friends working to close the gender gap in STEM.",
+    "netId": "jyf5"
+  },
+  {
+    "name": "Becky Han",
+    "title": "Advisor, Corporate Relations",
+    "team": "Advisors",
+    "bio": "Hi! I'm Becky, a junior studying Information Science with an Asian American Studies minor. I joined WICC because I wanted to surround myself with inspiring, driven, and talented women who were passionate about our core mission to uplift anybody and everybody to succeed in tech! In my free time, I like to watch movies, make playlists on Spotify, and visit new cafes around town 😊",
+    "netId": "bh449"
+  },
+  {
+    "name": "Ehi Esemuze",
+    "title": "Advisor, Allyship",
+    "team": "Advisors",
+    "bio": "I've always been drawn to creative pursuits -- my earliest identity was as a writer, and I spent my youth filming over-the-top music videos and creating (very bad) photoshop graphics. When I came to college, I felt trapped and creatively stunted in traditional engineering majors. After doing Lunch Bunch freshman spring and then taking Intro to DPD and being on WICCboard my sophomore fall (as well as soliciting lots of advice from upperclassmen), I decided to take the plunge and transfer to Arts to study Info Sci -- and I haven't looked back since! Info Sci is the perfect intersection between creativity, technical challenges, data science, and real-world impacts of tech. Now I'm passionate about technology for social impact and I hope to be a product designer one day. Here on campus I am the Business Lead of Cornell Design & Tech Initiative and the incoming Director of Diversity & Inclusion for Cornell Tri Delta sorority. In my free time, I journal, read, and learn new languages!",
+    "netId": "ete26"
+  },
+  {
+    "name": "Ishika Agrawal",
+    "title": "Advisor, Vice President, Academic",
+    "team": "Advisors",
+    "bio": "",
+    "netId": "ia83"
+  }
 ];

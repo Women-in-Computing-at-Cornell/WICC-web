@@ -97,11 +97,11 @@ const Programs = () => {
 
         </Row>
         <Row style={{ paddingBottom: "1%" }}>
-          <Col style={styles.col}>
+          {/* <Col style={styles.col}>
             <Link to="/prospective" style={styles.link}><h3 className="text-center">Prospective Students</h3>
             </Link>
 
-          </Col>
+          </Col> */}
           <Col style={styles.col}>
             <Link to="/outreach" style={styles.link}><h3 className="text-center"> Outreach</h3>
             </Link>
@@ -116,9 +116,9 @@ const Programs = () => {
             </Link>
 
           </Col> */}
-          
+
           <Col style={styles.col}>
-            <Link to="/campaigns" style={styles.link}><h3 className="text-center">Cracking Your Career</h3>
+            <Link to="/crackingyourcareer" style={styles.link}><h3 className="text-center">Cracking Your Career</h3>
             </Link>
           </Col>
 

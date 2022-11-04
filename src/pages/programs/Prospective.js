@@ -22,7 +22,7 @@ import './programPages.css';
 
 export default class Prospective extends Component {
   render() {
-    let directors = boardData.filter(record => record.title === "Underclassmen Outreach Co-Director")
+    let directors = boardData.filter(record => record.title === "Underclassmen Outreach Director")
 
 
     function importAll(r) {
