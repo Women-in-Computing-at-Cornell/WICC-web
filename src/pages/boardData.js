@@ -2,18 +2,18 @@ export const boardData = [
   //PRESIDENTS
 
   {
-    "name": "Ally Younkman",
-    "title": "Co-President",
-    "team": "Presidents",
-    "bio": "I've been interested in CS for basically as long as I can remember. I have taken every opportunity to learn more about CS since middle school and from those experiences, I have faced a wide array of problems from the male-dominated field. When I was looking at colleges I was really drawn to places that supported women in tech and I fell in love with Cornell for this reason. I remember looking up WICC before coming to Cornell and knew it was something I wanted to be a part of. After being a part of WICC Mentorship, Lunch Bunch, CTIC, Photo & Film Committee, and EBoard I can say with confidence that WICC has been one of the best decisions I've made in college and the best decision I have made to further my passion for CS and grow my confidence in my abilities and in a professional setting. I have met so many inspiring sweet women in WICC and I love helping connect other individuals to this amazing community.",
-    "netId": "ary25"
-  },
-  {
     "name": "Tina Ou",
     "title": "Co-President",
     "team": "Presidents",
     "bio": "I came into Cornell thinking I would major in either sociology or psychology. I was really interested in learning about humans and how humans interacted with each other. When the pandemic hit in 2020, I wrote my first line of code. It wasn't fascinating to be honest. I wasn't amazed at the \"Hello World\" on my terminal but what I was amazed by the field of computer science and its applications. When I was still exploring majors, WICC allowed me to become part of a welcoming and determined community which allowed me to meet other passionate individuals while doing the semester at home. As a result, I hope that I can help others enjoy and create meaningful experiences and opportunities that WICC has to offer. ",
     "netId": "to98"
+  },
+  {
+    "name": "Rachel Tong",
+    "title": "Co-President",
+    "team": "Presidents",
+    "bio": "WICC introduced me to a close community of people who are not only passionate about computing but also extremely supportive and eager to help. I was first introduced to WICC freshman fall through the Lunch Bunch and Mentorship Program. Amidst the chaotic transition into college, those programs truly helped me ease into college and meet amazing upperclassmen and professors. I'm super excited to get more involved and meet more people!",
+    "netId": "rt387"
   },
 
   //OPERATIONS
@@ -230,13 +230,7 @@ export const boardData = [
     "bio": "I love WICC because it's a community of people who may not all necessarily be computer science majors but all strive to support each other to succeed as women in the tech field. Outside of WICC and school, I enjoy watching my favorite Kdramas and TV shows, discovering new music and curating playlists, baking, and building legos!",
     "netId": "tl559"
   },
-  {
-    "name": "Rachel Tong",
-    "title": "Mentorship Co-Director",
-    "team": "Community",
-    "bio": "WICC introduced me to a close community of people who are not only passionate about computing but also extremely supportive and eager to help. I was first introduced to WICC freshman fall through the Lunch Bunch and Mentorship Program. Amidst the chaotic transition into college, those programs truly helped me ease into college and meet amazing upperclassmen and professors. I'm super excited to get more involved and meet more people!",
-    "netId": "rt387"
-  },
+
   {
     "name": "Maya Leong",
     "title": "Mentorship Co-Director",
@@ -261,6 +255,16 @@ export const boardData = [
 
 
   //ADVISORS
+
+  {
+      "name": "Ally Younkman",
+      "title": "Advisor, Co-President",
+      "team": "Advisors",
+      "bio": "I've been interested in CS for basically as long as I can remember. I have taken every opportunity to learn more about CS since middle school and from those experiences, I have faced a wide array of problems from the male-dominated field. When I was looking at colleges I was really drawn to places that supported women in tech and I fell in love with Cornell for this reason. I remember looking up WICC before coming to Cornell and knew it was something I wanted to be a part of. After being a part of WICC Mentorship, Lunch Bunch, CTIC, Photo & Film Committee, and EBoard I can say with confidence that WICC has been one of the best decisions I've made in college and the best decision I have made to further my passion for CS and grow my confidence in my abilities and in a professional setting. I have met so many inspiring sweet women in WICC and I love helping connect other individuals to this amazing community.",
+      "netId": "ary25"
+      "year": "2023",
+      "major": "Computer Science"
+  },
   {
     "name": "Jonna Chen",
     "title": "Advisor, Co-President",
