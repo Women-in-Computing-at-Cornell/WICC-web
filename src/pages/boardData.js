@@ -261,7 +261,7 @@ export const boardData = [
       "title": "Advisor, Co-President",
       "team": "Advisors",
       "bio": "I've been interested in CS for basically as long as I can remember. I have taken every opportunity to learn more about CS since middle school and from those experiences, I have faced a wide array of problems from the male-dominated field. When I was looking at colleges I was really drawn to places that supported women in tech and I fell in love with Cornell for this reason. I remember looking up WICC before coming to Cornell and knew it was something I wanted to be a part of. After being a part of WICC Mentorship, Lunch Bunch, CTIC, Photo & Film Committee, and EBoard I can say with confidence that WICC has been one of the best decisions I've made in college and the best decision I have made to further my passion for CS and grow my confidence in my abilities and in a professional setting. I have met so many inspiring sweet women in WICC and I love helping connect other individuals to this amazing community.",
-      "netId": "ary25"
+      "netId": "ary25",
       "year": "2023",
       "major": "Computer Science"
   },
