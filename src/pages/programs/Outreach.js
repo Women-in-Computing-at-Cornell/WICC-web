@@ -69,7 +69,7 @@ export default class Outreach extends Component {
           {/* <h5 style={{ fontWeight: "bold" }}>Registration for our Girls Who Code program for Spring 2021 has been closed! </h5>*/}
 
 
-          <h5 style={{ fontWeight: "bold" }}>Interested in our Girls Who Code program for this Fall 2021? Register here! </h5>
+          <h5 style={{ fontWeight: "bold" }}>Interested in our Girls Who Code program for this Spring 2023? Register here! </h5>
           <Button style={{ marginBottom: "3%" }} href='https://docs.google.com/forms/d/e/1FAIpQLScBHRS_-ZjYCC0H3A_R6-Lr2QnrgWduBw-K3fNWw89NLrHwvg/viewform'>Register Now!</Button>
         </center>
         <br />
@@ -95,17 +95,17 @@ export default class Outreach extends Component {
             </Col>
             <Col style={{ paddingRight: "0%", paddingLeft: "2%", }}>
               <div class='outreachDates'>
-                <p >Sept. 19
+                <p >Feb. 12
                 </p>
-                <p>Sept. 26
+                <p>Feb. 19
                 </p>
-                <p>Oct. 3
+                <p>March 5
                 </p>
-                <p><span style={{ textDecoration: "line-through" }}>Oct. 10</span>  NO CLASS *</p>
-                <p>Oct. 17
+                <p>March 12
                 </p>
-                <p>Oct. 24
+                <p>March 19
                 </p>
+                {/*  /* <p><span style={{ textDecoration: "line-through" }}>Oct. 10</span>  NO CLASS *</p>*/}
               </div>
 
 
@@ -143,11 +143,13 @@ export default class Outreach extends Component {
 
             <Col style={{ paddingRight: "1%", paddingLeft: "0%", }}>
               <div class='outreachDates'>
-                <p>Oct. 31</p>
-                <p>Nov. 7</p>
-                <p>Nov. 14</p>
-                <p>Nov. 21</p>
-                <p>Dec. 5  <span style={{ fontWeight: "bold" }}> Mid-Year Celebration</span></p>
+                <p>March 26</p>
+                <p>April 16</p>
+                <p>April 23</p>
+                <p>April 30</p>
+                <p>May 7
+                </p>
+                {/*<span style={{ fontWeight: "bold" }}> Mid-Year Celebration</span>*/}
 
               </div>
 
@@ -175,8 +177,6 @@ export default class Outreach extends Component {
 
           </Row>
           <center>
-            <p>* Please note we will NOT be having class on October 10th due to Cornell's academic break.</p>
-
           </center>
 
         </Container >
@@ -252,7 +252,7 @@ export default class Outreach extends Component {
           <Row style={{ paddingBottom: "2%" }}>
 
             <Col >
-              <h6 style={{ fontWeight: "bold" }}>Interested in being a WICC Outreach Volunteer for this Fall 2021? Apply here! </h6>
+              <h6 style={{ fontWeight: "bold" }}>Interested in being a WICC Outreach Volunteer for this Spring 2023? Apply here! </h6>
               <Button style={{ marginBottom: "5%" }} href='https://forms.gle/nacdKvrHdh5Jb5ct9'>Apply Now!</Button>
 
               <p>
