@@ -110,11 +110,10 @@ export default class Join extends Component {
         <div style={styles.row}>
           <div style={styles.col}>
             <h2>Students</h2>
-            <p>Join Our Listserve!</p>
+            <p>Join Our Listserve! Click on the link and press send to join! </p>
             <center>
 
-
-              <Button href='https://forms.gle/BUQynYasFRC7xCkb7'
+              <Button href='mailto:wicc@cornell.edu?subject=Join'
 
                 style={{ backgroundColor: '#b5b5b5', width: '50%', marginTop: "10%" }}>Join</Button>
             </center>
@@ -126,8 +125,8 @@ export default class Join extends Component {
             <center>
               <Button onClick={this.handleShow}
 
-                style={{ backgroundColor: '#b5b5b5', width: '90%' }}>Current Sponsors</Button>
-
+                style={{ backgroundColor: '#b5b5b5', width: '90%' }}>Current Sponsors
+              </Button>
             </center>
 
           </div>
