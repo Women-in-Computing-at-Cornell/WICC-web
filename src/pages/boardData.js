@@ -388,13 +388,6 @@ export const boardData = [
     "netId": "mfl74"
   },
   {
-    "name": "Maya Leong",
-    "title": "Advisor, Mentorship, Underclassmen, Social",
-    "team": "Advisors",
-    "bio": "",
-    "netId": "mfl74"
-  },
-  {
     "name": "Aarushi Singh",
     "title": "Advisor, VP Academic, Corporate Relations, Faculty Relations",
     "team": "Advisors",
