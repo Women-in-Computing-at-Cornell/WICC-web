@@ -6,7 +6,7 @@ import Home from '../pages/Home';
 import About from '../pages/About';
 import Board from '../pages/Board';
 import Programs from '../pages/Programs';
-import Resources from '../pages/Resources';
+//import Resources from '../pages/Resources';
 import Campaigns from '../pages/programs/Campaigns';
 import Discussions from '../pages/programs/Discussions';
 import Events from '../pages/programs/Events';
@@ -33,7 +33,6 @@ function App() {
           <Route path="/about" component={About} />
           <Route path="/board" component={Board} />
           <Route path="/programs" component={Programs} />
-          <Route path="/resources" component={Resources} />
           <Route path="/join" component={Join} />
           <Route path="/membership" component={Membership} />
           <Route path="/campaigns" component={Campaigns} />
@@ -51,5 +50,7 @@ function App() {
     </HashRouter>
   );
 }
+//          <Route path="/resources" component={Resources} />
+
 
 export default App;

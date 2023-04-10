@@ -110,24 +110,31 @@ export default class Join extends Component {
         <div style={styles.row}>
           <div style={styles.col}>
             <h2>Students</h2>
-            <p>Join Our Listserve! Click on the link and press send to join! </p>
+            <p>Join Our Listserve and Slack! Click on the link and press send to join for the Listserve! </p>
             <center>
-
-              <Button href='mailto:wicc@cornell.edu?subject=Join'
-
-                style={{ backgroundColor: '#b5b5b5', width: '50%', marginTop: "10%" }}>Join</Button>
+              <Button href='mailto:wicc-l-request@cornell.edu?subject=Join'
+                style={{ backgroundColor: '#b5b5b5', width: '50%', marginTop: "10%" }}>ListServe</Button>
+              <p></p>
+              <Button href='https://join.slack.com/t/wiccgbodymember/shared_invite/zt-1t2uwgfld-dPVydWuvlnK4N2om4UIIcg'
+                style={{ backgroundColor: '#b5b5b5', width: '50%', marginTop: "10%" }}>G-Body Slack</Button>
             </center>
+
 
           </div>
           <div style={styles.col}>
             <h2>Corporate</h2>
             <p>Interested in hosting an event with us? Contact us at <a href="mailto:wicc@cornell.edu">wicc@cornell.edu</a></p>
             <center>
-              <Button onClick={this.handleShow}
+              <p> </p>
+              { /* <Button onClick={this.handleShow}
 
                 style={{ backgroundColor: '#b5b5b5', width: '90%' }}>Current Sponsors
-              </Button>
+    </Button>*/}
+              <Button href='https://drive.google.com/file/d/1s_okJqDYmfD5-3jEPCPKvbtP_TYruXXD/view?usp=sharing'
+                style={{ backgroundColor: '#b5b5b5', width: '90%', marginTop: "10%" }}>Current Sponsors</Button>
+
             </center>
+
 
           </div>
           <div style={styles.col}>
