@@ -6,7 +6,7 @@ export const sponsorData = [
     "sponsor": "Cruise",
     "level": "Platinum",
     "link": "https://getcruise.com/"
-  }, 
+  },
   {
     "sponsor": "Deloitte",
     "level": "Platinum",
@@ -30,7 +30,7 @@ export const sponsorData = [
     "level": "Gold",
     "link": "https://www.accenture.com/us-en"
   },
-    {
+  {
     "sponsor": "Bloomberg",
     "level": "Gold",
     "link": "https://www.bloomberg.com/company/"
@@ -81,13 +81,25 @@ export const sponsorData = [
     "link": "https://www.uber.com/us/en/careers/"
   },
   {
+    "sponsor": "Roblox",
+    "level": "Gold",
+    "link": "https://careers.roblox.com"
+
+  },
+  {
+    "sponsor": "Munich Re",
+    "level": "Gold",
+    "link": "https://www.munichre.com/en.html"
+
+  },
+  {
     "sponsor": "Yext",
     "level": "Grace Hopper",
     "link": "https://www.yext.com/?keyword=yext&utm_source=google&utm_medium=paid_search&utm_campaign=PM_GSearch_ACQ_Branded_04.2022&utm_adgroup=&gclid=Cj0KCQjwpImTBhCmARIsAKr58cw43EPGQJEhvvtMIEiu2VmH9vi1j8QsG9TGmvpaR1WS3gCoRxzWmT4aAsY6EALw_wcB"
   },
 
   // silver sponsors
-  
+
   {
     "sponsor": "IMC Trading",
     "level": "Silver",
