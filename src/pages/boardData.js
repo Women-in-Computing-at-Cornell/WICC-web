@@ -12,7 +12,7 @@ export const boardData = [
     name: "Jasmine Samadi",
     title: "Co-President",
     team: "Presidents",
-    bio: "",
+    bio: "WICC is the first place that made me feel like I belong in the computing field. After years of trying to find my path and being discouraged, I finally found a welcoming and supportive community of women and non-binary people in tech. I am so grateful for the warmth and guidance given to me from WICC members. I can only hope to extend a similar arm and welcome more people whose shoes I was in. ",
     netId: "jns222",
   },
 
@@ -90,7 +90,7 @@ export const boardData = [
     name: "Lauren Chan",
     title: "Vice President, Academic",
     team: "Academic",
-    bio: "",
+    bio: "Lauren is a junior from Princeton, NJ majoring in Information Science with minors in Business and Nutritional Sciences. This past summer, Lauren worked as a Digital Marketing Analytics Intern at Tarte Cosmetics. She first joined WICC in Fall 2022 under WICC's mentorship program as an ILR major looking to get more into the tech space and later joined board the following semester as Underclassmen Outreach Co-Director. After switching majors, she is now Vice President of the Academic Team for this semester. She has experience being an external and internal transfer and is involved in a business fraternity on campus along with Grub Ventures, a food and agriculture tech-focused venture capital club. In her free time, Lauren enjoys staying active, exploring national parks, trying out new recipes, and listening to true crime podcasts.",
     netId: "lac348",
   },
   {
@@ -132,7 +132,7 @@ export const boardData = [
     name: "Jeanie Chan",
     title: "Underclassmen Outreach Director",
     team: "Academic",
-    bio: "",
+    bio: "Hi! I'm Jeanie, a CS major in the College of Engineering. I joined WICC as a freshman and have gained a lot from joining programs and attending events. WICC is such a supportive and welcoming community :) ",
     netId: "jc2885",
   },
   //BRAND
@@ -161,7 +161,7 @@ export const boardData = [
     name: "Claire Tan",
     title: "Photography Director",
     team: "Brand",
-    bio: "",
+    bio: "When I arrived at Cornell, the world of computing was like a distant realm to me and things like joining clubs, finding opportunities, and choosing classes made me feel lost. WICC has WICC has allowed me to join a welcoming community of driven, passionate individuals who have helped me in my journey. The camaraderie of this community has made the complex seem approachable and the unknown less daunting. I’m excited to continue forging new connections in WICC and further exploring the exciting opportunities this community offers!",
     netId: "ct556",
   },
   {
@@ -206,7 +206,7 @@ export const boardData = [
     name: "Miriam Alex",
     title: "Outreach Co-Director",
     team: "Outreach",
-    bio: "",
+    bio: "When I look back on my first semester, it’s the small, warm moments that seem to peek out from my memory. When I first arrived at Cornell, I sorely lacked a community; like many others, I wasn’t sure who I could spend time with, how to manage a quickly intensifying schedule, or what the correct steps to take moving forward could be. However, in the beginning of my first year, I remember a friend dragging me along to Phillips Hall, promising Insomnia cookies if we could sit through a meeting. Coincidentally, it was an interest meeting for the WICC mentorship. After meeting the mentors, we were struck by how vibrant and motivated everyone was; it felt like the beginning of something larger than ourselves. To put it simply, WICC inspired me to do more and provided me with the resources to do it. Through my time as an outreach co-director, I hope that I can provide a fraction of that community to Cornell and greater Ithaca. ",
     netId: "mta63",
   },
 
@@ -244,14 +244,14 @@ export const boardData = [
     name: "Sreya Jonnalagadda",
     title: "Mentorship Co-Director",
     team: "Community",
-    bio: "",
+    bio: "Attending a STEM high school where I was often the one of the few girls in the classes, I often felt unheard and unconfident. I knew coming into college that I wanted to join a community supporting women as they navigate the tech space and WICC was just that! I look forward to contributing to this empowering and inclusive community and watching it blossom. In my free time I love to rock climb!",
     netId: "sj652",
   },
   {
     name: "Jarin Rahman",
     title: "Allyship Co-Director",
     team: "Community",
-    bio: "",
+    bio: "Jamming to k-pop, blowing bubbles, making each other beaded bracelets – all while laughing and exchanging amusing stories about our lives so far – wasn't something I expected to happen at WICC Away. I didn’t think I’d become entangled in the lives of my newly-met peers and share our wildest dreams and fears. Being in a community of people who were similar to me reminded me of how in most male dominated spaces, it's hard to reach out for help and feel included because of prejudice and judgements. I wanted to become a part of the WICC community that promotes inclusiveness and makes those new to the computing field feel safe. ",
     netId: "jsr296",
   },
   {
