@@ -126,23 +126,23 @@ export default class Outreach extends Component {
                 <p style={{ marginBottom: "1%", fontWeight: "bold" }}>
                   Schedule:
                 </p>
-                <p>September 9</p>
-                <p>September 16</p>
-                <p>September 23</p>
-                <p>September 30</p>
-                <p>October 14</p>
+                <p>September 10</p>
+                <p>September 17</p>
+                <p>September 24</p>
+                <p>October 1st</p>
+                <p>October 15</p>
                 {/*  /* <p><span style={{ textDecoration: "line-through" }}>Oct. 10</span>  NO CLASS *</p>*/}
               </div>
             </Col>
 
             <Col style={{ paddingRight: "1%", paddingLeft: "0%" }}>
               <div class="outreachDates">
-                <p>October 21</p>
-                <p>October 28</p>
-                <p>November 4</p>
-                <p>November 11</p>
-                <p>November 18</p>
-                <p>December 2 - End-of-Year Celebration</p>
+                <p>October 22</p>
+                <p>October 29</p>
+                <p>November 5</p>
+                <p>November 12</p>
+                <p>November 19</p>
+                <p>December 3 - End-of-Year Celebration</p>
                 {/*<span style={{ fontWeight: "bold" }}> Mid-Year Celebration</span>*/}
               </div>
             </Col>
