@@ -123,9 +123,6 @@ export default class Outreach extends Component {
             </Col>
             <Col style={{ paddingRight: "0%", paddingLeft: "10%" }}>
               <div class="outreachDates">
-                <p style={{ marginBottom: "1%", fontWeight: "bold" }}>
-                  Schedule:
-                </p>
                 <p>September 10</p>
                 <p>September 17</p>
                 <p>September 24</p>
@@ -141,7 +138,6 @@ export default class Outreach extends Component {
                 <p>October 29</p>
                 <p>November 5</p>
                 <p>November 12</p>
-                <p>November 19</p>
                 <p>December 3 - End-of-Year Celebration</p>
                 {/*<span style={{ fontWeight: "bold" }}> Mid-Year Celebration</span>*/}
               </div>
