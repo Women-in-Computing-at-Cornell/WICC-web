@@ -104,7 +104,7 @@ export const boardData = [
     name: "Sarah Young",
     title: "Faculty Relations Co-Director",
     team: "Academic",
-    bio: "",
+    bio: "Sarah is a junior majoring in Computer Science. She is passionate in creating technology that can help others. She joined WICC because she loves how empowering WICC is and the community that it offered! In her free time, she enjoys sleeping, watching Netflix, and dancing. ",
     netId: "sy398",
   },
   {
@@ -154,7 +154,7 @@ export const boardData = [
     name: "Selin Toker",
     title: "Publicity Director",
     team: "Brand",
-    bio: "",
+    bio: "I'm studying Computer Science in the College of Engineering, and I come from Istanbul, Turkey. Since joining WICC, I've connected with some really kind people and collaborated with others who share my interests about computing. As the publicity director, I enjoy spreading the word about WICC, which is all about creating a supportive community that brings together people from diverse backgrounds. Outside of all this, I enjoy reading, listening to music, watching romcoms, and taking lots of photos in my free time!",
     netId: "st798",
   },
   {
@@ -199,7 +199,7 @@ export const boardData = [
     name: "Jennifer Ai",
     title: "Outreach Co-Director",
     team: "Outreach",
-    bio: "",
+    bio: "I joined WICC because I wanted to be a part of a supportive group of people within the computing and information science community. I am so glad to be a part of the outreach team because I have had the pleasure of working with so many wonderful peers and teaching younger students who are interested in computing. ",
     netId: "jla292",
   },
   {
@@ -230,7 +230,7 @@ export const boardData = [
     name: "Goretti Muriithi",
     title: "Social Co-Director",
     team: "Community",
-    bio: "",
+    bio: "Hi! I am a sophomore in the College of Arts & Sciences studying Computer Science. When I got to Cornell, I was uncertain about my future in computing, since I did not have a lot of experience coding in high school. However, I found a very supporting and active community in WICC. My mentors and friends in WICC helped me feel more confident in my abilities and helped me find resources in order to excel in my classes. I joined WICC E-Board in order to give back and encourage gender minorities to enter the computing field. ",
     netId: "gm552",
   },
   {
@@ -258,7 +258,7 @@ export const boardData = [
     name: "Arshia Agrawal",
     title: "Allyship Co-Director",
     team: "Community",
-    bio: "",
+    bio: "One quote that always stuck with me was from Reshma Saujani, founder of Girls Who Code. In an interview, she shared an anecdote from her time teaching young coders: When young boys had buggy code, they asked, “What’s wrong with my code?” But when the young girls in her class had the same issue, their first instinct was to ask, “What’s wrong with me?” As a gender minority entering a male-dominated field, it can be intimidating - especially when we are raised doubting our abilities. WICC is so important to me because it empowers me to gain confidence in myself and is just an incredible community of people who are always there to uplift me and lead me towards opportunities I never would have found without their support. I hope to help give back and empower the next group of young women/gender minorities navigating their way through CS at Cornell. And outside of WICC, I love singing & songwriting, doing jigsaw puzzles, and writing poetry! :)",
     netId: "aa2443",
   },
 
