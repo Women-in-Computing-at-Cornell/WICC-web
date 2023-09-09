@@ -111,7 +111,7 @@ export const boardData = [
     name: "Meera Ramesh",
     title: "Career Development Co-Director",
     team: "Academic",
-    bio: "Growing up, I internalized a lot of negative stereotypes about what types of people were meant for a career in tech, and these preconceptions pushed me away from considering the field despite my interest in problem solving. I entered Cornell as a biomedical engineer, but after attending a couple WICC events, I found myself a community of women in technology that didn't fit the stereotypes I thought to be true. WICC truly empowered me to feel confident in my eventual decision to pursue computer science. By being a career development co-director, I hope to spread this same empowerment and inclusivity to those who've felt the same way I did coming into college.",
+    bio: "Growing up, I internalized a lot of negative stereotypes about what types of people were meant for a career in tech, and these preconceptions pushed me away from considering the field despite my interest in problem solving. I entered Cornell as a biomedical engineer, but after attending a couple WICC events, I found myself a community of women in technology that didn't fit the stereotypes I thought to be true. WICC truly empowered me to feel confident in my eventual decision to pursue computer science. By being a career development co-director, I hope to spread this same empowerment and inclusivity to those who've felt the same way I did coming into college. WICC has helped me understand how to foster a more inclusive environment in technology, and I am so grateful for the inspiring people I've met through it. As a board member, I can only hope to empower more underrepresented communities to pursue a career in tech. Outside of WICC, I'm interested in dance, music, and art.",
     netId: "mr828",
   },
   {
@@ -223,7 +223,7 @@ export const boardData = [
     name: "Krishna Patel",
     title: "Social Co-Director",
     team: "Community",
-    bio: "",
+    bio: "I joined WICC as a freshman fall semester. Cornell is a huge university, but WICC provided the supportive and caring community that I wanted! WICC allowed me to meet people with similar interests, get advice and assistance from upperclassmen, and opened me up to a lot of amazing opportunities on campus!",
     netId: "khp42",
   },
   {
