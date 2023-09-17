@@ -1,28 +1,18 @@
-import React, { Component } from 'react';
-import Container from 'react-bootstrap/Container';
-import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+import React, { Component } from "react";
+import Container from "react-bootstrap/Container";
+import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 import Calendar from "@ericz1803/react-google-calendar";
-import Button from 'react-bootstrap/Button';
-import Modal from 'react-bootstrap/Modal';
-import Sponsors from './Sponsors';
-import axios from 'axios';
+import Button from "react-bootstrap/Button";
+import Modal from "react-bootstrap/Modal";
+import Sponsors from "./Sponsors";
+import axios from "axios";
 
+import "./Join.css";
+import { Center } from "devextreme-react/map";
 
-
-
-
-
-
-
-
-
-import './Join.css';
-import { Center } from 'devextreme-react/map';
-
-const API_PATH = 'http://localhost/WICC-WEB/src/action.php';
-
+const API_PATH = "http://localhost/WICC-WEB/src/action.php";
 
 export default class Join extends Component {
   constructor(props, context) {
@@ -33,14 +23,12 @@ export default class Join extends Component {
 
     this.state = {
       show: false,
-      fname: '',
-      lname: '',
-      email: '',
-      message: '',
+      fname: "",
+      lname: "",
+      email: "",
+      message: "",
       mailSent: false,
-      error: null
-
-
+      error: null,
     };
   }
   handleClose() {
@@ -51,38 +39,32 @@ export default class Join extends Component {
     this.setState({ show: true });
   }
 
-  handleFormSubmit = e => {
+  handleFormSubmit = (e) => {
     e.preventDefault();
     axios({
-      method: 'post',
-      url: '../action.php',
-      headers: { 'content-type': 'application/json' },
-      data: this.state
+      method: "post",
+      url: "../action.php",
+      headers: { "content-type": "application/json" },
+      data: this.state,
     })
-      .then(result => {
+      .then((result) => {
         this.setState({
-          mailSent: result.data.sent
-        })
+          mailSent: result.data.sent,
+        });
       })
-      .catch(error => this.setState({ error: error.message }));
+      .catch((error) => this.setState({ error: error.message }));
   };
 
-
-
-
-
-
   render() {
-
     let styles = {
       container: {
         margin: "5%",
-        fontFamily: 'Inter'
+        fontFamily: "Inter",
       },
       row: {
         margin: "0",
         display: "flex",
-        justifyContent: "space-evenly"
+        justifyContent: "space-evenly",
       },
       col: {
         width: "20%",
@@ -93,67 +75,91 @@ export default class Join extends Component {
         borderRadius: ".5em",
       },
       link: {
-        textDecoration: 'underline'
-      }
-
+        textDecoration: "underline",
+      },
     };
 
-
-
     return (
-
       <div style={styles.container}>
-        <h1 style={{ fontWeight: 'bold' }}>Get Involved</h1>
-
-
+        <h1 style={{ fontWeight: "bold" }}>Get Involved</h1>
 
         <div style={styles.row}>
           <div style={styles.col}>
             <h2>Students</h2>
-            <p>Join Our Listserve and Slack! Click on the link and press send to join for the Listserve! </p>
+            <p>
+              Join Our Listserve and Slack! Click on the link and press send to
+              join for the Listserve!{" "}
+            </p>
             <center>
-              <Button href='mailto:wicc-l-request@cornell.edu?subject=Join'
-                style={{ backgroundColor: '#b5b5b5', width: '50%', marginTop: "10%" }}>ListServe</Button>
+              <Button
+                href="mailto:wicc-l-request@cornell.edu?subject=Join"
+                style={{
+                  backgroundColor: "white",
+                  width: "100%",
+                  marginTop: "10%",
+                  fontWeight: "bold",
+                }}
+              >
+                ListServe
+              </Button>
               <p></p>
-              <Button href='https://join.slack.com/t/wiccgbodymember/shared_invite/zt-1t2uwgfld-dPVydWuvlnK4N2om4UIIcg'
-                style={{ backgroundColor: '#b5b5b5', width: '50%', marginTop: "10%" }}>G-Body Slack</Button>
+              <Button
+                href="https://join.slack.com/t/wiccgbodymember/shared_invite/zt-1t2uwgfld-dPVydWuvlnK4N2om4UIIcg"
+                style={{
+                  backgroundColor: "white",
+                  width: "100%",
+                  marginTop: "10%",
+                  fontWeight: "bold",
+                }}
+              >
+                G-Body Slack
+              </Button>
             </center>
-
-
           </div>
           <div style={styles.col}>
             <h2>Corporate</h2>
-            <p>Interested in hosting an event with us? Contact us at <a href="mailto:wicc@cornell.edu">wicc@cornell.edu</a></p>
+            <p>
+              Interested in hosting an event with us? Contact us at{" "}
+              <a href="mailto:wicc@cornell.edu">wicc@cornell.edu</a>
+            </p>
             <center>
               <p> </p>
-              { /* <Button onClick={this.handleShow}
-
-                style={{ backgroundColor: '#b5b5b5', width: '90%' }}>Current Sponsors
-    </Button>*/}
-              <Button href='https://drive.google.com/file/d/1s_okJqDYmfD5-3jEPCPKvbtP_TYruXXD/view?usp=sharing'
-                style={{ backgroundColor: '#b5b5b5', width: '90%', marginTop: "10%" }}>Current Sponsors</Button>
-
+              <Button
+                href="https://drive.google.com/file/d/1s_okJqDYmfD5-3jEPCPKvbtP_TYruXXD/view?usp=sharing"
+                style={{
+                  backgroundColor: "white",
+                  width: "100%",
+                  marginTop: "10%",
+                  fontWeight: "bold",
+                }}
+              >
+                Current Sponsors
+              </Button>
             </center>
-
-
           </div>
           <div style={styles.col}>
-            <Link to="/membership" style={styles.link}><h2>Active Membership</h2>
+            <Link to="/membership" style={styles.link}>
+              <h2>Active Membership</h2>
             </Link>
             <p>Learn how to become a WICC Active Member</p>
           </div>
         </div>
         <div style={styles.row}>
           <div style={styles.col}>
-            <h2 >Alumni</h2>
+            <h2>Alumni</h2>
             <p>Join our alumni network to stay involved with WICC!</p>
             <center>
-              <Button href='https://docs.google.com/forms/d/e/1FAIpQLSe_QtYzpq9knpmjDAj0bV3MwcsBtOy8IX7XhOHoroq0801sNw/viewform'
-
-                style={{ backgroundColor: '#b5b5b5', width: '50%' }}>Join</Button>
-
+              <Button
+                href="https://docs.google.com/forms/d/e/1FAIpQLSe_QtYzpq9knpmjDAj0bV3MwcsBtOy8IX7XhOHoroq0801sNw/viewform"
+                style={{
+                  backgroundColor: "white",
+                  width: "100%",
+                  fontWeight: "bold",
+                }}
+              >
+                Join
+              </Button>
             </center>
-
           </div>
           {/* <div style={styles.col}>
             <Link to="/prospective" style={styles.link}><h2>Prospective Students</h2>
@@ -167,10 +173,15 @@ export default class Join extends Component {
           </div> */}
         </div>
 
-        <Modal show={this.state.show} onHide={this.handleClose} size="lg" aria-labelledby="contained-modal-title-vcenter"
-          centered contentClassName="custom-modal-style">
-          <Modal.Header closeButton>
-          </Modal.Header>
+        <Modal
+          show={this.state.show}
+          onHide={this.handleClose}
+          size="lg"
+          aria-labelledby="contained-modal-title-vcenter"
+          centered
+          contentClassName="custom-modal-style"
+        >
+          <Modal.Header closeButton></Modal.Header>
           <Modal.Body>
             <center>
               <Sponsors />
@@ -211,12 +222,7 @@ export default class Join extends Component {
           </div>
 
         </form > */}
-
-
-
-      </div >
+      </div>
     );
   }
 }
-
-
