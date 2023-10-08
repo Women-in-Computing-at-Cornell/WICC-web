@@ -47,7 +47,6 @@ export default class Calendar extends Component {
       }
 
     };
-    //const API_KEY = process.env.REACT_APP_GOOGLE_API_KEY
     const API_KEY = "AIzaSyBxf7wNsfqoGKuEHg3vMtN6woGrfn4XMyg";
     let calendars = [
       {
