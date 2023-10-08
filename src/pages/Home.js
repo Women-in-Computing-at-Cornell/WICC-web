@@ -24,7 +24,7 @@ const Home = () => {
             >
               Women in Computing at Cornell
             </h1>
-            <h2>strives to make computing inclusive for all.</h2>
+            <h2>strives to make computing inclusive for all</h2>
           </div>
         </section>
         <section class="mission-container">
