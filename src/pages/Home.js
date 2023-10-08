@@ -21,15 +21,15 @@ const Home = () => {
           </div>
         </section>
         <section class="mission-container">
-          <h2 style={{ fontWeight: 'bold' }}>Our Mission</h2>
+          <h2 style={{ fontWeight: 'bold' }}>  bvv vv</h2>
           <div>
             <p style={{ paddingLeft: '10%', paddingRight: '10%' }}>We aim to foster a <strong>supportive community</strong> of women and
-        allies* equipped with the resources needed to recognize
-        and overcome challenges. By creating <strong>opportunities for
-        technical and leadership growth</strong>, we work to ensure that
-        people of all identities are able to discover and pursue
-        their interests and talents in order to <strong>positively impact
-        the future of tech.</strong></p>
+              allies* equipped with the resources needed to recognize
+              and overcome challenges. By creating <strong>opportunities for
+                technical and leadership growth</strong>, we work to ensure that
+              people of all identities are able to discover and pursue
+              their interests and talents in order to <strong>positively impact
+                the future of tech.</strong></p>
             <p>* All gender identities are welcomed and supported!</p>
           </div>
           <br /><br />
