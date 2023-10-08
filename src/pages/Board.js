@@ -135,7 +135,7 @@ export default class Board extends Component {
         <h2 style={{ fontWeight: 'bold' }}>Who We Are</h2>
         {this.displayTemp}
 
-        <p>WICC was founded in March 2013 to bring together women in computing fields at Cornell, expand their opportunities and successes, provide a support network of women, and empower them to encourage younger women to consider computing fields. We hope to create a budding community for women and promote interaction on academic, social, and professional issues. By making women in computing fields visible, providing role models and dispelling stereotypes, WICC fosters a support network to empower women and encourage young girls to discover their love for computing.</p>
+        <p>WICC was founded in March 2013 to bring together women and gender minorities in computing fields at Cornell, expand their opportunities and successes, provide a support network, and empower them to encourage younger underrepresented students to consider computing fields. We hope to create a budding community and promote interaction on academic, social, and professional issues. By making women and gender minorities in computing fields visible, providing role models and dispelling stereotypes, WICC fosters a support network to empower everyone and encourage young students to discover their love for computing.</p>
         <hr />
         <Navbar className="justify-content-center" expand="lg" onSelect={handleSelect} style={{ width: "45%", marginLeft: "35%" }}>
 
@@ -294,10 +294,29 @@ export default class Board extends Component {
           }
         </div>
         <div id="advisors" className="container" style={{ paddingLeft: "10%" }}>
-          {this.state.value === "advisors" && advisors.map((value) => {
+
+          {/*this.state.value === "advisors" && advisors.map((value) => {
             return <BoardCard title={value.name} text={value.title} img={(advisorHeadshots[value.netId + '.jpg'])}
-              netId={value.netId} bio={value.bio} year={value.year} />
-          })}
+          netId={value.netId} bio={value.bio} year={value.year}*/}
+          {this.state.value === "advisors" &&
+            <div>
+              <BoardCard title={advisors[0].name} text={advisors[0].title} img={(advisorHeadshots[advisors[0].netId + '.jpg'])}
+                netId={advisors[0].netId} bio={advisors[0].bio} />
+              <div className="row">
+                <div className="col-sm-6">
+                  {/* {gridCols[0]} */}
+                  {createCols(advisors)[0]}
+
+                </div>
+                <div className="col-md-6">
+                  {/* {gridCols[1]} */}
+                  {createCols(advisors)[1]}
+                </div>
+              </div>
+            </div>
+
+
+          }
         </div>
         <center>
           <div id="sponsors" class='sponsorStyle' style={{ width: '100%' }}>

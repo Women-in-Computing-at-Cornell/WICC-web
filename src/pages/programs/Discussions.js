@@ -10,11 +10,6 @@ import ReactGoogleSlides from "react-google-slides";
 import QuestionsCard from "./QuestionsCard.js";
 
 
-
-
-
-
-
 import Image from 'react-bootstrap/Image'
 
 import medal from "../../images/medal.jpg";
@@ -25,7 +20,7 @@ import './programPages.css';
 
 export default class Discussions extends Component {
   render() {
-    let discDirectors = boardData.filter(record => record.title === "Community Discussions Co-Director")
+    let discDirectors = boardData.filter(record => record.title === "Social Co-Director")
 
 
     function importAll(r) {
@@ -92,7 +87,6 @@ export default class Discussions extends Component {
 
                 </div> */}
                 <QuestionsCard name={discDirectors[0].name} title={discDirectors[0].title} img={(boardHeadshots[discDirectors[0].netId + '.jpg'])} netId={discDirectors[0].netId} />
-
 
               </Col>
               <Col >

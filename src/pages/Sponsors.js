@@ -6,7 +6,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import { Nav, NavItem, NavDropdown } from 'react-bootstrap';
 import { sponsorData } from './sponsorData';
 import Image from 'react-bootstrap/Image';
-
+import { WICCSponsors } from './WICCsponsors.pdf';
 
 
 export default class Sponsors extends Component {
@@ -103,7 +103,10 @@ export default class Sponsors extends Component {
             return <a href={value.link}><Image src={(sponsorHeadshots[value.sponsor + '.jpg'])} width='15%' height='2%' style={{ marginBottom: '2%', paddingRight: '20px' }} /></a>
           })
         }
-        </div>
+
+
+
+      </div>
     );
   }
 }

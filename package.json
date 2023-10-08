@@ -6,7 +6,7 @@
     "@devexpress/dx-react-core": "^2.7.5",
     "@devexpress/dx-react-scheduler": "^2.7.5",
     "@emotion/react": "^11.1.5",
-    "@ericz1803/react-google-calendar": "^4.0.3",
+    "@ericz1803/react-google-calendar": "^4.3.1",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",

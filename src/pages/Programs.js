@@ -1,133 +1,214 @@
-import React from 'react';
-import Container from 'react-bootstrap/Container';
-import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import About from './About.js';
-import './pages.css';
+import React from "react";
+import Image from "react-bootstrap/Image";
+import Container from "react-bootstrap/Container";
+import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import "./pages.css";
+import activemember from "../images/programs/activemember.jpg";
+import campaigns from "../images/programs/campaigns.jpg";
+import community from "../images/programs/community.jpg";
+import cyc from "../images/programs/cyc.jpg";
+import lunchbunch from "../images/programs/lunchbunch.jpg";
+import mentorship from "../images/programs/mentorship.jpg";
+import outreach from "../images/programs/outreach.jpg";
+import { HoverStyle } from "devextreme-react/chart.js";
 
 let styles = {
   container: {
-    margin: "5%",
-  },
-  row: {
-    margin: "",
-    display: "flex",
-    justifyContent: "space-evenly"
+    margin: "3%",
   },
   col: {
-    width: "20%",
-    margin: "2.3% 0",
-    backgroundColor: "#9CE2D3",
-    padding: "3.5%",
-    paddingBottom: "6%",
-    marginRight: "5%",
     borderRadius: ".5em",
   },
   link: {
-    textDecoration: 'underline'
-  }
+    color: "black",
+  },
 };
 
 const Programs = () => {
   return (
-
-    <div style={styles.container}>
-
-      <h1 style={{ fontWeight: 'bold' }}>Programs</h1>
-      {/* <div style={styles.row}>
-        <div style={styles.col}>
-          <Link to="/membership" style={styles.link} ><h2>Active Membership</h2>
-          </Link>
-        </div>
-        <div style={styles.col}>
-          <Link to="/discussions" style={styles.link}><h2>Community Discussion</h2>
-          </Link>
-        </div>
-        <div style={styles.col}>
-          <Link to="/lunch" style={styles.link}><h2>Lunch Bunch</h2>
-          </Link>
-        </div>
-        <div style={styles.col}>
-          <Link to="/mentorship" style={styles.link}><h2>Mentorship</h2>
-          </Link>
-        </div>
-      </div>
-      <div style={styles.row}>
-        <div style={styles.col}>
-          <Link to="/prospective" style={styles.link}><h2>Prospective Students</h2>
-          </Link>
-        </div>
-        <div style={styles.col}>
-          <Link to="/outreach" style={styles.link}><h2> Outreach</h2>
-          </Link>
-        </div>
-        <div style={styles.col}>
-          <Link to="/campaigns" style={styles.link}><h2>Campaigns</h2>
-          </Link>
-        </div><div style={styles.col}>
-          <Link to="/events" style={styles.link}><h2>Events</h2>
-          </Link>
-        </div>
-
-      </div>
- */}
-      <Container>
-        <Row style={{ paddingBottom: "2%" }}>
-
-
+    <div style={{ width: "100%", height: "100%" }}>
+      <h1 style={{ fontWeight: "bold", margin: "200px" }}>Programs</h1>
+      <Link to="/membership" style={styles.link}>
+        <Row
+          style={{
+            marginBottom: "100px",
+            marginTop: "100px",
+            padding: "56px",
+            paddingTop: "32px",
+            paddingBottom: "32px",
+            border: "1px solid #9CE2D3",
+            borderRadius: "29px",
+            display: "flex",
+            alignItems: "center",
+          }}
+        >
           <Col style={styles.col}>
-            <Link to="/membership" style={styles.link} ><h3 className="text-center">Active Membership</h3>
-            </Link>
-
+            <h3 className="text-center">Active Membership</h3>
           </Col>
-          <Col style={styles.col}>
-            <Link to="/discussions" style={styles.link}><h3 className="text-center">Community Discussion</h3>
-            </Link>
+          <Col>
+            <Image
+              src={activemember}
+              style={{ width: "90%", height: "auto" }}
+            ></Image>
           </Col>
-          <Col style={styles.col}>
-            <Link to="/lunch" style={styles.link}><h3 className="text-center">Lunch Bunch</h3>
-            </Link>
-
-          </Col>
-          <Col style={styles.col}>
-            <Link to="/mentorship" style={styles.link}><h3 className="text-center">Mentorship</h3>
-            </Link>
-          </Col>
-
         </Row>
-        <Row style={{ paddingBottom: "1%" }}>
+      </Link>
+      <Link to="/discussions" style={styles.link}>
+        <Row
+          style={{
+            marginBottom: "100px",
+            marginTop: "100px",
+            padding: "56px",
+            paddingTop: "32px",
+            paddingBottom: "32px",
+            border: "1px solid #9CE2D3",
+            borderRadius: "29px",
+            display: "flex",
+            alignItems: "center",
+          }}
+        >
+          {" "}
           <Col style={styles.col}>
-            <Link to="/prospective" style={styles.link}><h3 className="text-center">Prospective Students</h3>
-            </Link>
-
+            <h3 className="text-center">Community Discussion</h3>
           </Col>
-          <Col style={styles.col}>
-            <Link to="/outreach" style={styles.link}><h3 className="text-center"> Outreach</h3>
-            </Link>
+          <Col>
+            <Image
+              src={community}
+              style={{ width: "90%", height: "auto" }}
+            ></Image>
           </Col>
-          <Col style={styles.col}>
-            <Link to="/campaigns" style={styles.link}><h3 className="text-center">Campaigns</h3>
-            </Link>
-
-          </Col>
-          {/* <Col style={styles.col}>
-            <Link to="/events" style={styles.link}><h3 className="text-center">Events</h3>
-            </Link>
-
-          </Col> */}
-          
-          <Col style={styles.col}>
-            <Link to="/campaigns" style={styles.link}><h3 className="text-center">Cracking Your Career</h3>
-            </Link>
-          </Col>
-
         </Row>
-      </Container>
-
-    </div >
-
+      </Link>
+      <Link to="/lunch" style={styles.link}>
+        <Row
+          style={{
+            marginBottom: "100px",
+            marginTop: "100px",
+            padding: "56px",
+            paddingTop: "32px",
+            paddingBottom: "32px",
+            border: "1px solid #9CE2D3",
+            borderRadius: "29px",
+            display: "flex",
+            alignItems: "center",
+          }}
+        >
+          {" "}
+          <Col style={styles.col}>
+            <h3 className="text-center">Lunch Bunch</h3>
+          </Col>
+          <Col>
+            <Image
+              src={lunchbunch}
+              style={{ width: "90%", height: "auto" }}
+            ></Image>
+          </Col>
+        </Row>
+      </Link>
+      <Link to="/mentorship" style={styles.link}>
+        <Row
+          style={{
+            marginBottom: "100px",
+            marginTop: "100px",
+            padding: "56px",
+            paddingTop: "32px",
+            paddingBottom: "32px",
+            border: "1px solid #9CE2D3",
+            borderRadius: "29px",
+            display: "flex",
+            alignItems: "center",
+          }}
+        >
+          <Col style={styles.col}>
+            <h3 className="text-center">Mentorship</h3>
+          </Col>
+          <Col>
+            <Image
+              src={mentorship}
+              style={{ width: "90%", height: "auto" }}
+            ></Image>
+          </Col>
+        </Row>
+      </Link>
+      <Link to="/outreach" style={styles.link}>
+        <Row
+          style={{
+            marginBottom: "100px",
+            marginTop: "100px",
+            padding: "56px",
+            paddingTop: "32px",
+            paddingBottom: "32px",
+            border: "1px solid #9CE2D3",
+            borderRadius: "29px",
+            display: "flex",
+            alignItems: "center",
+          }}
+        >
+          {" "}
+          <Col style={styles.col}>
+            <h3 className="text-center"> Outreach</h3>
+          </Col>
+          <Col>
+            <Image
+              src={outreach}
+              style={{ width: "90%", height: "auto" }}
+            ></Image>
+          </Col>
+        </Row>
+      </Link>
+      <Link to="/campaigns" style={styles.link}>
+        <Row
+          style={{
+            marginBottom: "100px",
+            marginTop: "100px",
+            padding: "56px",
+            paddingTop: "32px",
+            paddingBottom: "32px",
+            border: "1px solid #9CE2D3",
+            borderRadius: "29px",
+            display: "flex",
+            alignItems: "center",
+          }}
+        >
+          {" "}
+          <Col style={styles.col}>
+            <h3 className="text-center">Campaigns</h3>
+          </Col>
+          <Col>
+            <Image
+              src={campaigns}
+              style={{ width: "90%", height: "auto" }}
+            ></Image>
+          </Col>
+        </Row>
+      </Link>
+      <Link to="/crackingyourcareer" style={styles.link}>
+        <Row
+          style={{
+            marginBottom: "100px",
+            marginTop: "100px",
+            padding: "56px",
+            paddingTop: "32px",
+            paddingBottom: "32px",
+            border: "1px solid #9CE2D3",
+            borderRadius: "29px",
+            display: "flex",
+            alignItems: "center",
+          }}
+        >
+          <Col style={styles.col}>
+            {" "}
+            <h3 className="text-center">Cracking Your Career</h3>
+          </Col>
+          <Col>
+            <Image src={cyc} style={{ width: "90%", height: "auto" }}></Image>
+          </Col>
+        </Row>
+      </Link>
+    </div>
   );
-}
+};
 
 export default Programs;
