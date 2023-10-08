@@ -21,7 +21,7 @@ const Home = () => {
           </div>
         </section>
         <section class="mission-container">
-          <h2 style={{ fontWeight: 'bold' }}>  bvv vv</h2>
+          <h2 style={{ fontWeight: 'bold' }}>  Our Mission</h2>
           <div>
             <p style={{ paddingLeft: '10%', paddingRight: '10%' }}>We aim to foster a <strong>supportive community</strong> of women and
               allies* equipped with the resources needed to recognize
