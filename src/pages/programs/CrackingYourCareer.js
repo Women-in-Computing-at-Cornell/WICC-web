@@ -1,45 +1,58 @@
-import React, { Component } from 'react';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Button from 'react-bootstrap/Button';
-import { Link } from 'react-router-dom';
-import { boardData } from '../boardData';
-import crackingyourcareer from "../../images/programs-pictures/crackingyourcareer.png"
+import React, { Component } from "react";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import Button from "react-bootstrap/Button";
+import { Link } from "react-router-dom";
+import { boardData } from "../boardData";
+import crackingyourcareer from "../../images/programs-pictures/crackingyourcareer.png";
 import lunchbunch1 from "../../images/programs-pictures/lunchbunch/lunchbunch1.jpg";
 import lunchbunch2 from "../../images/programs-pictures/lunchbunch/lunchbunch2.jpg";
 import lunchbunch3 from "../../images/programs-pictures/lunchbunch/lunchbunch3.jpg";
 import QuestionsCard from "./QuestionsCard.js";
-import Image from 'react-bootstrap/Image'
+import Image from "react-bootstrap/Image";
 
 import medal from "../../images/medal.jpg";
 
-
-import './programPages.css';
-
+import "./programPages.css";
 
 export default class CrackingYourCareer extends Component {
   render() {
-    let directors = boardData.filter(record => record.title === "Career Development Co-Director")
-
+    let directors = boardData.filter(
+      (record) => record.title === "Career Development Co-Director"
+    );
 
     function importAll(r) {
       let images = {};
-      r.keys().map((item, index) => { images[item.replace('./', '')] = r(item); });
+      r.keys().map((item, index) => {
+        images[item.replace("./", "")] = r(item);
+      });
       return images;
     }
 
-    const boardHeadshots = importAll(require.context('../../images/headshots/board', false, /\.jpg/));
-
+    const boardHeadshots = importAll(
+      require.context("../../images/headshots/board", false, /\.jpg/)
+    );
 
     return (
-      <div class='page'>
+      <div class="page">
         <h1>Cracking Your Career</h1>
 
         <Container>
           <Row style={{ paddingBottom: "1%" }}>
             <Col xs lg="6" style={{ paddingRight: "5%", paddingLeft: "0%" }}>
-              <p style={{ paddingRight: '5%', paddingTop: '2%' }}>Trying to find internships? Preparing for recruitment? Cracking Your Career (CYC) is for you! CYC is a 4-week program intended to expose students to career paths and recruitment preparation for Software Engineering (SWE) and Design. The SWE section of CYC will focus on finding jobs and internships, preparing your resume, getting experience, and tackling interviews and interview preparation. Design CYC will focus on product roles catering to User Experience (UX) design. CYC Design will focus on common stages: behaviorals, portfolio review and design challenges. </p>
+              <p style={{ paddingRight: "5%", paddingTop: "2%" }}>
+                Trying to find internships? Preparing for recruitment? Cracking
+                Your Career (CYC) is for you! CYC is a 4-week program intended
+                to expose students to career paths and recruitment preparation
+                for Software Engineering (SWE) and Design. The SWE section of
+                CYC will focus on finding jobs and internships, preparing your
+                resume, getting experience, and tackling interviews and
+                interview preparation. Design CYC will focus on product roles
+                catering to User Experience (UX) design. CYC Design will focus
+                on common stages: behaviorals, portfolio review and design
+                challenges.{" "}
+              </p>
               <br />
               {/* <h4 style={{ paddingTop: "5%" }} >Times</h4> */}
 
@@ -51,15 +64,17 @@ export default class CrackingYourCareer extends Component {
               </div> */}
 
               {/* <h5 style={{ paddingTop: '25%' }}>Applications are closed for this semester.</h5> */}
-
-
             </Col>
-            <Col >
+            <Col>
               <center>
-                <Image src={crackingyourcareer} style={{ width: "70%", height: 'auto', paddingBottom: "2%" }}></Image>
-                {/* <h5>Applications now open!</h5>
-                <p class='sub'>Due Wednesday, Feb. 27th 11:59PM</p>
-                <Button href='https://forms.gle/vZeTVhGveoqZ8AWs9'>Apply</Button> */}
+                <Image
+                  src={crackingyourcareer}
+                  style={{ width: "70%", height: "auto", paddingBottom: "2%" }}
+                ></Image>
+                <h5>Program Timeline</h5>
+                <p class="sub">
+                  Wednesdays Oct 4th - Oct 25th from 4:15 - 5:15pm
+                </p>
               </center>
             </Col>
           </Row>
@@ -102,10 +117,10 @@ export default class CrackingYourCareer extends Component {
           </Row>
         </Container> */}
         <center>
-          <h5 style={{ paddingTop: '5%' }}>Questions?</h5>
+          <h5 style={{ paddingTop: "5%" }}>Questions?</h5>
           <Container style={{ paddingRight: "10%" }}>
             <Row style={{ paddingBottom: "1%" }}>
-              <Col >
+              <Col>
                 {/* <Image src={(boardHeadshots[directors[0].netId + '.jpg'])} roundedCircle style={{ width: "25%", height: 'auto' }}></Image>
                 <br /><br />
                 <div class='boardText'>
@@ -115,11 +130,14 @@ export default class CrackingYourCareer extends Component {
                   </a>
 
                 </div> */}
-                <QuestionsCard name={directors[0].name} title={directors[0].title} img={(boardHeadshots[directors[0].netId + '.jpg'])} netId={directors[0].netId} />
-
-
+                <QuestionsCard
+                  name={directors[0].name}
+                  title={directors[0].title}
+                  img={boardHeadshots[directors[0].netId + ".jpg"]}
+                  netId={directors[0].netId}
+                />
               </Col>
-              <Col >
+              <Col>
                 {/* <Image src={(boardHeadshots[directors[1].netId + '.jpg'])} roundedCircle style={{ width: "25%", height: 'auto' }}></Image>
                 <br /><br />
                 <div class='boardText'>
@@ -128,14 +146,10 @@ export default class CrackingYourCareer extends Component {
                     {directors[1].netId}@cornell.edu
                   </a>
                 </div> */}
-                <QuestionsCard name={directors[1].name} title={directors[1].title} img={(boardHeadshots[directors[1].netId + '.jpg'])} netId={directors[1].netId} />
-
+                {/* <QuestionsCard name={directors[1].name} title={directors[1].title} img={(boardHeadshots[directors[1].netId + '.jpg'])} netId={directors[0].netId} /> */}
               </Col>
             </Row>
           </Container>
-
-
-
         </center>
       </div>
     );
