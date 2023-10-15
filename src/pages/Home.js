@@ -16,8 +16,13 @@ const Home = () => {
         }}>
           <Image src={illustration} id="home-illustration" />
           <div style={{ margin: "3% 0" }}>
-            <h1 style={{ marginBottom: "2%", fontWeight: 'bold' }} class='headerName'>Women in Computing at Cornell</h1>
-            <h2>strives to make computing inclusive for all.</h2>
+            <h1
+              style={{ marginBottom: "2%", fontWeight: "bold" }}
+              class="headerName"
+            >
+              Women in Computing at Cornell
+            </h1>
+            <h2>strives to make computing inclusive for all</h2>
           </div>
         </section>
         <section class="mission-container">
