@@ -51,6 +51,16 @@ export default class Discussions extends Component {
         </Container>
         <h4>Last Community Discussions: </h4>
         <br />
+        <h5>September 2023</h5>
+        <h6>This was our WICC Away event where kicked off the Fall semester. We introduced WICC and our mission to attendees, hosted an allyship workshop, had a painting session, then wrapped up our night with a WICC Q&A Panel!</h6>
+        <br />
+        <ReactGoogleSlides
+          width={640}
+          height={480}
+          slidesLink="https://docs.google.com/presentation/d/1qLtKtR55spx-zBkL9bWjo_P2rAm3oCnIGjADSgGq0Z0/edit?usp=sharing"
+          showControls
+        />
+        <br />
         <h5>Febuary 2022</h5>
         <h6>This was our G-Body #1 where kicked off the Spring semester. We met WICC faculty advisors and reflected on our Fall semester to get ready for the new semester. We learned about setting and completing goals through intention framing and journaling.</h6>
         <br />
