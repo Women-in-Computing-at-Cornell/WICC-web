@@ -41,7 +41,7 @@ export default class Mentorship extends Component {
             <Col xs lg="6" style={{ paddingRight: "5%", paddingLeft: "0%" }}>
               <p style={{ paddingRight: '5%', paddingTop: '2%' }}>Our mentorship program strives to encourage and support students who are pursuing studies or future employment in computing by connecting them with more experienced upperclassmen. The role of the mentor is to empower their mentees and enhance their interests in computing. Mentors and mentees will be matched primarily based on academic and career interests.</p>
               <Container>
-                <Row style={{ paddingTop: '2%'}}>
+                <Row style={{ paddingTop: '2%' }}>
                   <h3>Mentorship Information: </h3>
                   <ul>
                     <li>
@@ -50,9 +50,15 @@ export default class Mentorship extends Component {
                     <li>
                       Thursdays: 5:30-6:30
                     </li>
+                    <li>
+                      Find out more information in our kick off slides!
+                      <Button href="https://docs.google.com/presentation/d/10qt0XGzXejU2yxcj3yZWgZgom5MxcnecLqlItQoKwGU/edit#slide=id.g1134089c044_0_0">
+                        Kickoff Slides
+                      </Button>
+                    </li>
                   </ul>
                 </Row>
-              
+
               </Container>
 
             </Col>
