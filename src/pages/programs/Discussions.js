@@ -34,7 +34,7 @@ export default class Discussions extends Component {
 
     return (
       <div class='page'>
-        <h1>Community Discussions</h1>
+        <h1 >Community Discussions lol!</h1>
 
         <Container>
           <Row style={{ paddingBottom: "5%" }}>
