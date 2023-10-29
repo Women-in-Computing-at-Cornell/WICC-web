@@ -17,7 +17,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 
-
+// comment
 const About = () => {
   return (
     <div class="home-container">
