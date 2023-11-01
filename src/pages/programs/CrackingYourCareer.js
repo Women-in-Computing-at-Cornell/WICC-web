@@ -4,7 +4,16 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
-import { boardData } from "../boardData";
+import {
+  presidents,
+  operations,
+  corporate,
+  academic,
+  brand,
+  outreach,
+  community,
+  advisors,
+} from "src/pages/boardData";
 import crackingyourcareer from "../../images/programs-pictures/crackingyourcareer.png";
 import lunchbunch1 from "../../images/programs-pictures/lunchbunch/lunchbunch1.jpg";
 import lunchbunch2 from "../../images/programs-pictures/lunchbunch/lunchbunch2.jpg";
@@ -18,8 +27,8 @@ import "./programPages.css";
 
 export default class CrackingYourCareer extends Component {
   render() {
-    let directors = boardData.filter(
-      (record) => record.title === "Career Development Co-Director"
+    let directors = academic.filter(
+      (record) => record.position === "Career Development Co-Director"
     );
 
     function importAll(r) {

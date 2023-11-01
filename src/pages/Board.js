@@ -1,17 +1,21 @@
 import React, { Component } from "react";
 import "./pages.css";
 import BoardCard from "../components/BoardCard.js";
-import illustration from "../images/homepage-illustration.png";
 import Navbar from "react-bootstrap/Navbar";
 import { Nav, NavItem, NavDropdown } from "react-bootstrap";
-import { boardData } from "./boardData";
+import {
+  presidents,
+  operations,
+  corporate,
+  academic,
+  brand,
+  outreach,
+  community,
+  advisors,
+} from "./boardData";
 import Sponsors from "./Sponsors";
 import Faculty from "./Faculty";
 import Alumni from "./Alumni";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import { HashLink as Link } from "react-router-hash-link";
 import Member from "../components/memberCard";
 
 export default class Board extends Component {
@@ -24,7 +28,7 @@ export default class Board extends Component {
   }
 
   render() {
-    const firstNames = boardData.map((e) => e.name);
+    // const firstNames = boardData.map((e) => e.name);
     const presidents = [];
     const academic = [];
     const brand = [];
@@ -34,35 +38,33 @@ export default class Board extends Component {
     const outreach = [];
     const advisors = [];
 
-    const displayTemp = [];
+    // boardData.forEach((d, i) => {
+    //   if (d.team === "Presidents") {
+    //     presidents.push(d);
+    //   }
 
-    boardData.forEach((d, i) => {
-      if (d.team === "Presidents") {
-        presidents.push(d);
-      }
-
-      if (d.team === "Academic") {
-        academic.push(d);
-      }
-      if (d.team === "Brand") {
-        brand.push(d);
-      }
-      if (d.team === "Community") {
-        community.push(d);
-      }
-      if (d.team === "Corporate") {
-        corporate.push(d);
-      }
-      if (d.team === "Operations") {
-        operations.push(d);
-      }
-      if (d.team === "Outreach") {
-        outreach.push(d);
-      }
-      if (d.team === "Advisors") {
-        advisors.push(d);
-      }
-    });
+    //   if (d.team === "Academic") {
+    //     academic.push(d);
+    //   }
+    //   if (d.team === "Brand") {
+    //     brand.push(d);
+    //   }
+    //   if (d.team === "Community") {
+    //     community.push(d);
+    //   }
+    //   if (d.team === "Corporate") {
+    //     corporate.push(d);
+    //   }
+    //   if (d.team === "Operations") {
+    //     operations.push(d);
+    //   }
+    //   if (d.team === "Outreach") {
+    //     outreach.push(d);
+    //   }
+    //   if (d.team === "Advisors") {
+    //     advisors.push(d);
+    //   }
+    // });
 
     const handleSelect = (e) => {
       // console.log("e", e);
@@ -89,13 +91,15 @@ export default class Board extends Component {
     const gridCols = [[], []];
     corporate.forEach((data, i) => {
       const comp = (
-        <BoardCard
-          title={data.name}
-          text={data.title}
-          img={boardHeadshots[data.netId + ".jpg"]}
-          netId={data.netId}
-          bio={data.bio}
-        />
+        <>
+          <BoardCard
+            title={data.name}
+            text={data.title}
+            img={boardHeadshots[data.netId + ".jpg"]}
+            netId={data.netId}
+            bio={data.bio}
+          />
+        </>
       );
       const colNumber = i % 2;
       gridCols[colNumber].push(comp);
@@ -214,16 +218,31 @@ export default class Board extends Component {
           {this.state.value === "pres" &&
             presidents.map((member) => {
               return (
-                <BoardCard
-                  title={member.name}
-                  text={member.title}
-                  img={boardHeadshots[member.netId + ".jpg"]}
-                  netId={member.netId}
-                  bio={member.bio}
-                  major={member.major}
-                  year={member.year}
-                  class="col"
-                />
+                <>
+                  {/* <BoardCard
+                    title={member.name}
+                    text={member.title}
+                    img={boardHeadshots[member.netId + ".jpg"]}
+                    netId={member.netId}
+                    bio={member.bio}
+                    major={member.major}
+                    year={member.year}
+                    class="col"
+                  /> */}
+
+                  <Member
+                    name={member.name}
+                    title={member.title}
+                    netid={member.netid}
+                    bio={member.bio}
+                    class="col"
+                  />
+                  <div>
+                    <img
+                      src={`src/images/headshots/board/${member.netid}.jpg`}
+                    />
+                  </div>
+                </>
               );
             })}
         </div>
