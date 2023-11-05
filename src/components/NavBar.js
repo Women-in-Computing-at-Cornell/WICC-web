@@ -15,7 +15,9 @@ class NavBar extends React.Component {
             width="30"
             height="35"
             alt="WICC logo"
+            className="mr-2" 
           />
+          <span style = {{ fontSize: '16px', paddingLeft: '8px'}} >Women in Computing at Cornell</span>
         </Navbar.Brand>
         <Nav>
           <Nav.Link href="/" class="navLink">Home</Nav.Link>
