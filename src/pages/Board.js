@@ -45,23 +45,23 @@ export default class Board extends Component {
     });
   };
 
-  createCols = (members) => {
-    const gridColsTeam = [[], []];
-    members.forEach((member, i) => {
-      const comp = (
-        <BoardCard
-          key={member.netId}
-          title={member.name}
-          text={member.title}
-          img={boardHeadshots[member.netId + ".jpg"]}
-          netId={member.netId}
-          bio={member.bio}
-        />
-      );
-      gridColsTeam[i % 2].push(comp);
-    });
-    return gridColsTeam;
-  };
+  // createCols = (members) => {
+  //   const gridColsTeam = [[], []];
+  //   members.forEach((member, i) => {
+  //     const comp = (
+  //       <BoardCard
+  //         key={member.netId}
+  //         title={member.name}
+  //         text={member.title}
+  //         img={boardHeadshots[member.netId + ".jpg"]}
+  //         netId={member.netId}
+  //         bio={member.bio}
+  //       />
+  //     );
+  //     gridColsTeam[i % 2].push(comp);
+  //   });
+  //   return gridColsTeam;
+  // };
 
   renderMembersSection = (members) => {
     return (
@@ -73,6 +73,7 @@ export default class Board extends Component {
               title={member.position}
               netid={member.netId}
               bio={member.bio}
+              img={boardHeadshots[member.netId + ".jpg"]} // Pass the dynamically imported image here
             />
           </div>
         ))}
