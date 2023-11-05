@@ -13,7 +13,7 @@ import {
   outreach,
   community,
   advisors,
-} from "./boardData";
+} from "../boardData";
 import mentorship1 from "../../images/programs-pictures/mentorship1.jpeg";
 import mentorship2 from "../../images/programs-pictures/mentorship2updated1.jpg";
 import mentorship3 from "../../images/programs-pictures/mentorship3.jpeg";

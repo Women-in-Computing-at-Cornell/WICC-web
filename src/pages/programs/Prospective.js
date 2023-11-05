@@ -13,7 +13,7 @@ import {
   outreach,
   community,
   advisors,
-} from "./boardData";
+} from "../boardData";
 import QuestionsCard from "./QuestionsCard.js";
 
 import Image from "react-bootstrap/Image";

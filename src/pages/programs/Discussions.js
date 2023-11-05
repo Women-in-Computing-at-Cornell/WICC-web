@@ -13,7 +13,7 @@ import {
   outreach,
   community,
   advisors,
-} from "src/pages/boardData";
+} from "../boardData";
 import discussion from "../../images/programs-pictures/discussions.jpg";
 import ReactGoogleSlides from "react-google-slides";
 import QuestionsCard from "./QuestionsCard.js";

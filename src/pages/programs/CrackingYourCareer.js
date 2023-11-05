@@ -13,7 +13,7 @@ import {
   outreach,
   community,
   advisors,
-} from "src/pages/boardData";
+} from "../boardData";
 import crackingyourcareer from "../../images/programs-pictures/crackingyourcareer.png";
 import lunchbunch1 from "../../images/programs-pictures/lunchbunch/lunchbunch1.jpg";
 import lunchbunch2 from "../../images/programs-pictures/lunchbunch/lunchbunch2.jpg";

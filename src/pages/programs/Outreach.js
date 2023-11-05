@@ -13,7 +13,7 @@ import {
   outreach,
   community,
   advisors,
-} from "./boardData";
+} from "../boardData";
 import ReactGoogleSlides from "react-google-slides";
 import outreach3 from "../../images/outreach/outreach.jpg";
 import outreach1 from "../../images/outreach/outreach1.jpg";

@@ -13,7 +13,7 @@ import {
   outreach,
   community,
   advisors,
-} from "./boardData";
+} from "../boardData";
 import lunchbunch1 from "../../images/programs-pictures/lunchbunch/lunchbunch1.jpg";
 import lunchbunch2 from "../../images/programs-pictures/lunchbunch/lunchbunch2.jpg";
 import lunchbunch3 from "../../images/programs-pictures/lunchbunch/lunchbunch3.jpg";
