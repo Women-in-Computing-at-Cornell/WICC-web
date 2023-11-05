@@ -3,11 +3,13 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
+import Carousel from 'react-bootstrap/Carousel'
 import { Link } from 'react-router-dom';
 import { boardData } from '../boardData';
 import discussion from "../../images/programs-pictures/discussions.jpg";
 import ReactGoogleSlides from "react-google-slides";
 import QuestionsCard from "./QuestionsCard.js";
+
 
 import Image from 'react-bootstrap/Image'
 
@@ -34,22 +36,25 @@ export default class Discussions extends Component {
 
     return (
       <div>
-        <h1 class='title'>Community Discussions</h1>
+        {/* Hero Image */}
+        <div class='hero-image'>
+          <div class='title'>
+            <h1>Community Discussions</h1>
+          </div>
+        </div>
 
-        {/* <Container>
-          <Row style={{ paddingBottom: "5%" }}>
-            <Col xs lg="6" style={{ paddingRight: "10%", paddingLeft: "0%" }}>
-              <p style={{ paddingRight: '5%', paddingTop: '2%' }}>WICC is dedicated towards fostering an inclusive space for individuals of all identities to feel empowered to speak on issues in the CIS community, both on- and off-campus. We hold monthly discussions encompassing topics such as diversity in tech, the definition of success, and more. It is our goal to have a greater number of voices heard and to have a greater breadth of women and allies voicing their opinions at the table.</p>
-
-
-            </Col>
-            <Col >
-              <Image src={discussion} style={{ width: "80%", height: 'auto' }}></Image>
-
-            </Col>
-          </Row>
-        </Container> */}
         <div class='page'>
+          <p class='header'>Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+            dolor in reprehenderit in voluptate velit esse cillum dolore eu
+            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+            sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <div class='wicc-away'>
+            {/* <h3>WICC Away</h3> */}
+            <Carousel></Carousel>
+          </div>
           <h4>Last Community Discussions: </h4>
           <br />
           <h5>September 2023</h5>
@@ -87,16 +92,6 @@ export default class Discussions extends Component {
             <Container style={{ paddingRight: "10%" }}>
               <Row style={{ paddingBottom: "1%" }}>
                 <Col >
-                  {/* <Image src={(boardHeadshots[discDirectors[0].netId + '.jpg'])} roundedCircle style={{ width: "25%", height: 'auto' }}></Image>
-                <br /><br />
-
-                <div class='boardText'>
-                  <p >{discDirectors[0].name}, {discDirectors[0].title}</p>
-                  <a href={"mailto:" + discDirectors[0].netId + "@cornell.edu"} class="emailLink">
-                    {discDirectors[0].netId}@cornell.edu
-                  </a>
-
-                </div> */}
                   <QuestionsCard name={discDirectors[0].name} title={discDirectors[0].title} img={(boardHeadshots[discDirectors[0].netId + '.jpg'])} netId={discDirectors[0].netId} />
 
                 </Col>
