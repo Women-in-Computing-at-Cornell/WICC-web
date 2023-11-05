@@ -1,142 +1,91 @@
 import React, { Component } from "react";
 import "./pages.css";
-import BoardCard from "../components/BoardCard.js";
-import illustration from "../images/homepage-illustration.png";
+import BoardCard from "../components/BoardCard";
 import Navbar from "react-bootstrap/Navbar";
-import { Nav, NavItem, NavDropdown } from "react-bootstrap";
-import { boardData } from "./boardData";
+import { Nav, NavDropdown } from "react-bootstrap";
+import {
+  presidents,
+  operations,
+  corporate,
+  academic,
+  brand,
+  outreach,
+  community,
+  advisors,
+} from "./boardData";
 import Sponsors from "./Sponsors";
 import Faculty from "./Faculty";
 import Alumni from "./Alumni";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import { HashLink as Link } from "react-router-hash-link";
 import Member from "../components/memberCard";
+
+function importAll(r) {
+  let images = {};
+  r.keys().forEach((item) => (images[item.replace("./", "")] = r(item)));
+  return images;
+}
+
+const boardHeadshots = importAll(
+  require.context("../images/headshots/board", false, /\.jpg/)
+);
+const advisorHeadshots = importAll(
+  require.context("../images/headshots/board/advisors", false, /\.jpg/)
+);
 
 export default class Board extends Component {
   constructor(props) {
     super(props);
     this.state = {
       value: "pres",
-      displayData: [],
     };
   }
 
-  render() {
-    const firstNames = boardData.map((e) => e.name);
-    const presidents = [];
-    const academic = [];
-    const brand = [];
-    const community = [];
-    const corporate = [];
-    const operations = [];
-    const outreach = [];
-    const advisors = [];
-
-    const displayTemp = [];
-
-    boardData.forEach((d, i) => {
-      if (d.team === "Presidents") {
-        presidents.push(d);
-      }
-
-      if (d.team === "Academic") {
-        academic.push(d);
-      }
-      if (d.team === "Brand") {
-        brand.push(d);
-      }
-      if (d.team === "Community") {
-        community.push(d);
-      }
-      if (d.team === "Corporate") {
-        corporate.push(d);
-      }
-      if (d.team === "Operations") {
-        operations.push(d);
-      }
-      if (d.team === "Outreach") {
-        outreach.push(d);
-      }
-      if (d.team === "Advisors") {
-        advisors.push(d);
-      }
+  handleSelect = (e) => {
+    this.setState({
+      value: e,
     });
+  };
 
-    const handleSelect = (e) => {
-      // console.log("e", e);
-      this.setState({
-        value: e,
-      });
-    };
-
-    function importAll(r) {
-      let images = {};
-      r.keys().map((item, index) => {
-        images[item.replace("./", "")] = r(item);
-      });
-      return images;
-    }
-
-    const boardHeadshots = importAll(
-      require.context("../images/headshots/board", false, /\.jpg/)
-    );
-    const advisorHeadshots = importAll(
-      require.context("../images/headshots/board/advisors", false, /\.jpg/)
-    );
-
-    const gridCols = [[], []];
-    corporate.forEach((data, i) => {
+  createCols = (members) => {
+    const gridColsTeam = [[], []];
+    members.forEach((member, i) => {
       const comp = (
         <BoardCard
-          title={data.name}
-          text={data.title}
-          img={boardHeadshots[data.netId + ".jpg"]}
-          netId={data.netId}
-          bio={data.bio}
+          key={member.netId}
+          title={member.name}
+          text={member.title}
+          img={boardHeadshots[member.netId + ".jpg"]}
+          netId={member.netId}
+          bio={member.bio}
         />
       );
-      const colNumber = i % 2;
-      gridCols[colNumber].push(comp);
+      gridColsTeam[i % 2].push(comp);
     });
+    return gridColsTeam;
+  };
 
-    function createCols(arr) {
-      let gridColsTeam;
-      if (
-        arr == academic ||
-        arr == brand ||
-        arr == community ||
-        arr == corporate ||
-        arr == outreach
-      ) {
-        gridColsTeam = [[], []];
-        arr = arr.slice(1);
-      } else {
-        gridColsTeam = [[], []];
-      }
-      arr.forEach((data, i) => {
-        const comp = (
-          <BoardCard
-            title={data.name}
-            text={data.title}
-            img={boardHeadshots[data.netId + ".jpg"]}
-            netId={data.netId}
-            bio={data.bio}
-          />
-        );
-        let colNumber = 0;
-        colNumber = i % 2;
-        gridColsTeam[colNumber].push(comp);
-      });
-      return gridColsTeam;
-    }
+  renderMembersSection = (members) => {
+    return (
+      <div className="container">
+        {members.map((member) => (
+          <div key={member.netId} className="col">
+            <Member
+              name={member.name}
+              title={member.position}
+              netid={member.netId}
+              bio={member.bio}
+            />
+          </div>
+        ))}
+      </div>
+    );
+  };
+
+  render() {
+    const { value } = this.state;
 
     return (
-      <div class="containerPage">
+      <div className="containerPage">
         <h2 style={{ fontWeight: "bold" }}>Who We Are</h2>
-        {this.displayTemp}
-
         <p>
           WICC was founded in March 2013 to bring together women and gender
           minorities in computing fields at Cornell, expand their opportunities
@@ -149,11 +98,11 @@ export default class Board extends Component {
           everyone and encourage young students to discover their love for
           computing.
         </p>
-        <hr />
+
         <Navbar
           className="justify-content-center"
           expand="lg"
-          onSelect={handleSelect}
+          onSelect={this.handleSelect}
           style={{ width: "45%", marginLeft: "35%" }}
         >
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -200,207 +149,29 @@ export default class Board extends Component {
             </Nav>
           </Navbar.Collapse>
         </Navbar>
-        {/* <div>
-          <Member
-            name="Rachel Tong"
-            title="President"
-            linkedin=""
-            netid="rt387"
-            bio="WICC introduced me to a close community of people who are not only passionate about computing but also extremely supportive and eager to help. I was first introduced to WICC freshman fall through the Lunch Bunch and Mentorship Program. Amidst the chaotic transition into college, those programs truly helped me ease into college and meet amazing upperclassmen and professors. I'm super excited to get more involved and meet more people!"
-          />
-        </div> */}
 
-        <div id="presidents" className="rowC">
-          {this.state.value === "pres" &&
-            presidents.map((member) => {
-              return (
-                <BoardCard
-                  title={member.name}
-                  text={member.title}
-                  img={boardHeadshots[member.netId + ".jpg"]}
-                  netId={member.netId}
-                  bio={member.bio}
-                  major={member.major}
-                  year={member.year}
-                  class="col"
-                />
-              );
-            })}
-        </div>
-
-        <div id="academic" className="container">
-          {this.state.value === "academic" && (
-            <div>
-              <BoardCard
-                title={academic[0].name}
-                text={academic[0].title}
-                img={boardHeadshots[academic[0].netId + ".jpg"]}
-                netId={academic[0].netId}
-                bio={academic[0].bio}
-              />
-
-              <div className="row">
-                <div className="col-sm-6">
-                  {/* {gridCols[0]} */}
-                  {createCols(academic)[0]}
-                </div>
-                <div className="col-md-6">
-                  {/* {gridCols[1]} */}
-                  {createCols(academic)[1]}
-                </div>
-              </div>
-            </div>
-          )}
-        </div>
-
-        <div id="brand" className="container">
-          {this.state.value === "brand" && (
-            <div>
-              <BoardCard
-                title={brand[0].name}
-                text={brand[0].title}
-                img={boardHeadshots[brand[0].netId + ".jpg"]}
-                netId={brand[0].netId}
-                bio={brand[0].bio}
-              />
-              <div className="row">
-                <div className="col-sm-6">
-                  {/* {gridCols[0]} */}
-
-                  {createCols(brand)[0]}
-                </div>
-                <div className="col-md-6">{createCols(brand)[1]}</div>
-              </div>
-            </div>
-          )}
-        </div>
-
-        <div id="community" className="container">
-          {this.state.value === "community" && (
-            <div>
-              <BoardCard
-                title={community[0].name}
-                text={community[0].title}
-                img={boardHeadshots[community[0].netId + ".jpg"]}
-                netId={community[0].netId}
-                bio={community[0].bio}
-              />
-
-              <div className="row">
-                <div className="col-md-6">
-                  {/* {gridCols[0]} */}
-
-                  {createCols(community)[0]}
-                </div>
-                <div className="col-md-5">
-                  {/* {gridCols[1]} */}
-                  {createCols(community)[1]}
-                </div>
-              </div>
-            </div>
-          )}
-        </div>
-
-        <div id="corporate" className="container">
-          {this.state.value === "corporate" && (
-            <div>
-              <BoardCard
-                title={corporate[0].name}
-                text={corporate[0].title}
-                img={boardHeadshots[corporate[0].netId + ".jpg"]}
-                netId={corporate[0].netId}
-                bio={corporate[0].bio}
-              />
-              <div className="row">
-                <div className="col-sm-6">
-                  {/* {gridCols[0]} */}
-                  {createCols(corporate)[0]}
-                </div>
-                <div className="col-md-6">
-                  {/* {gridCols[1]} */}
-                  {createCols(corporate)[1]}
-                </div>
-              </div>
-            </div>
-          )}
-        </div>
-
-        <div id="operations" className="container">
-          {this.state.value === "operations" && (
-            <div className="row">
-              <div className="col-sm-6">
-                {/* {gridCols[0]} */}
-                {createCols(operations)[0]}
-              </div>
-              <div className="col-md-6">
-                {/* {gridCols[1]} */}
-                {createCols(operations)[1]}
-              </div>
-            </div>
-          )}
-        </div>
-
-        <div id="outreach" className="container">
-          {this.state.value === "outreach" && (
-            <div>
-              <BoardCard
-                title={outreach[0].name}
-                text={outreach[0].title}
-                img={boardHeadshots[outreach[0].netId + ".jpg"]}
-                netId={outreach[0].netId}
-                bio={outreach[0].bio}
-              />
-
-              <div className="row">
-                <div className="col-sm-6">
-                  {/* {gridCols[0]} */}
-                  {createCols(outreach)[0]}
-                </div>
-                <div className="col-md-6">
-                  {/* {gridCols[1]} */}
-                  {createCols(outreach)[1]}
-                </div>
-              </div>
-            </div>
-          )}
-        </div>
-        <div id="advisors" className="container" style={{ paddingLeft: "10%" }}>
-          {/*this.state.value === "advisors" && advisors.map((value) => {
-            return <BoardCard title={value.name} text={value.title} img={(advisorHeadshots[value.netId + '.jpg'])}
-          netId={value.netId} bio={value.bio} year={value.year}*/}
-          {this.state.value === "advisors" && (
-            <div>
-              <BoardCard
-                title={advisors[0].name}
-                text={advisors[0].title}
-                img={advisorHeadshots[advisors[0].netId + ".jpg"]}
-                netId={advisors[0].netId}
-                bio={advisors[0].bio}
-              />
-              <div className="row">
-                <div className="col-sm-6">
-                  {/* {gridCols[0]} */}
-                  {createCols(advisors)[0]}
-                </div>
-                <div className="col-md-6">
-                  {/* {gridCols[1]} */}
-                  {createCols(advisors)[1]}
-                </div>
-              </div>
-            </div>
-          )}
-        </div>
-        <center>
-          <div id="sponsors" class="sponsorStyle" style={{ width: "100%" }}>
-            {this.state.value === "sponsors" && <Sponsors />}
+        {value === "pres" && this.renderMembersSection(presidents.members)}
+        {value === "academic" && (
+          <div className="row">
+            {this.createCols(academic.members)[0]}
+            {this.createCols(academic.members)[1]}
           </div>
-        </center>
-        <div id="faculty" style={{ width: "100%" }}>
-          {this.state.value === "faculty" && <Faculty />}
+        )}
+        {value === "brand" && this.renderMembersSection(brand.members)}
+        {value === "community" && this.renderMembersSection(community.members)}
+        {value === "corporate" && this.renderMembersSection(corporate.members)}
+        {value === "operations" &&
+          this.renderMembersSection(operations.members)}
+        {value === "outreach" && this.renderMembersSection(outreach.members)}
+        {value === "advisors" && this.renderMembersSection(advisors.members)}
+
+        <div id="sponsors" className="sponsorStyle">
+          {value === "sponsors" && <Sponsors />}
         </div>
-        <div id="alumni" style={{ width: "100%" }}>
-          {this.state.value === "alumni" && <Alumni />}
-        </div>
+
+        <div id="faculty">{value === "faculty" && <Faculty />}</div>
+
+        <div id="alumni">{value === "alumni" && <Alumni />}</div>
       </div>
     );
   }
