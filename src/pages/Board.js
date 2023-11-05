@@ -151,12 +151,7 @@ export default class Board extends Component {
         </Navbar>
 
         {value === "pres" && this.renderMembersSection(presidents.members)}
-        {value === "academic" && (
-          <div className="row">
-            {this.createCols(academic.members)[0]}
-            {this.createCols(academic.members)[1]}
-          </div>
-        )}
+        {value === "academic" && this.renderMembersSection(academic.members)}
         {value === "brand" && this.renderMembersSection(brand.members)}
         {value === "community" && this.renderMembersSection(community.members)}
         {value === "corporate" && this.renderMembersSection(corporate.members)}
