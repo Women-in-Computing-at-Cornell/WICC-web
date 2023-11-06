@@ -1,6 +1,4 @@
 import React from "react";
-// import linkedinlogo from "../assets/img/linkedin.svg";
-//className="rounded-lg mb-3"
 
 function Member({ name, title, linkedin, netid, bio, img }) {
   return (
