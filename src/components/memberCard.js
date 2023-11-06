@@ -1,5 +1,4 @@
 import React from "react";
-// import linkedinlogo from "../assets/img/linkedin.svg";
 
 function Member({ name, title, linkedin, netid, bio, img }) {
   return (
@@ -9,7 +8,7 @@ function Member({ name, title, linkedin, netid, bio, img }) {
       >
         <div>
           {/* Use the img prop passed to the component */}
-          <img src={img} alt={name} className="rounded-lg mb-3" />
+          <img style={{borderRadius: "10%", height:"200px", width:"100%", objectFit:"cover", float:"left"}} class="headshots" src={img} alt={name} />
         </div>
         <div>
           <div>{name}</div>
