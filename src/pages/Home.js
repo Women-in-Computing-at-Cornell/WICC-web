@@ -9,6 +9,10 @@ import Sponsors from '../pages/Sponsors';
 import missionImg from "../images/colorgrouppic.png"
 import boardGroupPic from "../images/peoplegroupic.jpg"
 
+import PhotoCarousel from '../pages/PhotoCarousel';
+import mentorshipPic from '../images/programs-pictures/mentorship2.jpg'
+import outreachPic from '../images/outreach/outreach2.jpg'
+
 
 const Home = () => {
   return (
@@ -28,10 +32,13 @@ const Home = () => {
             <h2>strives to make computing inclusive for all</h2>
           </div>
         </section>
-        <section class="mission-container">
+        <section style = {{justifyContent: 'space-around'}}class="mission-container">
+        <div>
+            <Image style={{ maxWidth: '450px' }} src={missionImg} id="mission-image"></Image>
+          </div>
             <div>
             <h2 style={{ textAlign: 'left', fontWeight: 'bold' }}>  Our Mission</h2>
-            <p style={{textAlign: 'left', maxWidth: '400px'}}>We aim to foster a <strong>supportive community</strong> of women and
+            <p style={{textAlign: 'left', maxWidth: '570px'}}>We aim to foster a <strong>supportive community</strong> of women and
               allies* equipped with the resources needed to recognize
               and overcome challenges. By creating <strong>opportunities for
                 technical and leadership growth</strong>, we work to ensure that
@@ -39,12 +46,18 @@ const Home = () => {
               their interests and talents in order to <strong>positively impact
                 the future of tech.</strong></p>
             <p style={{ textAlign: 'left'}}>* All gender identities are welcomed and supported!</p>
+            <h2 style={{ textAlign: 'left', fontWeight: 'bold' }}>  Semester Outlook</h2>
+            <p style={{textAlign: 'left', maxWidth: '570px'}}>WICC is a place where women 
+            and gender minorities feel supported throughout their academic journey and 
+            careers in technology. We are a coalition of leaders who seek to make an 
+            impact on Cornell, Ithaca and our greater community. Achieving this 
+            impact does not just involve WICC e-board, but also you (g-body members),
+             CIS staff, Cornell, and the greater Ithaca community!</p>
           </div>
-          <div>
-            <Image style={{ maxWidth: '400px', paddingLeft: '50px' }} src={missionImg} id="mission-image"></Image>
-          </div>
-          <br /><br />
         </section>
+        <section class="carousel-container">
+        <PhotoCarousel imgNames={["img1","img2"]} pics={[mentorshipPic, outreachPic]} />
+      </section>
         <section style = {{marginTop: '5%'}} class='sponsor-container'>
         <h2 style={{ fontWeight: 'bold' }}>Our Sponsors</h2>
           <Sponsors />
