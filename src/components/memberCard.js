@@ -4,7 +4,7 @@ function Member({ name, title, linkedin, netid, bio, img }) {
   return (
     <>
       <div
-        style={{ width: "30%", height: "80%", border: "none", padding: "5%" }}
+        style={{ width: "30%", height: "80%", border: "none", padding: "5%", minWidth:"200px" }}
       >
         <div>
           {/* Use the img prop passed to the component */}
