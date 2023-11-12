@@ -7,7 +7,7 @@ import illustration from "../images/homepage-illustration.png";
 import Sponsors from '../pages/Sponsors';
 
 import missionImg from "../images/colorgrouppic.png"
-import boardGroupPic from "../images/peoplegroupic.JPG"
+import boardGroupPic from "../images/peoplegroupic.jpg"
 
 
 const Home = () => {
