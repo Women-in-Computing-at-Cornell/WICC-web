@@ -13,6 +13,8 @@ import PhotoCarousel from '../pages/PhotoCarousel';
 import mentorshipPic from '../images/programs-pictures/mentorship2.jpg'
 import outreachPic from '../images/outreach/outreach2.jpg'
 
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+
 
 const Home = () => {
   return (
@@ -55,7 +57,7 @@ const Home = () => {
              CIS staff, Cornell, and the greater Ithaca community!</p>
           </div>
         </section>
-        <section class="carousel-container">
+        <section style={{paddingTop: '10px'}} class="carousel-container">
         <PhotoCarousel imgNames={["img1","img2"]} pics={[mentorshipPic, outreachPic]} />
       </section>
         <section style = {{marginTop: '5%'}} class='sponsor-container'>
