@@ -41,7 +41,7 @@ export default class Discussions extends Component {
           <div class='title'>
             <div class="typewriter">
               <b>
-                <h1>Community Discussions</h1></b>
+                <h1>Community Discussions :) </h1></b>
             </div>
           </div>
         </div>

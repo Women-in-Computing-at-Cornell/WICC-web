@@ -2,7 +2,7 @@
   text-align: center;
   align-items: center;
   box-sizing: content-box;
-  width: 500;
+  /* width: 500; */
   /* background: #defff3; */
   padding: 50px;
   padding-top: 200px;
@@ -61,7 +61,7 @@
   }
 
   to {
-    width: 650px
+    width: 720px
   }
 }
 
