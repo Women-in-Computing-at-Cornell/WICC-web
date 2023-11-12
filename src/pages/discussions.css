@@ -2,11 +2,13 @@
   text-align: center;
   align-items: center;
   box-sizing: content-box;
-  width: 100%;
+  width: 500;
   /* background: #defff3; */
   padding: 50px;
   padding-top: 200px;
   padding-bottom: 200px;
+  display: flex;
+  justify-content: center;
 }
 
 .hero-image {
@@ -34,7 +36,8 @@
 
 /* DEMO-SPECIFIC STYLES */
 .typewriter h1 {
-  color: #fff;
+  /* color: #fff; */
+  color: rgba(0, 0, 0);
   font-family: monospace;
   overflow: hidden;
   /* Ensures the content is not revealed until the animation */
@@ -58,7 +61,7 @@
   }
 
   to {
-    width: 45%
+    width: 650px
   }
 }
 
