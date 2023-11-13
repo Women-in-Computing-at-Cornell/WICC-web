@@ -137,26 +137,29 @@ export default class Board extends Component {
 
         <p>WICC was founded in March 2013 to bring together women and gender minorities in computing fields at Cornell, expand their opportunities and successes, provide a support network, and empower them to encourage younger underrepresented students to consider computing fields. We hope to create a budding community and promote interaction on academic, social, and professional issues. By making women and gender minorities in computing fields visible, providing role models and dispelling stereotypes, WICC fosters a support network to empower everyone and encourage young students to discover their love for computing.</p>
         <hr />
-        <div style={{ float: "right", height: "100%", display: "flex", flexDirection: "column", alignItems: "flex-end" }}>
-        <Nav onSelect={handleSelect} className="flex-column">
-        <p style={{ fontWeight: "bold" }} > ON THIS PAGE:</p>
-          <Nav.Link href="#board#presidents" eventKey="pres">Presidents</Nav.Link>
-          <Nav.Link href="#board#operations" eventKey="operations">Operations</Nav.Link>
-          <Nav.Link href="#board#corporate" eventKey="corporate">Corporate</Nav.Link>
-          <Nav.Link href="#board#academic" eventKey="academic">Academic</Nav.Link>
-          <Nav.Link href="#board#brand" eventKey="brand">Brand</Nav.Link>
-          <Nav.Link href="#board#community" eventKey="community">Community</Nav.Link>
-          <Nav.Link href="#board#outreach" eventKey="outreach">Outreach</Nav.Link>
-          <Nav.Link href="#board#advisors" eventKey="advisors">Advisors</Nav.Link>
-          <Nav.Link href="#board#faculty" eventKey="faculty">Faculty Board</Nav.Link>
-          <Nav.Link href="#board#sponsors" eventKey="sponsors">Sponsors</Nav.Link>
-          <Nav.Link href="#board#alumni" eventKey="alumni">Alumni</Nav.Link>
-        </Nav>
-      </div>
+        <Navbar className="justify-content-center" expand="lg" onSelect={handleSelect} style={{ width: "45%", marginLeft: "35%" }}>
 
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="mr-auto">
+              <NavDropdown title="Student Board" id="basic-nav-dropdown">
+                <NavDropdown.Item href="#board#presidents" eventKey="pres">Presidents</NavDropdown.Item>
+                <NavDropdown.Item href="#board#operations" eventKey="operations">Operations</NavDropdown.Item>
+                <NavDropdown.Item href="#board#corporate" eventKey="corporate">Corporate</NavDropdown.Item>
+                <NavDropdown.Item href="#board#academic" eventKey="academic">Academic</NavDropdown.Item>
+                <NavDropdown.Item href="#board#brand" eventKey="brand">Brand</NavDropdown.Item>
+                <NavDropdown.Item href="#board#community" eventKey="community">Community</NavDropdown.Item>
+                <NavDropdown.Item href="#board#outreach" eventKey="outreach">Outreach</NavDropdown.Item>
+                <NavDropdown.Item href="#board#advisors" eventKey="advisors">Advisors</NavDropdown.Item>
+              </NavDropdown>
+              <Nav.Link href="#board#faculty" eventKey="faculty">Faculty Board</Nav.Link>
+              <Nav.Link href="#board#sponsors" eventKey="sponsors">Sponsors</Nav.Link>
+              <Nav.Link href="#board#alumni" eventKey="alumni">Alumni</Nav.Link>
 
+            </Nav>
+          </Navbar.Collapse>
+        </Navbar>
 
-      
         <div id="presidents" className='rowC'>
           {this.state.value === "pres" &&
             presidents.map((member) => {
