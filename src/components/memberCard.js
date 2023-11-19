@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function Member({ name, title, linkedin, netid, bio, img }) {
+function Member({ name, title, netid, bio, img }) {
   // State to toggle display of detailed info
   const [showDetails, setShowDetails] = useState(false);
 
@@ -16,7 +16,7 @@ function Member({ name, title, linkedin, netid, bio, img }) {
           width: "30%",
           height: "80%",
           border: "none",
-          padding: "5%",
+
           minWidth: "200px",
         }}
         onClick={toggleDetails}

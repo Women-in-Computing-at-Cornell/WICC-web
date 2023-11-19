@@ -17,6 +17,8 @@ import Sponsors from "./Sponsors";
 import Faculty from "./Faculty";
 import Alumni from "./Alumni";
 import Member from "../components/memberCard";
+import Subteam from "../components/Subteam";
+import hero from "../images/about-pictures/abouthero.jpg";
 
 function importAll(r) {
   let images = {};
@@ -31,6 +33,17 @@ const advisorHeadshots = importAll(
   require.context("../images/headshots/board/advisors", false, /\.jpg/)
 );
 
+const teams = [
+  presidents,
+  operations,
+  corporate,
+  academic,
+  brand,
+  outreach,
+  community,
+  advisors,
+];
+
 export default class Board extends Component {
   constructor(props) {
     super(props);
@@ -44,24 +57,6 @@ export default class Board extends Component {
       value: e,
     });
   };
-
-  // createCols = (members) => {
-  //   const gridColsTeam = [[], []];
-  //   members.forEach((member, i) => {
-  //     const comp = (
-  //       <BoardCard
-  //         key={member.netId}
-  //         title={member.name}
-  //         text={member.title}
-  //         img={boardHeadshots[member.netId + ".jpg"]}
-  //         netId={member.netId}
-  //         bio={member.bio}
-  //       />
-  //     );
-  //     gridColsTeam[i % 2].push(comp);
-  //   });
-  //   return gridColsTeam;
-  // };
 
   renderMembersSection = (members) => {
     return (
@@ -86,6 +81,13 @@ export default class Board extends Component {
 
     return (
       <div className="containerPage">
+        <div>
+          <img
+            src={hero}
+            style={{ maxWidth: "100%", height: "auto" }}
+            alt="Description"
+          />
+        </div>
         <h2 style={{ fontWeight: "bold" }}>Who We Are</h2>
         <p>
           WICC was founded in March 2013 to bring together women and gender
@@ -99,25 +101,66 @@ export default class Board extends Component {
           everyone and encourage young students to discover their love for
           computing.
         </p>
+        <div style={{ display: "flex" }}>
+          <div style={{ flexGrow: 1 }}>
+            {teams.map((t, key) => (
+              <div key={key} style={{ marginBottom: "20px" }}>
+                <div>
+                  {t.name}
+                  <Subteam team={t} />
+                </div>
+              </div>
+            ))}
+          </div>
+          <div
+            style={{
+              float: "right", // Float might not be necessary with flex layout
+              height: "100%",
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "flex-end",
+            }}
+          >
+            <Nav onSelect={this.handleSelect} className="flex-column">
+              <p style={{ fontWeight: "bold" }}> ON THIS PAGE:</p>
+              <Nav.Link href="#board#presidents" eventKey="pres">
+                Presidents
+              </Nav.Link>
+              <Nav.Link href="#board#operations" eventKey="operations">
+                Operations
+              </Nav.Link>
+              <Nav.Link href="#board#corporate" eventKey="corporate">
+                Corporate
+              </Nav.Link>
+              <Nav.Link href="#board#academic" eventKey="academic">
+                Academic
+              </Nav.Link>
+              <Nav.Link href="#board#brand" eventKey="brand">
+                Brand
+              </Nav.Link>
+              <Nav.Link href="#board#community" eventKey="community">
+                Community
+              </Nav.Link>
+              <Nav.Link href="#board#outreach" eventKey="outreach">
+                Outreach
+              </Nav.Link>
+              <Nav.Link href="#board#advisors" eventKey="advisors">
+                Advisors
+              </Nav.Link>
+              <Nav.Link href="#board#faculty" eventKey="faculty">
+                Faculty Board
+              </Nav.Link>
+              <Nav.Link href="#board#sponsors" eventKey="sponsors">
+                Sponsors
+              </Nav.Link>
+              <Nav.Link href="#board#alumni" eventKey="alumni">
+                Alumni
+              </Nav.Link>
+            </Nav>
+          </div>
+        </div>
 
-        <div style={{ float: "right", height: "100%", display: "flex", flexDirection: "column", alignItems: "flex-end" }}>
-        <Nav onSelect={this.handleSelect} className="flex-column">
-        <p style={{ fontWeight: "bold" }} > ON THIS PAGE:</p>
-          <Nav.Link href="#board#presidents" eventKey="pres">Presidents</Nav.Link>
-          <Nav.Link href="#board#operations" eventKey="operations">Operations</Nav.Link>
-          <Nav.Link href="#board#corporate" eventKey="corporate">Corporate</Nav.Link>
-          <Nav.Link href="#board#academic" eventKey="academic">Academic</Nav.Link>
-          <Nav.Link href="#board#brand" eventKey="brand">Brand</Nav.Link>
-          <Nav.Link href="#board#community" eventKey="community">Community</Nav.Link>
-          <Nav.Link href="#board#outreach" eventKey="outreach">Outreach</Nav.Link>
-          <Nav.Link href="#board#advisors" eventKey="advisors">Advisors</Nav.Link>
-          <Nav.Link href="#board#faculty" eventKey="faculty">Faculty Board</Nav.Link>
-          <Nav.Link href="#board#sponsors" eventKey="sponsors">Sponsors</Nav.Link>
-          <Nav.Link href="#board#alumni" eventKey="alumni">Alumni</Nav.Link>
-        </Nav>
-      </div>
-
-        {value === "pres" && this.renderMembersSection(presidents.members)}
+        {/* {value === "pres" && this.renderMembersSection(presidents.members)}
         {value === "academic" && this.renderMembersSection(academic.members)}
         {value === "brand" && this.renderMembersSection(brand.members)}
         {value === "community" && this.renderMembersSection(community.members)}
@@ -125,15 +168,15 @@ export default class Board extends Component {
         {value === "operations" &&
           this.renderMembersSection(operations.members)}
         {value === "outreach" && this.renderMembersSection(outreach.members)}
-        {value === "advisors" && this.renderMembersSection(advisors.members)}
+        {value === "advisors" && this.renderMembersSection(advisors.members)} */}
 
-        <div id="sponsors" className="sponsorStyle">
+        {/* <div id="sponsors" className="sponsorStyle">
           {value === "sponsors" && <Sponsors />}
         </div>
 
         <div id="faculty">{value === "faculty" && <Faculty />}</div>
 
-        <div id="alumni">{value === "alumni" && <Alumni />}</div>
+        <div id="alumni">{value === "alumni" && <Alumni />}</div> */}
       </div>
     );
   }
