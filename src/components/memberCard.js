@@ -12,7 +12,13 @@ function Member({ name, title, linkedin, netid, bio, img }) {
   return (
     <>
       <div
-        style={{ width: "30%", height: "80%", border: "none", padding: "5%", minWidth:"200px" }}
+        style={{
+          width: "30%",
+          height: "80%",
+          border: "none",
+          padding: "5%",
+          minWidth: "200px",
+        }}
         onClick={toggleDetails}
       >
         <div>
@@ -24,16 +30,16 @@ function Member({ name, title, linkedin, netid, bio, img }) {
               width: "100%",
               objectFit: "cover",
               float: "left",
+              padding: "5%",
             }}
             class="headshots"
             src={img}
             alt={name}
           />
         </div>
-        <div>
-          <div>{name}</div>
-        </div>
-        <div>{title}</div>
+        <div style={{ fontSize: "smaller", color: "gray" }}>{title}</div>
+        <div>{name}</div>
+
         {showDetails && (
           <div>
             <p>{bio}</p>
