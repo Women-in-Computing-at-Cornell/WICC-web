@@ -46,6 +46,7 @@ export default class Discussions extends Component {
           </div>
         </div>
 
+        {/* Blurb */}
         <div class='page'>
           <p class='header'>Lorem ipsum dolor sit amet, consectetur adipiscing
             elit, sed do eiusmod tempor incididunt ut labore et dolore magna
