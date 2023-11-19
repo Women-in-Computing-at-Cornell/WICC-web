@@ -57,6 +57,61 @@ export default class Discussions extends Component {
             sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           <br></br>
           <br></br>
+
+          {/* Cards */}
+          <div class="grid">
+            <div class="item">
+              <a href="#0" aria-labelledby="person1"></a>
+              <div class="card-img">
+                <img src='https://images.unsplash.com/photo-1590424744257-fdb03ed78ae0?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt=''></img>
+              </div>
+              <div class="item__overlay">
+                <h3 id="person1" aria-hidden="true">Person Name 1</h3>
+                <div class="item__body">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <a href="#0" aria-labelledby="person2"></a>
+              <div class="card-img">
+                <img src='https://images.unsplash.com/photo-1590424744257-fdb03ed78ae0?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt=''></img>
+              </div>
+              {/* <img src='https://images.unsplash.com/photo-1590424744257-fdb03ed78ae0?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt=''></img> */}
+              <div class="item__overlay">
+                <h3 id="person2" aria-hidden="true">Person Name 2</h3>
+                <div class="item__body">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <a href="#0" aria-labelledby="person3"></a>
+              <div class="card-img">
+                <img src='https://images.unsplash.com/photo-1590424744257-fdb03ed78ae0?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt=''></img>
+              </div>
+              {/* <img src='https://images.unsplash.com/photo-1590424744257-fdb03ed78ae0?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt=''></img> */}
+              <div class="item__overlay">
+                <h3 id="person3" aria-hidden="true">Person with a really long name</h3>
+                <div class="item__body">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <a href="#0" aria-labelledby="person4"></a>
+              <div class="card-img">
+                <img src='https://images.unsplash.com/photo-1590424744257-fdb03ed78ae0?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt=''></img>
+              </div>
+              {/* <img src='https://images.unsplash.com/photo-1590424744257-fdb03ed78ae0?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt=''></img> */}
+              <div class="item__overlay">
+                <h3 id="person4" aria-hidden="true">Person with an even longer name that wraps onto multiple lines</h3>
+                <div class="item__body">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+              </div>
+            </div>
+          </div>
           {' '}
           <div class='wicc-away'>
             <h3>WICC Away</h3>
