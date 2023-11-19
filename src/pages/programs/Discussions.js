@@ -1,126 +1,169 @@
-import React, { Component } from 'react';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Button from 'react-bootstrap/Button';
-import Carousel from 'react-bootstrap/Carousel'
-import { Link } from 'react-router-dom';
-import { boardData } from '../boardData';
+import React, { Component } from "react";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import Button from "react-bootstrap/Button";
+import Carousel from "react-bootstrap/Carousel";
+import { Link } from "react-router-dom";
+import { boardData } from "../boardData";
 import discussion from "../../images/programs-pictures/discussions.jpg";
 import ReactGoogleSlides from "react-google-slides";
 import QuestionsCard from "./QuestionsCard.js";
 
-
-import Image from 'react-bootstrap/Image'
+import Image from "react-bootstrap/Image";
 
 import medal from "../../images/medal.jpg";
 
-
-import './programPages.css';
-import '../discussions.css';
-
+import "./programPages.css";
+import "../discussions.css";
 
 export default class Discussions extends Component {
   render() {
-    let discDirectors = boardData.filter(record => record.title === "Social Co-Director")
-
+    let discDirectors = boardData.filter(
+      (record) => record.title === "Social Co-Director"
+    );
 
     function importAll(r) {
       let images = {};
-      r.keys().map((item, index) => { images[item.replace('./', '')] = r(item); });
+      r.keys().map((item, index) => {
+        images[item.replace("./", "")] = r(item);
+      });
       return images;
     }
 
-    const boardHeadshots = importAll(require.context('../../images/headshots/board', false, /\.jpg/));
-
+    const boardHeadshots = importAll(
+      require.context("../../images/headshots/board", false, /\.jpg/)
+    );
 
     return (
       <div>
         {/* Hero Image */}
-        <div class='hero-image'>
-          <div class='title'>
+        <div class="hero-image">
+          <div class="title">
             <div class="typewriter">
               <b>
-                <h1>Community Discussions :)</h1></b>
+                <h1>Community Discussions :)</h1>
+              </b>
             </div>
           </div>
         </div>
 
         {/* Blurb */}
-        <div class='page'>
-          <p class='header'>Lorem ipsum dolor sit amet, consectetur adipiscing
-            elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-            dolor in reprehenderit in voluptate velit esse cillum dolore eu
-            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-            sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div class="page">
+          <p class="header">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
           <br></br>
           <br></br>
-
           {/* Cards */}
           <div class="grid">
             <div class="item">
               <a href="#0" aria-labelledby="person1"></a>
               <div class="card-img">
-                <img src='https://images.unsplash.com/photo-1590424744257-fdb03ed78ae0?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt=''></img>
+                <img
+                  src="https://images.unsplash.com/photo-1590424744257-fdb03ed78ae0?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
+                  alt=""
+                ></img>
               </div>
               <div class="item__overlay">
-                <h3 id="person1" aria-hidden="true">Person Name 1</h3>
+                <h3 id="person1" aria-hidden="true">
+                  Person Name 1
+                </h3>
                 <div class="item__body">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </p>
                 </div>
               </div>
             </div>
             <div class="item">
               <a href="#0" aria-labelledby="person2"></a>
               <div class="card-img">
-                <img src='https://images.unsplash.com/photo-1590424744257-fdb03ed78ae0?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt=''></img>
+                <img
+                  src="https://images.unsplash.com/photo-1590424744257-fdb03ed78ae0?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
+                  alt=""
+                ></img>
               </div>
               {/* <img src='https://images.unsplash.com/photo-1590424744257-fdb03ed78ae0?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt=''></img> */}
               <div class="item__overlay">
-                <h3 id="person2" aria-hidden="true">Person Name 2</h3>
+                <h3 id="person2" aria-hidden="true">
+                  Person Name 2
+                </h3>
                 <div class="item__body">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </p>
                 </div>
               </div>
             </div>
             <div class="item">
               <a href="#0" aria-labelledby="person3"></a>
               <div class="card-img">
-                <img src='https://images.unsplash.com/photo-1590424744257-fdb03ed78ae0?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt=''></img>
+                <img
+                  src="https://images.unsplash.com/photo-1590424744257-fdb03ed78ae0?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
+                  alt=""
+                ></img>
               </div>
               {/* <img src='https://images.unsplash.com/photo-1590424744257-fdb03ed78ae0?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt=''></img> */}
               <div class="item__overlay">
-                <h3 id="person3" aria-hidden="true">Person with a really long name</h3>
+                <h3 id="person3" aria-hidden="true">
+                  Person with a really long name
+                </h3>
                 <div class="item__body">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </p>
                 </div>
               </div>
             </div>
             <div class="item">
               <a href="#0" aria-labelledby="person4"></a>
               <div class="card-img">
-                <img src='https://images.unsplash.com/photo-1590424744257-fdb03ed78ae0?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt=''></img>
+                <img
+                  src="https://images.unsplash.com/photo-1590424744257-fdb03ed78ae0?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
+                  alt=""
+                ></img>
               </div>
               {/* <img src='https://images.unsplash.com/photo-1590424744257-fdb03ed78ae0?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt=''></img> */}
               <div class="item__overlay">
-                <h3 id="person4" aria-hidden="true">Person with an even longer name that wraps onto multiple lines</h3>
+                <h3 id="person4" aria-hidden="true">
+                  Person with an even longer name that wraps onto multiple lines
+                </h3>
                 <div class="item__body">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </p>
                 </div>
               </div>
             </div>
-          </div>
-          {' '}
-          <div class='wicc-away'>
+          </div>{" "}
+          <div class="wicc-away">
             <h3>WICC Away</h3>
             <Carousel></Carousel>
           </div>
           <h4>Last Community Discussions: </h4>
           <br />
           <h5>September 2023</h5>
-          <h6>This was our WICC Away event where kicked off the Fall semester. We introduced WICC and our mission to attendees, hosted an allyship workshop, had a painting session, then wrapped up our night with a WICC Q&A Panel!</h6>
+          <h6>
+            This was our WICC Away event where kicked off the Fall semester. We
+            introduced WICC and our mission to attendees, hosted an allyship
+            workshop, had a painting session, then wrapped up our night with a
+            WICC Q&A Panel!
+          </h6>
           <br />
           <ReactGoogleSlides
             width={640}
@@ -130,7 +173,12 @@ export default class Discussions extends Component {
           />
           <br />
           <h5>Febuary 2022</h5>
-          <h6>This was our G-Body #1 where kicked off the Spring semester. We met WICC faculty advisors and reflected on our Fall semester to get ready for the new semester. We learned about setting and completing goals through intention framing and journaling.</h6>
+          <h6>
+            This was our G-Body #1 where kicked off the Spring semester. We met
+            WICC faculty advisors and reflected on our Fall semester to get
+            ready for the new semester. We learned about setting and completing
+            goals through intention framing and journaling.
+          </h6>
           <br />
           <ReactGoogleSlides
             width={640}
@@ -140,7 +188,11 @@ export default class Discussions extends Component {
           />
           <br />
           <h5>March 2022</h5>
-          <h6>This was our G-Body #2 where we had discussions about taking care of ourselves and having empathy for others. At the end, we created a WICC wall of notes and got to know each other. </h6>
+          <h6>
+            This was our G-Body #2 where we had discussions about taking care of
+            ourselves and having empathy for others. At the end, we created a
+            WICC wall of notes and got to know each other.{" "}
+          </h6>
           <br />
           <ReactGoogleSlides
             width={640}
@@ -150,25 +202,30 @@ export default class Discussions extends Component {
           />
           <br />
           <center>
-            <h5 style={{ paddingTop: '5%' }}>Questions?</h5>
+            <h5 style={{ paddingTop: "5%" }}>Questions?</h5>
             <Container style={{ paddingRight: "10%" }}>
               <Row style={{ paddingBottom: "1%" }}>
-                <Col >
-                  <QuestionsCard name={discDirectors[0].name} title={discDirectors[0].title} img={(boardHeadshots[discDirectors[0].netId + '.jpg'])} netId={discDirectors[0].netId} />
-
+                <Col>
+                  <QuestionsCard
+                    name={discDirectors[0].name}
+                    title={discDirectors[0].title}
+                    img={boardHeadshots[discDirectors[0].netId + ".jpg"]}
+                    netId={discDirectors[0].netId}
+                  />
                 </Col>
-                <Col >
-                  <QuestionsCard name={discDirectors[1].name} title={discDirectors[1].title} img={(boardHeadshots[discDirectors[1].netId + '.jpg'])} netId={discDirectors[1].netId} />
-
+                <Col>
+                  <QuestionsCard
+                    name={discDirectors[1].name}
+                    title={discDirectors[1].title}
+                    img={boardHeadshots[discDirectors[1].netId + ".jpg"]}
+                    netId={discDirectors[1].netId}
+                  />
                 </Col>
               </Row>
             </Container>
-
-
-
           </center>
         </div>
-      </div >
+      </div>
     );
   }
 }
