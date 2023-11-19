@@ -12,8 +12,20 @@ import outreachPic from '../images/outreach/outreach2.jpg'
 
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 
+function importAll(r) {
+  let images = {};
+  r.keys().map((item, index) => {
+    images[item.replace('./', '')] = r(item);
+    return null;
+  });
+  return images;
+}
 
 const Home = () => {
+  const homepicsname = importAll(require.context('../images/photo-campaigns/hp-recentevents', false, /\.jpg/));
+  const homepics = Object.keys(homepicsname);
+  const multipleImages = homepics.slice(0, 3);
+
   return (
     <div >
       <Image style = {{maxWidth: '100%', height: 'auto'}} src={boardGroupPic} id="hero-image" />
@@ -54,8 +66,8 @@ const Home = () => {
              CIS staff, Cornell, and the greater Ithaca community!</p>
           </div>
         </section>
-        <section style={{paddingTop: '10px'}} class="carousel-container">
-        <PhotoCarousel imgNames={["img1","img2"]} pics={[mentorshipPic, outreachPic]} />
+        <section style={{paddingTop: '96px'}} class="carousel-container">
+          <PhotoCarousel imgNames={homepics} pics={homepicsname} />
       </section>
         <section style = {{marginTop: '5%'}} class='sponsor-container'>
         <h2 style={{ fontWeight: 'bold' }}>Our Sponsors</h2>
