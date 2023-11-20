@@ -7,6 +7,7 @@ import {
   presidents,
   operations,
   corporate,
+  technical,
   academic,
   brand,
   outreach,
@@ -37,6 +38,7 @@ const teams = [
   presidents,
   operations,
   corporate,
+  technical,
   academic,
   brand,
   outreach,
@@ -133,6 +135,9 @@ export default class Board extends Component {
               </Nav.Link>
               <Nav.Link href="#board#corporate" eventKey="corporate">
                 Corporate
+              </Nav.Link>
+              <Nav.Link href="#board#technical" eventKey="technical">
+                Technical
               </Nav.Link>
               <Nav.Link href="#board#academic" eventKey="academic">
                 Academic

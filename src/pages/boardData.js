@@ -65,7 +65,7 @@ export const corporate = {
       name: "Lara Kulkarni",
       position: "Corporate Relations Co-Director",
       netId: "lk427",
-      bio: " ",
+      bio: "n/A",
     },
     {
       name: "Hermione Bossolina",
@@ -84,6 +84,32 @@ export const corporate = {
       position: "Alumni Relations Co-Director",
       netId: "raj97",
       bio: " ",
+    },
+  ],
+};
+
+//Technical
+export const technical = {
+  title: "Technical",
+  description: " ",
+  members: [
+    {
+      name: "Uyen Hoang",
+      position: "Technical Director",
+      netId: "umh4",
+      bio: "Uyen is a cat and panda lover who passionate about Design, Tech, and the Written Word",
+    },
+    {
+      name: "Anika Tasnim",
+      position: "Designer & Developer",
+      netId: "at665",
+      bio: "Anika is a foodie and artist who is passionate about design and technology, loves WICC's mission of women empowerment",
+    },
+    {
+      name: "Alina Yuan",
+      position: "Designer & Developer",
+      netId: "ay332",
+      bio: "Alina is a sophomore from Santa Clara, California majoring in Computer Science with a minor in psychology. She loves her Shiba Inu and making digital art, and also the Technical Committee!",
     },
   ],
 };
