@@ -48,3 +48,37 @@
   padding-top: 0px;
   text-align: center;
 }
+
+.carousel-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 100%; 
+  height: 200px;
+  margin: 0 auto; /* Center the carousel */
+}
+
+.carousel-wrapper .carousel img {
+  width: 100%; /* Set maximum width */
+  height: 200px; /* Set fixed height */
+  object-fit: fill; /* Fit images within the dimensions without distortion */
+}
+/* Move the navigation elements outside the carousel */
+.carousel.carousel-slider .control-arrow {
+  display: default;
+  padding: 0px;
+}
+
+.carousel-wrapper .carousel .control-dots {
+  position: absolute;
+  color: black;
+  bottom: -30px; /* Adjust the distance from the bottom as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100; /* Ensure it's above the images */
+}
+
+.carousel .carousel-slider .control-dots .dot {
+  background-color: black; /* Change dot color to a reddish tone */
+  color: black;
+  opacity: 0.8; /* Adjust dot opacity if needed */
+}

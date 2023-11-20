@@ -9,6 +9,8 @@ import boardGroupPic from "../images/peoplegroupic.jpg"
 import PhotoCarousel from '../pages/PhotoCarousel';
 import mentorshipPic from '../images/programs-pictures/mentorship2.jpg'
 import outreachPic from '../images/outreach/outreach2.jpg'
+import { Carousel } from 'react-responsive-carousel';
+
 
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 
@@ -21,11 +23,36 @@ function importAll(r) {
   return images;
 }
 
-const Home = () => {
-  const homepicsname = importAll(require.context('../images/photo-campaigns/hp-recentevents', false, /\.jpg/));
-  const homepics = Object.keys(homepicsname);
-  const multipleImages = homepics.slice(0, 3);
+const PCarousel = ({ imgNames, pics }) => {
+  const renderImages = () => {
+    const imageGroups = [];
+    for (let i = 0; i < imgNames.length; i += 4) {
+      const imagesInGroup = imgNames.slice(i, i + 4).map((img, index) => {
+        const imageSrc = pics[img];
+        return (
+          <div key={index} style={{ width: `${100 / 4}%` }}>
+            <Image src={imageSrc} alt={`Image ${i + index + 1}`} style={{ width: '100%', height: '200px', objectFit: 'fill' }} />
+          </div>
+        );
+      });
+      imageGroups.push(imagesInGroup);
+    }
+    return imageGroups.map((group, index) => <div key={index} style={{ display: 'flex' }}>{group}</div>);
+  };
 
+  return (
+    <div className="carousel-wrapper">
+      <Carousel showThumbs={false} showStatus={false} emulateTouch infiniteLoop>
+        {renderImages()}
+      </Carousel>
+    </div>
+  );;
+};
+
+const Home = () => {
+  const homepicsname = importAll(require.context('../images/photo-campaigns/hp-recentevents', false, /\.(jpg|png)$/i));
+  const homepics = Object.keys(homepicsname);
+  
   return (
     <div >
       <Image style = {{maxWidth: '100%', height: 'auto'}} src={boardGroupPic} id="hero-image" />
@@ -67,7 +94,7 @@ const Home = () => {
           </div>
         </section>
         <section style={{paddingTop: '96px'}} class="carousel-container">
-          <PhotoCarousel imgNames={homepics} pics={homepicsname} />
+          <PCarousel imgNames={homepics} pics={homepicsname} />
       </section>
         <section style = {{marginTop: '5%'}} class='sponsor-container'>
         <h2 style={{ fontWeight: 'bold' }}>Our Sponsors</h2>
