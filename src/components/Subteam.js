@@ -15,19 +15,21 @@ function Subteam({ team }) {
 
   return (
     <>
-      <h3>{team.title}</h3>
-      <div className="members-grid">
-        {/* Apply the custom CSS class */}
-        {team.members.map((member, index) => (
-          <Member
-            key={index}
-            name={member.name}
-            title={member.position}
-            netid={member.netId}
-            bio={member.bio}
-            img={boardHeadshots[member.netId + ".jpg"]}
-          />
-        ))}
+      <div id={"board#" + String(team.title).toLocaleLowerCase()}>
+        <h3>{team.title}</h3>
+        <div className="members-grid">
+          {/* Apply the custom CSS class */}
+          {team.members.map((member, index) => (
+            <Member
+              key={index}
+              name={member.name}
+              title={member.position}
+              netid={member.netId}
+              bio={member.bio}
+              img={boardHeadshots[member.netId + ".jpg"]}
+            />
+          ))}
+        </div>
       </div>
     </>
   );

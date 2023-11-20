@@ -80,14 +80,14 @@ export default class Board extends Component {
     const { value } = this.state;
 
     return (
-      <div className="containerPage">
-        <div>
+      <div>
+      <div>
           <img
             src={hero}
-            style={{ maxWidth: "100%", height: "auto" }}
-            alt="Description"
-          />
-        </div>
+            style={{ maxWidth: "100%", height: "auto"}}
+            alt="Description"/>
+      </div>
+      <div className="containerPage">
         <h2 style={{ fontWeight: "bold" }}>Who We Are</h2>
         <p>
           WICC was founded in March 2013 to bring together women and gender
@@ -119,9 +119,11 @@ export default class Board extends Component {
               display: "flex",
               flexDirection: "column",
               alignItems: "flex-end",
+              position: "sticky",
+              top: "0px",
             }}
           >
-            <Nav onSelect={this.handleSelect} className="flex-column">
+            <Nav onSelect={this.handleSelect} className="flex-column" style={{}}>
               <p style={{ fontWeight: "bold" }}> ON THIS PAGE:</p>
               <Nav.Link href="#board#presidents" eventKey="pres">
                 Presidents
@@ -159,24 +161,7 @@ export default class Board extends Component {
             </Nav>
           </div>
         </div>
-
-        {/* {value === "pres" && this.renderMembersSection(presidents.members)}
-        {value === "academic" && this.renderMembersSection(academic.members)}
-        {value === "brand" && this.renderMembersSection(brand.members)}
-        {value === "community" && this.renderMembersSection(community.members)}
-        {value === "corporate" && this.renderMembersSection(corporate.members)}
-        {value === "operations" &&
-          this.renderMembersSection(operations.members)}
-        {value === "outreach" && this.renderMembersSection(outreach.members)}
-        {value === "advisors" && this.renderMembersSection(advisors.members)} */}
-
-        {/* <div id="sponsors" className="sponsorStyle">
-          {value === "sponsors" && <Sponsors />}
-        </div>
-
-        <div id="faculty">{value === "faculty" && <Faculty />}</div>
-
-        <div id="alumni">{value === "alumni" && <Alumni />}</div> */}
+      </div>
       </div>
     );
   }

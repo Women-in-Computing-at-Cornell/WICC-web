@@ -37,8 +37,8 @@ function Member({ name, title, netid, bio, img }) {
             alt={name}
           />
         </div>
-        <div style={{ fontSize: "smaller", color: "gray" }}>{title}</div>
-        <div>{name}</div>
+        <div style={{ fontSize: "smaller", color: "gray", paddingLeft: "5%"}}>{title}</div>
+        <div style={{paddingLeft: "5%"}}>{name}</div>
 
         {showDetails && (
           <div>
