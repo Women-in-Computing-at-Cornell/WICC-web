@@ -111,6 +111,12 @@ export const technical = {
       netId: "ay332",
       bio: "Alina is a sophomore from Santa Clara, California majoring in Computer Science with a minor in psychology. She loves her Shiba Inu and making digital art, and also the Technical Committee!",
     },
+    {
+      name: "Rahma Abdullah",
+      position: "Designer & Developer",
+      netId: "ra567",
+      bio: "",
+    },
   ],
 };
 
