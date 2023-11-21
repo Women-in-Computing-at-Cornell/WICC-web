@@ -112,10 +112,10 @@ export const technical = {
       bio: "Alina is a sophomore from Santa Clara, California majoring in Computer Science with a minor in psychology. She loves her Shiba Inu and making digital art, and also the Technical Committee!",
     },
     {
-      name: "Rahma Abdullah",
+      name: "Omisha Sharma",
       position: "Designer & Developer",
-      netId: "ra567",
-      bio: "",
+      netId: "os226",
+      bio: "As a computer science major, I joined WICC to gain a community of peers passionate about computing as well. Since joining the technical committee, I've gotten to know many WICC members who are all supportive and genuinely friendly people, which has made every WICC event/meeting so much better. WICC has helped me throughout my time at Cornell and I love being involved to give back and contribute to this organization.",
     },
   ],
 };
