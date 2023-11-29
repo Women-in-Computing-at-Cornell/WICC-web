@@ -29,9 +29,13 @@ export default class Calendar extends Component {
           style={styles.calendarContainer}
         >
           <iframe
-            src="https://calendar.google.com/calendar/embed?src=cornell.edu_98tsboucmi53v2rlt7kdj43vkc%40group.calendar.google.com&ctz=America%2FNew_York"
-            style={{ border: "0", width: "1000px", height: "750px" }}
-          />
+            src="https://embed.styledcalendar.com/#t8wJ2TwSWYKLUY3xUoT4"
+            title="Styled Calendar"
+            className="styled-calendar-container"
+            style={{ height: '800px', width: '80%', border: 'none' }}
+            data-cy="calendar-embed-iframe"
+          ></iframe>
+          <script async type="module" src="https://embed.styledcalendar.com/assets/parent-window.js"></script>
         </div>
       </div>
     );
