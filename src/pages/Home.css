@@ -27,6 +27,63 @@
   text-align: center;
 }
 
+/* start of what we do container */
+.what-we-do-container {
+  /* Adjust container styles as needed */
+  margin-top: 30px; /* Example margin */
+}
+
+.title-with-line {
+  display: flex;
+  align-items: center;
+}
+
+.horizontal-line {
+  height: 1px;
+  width: 100%; /* Full width of the container */
+  background-color: #000; /* Color of the line */
+  margin-left: 10px; /* Spacing between the title and line */
+}
+
+.title-text {
+  margin: 0;
+  white-space: nowrap;
+}
+/* end of what we do container */
+
+/* start of alumni testimony container */
+
+.alumni-testimonies-container {
+  /* Adjust container styles as needed */
+  padding-top: 10px;
+  background-size: cover;
+  background-position: center top;
+  position: relative;
+  min-height: 400px;
+  color: #ffffff; /* Text color for testimonies */
+}
+.alumni-testimonies-content {
+  /* Adjust container styles as needed */
+  padding: 0px;
+}
+
+.testimony-grid {
+  display: flex;
+  justify-content: space-between;
+  background-image: url('../images/alumnitestimg.png'); /* Set your background image URL */
+  min-height: 500px;
+  background-size: cover;
+  background-position: center top;
+}
+
+.testimony-column {
+  padding-top: 50px;
+  padding-left: 40px;
+  flex-basis: 30%; /* Adjust width of columns as needed */
+  /* Additional styles for columns */
+}
+/* end of alumni testimony container */
+
 /* react-bootstrap button style overriding */
 .btn {
   border-radius: 5em;

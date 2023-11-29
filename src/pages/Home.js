@@ -93,8 +93,44 @@ const Home = () => {
              CIS staff, Cornell, and the greater Ithaca community!</p>
           </div>
         </section>
-        <section style={{paddingTop: '96px'}} class="carousel-container">
+        {/* Title "What we do" */}
+      <section className="what-we-do-container">
+        <div className="title-with-line">
+          {/* Title */}
+          <h2 className="title-text">What we do</h2>
+          {/* Right decorative line */}
+          <div className="horizontal-line"></div>
+        </div>
+      </section>
+        <section style={{paddingTop: '5px'}} class="carousel-container">
           <PCarousel imgNames={homepics} pics={homepicsname} />
+      </section>
+      <section style = {{paddingTop: '50px'}} className="alumni-testimonies-container">
+        <div className="alumni-testimonies-content">
+          <h2>Alumni Testimonies</h2>
+          <div className="testimony-grid">
+            <div className="testimony-column">
+              {/* Testimony 1 */}
+              <h2 style={{ fontWeight: 'bold', color: 'white', fontSize: 25 }}>Nandita Mohan '20</h2>
+              <p>
+"If there's one person who first made me feel involved, integrated and comfortable in the CIS community at Cornell, it would be Harini. Being her friend and mentee from when I was a freshman showed me that incredibly successful and humble upperclassmen also had their own confusions and struggles along the way, and that it was in-fact completely normal. Not to mention she was always willing to grab a meal, have fun conversations, and be there for me when I needed it.".</p>
+            </div>
+            <div className="testimony-column">
+              {/* Testimony 2 */}
+              <h2 style={{ fontWeight: 'bold', color: 'white', fontSize: 25 }}>Maya Frai '20</h2>
+              <p>
+“WICC has given me an invaluable amount of resources, one of them being the alumni network. When I first heard about WICC my freshman year, I joined Lunch Bunch and was able to meet two incredible women who I am happy to call my mentors. They took the time to talk about all of the diverse opportunities in tech and how WICC has allowed them to connect with other women in the field. WICC alumni are not only incredibly inspirational, but are also dedicated and down-to-earth. Looking forward to being a part of this admirable network after graduation.”
+</p>
+            </div>
+            <div className="testimony-column">
+              {/* Testimony 3 */}
+              <h2 style={{ fontWeight: 'bold', color: 'white', fontSize: 25 }}>Karen Zhang '21</h2>
+              <p>
+“I learned about the different fields of CS and how they're used, which I previously had many misconceptions about. Lunch Bunch truly let me cement my decision to major in CS, as through it I got an idea of the potential of the field.”</p>
+            </div>
+            {/* Add more testimonies as needed */}
+          </div>
+        </div>
       </section>
         <section style = {{marginTop: '5%'}} class='sponsor-container'>
         <h2 style={{ fontWeight: 'bold' }}>Our Sponsors</h2>
