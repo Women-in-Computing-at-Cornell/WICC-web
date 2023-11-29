@@ -28,10 +28,11 @@ function importAll(r) {
 }
 
 const boardHeadshots = importAll(
-  require.context("../images/headshots/board", false, /\.jpg/)
+  require.context("../images/headshots/board", false, /\.(jpg|JPG)/)
 );
+
 const advisorHeadshots = importAll(
-  require.context("../images/headshots/board/advisors", false, /\.jpg/)
+  require.context("../images/headshots/board/advisors", false, /\.(jpg|JPG)/)
 );
 
 const teams = [
