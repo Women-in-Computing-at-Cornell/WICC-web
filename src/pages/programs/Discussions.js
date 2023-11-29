@@ -64,7 +64,7 @@ export default class Discussions extends Component {
 
           <div class='wicc-away'>
             <Carousel></Carousel>
-            <h3>WICC Away</h3>
+            <h3>G-Body // G-Body Social</h3>
             <br></br>
             {/* Cards */}
             <div class="grid">
@@ -74,9 +74,11 @@ export default class Discussions extends Component {
                   <img src='https://images.unsplash.com/photo-1590424744257-fdb03ed78ae0?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt=''></img>
                 </div>
                 <div class="item__overlay">
-                  <h3 id="person1" aria-hidden="true">Person Name 1</h3>
+                  <h3 id="person" aria-hidden="true">November 2023: Friendsgiving!</h3>
                   <div class="item__body">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p>In our November GBody, we celebrated the season of giving thanks and came together with our Bowers CiS
+                      community for a Friendsgiving event!
+                    </p>
                   </div>
                 </div>
               </div>
@@ -87,9 +89,13 @@ export default class Discussions extends Component {
                 </div>
                 {/* <img src='https://images.unsplash.com/photo-1590424744257-fdb03ed78ae0?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt=''></img> */}
                 <div class="item__overlay">
-                  <h3 id="person2" aria-hidden="true">Person Name 2</h3>
+                  <h3 id="person" aria-hidden="true">Oct 2023: Pumpkin Spice & Chill~</h3>
                   <div class="item__body">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p>
+                      At our second semesterly GBody, we took some time to relax,
+                      destress, and enjoy the fall cheer by painting pumpkins and drinking pumpkin
+                      spiced Swiss Miss.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -100,9 +106,13 @@ export default class Discussions extends Component {
                 </div>
                 {/* <img src='https://images.unsplash.com/photo-1590424744257-fdb03ed78ae0?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt=''></img> */}
                 <div class="item__overlay">
-                  <h3 id="person3" aria-hidden="true">Person with a really long name</h3>
+                  <h3 id="person" aria-hidden="true">Sept 2023: Self-Advocacy</h3>
                   <div class="item__body">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p>In our first GBody of the fall semester, WICC members dove into a session
+                      that equipped us with the
+                      skills and confidence to champion our needs and rights.
+                      We also had boba, plushies, pens, and keychains for our
+                      WICCies!</p>
                   </div>
                 </div>
               </div>

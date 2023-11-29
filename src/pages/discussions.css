@@ -109,7 +109,7 @@ body {
 .item h3 {
   margin: 0;
   display: block;
-  background-color: deeppink;
+  background-color: rgb(180, 255, 227);
   padding: 1rem;
   transform: translate3d(0, -100%, 0);
   transition: transform 300ms;
@@ -153,14 +153,16 @@ body {
   height: 100%;
   position: absolute;
   width: 100%;
+  font-size: 10px;
   top: 0;
   transition: transform 300ms;
-  background-color: #ff61b6;
+  background-color: rgb(224, 255, 243);
   transform: translate3d(0, 100%, 0);
 }
 
 .item__body {
   flex-grow: 1;
+  font-size: 16px;
   padding: 1rem;
   opacity: 0;
   transition: opacity 500ms 100ms;
@@ -168,4 +170,8 @@ body {
 
 .item__body p {
   margin: 0;
+}
+
+.person {
+  font-size: 24px;
 }
