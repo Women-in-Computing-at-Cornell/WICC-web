@@ -115,8 +115,85 @@ export const technical = {
       name: "Omisha Sharma",
       position: "Designer & Developer",
       netId: "os226",
-      bio: "As a computer science major, I joined WICC to gain a community of peers passionate about computing as well. Since joining the technical committee, I've gotten to know many WICC members who are all supportive and genuinely friendly people, which has made every WICC event/meeting so much better. WICC has helped me throughout my time at Cornell and I love being involved to give back and contribute to this organization.",
+      bio: "Omisha is a sophomore from Plainsboro, NJ in the College of Engineering student CS. She loves F1, playing piano, and hiking in Ithaca!",
     },
+    {
+      name: "Amanda Yongvanich",
+      position: "Designer & Developer",
+      netId: "apy23",
+      bio: "",
+    },
+    {
+      name: "Kelly Tran",
+      position: "Designer & Developer",
+      netId: "kt457",
+      bio: "",
+    },
+    {
+      name: "Sneha Rajaraman",
+      position: "Designer & Developer",
+      netId: "sr934",
+      bio: "Sneha is a sophomore from Northern Virginia in the College of Engineering majoring in Computer Science. She enjoys calligraphy, singing, dancing (pretty much anything music replated), and baking!",
+    },
+    {
+      name: "Carolina Herrera",
+      position: "Designer & Developer",
+      netId: "ch742",
+      bio: "I long to myself inside a tortilla blanket at the end of each day",
+    },
+    {
+      name: "Sophie Wang",
+      position: "Designer & Developer",
+      netId: "slw284",
+      bio: "Sophie is a sophomore CS major in the College of Engineering from Texas. She loves to read, dance, and be apart of Technical Committee!",
+    },
+    {
+      name: "Ruoxin Chen",
+      position: "Designer & Developer",
+      netId: "rc753",
+      bio: "",
+    },
+    {
+      name: "Anamitra Rawat",
+      position: "Designer & Developer",
+      netId: "ar2342",
+      bio: "",
+    },
+    {
+      name: "Maria Sandee Basco",
+      position: "Designer & Developer",
+      netId: "myb22",
+      bio: "",
+    },
+    {
+      name: "Yuhan Sun",
+      position: "Designer & Developer",
+      netId: "ys728",
+      bio: "Yuhan is a sophomore from Nanjing, China studying Computer Science in the College of Arts and Science. She is a huge fan of Zhou Shen and anime!",
+    },
+    {
+      name: "Dora Weng",
+      position: "Designer & Developer",
+      netId: "cw749",
+      bio: "",
+    },
+    {
+      name: "Rahma Abdullah",
+      position: "Designer & Developer",
+      netId: "ra567",
+      bio: "Rahma is a sophomore in the College of Engineering studying computer science. She's originally from Queens, New York. She enjoys reading, digital art, and going to the gym. :)",
+    },
+    {
+      name: "Laura Wu",
+      position: "Designer & Developer",
+      netId: "sw2262",
+      bio: "",
+    },
+
+    
+
+
+
   ],
 };
 
