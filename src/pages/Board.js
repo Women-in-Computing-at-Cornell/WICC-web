@@ -70,7 +70,10 @@ export default class Board extends Component {
               title={member.position}
               netid={member.netId}
               bio={member.bio}
-              img={boardHeadshots[member.netId + ".jpg"]} // Pass the dynamically imported image here
+              img={
+                boardHeadshots[member.netId + ".jpg"] ||
+                boardHeadshots[member.netId + ".JPG"]
+              }
             />
           </div>
         ))}
