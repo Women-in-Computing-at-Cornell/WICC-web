@@ -139,7 +139,7 @@ export const technical = {
       name: "Carolina Herrera",
       position: "Designer & Developer",
       netId: "ch742",
-      bio: "I long to myself inside a tortilla blanket at the end of each day",
+      bio: "I long to wrap myself inside a tortilla blanket at the end of each day",
     },
     {
       name: "Sophie Wang",

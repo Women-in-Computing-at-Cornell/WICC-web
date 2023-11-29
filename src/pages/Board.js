@@ -27,11 +27,8 @@ function importAll(r) {
   return images;
 }
 
-const boardHeadshots = importAll(
-  require.context("../images/headshots/board", false, /\.jpg/)
-);
 const advisorHeadshots = importAll(
-  require.context("../images/headshots/board/advisors", false, /\.jpg/)
+  require.context("../images/headshots/board/advisors", false, /\.jpg|\.JPG/)
 );
 
 const teams = [
@@ -58,27 +55,6 @@ export default class Board extends Component {
     this.setState({
       value: e,
     });
-  };
-
-  renderMembersSection = (members) => {
-    return (
-      <div className="container">
-        {members.map((member) => (
-          <div key={member.netId} className="col">
-            <Member
-              name={member.name}
-              title={member.position}
-              netid={member.netId}
-              bio={member.bio}
-              img={
-                boardHeadshots[member.netId + ".jpg"] ||
-                boardHeadshots[member.netId + ".JPG"]
-              }
-            />
-          </div>
-        ))}
-      </div>
-    );
   };
 
   render() {
@@ -158,13 +134,7 @@ export default class Board extends Component {
                 Advisors
               </Nav.Link>
               <Nav.Link href="#board#faculty" eventKey="faculty">
-                Faculty Board
-              </Nav.Link>
-              <Nav.Link href="#board#sponsors" eventKey="sponsors">
-                Sponsors
-              </Nav.Link>
-              <Nav.Link href="#board#alumni" eventKey="alumni">
-                Alumni
+                Faculty
               </Nav.Link>
             </Nav>
           </div>
