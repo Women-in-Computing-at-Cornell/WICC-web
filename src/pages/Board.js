@@ -13,6 +13,7 @@ import {
   outreach,
   community,
   advisors,
+  faculty,
 } from "./boardData";
 import Sponsors from "./Sponsors";
 import Faculty from "./Faculty";
@@ -45,6 +46,7 @@ const teams = [
   outreach,
   community,
   advisors,
+  faculty,
 ];
 
 export default class Board extends Component {
@@ -114,7 +116,16 @@ export default class Board extends Component {
                 className="flex-column"
                 style={{}}
               >
-                <p style={{ fontWeight: "bold", marginTop: "20px", marginBottom: "5px"}}> ON THIS PAGE:</p>
+                <p
+                  style={{
+                    fontWeight: "bold",
+                    marginTop: "20px",
+                    marginBottom: "5px",
+                  }}
+                >
+                  {" "}
+                  ON THIS PAGE:
+                </p>
                 <Nav.Link href="#board#presidents" eventKey="pres">
                   Presidents
                 </Nav.Link>
