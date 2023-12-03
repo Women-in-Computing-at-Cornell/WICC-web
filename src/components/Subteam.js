@@ -14,31 +14,36 @@ function Subteam({ team }) {
     require.context("../images/headshots/board", false, /\.jpg|\.JPG/)
   );
 
+  const facultyHeadshots = importAll(
+    require.context("../images/faculty", false, /\.jpg|\.JPG/)
+  );
+
+  const getMemberImage = (member) => {
+    const images =
+      team.title.toLowerCase() === "faculty"
+        ? facultyHeadshots
+        : boardHeadshots;
+    const memberImageKey = Object.keys(images).find((k) =>
+      k.startsWith(member.netId)
+    );
+    return memberImageKey ? images[memberImageKey] : defaultImage;
+  };
+
   return (
     <>
       <div id={"board#" + String(team.title).toLocaleLowerCase()}>
         <h3 style={{paddingBottom: "16px"}}>{team.title}</h3>
         <div className="members-grid">
-          {team.members.map((member, index) => {
-            // Check if the member's image exists, else use default image
-            const memberImageKey = Object.keys(boardHeadshots).find((k) =>
-              k.startsWith(member.netId)
-            );
-            const memberImage = memberImageKey
-              ? boardHeadshots[memberImageKey]
-              : defaultImage;
-
-            return (
-              <Member
-                key={index}
-                name={member.name}
-                title={member.position}
-                netid={member.netId}
-                bio={member.bio}
-                img={memberImage}
-              />
-            );
-          })}
+          {team.members.map((member, index) => (
+            <Member
+              key={index}
+              name={member.name}
+              title={member.position}
+              netid={member.netId}
+              bio={member.bio}
+              img={getMemberImage(member)}
+            />
+          ))}
         </div>
       </div>
     </>
