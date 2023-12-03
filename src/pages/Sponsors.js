@@ -78,7 +78,7 @@ export default class Sponsors extends Component {
         } */}
           <h4 style={{ marginBottom: '8%', fontWeight: 'bold' }}>Platinum</h4>
           {platinum.map((value) => {
-            return <a href={value.link}><Image src={(sponsorHeadshots[value.sponsor + '.jpg'])} width='25%' height='10%' style={{ marginTop: '-6%', paddingRight: '20px' }} /></a>
+            return <a href={value.link}><Image src={(sponsorHeadshots[value.sponsor + '.jpg'])} width='15%' height='5%' style={{ marginTop: '-6%', paddingRight: '10px' }} /></a>
           })}
         </div>
         <div style={{ marginBottom: '10%' }}>
