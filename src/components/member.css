@@ -23,6 +23,11 @@
   padding: 20px;
 }
 
+.modalTextStyle {
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
 .title {
   font-size: smaller;
   color: gray;

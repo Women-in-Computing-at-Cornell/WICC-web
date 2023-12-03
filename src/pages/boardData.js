@@ -1,3 +1,38 @@
+// FACULTY
+export const faculty = {
+  title: "Faculty",
+  description: "",
+  members: [
+    {
+      name: "Kavita Bala",
+      netId: "kb97",
+      position:
+        "Dean of Ann S. Bowers \n College of Computing and Information Science",
+      bio:
+        "Kavita Bala is a Professor in the Computer Science Department and Program of Computer Graphics at Cornell University. She received her S.M. and Ph.D. from the Massachusetts Institute of Technology (MIT), and her B.Tech. from the Indian Institute of Technology (IIT, Bombay). She co-founded GrokStyle, and serves as Chief Scientist (2015-), and is a faculty Fellow with the Atkinson Center. \n Bala's work is inter-disciplinary, spanning the areas of computer graphics, computer vision, human perception, and architecture. Her research has had significant industrial impact, including the core rendering engine in Autodesk's 360 cloud renderer, and GrokStyle's visual search engine. Bala's 3D Mandala reconstruction was installed at the Rubin Museum of Art in New York, and demonstrated to the Dalai Lama." +
+        "\nBala is committed to increasing diversity in computer science. As the only woman in her undergraduate CS class, she appreciates the progress that has been made in the past decade, but there is more work to be done in academia and particularly in industry.",
+    },
+    {
+      name: "Anne Bracy",
+      netId: "awb93",
+      position: "Senior Lecturer",
+      bio: "I am a Senior Lecturer in the Computer Science department. I obtained a BS in Symbolic Systems and an MS in Computer Science from Stanford University and a PhD in Computer Science at the University of Pennsylvania. I teach primarily undergraduate systems courses. Prior to my arrival at Cornell, I was a Principal Lecturer at Washington University in St. Louis. I was also a Research Scientist at the Microarchitecture Research Lab at Intel Labs in Santa Clara, California. In addition to being a member of WICC's Faculty Board I am also a 2016 participant of the Faculty Institute for Diversity. \nI support diversity in technology because I love computer science. Everyone should have an equal opportunity to participate fully in this stimulating field. Furthermore, a wider range of perspectives and backgrounds naturally yields more innovative ideas and wider applications. Increasing the diversity of computer scientists improves computer science.",
+    },
+    {
+      name: "Eva Tardos",
+      netId: "et28",
+      position: "Professor",
+      bio: "Eva Tardos is the Jacob Gould Schurman Professor of Computer Science and Information Science at Cornell. Her research focuses on Algorithm Design and the interface of Computing and Economics, with an emphasis on algorithms and games on networks. She is a member of the National Academy of Engineering and National Academy of Sciences. Tardos received her PhD in from Eötvös University, Budapest, Hungary. She did a series of postdocs and short term positions in computer science including time spent at Berkeley and MIT, and has been a faculty member at Cornell since 1989. \nShe has been the faculty advisor for the Women in Computing at Cornell since its inception, and though WICC's helped encourage many more women to choose CS major. She earned her PhD in 1984, the year that had most women in computing (see for example, the charts in this article for trends in percentage of women in computing). With the help of WICC, the percentage of women in CS at Cornell grew to currently over 25% from barely 10% not so many years ago. She is very proud of WICC for all the group has done to make CS a better major for women, and committed to continue this work, hoping to bring the percentage of women in CS at Cornell up to at least what it was nationally in the early eighties.",
+    },
+    {
+      name: "Karen Levy",
+      netId: "kl838",
+      position: "Assistant Professor",
+      bio: "Karen Levy is an assistant professor in the Department of Information Science at Cornell University and associated faculty at Cornell Law School. She researches the social, legal, and ethical implications of new technologies, with particular focus on inequality, labor, and intimacy. She holds a Ph.D. in Sociology from Princeton University and a J.D. from Indiana University Maurer School of Law. She is currently at work on a book tracing the emergence of monitoring technologies in the United States long-haul trucking industries. \nI am committed to supporting diversity in CIS because we can't find solutions to the social or technical problems we work on without the benefit of multiple perspectives and lived experiences. Computing touches every part of life and every social institution, and it's key that we have diverse voices represented to ensure that new technology is developed and used in ways that address the entrenched histories of inequality and injustice in our society.I am committed to opening up space for all students to participate fully in CIS disciplines, and feel a strong personal commitment to ensuring that ours is a community in which each person's expertise and experiences are valued.",
+    },
+  ],
+};
+
 //PRESIDENTS
 export const presidents = {
   title: "Presidents",
@@ -24,15 +59,15 @@ export const operations = {
   description: " ",
   members: [
     {
-      name: "Victoria Varkonyi",
-      position: "Co-Treasurer",
-      netId: "vv229",
-      bio: " ",
-    },
-    {
       name: "Gaby Castro",
       position: "Co-Treasurer",
       netId: "gc422",
+      bio: " ",
+    },
+    {
+      name: "Victoria Varkonyi",
+      position: "Co-Treasurer",
+      netId: "vv229",
       bio: " ",
     },
     {
@@ -56,10 +91,10 @@ export const corporate = {
       bio: " ",
     },
     {
-      name: "Nala Peng",
+      name: "Hermione Bossolina",
       position: "Corporate Relations Co-Director",
-      netId: "kp426",
-      bio: "In an ideal world I will be growing mushrooms.",
+      netId: "hlb88",
+      bio: " ",
     },
     {
       name: "Lara Kulkarni",
@@ -68,9 +103,15 @@ export const corporate = {
       bio: "n/A",
     },
     {
-      name: "Hermione Bossolina",
+      name: "Nala Peng",
       position: "Corporate Relations Co-Director",
-      netId: "hlb88",
+      netId: "kp426",
+      bio: "In an ideal world I will be growing mushrooms.",
+    },
+    {
+      name: "Reva Jariwala",
+      position: "Alumni Relations Co-Director",
+      netId: "raj97",
       bio: " ",
     },
     {
@@ -79,16 +120,24 @@ export const corporate = {
       netId: "tkn24",
       bio: " ",
     },
-    {
-      name: "Reva Jariwala",
-      position: "Alumni Relations Co-Director",
-      netId: "raj97",
-      bio: " ",
-    },
   ],
 };
 
-//Technical
+//PHOTO & FILM 
+export const photo = {
+  title: "Photo & Film",
+  description: " ",
+  members: [
+    {
+      name: "Claire Tan",
+      position: "Photography Director",
+      netId: "ct556",
+      bio: "When I arrived at Cornell, the world of computing was like a distant realm to me and things like joining clubs, finding opportunities, and choosing classes made me feel lost. WICC has WICC has allowed me to join a welcoming community of driven, passionate individuals who have helped me in my journey. The camaraderie of this community has made the complex seem approachable and the unknown less daunting. I’m excited to continue forging new connections in WICC and further exploring the exciting opportunities this community offers!",
+    },
+  ],
+}
+
+//TECHNICAL
 export const technical = {
   title: "Technical",
   description: " ",
@@ -100,10 +149,10 @@ export const technical = {
       bio: "Uyen is a cat and panda lover who passionate about Design, Tech, and the Written Word",
     },
     {
-      name: "Anika Tasnim",
-      position: "Designer & Developer",
-      netId: "at665",
-      bio: "Anika is a foodie and artist who is passionate about design and technology, loves WICC's mission of women empowerment",
+      name: "Laura Wu",
+      position: "Head Designer",
+      netId: "sw2262",
+      bio: "Laura is a junior in the College of Arts and Science studying Information Science. She enjoys listening to K-pop in her free time.",
     },
     {
       name: "Alina Yuan",
@@ -112,28 +161,16 @@ export const technical = {
       bio: "Alina is a sophomore from Santa Clara, California majoring in Computer Science with a minor in psychology. She loves her Shiba Inu and making digital art, and also the Technical Committee!",
     },
     {
-      name: "Omisha Sharma",
-      position: "Designer & Developer",
-      netId: "os226",
-      bio: "Omisha is a sophomore from Plainsboro, NJ in the College of Engineering student CS. She loves F1, playing piano, and hiking in Ithaca!",
-    },
-    {
       name: "Amanda Yongvanich",
       position: "Designer & Developer",
       netId: "apy23",
       bio: "A Taurus",
     },
     {
-      name: "Kelly Tran",
+      name: "Anika Tasnim",
       position: "Designer & Developer",
-      netId: "kt457",
-      bio: "Kelly is a junior from the Greater Philadelphia area. She is in the College of Engineering studying computer science. She enjoys crocheting, eating good food, and meeting new people. Feel free to reach out to her for a quick coffee chat!",
-    },
-    {
-      name: "Sneha Rajaraman",
-      position: "Designer & Developer",
-      netId: "sr934",
-      bio: "Sneha is a sophomore from Northern Virginia in the College of Engineering majoring in Computer Science. She enjoys calligraphy, singing, dancing (pretty much anything music replated), and baking!",
+      netId: "at665",
+      bio: "Anika is a foodie and artist who is passionate about design and technology, loves WICC's mission of women empowerment",
     },
     {
       name: "Carolina Herrera",
@@ -142,16 +179,16 @@ export const technical = {
       bio: "I long to wrap myself inside a tortilla blanket at the end of each day",
     },
     {
-      name: "Sophie Wang",
+      name: "Dora Weng",
       position: "Designer & Developer",
-      netId: "slw284",
-      bio: "Sophie is a sophomore CS major in the College of Engineering from Texas. She loves to read, dance, and be apart of Technical Committee!",
+      netId: "cw749",
+      bio: "Dora is a sophomore in the College of engineering studying Computer Science. She has an unhealthy obsession for coffee and you can find her working at Cafe Jennie!",
     },
     {
-      name: "Ruoxin Chen",
+      name: "Kelly Tran",
       position: "Designer & Developer",
-      netId: "rc753",
-      bio: "A Capricorn",
+      netId: "kt457",
+      bio: "Kelly is a junior from the Greater Philadelphia area. She is in the College of Engineering studying computer science. She enjoys crocheting, eating good food, and meeting new people. Feel free to reach out to her for a quick coffee chat!",
     },
     {
       name: "Maria Sandee Basco",
@@ -160,16 +197,10 @@ export const technical = {
       bio: "Sandee is a sophomore from Queens majoring in Computer Science with a Business minor. She loves thrifting and matcha lattes.",
     },
     {
-      name: "Yuhan Sun",
+      name: "Omisha Sharma",
       position: "Designer & Developer",
-      netId: "ys728",
-      bio: "Yuhan is a sophomore from Nanjing, China studying Computer Science in the College of Arts and Science. She is a huge fan of Zhou Shen and anime!",
-    },
-    {
-      name: "Dora Weng",
-      position: "Designer & Developer",
-      netId: "cw749",
-      bio: "Dora is a sophomore in the College of engineering studying Computer Science. She has an unhealthy obsession for coffee and you can find her working at Cafe Jennie!",
+      netId: "os226",
+      bio: "Omisha is a sophomore from Plainsboro, NJ in the College of Engineering student CS. She loves F1, playing piano, and hiking in Ithaca!",
     },
     {
       name: "Rahma Abdullah",
@@ -178,16 +209,34 @@ export const technical = {
       bio: "Rahma is a sophomore in the College of Engineering studying computer science. She's originally from Queens, New York. She enjoys reading, digital art, and going to the gym. :)",
     },
     {
-      name: "Laura Wu",
-      position: "Head Designer",
-      netId: "sw2262",
-      bio: "Laura is a junior in the College of Arts and Science studying Information Science. She enjoys listening to K-pop in her free time.",
+      name: "Ruoxin Chen",
+      position: "Designer & Developer",
+      netId: "rc753",
+      bio: "A Capricorn",
     },
     {
       name: "Shriya Sudhakar",
       position: "Designer & Developer",
       netId: "ss3576",
       bio: "Shriya is a freshman in the College of Engineering majoring in Computer Science and minoring in Applied Math. She loves playing the violin, trying new puzzles, and hanging out with friends. She's super excited for an amazing year on Technical Committee!",
+    },
+    {
+      name: "Sneha Rajaraman",
+      position: "Designer & Developer",
+      netId: "sr934",
+      bio: "Sneha is a sophomore from Northern Virginia in the College of Engineering majoring in Computer Science. She enjoys calligraphy, singing, dancing (pretty much anything music replated), and baking!",
+    },
+    {
+      name: "Sophie Wang",
+      position: "Designer & Developer",
+      netId: "slw284",
+      bio: "Sophie is a sophomore CS major in the College of Engineering from Texas. She loves to read, dance, and be apart of Technical Committee!",
+    },
+    {
+      name: "Yuhan Sun",
+      position: "Designer & Developer",
+      netId: "ys728",
+      bio: "Yuhan is a sophomore from Nanjing, China studying Computer Science in the College of Arts and Science. She is a huge fan of Zhou Shen and anime!",
     },
   ],
 };
@@ -204,22 +253,16 @@ export const academic = {
       bio: "Lauren is a junior from Princeton, NJ majoring in Information Science with minors in Business and Nutritional Sciences. This past summer, Lauren worked as a Digital Marketing Analytics Intern at Tarte Cosmetics. She first joined WICC in Fall 2022 under WICC's mentorship program as an ILR major looking to get more into the tech space and later joined board the following semester as Underclassmen Outreach Co-Director. After switching majors, she is now Vice President of the Academic Team for this semester. She has experience being an external and internal transfer and is involved in a business fraternity on campus along with Grub Ventures, a food and agriculture tech-focused venture capital club. In her free time, Lauren enjoys staying active, exploring national parks, trying out new recipes, and listening to true crime podcasts.",
     },
     {
-      name: "Tanisha Kore",
-      position: "Faculty Relations Co-Director",
-      netId: "tk494",
-      bio: " ",
-    },
-    {
       name: "Sarah Young",
       position: "Faculty Relations Co-Director",
       netId: "sy398",
       bio: "Sarah is a junior majoring in Computer Science. She is passionate in creating technology that can help others. She joined WICC because she loves how empowering WICC is and the community that it offered! In her free time, she enjoys sleeping, watching Netflix, and dancing. ",
     },
     {
-      name: "Meera Ramesh",
-      position: "Career Development Co-Director",
-      netId: "mr828",
-      bio: "Growing up, I internalized a lot of negative stereotypes about what types of people were meant for a career in tech, and these preconceptions pushed me away from considering the field despite my interest in problem solving. I entered Cornell as a biomedical engineer, but after attending a couple WICC events, I found myself a community of women in technology that didn't fit the stereotypes I thought to be true. WICC truly empowered me to feel confident in my eventual decision to pursue computer science. By being a career development co-director, I hope to spread this same empowerment and inclusivity to those who've felt the same way I did coming into college. WICC has helped me understand how to foster a more inclusive environment in technology, and I am so grateful for the inspiring people I've met through it. As a board member, I can only hope to empower more underrepresented communities to pursue a career in tech. Outside of WICC, I'm interested in dance, music, and art.",
+      name: "Tanisha Kore",
+      position: "Faculty Relations Co-Director",
+      netId: "tk494",
+      bio: " ",
     },
     {
       name: "Habiba Khan",
@@ -228,16 +271,22 @@ export const academic = {
       bio: " ",
     },
     {
-      name: "Neha Sunkara",
-      position: "Underclassmen Outreach Director",
-      netId: "ns597",
-      bio: " ",
+      name: "Meera Ramesh",
+      position: "Career Development Co-Director",
+      netId: "mr828",
+      bio: "Growing up, I internalized a lot of negative stereotypes about what types of people were meant for a career in tech, and these preconceptions pushed me away from considering the field despite my interest in problem solving. I entered Cornell as a biomedical engineer, but after attending a couple WICC events, I found myself a community of women in technology that didn't fit the stereotypes I thought to be true. WICC truly empowered me to feel confident in my eventual decision to pursue computer science. By being a career development co-director, I hope to spread this same empowerment and inclusivity to those who've felt the same way I did coming into college. WICC has helped me understand how to foster a more inclusive environment in technology, and I am so grateful for the inspiring people I've met through it. As a board member, I can only hope to empower more underrepresented communities to pursue a career in tech. Outside of WICC, I'm interested in dance, music, and art.",
     },
     {
       name: "Jeanie Chan",
       position: "Underclassmen Outreach Director",
       netId: "jc2885",
       bio: "Hi! I'm Jeanie, a CS major in the College of Engineering. I joined WICC as a freshman and have gained a lot from joining programs and attending events. WICC is such a supportive and welcoming community :) ",
+    },
+    {
+      name: "Neha Sunkara",
+      position: "Underclassmen Outreach Director",
+      netId: "ns597",
+      bio: " ",
     },
   ],
 };
@@ -297,13 +346,6 @@ export const outreach = {
       netId: "jjw255",
       bio: " ",
     },
-
-    {
-      name: "Shreya Ponugoti",
-      position: "Outreach Co-Director",
-      netId: "sp843",
-      bio: " ",
-    },
     {
       name: "Jennifer Ai",
       position: "Outreach Co-Director",
@@ -315,6 +357,12 @@ export const outreach = {
       position: "Outreach Co-Director",
       netId: "mta63",
       bio: "When I look back on my first semester, it’s the small, warm moments that seem to peek out from my memory. When I first arrived at Cornell, I sorely lacked a community; like many others, I wasn’t sure who I could spend time with, how to manage a quickly intensifying schedule, or what the correct steps to take moving forward could be. However, in the beginning of my first year, I remember a friend dragging me along to Phillips Hall, promising Insomnia cookies if we could sit through a meeting. Coincidentally, it was an interest meeting for the WICC mentorship. After meeting the mentors, we were struck by how vibrant and motivated everyone was; it felt like the beginning of something larger than ourselves. To put it simply, WICC inspired me to do more and provided me with the resources to do it. Through my time as an outreach co-director, I hope that I can provide a fraction of that community to Cornell and greater Ithaca. ",
+    },
+    {
+      name: "Shreya Ponugoti",
+      position: "Outreach Co-Director",
+      netId: "sp843",
+      bio: " ",
     },
   ],
 };
@@ -331,22 +379,16 @@ export const community = {
       bio: " ",
     },
     {
-      name: "Krishna Patel",
-      position: "Social Co-Director",
-      netId: "khp42",
-      bio: "I joined WICC as a freshman fall semester. Cornell is a huge university, but WICC provided the supportive and caring community that I wanted! WICC allowed me to meet people with similar interests, get advice and assistance from upperclassmen, and opened me up to a lot of amazing opportunities on campus!",
-    },
-    {
       name: "Goretti Muriithi",
       position: "Social Co-Director",
       netId: "gm552",
       bio: "Hi! I am a sophomore in the College of Arts & Sciences studying Computer Science. When I got to Cornell, I was uncertain about my future in computing, since I did not have a lot of experience coding in high school. However, I found a very supporting and active community in WICC. My mentors and friends in WICC helped me feel more confident in my abilities and helped me find resources in order to excel in my classes. I joined WICC E-Board in order to give back and encourage gender minorities to enter the computing field. ",
     },
     {
-      name: "Victoria Whittle",
-      position: "Mentorship Co-Director",
-      netId: "vnw3",
-      bio: " ",
+      name: "Krishna Patel",
+      position: "Social Co-Director",
+      netId: "khp42",
+      bio: "I joined WICC as a freshman fall semester. Cornell is a huge university, but WICC provided the supportive and caring community that I wanted! WICC allowed me to meet people with similar interests, get advice and assistance from upperclassmen, and opened me up to a lot of amazing opportunities on campus!",
     },
     {
       name: "Sreya Jonnalagadda",
@@ -355,16 +397,22 @@ export const community = {
       bio: "Attending a STEM high school where I was often the one of the few girls in the classes, I often felt unheard and unconfident. I knew coming into college that I wanted to join a community supporting women as they navigate the tech space and WICC was just that! I look forward to contributing to this empowering and inclusive community and watching it blossom. In my free time I love to rock climb!",
     },
     {
-      name: "Jarin Rahman",
-      position: "Allyship Co-Director",
-      netId: "jsr296",
-      bio: "Jamming to k-pop, blowing bubbles, making each other beaded bracelets – all while laughing and exchanging amusing stories about our lives so far – wasn't something I expected to happen at WICC Away. I didn’t think I’d become entangled in the lives of my newly-met peers and share our wildest dreams and fears. Being in a community of people who were similar to me reminded me of how in most male dominated spaces, it's hard to reach out for help and feel included because of prejudice and judgements. I wanted to become a part of the WICC community that promotes inclusiveness and makes those new to the computing field feel safe. ",
+      name: "Victoria Whittle",
+      position: "Mentorship Co-Director",
+      netId: "vnw3",
+      bio: " ",
     },
     {
       name: "Arshia Agrawal",
       position: "Allyship Co-Director",
       netId: "aa2443",
       bio: "One quote that always stuck with me was from Reshma Saujani, founder of Girls Who Code. In an interview, she shared an anecdote from her time teaching young coders: When young boys had buggy code, they asked, “What’s wrong with my code?” But when the young girls in her class had the same issue, their first instinct was to ask, “What’s wrong with me?” As a gender minority entering a male-dominated field, it can be intimidating - especially when we are raised doubting our abilities. WICC is so important to me because it empowers me to gain confidence in myself and is just an incredible community of people who are always there to uplift me and lead me towards opportunities I never would have found without their support. I hope to help give back and empower the next group of young women/gender minorities navigating their way through CS at Cornell. And outside of WICC, I love singing & songwriting, doing jigsaw puzzles, and writing poetry! :)",
+    },
+    {
+      name: "Jarin Rahman",
+      position: "Allyship Co-Director",
+      netId: "jsr296",
+      bio: "Jamming to k-pop, blowing bubbles, making each other beaded bracelets – all while laughing and exchanging amusing stories about our lives so far – wasn't something I expected to happen at WICC Away. I didn’t think I’d become entangled in the lives of my newly-met peers and share our wildest dreams and fears. Being in a community of people who were similar to me reminded me of how in most male dominated spaces, it's hard to reach out for help and feel included because of prejudice and judgements. I wanted to become a part of the WICC community that promotes inclusiveness and makes those new to the computing field feel safe. ",
     },
   ],
 };
@@ -485,40 +533,6 @@ export const advisors = {
       year: " ",
       major: " ",
       bio: " ",
-    },
-  ],
-};
-
-export const faculty = {
-  title: "Faculty",
-  description: "",
-  members: [
-    {
-      name: "Kavita Bala",
-      netId: "kb97",
-      position:
-        "Dean of Ann S. Bowers \n College of Computing and Information Science",
-      bio:
-        "Kavita Bala is a Professor in the Computer Science Department and Program of Computer Graphics at Cornell University. She received her S.M. and Ph.D. from the Massachusetts Institute of Technology (MIT), and her B.Tech. from the Indian Institute of Technology (IIT, Bombay). She co-founded GrokStyle, and serves as Chief Scientist (2015-), and is a faculty Fellow with the Atkinson Center. \n Bala's work is inter-disciplinary, spanning the areas of computer graphics, computer vision, human perception, and architecture. Her research has had significant industrial impact, including the core rendering engine in Autodesk's 360 cloud renderer, and GrokStyle's visual search engine. Bala's 3D Mandala reconstruction was installed at the Rubin Museum of Art in New York, and demonstrated to the Dalai Lama." +
-        "\nBala is committed to increasing diversity in computer science. As the only woman in her undergraduate CS class, she appreciates the progress that has been made in the past decade, but there is more work to be done in academia and particularly in industry.",
-    },
-    {
-      name: "Anne Bracy",
-      netId: "awb93",
-      position: "Senior Lecturer",
-      bio: "I am a Senior Lecturer in the Computer Science department. I obtained a BS in Symbolic Systems and an MS in Computer Science from Stanford University and a PhD in Computer Science at the University of Pennsylvania. I teach primarily undergraduate systems courses. Prior to my arrival at Cornell, I was a Principal Lecturer at Washington University in St. Louis. I was also a Research Scientist at the Microarchitecture Research Lab at Intel Labs in Santa Clara, California. In addition to being a member of WICC's Faculty Board I am also a 2016 participant of the Faculty Institute for Diversity. \nI support diversity in technology because I love computer science. Everyone should have an equal opportunity to participate fully in this stimulating field. Furthermore, a wider range of perspectives and backgrounds naturally yields more innovative ideas and wider applications. Increasing the diversity of computer scientists improves computer science.",
-    },
-    {
-      name: "Eva Tardos",
-      netId: "et28",
-      position: "Professor",
-      bio: "Eva Tardos is the Jacob Gould Schurman Professor of Computer Science and Information Science at Cornell. Her research focuses on Algorithm Design and the interface of Computing and Economics, with an emphasis on algorithms and games on networks. She is a member of the National Academy of Engineering and National Academy of Sciences. Tardos received her PhD in from Eötvös University, Budapest, Hungary. She did a series of postdocs and short term positions in computer science including time spent at Berkeley and MIT, and has been a faculty member at Cornell since 1989. \nShe has been the faculty advisor for the Women in Computing at Cornell since its inception, and though WICC's helped encourage many more women to choose CS major. She earned her PhD in 1984, the year that had most women in computing (see for example, the charts in this article for trends in percentage of women in computing). With the help of WICC, the percentage of women in CS at Cornell grew to currently over 25% from barely 10% not so many years ago. She is very proud of WICC for all the group has done to make CS a better major for women, and committed to continue this work, hoping to bring the percentage of women in CS at Cornell up to at least what it was nationally in the early eighties.",
-    },
-    {
-      name: "Karen Levy",
-      netId: "kl838",
-      position: "Assistant Professor",
-      bio: "Karen Levy is an assistant professor in the Department of Information Science at Cornell University and associated faculty at Cornell Law School. She researches the social, legal, and ethical implications of new technologies, with particular focus on inequality, labor, and intimacy. She holds a Ph.D. in Sociology from Princeton University and a J.D. from Indiana University Maurer School of Law. She is currently at work on a book tracing the emergence of monitoring technologies in the United States long-haul trucking industries. \nI am committed to supporting diversity in CIS because we can't find solutions to the social or technical problems we work on without the benefit of multiple perspectives and lived experiences. Computing touches every part of life and every social institution, and it's key that we have diverse voices represented to ensure that new technology is developed and used in ways that address the entrenched histories of inequality and injustice in our society.I am committed to opening up space for all students to participate fully in CIS disciplines, and feel a strong personal commitment to ensuring that ours is a community in which each person's expertise and experiences are valued.",
     },
   ],
 };

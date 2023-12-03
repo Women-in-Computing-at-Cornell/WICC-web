@@ -55,8 +55,9 @@ function Member({ name, title, netid, bio, img }) {
           <img src={img || defaultImage} alt={name} className="imageStyle" />
           <div className="modalTextContent">
             <h3>{name}</h3>
-            <p><b>Netid:</b> {netid}</p>
-            <p>{bio}</p>
+            <p className="modalTextStyle"><b>Position:</b> {title}</p>
+            <p className="modalTextStyle"><b>Netid:</b> {netid}</p>
+            <p className="modalTextStyle">{bio}</p>
           </div>
         </div>
       </Modal>

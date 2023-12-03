@@ -8,6 +8,7 @@ import {
   operations,
   corporate,
   technical,
+  photo,
   academic,
   brand,
   outreach,
@@ -37,16 +38,17 @@ const advisorHeadshots = importAll(
 );
 
 const teams = [
+  faculty,
   presidents,
   operations,
   corporate,
   technical,
+  photo,
   academic,
   brand,
   outreach,
   community,
   advisors,
-  faculty,
 ];
 
 export default class Board extends Component {
@@ -76,8 +78,8 @@ export default class Board extends Component {
           />
         </div>
         <div className="containerPage">
-          <h2 style={{ fontWeight: "bold" }}>Who We Are</h2>
-          <p>
+          <h2 style={{ fontWeight: "bold", marginBottom: "15px" }}>Who We Are</h2>
+          <p style= {{ marginBottom: "20px"}} >
             WICC was founded in March 2013 to bring together women and gender
             minorities in computing fields at Cornell, expand their
             opportunities and successes, provide a support network, and empower
@@ -121,11 +123,15 @@ export default class Board extends Component {
                     fontWeight: "bold",
                     marginTop: "20px",
                     marginBottom: "5px",
+                    width: "150px",
                   }}
                 >
                   {" "}
                   ON THIS PAGE:
                 </p>
+                <Nav.Link href="#board#faculty" eventKey="faculty">
+                  Faculty
+                </Nav.Link>
                 <Nav.Link href="#board#presidents" eventKey="pres">
                   Presidents
                 </Nav.Link>
@@ -137,6 +143,9 @@ export default class Board extends Component {
                 </Nav.Link>
                 <Nav.Link href="#board#technical" eventKey="technical">
                   Technical
+                </Nav.Link>
+                <Nav.Link href="#board#photo" eventKey="photo">
+                  Photo & Film
                 </Nav.Link>
                 <Nav.Link href="#board#academic" eventKey="academic">
                   Academic
@@ -152,9 +161,6 @@ export default class Board extends Component {
                 </Nav.Link>
                 <Nav.Link href="#board#advisors" eventKey="advisors">
                   Advisors
-                </Nav.Link>
-                <Nav.Link href="#board#faculty" eventKey="faculty">
-                  Faculty
                 </Nav.Link>
               </Nav>
             </div>
