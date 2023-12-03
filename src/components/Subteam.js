@@ -10,7 +10,7 @@ function Subteam({ team }) {
   }
 
   const boardHeadshots = importAll(
-    require.context("../images/headshots/board", false, /\.jpg/)
+    require.context("../images/headshots/board", false, /\.jpg|\.JPG/)
   );
 
   return (
@@ -26,7 +26,7 @@ function Subteam({ team }) {
               title={member.position}
               netid={member.netId}
               bio={member.bio}
-              img={boardHeadshots[member.netId + ".jpg"]}
+              img={boardHeadshots[Object.keys(boardHeadshots).filter(k => k.startsWith(member.netId))]}
             />
           ))}
         </div>
