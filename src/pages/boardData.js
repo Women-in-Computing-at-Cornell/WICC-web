@@ -175,7 +175,7 @@ export const technical = {
       name: "Dora Weng",
       position: "Designer & Developer",
       netId: "cw749",
-      bio: "",
+      bio: "Dora is a sophomore in the College of engineering studying Computer Science. She has an unhealthy obsession for coffee and you can find her working at Cafe Jennie!",
     },
     {
       name: "Rahma Abdullah",
@@ -189,11 +189,6 @@ export const technical = {
       netId: "sw2262",
       bio: "",
     },
-
-    
-
-
-
   ],
 };
 
