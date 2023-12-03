@@ -1,5 +1,5 @@
 .home-container {
-  margin: 8%;
+  padding-bottom: 20px;
 }
 
 .hero-container,  .call-to-action-container {
@@ -8,11 +8,13 @@
 
 .mission-container {
   text-align: center;
-  margin-top: 5%
+  margin-top: 5%;
+  display: flex;
+  flex-direction: row;
 }
 
-.hero-container {
-  overflow: hidden;
+.heromission-content {
+  padding: 0px
 }
 
 #home-illustration {
@@ -24,6 +26,72 @@
   /* margin-bottom: %; */
   text-align: center;
 }
+
+/* start of what we do container */
+.what-we-do-container {
+  /* Adjust container styles as needed */
+  margin-top: 30px; /* Example margin */
+}
+
+.title-with-line {
+  display: flex;
+  align-items: center;
+}
+
+.horizontal-line {
+  height: 1px;
+  width: 100%; /* Full width of the container */
+  background-color: #000; /* Color of the line */
+  margin-left: 10px; /* Spacing between the title and line */
+}
+
+.title-text {
+  margin: 0;
+  white-space: nowrap;
+}
+/* end of what we do container */
+
+/* start of alumni testimony container */
+
+.alumni-testimonies-container {
+  /* Adjust container styles as needed */
+  padding-top: 10px;
+  background-size: cover;
+  background-position: center top;
+  position: relative;
+  min-height: 300px;
+  color: #000000; /* Text color for testimonies */
+}
+.alumni-testimonies-content {
+  /* Adjust container styles as needed */
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 3%;
+  padding-bottom: 2%;
+  background-color: #defff8;
+}
+
+.testimony-grid {
+  display: flex;
+  justify-content: space-around;
+  /* background-image: url('../images/alumnitestimg.png'); /* Set your background image URL */
+  background-color: #dbfff8;
+  min-height: 300px;
+  background-size: cover;
+  background-position: center top;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.testimony-column {
+  padding: 16px;
+  background-color: #ffffff;
+  border-radius: 25px;
+  flex-basis: 30%; 
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+}
+
+/* end of alumni testimony container */
 
 /* react-bootstrap button style overriding */
 .btn {
@@ -45,4 +113,38 @@
   padding-bottom: 0.5%;
   padding-top: 0px;
   text-align: center;
+}
+
+.carousel-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 100%; 
+  height: 200px;
+  margin: 0 auto; /* Center the carousel */
+}
+
+.carousel-wrapper .carousel img {
+  width: 100%; /* Set maximum width */
+  height: 200px; /* Set fixed height */
+  object-fit: fill; /* Fit images within the dimensions without distortion */
+}
+/* Move the navigation elements outside the carousel */
+.carousel.carousel-slider .control-arrow {
+  display: default;
+  padding: 0px;
+}
+
+.carousel-wrapper .carousel .control-dots {
+  position: absolute;
+  color: black;
+  bottom: -30px; /* Adjust the distance from the bottom as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100; /* Ensure it's above the images */
+}
+
+.carousel .carousel-slider .control-dots .dot {
+  background-color: black; /* Change dot color to a reddish tone */
+  color: black;
+  opacity: 0.8; /* Adjust dot opacity if needed */
 }
