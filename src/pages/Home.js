@@ -60,7 +60,7 @@ const Home = () => {
     <div >
       {/* <Image style = {{maxWidth: '100%', height: 'auto'}} src={boardGroupPic} id="hero-image" /> */}
       <div class="home-container" >
-        <section style = {{ paddingLeft: '5%', width: '100%', height: '100%', backgroundColor:'#f8f9fa',  display: 'flex', flexDirection: 'row', alignContent: 'center', justifyContent: 'space-between'}}>
+        <section style = {{paddingBottom:'3%', paddingLeft: '5%', width: '100%', height: '100%', backgroundColor:'#f8f9fa',  display: 'flex', flexDirection: 'row', alignContent: 'center', justifyContent: 'space-between'}}>
           <div style = {{backgroundColor:'#f8f9fa', display : 'flex', flexDirection: 'column', justifyContent: 'center'}}>
             <h2 style={{ textAlign: 'left', fontWeight: 'bold', maxWidth: '430px'}}>  
             Our Mission is 
