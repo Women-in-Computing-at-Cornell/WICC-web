@@ -1,5 +1,4 @@
 .home-container {
-  margin: 5%;
 }
 
 .hero-container,  .call-to-action-container {
@@ -13,8 +12,8 @@
   flex-direction: row;
 }
 
-.hero-container {
-  overflow: hidden;
+.heromission-content {
+  padding: 0px
 }
 
 #home-illustration {
@@ -59,29 +58,38 @@
   background-size: cover;
   background-position: center top;
   position: relative;
-  min-height: 400px;
-  color: #ffffff; /* Text color for testimonies */
+  min-height: 300px;
+  color: #000000; /* Text color for testimonies */
 }
 .alumni-testimonies-content {
   /* Adjust container styles as needed */
-  padding: 0px;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 3%;
+  padding-bottom: 2%;
+  background-color: #defff8;
 }
 
 .testimony-grid {
   display: flex;
-  justify-content: space-between;
-  background-image: url('../images/alumnitestimg.png'); /* Set your background image URL */
-  min-height: 500px;
+  justify-content: space-around;
+  /* background-image: url('../images/alumnitestimg.png'); /* Set your background image URL */
+  background-color: #dbfff8;
+  min-height: 300px;
   background-size: cover;
   background-position: center top;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .testimony-column {
-  padding-top: 50px;
-  padding-left: 40px;
-  flex-basis: 30%; /* Adjust width of columns as needed */
-  /* Additional styles for columns */
+  padding: 16px;
+  background-color: #ffffff;
+  border-radius: 25px;
+  flex-basis: 30%; 
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
 }
+
 /* end of alumni testimony container */
 
 /* react-bootstrap button style overriding */
