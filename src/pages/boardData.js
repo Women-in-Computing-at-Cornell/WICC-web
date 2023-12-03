@@ -134,6 +134,12 @@ export const photo = {
       netId: "ct556",
       bio: "When I arrived at Cornell, the world of computing was like a distant realm to me and things like joining clubs, finding opportunities, and choosing classes made me feel lost. WICC has WICC has allowed me to join a welcoming community of driven, passionate individuals who have helped me in my journey. The camaraderie of this community has made the complex seem approachable and the unknown less daunting. I’m excited to continue forging new connections in WICC and further exploring the exciting opportunities this community offers!",
     },
+    {
+      name: "Zhalae Daneshvari",
+      position: "Photographer",
+      netId: "zwd3",
+      bio: "Zhalae is a freshman at Cornell studying Info Sci in the College of Arts and Sciences. As part of the P+F committee, she loves to capture the welcoming nature of WICC’s community at events. In her free time she likes listening to music and her favorite artists are Taylor Swift and The Neighbourhood."
+    }
   ],
 }
 
