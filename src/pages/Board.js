@@ -42,12 +42,12 @@ const teams = [
   presidents,
   operations,
   corporate,
-  technical,
-  photo,
   academic,
   brand,
-  outreach,
   community,
+  outreach,
+  technical,
+  photo,
   advisors,
 ];
 
@@ -141,12 +141,6 @@ export default class Board extends Component {
                 <Nav.Link href="#board#corporate" eventKey="corporate">
                   Corporate
                 </Nav.Link>
-                <Nav.Link href="#board#technical" eventKey="technical">
-                  Technical
-                </Nav.Link>
-                <Nav.Link href="#board#photo" eventKey="photo">
-                  Photo & Film
-                </Nav.Link>
                 <Nav.Link href="#board#academic" eventKey="academic">
                   Academic
                 </Nav.Link>
@@ -158,6 +152,12 @@ export default class Board extends Component {
                 </Nav.Link>
                 <Nav.Link href="#board#outreach" eventKey="outreach">
                   Outreach
+                </Nav.Link>
+                <Nav.Link href="#board#technical" eventKey="technical">
+                  Technical
+                </Nav.Link>
+                <Nav.Link href="#board#photo-&-film" eventKey="photo">
+                  Photo & Film
                 </Nav.Link>
                 <Nav.Link href="#board#advisors" eventKey="advisors">
                   Advisors

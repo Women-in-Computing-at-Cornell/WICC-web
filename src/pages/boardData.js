@@ -158,7 +158,7 @@ export const technical = {
       name: "Laura Wu",
       position: "Head Designer",
       netId: "sw2262",
-      bio: "Laura is a junior in the College of Arts and Science studying Information Science. She enjoys listening to K-pop in her free time.",
+      bio: "Laura is a junior in the College of Arts and Sciences studying Information Science. She enjoys listening to K-pop in her free time.",
     },
     {
       name: "Alina Yuan",
