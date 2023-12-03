@@ -51,13 +51,13 @@ export default class Discussions extends Component {
         {/* Blurb */}
         <div class="page">
           <p class="header">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            WICC is dedicated towards fostering an inclusive space for
+            individuals of all identities to feel empowered to speak on issues
+            in the CIS community, both on- and off-campus. We hold monthly
+            discussions encompassing topics such as diversity in tech, the
+            definition of success, and more. It is our goal to have a greater
+            number of voices heard and to have a greater breadth of women and
+            allies voicing their opinions at the table.
           </p>
           <br></br>
           <br></br>
