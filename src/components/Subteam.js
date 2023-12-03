@@ -17,7 +17,7 @@ function Subteam({ team }) {
   return (
     <>
       <div id={"board#" + String(team.title).toLocaleLowerCase()}>
-        <h3>{team.title}</h3>
+        <h3 style={{paddingBottom: "16px"}}>{team.title}</h3>
         <div className="members-grid">
           {team.members.map((member, index) => {
             // Check if the member's image exists, else use default image

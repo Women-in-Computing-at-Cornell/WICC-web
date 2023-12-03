@@ -121,13 +121,13 @@ export const technical = {
       name: "Amanda Yongvanich",
       position: "Designer & Developer",
       netId: "apy23",
-      bio: "",
+      bio: "A Taurus",
     },
     {
       name: "Kelly Tran",
       position: "Designer & Developer",
       netId: "kt457",
-      bio: "",
+      bio: "Kelly is a junior from the Greater Philadelphia area. She is in the College of Engineering studying computer science. She enjoys crocheting, eating good food, and meeting new people. Feel free to reach out to her for a quick coffee chat!",
     },
     {
       name: "Sneha Rajaraman",
@@ -151,19 +151,13 @@ export const technical = {
       name: "Ruoxin Chen",
       position: "Designer & Developer",
       netId: "rc753",
-      bio: "",
-    },
-    {
-      name: "Anamitra Rawat",
-      position: "Designer & Developer",
-      netId: "ar2342",
-      bio: "",
+      bio: "A Capricorn",
     },
     {
       name: "Maria Sandee Basco",
       position: "Designer & Developer",
       netId: "myb22",
-      bio: "",
+      bio: "Sandee is a sophomore from Queens majoring in Computer Science with a Business minor. She loves thrifting and matcha lattes.",
     },
     {
       name: "Yuhan Sun",
@@ -185,9 +179,15 @@ export const technical = {
     },
     {
       name: "Laura Wu",
-      position: "Designer & Developer",
+      position: "Head Designer",
       netId: "sw2262",
-      bio: "",
+      bio: "Laura is a junior in the College of Arts and Science studying Information Science. She enjoys listening to K-pop in her free time.",
+    },
+    {
+      name: "Shriya Sudhakar",
+      position: "Designer & Developer",
+      netId: "ss3576",
+      bio: "Shriya is a freshman in the College of Engineering majoring in Computer Science and minoring in Applied Math. She loves playing the violin, trying new puzzles, and hanging out with friends. She's super excited for an amazing year on Technical Committee!",
     },
   ],
 };
