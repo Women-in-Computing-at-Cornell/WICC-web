@@ -113,6 +113,7 @@ body {
   padding: 1rem;
   transform: translate3d(0, -100%, 0);
   transition: transform 300ms;
+  font-size: 20px;
 }
 
 .item a {
@@ -170,8 +171,4 @@ body {
 
 .item__body p {
   margin: 0;
-}
-
-.person {
-  font-size: 24px;
 }
