@@ -26,9 +26,10 @@
 .title {
   font-size: smaller;
   color: gray;
-  padding-left: 5%;
+  padding-right: 35px;
+  padding-top: 16px;
 }
 
 .name {
-  padding-left: 5%;
+  padding-bottom: 32px;
 }
