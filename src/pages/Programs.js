@@ -4,6 +4,7 @@ import Container from "react-bootstrap/Container";
 import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import "./Program.css";
 import "./pages.css";
 import activemember from "../images/programs/activemember.jpg";
 import campaigns from "../images/programs/campaigns.jpg";
@@ -12,6 +13,7 @@ import cyc from "../images/programs/cyc.jpg";
 import lunchbunch from "../images/programs/lunchbunch.jpg";
 import mentorship from "../images/programs/mentorship.jpg";
 import outreach from "../images/programs/outreach.jpg";
+import programbg from "../images/programs/programbg.jpg";
 import { HoverStyle } from "devextreme-react/chart.js";
 
 let styles = {
@@ -29,7 +31,18 @@ let styles = {
 const Programs = () => {
   return (
     <div style={{ width: "100%", height: "100%" }}>
-      <h1 style={{ fontWeight: "bold", margin: "200px" }}>Programs</h1>
+      <div className="hero">
+        <h1 style={{ fontWeight: "bold", margin: "56px" }}>Programs</h1>
+        <p>
+          We are dedicated to fostering an inclusive and empowering community
+          for women and non-binary students at Cornell. Each semester, we curate
+          a dynamic lineup of programs and events designed to not only provide
+          support but also create an environment that is both enriching and
+          informative. Our goal is to continually enhance these offerings,
+          ensuring they resonate with our diverse community and actively engage
+          every participant
+        </p>
+      </div>
       <Link to="/membership" style={styles.link}>
         <Row
           style={{
