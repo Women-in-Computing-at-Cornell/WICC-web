@@ -114,7 +114,7 @@ export default class Board extends Component {
                 className="flex-column"
                 style={{}}
               >
-                <p style={{ fontWeight: "bold" }}> ON THIS PAGE:</p>
+                <p style={{ fontWeight: "bold", marginTop: "20px", marginBottom: "5px"}}> ON THIS PAGE:</p>
                 <Nav.Link href="#board#presidents" eventKey="pres">
                   Presidents
                 </Nav.Link>
