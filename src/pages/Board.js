@@ -86,90 +86,95 @@ export default class Board extends Component {
 
     return (
       <div>
-      <div>
+        <div>
           <img
             src={hero}
-            style={{ maxWidth: "100%", height: "auto"}}
-            alt="Description"/>
-      </div>
-      <div className="containerPage">
-        <h2 style={{ fontWeight: "bold" }}>Who We Are</h2>
-        <p>
-          WICC was founded in March 2013 to bring together women and gender
-          minorities in computing fields at Cornell, expand their opportunities
-          and successes, provide a support network, and empower them to
-          encourage younger underrepresented students to consider computing
-          fields. We hope to create a budding community and promote interaction
-          on academic, social, and professional issues. By making women and
-          gender minorities in computing fields visible, providing role models
-          and dispelling stereotypes, WICC fosters a support network to empower
-          everyone and encourage young students to discover their love for
-          computing.
-        </p>
-        <div style={{ display: "flex" }}>
-          <div style={{ flexGrow: 1 }}>
-            {teams.map((t, key) => (
-              <div key={key} style={{ marginBottom: "20px" }}>
-                <div>
-                  {t.name}
-                  <Subteam team={t} />
+            style={{ maxWidth: "100%", height: "auto" }}
+            alt="Description"
+          />
+        </div>
+        <div className="containerPage">
+          <h2 style={{ fontWeight: "bold" }}>Who We Are</h2>
+          <p>
+            WICC was founded in March 2013 to bring together women and gender
+            minorities in computing fields at Cornell, expand their
+            opportunities and successes, provide a support network, and empower
+            them to encourage younger underrepresented students to consider
+            computing fields. We hope to create a budding community and promote
+            interaction on academic, social, and professional issues. By making
+            women and gender minorities in computing fields visible, providing
+            role models and dispelling stereotypes, WICC fosters a support
+            network to empower everyone and encourage young students to discover
+            their love for computing.
+          </p>
+          <div style={{ display: "flex" }}>
+            <div style={{ flexGrow: 1 }}>
+              {teams.map((t, key) => (
+                <div key={key} style={{ marginBottom: "20px" }}>
+                  <div>
+                    {t.name}
+                    <Subteam team={t} />
+                  </div>
                 </div>
-              </div>
-            ))}
-          </div>
-          <div
-            style={{
-              float: "right", // Float might not be necessary with flex layout
-              height: "100%",
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "flex-end",
-              position: "sticky",
-              top: "0px",
-            }}
-          >
-            <Nav onSelect={this.handleSelect} className="flex-column" style={{}}>
-              <p style={{ fontWeight: "bold" }}> ON THIS PAGE:</p>
-              <Nav.Link href="#board#presidents" eventKey="pres">
-                Presidents
-              </Nav.Link>
-              <Nav.Link href="#board#operations" eventKey="operations">
-                Operations
-              </Nav.Link>
-              <Nav.Link href="#board#corporate" eventKey="corporate">
-                Corporate
-              </Nav.Link>
-              <Nav.Link href="#board#technical" eventKey="technical">
-                Technical
-              </Nav.Link>
-              <Nav.Link href="#board#academic" eventKey="academic">
-                Academic
-              </Nav.Link>
-              <Nav.Link href="#board#brand" eventKey="brand">
-                Brand
-              </Nav.Link>
-              <Nav.Link href="#board#community" eventKey="community">
-                Community
-              </Nav.Link>
-              <Nav.Link href="#board#outreach" eventKey="outreach">
-                Outreach
-              </Nav.Link>
-              <Nav.Link href="#board#advisors" eventKey="advisors">
-                Advisors
-              </Nav.Link>
-              <Nav.Link href="#board#faculty" eventKey="faculty">
-                Faculty Board
-              </Nav.Link>
-              <Nav.Link href="#board#sponsors" eventKey="sponsors">
-                Sponsors
-              </Nav.Link>
-              <Nav.Link href="#board#alumni" eventKey="alumni">
-                Alumni
-              </Nav.Link>
-            </Nav>
+              ))}
+            </div>
+            <div
+              style={{
+                float: "right", // Float might not be necessary with flex layout
+                height: "100%",
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "flex-end",
+                position: "sticky",
+                top: "0px",
+              }}
+            >
+              <Nav
+                onSelect={this.handleSelect}
+                className="flex-column"
+                style={{}}
+              >
+                <p style={{ fontWeight: "bold" }}> ON THIS PAGE:</p>
+                <Nav.Link href="#board#presidents" eventKey="pres">
+                  Presidents
+                </Nav.Link>
+                <Nav.Link href="#board#operations" eventKey="operations">
+                  Operations
+                </Nav.Link>
+                <Nav.Link href="#board#corporate" eventKey="corporate">
+                  Corporate
+                </Nav.Link>
+                <Nav.Link href="#board#technical" eventKey="technical">
+                  Technical
+                </Nav.Link>
+                <Nav.Link href="#board#academic" eventKey="academic">
+                  Academic
+                </Nav.Link>
+                <Nav.Link href="#board#brand" eventKey="brand">
+                  Brand
+                </Nav.Link>
+                <Nav.Link href="#board#community" eventKey="community">
+                  Community
+                </Nav.Link>
+                <Nav.Link href="#board#outreach" eventKey="outreach">
+                  Outreach
+                </Nav.Link>
+                <Nav.Link href="#board#advisors" eventKey="advisors">
+                  Advisors
+                </Nav.Link>
+                <Nav.Link href="#board#faculty" eventKey="faculty">
+                  Faculty Board
+                </Nav.Link>
+                <Nav.Link href="#board#sponsors" eventKey="sponsors">
+                  Sponsors
+                </Nav.Link>
+                <Nav.Link href="#board#alumni" eventKey="alumni">
+                  Alumni
+                </Nav.Link>
+              </Nav>
+            </div>
           </div>
         </div>
-      </div>
       </div>
     );
   }
