@@ -3,7 +3,7 @@ import Container from "react-bootstrap/Container";
 import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Calendar from "@ericz1803/react-google-calendar";
+// import Calendar from "@ericz1803/react-google-calendar";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import Sponsors from "./Sponsors";
