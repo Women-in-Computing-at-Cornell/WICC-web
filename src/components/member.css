@@ -1,0 +1,26 @@
+.memberContainer {
+  width: 30%;
+  height: 80%;
+  border: none;
+  min-width: 200px;
+  cursor: pointer; /* Add cursor style for better UX */
+}
+
+.imageStyle {
+  width: 12vw; /* 10% of the viewport width */
+  height: 12vw; /* Set height equal to width for 1:1 aspect ratio */
+  border-radius: 10%;
+  object-fit: cover;
+  object-position: center; /* Adjust if needed */
+}
+
+
+.title {
+  font-size: smaller;
+  color: gray;
+  padding-left: 5%;
+}
+
+.name {
+  padding-left: 5%;
+}

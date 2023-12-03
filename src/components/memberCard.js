@@ -1,51 +1,35 @@
 import React, { useState } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
+import "./member.css";
+import defaultImage from "../images/noimage.png";
 
 function Member({ name, title, netid, bio, img }) {
-  // State to toggle display of detailed info
   const [showDetails, setShowDetails] = useState(false);
+  // const [imageSrc, setImageSrc] = useState(img);
 
-  // Function to toggle the showDetails state
-  const toggleDetails = () => {
-    setShowDetails(!showDetails);
-  };
+  // const handleError = () => {
+  //   setImageSrc(defaultImage);
+  // };
+
+  const toggleDetails = () => setShowDetails(!showDetails);
 
   return (
     <>
-      <div
-        style={{
-          width: "30%",
-          height: "80%",
-          border: "none",
-          minWidth: "200px",
-        }}
-        onClick={toggleDetails}
-      >
+      <div className="memberContainer" onClick={toggleDetails}>
         <div>
-          {/* Use the img prop passed to the component */}
           <LazyLoadImage
             alt={name}
             src={img}
-            effect="blur" // Optional: Adds a blur effect while loading
-            style={{
-              borderRadius: "10%",
-              height: "200px",
-              width: "100%",
-              objectFit: "cover",
-              float: "left",
-              padding: "5%",
-            }}
-            className="headshots"
+            effect="blur"
+            className="imageStyle"
+            // onError={handleError}
           />
         </div>
-        <div style={{ fontSize: "smaller", color: "gray", paddingLeft: "5%" }}>
-          {title}
-        </div>
-        <div style={{ paddingLeft: "5%" }}>{name}</div>
-
+        <div className="title">{title}</div>
+        <div className="name">{name}</div>
         {showDetails && (
-          <div>
+          <div className="bio">
             <p>{bio}</p>
             {/* More detailed info can be added here */}
           </div>
