@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import Container from "react-bootstrap/Container";
-import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+// import Container from "react-bootstrap/Container";
+// import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
+// import Row from "react-bootstrap/Row";
+// import Col from "react-bootstrap/Col";
 import CreateCalendar from "@ericz1803/react-google-calendar";
 
 export default class Calendar extends Component {

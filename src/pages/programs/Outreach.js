@@ -3,7 +3,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { boardData } from "../boardData";
 import ReactGoogleSlides from "react-google-slides";
 import outreach from "../../images/outreach/outreach.jpg";
@@ -14,7 +14,7 @@ import QuestionsCard from "./QuestionsCard.js";
 
 import Image from "react-bootstrap/Image";
 
-import medal from "../../images/medal.jpg";
+// import medal from ".s./../images/medal.jpg";
 
 import "./programPages.css";
 
@@ -30,7 +30,7 @@ export default class Outreach extends Component {
 
     function importAll(r) {
       let images = {};
-      r.keys().map((item, index) => {
+      r.keys().forEach((item) => {
         images[item.replace("./", "")] = r(item);
       });
       return images;
