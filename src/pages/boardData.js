@@ -135,6 +135,36 @@ export const photo = {
       bio: "When I arrived at Cornell, the world of computing was like a distant realm to me and things like joining clubs, finding opportunities, and choosing classes made me feel lost. WICC has WICC has allowed me to join a welcoming community of driven, passionate individuals who have helped me in my journey. The camaraderie of this community has made the complex seem approachable and the unknown less daunting. I’m excited to continue forging new connections in WICC and further exploring the exciting opportunities this community offers!",
     },
     {
+      name: "Afsheen Alvi",
+      position: "Photographer", 
+      netId: "aa2293",
+      bio: "Sophomore from Lucknow, India. Outside of academics, interested in baking, greek mythology, space law and exploration, travel and music",
+    },
+    {
+      name: "Amy Chitnumsab",
+      position: "Photographer", 
+      netId: "ac2295",
+      bio: "Amy is currently pursuing a career in Data Science with her Statistics major. Other than being part of the WICC Photo and Film Committee, she is also part of Cornell Data Journal (CDJ) and Cornell Innovative Film Tech Club (CIFT). ",
+    },
+    {
+      name: "Rachael Close",
+      position: "Photographer", 
+      netId: "rlc355",
+      bio: "enthusiastic photographer, also likes to crochet, figure skate, and play tennis",
+    },
+    {
+      name: "Sharafa Mohammed",
+      position: "Photographer", 
+      netId: "sm2592",
+      bio: "Sharafa has been on the Photo & Film committee since Fall 2023. She is passionate about the world of machine learning and the application of computing in healthcare. Sharafa has enjoyed attending events and engaging with the WICC community, and she hopes to continue executing campaigns and contributing to events over the following semester.",
+    },
+    // {
+    //   name: "",
+    //   position: "", 
+    //   netId: "",
+    //   bio: "",
+    // },
+    {
       name: "Zhalae Daneshvari",
       position: "Photographer",
       netId: "zwd3",
