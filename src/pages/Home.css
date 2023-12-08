@@ -65,15 +65,15 @@
   /* Adjust container styles as needed */
   padding: 0px;
 }
-
+/* 
 .testimony-grid {
   display: flex;
   justify-content: space-between;
-  background-image: url("../images/alumnitestimg.png"); /* Set your background image URL */
+  background-image: url("../images/alumnitestimg.png"); /* Set your background image URL 
   min-height: 500px;
   background-size: cover;
   background-position: center top;
-}
+} */
 
 .testimony-column {
   padding-top: 50px;
