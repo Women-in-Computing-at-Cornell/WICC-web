@@ -20,8 +20,8 @@ class NavBar extends React.Component {
            <span style = {{ fontSize: '16px', paddingLeft: '8px'}} >Women in Computing at Cornell</span>
         </Navbar.Brand>
         <Nav>
-          <Nav.Link href="/" class="navLink">Home</Nav.Link>
-          <Nav.Link href="/#about" class="navLink">About</Nav.Link>
+          <Nav.Link href="/">Home</Nav.Link>
+          <Nav.Link href="/#about">About</Nav.Link>
           <Nav.Link href="/#board">Who We Are</Nav.Link>
           <Nav.Link href="/#programs">Programs</Nav.Link>
 

@@ -59,7 +59,7 @@ const Home = () => {
   return (
     <div >
       {/* <Image style = {{maxWidth: '100%', height: 'auto'}} src={boardGroupPic} id="hero-image" /> */}
-      <div class="home-container" >
+      <div className="home-container" >
         <section style = {{paddingBottom:'3%', paddingLeft: '5%', width: '100%', height: '100%', backgroundColor:'#f8f9fa',  display: 'flex', flexDirection: 'row', alignContent: 'center', justifyContent: 'space-between'}}>
           <div style = {{backgroundColor:'#f8f9fa', display : 'flex', flexDirection: 'column', justifyContent: 'center'}}>
             <h2 style={{ textAlign: 'left', fontWeight: 'bold', maxWidth: '430px'}}>  
@@ -75,7 +75,7 @@ const Home = () => {
           </div>
           <Image style={{ maxHeight: '600px', maxWidth: '880px'}} src={newmissionImg} id="mission-image"></Image>
         </section>
-        <section style = {{display : 'flex', flexDirection: 'row', alignContent: 'center', justifyContent: 'center', justifyContent: 'space-around'}} class="semout-container">
+        <section style = {{display : 'flex', flexDirection: 'row', alignContent: 'center', justifyContent: 'center', justifyContent: 'space-around'}} className="semout-container">
         <div>
             <Image style={{ maxWidth: '600px' }} src={semoutlook} id="semester-outlook"></Image>
           </div>
@@ -100,7 +100,7 @@ const Home = () => {
           <div className="horizontal-line"></div>
         </div>
       </section>
-        <section style={{paddingLeft: '5%',paddingRight: '5%', paddingTop: '20px'}} class="carousel-container">
+        <section style={{paddingLeft: '5%',paddingRight: '5%', paddingTop: '20px'}} className="carousel-container">
           <PCarousel imgNames={homepics} pics={homepicsname} />
       </section>
       <section style = {{paddingLeft: '5%', paddingRight: '5%',paddingTop: '50px'}} className="alumni-testimonies-container">
@@ -130,11 +130,11 @@ const Home = () => {
           </div>
         </div>
       </section>
-        <section style = {{marginTop: '5%'}} class='sponsor-container'>
+        <section style = {{marginTop: '5%'}} className='sponsor-container'>
         <h2 style={{ fontWeight: 'bold' }}>Our Sponsors</h2>
           <Sponsors />
         </section>
-        <section class="call-to-action-container">
+        <section className="call-to-action-container">
           <h3>Believe in this mission?</h3>
           <Button href="/#join">Get Involved</Button>
         </section>
