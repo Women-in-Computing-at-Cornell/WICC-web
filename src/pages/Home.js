@@ -255,7 +255,7 @@ const Home = () => {
           <h2 style={{ fontWeight: "bold" }}>Our Sponsors</h2>
           <Sponsors />
         </section>
-        <section class="call-to-action-container">
+        <section className="call-to-action-container">
           <h3>Believe in this mission?</h3>
           <Button href="/#join">Get Involved</Button>
         </section>

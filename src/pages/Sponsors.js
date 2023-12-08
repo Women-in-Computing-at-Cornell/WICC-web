@@ -55,8 +55,8 @@ export default class Sponsors extends Component {
     );
 
     return (
-      <div class="containerPage">
-        <div style={{ marginBottom: "10%" }}>
+      <div className='containerPage'>
+        <div style={{ marginBottom: '10%' }}>
           {/* <h4 style={{ marginBottom: '3%', fontWeight: 'bold' }}>Gold</h4>
           {gold.map((value) => {
             return <a href={value.link}><Image src={(sponsorHeadshots[value.sponsor + '.jpg'])} width='25%' height='10%' style={{ marginTop: '-6%', paddingRight: '20px' }} /></a>
