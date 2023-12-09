@@ -1,17 +1,17 @@
 import React, { Component } from "react";
 import "./pages.css";
-import BoardCard from "../components/BoardCard.js";
-import illustration from "../images/homepage-illustration.png";
-import Navbar from "react-bootstrap/Navbar";
-import { Nav, NavItem, NavDropdown } from "react-bootstrap";
+// import BoardCard from "../components/BoardCard.js";
+// import illustration from "../images/homepage-illustration.png";
+// import Navbar from "react-bootstrap/Navbar";
+// import { Nav, NavItem, NavDropdown } from "react-bootstrap";
 import { facultyData } from "./facultyData";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import FacultyCard from "../components/FacultyCard.js";
+// import FacultyCard from "../components/FacultyCard.js";
 import Button from "react-bootstrap/Button";
 
-import Image from "react-bootstrap/Image";
+// import Image from "react-bootstrap/Image";
 
 export default class Advisors extends Component {
   constructor(props) {
@@ -25,7 +25,7 @@ export default class Advisors extends Component {
   render() {
     function importAll(r) {
       let images = {};
-      r.keys().map((item, index) => {
+      r.keys().forEach((item) => {
         images[item.replace("./", "")] = r(item);
       });
       return images;
@@ -37,11 +37,11 @@ export default class Advisors extends Component {
     console.log(facultyHeadshots);
     console.log(facultyData[0]);
 
-    function newlineText(text) {
-      const newText = text.split("\n").map((str) => <p>{str}</p>);
+    // function newlineText(text) {
+    //   const newText = text.split("\n").map((str) => <p>{str}</p>);
 
-      return newText;
-    }
+    //   return newText;
+    // }
 
     return (
       <div class="containerPage">
