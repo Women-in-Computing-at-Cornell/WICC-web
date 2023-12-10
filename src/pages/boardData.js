@@ -212,7 +212,7 @@ export const technical = {
       name: "Carolina Herrera",
       position: "Designer & Developer",
       netId: "ch742",
-      bio: "I long to wrap myself inside a tortilla blanket at the end of each day",
+      bio: "Carolina is a senior in the College of Arts and Science studying Information Science. She loves to wrap herself inside a tortilla blanket at the end of each day",
     },
     {
       name: "Dora Weng",
@@ -248,7 +248,7 @@ export const technical = {
       name: "Ruoxin Chen",
       position: "Designer & Developer",
       netId: "rc753",
-      bio: "A Capricorn",
+      bio: "Felicia is a sophomore majoring in computer science in Arts & Sciences and minoring (possibly majoring) in music.",
     },
     {
       name: "Shriya Sudhakar",
