@@ -10,6 +10,12 @@ color: black
   margin-right: 12% 
 }
 
+.container {
+  display: flex;
+  flex-wrap: wrap; /* This will allow items to wrap to the next line if they don't fit */
+  justify-content: center; /* Adjust as per your design */
+}
+
 .rowC{
   display:flex; 
   flex-direction:row;
@@ -25,12 +31,15 @@ color: black
   float: left
 } */
 
+.col {
+  flex: 1;
+  margin: 10px; /* Example margin, adjust as needed */
+  box-sizing: border-box; /* Ensures padding and border are included in the width */
+}
 
 .sponsorStyle {
   margin-top: 0px;
   margin-bottom: 60px;
-  
-
 }
 
 .faculty{
