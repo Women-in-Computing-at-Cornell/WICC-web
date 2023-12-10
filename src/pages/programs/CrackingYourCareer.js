@@ -15,13 +15,13 @@ import {
   advisors,
 } from "../boardData";
 import crackingyourcareer from "../../images/programs-pictures/crackingyourcareer.png";
-import lunchbunch1 from "../../images/programs-pictures/lunchbunch/lunchbunch1.jpg";
-import lunchbunch2 from "../../images/programs-pictures/lunchbunch/lunchbunch2.jpg";
-import lunchbunch3 from "../../images/programs-pictures/lunchbunch/lunchbunch3.jpg";
+// import lunchbunch1 from "../../images/programs-pictures/lunchbunch/lunchbunch1.jpg";
+// import lunchbunch2 from "../../images/programs-pictures/lunchbunch/lunchbunch2.jpg";
+// import lunchbunch3 from "../../images/programs-pictures/lunchbunch/lunchbunch3.jpg";
 import QuestionsCard from "./QuestionsCard.js";
 import Image from "react-bootstrap/Image";
 
-import medal from "../../images/medal.jpg";
+// import medal from "../../images/medal.jpg";
 
 import "./programPages.css";
 
@@ -33,7 +33,7 @@ export default class CrackingYourCareer extends Component {
 
     function importAll(r) {
       let images = {};
-      r.keys().map((item, index) => {
+      r.keys().forEach((item) => {
         images[item.replace("./", "")] = r(item);
       });
       return images;

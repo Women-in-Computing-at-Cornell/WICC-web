@@ -23,7 +23,7 @@ import QuestionsCard from "./QuestionsCard.js";
 
 import Image from "react-bootstrap/Image";
 
-import medal from "../../images/medal.jpg";
+// import medal from ".s./../images/medal.jpg";
 
 import "./programPages.css";
 
@@ -39,7 +39,7 @@ export default class Outreach extends Component {
 
     function importAll(r) {
       let images = {};
-      r.keys().map((item, index) => {
+      r.keys().forEach((item) => {
         images[item.replace("./", "")] = r(item);
       });
       return images;

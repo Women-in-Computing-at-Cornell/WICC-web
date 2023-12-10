@@ -1,8 +1,10 @@
 import React, { Component } from "react";
-import Container from "react-bootstrap/Container";
-import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+// import Container from "react-bootstrap/Container";
+// import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
+
+// import Row from "react-bootstrap/Row";
+// import Col from "react-bootstrap/Col";
 // import Calendar from "@ericz1803/react-google-calendar";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
@@ -10,9 +12,9 @@ import Sponsors from "./Sponsors";
 import axios from "axios";
 
 import "./Join.css";
-import { Center } from "devextreme-react/map";
+// import { Center } from "devextreme-react/map";
 
-const API_PATH = "http://localhost/WICC-WEB/src/action.php";
+// const API_PATH = "http://localhost/WICC-WEB/src/action.php";
 
 export default class Join extends Component {
   constructor(props, context) {

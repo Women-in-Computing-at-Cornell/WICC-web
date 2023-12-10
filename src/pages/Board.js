@@ -78,8 +78,10 @@ export default class Board extends Component {
           />
         </div>
         <div className="containerPage">
-          <h2 style={{ fontWeight: "bold", marginBottom: "15px" }}>Who We Are</h2>
-          <p style= {{ marginBottom: "20px"}} >
+          <h2 style={{ fontWeight: "bold", marginBottom: "15px" }}>
+            Who We Are
+          </h2>
+          <p style={{ marginBottom: "20px" }}>
             WICC was founded in March 2013 to bring together women and gender
             minorities in computing fields at Cornell, expand their
             opportunities and successes, provide a support network, and empower

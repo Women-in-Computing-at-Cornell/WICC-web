@@ -28,7 +28,7 @@ export default class Membership extends Component {
 
     function importAll(r) {
       let images = {};
-      r.keys().map((item, index) => {
+      r.keys().forEach((item) => {
         images[item.replace("./", "")] = r(item);
       });
       return images;
