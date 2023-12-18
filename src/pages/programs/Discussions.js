@@ -132,7 +132,6 @@ export default class Discussions extends Component {
           <br></br>
 
           <div class="wicc-away">
-            <Carousel></Carousel>
             <h3>G-Body // G-Body Social</h3>
             <br></br>
             {/* Cards */}
