@@ -86,11 +86,20 @@ export default class Discussions extends Component {
       },
     ]
 
+    const GBodyCard = ({ src, title, caption }) => {
+      return (
+        <div class="item">
+          <img src={src} alt={caption} />
+          <p>{caption}</p>
+        </div>
+      );
+    };
+
     const GBodyCards = () => {
       return (
         <div className="image-grid">
-          {imagesData.map((image, index) => (
-            <ImageWithCaption key={index} src={image.src} caption={image.caption} />
+          {GBodyCardData.map((src, title, caption) => ("hi"
+            // <ImageWithCaption key={index} src={image.src} caption={image.caption} />
           ))}
         </div>
       )
