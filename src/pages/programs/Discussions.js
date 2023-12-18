@@ -2,28 +2,37 @@ import React, { Component } from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-// import Button from 'react-bootstrap/Button';
-// import { Link } from 'react-router-dom';
-import { boardData } from "../boardData";
+import Button from "react-bootstrap/Button";
+import { Link } from "react-router-dom";
+import {
+  presidents,
+  operations,
+  corporate,
+  academic,
+  brand,
+  outreach,
+  community,
+  advisors,
+} from "../boardData";
 import discussion from "../../images/programs-pictures/discussions.jpg";
 import ReactGoogleSlides from "react-google-slides";
 import QuestionsCard from "./QuestionsCard.js";
 
 import Image from "react-bootstrap/Image";
 
-// import medal from "../../images/medal.jpg";
+import medal from "../../images/medal.jpg";
 
 import "./programPages.css";
 
 export default class Discussions extends Component {
   render() {
-    let discDirectors = boardData.filter(
-      (record) => record.title === "Social Co-Director"
+    let discDirectors = community.filter(
+      (record) => record.position === "Social Co-Director"
     );
 
     function importAll(r) {
       let images = {};
-      r.keys().forEach((item) => {
+      r.keys().map((item, index) => {
         images[item.replace("./", "")] = r(item);
       });
       return images;

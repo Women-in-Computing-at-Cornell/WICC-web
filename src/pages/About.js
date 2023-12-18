@@ -177,7 +177,6 @@ const About = () => {
               ></Image>
             </Col>
           </Row>
-
           <Row style={{ paddingBottom: "4%", paddingLeft: "2%" }}>
             <Col
               style={{

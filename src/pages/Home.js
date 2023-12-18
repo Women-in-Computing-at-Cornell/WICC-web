@@ -1,8 +1,9 @@
 import React from "react";
 import Button from "react-bootstrap/Button";
 import Image from "react-bootstrap/Image";
+
 import "./Home.css";
-// import illustration from "../images/homepage-illustration.png";
+import illustration from "../images/homepage-illustration.png";
 import Sponsors from "../pages/Sponsors";
 // import missionImg from "../images/colorgrouppic.png"
 // import boardGroupPic from "../images/peoplegroupic.jpg"
@@ -83,89 +84,37 @@ const Home = () => {
 
   return (
     <div>
-      {/* <Image style = {{maxWidth: '100%', height: 'auto'}} src={boardGroupPic} id="hero-image" /> */}
       <div class="home-container">
         <section
+          class="hero-container"
           style={{
-            paddingBottom: "3%",
-            paddingLeft: "5%",
-            width: "100%",
-            height: "100%",
-            backgroundColor: "#f8f9fa",
-            display: "flex",
-            flexDirection: "row",
-            alignContent: "center",
-            justifyContent: "space-between",
+            backgroundImage: { illustration },
           }}
         >
-          <div
-            style={{
-              backgroundColor: "#f8f9fa",
-              display: "flex",
-              flexDirection: "column",
-              justifyContent: "center",
-            }}
-          >
-            <h2
-              style={{
-                textAlign: "left",
-                fontWeight: "bold",
-                maxWidth: "430px",
-              }}
+          <Image src={illustration} id="home-illustration" />
+          <div style={{ margin: "3% 0" }}>
+            <h1
+              style={{ marginBottom: "2%", fontWeight: "bold" }}
+              class="headerName"
             >
-              Our Mission is to build a supportive tech community for women and
-              allies.
-            </h2>
-            <p style={{ textAlign: "left", maxWidth: "430px" }}>
-              We provide resources to conquer challenges and create
-              opportunities for technical and leadership growth. We empower
-              people from diverse backgrounds to make a positive impact on the
-              future of tech. We embrace all gender identities.
-            </p>
+              Women in Computing at Cornell
+            </h1>
+            <h2>strives to make computing inclusive for all</h2>
           </div>
-          <Image
-            style={{ maxHeight: "600px", maxWidth: "880px" }}
-            src={newmissionImg}
-            id="mission-image"
-          ></Image>
         </section>
-        <section
-          style={{
-            display: "flex",
-            flexDirection: "row",
-            alignContent: "center",
-            // justifyContent: "center",
-            justifyContent: "space-around",
-          }}
-          class="semout-container"
-        >
+        <section class="mission-container">
+          <h2 style={{ fontWeight: "bold" }}> Our Mission</h2>
           <div>
-            <Image
-              style={{ maxWidth: "600px" }}
-              src={semoutlook}
-              id="semester-outlook"
-            ></Image>
-          </div>
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              alignContent: "center",
-              justifyContent: "center",
-            }}
-          >
-            <h2 style={{ textAlign: "left", fontWeight: "bold" }}>
-              {" "}
-              Semester Outlook
-            </h2>
-            <p style={{ textAlign: "left", maxWidth: "570px" }}>
-              WICC is a place where women and gender minorities feel supported
-              throughout their academic journey and careers in technology. We
-              are a coalition of leaders who seek to make an impact on Cornell,
-              Ithaca and our greater community. Achieving this impact does not
-              just involve WICC e-board, but also you (g-body members), CIS
-              staff, Cornell, and the greater Ithaca community!
+            <p style={{ paddingLeft: "10%", paddingRight: "10%" }}>
+              We aim to foster a <strong>supportive community</strong> of women
+              and allies* equipped with the resources needed to recognize and
+              overcome challenges. By creating{" "}
+              <strong>opportunities for technical and leadership growth</strong>
+              , we work to ensure that people of all identities are able to
+              discover and pursue their interests and talents in order to{" "}
+              <strong>positively impact the future of tech.</strong>
             </p>
+            <p>* All gender identities are welcomed and supported!</p>
           </div>
         </section>
         {/* Title "What we do" */}
@@ -325,4 +274,5 @@ const Home = () => {
     </div>
   );
 };
+
 export default Home;
