@@ -9,7 +9,7 @@ import { boardData } from "../boardData";
 import communityhero from "../../images/programs/communityhero.jpg";
 import ReactGoogleSlides from "react-google-slides";
 import QuestionsCard from "./QuestionsCard.js";
-import { Gallery } from "react-grid-gallery";
+// import { Gallery } from "react-grid-gallery";
 
 import Image from "react-bootstrap/Image";
 
@@ -64,46 +64,63 @@ export default class Discussions extends Component {
     const GBodyCardData = [
       {
         src: "https://images.unsplash.com/photo-1590424744257-fdb03ed78ae0?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ",
-        title: 'November 2023: Friendsgiving!',
-        caption: 'In our November GBody, we celebrated the season of giving\
+        title: "November 2023: Friendsgiving!",
+        caption:
+          "In our November GBody, we celebrated the season of giving\
         thanks and came together with our Bowers CiS community for\
-        a Friendsgiving event!',
+        a Friendsgiving event!",
       },
       {
         src: "https://images.unsplash.com/photo-1590424744257-fdb03ed78ae0?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ",
-        title: 'Oct 2023: Pumpkin Spice & Chill~',
-        caption: 'At our second semesterly GBody, we took some time to\
+        title: "Oct 2023: Pumpkin Spice & Chill~",
+        caption:
+          "At our second semesterly GBody, we took some time to\
         relax, destress, and enjoy the fall cheer by painting\
-        pumpkins and drinking pumpkin spiced Swiss Miss.',
+        pumpkins and drinking pumpkin spiced Swiss Miss.",
       },
       {
         src: "https://images.unsplash.com/photo-1590424744257-fdb03ed78ae0?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ",
-        title: 'Sept 2023: Self-Advocacy',
-        caption: 'In our first GBody of the fall semester, WICC members dove\
+        title: "Sept 2023: Self-Advocacy",
+        caption:
+          "In our first GBody of the fall semester, WICC members dove\
         into a session that equipped us with the skills and\
         confidence to champion our needs and rights. We also had\
-        boba, plushies, pens, and keychains for our WICCies!',
+        boba, plushies, pens, and keychains for our WICCies!",
       },
-    ]
+    ];
 
     const GBodyCard = ({ src, title, caption }) => {
       return (
         <div class="item">
-          <img src={src} alt={caption} />
-          <p>{caption}</p>
+          <a aria-labelledby="person"></a>
+          <div class="card-img">
+            <img
+              src={src}
+              alt=""
+            ></img>
+          </div>
+          <div class="item__overlay">
+            <h3 id="person" aria-hidden="true">
+              {title}
+            </h3>
+            <div class="item__body">
+              <p>{caption}</p>
+            </div>
+          </div>
         </div>
       );
     };
 
     const GBodyCards = () => {
       return (
-        <div className="image-grid">
-          {GBodyCardData.map((src, title, caption) => ("hi"
-            // <ImageWithCaption key={index} src={image.src} caption={image.caption} />
+        <div class="grid">
+          {GBodyCardData.map((image, index) => (
+            <GBodyCard key={index} src={image.src} caption={image.caption} title={image.title} />
           ))}
         </div>
-      )
-    }
+      );
+    };
+
     return (
       <div>
         {/* Hero Image */}
@@ -135,87 +152,7 @@ export default class Discussions extends Component {
             <h3>G-Body // G-Body Social</h3>
             <br></br>
             {/* Cards */}
-            <div class="grid">
-              <div class="item">
-                <a aria-labelledby="person1"></a>
-                <div class="card-img">
-                  <img
-                    src="https://images.unsplash.com/photo-1590424744257-fdb03ed78ae0?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
-                    alt=""
-                  ></img>
-                </div>
-                <div class="item__overlay">
-                  <h3 id="person" aria-hidden="true">
-                    November 2023: Friendsgiving!
-                  </h3>
-                  <div class="item__body">
-                    <p>
-                      In our November GBody, we celebrated the season of giving
-                      thanks and came together with our Bowers CiS community for
-                      a Friendsgiving event!
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <a aria-labelledby="person2"></a>
-                <div class="card-img">
-                  <img
-                    src="https://images.unsplash.com/photo-1590424744257-fdb03ed78ae0?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
-                    alt=""
-                  ></img>
-                </div>
-                {/* <img src='https://images.unsplash.com/photo-1590424744257-fdb03ed78ae0?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt=''></img> */}
-                <div class="item__overlay">
-                  <h3 id="person" aria-hidden="true">
-                    Oct 2023: Pumpkin Spice & Chill~
-                  </h3>
-                  <div class="item__body">
-                    <p>
-                      At our second semesterly GBody, we took some time to
-                      relax, destress, and enjoy the fall cheer by painting
-                      pumpkins and drinking pumpkin spiced Swiss Miss.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <a aria-labelledby="person3"></a>
-                <div class="card-img">
-                  <img
-                    src="https://images.unsplash.com/photo-1590424744257-fdb03ed78ae0?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
-                    alt=""
-                  ></img>
-                </div>
-                {/* <img src='https://images.unsplash.com/photo-1590424744257-fdb03ed78ae0?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt=''></img> */}
-                <div class="item__overlay">
-                  <h3 id="person" aria-hidden="true">
-                    Sept 2023: Self-Advocacy
-                  </h3>
-                  <div class="item__body">
-                    <p>
-                      In our first GBody of the fall semester, WICC members dove
-                      into a session that equipped us with the skills and
-                      confidence to champion our needs and rights. We also had
-                      boba, plushies, pens, and keychains for our WICCies!
-                    </p>
-                  </div>
-                </div>
-              </div>
-              {/* <div class="item">
-                <a href="#0" aria-labelledby="person4"></a>
-                <div class="card-img">
-                  <img src='https://images.unsplash.com/photo-1590424744257-fdb03ed78ae0?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt=''></img>
-                </div>
-                {/* <img src='https://images.unsplash.com/photo-1590424744257-fdb03ed78ae0?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt=''></img> */}
-              {/* <div class="item__overlay">
-                  <h3 id="person4" aria-hidden="true">Person with an even longer name that wraps onto multiple lines</h3>
-                  <div class="item__body">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                  </div>
-                </div>
-              </div>  */}
-            </div>{" "}
+            <GBodyCards/>
           </div>
           <br></br>
           <br></br>
