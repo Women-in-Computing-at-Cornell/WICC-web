@@ -180,7 +180,6 @@ export default class Discussions extends Component {
                 </Carousel.Item>
               ))}
             </Carousel>
-            {/* </div> */}
             <div class="caption">
               <h2>WICC Away!</h2>
               <p>
