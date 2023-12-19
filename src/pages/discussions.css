@@ -134,7 +134,6 @@ body {
 .item a:hover~.item__overlay,
 .item a:focus~.item__overlay {
   transform: translate3d(0, 0, 0);
-  overflow-y: hidden;
 }
 
 .item a:hover~.item__overlay h3,
