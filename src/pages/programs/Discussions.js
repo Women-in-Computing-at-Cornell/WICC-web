@@ -139,20 +139,9 @@ export default class Discussions extends Component {
       );
     };
 
-    const WiccAwayImages = [
-      //programs-pictures : mentorship2
-      group1,
-      painting1,
-      painting2,
-      painting3,
-      group3,
-    ];
+    const WiccAwayImages = [group1, painting1, painting2, painting3, group3];
 
-    const SocialImages = [
-      social1,
-      social2,
-      social3,
-    ];
+    const SocialImages = [social1, social2, social3];
 
     const CarouselComponent = ({ images }) => {
       const [index, setIndex] = useState(0);
@@ -160,33 +149,41 @@ export default class Discussions extends Component {
       const handleSelect = (selectedIndex) => {
         setIndex(selectedIndex);
       };
+      return (
+        <Carousel
+          activeIndex={index}
+          onSelect={handleSelect}
+          indicators={false}
+          class="carousel"
+          controls={false}
+        >
+          {images.map((imageUrl, index) => (
+            <Carousel.Item key={index}>
+              <img
+                src={imageUrl}
+                alt={`Slide ${index}`}
+                className="carousel-image"
+              />
+            </Carousel.Item>
+          ))}
+        </Carousel>
+      );
+    };
 
+    const CarouselComponents = () => {
       return (
         <div>
           <div class="image-caption-container">
-            <Carousel
-              activeIndex={index}
-              onSelect={handleSelect}
-              indicators={false}
-              class="carousel"
-            >
-              {images.map((imageUrl, index) => (
-                <Carousel.Item key={index}>
-                  <img
-                    src={imageUrl}
-                    alt={`Slide ${index}`}
-                    className="carousel-image"
-                  />
-                </Carousel.Item>
-              ))}
-            </Carousel>
+            <CarouselComponent images={WiccAwayImages} />
             <div class="caption">
               <h2>WICC Away!</h2>
               <p>
-                This was our WICC Away event where kicked off the Fall semester.
-                We introduced WICC and our mission to attendees, hosted an
-                allyship workshop, had a painting session, then wrapped up our
-                night with a WICC Q&A Panel!
+                At our annual WICC Away retreat event, we kick off the Fall
+                semester and get to know our fellow WICCies. Join us for a
+                kickoff where we introduce WICC's mission, dive into an allyship
+                workshop that sparks insightful conversations, indulge in
+                engaging activity sessions, and cap off the night with an
+                exciting Q&A panel.
               </p>
             </div>
           </div>
@@ -195,28 +192,16 @@ export default class Discussions extends Component {
             <div class="caption">
               <h2>G-Body Socials</h2>
               <p>
-                This was our WICC Away event where kicked off the Fall semester.
-                We introduced WICC and our mission to attendees, hosted an
-                allyship workshop, had a painting session, then wrapped up our
-                night with a WICC Q&A Panel!
+                Join us for our vibrant G-Body Socials—a fantastic opportunity
+                for women in Bowers CiS to connect, collaborate, and thrive! Our
+                meetings foster an inclusive environment where students engage
+                in fun activities, share enlightening insights, and build
+                lasting connections. Whether you're a coding enthusiast, an
+                aspiring tech leader, or simply curious about the industry, our
+                G-Body Socials welcome all with open arms.
               </p>
             </div>
-            <Carousel
-              activeIndex={index}
-              onSelect={handleSelect}
-              indicators={false}
-              class="carousel"
-            >
-              {images.map((imageUrl, index) => (
-                <Carousel.Item key={index}>
-                  <img
-                    src={imageUrl}
-                    alt={`Slide ${index}`}
-                    className="carousel-image"
-                  />
-                </Carousel.Item>
-              ))}
-            </Carousel>
+            <CarouselComponent images={SocialImages} />
           </div>
         </div>
       );
@@ -263,7 +248,7 @@ export default class Discussions extends Component {
           <h3>Socials!</h3>
           <div class="left-away">
             <div class="left-half">
-              <CarouselComponent images={WiccAwayImages} />
+              <CarouselComponents />
             </div>
           </div>
           <br></br>
