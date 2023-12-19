@@ -11,7 +11,6 @@ import Sponsors from "../pages/Sponsors";
 // import mentorshipPic from '../images/programs-pictures/mentorship2.jpg'
 // import outreachPic from '../images/outreach/outreach2.jpg'
 import { Carousel } from "react-responsive-carousel";
-import newmissionImg from "../images/wiccnewlogo.png";
 
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 
