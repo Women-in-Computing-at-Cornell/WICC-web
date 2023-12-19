@@ -175,8 +175,9 @@ export default class Discussions extends Component {
         <div>
           <div class="image-caption-container">
             <CarouselComponent images={WiccAwayImages} />
-            <div class="caption">
+            <div class="captiontop">
               <h2>WICC Away!</h2>
+              <br />
               <p>
                 At our annual WICC Away retreat event, we kick off the Fall
                 semester and get to know our fellow WICCies. Join us for a
@@ -189,8 +190,9 @@ export default class Discussions extends Component {
           </div>
           <br />
           <div class="image-caption-container">
-            <div class="caption">
+            <div class="captionbottom">
               <h2>G-Body Socials</h2>
+              <br />
               <p>
                 Join us for our vibrant G-Body Socials—a fantastic opportunity
                 for women in Bowers CiS to connect, collaborate, and thrive! Our
@@ -208,20 +210,19 @@ export default class Discussions extends Component {
     };
 
     return (
-      <div>
+      <div class="body">
         {/* Hero Image */}
         <div class="hero-image">
           <div class="title">
             <div class="typewriter">
               <b>
-                <h1>Community Connections :)</h1>
+                <h1><b>Community Connections :)</b></h1>
               </b>
             </div>
           </div>
         </div>
 
         <div class="page">
-          {/* Blurb */}
           <p class="header">
             WICC is dedicated towards fostering an inclusive space for
             individuals of all identities to feel empowered to speak on issues
@@ -235,8 +236,8 @@ export default class Discussions extends Component {
           <br></br>
 
           <div class="gbody">
-            <h3>G-Body Meetings</h3>
-            <br></br>
+            <h1>G-Body Meetings</h1>
+            <br />
             {/* Cards */}
             <GBodyCards />
           </div>
@@ -244,8 +245,9 @@ export default class Discussions extends Component {
           <br />
           <br />
           <br />
+          <br />
 
-          <h3>Socials!</h3>
+          <h1>Socials!</h1>
           <div class="left-away">
             <div class="left-half">
               <CarouselComponents />

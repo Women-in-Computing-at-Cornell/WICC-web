@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css?family=Mulish:400,700");
+
+.body {
+  background-color: #f9f9f9cb;
+}
+
 .title {
   text-align: center;
   align-items: center;
@@ -8,6 +14,10 @@
   padding-bottom: 200px;
   display: flex;
   justify-content: center;
+}
+
+* {
+  font-family: Mulish, sans-serif
 }
 
 .hero-image {
@@ -28,16 +38,19 @@
   text-align: center;
   align-items: center;
   box-sizing: content-box;
+  font-size: large;
   width: 100%;
-  background-color: #defff3;
-  padding: 30px
+  background-color: #c8efe1;
+  padding: 30px;
+  border-radius: 8px;
 }
 
 /* DEMO-SPECIFIC STYLES */
 .typewriter h1 {
   /* color: #fff; */
   color: rgba(0, 0, 0);
-  font-family: monospace;
+  font-family: Mulish, sans-serif;
+  font-size: 45px;
   overflow: hidden;
   /* Ensures the content is not revealed until the animation */
   border-right: .15em solid rgb(0, 255, 162);
@@ -73,21 +86,19 @@
   }
 
   50% {
-    border-color: rgb(0, 255, 162);
+    border-color: rgb(152, 216, 193);
   }
 }
 
 /*CARDS*/
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
 
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: Montserrat, sans-serif;
+  font-family: Mulish, sans-serif;
   margin: 0;
-  /* padding: 3rem; */
 }
 
 .grid {
@@ -107,6 +118,7 @@ body {
   overflow-y: hidden;
   box-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.1);
   overflow-y: hidden;
+  border-radius: 8px;
 }
 
 .item h3 {
@@ -175,7 +187,7 @@ body {
 
 .item__body {
   flex-grow: 1;
-  font-size: 16px;
+  font-size: 18px;
   padding: 1rem;
   opacity: 0;
   transition: opacity 500ms 100ms;
@@ -220,13 +232,22 @@ body {
 }
 
 /* Caption styles */
-.image-caption-container .caption {
+.image-caption-container .captiontop {
   flex: 1;
   max-width: 50%;
   text-align: center;
   padding: 50px;
   background-color: #f0f0f0;
   border-radius: 8px;
-  font-family: 'Mulish', sans-serif;
-  /* Use the Mulish font */
+  font-family: Mulish, sans-serif;
+}
+
+.image-caption-container .captionbottom {
+  flex: 1;
+  height: 100%;
+  text-align: center;
+  padding: 50px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  font-family: Mulish, sans-serif;
 }
