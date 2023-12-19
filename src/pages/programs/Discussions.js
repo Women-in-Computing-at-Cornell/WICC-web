@@ -24,9 +24,9 @@ import pumpkinspice from "../../images/programs-pictures/gbody3.png";
 import advocacy from "../../images/programs-pictures/gbody2.png";
 
 //gbody social imports
-import social1 from "../../images/programs-pictures/socials/dodgeball2.png";
-import social2 from "../../images/programs-pictures/socials/tree1.png";
-import social3 from "../../images/programs-pictures/socials/dodgeball1.png";
+import social1 from "../../images/programs-pictures/socials/dodgeball2.JPG";
+import social2 from "../../images/programs-pictures/socials/tree1.JPG";
+import social3 from "../../images/programs-pictures/socials/dodgeball1.JPG";
 
 import medal from "../../images/medal.jpg";
 
