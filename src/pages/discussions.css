@@ -17,7 +17,8 @@
 }
 
 * {
-  font-family: Mulish, sans-serif
+  font-family: Mulish, sans-serif;
+  font-weight: 450;
 }
 
 .hero-image {
@@ -200,7 +201,8 @@ body {
 /* SLIDES */
 .carousel {
   width: 50%;
-  height: 400px;
+  height: 50%;
+  margin: auto;
 }
 
 .wicc-away {
@@ -219,32 +221,30 @@ body {
 .image-caption-container {
   display: flex;
   margin: 20px auto;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+  background-color: #f0f0f0;
 }
 
 /* Image styles */
 .image-caption-container img {
   max-width: 91%;
-  border-radius: 8px;
-  display: flex;
+  /* padding: 20px; */
+  margin: 20px;
   justify-content: center;
   align-items: center;
   margin-left: 25px;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+  border-radius: 8px;
 }
 
 /* Caption styles */
-.image-caption-container .captiontop {
+.image-caption-container .caption {
   flex: 1;
   max-width: 50%;
-  text-align: center;
-  padding: 50px;
-  background-color: #f0f0f0;
-  border-radius: 8px;
-  font-family: Mulish, sans-serif;
-}
-
-.image-caption-container .captionbottom {
-  flex: 1;
-  height: 100%;
   text-align: center;
   padding: 50px;
   background-color: #f0f0f0;

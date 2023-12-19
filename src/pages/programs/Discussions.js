@@ -175,7 +175,7 @@ export default class Discussions extends Component {
         <div>
           <div class="image-caption-container">
             <CarouselComponent images={WiccAwayImages} />
-            <div class="captiontop">
+            <div class="caption">
               <h2>WICC Away!</h2>
               <br />
               <p>
@@ -190,7 +190,7 @@ export default class Discussions extends Component {
           </div>
           <br />
           <div class="image-caption-container">
-            <div class="captionbottom">
+            <div class="caption">
               <h2>G-Body Socials</h2>
               <br />
               <p>
@@ -216,7 +216,9 @@ export default class Discussions extends Component {
           <div class="title">
             <div class="typewriter">
               <b>
-                <h1><b>Community Connections :)</b></h1>
+                <h1>
+                  <b>Community Connections :)</b>
+                </h1>
               </b>
             </div>
           </div>
