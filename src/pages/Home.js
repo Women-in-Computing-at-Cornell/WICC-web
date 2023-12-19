@@ -11,7 +11,6 @@ import Sponsors from "../pages/Sponsors";
 // import mentorshipPic from '../images/programs-pictures/mentorship2.jpg'
 // import outreachPic from '../images/outreach/outreach2.jpg'
 import { Carousel } from "react-responsive-carousel";
-import semoutlook from "../images/semesteroutlookpic.png";
 import newmissionImg from "../images/wiccnewlogo.png";
 
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
@@ -50,8 +49,6 @@ const PCarousel = ({ imgNames, pics }) => {
     ));
   };
 
-
-  
   return (
     <div className="carousel-wrapper">
       <Carousel showThumbs={false} showStatus={false} emulateTouch infiniteLoop>
@@ -60,8 +57,6 @@ const PCarousel = ({ imgNames, pics }) => {
     </div>
   );
 };
-
-
 
 const Home = () => {
   const homepicsname = importAll(
@@ -74,11 +69,7 @@ const Home = () => {
   const homepics = Object.keys(homepicsname);
 
   const sponsorpicsname = importAll(
-    require.context(
-      "../images/sponsors",
-      false,
-      /\.(jpg)$/i
-    )
+    require.context("../images/sponsors", false, /\.(jpg)$/i)
   );
   const sponsorpics = Object.keys(sponsorpicsname);
 
@@ -120,7 +111,8 @@ const Home = () => {
         {/* Title "What we do" */}
         <section
           style={{ paddingLeft: "5%", paddingRight: "5%" }}
-          className="what-we-do-container">
+          className="what-we-do-container"
+        >
           <div className="title-with-line">
             {/* Title */}
             <h2 className="title-text">What we do</h2>
@@ -216,60 +208,67 @@ const Home = () => {
           <h3>Get Involved</h3>
           <Button href="/#join">Get Involved</Button>
                 </section>  */}
-        <section class ="call-to-action-title">
-        <h2 className="title-text">Get Involved</h2>
+        <section class="call-to-action-title">
+          <h2 className="title-text">Get Involved</h2>
         </section>
         <section class="call-to-action-container">
-          <div className="action-panel"> 
+          <div className="action-panel">
             <div className="action-panel-content">
-            <a href="/#join" className="panel-link">
-              <button className="panel-button">
-                <span>&#x2197;</span>
-              </button>
-            </a>
-            <p>Join Us</p>
-           </div>
-        </div>
-        <div className="action-panel">
-          <div className="action-panel-content">
-            <a href="https://drive.google.com/file/d/1s_okJqDYmfD5-3jEPCPKvbtP_TYruXXD/view?usp=sharing" className="panel-link">
-              <button className="panel-button">
-                <span>&#x2197;</span>
-              </button>
-            </a>
-            <p>Sponsors</p>
+              <a href="/#join" className="panel-link">
+                <button className="panel-button">
+                  <span>&#x2197;</span>
+                </button>
+              </a>
+              <p>Join Us</p>
+            </div>
           </div>
-        </div>
-        <div className="action-panel">
-          <div className="action-panel-content">
-            <a href="/#programs" className="panel-link">
-              <button className="panel-button">
-                <span>&#x2197;</span>
-              </button>
-            </a>
-            <p>Programs</p>
+          <div className="action-panel">
+            <div className="action-panel-content">
+              <a
+                href="https://drive.google.com/file/d/1s_okJqDYmfD5-3jEPCPKvbtP_TYruXXD/view?usp=sharing"
+                className="panel-link"
+              >
+                <button className="panel-button">
+                  <span>&#x2197;</span>
+                </button>
+              </a>
+              <p>Sponsors</p>
+            </div>
           </div>
-        </div>
-      </section>
+          <div className="action-panel">
+            <div className="action-panel-content">
+              <a href="/#programs" className="panel-link">
+                <button className="panel-button">
+                  <span>&#x2197;</span>
+                </button>
+              </a>
+              <p>Programs</p>
+            </div>
+          </div>
+        </section>
 
-      <section style={{ marginTop: "5%" }} class="sponsor-container">
-      <h2 style={{textAlign: "left", fontWeight: "bold" }}>Our Sponsors</h2>
-      </section>
+        <section style={{ marginTop: "5%" }} class="sponsor-container">
+          <h2 style={{ textAlign: "left", fontWeight: "bold" }}>
+            Our Sponsors
+          </h2>
+        </section>
         <section
-          style={{objectFit: "cover", paddingLeft: "5%", paddingRight: "5%", paddingTop: "20px" }}
+          style={{
+            objectFit: "cover",
+            paddingLeft: "5%",
+            paddingRight: "5%",
+            paddingTop: "20px",
+          }}
           class="sponsor-carousel-container"
         >
           <PCarousel imgNames={sponsorpics} pics={sponsorpicsname} />
         </section>
 
-
-
-      {/*  <section style={{ marginTop: "5%" }} class="sponsor-container">
+        {/*  <section style={{ marginTop: "5%" }} class="sponsor-container">
           <h2 style={{ fontWeight: "bold" }}>Our Sponsors</h2>
           <Sponsors />
         </section>
               */}
-        
       </div>
     </div>
   );
