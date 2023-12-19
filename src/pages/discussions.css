@@ -104,20 +104,22 @@ body {
 
 .item {
   position: relative;
-  height: 19rem;
+  height: 25rem;
   background-color: lightGrey;
   overflow-y: hidden;
   box-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.1);
+  overflow-y: hidden;
 }
 
 .item h3 {
   margin: 0;
   display: block;
-  background-color: rgb(180, 255, 227);
+  background-color: rgb(192, 244, 225);
   padding: 1rem;
   transform: translate3d(0, -100%, 0);
   transition: transform 300ms;
-  font-size: 20px;
+  font-size: 25px;
+  overflow-y: hidden;
 }
 
 .item a {
@@ -132,23 +134,32 @@ body {
 .item a:hover~.item__overlay,
 .item a:focus~.item__overlay {
   transform: translate3d(0, 0, 0);
+  overflow-y: hidden;
 }
 
 .item a:hover~.item__overlay h3,
 .item a:focus~.item__overlay h3 {
   transform: translate3d(0, 0, 0);
+  overflow-y: hidden;
 }
 
 .item a:hover~.item__overlay .item__body,
 .item a:focus~.item__overlay .item__body {
   opacity: 1;
+  overflow-y: hidden;
 }
 
-.card-img {
+.card-img-div {
   width: 100%;
   height: 100%;
   display: block;
-  object-fit: cover;
+  max-width: 100%;
+  overflow-y: hidden;
+}
+
+.card-img {
+  width: 550px;
+  overflow: hidden;
 }
 
 .item__overlay {
@@ -175,4 +186,43 @@ body {
 
 .item__body p {
   margin: 0;
+}
+
+/* SLIDES */
+.carousel {
+  width: 50%;
+  height: 400px;
+}
+
+.wicc-away {
+  display: flex;
+  flex-direction: row
+}
+
+.left-half {
+  /* Styling for the elements */
+  flex: 1; /* Equal width for both elements */
+  margin-right: 20px; /* Margin between elements */
+}
+
+.image-caption-container {
+  display: flex;
+      margin: 20px auto;
+}
+
+/* Image styles */
+.image-caption-container img {
+  max-width: 50%;
+      border-radius: 8px; 
+}
+
+/* Caption styles */
+.image-caption-container .caption {
+  flex: 1;
+      max-width: 50%;
+      text-align: center;
+      padding: 40px;
+      background-color: #f0f0f0;
+      border-radius: 8px;
+      font-family: 'Mulish', sans-serif; /* Use the Mulish font */ 
 }
