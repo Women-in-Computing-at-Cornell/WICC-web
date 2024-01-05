@@ -10,6 +10,8 @@ import Sponsors from "../pages/Sponsors";
 // import mentorshipPic from '../images/programs-pictures/mentorship2.jpg'
 // import outreachPic from '../images/outreach/outreach2.jpg'
 import { Carousel } from "react-responsive-carousel";
+import semoutlook from "../images/semesteroutlookpic.png";
+import newmissionImg from "../images/wiccnewlogo.png";
 
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 
@@ -316,8 +318,6 @@ const Home = () => {
 
         {/*  <section style={{ marginTop: "5%" }} class="sponsor-container">
           <h2 style={{ fontWeight: "bold" }}>Our Sponsors</h2>
-        </section>
-        <section class="sponsor-container">
           <Sponsors />
         </section>
               */}
