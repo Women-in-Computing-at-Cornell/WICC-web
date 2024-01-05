@@ -1,16 +1,16 @@
 import React, { Component } from "react";
 import "./pages.css";
-import BoardCard from "../components/BoardCard.js";
-import illustration from "../images/homepage-illustration.png";
-import Navbar from "react-bootstrap/Navbar";
-import { Nav, NavItem, NavDropdown } from "react-bootstrap";
+// import BoardCard from "../components/BoardCard.js";
+// import illustration from "../images/homepage-illustration.png";
+// import Navbar from 'react-bootstrap/Navbar';
+// import { Nav, NavItem, NavDropdown } from 'react-bootstrap';
 import { facultyData } from "./facultyData";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import FacultyCard from "../components/FacultyCard.js";
 
-import Image from "react-bootstrap/Image";
+// import Image from 'react-bootstrap/Image';
 
 export default class Faculty extends Component {
   constructor(props) {
@@ -24,7 +24,7 @@ export default class Faculty extends Component {
   render() {
     function importAll(r) {
       let images = {};
-      r.keys().map((item, index) => {
+      r.keys().forEach((item) => {
         images[item.replace("./", "")] = r(item);
       });
       return images;

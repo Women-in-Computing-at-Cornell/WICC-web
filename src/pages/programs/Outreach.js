@@ -3,19 +3,10 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
-import { Link } from "react-router-dom";
-import {
-  presidents,
-  operations,
-  corporate,
-  academic,
-  brand,
-  outreach,
-  community,
-  advisors,
-} from "../boardData";
+// import { Link } from "react-router-dom";
+import { boardData } from "../boardData";
 import ReactGoogleSlides from "react-google-slides";
-import outreach3 from "../../images/outreach/outreach.jpg";
+import outreach from "../../images/outreach/outreach.jpg";
 import outreach1 from "../../images/outreach/outreach1.jpg";
 
 import outreach2 from "../../images/outreach/outreach2.jpg";
@@ -29,11 +20,11 @@ import "./programPages.css";
 
 export default class Outreach extends Component {
   render() {
-    let directors = outreach.filter(
-      (record) => record.position === "Outreach Co-Director"
+    let directors = boardData.filter(
+      (record) => record.title === "Outreach Co-Director"
     );
-    let vp = outreach.filter(
-      (record) => record.position === "Vice President, Outreach"
+    let vp = boardData.filter(
+      (record) => record.title === "Vice President, Outreach"
     );
     directors = directors.concat(vp);
 
@@ -330,7 +321,7 @@ export default class Outreach extends Component {
           <Row>
             <Col>
               <Image
-                src={outreach3}
+                src={outreach}
                 style={{ width: "80%", height: "auto", paddingBottom: "7%" }}
               ></Image>
             </Col>

@@ -1,5 +1,9 @@
 import React, { Component } from "react";
 import "./pages.css";
+// import BoardCard from "../components/BoardCard.js";
+// import illustration from "../images/homepage-illustration.png";
+// import Navbar from 'react-bootstrap/Navbar';
+// import { Nav, NavItem, NavDropdown } from "react-bootstrap";
 import { sponsorData } from "./sponsorData";
 import Image from "react-bootstrap/Image";
 // import { WICCSponsors } from "./WICCsponsors.pdf";
@@ -51,7 +55,7 @@ export default class Sponsors extends Component {
     );
 
     return (
-      <div className="containerPage">
+      <div class="containerPage">
         <div style={{ marginBottom: "10%" }}>
           {/* <h4 style={{ marginBottom: '3%', fontWeight: 'bold' }}>Gold</h4>
           {gold.map((value) => {
