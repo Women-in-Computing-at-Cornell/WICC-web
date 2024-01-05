@@ -265,6 +265,8 @@ const Home = () => {
 
         {/*  <section style={{ marginTop: "5%" }} class="sponsor-container">
           <h2 style={{ fontWeight: "bold" }}>Our Sponsors</h2>
+        </section>
+        <section class="sponsor-container">
           <Sponsors />
         </section>
               */}
