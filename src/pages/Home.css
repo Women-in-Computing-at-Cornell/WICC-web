@@ -22,6 +22,10 @@
   float: right;
 }
 
+.call-to-action-container {
+  /* margin-bottom: %; */
+  text-align: center;
+}
 
 /* start of what we do container */
 .what-we-do-container {
@@ -104,8 +108,8 @@
   font-size:300%;
 }
 
-.sponsor-container{
-  padding: 5%;
+.sponsor-container {
+  padding: 3%;
   padding-bottom: 0.5%;
   padding-top: 0px;
   text-align: center;
@@ -122,7 +126,7 @@
 .carousel-wrapper .carousel img {
   width: 100%; /* Set maximum width */
   height: 200px; /* Set fixed height */
-  object-fit: cover; /* Fit images within the dimensions without distortion */
+  object-fit: fill; /* Fit images within the dimensions without distortion */
 }
 /* Move the navigation elements outside the carousel */
 .carousel.carousel-slider .control-arrow {
