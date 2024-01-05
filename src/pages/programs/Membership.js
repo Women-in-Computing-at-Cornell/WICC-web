@@ -4,16 +4,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
-import {
-  presidents,
-  operations,
-  corporate,
-  academic,
-  brand,
-  outreach,
-  community,
-  advisors,
-} from "../boardData";
+import { boardData } from "../boardData";
 import QuestionsCard from "./QuestionsCard.js";
 
 import Image from "react-bootstrap/Image";
@@ -24,7 +15,7 @@ import "./programPages.css";
 
 export default class Membership extends Component {
   render() {
-    let sec = operations.find((record) => record.position === "Secretary");
+    let sec = boardData.find((record) => record.title === "Secretary");
 
     function importAll(r) {
       let images = {};
