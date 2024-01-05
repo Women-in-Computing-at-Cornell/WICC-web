@@ -2,28 +2,37 @@ import React, { Component } from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-// import Button from 'react-bootstrap/Button';
-// import { Link } from 'react-router-dom';
-import { boardData } from "../boardData";
-// import lunchbunch1 from "../../images/programs-pictures/lunchbunch/lunchbunch1.jpg";
+import Button from "react-bootstrap/Button";
+import { Link } from "react-router-dom";
+import {
+  presidents,
+  operations,
+  corporate,
+  academic,
+  brand,
+  outreach,
+  community,
+  advisors,
+} from "../boardData";
+import lunchbunch1 from "../../images/programs-pictures/lunchbunch/lunchbunch1.jpg";
 import lunchbunch2 from "../../images/programs-pictures/lunchbunch/lunchbunch2.jpg";
 import lunchbunch3 from "../../images/programs-pictures/lunchbunch/lunchbunch3.jpg";
 import QuestionsCard from "./QuestionsCard.js";
 import Image from "react-bootstrap/Image";
 
-// import medal from "../../images/medal.jpg";
+import medal from "../../images/medal.jpg";
 
 import "./programPages.css";
 
 export default class Lunch extends Component {
   render() {
-    let directors = boardData.filter(
+    let directors = academic.filter(
       (record) => record.title === "Faculty Relations Co-Director"
     );
 
     function importAll(r) {
       let images = {};
-      r.keys().forEach((item) => {
+      r.keys().map((item, index) => {
         images[item.replace("./", "")] = r(item);
       });
       return images;

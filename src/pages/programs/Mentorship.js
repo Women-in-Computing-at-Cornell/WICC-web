@@ -3,8 +3,17 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
-// import { Link } from 'react-router-dom';
-import { boardData } from "../boardData";
+import { Link } from "react-router-dom";
+import {
+  presidents,
+  operations,
+  corporate,
+  academic,
+  brand,
+  outreach,
+  community,
+  advisors,
+} from "../boardData";
 import mentorship1 from "../../images/programs-pictures/mentorship1.jpeg";
 import mentorship2 from "../../images/programs-pictures/mentorship2updated1.jpg";
 import mentorship3 from "../../images/programs-pictures/mentorship3.jpeg";
@@ -12,19 +21,19 @@ import QuestionsCard from "./QuestionsCard.js";
 
 import Image from "react-bootstrap/Image";
 
-// import medal from "../../images/medal.jpg";
+import medal from "../../images/medal.jpg";
 
 import "./programPages.css";
 
 export default class Mentorship extends Component {
   render() {
-    let directors = boardData.filter(
-      (record) => record.title === "Mentorship Co-Director"
+    let directors = community.filter(
+      (record) => record.position === "Mentorship Co-Director"
     );
 
     function importAll(r) {
       let images = {};
-      r.keys().forEach((item) => {
+      r.keys().map((item, index) => {
         images[item.replace("./", "")] = r(item);
       });
       return images;
