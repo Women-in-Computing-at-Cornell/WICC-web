@@ -17,7 +17,7 @@ import Col from "react-bootstrap/Col";
 
 const About = () => {
   return (
-    <div class="home-container">
+    <div class="about-container">
       <section class="hero-container">
         <h1 style={{ fontWeight: "bold" }}>About Us</h1>
         <br />
