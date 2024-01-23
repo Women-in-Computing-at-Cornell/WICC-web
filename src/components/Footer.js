@@ -19,11 +19,22 @@ class Footer extends React.Component {
         <Navbar.Brand className="mr-auto" href="/">
           Women in Computing at Cornell
           <br />
-          <Navbar.Text style={{ fontSize: "50%", color: "black" }}>
+          <Navbar.Text style={{ fontSize: "70%", color: "black" }}>
             © 2023 Women in Computing at Cornell. All Rights Reserved.
           </Navbar.Text>
         </Navbar.Brand>
-
+        <Navbar.Brand className="mr-auto" href="/">
+          <Navbar.Text
+            style={{
+              fontSize: "70%",
+              color: "black",
+              flex: "1",
+            }}
+          >
+            This organization is a registered student organization of Cornell
+            University.
+          </Navbar.Text>
+        </Navbar.Brand>
         <Nav>
           <Nav.Link href="mailto:wicc@cornell.edu">
             <img className="icon" src={Email} alt="Email" />
