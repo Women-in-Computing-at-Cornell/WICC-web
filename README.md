@@ -1,4 +1,5 @@
-# WICC-web
+# WICC-web 2024
+
 Official repo for WICC website re-design
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
