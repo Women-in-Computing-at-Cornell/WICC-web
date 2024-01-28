@@ -27,7 +27,7 @@ import "./programPages.css";
 
 export default class CrackingYourCareer extends Component {
   render() {
-    let directors = academic.filter(
+    let directors = academic.members.filter(
       (record) => record.position === "Career Development Co-Director"
     );
 

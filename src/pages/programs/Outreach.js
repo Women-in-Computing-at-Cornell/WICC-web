@@ -29,10 +29,10 @@ import "./programPages.css";
 
 export default class Outreach extends Component {
   render() {
-    let directors = outreach.filter(
+    let directors = outreach.members.filter(
       (record) => record.position === "Outreach Co-Director"
     );
-    let vp = outreach.filter(
+    let vp = outreach.members.filter(
       (record) => record.position === "Vice President, Outreach"
     );
     directors = directors.concat(vp);

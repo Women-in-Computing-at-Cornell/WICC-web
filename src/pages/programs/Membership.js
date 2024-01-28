@@ -24,7 +24,7 @@ import "./programPages.css";
 
 export default class Membership extends Component {
   render() {
-    let sec = operations.find((record) => record.position === "Secretary");
+    let sec = operations.members.find((record) => record.position === "Secretary");
 
     function importAll(r) {
       let images = {};
