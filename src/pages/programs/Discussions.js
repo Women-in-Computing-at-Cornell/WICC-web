@@ -105,6 +105,7 @@ export default class Discussions extends Component {
     ];
 
     const GBodyCard = ({ src, title, caption }) => {
+      //random comment lol
       return (
         <div class="item">
           <a aria-labelledby="person"></a>
