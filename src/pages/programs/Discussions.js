@@ -15,7 +15,6 @@ import {
   advisors,
 } from "../boardData";
 import discussion from "../../images/programs-pictures/discussions.jpg";
-import ReactGoogleSlides from "react-google-slides";
 import QuestionsCard from "./QuestionsCard.js";
 
 import Image from "react-bootstrap/Image";
@@ -77,12 +76,6 @@ export default class Discussions extends Component {
           WICC Q&A Panel!
         </h6>
         <br />
-        <ReactGoogleSlides
-          width={640}
-          height={480}
-          slidesLink="https://docs.google.com/presentation/d/1qLtKtR55spx-zBkL9bWjo_P2rAm3oCnIGjADSgGq0Z0/edit?usp=sharing"
-          showControls
-        />
         <br />
         <h5>Febuary 2022</h5>
         <h6>
@@ -92,12 +85,6 @@ export default class Discussions extends Component {
           through intention framing and journaling.
         </h6>
         <br />
-        <ReactGoogleSlides
-          width={640}
-          height={480}
-          slidesLink="https://docs.google.com/presentation/d/1cHwUJEC7DM9ekD_KSajxkrtxeZPzD_jqQ4-uymKIZro/edit?usp=sharing"
-          showControls
-        />
         <br />
         <h5>March 2022</h5>
         <h6>
@@ -106,12 +93,6 @@ export default class Discussions extends Component {
           wall of notes and got to know each other.{" "}
         </h6>
         <br />
-        <ReactGoogleSlides
-          width={640}
-          height={480}
-          slidesLink="https://docs.google.com/presentation/d/1SNCHd_FxDbFiqw7yx5JubO15NsFeFsFfrTXV79L2Ap8/edit#slide=id.gfd5af8f16f_0_15"
-          showControls
-        />
         <br />
         <center>
           <h5 style={{ paddingTop: "5%" }}>Questions?</h5>

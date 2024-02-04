@@ -14,7 +14,6 @@ import {
   community,
   advisors,
 } from "../boardData";
-import ReactGoogleSlides from "react-google-slides";
 import outreach3 from "../../images/outreach/outreach.jpg";
 import outreach1 from "../../images/outreach/outreach1.jpg";
 
@@ -157,12 +156,6 @@ export default class Outreach extends Component {
         <h3>Extra Resources</h3>
         <center>
           <h5>Technology Workshop</h5>
-          <ReactGoogleSlides
-            width={640}
-            height={480}
-            slidesLink="https://docs.google.com/presentation/d/1jDTdeZ5SSLfrTmPQoL4GqaEx4gwDAv39n7rXyeKyWYo/edit#slide=id.g8b238304a6_0_105"
-            showControls
-          />
         </center>
 
         <Container>
