@@ -26,7 +26,7 @@ import "./programPages.css";
 
 export default class Discussions extends Component {
   render() {
-    let discDirectors = community.filter(
+    let discDirectors = community.members.filter(
       (record) => record.position === "Social Co-Director"
     );
 
