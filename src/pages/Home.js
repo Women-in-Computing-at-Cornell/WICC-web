@@ -6,6 +6,8 @@ import { Carousel } from "react-responsive-carousel";
 import semoutlook from "../images/semesteroutlookpic.png";
 import newmissionImg from "../images/wiccnewlogo.png";
 
+//test
+
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 
 function importAll(r) {
@@ -253,22 +255,30 @@ const Home = () => {
           <h3>Get Involved</h3>
           <Button href="/#join">Get Involved</Button>
                 </section>  */}
-        <section class="call-to-action-title">
-          <h2 className="title-text">Get Involved</h2>
+
+        <section
+          style={{ paddingLeft: "5%", paddingRight: "5%" }}
+          className="what-we-do-container"
+        >
+          <div className="title-with-line">
+            {/* Title */}
+            <h2 className="title-text">Get Involved</h2>
+            {/* Right decorative line */}
+            <div className="horizontal-line"></div>
+          </div>
         </section>
+
         <section class="call-to-action-container">
-          <div className="action-panel">
-            <div className="action-panel-content">
+          <div className="get-involved-grid">
+            <div className="get-involved-column">
               <a href="/#join" className="panel-link">
                 <button className="panel-button">
                   <span>&#x2197;</span>
                 </button>
               </a>
-              <p>Join Us</p>
+              <h4>Join Us</h4>
             </div>
-          </div>
-          <div className="action-panel">
-            <div className="action-panel-content">
+            <div className="get-involved-column">
               <a
                 href="https://drive.google.com/file/d/1s_okJqDYmfD5-3jEPCPKvbtP_TYruXXD/view?usp=sharing"
                 className="panel-link"
@@ -277,17 +287,15 @@ const Home = () => {
                   <span>&#x2197;</span>
                 </button>
               </a>
-              <p>Sponsors</p>
+              <h4>Sponsors</h4>
             </div>
-          </div>
-          <div className="action-panel">
-            <div className="action-panel-content">
+            <div className="get-involved-column">
               <a href="/#programs" className="panel-link">
                 <button className="panel-button">
                   <span>&#x2197;</span>
                 </button>
               </a>
-              <p>Programs</p>
+              <h4>Programs</h4>
             </div>
           </div>
         </section>
