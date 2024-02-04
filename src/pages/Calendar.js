@@ -29,10 +29,10 @@ export default class Calendar extends Component {
           style={styles.calendarContainer}
         >
           <iframe
-            src="https://embed.styledcalendar.com/#t8wJ2TwSWYKLUY3xUoT4"
+            src="https://embed.styledcalendar.com/#dbok0HlKHCTpqz0ajQoT"
             title="Styled Calendar"
             className="styled-calendar-container"
-            style={{ height: '800px', width: '80%', border: 'none' }}
+            style={{ height: '800px', width: '90%', border: 'none' }}
             data-cy="calendar-embed-iframe"
           ></iframe>
           <script async type="module" src="https://embed.styledcalendar.com/assets/parent-window.js"></script>
