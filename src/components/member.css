@@ -1,0 +1,40 @@
+.memberContainer {
+  width: 30%;
+  height: 80%;
+  border: none;
+  min-width: 200px;
+  cursor: pointer; /* Add cursor style for better UX */
+}
+
+.imageStyle {
+  width: 12vw; /* 10% of the viewport width */
+  height: 12vw; /* Set height equal to width for 1:1 aspect ratio */
+  border-radius: 10%;
+  object-fit: cover;
+  object-position: center; /* Adjust if needed */
+}
+
+.modalContent {
+  display: flex;
+  align-items: center; 
+}
+
+.modalTextContent {
+  padding: 20px;
+}
+
+.modalTextStyle {
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+.title {
+  font-size: smaller;
+  color: gray;
+  padding-right: 35px;
+  padding-top: 5px;
+}
+
+.name {
+  padding-bottom: 32px;
+}
