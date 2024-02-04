@@ -7,7 +7,6 @@ import { Carousel } from "react-responsive-carousel";
 import semoutlook from "../images/semesteroutlookpic.png";
 import newmissionImg from "../images/wiccnewlogo.png";
 
-//test
 
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 
