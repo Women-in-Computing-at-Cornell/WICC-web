@@ -2,13 +2,7 @@ import React from "react";
 import Button from "react-bootstrap/Button";
 import Image from "react-bootstrap/Image";
 import "./Home.css";
-// import illustration from "../images/homepage-illustration.png";
 import Sponsors from "../pages/Sponsors";
-// import missionImg from "../images/colorgrouppic.png"
-// import boardGroupPic from "../images/peoplegroupic.jpg"
-// import PhotoCarousel from '../pages/PhotoCarousel';
-// import mentorshipPic from '../images/programs-pictures/mentorship2.jpg'
-// import outreachPic from '../images/outreach/outreach2.jpg'
 import { Carousel } from "react-responsive-carousel";
 import semoutlook from "../images/semesteroutlookpic.png";
 import newmissionImg from "../images/wiccnewlogo.png";
