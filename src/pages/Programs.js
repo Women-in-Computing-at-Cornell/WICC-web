@@ -14,6 +14,7 @@ import lunchbunch from "../images/programs/lunchbunch.jpg";
 import mentorship from "../images/programs/mentorship.jpg";
 import outreach from "../images/programs/outreach.jpg";
 import Programhero from "../images/programs/Programhero.png";
+import EventCard from "../components/eventCard";
 
 let styles = {
   container: {
@@ -69,6 +70,7 @@ const Programs = () => {
           style={{ width: "100%", height: "auto" }}
         ></Image>
       </div>
+      <EventCard title="Active Membership" description="xxx" imageUrl={activemember} />
       <Link to="/membership" style={styles.link}>
         <Row
           style={{
