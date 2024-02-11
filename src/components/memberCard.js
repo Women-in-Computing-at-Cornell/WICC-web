@@ -26,7 +26,7 @@ function Member({ name, title, netid, bio, img }) {
             // onError={handleError}
           />
         </div>
-        <div className="title">{title}</div>
+        <div className="position">{title}</div>
         <div className="name">{name}</div>
       </div>
 
