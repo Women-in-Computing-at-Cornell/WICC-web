@@ -5,6 +5,7 @@ import Sponsors from "../pages/Sponsors";
 import { Carousel } from "react-responsive-carousel";
 import semoutlook from "../images/semesteroutlookpic.png";
 import newmissionImg from "../images/wiccnewlogo.png";
+//import Millenium from "../images/sponsors/sponsors-sp24/MillenniumLogo.png"
 
 //test
 
@@ -304,8 +305,25 @@ const Home = () => {
           <h2 style={{ textAlign: "left", fontWeight: "bold" }}>
             Our Sponsors
           </h2>
+          <h3 style = {{textAlign: "left", fontWeight: "bold"}}>
+            Platinum
+          </h3>
+          {/*<Image
+            style={{ maxHeight: "150px", maxWidth: "200px" }}
+            src={Millenium}
+            id="millenium-logo"
+              ></Image> */}
+          <h3 style = {{textAlign: "left", fontWeight: "bold"}}>
+            Gold
+          </h3>
+          <h3 style = {{textAlign: "left", fontWeight: "bold"}}>
+            Silver
+          </h3>
         </section>
-        <section
+        
+        
+        
+        {/* OLD ONE-LINE CAROUSEL<section
           style={{
             objectFit: "cover",
             paddingLeft: "5%",
@@ -315,7 +333,7 @@ const Home = () => {
           class="sponsor-carousel-container"
         >
           <PCarousel imgNames={sponsorpics} pics={sponsorpicsname} />
-        </section>
+        </section> */}
 
         {/*  <section style={{ marginTop: "5%" }} class="sponsor-container">
           <h2 style={{ fontWeight: "bold" }}>Our Sponsors</h2>
