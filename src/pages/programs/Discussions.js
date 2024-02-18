@@ -14,6 +14,7 @@ import {
   advisors,
 } from "../boardData";
 import discussion from "../../images/programs-pictures/discussions.jpg";
+import ReactGoogleSlides from "react-google-slides";
 import QuestionsCard from "./QuestionsCard.js";
 
 import Image from "react-bootstrap/Image";
@@ -44,7 +45,6 @@ import medal from "../../images/medal.jpg";
 
 import "./programPages.css";
 import "../discussions.css";
-
 
 export default class Discussions extends Component {
   render() {
@@ -216,6 +216,85 @@ export default class Discussions extends Component {
                 aspiring tech leader, or simply curious about the industry, our
                 G-Body Socials welcome all with open arms.
               </p>
+            </div>
+            <CarouselComponent images={SocialImages} />
+          </div>
+        </div>
+      );
+    };
+
+    return (
+      <div class="body">
+        {/* Hero Image */}
+        <div class="hero-image">
+          <div class="title">
+            <div class="typewriter">
+              <b>
+                <h1>
+                  <b>Community Connections :)</b>
+                </h1>
+              </b>
+            </div>
+          </div>
+        </div>
+
+        <div class="page">
+          <p class="header">
+            WICC is dedicated towards fostering an inclusive space for
+            individuals of all identities to feel empowered to speak on issues
+            in the CIS community, both on- and off-campus. We hold monthly
+            discussions encompassing topics such as diversity in tech, the
+            definition of success, and more. It is our goal to have a greater
+            number of voices heard and to have a greater breadth of women and
+            allies voicing their opinions at the table.
+          </p>
+          <br></br>
+          <br></br>
+
+          <div class="gbody">
+            <h1>G-Body Meetings</h1>
+            <br />
+            {/* Cards */}
+            <GBodyCards />
+          </div>
+
+          <br />
+          <br />
+          <br />
+          <br />
+
+          <h1>Socials!</h1>
+          <div class="left-away">
+            <div class="left-half">
+              <CarouselComponents />
+            </div>
+          </div>
+          <br></br>
+          <br></br>
+          <center>
+            <h5 style={{ paddingTop: "5%" }}>Questions?</h5>
+            <Container style={{ paddingRight: "10%" }}>
+              <Row style={{ paddingBottom: "1%" }}>
+                <Col>
+                  <QuestionsCard
+                    name={discDirectors[0].name}
+                    title={discDirectors[0].title}
+                    img={boardHeadshots[discDirectors[0].netId + ".jpg"]}
+                    netId={discDirectors[0].netId}
+                  />
+                </Col>
+                <Col>
+                  <QuestionsCard
+                    name={discDirectors[1].name}
+                    title={discDirectors[1].title}
+                    img={boardHeadshots[discDirectors[1].netId + ".jpg"]}
+                    netId={discDirectors[1].netId}
+                  />
+                </Col>
+              </Row>
+            </Container>
+          </center>
+        </div>
       </div>
     );
   }
