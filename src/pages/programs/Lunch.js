@@ -26,8 +26,8 @@ import "./programPages.css";
 
 export default class Lunch extends Component {
   render() {
-    let directors = academic.filter(
-      (record) => record.title === "Faculty Relations Co-Director"
+    let directors = academic.members.filter(
+      (record) => record.position === "Faculty Relations Co-Director"
     );
 
     function importAll(r) {
@@ -140,6 +140,7 @@ export default class Lunch extends Component {
                   </a>
 
                 </div> */}
+                
                 <QuestionsCard
                   name={directors[0].name}
                   title={directors[0].title}

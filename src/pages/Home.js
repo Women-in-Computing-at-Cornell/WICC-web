@@ -1,5 +1,4 @@
 import React from "react";
-import Button from "react-bootstrap/Button";
 import Image from "react-bootstrap/Image";
 import "./Home.css";
 import Sponsors from "../pages/Sponsors";

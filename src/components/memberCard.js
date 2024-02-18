@@ -16,7 +16,7 @@ function Member({ name, title, netid, bio, img }) {
       <div className="memberContainer" onClick={toggleDetails}>
         <div>
         </div>
-        <div className="title">{title}</div>
+        <div className="position">{title}</div>
         <div className="name">{name}</div>
       </div>
 
