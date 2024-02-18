@@ -15,6 +15,20 @@ import mentorship from "../images/programs/mentorship.jpg";
 import outreach from "../images/programs/outreach.jpg";
 import Programhero from "../images/programs/Programhero.png";
 import EventCard from "../components/eventCard";
+import { FaChevronRight } from "react-icons/fa";
+import Progressbar from "../components/ProgressBar";
+
+let events = [
+  <EventCard key="1" title="Active Membership" description="xxx" imageUrl={activemember} />,
+  <EventCard key="2" title="Active Membership" description="xxx" imageUrl={activemember} />,
+  <EventCard key="3" title="Active Membership" description="xxx" imageUrl={activemember} />,
+  <EventCard key="4" title="Active Membership" description="xxx" imageUrl={activemember} />,
+  <EventCard key="5" title="Active Membership" description="xxx" imageUrl={activemember} />,
+  <EventCard key="6" title="Active Membership" description="xxx" imageUrl={activemember} />
+]
+let start_index = 0
+let end_index = 3
+let displayed_events = events.slice(start_index, end_index)
 
 let styles = {
   container: {
@@ -70,7 +84,27 @@ const Programs = () => {
           style={{ width: "100%", height: "auto" }}
         ></Image>
       </div>
-      <EventCard title="Active Membership" description="xxx" imageUrl={activemember} />
+      <div className="upcoming">
+        <text className="upcoming-title">
+          Upcoming Events 2023-2024
+        </text>
+        <button
+          style={{ border: 'none', background: 'transparent', cursor: 'pointer' }}>
+          <FaChevronRight size={24} />
+        </button>
+        <Progressbar
+          bgcolor="#9CE2D3"
+          progress="50"
+          height={4}
+        />
+        <div className="event-container">
+          {displayed_events.map((event, index) => (
+            <React.Fragment key={index}>
+              {event}
+            </React.Fragment>
+          ))}
+        </div>
+      </div>
       <Link to="/membership" style={styles.link}>
         <Row
           style={{
