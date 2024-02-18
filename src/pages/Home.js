@@ -6,6 +6,16 @@ import Sponsors from "../pages/Sponsors";
 import { Carousel } from "react-responsive-carousel";
 import semoutlook from "../images/semesteroutlookpic.png";
 import newmissionImg from "../images/wiccnewlogo.png";
+import Millennium from "../images/sponsors/sponsorpics/platinum/Millennium Management.jpg";
+import Bloomberg from "../images/sponsors/sponsorpics/gold/Bloomberg.jpg";
+import Capital from "../images/sponsors/sponsorpics/gold/Capital One.jpg";
+import DE from "../images/sponsors/sponsorpics/gold/DE Shaw.jpg";
+import Jane from "../images/sponsors/sponsorpics/gold/Jane Street.jpg";
+import PWC from "../images/sponsors/sponsorpics/gold/pwc.jpg";
+import Roblox from "../images/sponsors/sponsorpics/silver/Roblox.jpg";
+import Accenture from "../images/sponsors/sponsorpics/silver/Accenture.jpg";
+import HRT from "../images/sponsors/sponsorpics/silver/HRT.jpg";
+import MathWorks from "../images/sponsors/sponsorpics/silver/MathWorks.jpg";
 
 
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
@@ -22,15 +32,15 @@ function importAll(r) {
 const PCarousel = ({ imgNames, pics }) => {
   const renderImages = () => {
     const imageGroups = [];
-    for (let i = 0; i < imgNames.length; i += 4) {
-      const imagesInGroup = imgNames.slice(i, i + 4).map((img, index) => {
+    for (let i = 0; i < imgNames.length; i += 5) {
+      const imagesInGroup = imgNames.slice(i, i + 5).map((img, index) => {
         const imageSrc = pics[img];
         return (
-          <div key={index} style={{ width: `${100 / 4}%` }}>
+          <div key={index} style={{ width: `${100 / 5}%` }}>
             <Image
               src={imageSrc}
               alt={`Image ${i + index + 1}`}
-              style={{ width: "100%", height: "200px", objectFit: "contain" }}
+              style={{ width: "80%", height: "100px", objectFit: "contain" }}
             />
           </div>
         );
@@ -63,10 +73,18 @@ const Home = () => {
   );
   const homepics = Object.keys(homepicsname);
 
-  const sponsorpicsname = importAll(
-    require.context("../images/sponsors", false, /\.(jpg)$/i)
+  const sponsorpicsgold = importAll(
+    require.context("../images/sponsors/sponsorpics/gold", false, /\.(jpg)$/i)
   );
-  const sponsorpics = Object.keys(sponsorpicsname);
+  const sponsorpicssilver = importAll(
+    require.context("../images/sponsors/sponsorpics/silver", false, /\.(jpg)$/i)
+  );
+  const sponsorpicsplatinum = importAll(
+    require.context("../images/sponsors/sponsorpics/platinum", false, /\.(jpg)$/i)
+  );
+  const sponsorpicsg = Object.keys(sponsorpicsgold);
+  const sponsorpicss = Object.keys(sponsorpicssilver);
+  const sponsorpicsp = Object.keys(sponsorpicsplatinum);
 
   return (
     <div>
@@ -302,8 +320,16 @@ const Home = () => {
 
         <section style={{ marginTop: "5%" }} class="sponsor-container">
           <h2 style={{ textAlign: "left", fontWeight: "bold" }}>
-            Our Sponsors
+            Our Current Sponsors
           </h2>
+          <br></br>
+          <br></br>
+          <h3 style={{ textAlign: "left", marginLeft: "2%" }}>Platinum</h3>
+          <PCarousel imgNames={sponsorpicsp} pics={sponsorpicsplatinum} />
+          <h3 style={{ textAlign: "left", marginLeft: "2%" }}>Gold</h3>
+          <PCarousel imgNames={sponsorpicsg} pics={sponsorpicsgold} />
+          <h3 style={{ textAlign: "left", marginLeft: "2%" }}>Silver</h3>
+          <PCarousel imgNames={sponsorpicss} pics={sponsorpicssilver} />
         </section>
         <section
           style={{
@@ -314,7 +340,6 @@ const Home = () => {
           }}
           class="sponsor-carousel-container"
         >
-          <PCarousel imgNames={sponsorpics} pics={sponsorpicsname} />
         </section>
 
         {/*  <section style={{ marginTop: "5%" }} class="sponsor-container">
