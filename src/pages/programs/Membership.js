@@ -24,7 +24,9 @@ import "./programPages.css";
 
 export default class Membership extends Component {
   render() {
-    let sec = operations.members.find((record) => record.position === "Secretary");
+    let sec = operations.members.find(
+      (record) => record.position === "Secretary"
+    );
 
     function importAll(r) {
       let images = {};
@@ -161,12 +163,12 @@ export default class Membership extends Component {
               <h3>Tracking and Progress</h3>
               <p class="sub">
                 {" "}
-                Once you have filled the form and registered for the Active
-                Membership, we will track your attendance at events and see if
-                the above requirements are fulfilled. Be sure to sign-in when
-                you attend an event! We will inform you of the type of event you
-                are attending (Corporate Event or Non-Corporate Event). We will
-                also keep you updated with your progress monthly and give you an
+                Once you sign in at any event using the event attendance form,
+                we will track your attendance at events and see if the above
+                requirements are fulfilled. Be sure to sign-in when you attend
+                an event! We will inform you of the type of event you are
+                attending (Corporate Event or Non-Corporate Event). We will also
+                keep you updated with your progress monthly and give you an
                 opportunity to fill out a feedback form. Do let us know about
                 your experience!
               </p>
