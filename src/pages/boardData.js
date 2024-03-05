@@ -39,16 +39,16 @@ export const presidents = {
   description: " ",
   members: [
     {
-      name: "Rachel Tong",
-      position: "Co-President",
-      netId: "rt387",
-      bio: "WICC introduced me to a close community of people who are not only passionate about computing but also extremely supportive and eager to help. I was first introduced to WICC freshman fall through the Lunch Bunch and Mentorship Program. Amidst the chaotic transition into college, those programs truly helped me ease into college and meet amazing upperclassmen and professors. I'm super excited to get more involved and meet more people!",
-    },
-    {
       name: "Jasmine Samadi",
       position: "Co-President",
       netId: "jns222",
       bio: "WICC is the first place that made me feel like I belong in the computing field. After years of trying to find my path and being discouraged, I finally found a welcoming and supportive community of women and non-binary people in tech. I am so grateful for the warmth and guidance given to me from WICC members. I can only hope to extend a similar arm and welcome more people whose shoes I was in. ",
+    },
+    {
+      name: "Neha Sunkara",
+      position: "Co-President",
+      netId: "ns597",
+      bio: " "
     },
   ],
 };
