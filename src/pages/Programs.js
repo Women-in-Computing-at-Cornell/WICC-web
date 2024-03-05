@@ -19,7 +19,7 @@ import { FaChevronRight } from "react-icons/fa";
 import Progressbar from "../components/ProgressBar";
 
 let events = [
-  <EventCard key="1" title="Active Membership" description="xxX" imageUrl={activemember} />,
+  <EventCard key="1" title="Active Membership" description="XXX" imageUrl={activemember} />,
   <EventCard key="2" title="Active Membership" description="xxx" imageUrl={activemember} />,
   <EventCard key="3" title="Active Membership" description="xxx" imageUrl={activemember} />,
   <EventCard key="4" title="Active Membership" description="xxx" imageUrl={activemember} />,
