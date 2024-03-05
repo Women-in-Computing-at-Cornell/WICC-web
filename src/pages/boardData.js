@@ -39,16 +39,16 @@ export const presidents = {
   description: " ",
   members: [
     {
-      name: "Rachel Tong",
-      position: "Co-President",
-      netId: "rt387",
-      bio: "WICC introduced me to a close community of people who are not only passionate about computing but also extremely supportive and eager to help. I was first introduced to WICC freshman fall through the Lunch Bunch and Mentorship Program. Amidst the chaotic transition into college, those programs truly helped me ease into college and meet amazing upperclassmen and professors. I'm super excited to get more involved and meet more people!",
-    },
-    {
       name: "Jasmine Samadi",
       position: "Co-President",
       netId: "jns222",
       bio: "WICC is the first place that made me feel like I belong in the computing field. After years of trying to find my path and being discouraged, I finally found a welcoming and supportive community of women and non-binary people in tech. I am so grateful for the warmth and guidance given to me from WICC members. I can only hope to extend a similar arm and welcome more people whose shoes I was in. ",
+    },
+    {
+      name: "Neha Sunkara",
+      position: "Co-President",
+      netId: "ns597",
+      bio: " "
     },
   ],
 };
@@ -375,9 +375,9 @@ export const brand = {
   description: " ",
   members: [
     {
-      name: "Ariani Gomez",
+      name: "Victoria Whittle",
       position: "Vice President, Brand",
-      netId: "amg374",
+      netId: "vnw3",
       bio: " ",
     },
     {
@@ -393,21 +393,21 @@ export const brand = {
       bio: "I'm studying Computer Science in the College of Engineering, and I come from Istanbul, Turkey. Since joining WICC, I've connected with some really kind people and collaborated with others who share my interests about computing. As the publicity director, I enjoy spreading the word about WICC, which is all about creating a supportive community that brings together people from diverse backgrounds. Outside of all this, I enjoy reading, listening to music, watching romcoms, and taking lots of photos in my free time!",
     },
     {
-      name: "Claire Tan",
+      name: "Zhalae Daneshvari",
       position: "Photography Director",
-      netId: "ct556",
-      bio: "When I arrived at Cornell, the world of computing was like a distant realm to me and things like joining clubs, finding opportunities, and choosing classes made me feel lost. WICC has WICC has allowed me to join a welcoming community of driven, passionate individuals who have helped me in my journey. The camaraderie of this community has made the complex seem approachable and the unknown less daunting. I’m excited to continue forging new connections in WICC and further exploring the exciting opportunities this community offers!",
-    },
-    {
-      name: "Kelly Ryoo",
-      position: "Design Co-Director",
-      netId: "kyr5",
-      bio: "Kelly is a Computer Science major in the College of Arts and Sciences. As the social co-director, she enjoys planning events and socializing with new people. She also loves to do calligraphy, organize her spotify playlists, and read in her free time.",
+      netId: "zwd3",
+      bio: " "
     },
     {
       name: "Lauren Jun",
       position: "Design Co-Director",
       netId: "lj295",
+      bio: " "
+    },
+    {
+      name: "Goretti Muriithi",
+      position: "Design Co-Director",
+      netId: "gm552",
       bio: " ",
     },
   ],
