@@ -76,7 +76,7 @@ const Programs = () => {
             provide support but also create an environment that is both
             enriching and informative. Our goal is to continually enhance these
             offerings, ensuring they resonate with our diverse community and
-            actively engage every participant
+            actively engage every participant.
           </p>
         </div>
         <Image
