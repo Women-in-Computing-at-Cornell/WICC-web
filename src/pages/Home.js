@@ -4,6 +4,7 @@ import "./Home.css";
 import Sponsors from "../pages/Sponsors";
 import { Carousel } from "react-responsive-carousel";
 import semoutlook from "../images/semesteroutlookpic.png";
+import arrowbutton from "../images/icons/circle-arrows.png";
 import newmissionImg from "../images/wiccnewlogo.png";
 import Millennium from "../images/sponsors/sponsorpics/platinum/Millennium Management.jpg";
 import Bloomberg from "../images/sponsors/sponsorpics/gold/Bloomberg.jpg";
@@ -42,6 +43,7 @@ const PCarousel = ({ imgNames, pics }) => {
               style={{ width: "80%", height: "100px", objectFit: "contain" }}
             />
           </div>
+          
         );
       });
       imageGroups.push(imagesInGroup);
@@ -286,37 +288,52 @@ const Home = () => {
         </section>
 
         <section class="call-to-action-container">
+
           <div className="get-involved-grid">
+          <a href="/#join" className="panel-link">
             <div className="get-involved-column">
-              <a href="/#join" className="panel-link">
-                <button className="panel-button">
-                  <span>&#x2197;</span>
-                </button>
-              </a>
-              <h4>Join Us</h4>
+              
+                {/* <button className="panel-button"> */}
+                  {/* <span>&#x2197;</span> */}
+                  <Image className= "arrow-img" style={{ maxWidth: "40px" }} src={arrowbutton}></Image>
+                {/* </button> */}
+              
+              <small className = "button-description">Get Involved </small>
+              <h4 className = "button-name">Join Us</h4>
             </div>
-            <div className="get-involved-column">
-              <a
+            </a>
+
+            <a
                 href="https://drive.google.com/file/d/1s_okJqDYmfD5-3jEPCPKvbtP_TYruXXD/view?usp=sharing"
                 className="panel-link"
               >
-                <button className="panel-button">
-                  <span>&#x2197;</span>
-                </button>
-              </a>
-              <h4>Sponsors</h4>
-            </div>
             <div className="get-involved-column">
-              <a href="/#programs" className="panel-link">
-                <button className="panel-button">
+              
+                {/* <button className="panel-button">
                   <span>&#x2197;</span>
-                </button>
-              </a>
-              <h4>Programs</h4>
+                </button> */}
+                <Image className= "arrow-img" style={{ maxWidth: "40px" }} src={arrowbutton}></Image>
+              
+              <small className = "button-description">Collaborate with us </small>
+              <h4 className = "button-name">Sponsors</h4>
             </div>
+            </a>
+
+            <a href="/#programs" className="panel-link">
+            <div className="get-involved-column">
+             
+                {/* <button className="panel-button">
+                  <span>&#x2197;</span>
+                </button> */}
+                <Image className= "arrow-img" style={{ maxWidth: "40px" }} src={arrowbutton}></Image>
+              
+              <small className = "button-description">Work with us </small>
+              <h4 className = "button-name">Programs</h4>
+            </div>
+            </a>
           </div>
         </section>
-
+                
         <section style={{ marginTop: "5%" }} class="sponsor-container">
           <h2 style={{ textAlign: "left", fontWeight: "bold" }}>
             Our Current Sponsors

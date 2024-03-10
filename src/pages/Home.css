@@ -25,6 +25,8 @@
 
 .call-to-action-container {
   /* margin-bottom: %; */
+  display: flex;
+  justify-content: center;
   text-align: center;
   margin: 70px;
 }
@@ -134,7 +136,7 @@
 
 .get-involved-grid {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   /* background-image: url('../images/alumnitestimg.png'); /* Set your background image URL */
   background-color: #ffffff;
   min-height: 200px;
@@ -146,10 +148,48 @@
 
 .get-involved-column {
   padding: 16px;
-  background-color: #defff8;
+  background-color: #9CE2D3;
   border-radius: 25px;
-  flex-basis: 30%;
+  /* flex-basis: 30%; */
+  width: 400px;
+  height: auto;
   box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+}
+
+.get-involved-column:hover {
+  background-color: #f8f8f8;
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.25);
+}
+
+.arrow-img{
+  display: flex;
+  justify-content: flex-start;
+}
+
+ .panel-link{
+  display: flex;
+  justify-content: center;
+  padding-right: 25px;
+  padding-left: 25px;
+  
+} 
+
+.panel-link:hover{
+  color: #000000;
+}
+
+.button-name{
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 20px;
+  
+}
+
+.button-description{
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 22px;
+  padding-top: 25px;
 }
 
 .carousel-wrapper {
@@ -194,3 +234,4 @@
   opacity: 0.8;
   /* Adjust dot opacity if needed */
 }
+
