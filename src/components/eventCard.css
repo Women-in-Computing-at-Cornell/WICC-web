@@ -5,7 +5,7 @@
   width: 449px;
   height: 424px;
   margin: 16px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px #0000001a;
   position: relative;
 }
 
@@ -19,7 +19,7 @@
   justify-content: center;
   align-items: center;
   padding: 16px;
-  background-color: rgba(0, 0, 0, 0.6);
+  background: linear-gradient(to top, #050505, rgba(60,60,60,0));
 }
 
 
@@ -29,6 +29,13 @@
 }
 
 .event-description {
+  display: none;
   color: #ffffff;
   font-size: 20px;
+  opacity: 0; 
+}
+
+.event-card:hover .event-description {
+  display: block;
+  opacity: 1;
 }
