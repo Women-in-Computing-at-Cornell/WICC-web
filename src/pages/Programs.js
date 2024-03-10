@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from 'react';
 import Image from "react-bootstrap/Image";
 import Container from "react-bootstrap/Container";
 import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
@@ -15,20 +15,17 @@ import mentorship from "../images/programs/mentorship.jpg";
 import outreach from "../images/programs/outreach.jpg";
 import Programhero from "../images/programs/Programhero.png";
 import EventCard from "../components/eventCard";
-import { FaChevronRight } from "react-icons/fa";
+import { FaChevronRight, FaChevronLeft } from "react-icons/fa";
 import Progressbar from "../components/ProgressBar";
 
 let events = [
-  <EventCard key="1" title="Active Membership" description="xxx" imageUrl={activemember} />,
-  <EventCard key="2" title="Active Membership" description="xxx" imageUrl={activemember} />,
-  <EventCard key="3" title="Active Membership" description="xxx" imageUrl={activemember} />,
-  <EventCard key="4" title="Active Membership" description="xxx" imageUrl={activemember} />,
-  <EventCard key="5" title="Active Membership" description="xxx" imageUrl={activemember} />,
-  <EventCard key="6" title="Active Membership" description="xxx" imageUrl={activemember} />
+  <EventCard key="1" title="Active Membership 1" description="xxx" imageUrl={activemember} />,
+  <EventCard key="2" title="Active Membership 2" description="xxx" imageUrl={activemember} />,
+  <EventCard key="3" title="Active Membership 3" description="xxx" imageUrl={activemember} />,
+  <EventCard key="4" title="Active Membership 4" description="xxx" imageUrl={activemember} />,
+  <EventCard key="5" title="Active Membership 5" description="xxx" imageUrl={activemember} />,
 ]
-let start_index = 0
-let end_index = 3
-let displayed_events = events.slice(start_index, end_index)
+
 
 let styles = {
   container: {
@@ -43,6 +40,38 @@ let styles = {
 };
 
 const Programs = () => {
+  const [startIdx, setStartIdx] = useState(0)
+  const [endIdx, setEndIdx] = useState(3)
+  const [currEvents, setCurrEvents] = useState(() => events.slice(startIdx, endIdx));
+  const [progress, setProgress] = useState(0);
+
+  useEffect(() => {
+    setCurrEvents(events.slice(startIdx, endIdx));
+    setProgress(endIdx / events.length);
+  }, [startIdx, endIdx, events]);
+
+  function updateEventsRight() {
+    setStartIdx(prevStartIdx => {
+      const newStartIdx = prevStartIdx + 3;
+      return newStartIdx;
+    });
+    setEndIdx(prevEndIdx => {
+      const newEndIdx = prevEndIdx + 3;
+      return Math.min(newEndIdx, events.length);
+    });
+  }
+
+  function updateEventsLeft() {
+    setStartIdx(prevStartIdx => {
+      const newStartIdx = Math.max(prevStartIdx - 3, 0);
+      return newStartIdx;
+    });
+    setEndIdx(prevEndIdx => {
+      const newStartIdx = Math.max(prevEndIdx - 3, 3);
+      return newStartIdx;
+    });
+  }
+
   return (
     <div
       style={{
@@ -85,20 +114,30 @@ const Programs = () => {
         ></Image>
       </div>
       <div className="upcoming">
-        <text className="upcoming-title">
-          Upcoming Events 2023-2024
-        </text>
-        <button
-          style={{ border: 'none', background: 'transparent', cursor: 'pointer' }}>
-          <FaChevronRight size={24} />
-        </button>
+        <div className="button-display">
+          <text className="upcoming-title">
+            Upcoming Events 2023-2024
+          </text>
+          <div>
+            {startIdx > 0 && <button
+              onClick={updateEventsLeft}
+              style={{ border: 'none', background: 'transparent', cursor: 'pointer', marginRight: '40px' }}>
+              <FaChevronLeft size={24} />
+            </button>}
+            {endIdx < events.length && <button
+              onClick={updateEventsRight}
+              style={{ border: 'none', background: 'transparent', cursor: 'pointer' }}>
+              <FaChevronRight size={24} />
+            </button>}
+          </div>
+        </div>
         <Progressbar
           bgcolor="#9CE2D3"
-          progress="50"
+          progress={progress}
           height={4}
         />
         <div className="event-container">
-          {displayed_events.map((event, index) => (
+          {currEvents.map((event, index) => (
             <React.Fragment key={index}>
               {event}
             </React.Fragment>
