@@ -80,6 +80,7 @@ const Programs = () => {
       style={{
         width: "100%",
         height: "100%",
+        backgroundImage: 'linear-gradient(#ffffff, #9CE2D3, #ffffff)'
       }}
     >
       <div className="hero">
