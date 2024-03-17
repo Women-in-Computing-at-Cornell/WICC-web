@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from 'react';
 import Image from "react-bootstrap/Image";
 import Container from "react-bootstrap/Container";
 import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
@@ -30,6 +30,38 @@ let styles = {
 };
 
 const Programs = () => {
+  const [startIdx, setStartIdx] = useState(0)
+  const [endIdx, setEndIdx] = useState(3)
+  const [currEvents, setCurrEvents] = useState(() => events.slice(startIdx, endIdx));
+  const [progress, setProgress] = useState(0);
+
+  useEffect(() => {
+    setCurrEvents(events.slice(startIdx, endIdx));
+    setProgress(endIdx / events.length);
+  }, [startIdx, endIdx, events]);
+
+  function updateEventsRight() {
+    setStartIdx(prevStartIdx => {
+      const newStartIdx = prevStartIdx + 3;
+      return newStartIdx;
+    });
+    setEndIdx(prevEndIdx => {
+      const newEndIdx = prevEndIdx + 3;
+      return Math.min(newEndIdx, events.length);
+    });
+  }
+
+  function updateEventsLeft() {
+    setStartIdx(prevStartIdx => {
+      const newStartIdx = Math.max(prevStartIdx - 3, 0);
+      return newStartIdx;
+    });
+    setEndIdx(prevEndIdx => {
+      const newStartIdx = Math.max(prevEndIdx - 3, 3);
+      return newStartIdx;
+    });
+  }
+
   return (
     <div
       style={{
@@ -63,7 +95,7 @@ const Programs = () => {
             provide support but also create an environment that is both
             enriching and informative. Our goal is to continually enhance these
             offerings, ensuring they resonate with our diverse community and
-            actively engage every participant
+            actively engage every participant.
           </p>
         </div>
         <Image
