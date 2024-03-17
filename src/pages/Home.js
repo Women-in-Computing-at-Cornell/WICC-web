@@ -1,24 +1,11 @@
 import React from "react";
 import Image from "react-bootstrap/Image";
 import "./Home.css";
-import Sponsors from "../pages/Sponsors";
-import { Carousel } from "react-responsive-carousel";
 import semoutlook from "../images/semesteroutlookpic.png";
 import arrowbutton from "../images/icons/circle-arrows.png";
 import newmissionImg from "../images/wiccnewlogo.png";
-import Millennium from "../images/sponsors/sponsorpics/platinum/Millennium Management.jpg";
-import Bloomberg from "../images/sponsors/sponsorpics/gold/Bloomberg.jpg";
-import Capital from "../images/sponsors/sponsorpics/gold/Capital One.jpg";
-import DE from "../images/sponsors/sponsorpics/gold/DE Shaw.jpg";
-import Jane from "../images/sponsors/sponsorpics/gold/Jane Street.jpg";
-import PWC from "../images/sponsors/sponsorpics/gold/pwc.jpg";
-import Roblox from "../images/sponsors/sponsorpics/silver/Roblox.jpg";
-import Accenture from "../images/sponsors/sponsorpics/silver/Accenture.jpg";
-import HRT from "../images/sponsors/sponsorpics/silver/HRT.jpg";
-import MathWorks from "../images/sponsors/sponsorpics/silver/MathWorks.jpg";
-
-
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import PCarousel from "../components/PCarousel";
+import CurrentSponsors from "../components/currentSponsors.js"
 
 function importAll(r) {
   let images = {};
@@ -28,41 +15,6 @@ function importAll(r) {
   });
   return images;
 }
-
-const PCarousel = ({ imgNames, pics }) => {
-  const renderImages = () => {
-    const imageGroups = [];
-    for (let i = 0; i < imgNames.length; i += 5) {
-      const imagesInGroup = imgNames.slice(i, i + 5).map((img, index) => {
-        const imageSrc = pics[img];
-        return (
-          <div key={index} style={{ width: `${100 / 5}%` }}>
-            <Image
-              src={imageSrc}
-              alt={`Image ${i + index + 1}`}
-              style={{ width: "80%", height: "100px", objectFit: "contain" }}
-            />
-          </div>
-          
-        );
-      });
-      imageGroups.push(imagesInGroup);
-    }
-    return imageGroups.map((group, index) => (
-      <div key={index} style={{ display: "flex" }}>
-        {group}
-      </div>
-    ));
-  };
-
-  return (
-    <div className="carousel-wrapper">
-      <Carousel showThumbs={false} showStatus={false} emulateTouch infiniteLoop>
-        {renderImages()}
-      </Carousel>
-    </div>
-  );
-};
 
 const Home = () => {
   const homepicsname = importAll(
@@ -74,23 +26,10 @@ const Home = () => {
   );
   const homepics = Object.keys(homepicsname);
 
-  const sponsorpicsgold = importAll(
-    require.context("../images/sponsors/sponsorpics/gold", false, /\.(jpg)$/i)
-  );
-  const sponsorpicssilver = importAll(
-    require.context("../images/sponsors/sponsorpics/silver", false, /\.(jpg)$/i)
-  );
-  const sponsorpicsplatinum = importAll(
-    require.context("../images/sponsors/sponsorpics/platinum", false, /\.(jpg)$/i)
-  );
-  const sponsorpicsg = Object.keys(sponsorpicsgold);
-  const sponsorpicss = Object.keys(sponsorpicssilver);
-  const sponsorpicsp = Object.keys(sponsorpicsplatinum);
-
   return (
     <div>
       {/* <Image style = {{maxWidth: '100%', height: 'auto'}} src={boardGroupPic} id="hero-image" /> */}
-      <div class="home-container">
+      <div className="home-container">
         <section
           style={{
             paddingBottom: "3%",
@@ -143,7 +82,7 @@ const Home = () => {
             // justifyContent: "center",
             justifyContent: "space-around",
           }}
-          class="semout-container"
+          className="semout-container"
         >
           <div>
             <Image
@@ -188,7 +127,7 @@ const Home = () => {
         </section>
         <section
           style={{ paddingLeft: "5%", paddingRight: "5%", paddingTop: "20px" }}
-          class="carousel-container"
+          className="carousel-container"
         >
           <PCarousel imgNames={homepics} pics={homepicsname} />
         </section>
@@ -287,7 +226,7 @@ const Home = () => {
           </div>
         </section>
 
-        <section class="call-to-action-container">
+        <section className="call-to-action-container">
 
           <div className="get-involved-grid">
           <a href="/#join" className="panel-link">
@@ -334,29 +273,7 @@ const Home = () => {
           </div>
         </section>
                 
-        <section style={{ marginTop: "5%" }} class="sponsor-container">
-          <h2 style={{ textAlign: "left", fontWeight: "bold" }}>
-            Our Current Sponsors
-          </h2>
-          <br></br>
-          <br></br>
-          <h3 style={{ textAlign: "left", marginLeft: "2%" }}>Platinum</h3>
-          <PCarousel imgNames={sponsorpicsp} pics={sponsorpicsplatinum} />
-          <h3 style={{ textAlign: "left", marginLeft: "2%" }}>Gold</h3>
-          <PCarousel imgNames={sponsorpicsg} pics={sponsorpicsgold} />
-          <h3 style={{ textAlign: "left", marginLeft: "2%" }}>Silver</h3>
-          <PCarousel imgNames={sponsorpicss} pics={sponsorpicssilver} />
-        </section>
-        <section
-          style={{
-            objectFit: "cover",
-            paddingLeft: "5%",
-            paddingRight: "5%",
-            paddingTop: "20px",
-          }}
-          class="sponsor-carousel-container"
-        >
-        </section>
+        <CurrentSponsors />
 
         {/*  <section style={{ marginTop: "5%" }} class="sponsor-container">
           <h2 style={{ fontWeight: "bold" }}>Our Sponsors</h2>

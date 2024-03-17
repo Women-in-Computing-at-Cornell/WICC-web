@@ -2,11 +2,11 @@ import React from "react";
 import "./pages.css";
 import Image from "react-bootstrap/Image";
 import sponsorsImg from "../images/sponsors/sponsers_page_imgs/sponsors_img.jpg";
+import CurrentSponsors from "../components/currentSponsors.js";
 
 const Sponsors = () => {
   return (
     <div>
-      <div>Placeholder</div>
       <section
         style={{
           paddingLeft: "202px",
@@ -43,6 +43,7 @@ const Sponsors = () => {
           src={sponsorsImg}
         ></Image>
       </section>
+      <CurrentSponsors />
     </div>
   );
 };
