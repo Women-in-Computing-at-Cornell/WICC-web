@@ -70,3 +70,31 @@ color: grey
   object-fit: cover;
   border-radius: 50%;
 }
+
+.lunch-container{
+  background-color: #F8F9FA;
+}
+
+.lunch-title{
+  padding-top: 100px;
+  padding-left: 80px;
+  padding-bottom: 100px;
+
+}
+
+.lunch-description{
+  height: auto;
+  width: 500px;
+  padding-left: 55px;
+}
+
+.lunch-image{
+  height: auto;
+  width: 500px;
+}
+
+.lunch-image-col{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 40px;
+}

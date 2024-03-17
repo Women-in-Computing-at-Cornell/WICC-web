@@ -17,19 +17,16 @@ import {
 import lunchbunch1 from "../../images/programs-pictures/lunchbunch/lunchbunch1.jpg";
 import lunchbunch2 from "../../images/programs-pictures/lunchbunch/lunchbunch2.jpg";
 import lunchbunch3 from "../../images/programs-pictures/lunchbunch/lunchbunch3.jpg";
+import lunch1  from "../../images/programs-pictures/lunchbunch/lunch1.png";
 import QuestionsCard from "./QuestionsCard.js";
 import Image from "react-bootstrap/Image";
-
 import medal from "../../images/medal.jpg";
-
 import "./programPages.css";
-
 export default class Lunch extends Component {
   render() {
-    let directors = academic.filter(
-      (record) => record.title === "Faculty Relations Co-Director"
+    let directors = academic.members.filter(
+      (record) => record.position === "Faculty Relations Co-Director"
     );
-
     function importAll(r) {
       let images = {};
       r.keys().map((item, index) => {
@@ -37,19 +34,20 @@ export default class Lunch extends Component {
       });
       return images;
     }
-
     const boardHeadshots = importAll(
       require.context("../../images/headshots/board", false, /\.jpg/)
     );
-
     return (
-      <div class="page">
-        <h1>Lunch Bunch</h1>
+      <div>
+        <div className = "lunch-container">
+        
+          {/* <Row style={{ paddingBottom: "1%" }}> */}
+          <h1 className="lunch-title">Lunch Bunch</h1>
+          <Row>
 
-        <Container>
-          <Row style={{ paddingBottom: "1%" }}>
-            <Col xs lg="6" style={{ paddingRight: "5%", paddingLeft: "0%" }}>
-              <p style={{ paddingRight: "5%", paddingTop: "2%" }}>
+            <Col>
+              
+              <p className="lunch-description">
                 WICC’s weekly Lunch Bunch program is an exceptional opportunity
                 for underclassmen women and minorities to make new friends and
                 network within the computing community while learning from CIS
@@ -59,19 +57,21 @@ export default class Lunch extends Component {
                 Kleinberg, Eva Tardos, and Walker White.
               </p>
               <br />
-              <h4 style={{ paddingTop: "5%" }}>Times</h4>
-
+              {/* <h4 style={{ paddingTop: "5%" }}>Times</h4>
               <div class="sub">
                 <p>Mondays, 12:10PM-1:10PM EST</p>
                 <p>Tuesdays, 1:25PM-2:15PM EST</p>
                 <p>Fridays, 12:20PM-1:10PM EST</p>
-              </div>
-
-              <h5 style={{ paddingTop: "25%" }}>
+              </div> */}
+              {/* <h5 style={{ paddingTop: "25%" }}>
                 Applications are closed for this semester.
-              </h5>
+              </h5> */}
             </Col>
-            <Col>
+            <Col className = "lunch-img-col">
+              <Image className = "lunch-image" src = {lunch1}></Image>
+            </Col>
+          </Row>
+            {/* <Col>
               <center>
                 <Image
                   src={lunchbunch2}
@@ -81,20 +81,18 @@ export default class Lunch extends Component {
                   src={lunchbunch3}
                   style={{ width: "70%", height: "auto", paddingBottom: "0%" }}
                 ></Image>
-                {/* <h5>Applications now open!</h5>
+                 <h5>Applications now open!</h5>
                 <p class='sub'>Due Wednesday, Feb. 27th 11:59PM</p>
-                <Button href='https://forms.gle/vZeTVhGveoqZ8AWs9'>Apply</Button> */}
+                <Button href='https://forms.gle/vZeTVhGveoqZ8AWs9'>Apply</Button> 
               </center>
-            </Col>
-          </Row>
-        </Container>
+            </Col> */}
+          {/* </Row> */}
+        </div>
         <br />
         <h3>Testimonials</h3>
-
         <Container>
           <Row style={{ paddingBottom: "1%" }}>
             <div class="vertLine"></div>
-
             <Col style={{ paddingRight: "5%", paddingLeft: "0%" }}>
               <p>
                 "The program was a unique and enriching opportunity to connect
@@ -114,7 +112,6 @@ export default class Lunch extends Component {
               <p class="sub">~ Emory ’24</p>
             </Col>
             <div class="vertLine"></div>
-
             <Col style={{ paddingRight: "5%", paddingLeft: "0%" }}>
               <p>
                 "Lunch Bunch was an incredible opportunity for me to directly
@@ -138,7 +135,6 @@ export default class Lunch extends Component {
                   <a href={"mailto:" + directors[0].netId + "@cornell.edu"} class="emailLink">
                     {directors[0].netId}@cornell.edu
                   </a>
-
                 </div> */}
                 <QuestionsCard
                   name={directors[0].name}
