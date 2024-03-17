@@ -1,0 +1,60 @@
+.card {
+  position: relative;
+  width: 500px;
+  height: 600px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin: 20px;
+}
+
+.image {
+  position: relative;
+  top: 10%;
+  transform: translateX(-50%);
+  left: 50%;
+  width: 80%;
+  height: auto;
+  display: block;
+}
+
+
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* Adjusted height to accommodate title and description */
+  padding: 20px;
+  left: -10%;
+  position: absolute;
+  bottom: 0;
+  /* Position the info container at the bottom */
+  width: 100%;
+  /* Ensure full width */
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+  text-align: center;
+  height: 10%;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* Adjusted height to accommodate title and description */
+  padding: 20px;
+  left: -0%;
+  position: absolute;
+  bottom: 0;
+  /* Position the info container at the bottom */
+  width: 100%;
+  /* Ensure full width */
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 10px;
+  text-align: center;
+  height: 10%;
+}
