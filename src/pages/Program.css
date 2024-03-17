@@ -31,7 +31,7 @@ body {
   overflow-x: hidden;
   display: flex;
   flex-direction: row;
-  padding-bottom: 32px;
+  padding-bottom: 200px;
 }
 
 .column-1 {

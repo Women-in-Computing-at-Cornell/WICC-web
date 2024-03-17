@@ -11,6 +11,10 @@
   /* flex-grow: 30; */
 }
 
+.info :hover {
+  transform: scale(1.05);  
+}
+
 .image {
   position: relative;
   top: 10%;
@@ -41,19 +45,23 @@
   height: 10%; */
 }
 
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 .description {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 20px;
-  left: -0%;
-  position: absolute;
+  /* position: absolute;
   bottom: 150px;
   width: 100%;
   font-size: 1rem;
   color: #333;
   margin-bottom: 10px;
   text-align: center;
-  height: 10%;
+  height: 10%; */
 }

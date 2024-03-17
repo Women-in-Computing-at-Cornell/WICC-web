@@ -50,10 +50,6 @@ const Programs = () => {
   const [currEvents, setCurrEvents] = useState(() => events.slice(startIdx, endIdx));
   const [progress, setProgress] = useState(0);
 
-  useLayoutEffect(() => {
-    window.scrollTo(0, 0)
-  });
-
   useEffect(() => {
     setCurrEvents(events.slice(startIdx, endIdx));
     setProgress((endIdx / events.length) * 100);
