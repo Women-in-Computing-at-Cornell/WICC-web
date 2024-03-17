@@ -23,6 +23,10 @@ import medal from "../../images/medal.jpg";
 import "./programPages.css";
 
 export default class Membership extends Component {
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
+
   render() {
     let sec = operations.members.find((record) => record.position === "Secretary");
 

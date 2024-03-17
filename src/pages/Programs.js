@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useLayoutEffect } from 'react';
 import Image from "react-bootstrap/Image";
 import Container from "react-bootstrap/Container";
 import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
@@ -12,6 +12,7 @@ import community from "../images/programs/community.jpg";
 import cyc from "../images/programs/cyc.jpg";
 import lunchbunch from "../images/programs/lunchbunch.jpg";
 import mentorship from "../images/programs/mentorship.jpg";
+import girlswhocode from "../images/programs/girlswhocode.jpg"
 import outreach from "../images/programs/outreach.jpg";
 import Programhero from "../images/programs/Programhero.png";
 import EventCard from "../components/eventCard";
@@ -25,6 +26,7 @@ let styles = {
   },
   col: {
     borderRadius: ".5em",
+    margin: "0px",
   },
   link: {
     color: "black",
@@ -47,6 +49,10 @@ const Programs = () => {
   const [endIdx, setEndIdx] = useState(3)
   const [currEvents, setCurrEvents] = useState(() => events.slice(startIdx, endIdx));
   const [progress, setProgress] = useState(0);
+
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0)
+  });
 
   useEffect(() => {
     setCurrEvents(events.slice(startIdx, endIdx));
@@ -147,7 +153,38 @@ const Programs = () => {
         ))
         }
       </div>
-      <Link to="/membership" style={styles.link}>
+      {/* <Card title="Active Membership" description="xxx" imageUrl={activemember} link="/membership" /> */}
+      <div className="events-grid">
+        <div className="column-1">
+          <Link to="/crackingyourcareer" style={styles.link}>
+            <Card title="Cracking Your Career" description="xxx" imageUrl={cyc} link="/crackingyourcareer" />
+          </Link>
+          <Link to="/crackingyourcareer" style={styles.link}>
+            <Card title="Corporate Events" description="xxx" imageUrl={cyc} link="/crackingyourcareer" />
+          </Link>
+          <Link to="/crackingyourcareer" style={styles.link}>
+            <Card title="Networking" description="xxx" imageUrl={cyc} link="/crackingyourcareer" />
+          </Link>
+        </div>
+
+        <div className="column-2">
+          <div className="row-1">
+            <Link to="/mentorship" style={styles.link}>
+              <Card title="Mentorship" description="xxx" imageUrl={mentorship} />
+            </Link>
+            <Link to="/campaigns" style={styles.link}>
+              <Card title="Campaigns" description="xxx" imageUrl={campaigns} />
+            </Link>
+          </div>
+          <div>
+            <Link to="/outreach" style={styles.link}>
+              {" "}
+              <Card title="Girls Who Code" description="xxx" imageUrl={girlswhocode} />
+            </Link>
+          </div>
+        </div>
+      </div>
+      {/* <Link to="/membership" style={styles.link}>
         <Row
           style={{
             marginBottom: "100px",
@@ -301,32 +338,7 @@ const Programs = () => {
           </Col>
         </Row>
       </Link>
-      <Link to="/campaigns" style={styles.link}>
-        <Row
-          style={{
-            marginBottom: "100px",
-            marginTop: "100px",
-            padding: "56px",
-            paddingTop: "32px",
-            paddingBottom: "32px",
-            border: "1px solid #9CE2D3",
-            borderRadius: "29px",
-            display: "flex",
-            alignItems: "center",
-          }}
-        >
-          {" "}
-          <Col style={styles.col}>
-            <h3 className="text-center">Campaigns</h3>
-          </Col>
-          <Col>
-            <Image
-              src={campaigns}
-              style={{ width: "90%", height: "auto" }}
-            ></Image>
-          </Col>
-        </Row>
-      </Link>
+
       <Link to="/crackingyourcareer" style={styles.link}>
         <Row
           style={{
@@ -349,7 +361,7 @@ const Programs = () => {
             <Image src={cyc} style={{ width: "90%", height: "auto" }}></Image>
           </Col>
         </Row>
-      </Link>
+      </Link> */}
     </div>
   );
 };

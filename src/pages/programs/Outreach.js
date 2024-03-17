@@ -28,6 +28,10 @@ import Image from "react-bootstrap/Image";
 import "./programPages.css";
 
 export default class Outreach extends Component {
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
+
   render() {
     let directors = outreach.members.filter(
       (record) => record.position === "Outreach Co-Director"
