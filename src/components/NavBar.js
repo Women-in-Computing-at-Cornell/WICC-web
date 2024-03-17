@@ -27,6 +27,9 @@ class NavBar extends React.Component {
           <Nav.Link style={linkStyle} href="/#programs">
             Programs
           </Nav.Link>
+          <Nav.Link style={linkStyle} href="/#board">
+            Who We Are
+          </Nav.Link>
           <Nav.Link style={linkStyle} href="/#calendar">
             Calendar
           </Nav.Link>
