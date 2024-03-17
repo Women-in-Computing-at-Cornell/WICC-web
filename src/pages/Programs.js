@@ -14,7 +14,6 @@ import lunchbunch from "../images/programs/lunchbunch.jpg";
 import mentorship from "../images/programs/mentorship.jpg";
 import outreach from "../images/programs/outreach.jpg";
 import Programhero from "../images/programs/Programhero.png";
-
 let styles = {
   container: {
     margin: "3%",
@@ -26,7 +25,6 @@ let styles = {
     color: "black",
   },
 };
-
 const Programs = () => {
   return (
     <div
