@@ -14,31 +14,5 @@ export default class Sponsors extends Component {
   }
 
   render() {
-    const gold = [];
-    const silver = [];
-    const platinum = [];
-    const graceHopper = [];
-
-    // const displayTemp = [];
-
-    sponsorData.forEach((d, i) => {
-      if (d.level === "Platinum") {
-        platinum.push(d);
-      }
-      if (d.level === "Gold") {
-        gold.push(d);
-      }
-      if (d.level === "Grace Hopper") {
-        graceHopper.push(d);
-      }
-      if (d.level === "Silver") {
-        silver.push(d);
-      }
-    });
-
-    console.log("check");
-
-    function importAll(r) {
-    }
   }
 }
