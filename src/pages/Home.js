@@ -1,5 +1,4 @@
 import React from "react";
-import Button from "react-bootstrap/Button";
 import Image from "react-bootstrap/Image";
 import "./Home.css";
 import Sponsors from "../pages/Sponsors";
@@ -17,6 +16,7 @@ import Roblox from "../images/sponsors/sponsorpics/silver/Roblox.jpg";
 import Accenture from "../images/sponsors/sponsorpics/silver/Accenture.jpg";
 import HRT from "../images/sponsors/sponsorpics/silver/HRT.jpg";
 import MathWorks from "../images/sponsors/sponsorpics/silver/MathWorks.jpg";
+import JSConfetti from 'js-confetti'
 
 
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
@@ -29,7 +29,13 @@ function importAll(r) {
   });
   return images;
 }
+const jsConfetti = new JSConfetti()
 
+jsConfetti.addConfetti({
+  emojis: ['🌺', '🌷', '🌼', '🌿', '🍃', '🌸'],
+  //for st. patty's day
+  // emojis: ['🍀', '☘️'],
+})
 const PCarousel = ({ imgNames, pics }) => {
   const renderImages = () => {
     const imageGroups = [];
@@ -44,7 +50,7 @@ const PCarousel = ({ imgNames, pics }) => {
               style={{ width: "80%", height: "100px", objectFit: "contain" }}
             />
           </div>
-          
+
         );
       });
       imageGroups.push(imagesInGroup);
@@ -291,50 +297,50 @@ const Home = () => {
         <section class="call-to-action-container">
 
           <div className="get-involved-grid">
-          <a href="/#join" className="panel-link">
-            <div className="get-involved-column">
-              
+            <a href="/#join" className="panel-link">
+              <div className="get-involved-column">
+
                 {/* <button className="panel-button"> */}
-                  {/* <span>&#x2197;</span> */}
-                  <Image className= "arrow-img" style={{ maxWidth: "40px" }} src={arrowbutton}></Image>
+                {/* <span>&#x2197;</span> */}
+                <Image className="arrow-img" style={{ maxWidth: "40px" }} src={arrowbutton}></Image>
                 {/* </button> */}
-              
-              <small className = "button-description">Get Involved </small>
-              <h4 className = "button-name">Join Us</h4>
-            </div>
+
+                <small className="button-description">Get Involved </small>
+                <h4 className="button-name">Join Us</h4>
+              </div>
             </a>
 
             <a
-                href="https://drive.google.com/file/d/1s_okJqDYmfD5-3jEPCPKvbtP_TYruXXD/view?usp=sharing"
-                className="panel-link"
-              >
-            <div className="get-involved-column">
-              
+              href="https://drive.google.com/file/d/1s_okJqDYmfD5-3jEPCPKvbtP_TYruXXD/view?usp=sharing"
+              className="panel-link"
+            >
+              <div className="get-involved-column">
+
                 {/* <button className="panel-button">
                   <span>&#x2197;</span>
                 </button> */}
-                <Image className= "arrow-img" style={{ maxWidth: "40px" }} src={arrowbutton}></Image>
-              
-              <small className = "button-description">Collaborate with us </small>
-              <h4 className = "button-name">Sponsors</h4>
-            </div>
+                <Image className="arrow-img" style={{ maxWidth: "40px" }} src={arrowbutton}></Image>
+
+                <small className="button-description">Collaborate with us </small>
+                <h4 className="button-name">Sponsors</h4>
+              </div>
             </a>
 
             <a href="/#programs" className="panel-link">
-            <div className="get-involved-column">
-             
+              <div className="get-involved-column">
+
                 {/* <button className="panel-button">
                   <span>&#x2197;</span>
                 </button> */}
-                <Image className= "arrow-img" style={{ maxWidth: "40px" }} src={arrowbutton}></Image>
-              
-              <small className = "button-description">Work with us </small>
-              <h4 className = "button-name">Programs</h4>
-            </div>
+                <Image className="arrow-img" style={{ maxWidth: "40px" }} src={arrowbutton}></Image>
+
+                <small className="button-description">Work with us </small>
+                <h4 className="button-name">Programs</h4>
+              </div>
             </a>
           </div>
         </section>
-                
+
         <section style={{ marginTop: "5%" }} class="sponsor-container">
           <h2 style={{ textAlign: "left", fontWeight: "bold" }}>
             Our Current Sponsors
