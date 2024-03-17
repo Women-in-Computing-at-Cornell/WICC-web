@@ -76,7 +76,7 @@ export default class Sponsors extends Component {
             return (
               <a href={value.link}>
                 <Image
-                  src={sponsorHeadshots[value.sponsor + ".jpg"]}
+                  src={sponsorHeadshots[value.sponsor + ".jpg"]} 
                   width="15%"
                   height="5%"
                   style={{ marginTop: "-6%", paddingRight: "10px" }}
