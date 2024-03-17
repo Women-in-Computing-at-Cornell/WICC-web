@@ -17,7 +17,6 @@ import Accenture from "../images/sponsors/sponsorpics/silver/Accenture.jpg";
 import HRT from "../images/sponsors/sponsorpics/silver/HRT.jpg";
 import MathWorks from "../images/sponsors/sponsorpics/silver/MathWorks.jpg";
 
-
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 
 function importAll(r) {
@@ -40,10 +39,9 @@ const PCarousel = ({ imgNames, pics }) => {
             <Image
               src={imageSrc}
               alt={`Image ${i + index + 1}`}
-              style={{ width: "80%", height: "100px", objectFit: "contain" }}
+              style={{ width: "70%", height: "100px", objectFit: "contain" }}
             />
           </div>
-          
         );
       });
       imageGroups.push(imagesInGroup);
@@ -81,7 +79,11 @@ const Home = () => {
     require.context("../images/sponsors/sponsorpics/silver", false, /\.(jpg)$/i)
   );
   const sponsorpicsplatinum = importAll(
-    require.context("../images/sponsors/sponsorpics/platinum", false, /\.(jpg)$/i)
+    require.context(
+      "../images/sponsors/sponsorpics/platinum",
+      false,
+      /\.(jpg)$/i
+    )
   );
   const sponsorpicsg = Object.keys(sponsorpicsgold);
   const sponsorpicss = Object.keys(sponsorpicssilver);
@@ -89,7 +91,6 @@ const Home = () => {
 
   return (
     <div>
-      {/* <Image style = {{maxWidth: '100%', height: 'auto'}} src={boardGroupPic} id="hero-image" /> */}
       <div class="home-container">
         <section
           style={{
@@ -174,7 +175,6 @@ const Home = () => {
             </p>
           </div>
         </section>
-        {/* Title "What we do" */}
         <section
           style={{ paddingLeft: "5%", paddingRight: "5%" }}
           className="what-we-do-container"
@@ -187,7 +187,7 @@ const Home = () => {
           </div>
         </section>
         <section
-          style={{ paddingLeft: "5%", paddingRight: "5%", paddingTop: "20px" }}
+          style={{ paddingLeft: "1%", paddingRight: "1%", paddingTop: "32px" }}
           class="carousel-container"
         >
           <PCarousel imgNames={homepics} pics={homepicsname} />
@@ -288,52 +288,62 @@ const Home = () => {
         </section>
 
         <section class="call-to-action-container">
-
           <div className="get-involved-grid">
-          <a href="/#join" className="panel-link">
-            <div className="get-involved-column">
-              
+            <a href="/#join" className="panel-link">
+              <div className="get-involved-column">
                 {/* <button className="panel-button"> */}
-                  {/* <span>&#x2197;</span> */}
-                  <Image className= "arrow-img" style={{ maxWidth: "40px" }} src={arrowbutton}></Image>
+                {/* <span>&#x2197;</span> */}
+                <Image
+                  className="arrow-img"
+                  style={{ maxWidth: "40px" }}
+                  src={arrowbutton}
+                ></Image>
                 {/* </button> */}
-              
-              <small className = "button-description">Get Involved </small>
-              <h4 className = "button-name">Join Us</h4>
-            </div>
+
+                <small className="button-description">Get Involved </small>
+                <h4 className="button-name">Join Us</h4>
+              </div>
             </a>
 
             <a
-                href="https://drive.google.com/file/d/1s_okJqDYmfD5-3jEPCPKvbtP_TYruXXD/view?usp=sharing"
-                className="panel-link"
-              >
-            <div className="get-involved-column">
-              
+              href="https://drive.google.com/file/d/1s_okJqDYmfD5-3jEPCPKvbtP_TYruXXD/view?usp=sharing"
+              className="panel-link"
+            >
+              <div className="get-involved-column">
                 {/* <button className="panel-button">
                   <span>&#x2197;</span>
                 </button> */}
-                <Image className= "arrow-img" style={{ maxWidth: "40px" }} src={arrowbutton}></Image>
-              
-              <small className = "button-description">Collaborate with us </small>
-              <h4 className = "button-name">Sponsors</h4>
-            </div>
+                <Image
+                  className="arrow-img"
+                  style={{ maxWidth: "40px" }}
+                  src={arrowbutton}
+                ></Image>
+
+                <small className="button-description">
+                  Collaborate with us{" "}
+                </small>
+                <h4 className="button-name">Sponsors</h4>
+              </div>
             </a>
 
             <a href="/#programs" className="panel-link">
-            <div className="get-involved-column">
-             
+              <div className="get-involved-column">
                 {/* <button className="panel-button">
                   <span>&#x2197;</span>
                 </button> */}
-                <Image className= "arrow-img" style={{ maxWidth: "40px" }} src={arrowbutton}></Image>
-              
-              <small className = "button-description">Work with us </small>
-              <h4 className = "button-name">Programs</h4>
-            </div>
+                <Image
+                  className="arrow-img"
+                  style={{ maxWidth: "40px" }}
+                  src={arrowbutton}
+                ></Image>
+
+                <small className="button-description">Work with us </small>
+                <h4 className="button-name">Programs</h4>
+              </div>
             </a>
           </div>
         </section>
-                
+
         <section style={{ marginTop: "5%" }} class="sponsor-container">
           <h2 style={{ textAlign: "left", fontWeight: "bold" }}>
             Our Current Sponsors
@@ -355,8 +365,7 @@ const Home = () => {
             paddingTop: "20px",
           }}
           class="sponsor-carousel-container"
-        >
-        </section>
+        ></section>
 
         {/*  <section style={{ marginTop: "5%" }} class="sponsor-container">
           <h2 style={{ fontWeight: "bold" }}>Our Sponsors</h2>

@@ -15,7 +15,7 @@
 }
 
 .heromission-content {
-  padding: 0px
+  padding: 0px;
 }
 
 #home-illustration {
@@ -28,7 +28,6 @@
   display: flex;
   justify-content: center;
   text-align: center;
-  margin: 70px;
 }
 
 .call-to-action-title {
@@ -38,7 +37,7 @@
 /* start of what we do container */
 .what-we-do-container {
   /* Adjust container styles as needed */
-  margin-top: 30px;
+  margin-top: 80px;
   /* Example margin */
 }
 
@@ -115,8 +114,8 @@
 
 .btn-primary {
   color: black;
-  background-color: #9CE2D3;
-  border-color: #9CE2D3;
+  background-color: #9ce2d3;
+  border-color: #9ce2d3;
 }
 
 .headerName {
@@ -136,7 +135,7 @@
 
 .get-involved-grid {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   /* background-image: url('../images/alumnitestimg.png'); /* Set your background image URL */
   background-color: #ffffff;
   min-height: 200px;
@@ -148,10 +147,10 @@
 
 .get-involved-column {
   padding: 16px;
-  background-color: #9CE2D3;
+  background-color: #9ce2d3;
   border-radius: 25px;
   /* flex-basis: 30%; */
-  width: 400px;
+  width: 500px;
   height: auto;
   box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
 }
@@ -161,31 +160,29 @@
   box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.25);
 }
 
-.arrow-img{
+.arrow-img {
   display: flex;
   justify-content: flex-start;
 }
 
- .panel-link{
+.panel-link {
   display: flex;
   justify-content: center;
-  padding-right: 25px;
-  padding-left: 25px;
-  
-} 
+  padding-right: 48px;
+  padding-left: 48px;
+}
 
-.panel-link:hover{
+.panel-link:hover {
   color: #000000;
 }
 
-.button-name{
+.button-name {
   display: flex;
   justify-content: flex-start;
   padding-left: 20px;
-  
 }
 
-.button-description{
+.button-description {
   display: flex;
   justify-content: flex-start;
   padding-left: 22px;
@@ -234,4 +231,3 @@
   opacity: 0.8;
   /* Adjust dot opacity if needed */
 }
-
