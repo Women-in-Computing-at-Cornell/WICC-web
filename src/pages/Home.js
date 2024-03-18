@@ -28,7 +28,6 @@ const Home = () => {
 
   return (
     <div>
-      {/* <Image style = {{maxWidth: '100%', height: 'auto'}} src={boardGroupPic} id="hero-image" /> */}
       <div className="home-container">
         <section
           style={{
@@ -113,7 +112,6 @@ const Home = () => {
             </p>
           </div>
         </section>
-        {/* Title "What we do" */}
         <section
           style={{ paddingLeft: "5%", paddingRight: "5%" }}
           className="what-we-do-container"
@@ -126,8 +124,8 @@ const Home = () => {
           </div>
         </section>
         <section
-          style={{ paddingLeft: "5%", paddingRight: "5%", paddingTop: "20px" }}
-          className="carousel-container"
+          style={{ paddingLeft: "1%", paddingRight: "1%", paddingTop: "32px" }}
+          class="carousel-container"
         >
           <PCarousel imgNames={homepics} pics={homepicsname} />
         </section>
@@ -227,48 +225,58 @@ const Home = () => {
         </section>
 
         <section className="call-to-action-container">
-
           <div className="get-involved-grid">
-          <a href="/#join" className="panel-link">
-            <div className="get-involved-column">
-              
+            <a href="/#join" className="panel-link">
+              <div className="get-involved-column">
                 {/* <button className="panel-button"> */}
-                  {/* <span>&#x2197;</span> */}
-                  <Image className= "arrow-img" style={{ maxWidth: "40px" }} src={arrowbutton}></Image>
+                {/* <span>&#x2197;</span> */}
+                <Image
+                  className="arrow-img"
+                  style={{ maxWidth: "40px" }}
+                  src={arrowbutton}
+                ></Image>
                 {/* </button> */}
-              
-              <small className = "button-description">Get Involved </small>
-              <h4 className = "button-name">Join Us</h4>
-            </div>
+
+                <small className="button-description">Get Involved </small>
+                <h4 className="button-name">Join Us</h4>
+              </div>
             </a>
 
             <a
-                href="https://drive.google.com/file/d/1s_okJqDYmfD5-3jEPCPKvbtP_TYruXXD/view?usp=sharing"
-                className="panel-link"
-              >
-            <div className="get-involved-column">
-              
+              href="https://drive.google.com/file/d/1s_okJqDYmfD5-3jEPCPKvbtP_TYruXXD/view?usp=sharing"
+              className="panel-link"
+            >
+              <div className="get-involved-column">
                 {/* <button className="panel-button">
                   <span>&#x2197;</span>
                 </button> */}
-                <Image className= "arrow-img" style={{ maxWidth: "40px" }} src={arrowbutton}></Image>
-              
-              <small className = "button-description">Collaborate with us </small>
-              <h4 className = "button-name">Sponsors</h4>
-            </div>
+                <Image
+                  className="arrow-img"
+                  style={{ maxWidth: "40px" }}
+                  src={arrowbutton}
+                ></Image>
+
+                <small className="button-description">
+                  Collaborate with us{" "}
+                </small>
+                <h4 className="button-name">Sponsors</h4>
+              </div>
             </a>
 
             <a href="/#programs" className="panel-link">
-            <div className="get-involved-column">
-             
+              <div className="get-involved-column">
                 {/* <button className="panel-button">
                   <span>&#x2197;</span>
                 </button> */}
-                <Image className= "arrow-img" style={{ maxWidth: "40px" }} src={arrowbutton}></Image>
-              
-              <small className = "button-description">Work with us </small>
-              <h4 className = "button-name">Programs</h4>
-            </div>
+                <Image
+                  className="arrow-img"
+                  style={{ maxWidth: "40px" }}
+                  src={arrowbutton}
+                ></Image>
+
+                <small className="button-description">Work with us </small>
+                <h4 className="button-name">Programs</h4>
+              </div>
             </a>
           </div>
         </section>
