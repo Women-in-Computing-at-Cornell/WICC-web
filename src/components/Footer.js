@@ -17,10 +17,17 @@ class Footer extends React.Component {
         style={{ paddingTop: "1%" }}
       >
         <Navbar.Brand className="mr-auto" href="/">
-          Women in Computing at Cornell
-          <br />
-          <Navbar.Text style={{ fontSize: "70%", color: "black" }}>
-            © 2023 Women in Computing at Cornell. All Rights Reserved.
+          <Navbar.Text
+            style={{
+              fontSize: "70%",
+              color: "black",
+              flex: "1",
+            }}
+          >
+            <p>
+              Women in Computing at Cornell <br /> © 2023 Women in Computing at
+              Cornell. All Rights Reserved.
+            </p>
           </Navbar.Text>
         </Navbar.Brand>
         <Navbar.Brand className="mr-auto" href="/">
