@@ -1,135 +1,51 @@
-import React, { Component } from "react";
+import React from "react";
 import "./pages.css";
-import { sponsorData } from "./sponsorData";
 import Image from "react-bootstrap/Image";
-// import { WICCSponsors } from "./WICCsponsors.pdf";
+import sponsorsImg from "../images/sponsors/sponsers_page_imgs/sponsors_img.jpg";
+import CurrentSponsors from "../components/currentSponsors.js";
 
-export default class Sponsors extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      value: "pres",
-      displayData: [],
-    };
-  }
-
-  render() {
-    const gold = [];
-    const silver = [];
-    const platinum = [];
-    const graceHopper = [];
-
-    // const displayTemp = [];
-
-    sponsorData.forEach((d, i) => {
-      if (d.level === "Platinum") {
-        platinum.push(d);
-      }
-      if (d.level === "Gold") {
-        gold.push(d);
-      }
-      if (d.level === "Grace Hopper") {
-        graceHopper.push(d);
-      }
-      if (d.level === "Silver") {
-        silver.push(d);
-      }
-    });
-
-    console.log("check");
-
-    function importAll(r) {
-      let images = {};
-      r.keys().forEach((item) => {
-        images[item.replace("./", "")] = r(item);
-      });
-      return images;
-    }
-
-    const sponsorHeadshots = importAll(
-      require.context("../images/sponsors", false, /\.jpg/)
-    );
-
-    return (
-      <div className="containerPage">
-        <div style={{ marginBottom: "10%" }}>
-          {/* <h4 style={{ marginBottom: '3%', fontWeight: 'bold' }}>Gold</h4>
-          {gold.map((value) => {
-            return <a href={value.link}><Image src={(sponsorHeadshots[value.sponsor + '.jpg'])} width='25%' height='10%' style={{ marginTop: '-6%', paddingRight: '20px' }} /></a>
-          })}
-        </div>
-        <div style={{ marginBottom: '10%' }}>
-          <h4 style={{ marginBottom: '3%', fontWeight: 'bold' }}>Silver</h4>
-          {silver.map((value) => {
-            return <a href={value.link}><Image src={(sponsorHeadshots[value.sponsor + '.jpg'])} width='19%' height='5%' style={{ marginTop: '-2%', paddingRight: '20px' }} /></a>
-          })
-          }
-        </div>
-        <h4 style={{ marginBottom: '3%', fontWeight: 'bold' }}>Platinum</h4>
-        {
-          platinum.map((value) => {
-            return <a href={value.link}><Image src={(sponsorHeadshots[value.sponsor + '.jpg'])} width='15%' height='2%' style={{ marginBottom: '2%', paddingRight: '20px' }} /></a>
-          })
-        } */}
-          <h4 style={{ marginBottom: "8%", fontWeight: "bold" }}>Platinum</h4>
-          {platinum.map((value) => {
-            return (
-              <a href={value.link}>
-                <Image
-                  src={sponsorHeadshots[value.sponsor + ".jpg"]}
-                  width="15%"
-                  height="5%"
-                  style={{ marginTop: "-6%", paddingRight: "10px" }}
-                />
-              </a>
-            );
-          })}
-        </div>
-        <div style={{ marginBottom: "10%" }}>
-          <h4 style={{ marginBottom: "3%", fontWeight: "bold" }}>Gold</h4>
-          {gold.map((value) => {
-            return (
-              <a href={value.link}>
-                <Image
-                  src={sponsorHeadshots[value.sponsor + ".jpg"]}
-                  width="19%"
-                  height="5%"
-                  style={{ marginTop: "-2%", paddingRight: "20px" }}
-                />
-              </a>
-            );
-          })}
-        </div>
-        <div style={{ marginBottom: "8%" }}>
-          <h4 style={{ marginBottom: "3%", fontWeight: "bold" }}>Silver</h4>
-          {silver.map((value) => {
-            return (
-              <a href={value.link}>
-                <Image
-                  src={sponsorHeadshots[value.sponsor + ".jpg"]}
-                  width="15%"
-                  height="2%"
-                  style={{ marginBottom: "2%", paddingRight: "20px" }}
-                />
-              </a>
-            );
-          })}
+const Sponsors = () => {
+  return (
+    <div>
+      <section
+        style={{
+          paddingLeft: "202px",
+          width: "100%",
+          height: "100%",
+          display: "flex",
+          flexDirection: "row",
+          alignItems: "center",
+          justifyContent: "space-between",
+        }}
+      >
+        <div>
+          <h2
+            style={{
+              textAlign: "left",
+              fontWeight: "700",
+              fontFamily: "Mulish",
+              fontSize: "25px",
+              fontStyle: "normal",
+              lineHeight: "150%",
+            }}
+          >
+            Empowering Our Mission Through Industry Partnerships
+          </h2>
+          <p>
+            WICC would not be where we are without our awesome sponsors! By
+            sponsoring us, you support many young women with great aspirations
+            for careers in industry and academia.
+          </p>
         </div>
 
-        <h4 style={{ marginBottom: "3%", fontWeight: "bold" }}>Grace Hopper</h4>
-        {graceHopper.map((value) => {
-          return (
-            <a href={value.link}>
-              <Image
-                src={sponsorHeadshots[value.sponsor + ".jpg"]}
-                width="15%"
-                height="2%"
-                style={{ marginBottom: "2%", paddingRight: "20px" }}
-              />
-            </a>
-          );
-        })}
-      </div>
-    );
-  }
-}
+        <Image
+          style={{ maxHeight: "597.412px", maxWidth: "768.509px" }}
+          src={sponsorsImg}
+        ></Image>
+      </section>
+      <CurrentSponsors />
+    </div>
+  );
+};
+
+export default Sponsors;
