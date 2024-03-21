@@ -236,18 +236,18 @@ export default class Membership extends Component {
               Reach out to the following WICC members for clarification
               regarding to Active Membership.
             </p>
-            {sec.map((s, i) => (
-              <div class="contact">
-                <img
-                  src={boardHeadshots[s.netId + ".jpg"]}
-                  class="profile-pic"
+
+            {
+              sec.map((s, i) => (
+                <QuestionsCard
+                  name={s.name}
+                  title={s.title}
+                  img={boardHeadshots[s.netId + ".jpg"]}
+                  netId={s.netId}
+
                 />
-                <div class="contact-details">
-                  <div style={{ fontWeight: "bold" }}>{s.name}</div>
-                  <div>{s.netId}@cornell.edu</div>
-                </div>
-              </div>
-            ))}
+              ))
+            }
           </div>
         </div>
       </>
