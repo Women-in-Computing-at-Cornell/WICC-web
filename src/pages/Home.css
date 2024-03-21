@@ -146,11 +146,13 @@
 }
 
 .get-involved-column {
-  padding: 16px;
+  padding: 5%;
   background-color: #9ce2d3;
   border-radius: 25px;
-  /* flex-basis: 30%; */
-  width: 500px;
+  flex-basis: 30%;
+  min-width: 330px;
+  width: auto;
+  max-width: 500px;
   height: auto;
   box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
 }
