@@ -139,20 +139,23 @@
   /* background-image: url('../images/alumnitestimg.png'); /* Set your background image URL */
   background-color: #ffffff;
   min-height: 200px;
+  width: 100%;
+  padding-left: 48px;
+  padding-right: 48px;
   background-size: cover;
   background-position: center top;
   padding-top: 40px;
   padding-bottom: 32px;
+  margin-left: 32px;
+  margin-right: 32px;
 }
 
 .get-involved-column {
   padding: 5%;
   background-color: #9ce2d3;
+  min-width: 400px;
   border-radius: 25px;
   flex-basis: 30%;
-  min-width: 330px;
-  width: auto;
-  max-width: 500px;
   height: auto;
   box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
 }
