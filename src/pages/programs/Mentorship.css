@@ -1,0 +1,85 @@
+.page {
+    background-color: rgba(247, 249, 248, 1);
+    margin: 0;
+}
+.wrapper {
+    /* margin: 5%; */
+    margin-left: 9%;
+    margin-right: 12%;
+    display: flex;
+    flex-direction: column;
+}
+.mentorship-top{
+    height: 651px;
+}
+.outer-div{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 80px;
+}
+
+.mentee-div, .mentor-div {
+    /* height: 539px; */
+    width:688px;
+    background-color: rgba(156, 226, 211, 0.3);
+}
+
+.mentor-div {
+    padding-top: 54px;
+    padding-bottom: 29px;
+    padding-left: 85px;
+    padding-right: 85px;
+    margin-right: 57px;
+}
+
+.mentee-div {
+    padding-top: 49px;
+    padding-bottom: 29px;
+    padding-left: 85px;
+    padding-right: 85px;
+}
+
+.mentor-div p, .mentee-div p{
+    color: #000;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 30px */
+}
+
+.mentor-div h3 {
+    font-weight: 1000;
+}
+.mentor-div ul, .mentee-div ul {
+    padding-inline-start: 30px;
+}
+.mentor-div h5, .mentee-div h5 {
+    font-weight: 1000;
+}
+.mentee-div h3 {
+    font-weight: 1000;
+}
+.question-wrapper {
+    background-color: white;
+}
+.question-div {
+    margin:auto;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 56px;
+}
+
+.question-div h5{
+    font-weight: 1000;
+    font-size: x-large;
+}
+
+.q-photos {
+    display: flex;
+    flex-direction: row;
+}
+.person1 {
+    margin-left: 70px;
+    margin-right:88px;
+}
