@@ -16,8 +16,6 @@ import Roblox from "../images/sponsors/sponsorpics/silver/Roblox.jpg";
 import Accenture from "../images/sponsors/sponsorpics/silver/Accenture.jpg";
 import HRT from "../images/sponsors/sponsorpics/silver/HRT.jpg";
 import MathWorks from "../images/sponsors/sponsorpics/silver/MathWorks.jpg";
-import JSConfetti from 'js-confetti'
-
 
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 
@@ -29,13 +27,13 @@ function importAll(r) {
   });
   return images;
 }
-const jsConfetti = new JSConfetti()
+// const jsConfetti = new JSConfetti()
 
-jsConfetti.addConfetti({
-  emojis: ['🌺', '🌷', '🌼', '🌿', '🍃', '🌸'],
-  //for st. patty's day
-  // emojis: ['🍀', '☘️'],
-})
+// jsConfetti.addConfetti({
+//   emojis: ['🌺', '🌷', '🌼', '🌿', '🍃', '🌸'],
+//   //for st. patty's day
+//   // emojis: ['🍀', '☘️'],
+// })
 const PCarousel = ({ imgNames, pics }) => {
   const renderImages = () => {
     const imageGroups = [];

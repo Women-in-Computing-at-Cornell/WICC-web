@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 import {
@@ -89,8 +90,36 @@ export default class Lunch extends Component {
           {/* </Row> */}
         </div>
         <br />
-        <h3>Testimonials</h3>
-        <Container>
+        
+        <Col className = "testimonial-col">
+          <Row>
+            <h3 className = "testimonial-title">What Alumni Have Said</h3>
+          </Row>
+          <Row className = "testimonial-row">
+            <Card className = "testimonial-card">
+            <h4 className = "testimonial-person">Candice ’22</h4>
+            <p className = "testimonial-quote"> "The program was a unique and enriching opportunity to connect
+                with faculty. I’ve learned a great deal about different journeys
+                in tech and feel more inspired to forge my own path."</p>
+            </Card>
+            <Card className = "testimonial-card">
+            <h4 className = "testimonial-person">Emory ’24</h4>
+            <p className = "testimonial-quote"> "I loved Lunch Bunch! I found a community of hardworking and
+                inspiring women, and got to learn about the journey of many
+                successful professors and the cool projects that they’re working
+                on."</p>
+            </Card>
+            <Card className = "testimonial-card">
+            <h4 className = "testimonial-person">Shreya ’24</h4>
+            <p className = "testimonial-quote">"Lunch Bunch was an incredible opportunity for me to directly
+                hear from professors in Cornell Computing, and take away
+                valuable lessons from their varied experiences, journeys and
+                advice!"</p>
+            </Card>
+          </Row>
+        </Col>
+
+        {/* <Container>
           <Row style={{ paddingBottom: "1%" }}>
             <div class="vertLine"></div>
             <Col style={{ paddingRight: "5%", paddingLeft: "0%" }}>
@@ -122,7 +151,7 @@ export default class Lunch extends Component {
               <p class="sub">~ Shreya ’24</p>
             </Col>
           </Row>
-        </Container>
+        </Container> */}
         <center>
           <h5 style={{ paddingTop: "5%" }}>Questions?</h5>
           <Container style={{ paddingRight: "10%" }}>
