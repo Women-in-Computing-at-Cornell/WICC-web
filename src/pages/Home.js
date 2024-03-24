@@ -6,6 +6,7 @@ import arrowbutton from "../images/icons/circle-arrows.png";
 import newmissionImg from "../images/wiccnewlogo.png";
 import PCarousel from "../components/PCarousel";
 import CurrentSponsors from "../components/currentSponsors.js"
+import ImgCarousel from "../components/ImgCarousel.jsx";
 
 function importAll(r) {
   let images = {};
@@ -25,6 +26,8 @@ const Home = () => {
     )
   );
   const homepics = Object.keys(homepicsname);
+
+  console.log(homepics)
 
   return (
     <div>
@@ -124,10 +127,10 @@ const Home = () => {
           </div>
         </section>
         <section
-          style={{ paddingLeft: "1%", paddingRight: "1%", paddingTop: "32px" }}
-          class="carousel-container"
+
+          className=""
         >
-          <PCarousel imgNames={homepics} pics={homepicsname} />
+          <ImgCarousel imgNames={homepics} pics={homepicsname} />
         </section>
         <section
           style={{ paddingLeft: "5%", paddingRight: "5%", paddingTop: "50px" }}
@@ -223,19 +226,22 @@ const Home = () => {
             <div className="horizontal-line"></div>
           </div>
         </section>
+        {/* <section id="getinvolved">
+          
+
+        </section> */}
 
         <section className="call-to-action-container">
           <div className="get-involved-grid">
             <a href="/#join" className="panel-link">
               <div className="get-involved-column">
-                {/* <button className="panel-button"> */}
-                {/* <span>&#x2197;</span> */}
+
                 <Image
                   className="arrow-img"
                   style={{ maxWidth: "40px" }}
                   src={arrowbutton}
                 ></Image>
-                {/* </button> */}
+
 
                 <small className="button-description">Get Involved </small>
                 <h4 className="button-name">Join Us</h4>
@@ -247,9 +253,6 @@ const Home = () => {
               className="panel-link"
             >
               <div className="get-involved-column">
-                {/* <button className="panel-button">
-                  <span>&#x2197;</span>
-                </button> */}
                 <Image
                   className="arrow-img"
                   style={{ maxWidth: "40px" }}
@@ -265,9 +268,7 @@ const Home = () => {
 
             <a href="/#programs" className="panel-link">
               <div className="get-involved-column">
-                {/* <button className="panel-button">
-                  <span>&#x2197;</span>
-                </button> */}
+
                 <Image
                   className="arrow-img"
                   style={{ maxWidth: "40px" }}
@@ -280,7 +281,7 @@ const Home = () => {
             </a>
           </div>
         </section>
-                
+
         <CurrentSponsors />
 
         {/*  <section style={{ marginTop: "5%" }} class="sponsor-container">
