@@ -21,7 +21,12 @@ const Sponsors = () => {
         </div>
 
         <Image
-          style={{ maxHeight: "570.412px", maxWidth: "680.509px" }}
+          style={{
+            maxHeight: "570.412px",
+            maxWidth: "680.509px",
+            maxWidth: "100%",
+            height: "auto",
+          }}
           src={sponsorsImg}
         ></Image>
       </section>

@@ -24,3 +24,24 @@
   font-weight: 400;
   line-height: 150%;
 }
+
+/* Text Responsive smaller screen */
+@media screen and (max-width: 768px) {
+  .top-header {
+    font-size: 24px;
+  }
+
+  .top-text {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .top-header {
+    font-size: 20px;
+  }
+
+  .top-text {
+    font-size: 13px;
+  }
+}
