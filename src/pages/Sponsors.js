@@ -3,35 +3,17 @@ import "./pages.css";
 import Image from "react-bootstrap/Image";
 import sponsorsImg from "../images/sponsors/sponsers_page_imgs/sponsors_img.jpg";
 import CurrentSponsors from "../components/currentSponsors.js";
+import "./Sponsors.css";
 
 const Sponsors = () => {
   return (
     <div>
-      <section
-        style={{
-          paddingLeft: "202px",
-          width: "100%",
-          height: "100%",
-          display: "flex",
-          flexDirection: "row",
-          alignItems: "center",
-          justifyContent: "space-between",
-        }}
-      >
+      <section className="top-section">
         <div>
-          <h2
-            style={{
-              textAlign: "left",
-              fontWeight: "700",
-              fontFamily: "Mulish",
-              fontSize: "25px",
-              fontStyle: "normal",
-              lineHeight: "150%",
-            }}
-          >
+          <h2 className="top-header">
             Empowering Our Mission Through Industry Partnerships
           </h2>
-          <p>
+          <p className="top-text">
             WICC would not be where we are without our awesome sponsors! By
             sponsoring us, you support many young women with great aspirations
             for careers in industry and academia.
@@ -39,7 +21,7 @@ const Sponsors = () => {
         </div>
 
         <Image
-          style={{ maxHeight: "597.412px", maxWidth: "768.509px" }}
+          style={{ maxHeight: "570.412px", maxWidth: "680.509px" }}
           src={sponsorsImg}
         ></Image>
       </section>
