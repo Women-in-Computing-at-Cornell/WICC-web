@@ -2,8 +2,8 @@
   background-color: #9CE2D3;
   height: 10;
 } */
-body { 
-  overflow-x: hidden; 
+body {
+  overflow-x: hidden;
 }
 
 .upcoming-title {
@@ -32,6 +32,8 @@ body {
   display: flex;
   flex-direction: row;
   padding-bottom: 200px;
+  padding-top: 100px;
+  background: linear-gradient(#ffffff, #9CE2D3, #FBFBFB);
 }
 
 .column-1 {
