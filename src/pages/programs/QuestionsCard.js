@@ -13,29 +13,18 @@ class QuestionsCard extends React.Component {
   render() {
     const { name, title, img, netId } = this.props;
     return (
-      <div>
-        <Card style={{ width: "15rem", height: "80%", border: "none" }}>
-          <Card.Body>
-            <Card.Img variant="top" src={img} class="questionsImg" />
-            <br />
-            {/* <br /> */}
-            <center>
-              <Card.Text>
-                {name}, {title}
-              </Card.Text>
-              <Card.Text>
-                <a
-                  href={"mailto:" + this.props.netId + "@cornell.edu"}
-                  class="emailLink"
-                >
-                  {/* <Image src={Email} />  */}
-                  {netId}@cornell.edu
-                </a>
-              </Card.Text>
-            </center>
-          </Card.Body>
-        </Card>
-      </div>
+      <>
+        <div class="contact">
+          <img
+            src={img}
+            class="profile-pic"
+          />
+          <div class="contact-details">
+            <div style={{ fontWeight: "bold" }}>{name}</div>
+            <div>{netId}@cornell.edu</div>
+          </div>
+        </div>
+      </>
     );
   }
 }
