@@ -68,83 +68,62 @@ color: grey
   border-radius: 50%;
 }
 
-
-.full-width-banner {
-  position: relative; 
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
-.banner {
-  width: 100%;
-  height:auto;
-  filter: brightness(50%);
+.lunch-container{
+  background-color: #F8F9FA;
 }
 
-.banner-text {
-  position: absolute; /* Position text over the image */
-  top: 60%; /* Center vertically */
-  left: 0; /* Align to the left side of the screen */
-  transform: translateY(-50%); /* Adjust vertical positioning to the center */
-  color: white; /* Text color */
-  text-align: left; /* Align text to the left */
-  z-index: 2; /* Position the text above the image and any other positioned element */
-  max-width: 40%; /* Maximum width of the text block */
-  padding-left: 8%; /* Add some padding on the left if needed */
-}
-
-.banner-header {
-  font-size: 3em;
-  font-weight: bold;
-}
-
-.section-title {
-  font-size: 1.5em;
-  font-weight: bold;
+.lunch-title{
+  padding-top: 100px;
+  padding-left: 80px;
+  padding-bottom: 100px;
 
 }
 
-.container {
-  width: 100%;
+.lunch-description{
+  height: auto;
+  width: 500px;
+  padding-left: 55px;
+}
+
+.lunch-image{
+  height: auto;
+  width: 500px;
+}
+
+.lunch-image-col{
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  margin: 0;
-  padding: 0;
+  padding-bottom: 40px;
 }
 
-
-.content-row {
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
+.testimonial-card{
+  margin-left: 30px;
+  margin-right: 20px;
+  width: 350px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #ffffff;
+  border-color: #ffffff;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
 }
 
-
-.column {
-  flex: 1 1 0%;
-  align-self: left;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  gap: 40px;
-  border-right: 4px solid #9CE2D3;
-  height: 100%;
+.testimonial-row{
+  justify-content: center;
 }
 
-.column-header {
-  color: #212529;
-  font-size: 94px;
-  font-weight: 700;
+.testimonial-person{
+  padding-bottom: 10px;
+  font-size: medium;
 }
 
-.text-content {
-  align-self: left;
-  color: #4D4D4D;
-  font-size: 18px;
-  font-weight: 400;
-  word-wrap: break-word;
-  height:100%;
+.testimonial-quote{
+  font-size: small;
+}
+
+.testimonial-title{
+  margin-left: 100px;
+  margin-bottom: 20px;
 }

@@ -5,6 +5,8 @@ import Watermark from "../images/thick-wicc-logo.png";
 import "./nav.css";
 import Button from "react-bootstrap/Button";
 
+
+
 class NavBar extends React.Component {
   render() {
     const linkStyle = {
