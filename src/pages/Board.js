@@ -16,26 +16,8 @@ import {
   advisors,
   faculty,
 } from "./boardData";
-import Sponsors from "./Sponsors";
-import Faculty from "./Faculty";
-import Alumni from "./Alumni";
-import Member from "../components/memberCard";
 import Subteam from "../components/Subteam";
 import hero from "../images/about-pictures/abouthero.jpg";
-
-function importAll(r) {
-  let images = {};
-  r.keys().forEach((item) => (images[item.replace("./", "")] = r(item)));
-  return images;
-}
-
-const boardHeadshots = importAll(
-  require.context("../images/headshots/board", false, /\.(jpg|JPG)/)
-);
-
-const advisorHeadshots = importAll(
-  require.context("../images/headshots/board/advisors", false, /\.(jpg|JPG)/)
-);
 
 const teams = [
   faculty,
@@ -95,11 +77,11 @@ export default class Board extends Component {
           </p>
           <div style={{ display: "flex" }}>
             <div style={{ flexGrow: 1 }}>
-              {teams.map((t, key) => (
+              {teams.map((team, key) => (
                 <div key={key} style={{ marginBottom: "20px" }}>
                   <div>
-                    {t.name}
-                    <Subteam team={t} />
+                  <span className="subteam-name">{team.name}</span>
+                    <Subteam team={team} />
                   </div>
                 </div>
               ))}

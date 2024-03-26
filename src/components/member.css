@@ -33,8 +33,10 @@
   color: gray;
   padding-right: 35px;
   padding-top: 5px;
+  font-weight: bold;
 }
 
 .name {
   padding-bottom: 32px;
+  font-weight: bold;
 }

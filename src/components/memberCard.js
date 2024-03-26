@@ -5,11 +5,13 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 import "./member.css";
 import defaultImage from "../images/noimage.png";
+import coffeeImage from "../images/coffeeBear.png";
 
-// Ideally, this should be in your main app component or index file
+// Ideally, this should be in our main app component or index file
 Modal.setAppElement("#root"); // Replace '#root' with your actual app root element id
 
 function Member({ name, title, netid, bio, img }) {
+  // for Modal
   const [showDetails, setShowDetails] = useState(false);
 
   const toggleDetails = () => setShowDetails(!showDetails);
@@ -30,6 +32,7 @@ function Member({ name, title, netid, bio, img }) {
         <div className="name">{name}</div>
       </div>
 
+      {/* Member pop up card when profile picture clicked on */}
       <Modal
         isOpen={showDetails}
         onRequestClose={toggleDetails} // Close modal when overlay is clicked
@@ -54,7 +57,7 @@ function Member({ name, title, netid, bio, img }) {
         <div className="modalContent">
           <img src={img || defaultImage} alt={name} className="imageStyle" />
           <div className="modalTextContent">
-            <h3>{name}</h3>
+            <h3 className="name">{name}</h3>
             <p className="modalTextStyle">
               <b>Position:</b> {title}
             </p>

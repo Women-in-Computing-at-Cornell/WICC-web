@@ -44,5 +44,10 @@ a:hover {
 
 .custom-modal-style {
   max-width: none;
-  width: 90%
+  width: 90%;
+  font-weight: bold;
+}
+
+.subteam-name {
+  font-weight: bold;
 }
