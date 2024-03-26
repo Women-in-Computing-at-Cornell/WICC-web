@@ -14,7 +14,7 @@
   text-align: left;
   font-weight: 700;
   font-family: Mulish;
-  font-size: 30px;
+  font-size: 36px;
   font-style: normal;
   line-height: 150%;
 }
@@ -27,23 +27,57 @@
   line-height: 150%;
 }
 
+.benefits-section {
+  display: flex;
+  width: 100%;
+  padding: 96px 110px;
+  align-items: center;
+  gap: 160px;
+  background: var(--3, #fff);
+}
+
+.benefits-header {
+  color: #000;
+  font-family: Mulish;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+.benefits-text {
+  align-self: stretch;
+  color: #000;
+  font-family: Mulish;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  /* max-width: 650px;
+  max-height: 240px; */
+}
+
 /* Text Responsive smaller screen */
 @media screen and (max-width: 768px) {
-  .top-header {
+  .top-header,
+  .benefits-header {
     font-size: 24px;
   }
 
-  .top-text {
+  .top-text,
+  .benefits-text {
     font-size: 15px;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .top-header {
+  .top-header,
+  .benefits-header {
     font-size: 20px;
   }
 
-  .top-text {
+  .top-text,
+  .benefits-text {
     font-size: 13px;
   }
 }
