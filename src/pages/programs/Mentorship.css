@@ -3,21 +3,44 @@
     margin: 0;
 }
 .wrapper {
-    /* margin: 5%; */
-    margin-left: 9%;
-    margin-right: 12%;
     display: flex;
     flex-direction: column;
 }
 .mentorship-top{
     height: 651px;
 }
+
+.mentorship-title{
+    color: var(--3, #FFF);
+    font-family: Mulish;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    margin-left: 150px;
+    margin-top: 216px;
+
+}
+    
 .outer-div{
+    margin-top: 2%;
+    margin-left: 9%;
+    margin-right: 12%;
     display: flex;
     flex-direction: row;
     padding-bottom: 80px;
 }
-
+.description{
+    color: white;
+    width: 594.885px;
+    height: 210px;
+    margin-left: 150px;
+    font-family: Mulish;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 30px */
+}
 .mentee-div, .mentor-div {
     /* height: 539px; */
     width:688px;

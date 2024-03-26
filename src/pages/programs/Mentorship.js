@@ -78,7 +78,10 @@ export default class Mentorship extends Component {
         </Container> */}
           <div className="wrapper">
             <div className="mentorship-top" style={{background:`url(${mentorship})`,
-          backgroundRepeat: 'no-repeat', backgroundSize:"cover", opacity:"70%" }}>
+          backgroundRepeat: 'no-repeat', backgroundSize:"cover", opacity:"80%" }}>
+                <div className="mentorship-title">
+                    Mentorship
+                </div>
                 <div className="description">
                   Our mentorship program strives to encourage and support students
                   who are pursuing studies or future employment in computing by
