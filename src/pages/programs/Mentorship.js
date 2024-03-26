@@ -27,7 +27,7 @@ import "./programPages.css";
 
 export default class Mentorship extends Component {
   render() {
-    let directors = community.filter(
+    let directors = community.members.filter(
       (record) => record.position === "Mentorship Co-Director"
     );
 

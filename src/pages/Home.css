@@ -45,7 +45,7 @@
  /* start of what we do container */
  .what-we-do-container {
   /* Adjust container styles as needed */
-  margin-top: 30px;
+  margin-top: 80px;
   /* Example margin */
  }
  
@@ -160,10 +160,13 @@
  
  .get-involved-grid {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   /* background-image: url('../images/alumnitestimg.png'); /* Set your background image URL */
   background-color: #ffffff;
   min-height: 200px;
+  width: 100%;
+  padding-left: 48px;
+  padding-right: 48px;
   background-size: cover;
   background-position: center top;
   padding-bottom: 10px;
@@ -174,8 +177,7 @@
   padding: 16px;
   background-color: #9CE2D3;
   border-radius: 25px;
-  /* flex-basis: 30%; */
-  width: 400px;
+  flex-basis: 30%;
   height: auto;
   box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
  }
@@ -267,6 +269,4 @@
   opacity: 0.8;
   /* Adjust dot opacity if needed */
  }
- 
- 
- 
+

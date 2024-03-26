@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css?family=Mulish:400,700");
+
+.body {
+  background-color: #f9f9f9cb;
+}
+
+.title {
+  text-align: center;
+  align-items: center;
+  box-sizing: content-box;
+  padding: 50px;
+  padding-top: 320px;
+  padding-right: 240px;
+  padding-bottom: 200px;
+  display: flex;
+  justify-content: center;
+}
+
+* {
+  font-family: Mulish, sans-serif;
+  font-weight: 450;
+}
+
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: url('../images/programs/communityhero.jpg');
+
+  /* Set a specific height */
+  height: 500px;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.header {
+  text-align: center;
+  align-items: center;
+  box-sizing: content-box;
+  font-size: large;
+  width: 100%;
+  background-color: #c8efe1;
+  padding: 30px;
+  border-radius: 8px;
+}
+
+/* DEMO-SPECIFIC STYLES */
+.typewriter h1 {
+  /* color: #fff; */
+  color: rgba(0, 0, 0);
+  font-family: Mulish, sans-serif;
+  font-size: 45px;
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid rgb(0, 255, 162);
+  /* The typwriter cursor */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  margin: 0 auto;
+  /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em;
+  /* Adjust as needed */
+  animation:
+    typing 2.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0
+  }
+
+  to {
+    width: 720px
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+  from,
+  to {
+    border-color: transparent
+  }
+
+  50% {
+    border-color: rgb(152, 216, 193);
+  }
+}
+
+/*CARDS*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Mulish, sans-serif;
+  margin: 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 17rem);
+  gap: 2rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item {
+  position: relative;
+  height: 25rem;
+  background-color: lightGrey;
+  overflow-y: hidden;
+  box-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.1);
+  overflow-y: hidden;
+  border-radius: 8px;
+}
+
+.item h3 {
+  margin: 0;
+  display: block;
+  background-color: rgb(192, 244, 225);
+  padding: 1rem;
+  transform: translate3d(0, -100%, 0);
+  transition: transform 300ms;
+  font-size: 25px;
+  overflow-y: hidden;
+}
+
+.item a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.item a:hover~.item__overlay,
+.item a:focus~.item__overlay {
+  transform: translate3d(0, 0, 0);
+}
+
+.item a:hover~.item__overlay h3,
+.item a:focus~.item__overlay h3 {
+  transform: translate3d(0, 0, 0);
+  overflow-y: hidden;
+}
+
+.item a:hover~.item__overlay .item__body,
+.item a:focus~.item__overlay .item__body {
+  opacity: 1;
+  overflow-y: hidden;
+}
+
+.card-img-div {
+  width: 100%;
+  height: 100%;
+  display: block;
+  max-width: 100%;
+  overflow-y: hidden;
+}
+
+.card-img {
+  width: 550px;
+  overflow: hidden;
+}
+
+.item__overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  font-size: 10px;
+  top: 0;
+  transition: transform 300ms;
+  background-color: rgb(224, 255, 243);
+  transform: translate3d(0, 100%, 0);
+}
+
+.item__body {
+  flex-grow: 1;
+  font-size: 18px;
+  padding: 1rem;
+  opacity: 0;
+  transition: opacity 500ms 100ms;
+}
+
+.item__body p {
+  margin: 0;
+}
+
+/* SLIDES */
+.carousel {
+  width: 50%;
+  height: 50%;
+  margin: auto;
+}
+
+.wicc-away {
+  display: flex;
+  flex-direction: row
+}
+
+.left-half {
+  /* Styling for the elements */
+  flex: 1;
+  /* Equal width for both elements */
+  margin-right: 20px;
+  /* Margin between elements */
+}
+
+.image-caption-container {
+  display: flex;
+  margin: 20px auto;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+  background-color: #f0f0f0;
+}
+
+/* Image styles */
+.image-caption-container img {
+  max-width: 91%;
+  /* padding: 20px; */
+  margin: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 25px;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+  border-radius: 8px;
+}
+
+/* Caption styles */
+.image-caption-container .caption {
+  flex: 1;
+  max-width: 50%;
+  text-align: center;
+  padding: 50px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  font-family: Mulish, sans-serif;
+}

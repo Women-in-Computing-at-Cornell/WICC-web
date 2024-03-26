@@ -165,6 +165,7 @@ export default class Lunch extends Component {
                     {directors[0].netId}@cornell.edu
                   </a>
                 </div> */}
+                
                 <QuestionsCard
                   name={directors[0].name}
                   title={directors[0].title}

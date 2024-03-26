@@ -1,9 +1,6 @@
 import React from "react";
-import Button from "react-bootstrap/Button";
 import Image from "react-bootstrap/Image";
 import "./Home.css";
-import Sponsors from "../pages/Sponsors";
-import { Carousel } from "react-responsive-carousel";
 import semoutlook from "../images/semesteroutlookpic.png";
 import arrowbutton from "../images/icons/circle-arrows.png";
 import newmissionImg from "../images/wiccnewlogo.png";
@@ -32,7 +29,6 @@ function importAll(r) {
  });
  return images;
 }
-
 
 const PCarousel = ({ imgNames, pics }) => {
  const renderImages = () => {
@@ -70,7 +66,6 @@ const PCarousel = ({ imgNames, pics }) => {
  );
 };
 
-
 const Home = () => {
  const homepicsname = importAll(
    require.context(
@@ -80,8 +75,6 @@ const Home = () => {
    )
  );
  const homepics = Object.keys(homepicsname);
-
-
  const sponsorpicsgold = importAll(
    require.context("../images/sponsors/sponsorpics/gold", false, /\.(jpg)$/i)
  );
@@ -94,7 +87,6 @@ const Home = () => {
  const sponsorpicsg = Object.keys(sponsorpicsgold);
  const sponsorpicss = Object.keys(sponsorpicssilver);
  const sponsorpicsp = Object.keys(sponsorpicsplatinum);
-
 
  return (
    <div>
@@ -371,7 +363,6 @@ const Home = () => {
          class="sponsor-carousel-container"
        >
        </section>
-
 
        {/*  <section style={{ marginTop: "5%" }} class="sponsor-container">
          <h2 style={{ fontWeight: "bold" }}>Our Sponsors</h2>

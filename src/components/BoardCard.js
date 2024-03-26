@@ -1,7 +1,6 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
 import Modal from "react-bootstrap/Modal";
-// import Button from 'react-bootstrap/Button';
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -42,7 +41,6 @@ class BoardCard extends React.Component {
             )}
             <br />
             <br />
-            {/* <Image src={img} alt="Card image cap" roundedCircle /> */}
             <center>
               <Card.Title>{title}</Card.Title>
               <Card.Text>{text}</Card.Text>
@@ -67,9 +65,7 @@ class BoardCard extends React.Component {
           centered
           contentClassName="custom-modal-style"
         >
-          <Modal.Header closeButton>
-            {/* <Modal.Title>{title}</Modal.Title> */}
-          </Modal.Header>
+          <Modal.Header closeButton></Modal.Header>
           <Modal.Body>
             <Container>
               <Row>
