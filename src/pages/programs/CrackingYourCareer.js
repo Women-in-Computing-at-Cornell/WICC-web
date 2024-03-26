@@ -18,7 +18,6 @@ import crackingyourcareer from "../../images/programs-pictures/crackingyourcaree
 // import lunchbunch1 from "../../images/programs-pictures/lunchbunch/lunchbunch1.jpg";
 // import lunchbunch2 from "../../images/programs-pictures/lunchbunch/lunchbunch2.jpg";
 // import lunchbunch3 from "../../images/programs-pictures/lunchbunch/lunchbunch3.jpg";
-import cychero from "../../images/programs/cychero.png"
 import QuestionsCard from "./QuestionsCard.js";
 import Image from "react-bootstrap/Image";
 
