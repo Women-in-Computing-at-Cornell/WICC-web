@@ -1,14 +1,6 @@
 .color-nav {
   position: relative;
-  background-color: #f8f9fa;
+  background-color: #9CE2D3;
   height: 10%;
   opacity: 0.8
- }
- 
- 
- .navbar .navbar-brand {
-  display: flex;
-  flex-direction: row;
-  height: 10%;
- }
- 
+}
