@@ -1,10 +1,24 @@
 import React from "react";
 import "./pages.css";
+import "./Sponsors.css"
 import Image from "react-bootstrap/Image";
+import {sponsorData} from "./sponsorData.js";
 import sponsorsImg from "../images/sponsors/sponsers_page_imgs/sponsors_img.jpg";
 import sponsorsCandid from "../images/sponsors/sponsorsCandid.png";
+import whiteCheck from "../images/icons/white-checkmark.svg";
+import grayCheck from "../images/icons/gray-checkmark.svg";
+import whiteX from "../images/icons/white-X.svg";
+import grayX from "../images/icons/gray-X.svg";
 import CurrentSponsors from "../components/currentSponsors.js";
 import "./Sponsors.css";
+
+function getBenefitImage(key, benefit, level) {
+  if (key % 2 === 0) {
+    return benefit[level] ? whiteCheck : whiteX;
+  } else {
+    return benefit[level] ? grayCheck : grayX;
+  }
+}
 
 const Sponsors = () => {
   return (
@@ -65,9 +79,34 @@ const Sponsors = () => {
         </section>
       </div>
 
+      <section>
+        <table className="table" id = "sponsors">
+            <thead>
+              <tr>
+                <th>Specific Benefits</th>
+                <th className = "center">Silver</th>
+                <th className = "center">Gold</th>
+                <th className = "center">Platinum</th>
+              </tr>
+            </thead>
+            <tbody>
+              {sponsorData.map((benefit, key) => (
+                  <tr key = {key}>
+                    <td>{benefit.name}</td>
+                    <td className = "center"><img src={getBenefitImage(key, benefit, "silver")} /></td>
+                    <td className = "center"><img src={getBenefitImage(key, benefit, "gold")} /></td>
+                    <td className = "center"><img src={getBenefitImage(key, benefit, "platinum")} /></td>
+                  </tr>
+                ))}
+            </tbody>
+        </table>
+      </section>
+
       <CurrentSponsors />
     </div>
   );
 };
+
+
 
 export default Sponsors;
