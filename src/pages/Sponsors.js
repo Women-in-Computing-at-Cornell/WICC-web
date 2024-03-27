@@ -2,7 +2,7 @@ import React from "react";
 import "./pages.css";
 import "./Sponsors.css"
 import Image from "react-bootstrap/Image";
-import {sponsorData} from "./sponsorData.js";
+import { sponsorData } from "./sponsorData.js";
 import sponsorsImg from "../images/sponsors/sponsers_page_imgs/sponsors_img.jpg";
 import sponsorsCandid from "../images/sponsors/sponsorsCandid.png";
 import whiteCheck from "../images/icons/white-checkmark.svg";
@@ -79,26 +79,187 @@ const Sponsors = () => {
         </section>
       </div>
 
+
+
+      <section
+        style={{
+          backgroundColor: '#FBFBFB',
+          padding: '40px 10px', // Adjusted padding
+          display: 'flex',
+          justifyContent: 'space-between',
+          gap: '20px', // Reduced space between the boxes by half
+          flexWrap: 'wrap'
+        }}
+      >
+        <div
+          style={{
+            background: '#FFF',
+            borderRadius: '10px',
+            boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.25)',
+            padding: '20px',
+            flex: '0 1 calc(25% - 20px)', // 75% width of the middle box
+            maxWidth: 'calc(25% - 10px)', // Adjusted width, reduced margin
+            marginLeft: '40px',
+          }}
+        >
+          <h2
+            style={{
+              color: 'var(--2, #212529)',
+              fontFamily: 'Mulish',
+              fontSize: '30px',
+              fontStyle: 'normal',
+              fontWeight: '700',
+              lineHeight: '150%', // 45px
+              textAlign: 'left',
+            }}
+          >
+            Listserv Fee
+          </h2>
+          <p
+            style={{
+              color: 'var(--2, #212529)',
+              fontFamily: 'Mulish',
+              fontSize: '16px',
+              fontStyle: 'normal',
+              fontWeight: '700',
+              lineHeight: '150%', // 24px
+              textAlign: 'left',
+              marginBottom: 0, // Removed margin-bottom
+            }}
+          >
+            Want to publicize your company event to 2000+ WICC members?
+          </p>
+          <br />
+          <div style={{ color: 'var(--2, #212529)', fontFamily: 'Mulish', fontSize: '13px', fontStyle: 'normal', fontWeight: '400', lineHeight: '150%' }}>
+            $50 to publize company events on WICC Listserv. Note: A company event entails an event that is not in collaboration with WICC. This fee is waived for all Sliver, Gold, and Platinum WICC Sponsors.
+          </div>
+        </div>
+
+
+        <div
+          style={{
+            background: '#FFF',
+            borderRadius: '10px',
+            boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.25)',
+            padding: '20px',
+            flex: '1 1 calc(40% - 20px)', // Adjusted width, reduced margin
+            maxWidth: 'calc(40% - 10px)', // Adjusted width, reduced margin
+            marginRight: '5px', // Reduced margin between the boxes by half
+          }}
+        >
+          <h2
+            style={{
+              color: 'var(--2, #212529)',
+              fontFamily: 'Mulish',
+              fontSize: '30px',
+              fontStyle: 'normal',
+              fontWeight: '700',
+              lineHeight: '150%', // 45px
+              textAlign: 'left',
+            }}
+          >
+            Other Ways to Support Us
+          </h2>
+          <ul style={{ listStyleType: 'none', padding: 0 }}>
+            <li style={{ color: 'var(--2, #212529)', fontFamily: 'Mulish', fontSize: '16px', fontStyle: 'normal', fontWeight: '700', lineHeight: '150%' }}>
+              -$1200/student Grace Hopper Scholarship
+            </li>
+            <li style={{ color: 'var(--2, #212529)', fontFamily: 'Mulish', fontSize: '16px', fontStyle: 'normal', fontWeight: '700', lineHeight: '150%' }}>
+              -$1200/student Tapia Conference
+            </li>
+            <li style={{ color: 'var(--2, #212529)', fontFamily: 'Mulish', fontSize: '16px', fontStyle: 'normal', fontWeight: '700', lineHeight: '150%' }}>
+              -Sponsor a mentorship event, social event, or general body meeting.
+            </li>
+          </ul>
+          <div style={{ color: 'var(--2, #212529)', fontFamily: 'Mulish', fontSize: '13px', fontStyle: 'normal', fontWeight: '400', lineHeight: '150%' }}>
+            Note: Hosting an event without sponsorship is possible. There is a single Event Fee (In-Person and Virtual): $400 for both public/invite-only events, free for non-profits. We reserve the right to discontinue partnership with companies whose actions or values do not adhere to WICC’s values of diversity and inclusivity.
+          </div>
+        </div>
+
+
+        <div
+          style={{
+            background: '#FFF',
+            borderRadius: '10px',
+            boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.25)',
+            padding: '20px',
+            flex: '0 1 calc(25% - 20px)', // 75% width of the middle box
+            maxWidth: 'calc(25% - 10px)', // Adjusted width, reduced margin
+            marginRight: '40px',
+          }}
+        >
+          <h2
+
+
+            style={{
+              color: 'var(--2, #212529)',
+              fontFamily: 'Mulish',
+              fontSize: '30px',
+              fontStyle: 'normal',
+              fontWeight: '700',
+              lineHeight: '150%', // 45px
+              textAlign: 'left',
+            }}
+          >
+            Tiers
+          </h2>
+          <p
+            style={{
+              color: 'var(--2, #212529)',
+              fontFamily: 'Mulish',
+              fontSize: '16px',
+              fontStyle: 'normal',
+              fontWeight: '700',
+              lineHeight: '150%', // 24px
+              textAlign: 'left',
+              marginBottom: 0, // Removed margin-bottom
+            }}
+          >
+            Silver ($1000)
+          </p>
+          <p
+            style={{
+              color: 'var(--2, #212529)',
+              fontFamily: 'Mulish',
+              fontSize: '16px',
+              fontStyle: 'normal',
+              fontWeight: '700',
+              lineHeight: '150%', // 24px
+              textAlign: 'left',
+              marginBottom: 0, // Removed margin-bottom
+            }}
+          >
+            Gold ($2000)
+            <br />
+            Platinum ($3000)
+          </p>
+          <br />
+          <div style={{ color: 'var(--2, #212529)', fontFamily: 'Mulish', fontSize: '13px', fontStyle: 'normal', fontWeight: '400', lineHeight: '150%' }}>
+            We have varying levels of sponsorship with different benefits below. Your support makes a big difference!
+          </div>
+        </div>
+      </section>
+
       <section>
-        <table className="table" id = "sponsors">
-            <thead>
-              <tr>
-                <th>Specific Benefits</th>
-                <th className = "center">Silver</th>
-                <th className = "center">Gold</th>
-                <th className = "center">Platinum</th>
+        <table className="table" id="sponsors">
+          <thead>
+            <tr>
+              <th>Specific Benefits</th>
+              <th className="center">Silver</th>
+              <th className="center">Gold</th>
+              <th className="center">Platinum</th>
+            </tr>
+          </thead>
+          <tbody>
+            {sponsorData.map((benefit, key) => (
+              <tr key={key}>
+                <td>{benefit.name}</td>
+                <td className="center"><img src={getBenefitImage(key, benefit, "silver")} /></td>
+                <td className="center"><img src={getBenefitImage(key, benefit, "gold")} /></td>
+                <td className="center"><img src={getBenefitImage(key, benefit, "platinum")} /></td>
               </tr>
-            </thead>
-            <tbody>
-              {sponsorData.map((benefit, key) => (
-                  <tr key = {key}>
-                    <td>{benefit.name}</td>
-                    <td className = "center"><img src={getBenefitImage(key, benefit, "silver")} /></td>
-                    <td className = "center"><img src={getBenefitImage(key, benefit, "gold")} /></td>
-                    <td className = "center"><img src={getBenefitImage(key, benefit, "platinum")} /></td>
-                  </tr>
-                ))}
-            </tbody>
+            ))}
+          </tbody>
         </table>
       </section>
 
@@ -106,7 +267,5 @@ const Sponsors = () => {
     </div>
   );
 };
-
-
 
 export default Sponsors;
