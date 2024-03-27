@@ -238,7 +238,7 @@ const Home = () => {
 
                 <Image
                   className="arrow-img"
-                  style={{ maxWidth: "40px" }}
+                  style={{ maxWidth: "40px", float: "left" }}
                   src={arrowbutton}
                 ></Image>
 
@@ -255,7 +255,7 @@ const Home = () => {
               <div className="get-involved-column">
                 <Image
                   className="arrow-img"
-                  style={{ maxWidth: "40px" }}
+                  style={{ maxWidth: "40px", float: "left" }}
                   src={arrowbutton}
                 ></Image>
 
@@ -271,7 +271,7 @@ const Home = () => {
 
                 <Image
                   className="arrow-img"
-                  style={{ maxWidth: "40px" }}
+                  style={{ maxWidth: "40px", float: "left" }}
                   src={arrowbutton}
                 ></Image>
 

@@ -139,10 +139,12 @@
 }
 
 .get-involved-column {
+  display: flex;
+  flex-direction: column;
   background-color: #9ce2d3;
   height: 100%;
   border-radius: 25px;
-  padding: 0.5rem;
+  padding: 1rem;
   box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
 }
 
@@ -157,7 +159,7 @@
 }
 
 .panel-link {
-  flex: 1
+  flex: 1;
 }
 
 .panel-link:hover {
@@ -167,14 +169,12 @@
 .button-name {
   display: flex;
   justify-content: flex-start;
-  padding-left: 20px;
 }
 
 .button-description {
   display: flex;
   justify-content: flex-start;
-  padding-left: 22px;
-  padding-top: 25px;
+  padding-top: 1rem;
 }
 
 .carousel-wrapper {
