@@ -11,8 +11,8 @@ import {
   advisors,
 } from "../boardData";
 import mentorship from "../../images/programs/mentorship.jpg";
+import mentorship1 from "../../images/programs-pictures/mentorship1.jpeg"
 import QuestionsCard from "./QuestionsCard.js";
-
 import Image from "react-bootstrap/Image";
 
 import medal from "../../images/medal.jpg";
@@ -79,18 +79,44 @@ export default class Mentorship extends Component {
           <div className="wrapper">
             <div className="mentorship-top" style={{background:`url(${mentorship})`,
           backgroundRepeat: 'no-repeat', backgroundSize:"cover", opacity:"80%" }}>
-                <div className="mentorship-title">
-                    Mentorship
-                </div>
-                <div className="description">
-                  Our mentorship program strives to encourage and support students
-                  who are pursuing studies or future employment in computing by
-                  connecting them with more experienced upperclassmen. The role of
-                  the mentor is to empower their mentees and enhance their
-                  interests in computing. Mentors and mentees will be matched
-                  primarily based on academic and career interests.
-                </div>
+              <div className="mentorship-title">
+                  Mentorship
               </div>
+              <div className="description">
+                Our mentorship program strives to encourage and support students
+                who are pursuing studies or future employment in computing by
+                connecting them with more experienced upperclassmen. The role of
+                the mentor is to empower their mentees and enhance their
+                interests in computing. Mentors and mentees will be matched
+                primarily based on academic and career interests.
+              </div>
+            </div>
+            <div className="mentorship-info">
+              <div className="mentorship-info-img">
+                <img className="mentorship1-img" src={mentorship1} alt="mentorship1"/>
+              </div>
+              <div className="mentorship-info-text">
+                <h3>Mentorship Information</h3>
+                <ul>
+                    <li>
+                    Mondays: 5:30-6:30
+                    </li>
+                    <li>
+                    Thursdays: 5:30-6:30
+                    </li>
+                    <li>
+                    Find out more information in our kick off slides!
+                    </li>
+                  </ul>
+              </div>
+
+              
+
+            </div>
+
+
+
+
             <div className="outer-div">
               <div className="mentor-div">
                 <h3>Mentors</h3>

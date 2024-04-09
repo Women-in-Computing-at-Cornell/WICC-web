@@ -41,6 +41,38 @@
     font-weight: 400;
     line-height: 150%; /* 30px */
 }
+
+
+.mentorship-info { 
+    margin-top: 157px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 150px;
+    margin-bottom: 139px;
+}
+
+.mentorship-info-text {
+    padding-left: 99px;
+    display: flex;
+    width: 709px;
+    height: 197px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.mentorship1-img {
+    border-radius: 16px;
+    width: 688px;
+    height: 394px;
+    /* flex-shrink: 0; */
+}
+.mentorship-info h3 {
+    font-weight: 1000;
+}
+
+
+
 .mentee-div, .mentor-div {
     /* height: 539px; */
     width:688px;
@@ -73,6 +105,7 @@
 .mentor-div h3 {
     font-weight: 1000;
 }
+
 .mentor-div ul, .mentee-div ul {
     padding-inline-start: 30px;
 }
