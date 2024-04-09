@@ -240,8 +240,8 @@ const Sponsors = () => {
         </div>
       </section>
 
-      <section>
-        <table className="table" id="sponsors">
+      <section style = {{paddingTop: '56px'}}>
+        <table className="table" id="sponsorsTable">
           <thead>
             <tr>
               <th>Specific Benefits</th>

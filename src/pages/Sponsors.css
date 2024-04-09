@@ -81,9 +81,9 @@
     font-size: 13px;
   }
 }
-#sponsors {
+#sponsorsTable {
     border-style : hidden;
-    max-width: 80%;
+    max-width: 90%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -119,7 +119,7 @@ td:last-child {
     text-align: center;
 }
 
-#sponsors img {
+#sponsorsTable img {
     width: 108px;
     height: 40px;
 }
