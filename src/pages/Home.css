@@ -2,10 +2,12 @@
   padding-bottom: 20px;
 }
 
+
 .hero-container {
-  /* .call-to-action-container { */
+  /*  .call-to-action-container { */
   margin: 3% 0;
 }
+
 
 .mission-container {
   text-align: center;
@@ -14,14 +16,17 @@
   flex-direction: row;
 }
 
+
 .heromission-content {
-  padding: 0px;
+  padding: 0px
 }
+
 
 #home-illustration {
   width: 35%;
   float: right;
 }
+
 
 .call-to-action-container {
   /* margin-bottom: %; */
@@ -35,17 +40,20 @@
   padding-left: 80px;
 }
 
+
 /* start of what we do container */
 .what-we-do-container {
   /* Adjust container styles as needed */
-  margin-top: 80px;
+  margin-top: 30px;
   /* Example margin */
 }
+
 
 .title-with-line {
   display: flex;
   align-items: center;
 }
+
 
 .horizontal-line {
   height: 1px;
@@ -62,9 +70,12 @@
   white-space: nowrap;
 }
 
+
 /* end of what we do container */
 
+
 /* start of alumni testimony container */
+
 
 .alumni-testimonies-container {
   /* Adjust container styles as needed */
@@ -77,6 +88,7 @@
   /* Text color for testimonies */
 }
 
+
 .alumni-testimonies-content {
   /* Adjust container styles as needed */
   padding-left: 5%;
@@ -85,6 +97,7 @@
   padding-bottom: 2%;
   background-color: #defff8;
 }
+
 
 .testimony-grid {
   display: flex;
@@ -98,6 +111,7 @@
   padding-bottom: 32px;
 }
 
+
 .testimony-column {
   padding: 16px;
   background-color: #ffffff;
@@ -106,27 +120,32 @@
   box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
 }
 
+
 /* end of alumni testimony container */
+
 
 /* react-bootstrap button style overriding */
 .btn {
   border-radius: 5em;
 }
 
+
 .btn-primary {
   color: black;
-  background-color: #9ce2d3;
-  border-color: #9ce2d3;
+  background-color: #9CE2D3;
+  border-color: #9CE2D3;
 }
+
 
 .headerName {
   font-size: 300%;
 }
 
+
 .sponsor-container {
   padding: 3%;
   padding-bottom: 0.5%;
-  padding-top: 0px;
+  padding-top: 40px;
   text-align: center;
 }
 
@@ -148,6 +167,7 @@
   box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
 }
 
+
 .get-involved-column:hover {
   background-color: #f8f8f8;
   box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.25);
@@ -165,6 +185,7 @@
 .panel-link:hover {
   color: #000000;
 }
+
 
 .button-name {
   display: flex;
@@ -186,6 +207,7 @@
   /* Center the carousel */
 }
 
+
 .carousel-wrapper .carousel img {
   width: 100%;
   /* Set maximum width */
@@ -195,11 +217,13 @@
   /* Fit images within the dimensions without distortion */
 }
 
+
 /* Move the navigation elements outside the carousel */
 .carousel.carousel-slider .control-arrow {
   display: default;
   padding: 0px;
 }
+
 
 .carousel-wrapper .carousel .control-dots {
   position: absolute;
@@ -211,6 +235,7 @@
   z-index: 100;
   /* Ensure it's above the images */
 }
+
 
 .carousel .carousel-slider .control-dots .dot {
   background-color: black;

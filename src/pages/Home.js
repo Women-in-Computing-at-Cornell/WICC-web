@@ -1,6 +1,9 @@
 import React from "react";
+import Button from "react-bootstrap/Button";
 import Image from "react-bootstrap/Image";
 import "./Home.css";
+import Sponsors from "../pages/Sponsors";
+import { Carousel } from "react-responsive-carousel";
 import semoutlook from "../images/semesteroutlookpic.png";
 import arrowbutton from "../images/icons/circle-arrows.png";
 import newmissionImg from "../images/wiccnewlogo.png";
@@ -16,6 +19,44 @@ function importAll(r) {
   });
   return images;
 }
+
+
+// const PCarousel = ({ imgNames, pics }) => {
+//   const renderImages = () => {
+//     const imageGroups = [];
+//     for (let i = 0; i < imgNames.length; i += 5) {
+//       const imagesInGroup = imgNames.slice(i, i + 5).map((img, index) => {
+//         const imageSrc = pics[img];
+//         return (
+//           <div key={index} style={{ width: `${100 / 5}%` }}>
+//             <Image
+//               src={imageSrc}
+//               alt={`Image ${i + index + 1}`}
+//               style={{ width: "80%", height: "100px", objectFit: "contain" }}
+//             />
+//           </div>
+
+//         );
+//       });
+//       imageGroups.push(imagesInGroup);
+//     }
+//     return imageGroups.map((group, index) => (
+//       <div key={index} style={{ display: "flex" }}>
+//         {group}
+//       </div>
+//     ));
+//   };
+
+
+//   return (
+//     <div className="carousel-wrapper">
+//       <Carousel showThumbs={false} showStatus={false} emulateTouch infiniteLoop>
+//         {renderImages()}
+//       </Carousel>
+//     </div>
+//   );
+// };
+
 
 const Home = () => {
   const homepicsname = importAll(
@@ -285,10 +326,10 @@ const Home = () => {
         <CurrentSponsors />
 
         {/*  <section style={{ marginTop: "5%" }} class="sponsor-container">
-          <h2 style={{ fontWeight: "bold" }}>Our Sponsors</h2>
-          <Sponsors />
-        </section>
-              */}
+         <h2 style={{ fontWeight: "bold" }}>Our Sponsors</h2>
+         <Sponsors />
+       </section>
+             */}
       </div>
     </div>
   );
