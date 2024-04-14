@@ -7,30 +7,40 @@ import "./member.css";
 import defaultImage from "../images/noimage.png";
 import coffeeImage from "../images/coffeeBear.png";
 
-// Ideally, this should be in our main app component or index file
-Modal.setAppElement("#root"); // Replace '#root' with your actual app root element id
+Modal.setAppElement("#root"); 
 
 function Member({ name, title, netid, bio, img }) {
-  // for Modal
-  const [showDetails, setShowDetails] = useState(false);
+  const [showDetails, setShowDetails] = useState(false); // for Modal
 
   const toggleDetails = () => setShowDetails(!showDetails);
+
+  const [imageLoaded, setImageLoaded] = useState(false);
+
+ // Coffee chat email button 
+  const openEmail = () => {
+    const email = `${netid}@cornell.edu`; // Adjust according to your email format
+    window.location.href = `mailto:${email}`;
+  };
 
   return (
     <>
       <div className="memberContainer" onClick={toggleDetails}>
-        <div>
-          <LazyLoadImage
-            alt={name}
-            src={img || defaultImage} // Fallback to defaultImage if img is not provided
-            effect="blur"
-            className="imageStyle"
-            // onError={handleError}
-          />
+        <div className="imageContainer">
+            <LazyLoadImage
+              alt={name}
+              src={img || defaultImage} // Fallback to defaultImage if img is not provided
+              effect="blur"
+              className={`imageStyle profileImageStyle ${imageLoaded ? 'fadeIn' : ''}`}  // Apply 'fadeIn' class when image is loaded
+              onLoad={() => setImageLoaded(true)}
+            />
+            <button onClick={openEmail} className="coffeeChatButton">
+              <img src={coffeeImage} alt="Coffee Chat" />
+            </button>
         </div>
-        <div className="position">{title}</div>
-        <div className="name">{name}</div>
+          <div className="position">{title}</div>
+          <div className="name">{name}</div>
       </div>
+
 
       {/* Member pop up card when profile picture clicked on */}
       <Modal
@@ -55,15 +65,11 @@ function Member({ name, title, netid, bio, img }) {
         }}
       >
         <div className="modalContent">
-          <img src={img || defaultImage} alt={name} className="imageStyle" />
+          <img src={img || defaultImage} alt={name} className="profileImageStyle" />
           <div className="modalTextContent">
             <h3 className="name">{name}</h3>
-            <p className="modalTextStyle">
-              <b>Position:</b> {title}
-            </p>
-            <p className="modalTextStyle">
-              <b>Netid:</b> {netid}
-            </p>
+            <p className="modalTextStyle"><b>Position:</b> {title}</p>
+            <p className="modalTextStyle"><b>Netid:</b> {netid}</p>
             <p className="modalTextStyle">{bio}</p>
           </div>
         </div>

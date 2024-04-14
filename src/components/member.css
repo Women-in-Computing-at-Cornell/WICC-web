@@ -6,7 +6,27 @@
   cursor: pointer; /* Add cursor style for better UX */
 }
 
+.fadeIn {
+  animation: fadeInAnimation 1s forwards;  
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px); /* Adjust this value for more or less vertical movement */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .imageStyle {
+  position: relative;
+  animation-duration: 1s;        /* Duration of the animation */
+  animation-fill-mode: forwards; /* Ensures the component retains the style from the last keyframe when the animation ends */
+  animation-name: fadeInUp;      /* Name of the animation */
+  will-change: opacity, transform; /* Optimizes animations by letting the browser know what properties to expect changes in */
   width: 12vw; /* 10% of the viewport width */
   height: 12vw; /* Set height equal to width for 1:1 aspect ratio */
   border-radius: 10%;
@@ -14,10 +34,23 @@
   object-position: center; /* Adjust if needed */
 }
 
+.profileImageStyle {
+  width: 12vw; /* 10% of the viewport width */
+  aspect-ratio: 1 / 1;
+  object-fit: cover;  
+  border-radius: 10%;  
+}
+
+
 .modalContent {
   display: flex;
   align-items: center; 
 }
+
+.modalContent .imageStyle {
+  animation: none;  
+}
+
 
 .modalTextContent {
   padding: 20px;
@@ -40,3 +73,32 @@
   padding-bottom: 32px;
   font-weight: bold;
 }
+
+.imageContainer {
+  position: relative;
+
+}
+
+.coffeeChatButton {
+  position: absolute;
+  bottom: 5px;
+  right: 25px;
+  background: white;         /* Set background color to white */
+  border-radius: 50%;        /* Make the button circular */
+  width: 50px;               /* Set the width of the button */
+  height: 50px;              /* Set the height of the button */
+  display: flex;
+  align-items: center;       /* Center the image vertically */
+  justify-content: center;   /* Center the image horizontally */
+  border: none;
+  cursor: pointer;
+  padding: 0.5px;              /* Optional: adjust padding to control the size of the image inside */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Optional: adds shadow for better visibility */
+}
+
+.coffeeChatButton img {
+  display: block;
+  width: 70%;                /* Adjust based on how much of the button the image should cover */
+  height: auto;              /* Maintain aspect ratio */
+}
+
