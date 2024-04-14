@@ -45,14 +45,17 @@ li {
 
 .mentor-mentee-grid {
   display: flex;
-  justify-content: space-around;
+  /* justify-content: space-between; */
+  gap: 5%;
+  justify-content: center;
   background-color: #ffffff;
   min-height: 300px;
   background-size: cover;
   background-position: center top;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
+
 
 
 .mentor-mentee-column {
@@ -64,10 +67,8 @@ li {
 }
 
 .mentor-mentee-content {
-  /* Adjust container styles as needed */
   padding-left: 5%;
   padding-right: 5%;
-  padding-top: 3%;
   padding-bottom: 2%;
   background-color: #ffffff;
 }
@@ -111,10 +112,6 @@ img {
   border-radius: 50%;
 }
 
-
-
-
-
 .full-width-banner {
   position: relative;
   width: 100%;
@@ -143,23 +140,14 @@ img {
 
 .banner-text {
   position: absolute;
-  /* Position text over the image */
   top: 55%;
-  /* Center vertically */
   left: 0;
-  /* Align to the left side of the screen */
   transform: translateY(-50%);
-  /* Adjust vertical positioning to the center */
   color: white;
-  /* Text color */
   text-align: left;
-  /* Align text to the left */
   z-index: 2;
-  /* Position the text above the image and any other positioned element */
   max-width: 40%;
-  /* Maximum width of the text block */
   padding-left: 8%;
-  /* Add some padding on the left if needed */
 }
 
 
@@ -172,8 +160,6 @@ img {
 .section-title {
   font-size: 1.5em;
   font-weight: bold;
-
-
 }
 
 
@@ -214,8 +200,6 @@ img {
 .section-title {
   font-size: 1.5em;
   font-weight: bold;
-
-
 }
 
 

@@ -69,8 +69,6 @@ export default class Mentorship extends Component {
           style={{
             display: "flex",
             alignItems: "center",
-            // marginTop: "10%",
-            marginBottom: "10%",
             background: "#f7f9f8",
             padding: "40px",
           }}>
