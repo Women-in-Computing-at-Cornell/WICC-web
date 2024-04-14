@@ -18,13 +18,9 @@ li {
   padding-bottom: 6px;
 }
 
-
-
 .boardText {
   font-size: 80%;
 }
-
-
 
 .vertLine {
   border-left: 6px solid #9CE2D3;
@@ -45,7 +41,6 @@ li {
 
 .mentor-mentee-grid {
   display: flex;
-  /* justify-content: space-between; */
   gap: 5%;
   justify-content: center;
   background-color: #ffffff;
@@ -119,13 +114,6 @@ img {
   padding: 0;
 }
 
-.full-width-banner {
-  position: relative;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
-
 
 .banner {
   width: 100%;
@@ -171,23 +159,14 @@ img {
 
 .banner-text {
   position: absolute;
-  /* Position text over the image */
   top: 55%;
-  /* Center vertically */
   left: 0;
-  /* Align to the left side of the screen */
   transform: translateY(-50%);
-  /* Adjust vertical positioning to the center */
   color: white;
-  /* Text color */
   text-align: left;
-  /* Align text to the left */
   z-index: 2;
-  /* Position the text above the image and any other positioned element */
   max-width: 40%;
-  /* Maximum width of the text block */
   padding-left: 8%;
-  /* Add some padding on the left if needed */
 }
 
 
@@ -239,7 +218,6 @@ img {
   margin: 0;
   padding: 0;
 }
-
 
 
 

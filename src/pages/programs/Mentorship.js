@@ -100,10 +100,10 @@ export default class Mentorship extends Component {
                   padding: "10px",
                   fontWeight: "bold",
                   color: "black",
-                  fontSize: 22,
+                  fontSize: 28,
                 }}
               >
-                Mentor
+                Mentors
               </h2>
               <p style={{ padding: "15px", fontSize: 13 }}>
                 As a mentor you are expected to hold conversations with your
@@ -130,10 +130,10 @@ export default class Mentorship extends Component {
                   padding: "10px",
                   fontWeight: "bold",
                   color: "black",
-                  fontSize: 22,
+                  fontSize: 28,
                 }}
               >
-                Mentee
+                Mentees
               </h2>
               <p style={{ padding: "15px", fontSize: 13 }}>
                 Mentees are matched with experienced upperclassmen or alumni
@@ -154,6 +154,20 @@ export default class Mentorship extends Component {
               </p>
             </div>
           </div></div>
+        <div
+          style={{
+            // display: "flex",
+            alignItems: "center",
+            background: "#f7f9f8",
+            padding: "3%",
+            paddingLeft: "8%",
+          }}
+        >
+          <h2><b>Questions?</b></h2>
+          <br />
+          <p>Reach out to the following WICC members for clarification regarding to Active Membership.</p>
+        </div>
+
       </>
       //   <div class="page">
       //     <h1>Mentorship</h1>
