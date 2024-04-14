@@ -64,13 +64,15 @@ export default class Mentorship extends Component {
               primarily based on academic and career interests.
             </p>
           </div>
-        </div>
+        </div >
         <div
           style={{
             display: "flex",
             alignItems: "center",
-            marginTop: "10%",
+            // marginTop: "10%",
             marginBottom: "10%",
+            background: "#f7f9f8",
+            padding: "40px",
           }}>
           <img
             src={mentorshipInfo}
@@ -92,10 +94,68 @@ export default class Mentorship extends Component {
             </div>
           </div>
         </div>
-        <div className="full-width-banner"
-          style={{ backgroundcolor: 'f7f9f8' }}>
-          hello
-        </div >
+        <div className="mentor-mentee-content">
+          <div className="mentor-mentee-grid">
+            <div className="mentor-mentee-column">
+              <h2
+                style={{
+                  padding: "10px",
+                  fontWeight: "bold",
+                  color: "black",
+                  fontSize: 22,
+                }}
+              >
+                Mentor
+              </h2>
+              <p style={{ padding: "15px", fontSize: 13 }}>
+                As a mentor you are expected to hold conversations with your
+                mentees monthly, help your mentees establish meaningful
+                connections, give advice on course selection, or otherwise.
+                Any motivated undergraduates, graduate students, and grads
+                majoring in or working CS or related technical fields can
+                sign-up as a mentor.
+                <br />
+                <br />
+                <h6><b>Requirements:</b></h6>
+                <ul></ul>
+                <ul>
+                  <li>Undergraduates must be sophomores, juniors, or seniors at
+                    Cornell.</li>
+                  <li>Five meetings with your mentees: mentorship groups will
+                    meet biweekly.</li>
+                </ul>
+              </p>
+            </div>
+            <div className="mentor-mentee-column">
+              <h2
+                style={{
+                  padding: "10px",
+                  fontWeight: "bold",
+                  color: "black",
+                  fontSize: 22,
+                }}
+              >
+                Mentee
+              </h2>
+              <p style={{ padding: "15px", fontSize: 13 }}>
+                Mentees are matched with experienced upperclassmen or alumni
+                mentors in groups of 2 mentors and 3-5 other mentees.
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <h6><b>Requirements:</b></h6>
+                <ul></ul>
+                <ul>
+                  <li>Undergraduates must be freshman or sophomores at Cornell.
+                  </li>
+                  <li>Participate in five meetings throughout the semester with
+                    the group.</li>
+                </ul>
+              </p>
+            </div>
+          </div></div>
       </>
       //   <div class="page">
       //     <h1>Mentorship</h1>
