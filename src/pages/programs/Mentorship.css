@@ -1,3 +1,4 @@
+
 .page {
     background-color: rgba(247, 249, 248, 1);
     margin: 0;
@@ -8,6 +9,7 @@
 }
 .mentorship-top{
     height: 651px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/static/media/mentorship.5125ddc7.jpg);
 }
 
 .mentorship-title{
@@ -136,6 +138,13 @@
     flex-direction: row;
 }
 .person1 {
-    margin-left: 70px;
-    margin-right:88px;
+    margin-left: 200px;
+    margin-right:80px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em 0;
 }
