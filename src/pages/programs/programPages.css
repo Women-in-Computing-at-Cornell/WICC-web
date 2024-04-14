@@ -2,8 +2,6 @@
   margin: 5%;
   margin-left: 10%;
   margin-right: 10%;
-  margin-left: 10%;
-  margin-right: 10%;
 }
 
 .sub {
@@ -21,27 +19,30 @@ li {
 }
 
 
+
 .boardText {
   font-size: 80%;
 }
 
 
+
 .vertLine {
+  border-left: 6px solid #9CE2D3;
   border-left: 6px solid #9CE2D3;
   padding-right: 1%
 }
 
-
 .outreachDates p {
   margin-bottom: 1%
 }
-
 
 .localEvents p {
   margin-bottom: 1%;
   font-size: 90%;
   color: #4D4D4D
 }
+
+
 
 
 
@@ -53,6 +54,7 @@ li {
 }
 
 
+
 .swiper {
   display: flex;
   overflow-x: visible;
@@ -61,24 +63,28 @@ li {
 }
 
 
+
 img {
   object-fit: contain;
 }
 
 
+
 .outreachSlides {
   padding-right: 5%;
   padding-left: 6%;
-  color: grey
+  color: grey;
 }
 
 
 .questionsImg {
   width: 150px;
   height: 150px;
+  height: 150px;
   object-fit: cover;
   border-radius: 50%;
 }
+
 
 
 
@@ -90,6 +96,17 @@ img {
   padding: 0;
 }
 
+.full-width-banner {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+.banner {
+  width: 100%;
+}
 
 .banner {
   width: 100%;
@@ -136,8 +153,49 @@ img {
 
 .container {
   width: 100%;
+  filter: brightness(40%);
+}
+
+
+.banner-text {
+  position: absolute;
+  /* Position text over the image */
+  top: 55%;
+  /* Center vertically */
+  left: 0;
+  /* Align to the left side of the screen */
+  transform: translateY(-50%);
+  /* Adjust vertical positioning to the center */
+  color: white;
+  /* Text color */
+  text-align: left;
+  /* Align text to the left */
+  z-index: 2;
+  /* Position the text above the image and any other positioned element */
+  max-width: 40%;
+  /* Maximum width of the text block */
+  padding-left: 8%;
+  /* Add some padding on the left if needed */
+}
+
+
+.banner-header {
+  font-size: 3em;
+  font-weight: bold;
+}
+
+
+.section-title {
+  font-size: 1.5em;
+  font-weight: bold;
+
+
+}
+
+
+.container {
+  width: 100%;
   display: flex;
-  flex-direction: column;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -167,8 +225,34 @@ img {
   gap: 40px;
   border-right: 4px solid #9CE2D3;
   height: 100%;
+  align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
+
+
+
+.content-row {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+
+
+
+.column {
+  flex: 1 1 0%;
+  align-self: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 40px;
+  border-right: 4px solid #9CE2D3;
+  height: 100%;
+}
 
 .column-header {
   color: #212529;
@@ -186,6 +270,20 @@ img {
   height: 100%;
 }
 
+.text-content {
+  align-self: left;
+  color: #4D4D4D;
+  font-size: 18px;
+  font-weight: 400;
+  word-wrap: break-word;
+  height: 100%;
+}
+
+
+.mentorship-button .btn {
+  background-color: #9ce2d3;
+  color: black;
+}
 
 .mentorship-button .btn {
   background-color: #9ce2d3;
