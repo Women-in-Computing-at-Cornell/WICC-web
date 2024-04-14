@@ -13,7 +13,7 @@ class NavBar extends React.Component {
     return (
       <Navbar bg="light" expand="lg">
         <Navbar.Brand className="mr-auto" href="/">
-          <img src={Watermark} width="45" height="45" alt="WICC logo" />
+          <img src={Watermark} width="35" height="45" alt="WICC logo" />
           <div className="brand-text">
             <p>
               Women in Computing <br /> at Cornell
@@ -25,7 +25,7 @@ class NavBar extends React.Component {
             Home
           </Nav.Link>
           <Nav.Link style={linkStyle} href="/#board">
-            Who We Are
+            Our Teams
           </Nav.Link>
           <Nav.Link style={linkStyle} href="/#programs">
             Programs
@@ -47,5 +47,9 @@ class NavBar extends React.Component {
     );
   }
 }
+//<Nav.Link href="/#resources">Resources</Nav.Link>//
+//<Nav.Link href="/#board">Who We Are</Nav.Link>//
+//<Nav.Link href="/#join">Join Us</Nav.Link>
+//<Nav.Link style={linkStyle} href="/#about">About</Nav.Link>      //
 
 export default NavBar;

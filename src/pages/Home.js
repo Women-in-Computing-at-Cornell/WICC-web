@@ -1,11 +1,15 @@
 import React from "react";
+import Button from "react-bootstrap/Button";
 import Image from "react-bootstrap/Image";
 import "./Home.css";
+import Sponsors from "../pages/Sponsors";
+import { Carousel } from "react-responsive-carousel";
 import semoutlook from "../images/semesteroutlookpic.png";
 import arrowbutton from "../images/icons/circle-arrows.png";
 import newmissionImg from "../images/wiccnewlogo.png";
 import PCarousel from "../components/PCarousel";
 import CurrentSponsors from "../components/currentSponsors.js"
+import ImgCarousel from "../components/ImgCarousel.jsx";
 
 function importAll(r) {
   let images = {};
@@ -16,6 +20,44 @@ function importAll(r) {
   return images;
 }
 
+
+// const PCarousel = ({ imgNames, pics }) => {
+//   const renderImages = () => {
+//     const imageGroups = [];
+//     for (let i = 0; i < imgNames.length; i += 5) {
+//       const imagesInGroup = imgNames.slice(i, i + 5).map((img, index) => {
+//         const imageSrc = pics[img];
+//         return (
+//           <div key={index} style={{ width: `${100 / 5}%` }}>
+//             <Image
+//               src={imageSrc}
+//               alt={`Image ${i + index + 1}`}
+//               style={{ width: "80%", height: "100px", objectFit: "contain" }}
+//             />
+//           </div>
+
+//         );
+//       });
+//       imageGroups.push(imagesInGroup);
+//     }
+//     return imageGroups.map((group, index) => (
+//       <div key={index} style={{ display: "flex" }}>
+//         {group}
+//       </div>
+//     ));
+//   };
+
+
+//   return (
+//     <div className="carousel-wrapper">
+//       <Carousel showThumbs={false} showStatus={false} emulateTouch infiniteLoop>
+//         {renderImages()}
+//       </Carousel>
+//     </div>
+//   );
+// };
+
+
 const Home = () => {
   const homepicsname = importAll(
     require.context(
@@ -25,6 +67,8 @@ const Home = () => {
     )
   );
   const homepics = Object.keys(homepicsname);
+
+  console.log(homepics)
 
   return (
     <div>
@@ -124,10 +168,10 @@ const Home = () => {
           </div>
         </section>
         <section
-          style={{ paddingLeft: "1%", paddingRight: "1%", paddingTop: "32px" }}
-          class="carousel-container"
+
+          className=""
         >
-          <PCarousel imgNames={homepics} pics={homepicsname} />
+          <ImgCarousel imgNames={homepics} pics={homepicsname} />
         </section>
         <section
           style={{ paddingLeft: "5%", paddingRight: "5%", paddingTop: "50px" }}
@@ -223,19 +267,22 @@ const Home = () => {
             <div className="horizontal-line"></div>
           </div>
         </section>
+        {/* <section id="getinvolved">
+          
+
+        </section> */}
 
         <section className="call-to-action-container">
           <div className="get-involved-grid">
             <a href="/#join" className="panel-link">
               <div className="get-involved-column">
-                {/* <button className="panel-button"> */}
-                {/* <span>&#x2197;</span> */}
+
                 <Image
                   className="arrow-img"
-                  style={{ maxWidth: "40px" }}
+                  style={{ maxWidth: "40px", float: "left" }}
                   src={arrowbutton}
                 ></Image>
-                {/* </button> */}
+
 
                 <small className="button-description">Get Involved </small>
                 <h4 className="button-name">Join Us</h4>
@@ -247,12 +294,9 @@ const Home = () => {
               className="panel-link"
             >
               <div className="get-involved-column">
-                {/* <button className="panel-button">
-                  <span>&#x2197;</span>
-                </button> */}
                 <Image
                   className="arrow-img"
-                  style={{ maxWidth: "40px" }}
+                  style={{ maxWidth: "40px", float: "left" }}
                   src={arrowbutton}
                 ></Image>
 
@@ -265,12 +309,10 @@ const Home = () => {
 
             <a href="/#programs" className="panel-link">
               <div className="get-involved-column">
-                {/* <button className="panel-button">
-                  <span>&#x2197;</span>
-                </button> */}
+
                 <Image
                   className="arrow-img"
-                  style={{ maxWidth: "40px" }}
+                  style={{ maxWidth: "40px", float: "left" }}
                   src={arrowbutton}
                 ></Image>
 
@@ -280,14 +322,14 @@ const Home = () => {
             </a>
           </div>
         </section>
-                
+
         <CurrentSponsors />
 
         {/*  <section style={{ marginTop: "5%" }} class="sponsor-container">
-          <h2 style={{ fontWeight: "bold" }}>Our Sponsors</h2>
-          <Sponsors />
-        </section>
-              */}
+         <h2 style={{ fontWeight: "bold" }}>Our Sponsors</h2>
+         <Sponsors />
+       </section>
+             */}
       </div>
     </div>
   );
