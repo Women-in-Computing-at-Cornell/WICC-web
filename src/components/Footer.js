@@ -15,9 +15,13 @@ class Footer extends React.Component {
       // <Navbar className="fixed-bottom " bg="light" variant="light">
       
       <Navbar
-        className="fixed-bottom color-nav "
+        className="fixed-bottom color-nav footer"
         variant="light"
-        style={{ paddingTop: "1%" }}
+        style={{
+          paddingTop: "1%",
+          display: "flex",
+          flexDirection: "column"
+        }}
         
       >
         <div className="footerNav">
