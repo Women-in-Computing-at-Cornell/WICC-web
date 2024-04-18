@@ -113,11 +113,6 @@ img {
   padding: 0;
 }
 
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-}
-
 .column {
   flex: 1 1 0%;
   align-self: left;

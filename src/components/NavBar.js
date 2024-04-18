@@ -25,7 +25,7 @@ class NavBar extends React.Component {
             Home
           </Nav.Link>
           <Nav.Link style={linkStyle} href="/#board">
-            Our Teams
+            Who We Are
           </Nav.Link>
           <Nav.Link style={linkStyle} href="/#programs">
             Programs
@@ -47,9 +47,5 @@ class NavBar extends React.Component {
     );
   }
 }
-//<Nav.Link href="/#resources">Resources</Nav.Link>//
-//<Nav.Link href="/#board">Who We Are</Nav.Link>//
-//<Nav.Link href="/#join">Join Us</Nav.Link>
-//<Nav.Link style={linkStyle} href="/#about">About</Nav.Link>      //
 
 export default NavBar;
