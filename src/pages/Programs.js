@@ -118,7 +118,7 @@ const Programs = () => {
           style={{ width: "100%", height: "auto" }}
         ></Image>
       </div>
-      <div className="button-display">
+      {/* <div className="button-display">
         <text className="upcoming-title">
           Upcoming Events 2023-2024
         </text>
@@ -147,216 +147,33 @@ const Programs = () => {
           </React.Fragment>
         ))
         }
-      </div>
-      {/* <Card title="Active Membership" description="xxx" imageUrl={activemember} link="/membership" /> */}
+      </div> */}
       <div className="events-grid">
-        <div className="column-1">
-          <Link to="/crackingyourcareer" style={styles.link}>
-            <Card title="Cracking Your Career" description="xxx" imageUrl={cyc} link="/crackingyourcareer" />
-          </Link>
-          <Link to="/crackingyourcareer" style={styles.link}>
-            <Card title="Corporate Events" description="xxx" imageUrl={cyc} link="/crackingyourcareer" />
-          </Link>
-          <Link to="/crackingyourcareer" style={styles.link}>
-            <Card title="Networking" description="xxx" imageUrl={cyc} link="/crackingyourcareer" />
-          </Link>
-        </div>
-
-        <div className="column-2">
-          <div className="row-1">
-            <Link to="/mentorship" style={styles.link}>
-              <Card title="Mentorship" description="xxx" imageUrl={mentorship} />
-            </Link>
-            <Link to="/campaigns" style={styles.link}>
-              <Card title="Campaigns" description="xxx" imageUrl={campaigns} />
-            </Link>
-          </div>
-          <div>
-            <Link to="/outreach" style={styles.link}>
-              {" "}
-              <Card title="Girls Who Code" description="xxx" imageUrl={girlswhocode} />
-            </Link>
-          </div>
-        </div>
+        <div className="item1"> get involved </div>
+        <Link to="/membership" style={styles.link}>
+          <Card title="Active Membership" description="xxx" imageUrl={activemember} />
+        </Link>
+        {/* community discussion, lunch bunch, mentorship */}
+        <Link to="/discussions" style={styles.link}>
+          <Card title="Community Discussion" description="Get involved; meet new people and voice your opinions" imageUrl={community} />
+        </Link>
+        <Link to="/lunch" style={styles.link}>
+          <Card title="Lunch Bunch" description="" imageUrl={lunchbunch} />
+        </Link>
+        <Link to="/mentorship" style={styles.link}>
+          <Card title="Mentorship" description="Navigate your career or studies with the help of upperclassmen" imageUrl={mentorship} />
+        </Link>
+        {/* outreach, campaigns, cracking your career */}
+        <Link to="/outreach" style={styles.link}>
+          <Card title="Outreach" description="Be part of making a difference and empowering others" imageUrl={outreach} />
+        </Link>
+        <Link to="/campaigns" style={styles.link}>
+          <Card title="Campaigns" description="Celebrate your community and raise awareness on relevant issues" imageUrl={campaigns} />
+        </Link>
+        <Link to="/crackingyourcareer" style={styles.link}>
+          <Card title="Cracking Your Career (CYC)" description="Prepare for interviews or recruitment for your target career with interview prep, resume workshops and more" imageUrl={cyc} />
+        </Link>
       </div>
-      {/* <Link to="/membership" style={styles.link}>
-        <Row
-          style={{
-            marginBottom: "100px",
-            marginTop: "100px",
-            padding: "56px",
-            paddingTop: "32px",
-            paddingBottom: "32px",
-            border: "1px solid #9CE2D3",
-            borderRadius: "29px",
-            display: "flex",
-            alignItems: "center",
-          }}
-        >
-          <Col style={styles.col}>
-            <h3 className="text-center">Active Membership</h3>
-          </Col>
-          <Col>
-            <Image
-              src={activemember}
-              style={{ width: "90%", height: "auto" }}
-            ></Image>
-          </Col>
-        </Row>
-      </Link>
-      <Card title="Active Membership" description="xxx" imageUrl={activemember} />
-      <Link to="/membership" style={styles.link}>
-        <Row
-          style={{
-            marginBottom: "100px",
-            marginTop: "100px",
-            padding: "56px",
-            paddingTop: "32px",
-            paddingBottom: "32px",
-            border: "1px solid #9CE2D3",
-            borderRadius: "29px",
-            display: "flex",
-            alignItems: "center",
-          }}
-        >
-          <Col style={styles.col}>
-            <h3 className="text-center">Active Membership</h3>
-          </Col>
-          <Col>
-            <Image
-              src={activemember}
-              style={{ width: "90%", height: "auto" }}
-            ></Image>
-          </Col>
-        </Row>
-      </Link>
-      <Link to="/discussions" style={styles.link}>
-        <Row
-          style={{
-            marginBottom: "100px",
-            marginTop: "100px",
-            padding: "56px",
-            paddingTop: "32px",
-            paddingBottom: "32px",
-            border: "1px solid #9CE2D3",
-            borderRadius: "29px",
-            display: "flex",
-            alignItems: "center",
-          }}
-        >
-          {" "}
-          <Col style={styles.col}>
-            <h3 className="text-center">Community Discussion</h3>
-          </Col>
-          <Col>
-            <Image
-              src={community}
-              style={{ width: "90%", height: "auto" }}
-            ></Image>
-          </Col>
-        </Row>
-      </Link>
-      <Link to="/lunch" style={styles.link}>
-        <Row
-          style={{
-            marginBottom: "100px",
-            marginTop: "100px",
-            padding: "56px",
-            paddingTop: "32px",
-            paddingBottom: "32px",
-            border: "1px solid #9CE2D3",
-            borderRadius: "29px",
-            display: "flex",
-            alignItems: "center",
-          }}
-        >
-          {" "}
-          <Col style={styles.col}>
-            <h3 className="text-center">Lunch Bunch</h3>
-          </Col>
-          <Col>
-            <Image
-              src={lunchbunch}
-              style={{ width: "90%", height: "auto" }}
-            ></Image>
-          </Col>
-        </Row>
-      </Link>
-      <Link to="/mentorship" style={styles.link}>
-        <Row
-          style={{
-            marginBottom: "100px",
-            marginTop: "100px",
-            padding: "56px",
-            paddingTop: "32px",
-            paddingBottom: "32px",
-            border: "1px solid #9CE2D3",
-            borderRadius: "29px",
-            display: "flex",
-            alignItems: "center",
-          }}
-        >
-          <Col style={styles.col}>
-            <h3 className="text-center">Mentorship</h3>
-          </Col>
-          <Col>
-            <Image
-              src={mentorship}
-              style={{ width: "90%", height: "auto" }}
-            ></Image>
-          </Col>
-        </Row>
-      </Link>
-      <Link to="/outreach" style={styles.link}>
-        <Row
-          style={{
-            marginBottom: "100px",
-            marginTop: "100px",
-            padding: "56px",
-            paddingTop: "32px",
-            paddingBottom: "32px",
-            border: "1px solid #9CE2D3",
-            borderRadius: "29px",
-            display: "flex",
-            alignItems: "center",
-          }}
-        >
-          {" "}
-          <Col style={styles.col}>
-            <h3 className="text-center"> Outreach</h3>
-          </Col>
-          <Col>
-            <Image
-              src={outreach}
-              style={{ width: "90%", height: "auto" }}
-            ></Image>
-          </Col>
-        </Row>
-      </Link>
-
-      <Link to="/crackingyourcareer" style={styles.link}>
-        <Row
-          style={{
-            marginBottom: "100px",
-            marginTop: "100px",
-            padding: "56px",
-            paddingTop: "32px",
-            paddingBottom: "32px",
-            border: "1px solid #9CE2D3",
-            borderRadius: "29px",
-            display: "flex",
-            alignItems: "center",
-          }}
-        >
-          <Col style={styles.col}>
-            {" "}
-            <h3 className="text-center">Cracking Your Career</h3>
-          </Col>
-          <Col>
-            <Image src={cyc} style={{ width: "90%", height: "auto" }}></Image>
-          </Col>
-        </Row>
-      </Link> */}
     </div>
   );
 };
