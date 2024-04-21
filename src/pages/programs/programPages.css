@@ -192,17 +192,11 @@ img {
   padding: 0;
 }
 
-
-
-
 .content-row {
   display: flex;
   justify-content: space-around;
   width: 100%;
 }
-
-
-
 
 .column {
   flex: 1 1 0%;
@@ -219,16 +213,11 @@ img {
   padding: 0;
 }
 
-
-
 .content-row {
   display: flex;
   justify-content: space-around;
   width: 100%;
 }
-
-
-
 
 .column {
   flex: 1 1 0%;
@@ -276,4 +265,9 @@ img {
 .mentorship-button .btn {
   background-color: #9ce2d3;
   color: black;
+}
+
+.cod {
+  align-items: center;
+  justify-content: center;
 }
