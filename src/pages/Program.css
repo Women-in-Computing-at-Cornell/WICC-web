@@ -6,6 +6,29 @@ body {
   overflow-x: hidden;
 }
 
+.hero {
+  flex-shrink: 0;
+  color: white;
+}
+
+.hero-text {
+  position: absolute;
+  top: 55%;
+  left: 0;
+  transform: translateY(-50%);
+  color: white;
+  text-align: left;
+  z-index: 2;
+  max-width: 40%;
+  padding-left: 8%;
+}
+
+.hero-image {
+  filter: brightness(40%);
+  object-fit: cover;
+  overflow:hidden;
+}
+
 .upcoming-title {
   font-size: 24px;
   color: black;

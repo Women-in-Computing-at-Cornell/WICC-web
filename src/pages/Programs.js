@@ -79,27 +79,27 @@ const Programs = () => {
 
   return (
     <div
-      style={{
-        width: "100%",
-        height: "100%"
-      }}
+    // style={{
+    //   width: "100%",
+    //   height: "100%"
+    // }}
     >
       <div className="hero">
-        <div
-          style={{
-            width: "30%",
-            paddingLeft: "56px",
-            position: "absolute",
-            marginLeft: "15%",
-            marginTop: "10%",
-          }}
+        <div className='hero-text'
+        // style={{
+        //   width: "30%",
+        //   paddingLeft: "56px",
+        //   position: "absolute",
+        //   marginLeft: "15%",
+        //   marginTop: "10%",
+        // }}
         >
           <h1
-            style={{
-              fontWeight: "bold",
-              paddingTop: "56px",
-              paddingBottom: "16px",
-            }}
+          // style={{
+          //   fontWeight: "bold",
+          //   paddingTop: "56px",
+          //   paddingBottom: "16px",
+          // }}
           >
             Programs
           </h1>
@@ -108,15 +108,18 @@ const Programs = () => {
             for women and non-binary students at Cornell. Each semester, we
             curate a dynamic lineup of programs and events designed to not only
             provide support but also create an environment that is both
-            enriching and informative. Our goal is to continually enhance these
+            enriching and informative. <br /><br /> Our goal is to continually enhance these
             offerings, ensuring they resonate with our diverse community and
             actively engage every participant.
           </p>
         </div>
-        <Image
-          src={Programhero}
-          style={{ width: "100%", height: "auto" }}
-        ></Image>
+        <div className='hero-image'>
+          <img
+            src={Programhero}
+            style={{ width: "100%", height: "auto" }}
+          ></img>
+        </div>
+
       </div>
       {/* <div className="button-display">
         <text className="upcoming-title">
@@ -174,7 +177,7 @@ const Programs = () => {
           <Card title="Cracking Your Career (CYC)" description="Prepare for interviews or recruitment for your target career with interview prep, resume workshops and more" imageUrl={cyc} />
         </Link>
       </div>
-    </div>
+    </div >
   );
 };
 export default Programs;
