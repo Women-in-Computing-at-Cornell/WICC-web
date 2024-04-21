@@ -229,9 +229,6 @@ img {
   border-radius: 20px;
 }
 
-
-
-
 .column {
   flex: 1 1 0%;
   align-self: left;
@@ -247,16 +244,11 @@ img {
   padding: 0;
 }
 
-
-
 .content-row {
   display: flex;
   justify-content: space-around;
   width: 100%;
 }
-
-
-
 
 .column {
   flex: 1 1 0%;
@@ -359,4 +351,9 @@ img {
 .questions-profile{
   justify-content: center;
   margin-left: 10%;
+}
+
+.cod {
+  align-items: center;
+  justify-content: center;
 }
