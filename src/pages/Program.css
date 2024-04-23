@@ -53,7 +53,7 @@ body {
 .events-grid {
   /* height: 50%; */
   /* width: 50%; */
-  margin: 10% 15%;
+  margin: 7.5% 15%;
   overflow-x: hidden;
   display: grid;
   grid-template-columns: auto auto auto;
@@ -64,7 +64,38 @@ body {
 .item1 {
   grid-column-start: 1;
   grid-column-end: 3;
+  background: var(--Cyan-2, #DCF3ED);
+  border-radius: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: stretch;
 }
+
+.item1 h1 {
+  color: #000;
+
+  /* Sub Title - 1 */
+  font-family: Mulish;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 60px */
+  margin-left: 80px;
+}
+
+.item1 p {
+  color: #000;
+
+  /* Header-Paragraph */
+  font-family: Mulish;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  margin-left: 80px;
+  }
 
 /* .row-1 {
   display: flex;

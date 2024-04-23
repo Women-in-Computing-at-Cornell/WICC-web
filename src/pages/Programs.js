@@ -152,9 +152,12 @@ const Programs = () => {
         }
       </div> */}
       <div className="events-grid">
-        <div className="item1"> get involved </div>
+        <div className="item1">
+          <h1>Get Involved</h1>
+          <p>You get what you put in</p>
+        </div>
         <Link to="/membership" style={styles.link}>
-          <Card title="Active Membership" description="xxx" imageUrl={activemember} />
+          <Card title="Active Membership" description="Make the most out of your experience with WICC" imageUrl={activemember} />
         </Link>
         {/* community discussion, lunch bunch, mentorship */}
         <Link to="/discussions" style={styles.link}>

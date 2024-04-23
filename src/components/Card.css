@@ -6,7 +6,7 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
   border-radius: 0px 0px 16px 16px;
-  background: var(--Cyan-2, #DCF3ED);
+  /* background: var(--Cyan-2, #DCF3ED); */
 }
 
 /* .info :hover {
@@ -70,4 +70,5 @@
   font-style: normal;
   font-weight: 400;
   line-height: 150%; /* 30px */
+  margin: 20px auto;
 }
