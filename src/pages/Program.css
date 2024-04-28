@@ -26,7 +26,7 @@ body {
 .hero-image {
   filter: brightness(40%);
   object-fit: cover;
-  overflow:hidden;
+  overflow: hidden;
 }
 
 .upcoming-title {
@@ -57,7 +57,7 @@ body {
   overflow-x: hidden;
   display: grid;
   grid-template-columns: auto auto auto;
-  gap: 10px;
+  gap: 30px;
   padding: 10px;
 }
 
@@ -81,7 +81,8 @@ body {
   font-size: 40px;
   font-style: normal;
   font-weight: 700;
-  line-height: 150%; /* 60px */
+  line-height: 150%;
+  /* 60px */
   margin-left: 80px;
 }
 
@@ -95,7 +96,7 @@ body {
   font-weight: 400;
   line-height: 150%;
   margin-left: 80px;
-  }
+}
 
 /* .row-1 {
   display: flex;
