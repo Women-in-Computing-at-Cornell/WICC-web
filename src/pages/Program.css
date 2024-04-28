@@ -13,13 +13,15 @@ body {
 
 .hero-text {
   position: absolute;
-  top: 55%;
-  left: 0;
-  transform: translateY(-50%);
+  /* top: 15%; */
+  margin-top: 5%;
+  /* left: 0; */
+  /* transform: translateY(-50%); */
   color: white;
   text-align: left;
   z-index: 2;
-  max-width: 40%;
+  /* max-width: 40%; */
+  margin-right: 60%;
   padding-left: 8%;
 }
 
@@ -128,4 +130,42 @@ body {
 
   /* Image Shadow */
   box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+}
+
+
+@media (max-width: 1000px) {
+  .events-grid {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    margin: 7.5% 5%;
+  }
+
+  .item1 {
+    grid-column-start: auto;
+    grid-column-end: auto;
+  }
+
+  .item1 h1, .item1 p {
+    /* color: #000;
+
+    font-family: Mulish;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; */
+    margin: 0 auto;
+  }
+
+  .hero-text {
+    position: absolute;
+    /* top: 15%; */
+    margin-top: 10%;
+    /* left: 0; */
+    /* transform: translateY(-50%); */
+    color: white;
+    text-align: left;
+    z-index: 2;
+    /* max-width: 40%; */
+    margin-right: 20%;
+    padding-left: 8%;
+  }
 }

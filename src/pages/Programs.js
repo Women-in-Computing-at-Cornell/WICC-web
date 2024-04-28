@@ -40,10 +40,9 @@ const Programs = () => {
       <div className="hero">
         <div
           className='hero-text'
-          style={{ top: "30%" }}
         >
           <h1 style={{ marginBottom: "1.2rem" }}> Programs </h1>
-          <p style={{ fontSize: "1.2rem" }}>
+          <p>
             We are dedicated to fostering an inclusive and empowering community
             for women and non-binary students at Cornell. Each semester, we
             curate a dynamic lineup of programs and events designed to not only

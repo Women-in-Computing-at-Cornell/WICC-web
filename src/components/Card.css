@@ -8,6 +8,7 @@
   border-radius: 16px;
   background-color: #DCF3ED;
   /* background: var(--Cyan-2, #DCF3ED); */
+  padding-bottom: 20px;
 }
 
 /* .info :hover {
@@ -51,7 +52,7 @@
 .info {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  /* gap: 10px; */
 
   /* TODO: fix spacing later */
   /* border-radius: 0px 0px 16px 16px; */
@@ -74,6 +75,6 @@
   font-weight: 400;
   line-height: 150%;
   /* 30px */
-  margin: 20px auto;
-  padding: 30px;
+  /* margin: 20px auto; */
+  padding: 15px;
 }
