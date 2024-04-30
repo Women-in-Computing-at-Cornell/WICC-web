@@ -6,7 +6,7 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
   border-radius: 16px;
-  background-color: #DCF3ED;
+  /* background-color: #DCF3ED; */
   /* background: var(--Cyan-2, #DCF3ED); */
   padding-bottom: 20px;
 }

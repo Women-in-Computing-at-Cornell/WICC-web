@@ -17,7 +17,7 @@ import {
 import ReactGoogleSlides from "react-google-slides";
 import outreach3 from "../../images/outreach/outreach.jpg";
 import outreach1 from "../../images/outreach/outreach1.jpg";
-
+import OutreachHero from "../../images/outreach/OutreachHero.jpg"
 import outreach2 from "../../images/outreach/outreach2.jpg";
 import QuestionsCard from "./QuestionsCard.js";
 
@@ -58,6 +58,24 @@ export default class Outreach extends Component {
 
     return (
       <div class="page">
+        <div class="hero">
+          <div class="hero-text">
+            <h1 style={{ marginBottom: "1.2rem" }}> Girls Who Code </h1>
+            <p style={{ paddingRight: "5%", paddingTop: "2%" }}>
+              We provide free Computer Science classes for middle and high
+              school students in the greater Ithaca community through Cornell
+              Girls Who Code. Students learn the fundamentals of computing as
+              well as cool technologies like Arduinos, web programming, and
+              Ozobots.
+            </p>
+          </div>
+          <div class="hero-image">
+            <img src={OutreachHero}
+              style={{ width: "100%", height: "auto" }}
+            >
+            </img>
+          </div>
+        </div>
         <h1>Girls Who Code</h1>
 
         <Container>

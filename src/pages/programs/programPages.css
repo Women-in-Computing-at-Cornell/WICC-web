@@ -1,3 +1,24 @@
+.hero {
+  flex-shrink: 0;
+  color: white;
+}
+
+.hero-text {
+  position: absolute;
+  margin-top: 5%;
+  color: white;
+  text-align: left;
+  z-index: 2;
+  margin-right: 60%;
+  padding-left: 8%;
+}
+
+.hero-image {
+  filter: brightness(40%);
+  object-fit: cover;
+  overflow: hidden;
+}
+
 .page {
   margin: 5%;
   margin-left: 9%;
@@ -69,4 +90,16 @@ color: grey
   height:150px;
   object-fit: cover;
   border-radius: 50%;
+}
+
+@media (max-width: 1000px) {
+  .hero-text {
+    position: absolute;
+    margin-top: 10%;
+    color: white;
+    text-align: left;
+    z-index: 2;
+    margin-right: 20%;
+    padding-left: 8%;
+  }
 }
