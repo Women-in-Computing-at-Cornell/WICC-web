@@ -27,17 +27,24 @@ const sponsorpicsgold = importAll(
   export default function currentSponsors() {
       return (
         <div>
-            <section style={{ marginTop: "5%" }} className="sponsor-container">
-                <h2 style={{ textAlign: "left", fontWeight: "bold" }}>
+            <section style={{ display: "flex", padding: "96px 130px", flexDirection: "column", 
+            alignItems: "flexStart", gap: "10px", alignSelf: "stretch", background: "#FBFBFB"
+          }} className="sponsor-container">
+                <h2 style={{ textAlign: "left", fontWeight: "bold", color: "#000",
+                fontFamily: "Mulish", fontSize: "36px", fontStyle: "normal", lineHeight: "150%", marginLeft: "2%"}}
+                section>
                 Our Current Sponsors
                 </h2>
                 <br></br>
                 <br></br>
-                <h3 style={{ textAlign: "left", marginLeft: "2%" }}>Platinum</h3>
+                <h3 style={{ color: "#000",fontFamily: "Mulish", fontSize: "24px", fontStyle: "normal", 
+                fontWeight: "700", lineHeight: "120%", textAlign: "left", marginLeft: "2%"}}>Platinum</h3>
                 <PCarousel imgNames={sponsorpicsp} pics={sponsorpicsplatinum} />
-                <h3 style={{ textAlign: "left", marginLeft: "2%" }}>Gold</h3>
+                <h3 style={{color: "#000",fontFamily: "Mulish", fontSize: "24px", fontStyle: "normal", 
+                fontWeight: "700", lineHeight: "120%", textAlign: "left", marginLeft: "2%"}}>Gold</h3>
                 <PCarousel imgNames={sponsorpicsg} pics={sponsorpicsgold} />
-                <h3 style={{ textAlign: "left", marginLeft: "2%" }}>Silver</h3>
+                <h3 style={{color: "#000",fontFamily: "Mulish", fontSize: "24px", fontStyle: "normal", 
+                fontWeight: "700", lineHeight: "120%", textAlign: "left", marginLeft: "2%"}}>Silver</h3>
                 <PCarousel imgNames={sponsorpicss} pics={sponsorpicssilver} />
             </section>
             <section

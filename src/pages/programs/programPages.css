@@ -2,13 +2,15 @@
   margin: 5%;
   margin-left: 10%;
   margin-right: 10%;
+  padding-left: 116px;
+  padding-right: 116px;
+  padding-top: 80px;
 }
 
 .sub {
-  font-Size: 90%;
-  color: #4D4D4D
+  font-size: 90%;
+  color: #4d4d4d;
 }
-
 
 .head {
   font-weight: bold;
@@ -66,7 +68,6 @@ li {
   background-color: #ffffff;
 }
 
-
 .main {
   background-color: #000;
   overflow: hidden;
@@ -95,7 +96,6 @@ img {
   padding-left: 6%;
   color: grey;
 }
-
 
 .questionsImg {
   width: 150px;
@@ -277,7 +277,6 @@ img {
   justify-content: space-around;
   width: 100%;
 }
-
 .column {
   flex: 1 1 0%;
   align-self: left;
@@ -286,7 +285,7 @@ img {
   justify-content: flex-start;
   align-items: flex-start;
   gap: 40px;
-  border-right: 4px solid #9CE2D3;
+  border-right: 4px solid #9ce2d3;
   height: 100%;
 }
 
