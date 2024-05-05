@@ -16,14 +16,15 @@ class QuestionsCard extends React.Component {
     const { name, title, img, netId } = this.props;
     return (
       <div>
-        <Card style={{ width: "15rem", height: "80%", border: "none" }}>
+        <Card style={{ width: "15rem", height: "80%", border: "none", backgroundColor: "transparent" }}>
           <Card.Body>
-            <Card.Img variant="top" src={img} class="questionsImg" />
+            <center>
+              <Card.Img variant="top" src={img} class="questionsImg" />
+            </center>
             <br />
-            {/* <br /> */}
             <center>
               <Card.Text class="font-weight-bold">
-                {name}, {title}
+                {name} {title}
               </Card.Text>
               <Card.Text>
                 <a

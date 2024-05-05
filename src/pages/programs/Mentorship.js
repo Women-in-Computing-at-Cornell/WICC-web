@@ -148,7 +148,7 @@ export default class Mentorship extends Component {
           <p>Reach out to the following WICC members for clarification regarding to Active Membership.</p>
           <div style={{ display: 'flex', justifyContent: 'center' }}>
             {cod.map((s, i) => (
-              <div key={i} style={{ margin: '0 40px' }}>
+              <div key={i} style={{ margin: '0 30px' }}>
                 <QuestionsCard
                   name={s.name}
                   title={s.title}
