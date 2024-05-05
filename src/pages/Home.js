@@ -1,14 +1,15 @@
 import React from "react";
+import Button from "react-bootstrap/Button";
 import Image from "react-bootstrap/Image";
 import "./Home.css";
 import Sponsors from "../pages/Sponsors";
 import { Carousel } from "react-responsive-carousel";
 import semoutlook from "../images/semesteroutlookpic.png";
+import arrowbutton from "../images/icons/circle-arrows.png";
 import newmissionImg from "../images/wiccnewlogo.png";
-
-//test
-
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import PCarousel from "../components/PCarousel";
+import CurrentSponsors from "../components/currentSponsors.js"
+import ImgCarousel from "../components/ImgCarousel.jsx";
 
 function importAll(r) {
   let images = {};
@@ -19,39 +20,43 @@ function importAll(r) {
   return images;
 }
 
-const PCarousel = ({ imgNames, pics }) => {
-  const renderImages = () => {
-    const imageGroups = [];
-    for (let i = 0; i < imgNames.length; i += 4) {
-      const imagesInGroup = imgNames.slice(i, i + 4).map((img, index) => {
-        const imageSrc = pics[img];
-        return (
-          <div key={index} style={{ width: `${100 / 4}%` }}>
-            <Image
-              src={imageSrc}
-              alt={`Image ${i + index + 1}`}
-              style={{ width: "100%", height: "200px", objectFit: "contain" }}
-            />
-          </div>
-        );
-      });
-      imageGroups.push(imagesInGroup);
-    }
-    return imageGroups.map((group, index) => (
-      <div key={index} style={{ display: "flex" }}>
-        {group}
-      </div>
-    ));
-  };
 
-  return (
-    <div className="carousel-wrapper">
-      <Carousel showThumbs={false} showStatus={false} emulateTouch infiniteLoop>
-        {renderImages()}
-      </Carousel>
-    </div>
-  );
-};
+// const PCarousel = ({ imgNames, pics }) => {
+//   const renderImages = () => {
+//     const imageGroups = [];
+//     for (let i = 0; i < imgNames.length; i += 5) {
+//       const imagesInGroup = imgNames.slice(i, i + 5).map((img, index) => {
+//         const imageSrc = pics[img];
+//         return (
+//           <div key={index} style={{ width: `${100 / 5}%` }}>
+//             <Image
+//               src={imageSrc}
+//               alt={`Image ${i + index + 1}`}
+//               style={{ width: "80%", height: "100px", objectFit: "contain" }}
+//             />
+//           </div>
+
+//         );
+//       });
+//       imageGroups.push(imagesInGroup);
+//     }
+//     return imageGroups.map((group, index) => (
+//       <div key={index} style={{ display: "flex" }}>
+//         {group}
+//       </div>
+//     ));
+//   };
+
+
+//   return (
+//     <div className="carousel-wrapper">
+//       <Carousel showThumbs={false} showStatus={false} emulateTouch infiniteLoop>
+//         {renderImages()}
+//       </Carousel>
+//     </div>
+//   );
+// };
+
 
 const Home = () => {
   const homepicsname = importAll(
@@ -63,15 +68,11 @@ const Home = () => {
   );
   const homepics = Object.keys(homepicsname);
 
-  const sponsorpicsname = importAll(
-    require.context("../images/sponsors", false, /\.(jpg)$/i)
-  );
-  const sponsorpics = Object.keys(sponsorpicsname);
+  console.log(homepics)
 
   return (
     <div>
-      {/* <Image style = {{maxWidth: '100%', height: 'auto'}} src={boardGroupPic} id="hero-image" /> */}
-      <div class="home-container">
+      <div className="home-container">
         <section
           style={{
             paddingBottom: "3%",
@@ -124,7 +125,7 @@ const Home = () => {
             // justifyContent: "center",
             justifyContent: "space-around",
           }}
-          class="semout-container"
+          className="semout-container"
         >
           <div>
             <Image
@@ -155,7 +156,6 @@ const Home = () => {
             </p>
           </div>
         </section>
-        {/* Title "What we do" */}
         <section
           style={{ paddingLeft: "5%", paddingRight: "5%" }}
           className="what-we-do-container"
@@ -168,10 +168,10 @@ const Home = () => {
           </div>
         </section>
         <section
-          style={{ paddingLeft: "5%", paddingRight: "5%", paddingTop: "20px" }}
-          class="carousel-container"
+
+          className=""
         >
-          <PCarousel imgNames={homepics} pics={homepicsname} />
+          <ImgCarousel imgNames={homepics} pics={homepicsname} />
         </section>
         <section
           style={{ paddingLeft: "5%", paddingRight: "5%", paddingTop: "50px" }}
@@ -267,61 +267,69 @@ const Home = () => {
             <div className="horizontal-line"></div>
           </div>
         </section>
+        {/* <section id="getinvolved">
+          
 
-        <section class="call-to-action-container">
+        </section> */}
+
+        <section className="call-to-action-container">
           <div className="get-involved-grid">
-            <div className="get-involved-column">
-              <a href="/#join" className="panel-link">
-                <button className="panel-button">
-                  <span>&#x2197;</span>
-                </button>
-              </a>
-              <h4>Join Us</h4>
-            </div>
-            <div className="get-involved-column">
-              <a
-                href="https://drive.google.com/file/d/1s_okJqDYmfD5-3jEPCPKvbtP_TYruXXD/view?usp=sharing"
-                className="panel-link"
-              >
-                <button className="panel-button">
-                  <span>&#x2197;</span>
-                </button>
-              </a>
-              <h4>Sponsors</h4>
-            </div>
-            <div className="get-involved-column">
-              <a href="/#programs" className="panel-link">
-                <button className="panel-button">
-                  <span>&#x2197;</span>
-                </button>
-              </a>
-              <h4>Programs</h4>
-            </div>
+            <a href="/#join" className="panel-link">
+              <div className="get-involved-column">
+
+                <Image
+                  className="arrow-img"
+                  style={{ maxWidth: "40px", float: "left" }}
+                  src={arrowbutton}
+                ></Image>
+
+
+                <small className="button-description">Get Involved </small>
+                <h4 className="button-name">Join Us</h4>
+              </div>
+            </a>
+
+            <a
+              href="https://drive.google.com/file/d/1s_okJqDYmfD5-3jEPCPKvbtP_TYruXXD/view?usp=sharing"
+              className="panel-link"
+            >
+              <div className="get-involved-column">
+                <Image
+                  className="arrow-img"
+                  style={{ maxWidth: "40px", float: "left" }}
+                  src={arrowbutton}
+                ></Image>
+
+                <small className="button-description">
+                  Collaborate with us{" "}
+                </small>
+                <h4 className="button-name">Sponsors</h4>
+              </div>
+            </a>
+
+            <a href="/#programs" className="panel-link">
+              <div className="get-involved-column">
+
+                <Image
+                  className="arrow-img"
+                  style={{ maxWidth: "40px", float: "left" }}
+                  src={arrowbutton}
+                ></Image>
+
+                <small className="button-description">Work with us </small>
+                <h4 className="button-name">Programs</h4>
+              </div>
+            </a>
           </div>
         </section>
 
-        <section style={{ marginTop: "5%" }} class="sponsor-container">
-          <h2 style={{ textAlign: "left", fontWeight: "bold" }}>
-            Our Sponsors
-          </h2>
-        </section>
-        <section
-          style={{
-            objectFit: "cover",
-            paddingLeft: "5%",
-            paddingRight: "5%",
-            paddingTop: "20px",
-          }}
-          class="sponsor-carousel-container"
-        >
-          <PCarousel imgNames={sponsorpics} pics={sponsorpicsname} />
-        </section>
+        <CurrentSponsors />
 
         {/*  <section style={{ marginTop: "5%" }} class="sponsor-container">
-          <h2 style={{ fontWeight: "bold" }}>Our Sponsors</h2>
-          <Sponsors />
-        </section>
-              */}
+         <h2 style={{ fontWeight: "bold" }}>Our Sponsors</h2>
+         <Sponsors />
+       </section>
+             */}
       </div>
     </div>
   );

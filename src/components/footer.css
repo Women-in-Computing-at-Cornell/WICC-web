@@ -1,6 +1,62 @@
 .color-nav {
   position: relative;
-  background-color: #9CE2D3;
-  height: 10%;
-  opacity: 0.8
+  display: inline-flex;
+  padding: 56px 0px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 48px;
+  background: var(--3, #fff);
+}
+
+.icon {
+  border-radius: 19.286px;
+  background: linear-gradient(
+      0deg,
+      rgba(156, 226, 211, 0.6) 0%,
+      rgba(156, 226, 211, 0.6) 100%
+    ),
+    #fff;
+  display: flex;
+  width: 36px;
+  height: 36px;
+  padding: 10.286px;
+  justify-content: center;
+  align-items: center;
+  gap: 6.429px;
+}
+
+.pages {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+}
+
+.footerNav {
+  width: 100%;
+  display: flex;
+  padding: 0px 100px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.copyright {
+  color: var(--G1, #959598);
+  font-family: Mulish;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  display: flex;
+  width: 1728px;
+  padding: 0px 100px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.footer {
+  overflow: hidden !important;
 }

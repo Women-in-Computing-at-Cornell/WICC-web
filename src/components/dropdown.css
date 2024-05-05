@@ -1,0 +1,37 @@
+.dropdown-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: transparent;
+  width: 100%;
+  border:0;
+  margin: 0.5em;
+  padding:0;
+  align-items: center;
+}
+
+.dropdown-content {
+  margin: 0.5em;
+}
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 1em 0;
+  padding: 10px;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1em;
+}
+
+.profile-pic {
+  width: 6em; /* Adjust width as needed, ensure width and height are equal for a perfect circle */
+  height: 6em; /* Adjust height to be the same as width */
+  border-radius: 50%; /* This makes the image round */
+  object-fit: cover; /* This ensures the image covers the space without stretching */
+  border: 2px solid #fff; /* Optional: adds a white border around the image */
+}

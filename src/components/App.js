@@ -16,6 +16,7 @@ import Mentorship from "../pages/programs/Mentorship";
 import Outreach from "../pages/programs/Outreach";
 import Prospective from "../pages/programs/Prospective";
 import Calendar from "../pages/Calendar";
+import Sponsors from "../pages/Sponsors";
 import CrackingYourCareer from "../pages/programs/CrackingYourCareer";
 
 import Join from "../pages/Join";
@@ -41,6 +42,7 @@ function App() {
           <Route path="/mentorship" component={Mentorship} />
           <Route path="/outreach" component={Outreach} />
           <Route path="/prospective" component={Prospective} />
+          <Route path="/sponsors" component={Sponsors} />
           <Route path="/calendar" component={Calendar} />
         </Switch>
         <Footer />
