@@ -19,7 +19,7 @@ import {
 import lunchbunch1 from "../../images/programs-pictures/lunchbunch/lunchbunch1.jpg";
 import lunchbunch2 from "../../images/programs-pictures/lunchbunch/lunchbunch2.jpg";
 import lunchbunch3 from "../../images/programs-pictures/lunchbunch/lunchbunch3.jpg";
-import lunch from "../../images/programs/lunchbunch.jpg";
+import lunch from "../../images/programs/lunchbunchcropped2.jpg";
 import QuestionsCard from "./QuestionsCard.js";
 import Image from "react-bootstrap/Image";
 
@@ -47,9 +47,9 @@ export default class Lunch extends Component {
     );
     return (
       <>
-        <div className="full-width-banner2">
-          <img src={lunch} alt="Banner" className="banner" />
-          <div className="banner-text">
+        <div className="full-width-banner3">
+          <img src={lunch} alt="Banner" className="banner3" />
+          <div className="banner-text3">
               <p className="banner-header">Lunch Bunch</p>
               <p >
                 WICC’s weekly Lunch Bunch program is an exceptional opportunity
@@ -110,7 +110,7 @@ export default class Lunch extends Component {
                <Image className="lunch-img" src={lunchbunch3}/> 
             </Col>
             <Col className="times-col">
-                <h3 className="times-text">Times</h3>
+                <h3 className="times-text">Meeting Times</h3>
                 <Card className = "times-card">
                 <div className = "times-list">
                   <p className = "times-content">Mondays, 12:10PM-1:10PM EST </p>
@@ -120,6 +120,7 @@ export default class Lunch extends Component {
               </Card>
             </Col>
         </Row>
+        
         <Col className = "testimonial-col">
           <Row>
             <h3 className = "testimonial-title">What Alumni Have Said</h3>

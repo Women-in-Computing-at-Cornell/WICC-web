@@ -117,9 +117,24 @@ img {
 .full-width-banner2 {
   position: relative;
   height: auto;
+  width: fit-content;
+  margin: 0;
+  padding: 0;
+}
+
+.full-width-banner3 {
+  position: relative;
+  height: auto;
   width: 100%;
   margin: 0;
   padding: 0;
+  
+}
+
+.banner3{
+  width: 100%;
+  object-fit: cover;
+  filter: brightness(40%);
 }
 
 
@@ -144,6 +159,18 @@ img {
   text-align: left;
   z-index: 2;
   max-width: 40%;
+  padding-left: 8%;
+}
+
+.banner-text3 {
+  position: absolute;
+  top: 45%;
+  left: 0;
+  transform: translateY(-50%);
+  color: white;
+  text-align: left;
+  z-index: 2;
+  width: 50%;
   padding-left: 8%;
 }
 
@@ -201,6 +228,7 @@ img {
 
 .testimonial-col {
   padding-bottom: 7%;
+  min-width: 100%;
 }
 
 .testimonial-person {
@@ -278,18 +306,15 @@ img {
 
 }
 
-.times-col {
-  padding-top: 9.5%;
+.times-col{
+  padding-top: 4.5%;
   margin-left: -2.5%;
 }
 
-/* .times-text{
-
-} */
-
-.times-row {
+.times-row{
   padding-top: 5%;
   padding-bottom: 2.5%;
+  width: 100%;
 }
 
 .times-card {
@@ -311,10 +336,11 @@ img {
   font-size: small;
 }
 
-.times-text {
-  padding-left: 20%;
+.times-text{
+  padding-left: 15%;
   padding-bottom: 5%;
-
+  font-weight: bold;
+  
 }
 
 .questions-container {
