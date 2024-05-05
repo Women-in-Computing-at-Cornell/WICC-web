@@ -125,15 +125,12 @@ img {
 
 .banner {
   width: 100%;
-  height:auto;
+  height: auto;
 }
 
 .banner {
   width: 100%;
   height: auto;
-  width: 35%;
-  padding-left: 5%;
-  padding-bottom: 5%;
   filter: brightness(40%);
 }
 
@@ -202,20 +199,20 @@ img {
   /* padding-bottom: 40px; */
 }
 
-.testimonial-col{
+.testimonial-col {
   padding-bottom: 7%;
 }
 
-.testimonial-person{
+.testimonial-person {
   font-size: medium;
   font-weight: bold;
 }
 
-.testimonial-row{
+.testimonial-row {
   padding-left: 18%;
 }
 
-.testimonial-card{
+.testimonial-card {
   margin-left: 1%;
   margin-right: 1%;
   width: 25%;
@@ -262,26 +259,26 @@ img {
   height: 100%;
 }
 
-.testimonial-title{
+.testimonial-title {
   margin-left: 15%;
   margin-bottom: 2%;
   padding-left: 55px;
   font-weight: bold;
 }
 
-.lunch-img{
+.lunch-img {
   height: auto;
   width: 90%;
   border-radius: 20px;
 }
 
-.img-col{
+.img-col {
   padding-left: 19%;
   padding-bottom: 50px;
 
 }
 
-.times-col{
+.times-col {
   padding-top: 9.5%;
   margin-left: -2.5%;
 }
@@ -290,12 +287,12 @@ img {
 
 } */
 
-.times-row{
+.times-row {
   padding-top: 5%;
   padding-bottom: 2.5%;
 }
 
-.times-card{
+.times-card {
   background-color: #ffffff;
   border-color: #ffffff;
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
@@ -303,52 +300,53 @@ img {
   width: 60%;
 }
 
-.times-list{
+.times-list {
   padding-left: 20%;
   padding-bottom: 8%;
   padding-top: 12%;
-  
+
 }
 
-.times-content{
+.times-content {
   font-size: small;
 }
 
-.times-text{
+.times-text {
   padding-left: 20%;
   padding-bottom: 5%;
-  
+
 }
 
-.questions-container{
+.questions-container {
   background-color: #F8F9FA;
 }
 
-.questions-text1{
+.questions-text1 {
   padding-left: 20%;
   font-size: x-large;
   padding-bottom: 1.5%;
 }
-.questions-text2{
+
+.questions-text2 {
   padding-left: 20%;
   padding-bottom: 1%;
 }
 
-.questions-img{
+.questions-img {
   width: 75px;
-  height:75px;
+  height: 75px;
   object-fit: cover;
   border-radius: 50%;
 }
 
-.questions-card{
+.questions-card {
   width: 25%;
   justify-content: center;
-  border:#F8F9FA;
+  border: #F8F9FA;
   background-color: #F8F9FA;
 }
 
-.questions-profile{
+.questions-profile {
   justify-content: center;
   margin-left: 10%;
 }
