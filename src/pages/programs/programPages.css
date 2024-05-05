@@ -51,8 +51,6 @@ li {
   padding-bottom: 5%;
 }
 
-
-
 .mentor-mentee-column {
   padding: 16px;
   background-color: #dcf3ed;
@@ -128,13 +126,18 @@ img {
   width: 100%;
   margin: 0;
   padding: 0;
-  
+
 }
 
-.banner3{
+.banner3 {
   width: 100%;
   object-fit: cover;
   filter: brightness(40%);
+}
+
+.banner4 {
+  width: 100%;
+  object-fit: cover;
 }
 
 
@@ -306,12 +309,12 @@ img {
 
 }
 
-.times-col{
+.times-col {
   padding-top: 4.5%;
   margin-left: -2.5%;
 }
 
-.times-row{
+.times-row {
   padding-top: 5%;
   padding-bottom: 2.5%;
   width: 100%;
@@ -336,15 +339,20 @@ img {
   font-size: small;
 }
 
-.times-text{
+.times-text {
   padding-left: 15%;
   padding-bottom: 5%;
   font-weight: bold;
-  
+
 }
 
 .questions-container {
   background-color: #F8F9FA;
+}
+
+.questions-container2 {
+  background-color: #F8F9FA;
+  width: 100%;
 }
 
 .questions-text1 {
