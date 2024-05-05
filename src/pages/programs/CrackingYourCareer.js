@@ -17,6 +17,7 @@ import {
 } from "../boardData";
 import crackingyourcareer from "../../images/programs-pictures/crackingyourcareer.png";
 import cyc1 from "../../images/programs-pictures/cyc1.png";
+import cyc2 from "../../images/programs-pictures/cyc2.png";
 // import lunchbunch1 from "../../images/programs-pictures/lunchbunch/lunchbunch1.jpg";
 // import lunchbunch2 from "../../images/programs-pictures/lunchbunch/lunchbunch2.jpg";
 // import lunchbunch3 from "../../images/programs-pictures/lunchbunch/lunchbunch3.jpg";
@@ -49,21 +50,34 @@ export default class CrackingYourCareer extends Component {
       <div class="page">
         <h1>Cracking Your Career</h1>
         <Container>
-        <div class = "design-container">
-            <div class = "design">
-                <div class = "container">
-                    <div class = "design-title">Design</div>
-                    <div class = "design-expl">
-                      Design CYC will focus on product roles catering to User Experience (UX) design. 
-                      <br/><br/>
-                      CYC Design will focus on common stages: behavioral, portfolio review and design challenges.
-                    </div>
-                </div>
-                <Image class = "design-pic"
-                      src={cyc1}
-                    ></Image>
-            </div>
-        </div>
+          <div class = "design">
+              <div class = "container">
+                  <div class = "design-title">Design</div>
+                  <div class = "design-expl">
+                    Design CYC will focus on product roles catering to User Experience (UX) design. 
+                    <br/><br/>
+                    CYC Design will focus on common stages: behavioral, portfolio review and design challenges.
+                  </div>
+              </div>
+              <Image class = "design-pic"
+                    src={cyc1}
+                  ></Image>
+          </div>
+       
+          <div class = "software">
+            <Image class = "soft-pic"
+                        src={cyc2}
+            ></Image>
+              <div class = "container-soft"> 
+                  <div class = "soft-title">Software Engineering</div>
+                  <div class = "soft-expl">
+                  The SWE section of CYC will focus on finding jobs and internships, 
+                  preparing your resume, getting experience, and tackling interviews 
+                  and interview preparation. 
+                  </div>
+              </div>
+          </div>
+       
         </Container>
         <center>
           <h5 style={{ paddingTop: "5%" }}>Questions?</h5>
