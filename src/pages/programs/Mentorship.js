@@ -45,7 +45,7 @@ export default class Mentorship extends Component {
               primarily based on academic and career interests.
             </p>
           </div>
-        </div>
+        </div >
         <div
           style={{
             display: "flex",
