@@ -137,7 +137,6 @@ export default class Mentorship extends Component {
           </div></div>
         <div
           style={{
-            // display: "flex",
             alignItems: "center",
             background: "#f7f9f8",
             padding: "3%",
@@ -149,18 +148,17 @@ export default class Mentorship extends Component {
           <p>Reach out to the following WICC members for clarification regarding to Active Membership.</p>
           <div style={{ display: 'flex', justifyContent: 'center' }}>
             {cod.map((s, i) => (
-              <div key={i} style={{ margin: '0 40px' }}> {/* Adjust the value of '10px' to your desired spacing */}
+              <div key={i} style={{ margin: '0 40px' }}>
                 <QuestionsCard
                   name={s.name}
                   title={s.title}
                   img={boardHeadshots[s.netId + ".jpg"]}
-                  netId={s.netId}
+                  netId={s.netId} x
                 />
               </div>
             ))}
           </div>
         </div>
-
       </>
     );
   }
