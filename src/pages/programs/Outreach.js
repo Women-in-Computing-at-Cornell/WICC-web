@@ -21,6 +21,7 @@ import outreach2 from "../../images/outreach/outreach2.jpg";
 import QuestionsCard from "./QuestionsCard.js";
 
 import Image from "react-bootstrap/Image";
+import { ReactGoogleSlides } from 'react-google-slides';
 
 // import medal from ".s./../images/medal.jpg";
 
