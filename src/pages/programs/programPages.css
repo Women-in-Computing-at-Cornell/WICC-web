@@ -2,14 +2,17 @@
   margin: 5%;
   margin-left: 10%;
   margin-right: 10%;
+  padding-left: 116px;
+  padding-right: 116px;
+  padding-top: 80px;
 }
 
 .sub {
-  font-Size: 90%;
-  color: #4D4D4D
+  font-size: 90%;
+  color: #4d4d4d;
 }
 
-.head{
+.head {
   font-weight: bold;
 }
 
@@ -22,21 +25,19 @@ li {
 }
 
 .vertLine {
-  border-left: 6px solid  #9CE2D3;
-  padding-right: 1%
+  border-left: 6px solid #9ce2d3;
+  padding-right: 1%;
 }
 
-.outreachDates p{
-  margin-bottom: 1%
+.outreachDates p {
+  margin-bottom: 1%;
 }
 
-.localEvents p{
+.localEvents p {
   margin-bottom: 1%;
   font-size: 90%;
-  color: #4D4D4D
-
+  color: #4d4d4d;
 }
-
 
 .main {
   background-color: #000;
@@ -56,28 +57,27 @@ img {
 }
 
 .outreachSlides {
- padding-right: 5%;
- padding-left: 6%;
-color: grey
+  padding-right: 5%;
+  padding-left: 6%;
+  color: grey;
 }
 
-.questionsImg{
+.questionsImg {
   width: 150px;
-  height:150px;
+  height: 150px;
   object-fit: cover;
   border-radius: 50%;
 }
 
-
 .full-width-banner {
-  position: relative; 
+  position: relative;
   width: 100%;
   margin: 0;
   padding: 0;
 }
 .banner {
   width: 100%;
-  height:auto;
+  height: auto;
   filter: brightness(50%);
 }
 
@@ -101,7 +101,6 @@ color: grey
 .section-title {
   font-size: 1.5em;
   font-weight: bold;
-
 }
 
 .container {
@@ -114,14 +113,6 @@ color: grey
   padding: 0;
 }
 
-
-.content-row {
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-}
-
-
 .column {
   flex: 1 1 0%;
   align-self: left;
@@ -130,7 +121,7 @@ color: grey
   justify-content: flex-start;
   align-items: flex-start;
   gap: 40px;
-  border-right: 4px solid #9CE2D3;
+  border-right: 4px solid #9ce2d3;
   height: 100%;
 }
 
@@ -142,9 +133,9 @@ color: grey
 
 .text-content {
   align-self: left;
-  color: #4D4D4D;
+  color: #4d4d4d;
   font-size: 18px;
   font-weight: 400;
   word-wrap: break-word;
-  height:100%;
+  height: 100%;
 }
