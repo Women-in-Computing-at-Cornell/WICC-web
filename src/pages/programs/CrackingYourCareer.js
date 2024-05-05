@@ -47,9 +47,25 @@ export default class CrackingYourCareer extends Component {
     );
 
     return (
-      <div class="page">
-        <h1>Cracking Your Career</h1>
+      <div>
+        {/* class="page" */}
+        <section class="top-section-cyc">
+          <div className="top-text-div-cyc">
+            {/* add in back to programs component when it exists */}
+            <h2 className="top-header-cyc">Cracking Your Career (CYC)</h2>
+            <p className="top-text-cyc">
+              Looking for Internships? Preparing for Recruitment?
+              <br />
+              <br />
+              Cracking Your Career (CYC) is for you! CYC is a 4-week program
+              intended to expose students to career paths and recruitment
+              preparation for Software Engineering (SWE) and Design.
+            </p>
+          </div>
+        </section>
+
         <Container>
+<<<<<<< HEAD
           <div class = "design">
               <div class = "container">
                   <div class = "design-title">Design</div>
@@ -78,6 +94,24 @@ export default class CrackingYourCareer extends Component {
               </div>
           </div>
        
+=======
+          <div class="design-container">
+            <div class="design">
+              <div class="container">
+                <div class="design-title">Design</div>
+                <div class="design-expl">
+                  Design CYC will focus on product roles catering to User
+                  Experience (UX) design.
+                  <br />
+                  <br />
+                  CYC Design will focus on common stages: behavioral, portfolio
+                  review and design challenges.
+                </div>
+              </div>
+              <Image class="design-pic" src={cyc1}></Image>
+            </div>
+          </div>
+>>>>>>> b11cd4228fb510503009c9b1541892643fa9bdce
         </Container>
         <center>
           <h5 style={{ paddingTop: "5%" }}>Questions?</h5>
