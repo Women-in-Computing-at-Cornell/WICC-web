@@ -2,12 +2,36 @@
   padding-bottom: 20px;
 }
 
-
 .hero-container {
-  /*  .call-to-action-container { */
-  margin: 3% 0;
+  position: relative;
 }
 
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  text-align: left;
+  color: #fff;
+}
+
+.hero-content h2 {
+  font-size: 3rem;
+  text-align: left;
+  color: #fff;
+  margin-left: 0;
+  max-width: 800px;
+  font-weight: bold;
+}
+
+.hero-content p {
+  font-size: 1rem;
+  text-align: left;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-left: 0;
+}
 
 .mission-container {
   text-align: center;
@@ -16,53 +40,39 @@
   flex-direction: row;
 }
 
-
 .heromission-content {
-  padding: 0px
+  padding: 0;
 }
-
 
 #home-illustration {
   width: 35%;
   float: right;
 }
 
-
 .call-to-action-container {
-  /* margin-bottom: %; */
   display: flex;
   justify-content: center;
   text-align: center;
-
 }
 
 .call-to-action-title {
   padding-left: 80px;
 }
 
-
-/* start of what we do container */
 .what-we-do-container {
-  /* Adjust container styles as needed */
   margin-top: 30px;
-  /* Example margin */
 }
-
 
 .title-with-line {
   display: flex;
   align-items: center;
 }
 
-
 .horizontal-line {
   height: 1px;
   width: 100%;
-  /* Full width of the container */
   background-color: #000;
-  /* Color of the line */
   margin-left: 10px;
-  /* Spacing between the title and line */
 }
 
 .title-text {
@@ -70,85 +80,55 @@
   white-space: nowrap;
 }
 
-
-/* end of what we do container */
-
-
-/* start of alumni testimony container */
-
-
 .alumni-testimonies-container {
-  /* Adjust container styles as needed */
   padding-top: 10px;
   background-size: cover;
   background-position: center top;
   position: relative;
   min-height: 300px;
-  color: #000000;
-  /* Text color for testimonies */
+  color: #000;
 }
-
 
 .alumni-testimonies-content {
-  /* Adjust container styles as needed */
-  padding-left: 5%;
-  padding-right: 5%;
-  padding-top: 3%;
-  padding-bottom: 2%;
+  padding: 3%;
   background-color: #defff8;
 }
-
 
 .testimony-grid {
   display: flex;
   justify-content: space-around;
-  /* background-image: url('../images/alumnitestimg.png'); /* Set your background image URL */
   background-color: #dbfff8;
   min-height: 300px;
   background-size: cover;
   background-position: center top;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding: 32px;
 }
-
 
 .testimony-column {
   padding: 16px;
-  background-color: #ffffff;
+  background-color: #fff;
   border-radius: 25px;
   flex-basis: 30%;
-  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
 }
 
-
-/* end of alumni testimony container */
-
-
-/* react-bootstrap button style overriding */
-.btn {
-  border-radius: 5em;
-}
-
-
+.btn,
 .btn-primary {
+  border-radius: 5em;
   color: black;
   background-color: #9CE2D3;
   border-color: #9CE2D3;
 }
 
-
 .headerName {
   font-size: 300%;
 }
 
-
 .sponsor-container {
   padding: 3%;
-  padding-bottom: 0.5%;
   padding-top: 40px;
   text-align: center;
 }
-
 
 .get-involved-grid {
   display: flex;
@@ -164,38 +144,23 @@
   height: 100%;
   border-radius: 25px;
   padding: 1rem;
-  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
 }
-
 
 .get-involved-column:hover {
   background-color: #f8f8f8;
-  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.25);
 }
 
-*/ .arrow-img {
-  display: flex;
-  justify-content: flex-start;
-}
-
-.panel-link {
-  flex: 1;
-}
-
-.panel-link:hover {
-  color: #000000;
-}
-
-
-.button-name {
-  display: flex;
-  justify-content: flex-start;
-}
-
+.arrow-img,
+.button-name,
 .button-description {
   display: flex;
   justify-content: flex-start;
-  padding-top: 1rem;
+}
+
+.panel-link:hover {
+  color: #000;
 }
 
 .carousel-wrapper {
@@ -204,43 +169,29 @@
   max-width: 100%;
   height: 200px;
   margin: 0 auto;
-  /* Center the carousel */
 }
 
-
-.carousel-wrapper .carousel img {
+.carousel img {
   width: 100%;
-  /* Set maximum width */
   height: 200px;
-  /* Set fixed height */
   object-fit: fill;
-  /* Fit images within the dimensions without distortion */
 }
 
-
-/* Move the navigation elements outside the carousel */
-.carousel.carousel-slider .control-arrow {
-  display: default;
-  padding: 0px;
+.carousel .control-arrow {
+  padding: 0;
 }
 
-
-.carousel-wrapper .carousel .control-dots {
+.carousel .control-dots {
   position: absolute;
-  color: black;
   bottom: -30px;
-  /* Adjust the distance from the bottom as needed */
   left: 50%;
   transform: translateX(-50%);
   z-index: 100;
-  /* Ensure it's above the images */
+  color: black;
 }
 
-
-.carousel .carousel-slider .control-dots .dot {
+.carousel .control-dots .dot {
   background-color: black;
-  /* Change dot color to a reddish tone */
   color: black;
   opacity: 0.8;
-  /* Adjust dot opacity if needed */
 }
