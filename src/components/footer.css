@@ -1,11 +1,13 @@
 .color-nav {
   position: relative;
   display: inline-flex;
-  padding: 56px 0px;
+  padding: 56px;
   flex-direction: column;
   align-items: flex-start;
   gap: 48px;
-  background: var(--3, #fff);
+  margin-top: 56px;
+  background: var(--3, #ffffff);
+  outline: solid 1px rgb(219, 219, 219);
 }
 
 .icon {

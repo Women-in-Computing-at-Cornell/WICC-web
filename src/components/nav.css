@@ -10,6 +10,8 @@
 .navbar {
   padding-left: 70px;
   padding-right: 70px;
+  background-color: white !important;
+  outline: solid 1px rgb(219, 219, 219);
 }
 
 .navbar .navbar-brand {

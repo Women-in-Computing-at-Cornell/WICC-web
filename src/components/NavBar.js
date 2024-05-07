@@ -30,9 +30,6 @@ class NavBar extends React.Component {
           <Nav.Link style={linkStyle} href="/#programs">
             Programs
           </Nav.Link>
-          <Nav.Link style={linkStyle} href="/#calendar">
-            Calendar
-          </Nav.Link>
           <Nav.Link style={linkStyle} href="/#sponsors">
             Sponsors
           </Nav.Link>
