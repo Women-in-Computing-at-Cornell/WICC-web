@@ -95,11 +95,11 @@ export default class CrackingYourCareer extends Component {
         </div>
         </Container>
         
-        <center class = "questions">
+        <div class = "questions">
           <h5 style={{ color: "black", fontSize: "36px", fontFamily: "Mulish", fontWeight: "700", lineHeight: "54px", wordWrap: "break-word" }}>Questions?</h5>
-          <div style = {{ color: "#212529", fontSize: "18px", fontFamily: "Mulish", fontWeight: "400", lineHeight: "27px", wordWrap: "break-word"}}>Reach out to the following WICC members for clarification regarding Cracking Your Career (CYC).</div>
+          <div style = {{ color: "#212529", fontSize: "18px", fontFamily: "Mulish", fontWeight: "400", lineHeight: "27px", wordWrap: "break-word", alignContent: "start"}}>Reach out to the following WICC members for clarification regarding Cracking Your Career (CYC).</div>
           <Container style={{ paddingRight: "10%", flexDirection: "row" }}>
-            <Row style={{ paddingBottom: "1%", flexDirection: "row" }}>
+            <Row style={{ paddingBottom: "1%", flexDirection: "row", alignItems: "center" }}>
               <div class = "row">
                 <QuestionsCard
                     name={directors[0].name}
@@ -108,15 +108,15 @@ export default class CrackingYourCareer extends Component {
                     netId={directors[0].netId}
                   />
                   <QuestionsCard
+                      img={boardHeadshots[directors[1].netId + ".jpg"]}
                       name={directors[1].name}
                       title={directors[1].title}
-                      img={boardHeadshots[directors[1].netId + ".jpg"]}
                       netId={directors[1].netId}
                     />
               </div>
             </Row>
           </Container>
-        </center>
+        </div>
         <Container>
           {/* <div class = "event-container">
             <h5 class = "event-timeline-title">Event Timeline</h5>
