@@ -9,6 +9,11 @@ import "./programPages.css";
 
 
 export default class Mentorship extends Component {
+
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
+
   render() {
     let cod = community.members.filter(
       (record) => record.position === "Mentorship Co-Director"

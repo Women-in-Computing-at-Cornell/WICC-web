@@ -23,6 +23,11 @@ import PhotoCarousel from "../PhotoCarousel";
 import "./programPages.css";
 
 export default class Campaigns extends Component {
+
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
+
   constructor(props) {
     super(props);
     this.state = {

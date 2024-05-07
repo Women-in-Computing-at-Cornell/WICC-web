@@ -8,9 +8,8 @@ export default class Calendar extends Component {
         fontFamily: "Inter",
       },
       header: {
-        backgroundColor: "#9CE2D3",
         fontFamily: "Inter",
-        padding: "2rem 2rem",
+        paddingLeft: "7%",
         fontWeight: "bold",
         fontSize: "2rem",
       },
@@ -24,7 +23,7 @@ export default class Calendar extends Component {
 
     return (
       <div>
-        <h1 style={styles.header}>WICC Events</h1>
+        <h1 style={styles.header}>Upcoming Events</h1>
         <div style={styles.calendarContainer}>
           <iframe
             src="https://embed.styledcalendar.com/#dbok0HlKHCTpqz0ajQoT"
