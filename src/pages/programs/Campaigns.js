@@ -122,35 +122,9 @@ export default class Campaigns extends Component {
               <Col></Col>
             </Row>
           </Container>
-          <Navbar
-            expand="lg"
-            className="justify-content-center"
-            onSelect={handleSelect}
-            style={{ fontSize: "25px" }}
-          >
-            <Nav>
-              <NavDropdown title="Photo Campaigns" id="basic-nav-dropdown">
-                <NavDropdown.Item eventKey="sp19">
-                  Spring 2019: #SheIsWhyICode
-                </NavDropdown.Item>
-                <NavDropdown.Item eventKey="fa18">
-                  Fall 2018: Diversity in Tech with URMC
-                </NavDropdown.Item>
-                <NavDropdown.Item eventKey="sp18">
-                  Spring 2018: #WearWhatYouWant
-                </NavDropdown.Item>
-                <NavDropdown.Item eventKey="fa17">
-                  Fall 2017: Diversity in Tech with URMC
-                </NavDropdown.Item>
-                <NavDropdown.Item eventKey="fa16">
-                  Fall 2016: Diversity in Tech
-                </NavDropdown.Item>
-                <NavDropdown.Item eventKey="fa15">
-                  Fall 2015: #ILookLikeAnEngineer
-                </NavDropdown.Item>
-              </NavDropdown>
-            </Nav>
-          </Navbar>
+
+          <PhotoCarousel imgNames={imgNamesSp19} pics={sp19Dit} />
+
 
           {this.state.value === "sp19" && (
             <PhotoCarousel imgNames={imgNamesSp19} pics={sp19Dit} />
