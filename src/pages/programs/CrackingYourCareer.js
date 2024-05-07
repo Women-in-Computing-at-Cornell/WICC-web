@@ -48,10 +48,26 @@ export default class CrackingYourCareer extends Component {
     );
 
     return (
-      <div class="page">
-        <h1>Cracking Your Career</h1>
+        
+      <div>
+        {/* class="page" */}
+        <section class="top-section-cyc">
+          <div className="top-text-div-cyc">
+            {/* add in back to programs component when it exists */}
+            <h2 className="top-header-cyc">Cracking Your Career (CYC)</h2>
+            <p className="top-text-cyc">
+              Looking for Internships? Preparing for Recruitment?
+              <br />
+              <br />
+              Cracking Your Career (CYC) is for you! CYC is a 4-week program
+              intended to expose students to career paths and recruitment
+              preparation for Software Engineering (SWE) and Design.
+            </p>
+          </div>
+        </section>
+        <div class = "page">
         <Container>
-          <div class = "design">
+        <div class = "design">
               <div class = "container">
                   <div class = "design-title">Design</div>
                   <div class = "design-expl">
@@ -64,35 +80,40 @@ export default class CrackingYourCareer extends Component {
                     src={cyc1}
                   ></Image>
           </div>
-       
-          <div class = "software">
-            <Image class = "soft-pic"
-                        src={cyc2}
-            ></Image>
-              <div class = "container-soft"> 
-                  <div class = "soft-title">Software Engineering<br/><br/></div>
-                  <div class = "soft-expl">
-                  The SWE section of CYC will focus on finding jobs and internships, 
-                  preparing your resume, getting experience, and tackling interviews 
-                  and interview preparation. 
-                  </div>
-              </div>
-          </div>
+        <div class = "software">
+          <Image class = "soft-pic"
+                      src={cyc2}
+          ></Image>
+            <div class = "container-soft"> 
+                <div class = "soft-title">Software Engineering<br/><br/></div>
+                <div class = "soft-expl">
+                The SWE section of CYC will focus on finding jobs and internships, 
+                preparing your resume, getting experience, and tackling interviews 
+                and interview preparation. 
+                </div>
+            </div>
+        </div>
         </Container>
         
-
-        <center>
-          <h5 style={{ paddingTop: "5%" }}>Questions?</h5>
-          <Container style={{ paddingRight: "10%" }}>
-            <Row style={{ paddingBottom: "1%" }}>
-              <Col>
+        <center class = "questions">
+          <h5 style={{ color: "black", fontSize: "36px", fontFamily: "Mulish", fontWeight: "700", lineHeight: "54px", wordWrap: "break-word" }}>Questions?</h5>
+          <div style = {{ color: "#212529", fontSize: "18px", fontFamily: "Mulish", fontWeight: "400", lineHeight: "27px", wordWrap: "break-word"}}>Reach out to the following WICC members for clarification regarding Cracking Your Career (CYC).</div>
+          <Container style={{ paddingRight: "10%", flexDirection: "row" }}>
+            <Row style={{ paddingBottom: "1%", flexDirection: "row" }}>
+              <div class = "row">
                 <QuestionsCard
-                  name={directors[0].name}
-                  title={directors[0].title}
-                  img={boardHeadshots[directors[0].netId + ".jpg"]}
-                  netId={directors[0].netId}
-                />
-              </Col>
+                    name={directors[0].name}
+                    title={directors[0].title}
+                    img={boardHeadshots[directors[0].netId + ".jpg"]}
+                    netId={directors[0].netId}
+                  />
+                  <QuestionsCard
+                      name={directors[1].name}
+                      title={directors[1].title}
+                      img={boardHeadshots[directors[1].netId + ".jpg"]}
+                      netId={directors[1].netId}
+                    />
+              </div>
             </Row>
           </Container>
         </center>
@@ -113,6 +134,7 @@ export default class CrackingYourCareer extends Component {
             </div>
           </div> */}
         </Container>
+        </div>
       </div>
     );
   }

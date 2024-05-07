@@ -203,5 +203,29 @@
   display: inline-flex;
 }
 
+.questions{
+  width: 100%; 
+  height: 100%; 
+  padding-left: 270px; 
+  padding-right: 270px; 
+  padding-top: 80px; 
+  padding-bottom: 80px; 
+  background: #FBFBFB; 
+  flex-direction: column; 
+  justify-content: flex-start; 
+  align-items: flex-start; 
+  gap: 32px;
+  display: inline-flex;
+  align-items: left;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+  height: 100%;  
+  justify-content: center; 
+  align-items: center;
+}
+
 
 
