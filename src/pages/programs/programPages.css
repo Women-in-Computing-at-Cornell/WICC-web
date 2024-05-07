@@ -9,7 +9,7 @@
   color: white;
   text-align: left;
   z-index: 2;
-  margin-right: 50%;
+  margin-right: 60%;
   padding-left: 8%;
 }
 
@@ -17,15 +17,6 @@
   filter: brightness(40%);
   object-fit: cover;
   overflow: hidden;
-}
-
-.hero-text a {
-  color: white;
-  text-decoration: underline;
-}
-
-.hero-text a:hover {
-  box-shadow: 0px 1px 1px 1px rgb(68, 68, 68);
 }
 
 .page {
