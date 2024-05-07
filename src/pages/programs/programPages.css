@@ -17,6 +17,8 @@
   filter: brightness(40%);
   object-fit: cover;
   overflow: hidden;
+  width: 100%;
+  height: 100%;
 }
 
 .hero-text a {
@@ -55,21 +57,20 @@ li {
 }
 
 .vertLine {
-  border-left: 6px solid #9CE2D3;
-  border-left: 6px solid #9CE2D3;
-  padding-right: 1%
+  border-left: 6px solid #9ce2d3;
+  border-left: 6px solid #9ce2d3;
+  padding-right: 1%;
 }
 
 .outreachDates p {
-  margin-bottom: 1%
+  margin-bottom: 1%;
 }
 
 .localEvents p {
   margin-bottom: 1%;
   font-size: 90%;
-  color: #4D4D4D
+  color: #4d4d4d;
 }
-
 
 .mentor-mentee-grid {
   display: flex;
@@ -104,8 +105,6 @@ li {
   position: relative;
 }
 
-
-
 .swiper {
   display: flex;
   overflow-x: visible;
@@ -113,13 +112,9 @@ li {
   will-change: transform;
 }
 
-
-
 img {
   object-fit: contain;
 }
-
-
 
 .outreachSlides {
   padding-right: 5%;
@@ -168,7 +163,6 @@ img {
   width: 100%;
   margin: 0;
   padding: 0;
-
 }
 
 .banner3 {
@@ -182,7 +176,6 @@ img {
   object-fit: cover;
 }
 
-
 .banner {
   width: 100%;
   height: auto;
@@ -192,7 +185,6 @@ img {
   height: auto;
   filter: brightness(40%);
 }
-
 
 .banner-text {
   position: absolute;
@@ -215,24 +207,20 @@ img {
   /* Add some padding on the left if needed */
 }
 
-
 .banner-header {
   font-size: 3em;
   font-weight: bold;
 }
-
 
 .section-title {
   font-size: 1.5em;
   font-weight: bold;
 }
 
-
 .container {
   width: 100%;
   filter: brightness(40%);
 }
-
 
 .banner-text {
   position: absolute;
@@ -246,18 +234,15 @@ img {
   padding-left: 8%;
 }
 
-
 .banner-header {
   font-size: 3em;
   font-weight: bold;
 }
 
-
 .section-title {
   font-size: 1.5em;
   font-weight: bold;
 }
-
 
 .container {
   width: 100%;
@@ -303,7 +288,7 @@ img {
   justify-content: flex-start;
   align-items: flex-start;
   gap: 40px;
-  border-right: 4px solid #9CE2D3;
+  border-right: 4px solid #9ce2d3;
   height: 100%;
   align-items: center;
   margin: 0;
