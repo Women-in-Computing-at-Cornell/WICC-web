@@ -5,7 +5,6 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 import "./member.css";
 import defaultImage from "../images/noimage.png";
-import coffeeImage from "../images/coffeeBear.png";
 import coffeeChatSVG from "../images/icons/coffee-chat-button.svg";
 import coffeeChatExpandedSVG from "../images/icons/coffee-chat-expanded.svg";  
 
@@ -90,7 +89,7 @@ function Member({ name, title, netid, bio, img }) {
             <p className="modalTextStyle">{bio}</p>
           </div>
         </div>
-      </Modal>
+      </Modal> 
     </>
   );
 }

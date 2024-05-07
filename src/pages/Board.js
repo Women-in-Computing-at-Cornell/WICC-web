@@ -38,14 +38,48 @@ export default class Board extends Component {
     super(props);
     this.state = {
       value: "pres",
+      scrollProgress: 0,
     };
+    this.handleScroll = this.handleScroll.bind(this);
   }
 
+  componentDidMount() {
+    window.addEventListener('scroll', this.handleScroll);
+  }
+  
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.handleScroll);
+  }
+  
+  handleScroll = () => {
+    const totalScroll = document.documentElement.scrollTop;
+    const windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    const scrollProgress = `${(totalScroll / windowHeight) * 100}`;
+  
+    this.setState({
+      scrollProgress
+    });
+  };
+  
   handleSelect = (e) => {
     this.setState({
       value: e,
     });
   };
+
+  renderProgressBar() {
+    return (
+      <div style={{
+        position: 'fixed',
+        top: 0,
+        left: 0,
+        width: `${this.state.scrollProgress}%`,
+        height: '5px',
+        backgroundColor: '#73CFBB',
+        zIndex: 1000 // Ensure it's above other content
+      }} />
+    );
+  }
 
   render() {
     const { value } = this.state;
@@ -97,6 +131,7 @@ export default class Board extends Component {
                 top: "0px",
               }}
             >
+              {this.renderProgressBar()}
               <Nav
                 onSelect={this.handleSelect}
                 className="flex-column"

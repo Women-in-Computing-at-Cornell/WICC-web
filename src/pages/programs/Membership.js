@@ -9,6 +9,10 @@ import QuestionsCard from "./QuestionsCard.js";
 import "./programPages.css";
 
 export default class Membership extends Component {
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
+
   render() {
     let sec = operations.members.filter(
       (record) => record.position === "Secretary"
@@ -101,60 +105,65 @@ export default class Membership extends Component {
             Spring 2023.)
           </p>
           <br />
-          <div class="container">
-            <div class="content-row">
-              <div class="column">
-                <div class="column-header">01</div>
-                <div class="text-content">
-                  <ul>
-                    <li>
-                      Have a positive and supportive outlook on all forms of
-                      diversity.{" "}
-                    </li>
-                    <li>
-                      Develop a growth mindset in being an open, aware and
-                      helpful individual.{" "}
-                    </li>
-                    <li>
-                      Represent WICC values in-person and online, knowing that
-                      what you say/post reflects both yourself and the
-                      organization.{" "}
-                    </li>
-                  </ul>
+          <div id="reqs">
+            <div class="container">
+              <div style={{ display: "flex" }}>
+                <div class="column">
+                  <div class="column-header">01</div>
+                  <div class="text-content">
+                    <ul>
+                      <li>
+                        Have a positive and supportive outlook on all forms of
+                        diversity.{" "}
+                      </li>
+                      <li>
+                        Develop a growth mindset in being an open, aware and
+                        helpful individual.{" "}
+                      </li>
+                      <li>
+                        Represent WICC values in-person and online, knowing that
+                        what you say/post reflects both yourself and the
+                        organization.{" "}
+                      </li>
+                    </ul>
+                  </div>
                 </div>
-              </div>
-              <div class="column">
-                <div class="column-header">02</div>
-                <div class="text-content">
-                  Uphold the WICC mission statement: Women in Computing at
-                  Cornell strives to make computing inclusive for all. We aim to
-                  foster a supportive community of women* and allies equipped
-                  with the resources needed to recognize and overcome
-                  challenges. By creating opportunities for technical and
-                  leadership growth, we work to ensure that people of all
-                  identities are able to discover and pursue their interests and
-                  talents in order to positively impact the future of tech. *All
-                  gender identities are welcome and supported!{" "}
+                <div class="column">
+                  <div class="column-header">02</div>
+                  <div class="text-content">
+                    Uphold the WICC mission statement: Women in Computing at
+                    Cornell strives to make computing inclusive for all. We aim to
+                    foster a supportive community of women* and allies equipped
+                    with the resources needed to recognize and overcome
+                    challenges. By creating opportunities for technical and
+                    leadership growth, we work to ensure that people of all
+                    identities are able to discover and pursue their interests and
+                    talents in order to positively impact the future of tech. *All
+                    gender identities are welcome and supported!{" "}
+                  </div>
                 </div>
-              </div>
-              <div class="column">
-                <div class="column-header">03</div>
-                <div class="text-content">
-                  Actively attend and engage at more than 4 WICC events/programs
-                  throughout the semester. These events include:
-                  <ul>
-                    <li>Lunch Bunch </li>
-                    <li>Mentorship Circles</li>
-                    <li>Cornell Girls Who Code </li>
-                    <li>Technical Committee</li>
-                    <li>Photo & Video Committee</li>
-                    <li>Cracking Your Career</li>
-                    <li>Corporate Committee</li>
-                  </ul>
+                <div class="column">
+                  <div class="column-header">03</div>
+                  <div class="text-content">
+                    Actively attend and engage at more than 4 WICC events/programs
+                    throughout the semester. These events include:
+                    <ul>
+                      <li>Lunch Bunch </li>
+                      <li>Mentorship Circles</li>
+                      <li>Cornell Girls Who Code </li>
+                      <li>Technical Committee</li>
+                      <li>Photo & Video Committee</li>
+                      <li>Cracking Your Career</li>
+                      <li>Corporate Committee</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
+
           </div>
+
+
           <div
             style={{
               marginTop: "10%",

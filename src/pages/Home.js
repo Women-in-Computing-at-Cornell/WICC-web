@@ -10,6 +10,11 @@ import newmissionImg from "../images/wiccnewlogo.png";
 import PCarousel from "../components/PCarousel";
 import CurrentSponsors from "../components/currentSponsors.js"
 import ImgCarousel from "../components/ImgCarousel.jsx";
+import banner from "../images/home/home.png";
+import www1 from "../images/home/www1.png";
+import www2 from "../images/home/www2.png";
+import www3 from "../images/home/www3.png";
+import { Link } from "react-router-dom";
 
 function importAll(r) {
   let images = {};
@@ -69,84 +74,66 @@ const Home = () => {
   const homepics = Object.keys(homepicsname);
 
   console.log(homepics)
+  const commonFlexColumnStyle = {
+    display: "flex",
+    flexDirection: "column",
+    flex: "1"
+  };
 
+  const commonImageStyle = {
+    width: "100%",
+    height: "auto"
+  };
+
+  const containerStyle = {
+    display: "flex",
+    flexDirection: "row",
+    marginLeft: "10em",
+    marginRight: "10em",
+    gap: "8em"
+  };
   return (
-    <div>
+    <>
+      {/* Hero Image */}
       <div className="home-container">
-        <section
-          style={{
-            paddingBottom: "3%",
-            paddingLeft: "5%",
-            width: "100%",
-            height: "100%",
-            backgroundColor: "#f8f9fa",
-            display: "flex",
-            flexDirection: "row",
-            alignContent: "center",
-            justifyContent: "space-between",
-          }}
-        >
-          <div
-            style={{
-              backgroundColor: "#f8f9fa",
-              display: "flex",
-              flexDirection: "column",
-              justifyContent: "center",
-            }}
-          >
-            <h2
-              style={{
-                textAlign: "left",
-                fontWeight: "bold",
-                maxWidth: "430px",
-              }}
-            >
-              Our Mission is to build a supportive tech community for women and
-              allies.
-            </h2>
-            <p style={{ textAlign: "left", maxWidth: "430px" }}>
-              We provide resources to conquer challenges and create
-              opportunities for technical and leadership growth. We empower
-              people from diverse backgrounds to make a positive impact on the
-              future of tech. We embrace all gender identities.
+        <section className="hero-container">
+          <Image
+            src={banner}
+            className="mission-image"
+          ></Image>
+          <div className="hero-content">
+            <h2>Building a supportive tech community for women and allies.</h2>
+            <p>
+              We provide resources to conquer challenges and create opportunities for technical and leadership growth. We empower people from diverse backgrounds to make a positive impact on the future of tech. We embrace all gender identities.
             </p>
           </div>
-          <Image
-            style={{ maxHeight: "600px", maxWidth: "880px" }}
-            src={newmissionImg}
-            id="mission-image"
-          ></Image>
         </section>
+
+        {/* Semester Outlook */}
         <section
           style={{
             display: "flex",
             flexDirection: "row",
-            alignContent: "center",
-            // justifyContent: "center",
-            justifyContent: "space-around",
+            alignContent: "left",
+            justifyContent: "flex-start", // Update to flex-start
           }}
           className="semout-container"
         >
-          <div>
-            <Image
-              style={{ maxWidth: "600px" }}
-              src={semoutlook}
-              id="semester-outlook"
-            ></Image>
-          </div>
           <div
             style={{
               display: "flex",
               flexDirection: "column",
-              alignContent: "center",
+              alignContent: "left",
               justifyContent: "center",
+              marginTop: "5em",
+              marginLeft: "10em",
+              marginBottom: "3em"
             }}
           >
             <h2 style={{ textAlign: "left", fontWeight: "bold" }}>
-              {" "}
               Semester Outlook
             </h2>
-            <p style={{ textAlign: "left", maxWidth: "570px" }}>
+            <p style={{ textAlign: "left", maxWidth: "800px" }}>
               WICC is a place where women and gender minorities feel supported
               throughout their academic journey and careers in technology. We
               are a coalition of leaders who seek to make an impact on Cornell,
@@ -156,182 +143,160 @@ const Home = () => {
             </p>
           </div>
         </section>
+        {/* What We Do */}
         <section
-          style={{ paddingLeft: "5%", paddingRight: "5%" }}
+          style={{}}
           className="what-we-do-container"
         >
-          <div className="title-with-line">
-            {/* Title */}
-            <h2 className="title-text">What we do</h2>
-            {/* Right decorative line */}
-            <div className="horizontal-line"></div>
+          <div >
+            <h2 style={{ textAlign: "left", fontWeight: "bold", marginLeft: "5em" }}>What we do</h2>
           </div>
-        </section>
-        <section
-
-          className=""
-        >
-          <ImgCarousel imgNames={homepics} pics={homepicsname} />
-        </section>
-        <section
-          style={{ paddingLeft: "5%", paddingRight: "5%", paddingTop: "50px" }}
-          className="alumni-testimonies-container"
-        >
-          <div className="alumni-testimonies-content">
-            <h2>Alumni Testimonies</h2>
-            <div className="testimony-grid">
-              <div className="testimony-column">
-                {/* Testimony 1 */}
-                <h2
-                  style={{
-                    padding: "10px",
-                    fontWeight: "bold",
-                    color: "black",
-                    fontSize: 22,
-                  }}
-                >
-                  Nandita Mohan '20
-                </h2>
-                <p style={{ padding: "15px", fontSize: 13 }}>
-                  "If there's one person who first made me feel involved,
-                  integrated and comfortable in the CIS community at Cornell, it
-                  would be Harini. Being her friend and mentee from when I was a
-                  freshman showed me that incredibly successful and humble
-                  upperclassmen also had their own confusions and struggles
-                  along the way, and that it was in-fact completely normal. Not
-                  to mention she was always willing to grab a meal, have fun
-                  conversations, and be there for me when I needed it.".
-                </p>
+          <div style={containerStyle}>
+            {/* Left Column */}
+            <div style={commonFlexColumnStyle}>
+              <img src={www1} alt="Team celebration" style={commonImageStyle} />
+              <p style={{ width: "100%", marginLeft: "2em" }}>The impact of WICC's initiatives reach far and wide across Computing and Information Science.</p>
+              <div className="stats">
+                <div className="stat-item">
+                  <strong>400+</strong>
+                  <span>Current Active Members</span>
+                </div>
+                <div className="stat-item">
+                  <strong>2000</strong>
+                  <span>Followers on Instagram</span>
+                </div>
+                <div className="stat-item">
+                  <strong>1700+</strong>
+                  <span>Newsletter Subscriber</span>
+                </div>
               </div>
-              <div className="testimony-column">
-                {/* Testimony 2 */}
-                <h2
-                  style={{
-                    padding: "10px",
-                    fontWeight: "bold",
-                    color: "black",
-                    fontSize: 22,
-                  }}
-                >
-                  Maya Frai '20
-                </h2>
-                <p style={{ padding: "15px", fontSize: 13 }}>
-                  “WICC has given me an invaluable amount of resources, one of
-                  them being the alumni network. When I first heard about WICC
-                  my freshman year, I joined Lunch Bunch and was able to meet
-                  two incredible women who I am happy to call my mentors. They
-                  took the time to talk about all of the diverse opportunities
-                  in tech and how WICC has allowed them to connect with other
-                  women in the field. WICC alumni are not only incredibly
-                  inspirational, but are also dedicated and down-to-earth.
-                  Looking forward to being a part of this admirable network
-                  after graduation.”
-                </p>
-              </div>
-              <div className="testimony-column">
-                {/* Testimony 3 */}
-                <h2
-                  style={{
-                    padding: "10px",
-                    fontWeight: "bold",
-                    color: "black",
-                    fontSize: 22,
-                  }}
-                >
-                  Karen Zhang '21
-                </h2>
-                <p style={{ padding: "15px", fontSize: 13 }}>
-                  “I learned about the different fields of CS and how they're
-                  used, which I previously had many misconceptions about. Lunch
-                  Bunch truly let me cement my decision to major in CS, as
-                  through it I got an idea of the potential of the field.”
-                </p>
-              </div>
-              {/* Add more testimonies as needed */}
+              <img src={www3} alt="Working at computers" style={commonImageStyle} />
+            </div>
+            {/* Right Column */}
+            <div style={commonFlexColumnStyle}>
+              <p style={{ marginLeft: "2em", marginRight: "2em", marginTop: "3em", marginBottom: "2em" }}>Through our programs in <strong>academic development, community building, outreach, mentorship, corporate engagement, career development, and photo campaigns</strong>, we aim to cultivate a supportive environment where women and allies can thrive and seize opportunities for <strong>technical, academic, and leadership growth.</strong></p>
+              <a href="#" className="btn" style={{ marginLeft: "2em", marginRight: "2em", marginBottom: "2em" }}>Learn More about Our Programs</a>
+              <img src={www2} alt="Team meeting" style={commonImageStyle} />
+              <p style={{ marginLeft: "2em", marginRight: "2em" }}>We actively engage with the broader community to promote <strong>diversity and inclusion</strong> in tech through outreach.</p>
+              <p style={{ marginLeft: "2em", marginRight: "2em" }}>Join us as we empower individuals to make a lasting impact on the tech industry and beyond!</p>
+              <a href="#" className="btn" style={{ marginLeft: "2em", marginRight: "2em" }}>Become a WICC member</a>
             </div>
           </div>
         </section>
-        {/*<section class="call-to-action-container"> 
-          <h3>Get Involved</h3>
-          <Button href="/#join">Get Involved</Button>
-                </section>  */}
 
-        <section
-          style={{ paddingLeft: "5%", paddingRight: "5%" }}
-          className="what-we-do-container"
-        >
-          <div className="title-with-line">
-            {/* Title */}
-            <h2 className="title-text">Get Involved</h2>
-            {/* Right decorative line */}
-            <div className="horizontal-line"></div>
-          </div>
-        </section>
-        {/* <section id="getinvolved">
-          
-
-        </section> */}
-
-        <section className="call-to-action-container">
-          <div className="get-involved-grid">
-            <a href="/#join" className="panel-link">
-              <div className="get-involved-column">
-
-                <Image
-                  className="arrow-img"
-                  style={{ maxWidth: "40px", float: "left" }}
-                  src={arrowbutton}
-                ></Image>
-
-
-                <small className="button-description">Get Involved </small>
-                <h4 className="button-name">Join Us</h4>
+        {/* What Our Alumni Says */}
+        <section className="alumni-section">
+          <h2 className="alumni-header">What Our Alumni Says</h2>
+          <div className="testimony-container">
+            <div className="testimony">
+              <strong className="alumni-name">Nandita Mohan '20</strong>
+              <div>
+                "If there's one person who first made me feel involved, integrated and comfortable in the CIS community at Cornell, it would be Harini. Being her friend and mentee from when I was a freshman showed me that incredibly successful and humble upperclassmen also had their own confusions and struggles along the way, and that it was in-fact completely normal. Not to mention she was always willing to grab a meal, have fun conversations, and be there for me when I needed it."
               </div>
-            </a>
-
-            <a
-              href="https://drive.google.com/file/d/1s_okJqDYmfD5-3jEPCPKvbtP_TYruXXD/view?usp=sharing"
-              className="panel-link"
-            >
-              <div className="get-involved-column">
-                <Image
-                  className="arrow-img"
-                  style={{ maxWidth: "40px", float: "left" }}
-                  src={arrowbutton}
-                ></Image>
-
-                <small className="button-description">
-                  Collaborate with us{" "}
-                </small>
-                <h4 className="button-name">Sponsors</h4>
+            </div>
+            <div className="testimony">
+              <strong className="alumni-name">Maya Frai '20</strong>
+              <div>
+                “WICC has given me an invaluable amount of resources, one of them being the alumni network. When I first heard about WICC my freshman year, I joined Lunch Bunch and was able to meet two incredible women who I am happy to call my mentors. They took the time to talk about all of the diverse opportunities in tech and how WICC has allowed them to connect with other women in the field. WICC alumni are not only incredibly inspirational, but are also dedicated and down-to-earth. Looking forward to being a part of this admirable network after graduation.”
               </div>
-            </a>
-
-            <a href="/#programs" className="panel-link">
-              <div className="get-involved-column">
-
-                <Image
-                  className="arrow-img"
-                  style={{ maxWidth: "40px", float: "left" }}
-                  src={arrowbutton}
-                ></Image>
-
-                <small className="button-description">Work with us </small>
-                <h4 className="button-name">Programs</h4>
+            </div>
+            <div className="testimony">
+              <strong className="alumni-name">Karen Zhang '21</strong>
+              <div>
+                “I learned about the different fields of CS and how they're used, which I previously had many misconceptions about. Lunch Bunch truly let me cement my decision to major in CS, as through it I got an idea of the potential of the field.”
               </div>
-            </a>
+            </div>
           </div>
         </section>
 
-        <CurrentSponsors />
+        {/* Get Involved */}
+        <section className="get-involved">
+          <h2 className="get-involved-header">Get Involved</h2>
+          <div className="call-to-action-container" >
+            <div className="get-involved-grid">
+              {/* First Box */}
+              <Link to="/membership#reqs" className="get-involved-columno">
+                <div className="get-involved-content">
+                  <Image
+                    className="arrow-img"
+                    style={{ maxWidth: "40px" }}
+                    src={arrowbutton}
+                  ></Image>
+                  <div>
+                    <small className="button-description">Learn About Us </small>
+                    <h4 className="button-name">Join Our Listserv</h4>
+                  </div>
+                </div>
+              </Link>
 
-        {/*  <section style={{ marginTop: "5%" }} class="sponsor-container">
-         <h2 style={{ fontWeight: "bold" }}>Our Sponsors</h2>
-         <Sponsors />
-       </section>
-             */}
-      </div>
-    </div>
+
+              {/* Second Box */}
+              <Link to="/membership"
+                className="get-involved-columne"
+              >
+                <div className="get-involved-content">
+                  <Image
+                    className="arrow-img"
+                    style={{ maxWidth: "40px" }}
+                    src={arrowbutton}
+                  ></Image>
+                  <div>
+                    <small className="button-description">
+                      Join Us
+                    </small>
+                    <h4 className="button-name">Active Membership</h4>
+                  </div>
+
+                </div>
+              </Link>
+
+
+              {/* Third Box */}
+              <Link to="/sponsors" className="get-involved-columno">
+                <div className="get-involved-content" >
+                  <Image
+                    className="arrow-img"
+                    style={{ maxWidth: "40px" }}
+                    src={arrowbutton}
+                  ></Image>
+                  <div>
+                    <small className="button-description">Collaborate With Us</small>
+                    <h4 className="button-name">Sponsorship</h4>
+                  </div>
+
+                </div>
+              </Link>
+
+              {/* Fourth Box */}
+
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSe_QtYzpq9knpmjDAj0bV3MwcsBtOy8IX7XhOHoroq0801sNw/viewform" className="get-involved-columne">
+                <div className="get-involved-content">
+                  <Image
+                    className="arrow-img"
+                    style={{ maxWidth: "40px" }}
+                    src={arrowbutton}
+                  ></Image>
+                  <div>
+                    <small className="button-description">Support Us</small>
+                    <h4 className="button-name">Alumni</h4>
+                  </div>
+
+                </div>
+              </a>
+
+
+            </div>
+          </ div>
+        </section>
+
+        {/* Sponsors */}
+        <section>
+          <CurrentSponsors />
+        </section>
+
+
+      </div >
+    </ >
   );
 };
 export default Home;
