@@ -14,6 +14,7 @@ import banner from "../images/home/home.png";
 import www1 from "../images/home/www1.png";
 import www2 from "../images/home/www2.png";
 import www3 from "../images/home/www3.png";
+import { Link } from "react-router-dom";
 
 function importAll(r) {
   let images = {};
@@ -214,7 +215,7 @@ const Home = () => {
           <div className="call-to-action-container" >
             <div className="get-involved-grid">
               {/* First Box */}
-              <a href="/#join" className="get-involved-columno">
+              <Link to="/membership#reqs" className="get-involved-columno">
                 <div className="get-involved-content">
                   <Image
                     className="arrow-img"
@@ -226,12 +227,11 @@ const Home = () => {
                     <h4 className="button-name">Join Our Listserv</h4>
                   </div>
                 </div>
-              </a>
+              </Link>
 
 
               {/* Second Box */}
-              <a
-                href="https://drive.google.com/file/d/1s_okJqDYmfD5-3jEPCPKvbtP_TYruXXD/view?usp=sharing"
+              <Link to="/membership"
                 className="get-involved-columne"
               >
                 <div className="get-involved-content">
@@ -248,11 +248,11 @@ const Home = () => {
                   </div>
 
                 </div>
-              </a>
+              </Link>
 
 
               {/* Third Box */}
-              <a href="/#programs" className="get-involved-columno">
+              <Link to="/sponsors" className="get-involved-columno">
                 <div className="get-involved-content" >
                   <Image
                     className="arrow-img"
@@ -265,11 +265,11 @@ const Home = () => {
                   </div>
 
                 </div>
-              </a>
+              </Link>
 
               {/* Fourth Box */}
 
-              <a href="/#programs" className="get-involved-columne">
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSe_QtYzpq9knpmjDAj0bV3MwcsBtOy8IX7XhOHoroq0801sNw/viewform" className="get-involved-columne">
                 <div className="get-involved-content">
                   <Image
                     className="arrow-img"
