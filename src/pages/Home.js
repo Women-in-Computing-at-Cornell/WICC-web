@@ -98,7 +98,7 @@ const Home = () => {
         <section className="hero-container">
           <Image
             src={banner}
-            id="mission-image"
+            className="mission-image"
           ></Image>
           <div className="hero-content">
             <h2>Building a supportive tech community for women and allies.</h2>
@@ -107,6 +107,8 @@ const Home = () => {
             </p>
           </div>
         </section>
+
+        {/* Semester Outlook */}
         <section
           style={{
             display: "flex",
@@ -123,11 +125,11 @@ const Home = () => {
               alignContent: "left",
               justifyContent: "center",
               marginTop: "5em",
-              marginLeft: "10em"
+              marginLeft: "10em",
+              marginBottom: "3em"
             }}
           >
             <h2 style={{ textAlign: "left", fontWeight: "bold" }}>
-              {" "}
               Semester Outlook
             </h2>
             <p style={{ textAlign: "left", maxWidth: "800px" }}>
@@ -140,6 +142,7 @@ const Home = () => {
             </p>
           </div>
         </section>
+        {/* What We Do */}
         <section
           style={{}}
           className="what-we-do-container"
@@ -148,85 +151,149 @@ const Home = () => {
             <h2 style={{ textAlign: "left", fontWeight: "bold", marginLeft: "5em" }}>What we do</h2>
           </div>
           <div style={containerStyle}>
+            {/* Left Column */}
             <div style={commonFlexColumnStyle}>
               <img src={www1} alt="Team celebration" style={commonImageStyle} />
               <p style={{ width: "100%", marginLeft: "2em" }}>The impact of WICC's initiatives reach far and wide across Computing and Information Science.</p>
               <div className="stats">
-                <div style={{ display: "flex", flexDirection: "column" }}><strong style={{ font: "bold", color: "#9CE2D3", fontSize: "3em" }}>400+</strong><span style={{ fontWeight: "bold" }}>Current Active Members</span></div>
-                <div style={{ display: "flex", flexDirection: "column" }}><strong style={{ font: "bold", color: "#9CE2D3", fontSize: "3em" }}>2000</strong><span style={{ fontWeight: "bold" }}>Followers on Instagram</span></div>
-                <div style={{ display: "flex", flexDirection: "column" }}><strong style={{ font: "bold", color: "#9CE2D3", fontSize: "3em" }}>1700+</strong><span style={{ fontWeight: "bold" }}>Newsletter Subscriber</span></div>
+                <div className="stat-item">
+                  <strong>400+</strong>
+                  <span>Current Active Members</span>
+                </div>
+                <div className="stat-item">
+                  <strong>2000</strong>
+                  <span>Followers on Instagram</span>
+                </div>
+                <div className="stat-item">
+                  <strong>1700+</strong>
+                  <span>Newsletter Subscriber</span>
+                </div>
               </div>
-              <img src={www2} alt="Working at computers" style={commonImageStyle} />
+              <img src={www3} alt="Working at computers" style={commonImageStyle} />
             </div>
+            {/* Right Column */}
             <div style={commonFlexColumnStyle}>
               <p style={{ marginLeft: "2em", marginRight: "2em", marginTop: "3em", marginBottom: "2em" }}>Through our programs in <strong>academic development, community building, outreach, mentorship, corporate engagement, career development, and photo campaigns</strong>, we aim to cultivate a supportive environment where women and allies can thrive and seize opportunities for <strong>technical, academic, and leadership growth.</strong></p>
               <a href="#" className="btn" style={{ marginLeft: "2em", marginRight: "2em", marginBottom: "2em" }}>Learn More about Our Programs</a>
-              <img src={www3} alt="Team meeting" style={commonImageStyle} />
+              <img src={www2} alt="Team meeting" style={commonImageStyle} />
               <p style={{ marginLeft: "2em", marginRight: "2em" }}>We actively engage with the broader community to promote <strong>diversity and inclusion</strong> in tech through outreach.</p>
               <p style={{ marginLeft: "2em", marginRight: "2em" }}>Join us as we empower individuals to make a lasting impact on the tech industry and beyond!</p>
               <a href="#" className="btn" style={{ marginLeft: "2em", marginRight: "2em" }}>Become a WICC member</a>
             </div>
           </div>
-
         </section>
 
-        <section>
-          <h2 style={{ textAlign: "left", fontWeight: "bold", marginLeft: "5em" }}>What Our Alumni Says</h2>
-
-        </section>
-
-        < section className="call-to-action-container" >
-          <div className="get-involved-grid">
-            <a href="/#join" className="panel-link">
-              <div className="get-involved-column">
-
-                <Image
-                  className="arrow-img"
-                  style={{ maxWidth: "40px", float: "left" }}
-                  src={arrowbutton}
-                ></Image>
-
-
-                <small className="button-description">Get Involved </small>
-                <h4 className="button-name">Join Us</h4>
+        {/* What Our Alumni Says */}
+        <section className="alumni-section">
+          <h2 className="alumni-header">What Our Alumni Says</h2>
+          <div className="testimony-container">
+            <div className="testimony">
+              <strong className="alumni-name">Nandita Mohan '20</strong>
+              <div>
+                "If there's one person who first made me feel involved, integrated and comfortable in the CIS community at Cornell, it would be Harini. Being her friend and mentee from when I was a freshman showed me that incredibly successful and humble upperclassmen also had their own confusions and struggles along the way, and that it was in-fact completely normal. Not to mention she was always willing to grab a meal, have fun conversations, and be there for me when I needed it."
               </div>
-            </a>
-
-            <a
-              href="https://drive.google.com/file/d/1s_okJqDYmfD5-3jEPCPKvbtP_TYruXXD/view?usp=sharing"
-              className="panel-link"
-            >
-              <div className="get-involved-column">
-                <Image
-                  className="arrow-img"
-                  style={{ maxWidth: "40px", float: "left" }}
-                  src={arrowbutton}
-                ></Image>
-
-                <small className="button-description">
-                  Collaborate with us{" "}
-                </small>
-                <h4 className="button-name">Sponsors</h4>
+            </div>
+            <div className="testimony">
+              <strong className="alumni-name">Maya Frai '20</strong>
+              <div>
+                “WICC has given me an invaluable amount of resources, one of them being the alumni network. When I first heard about WICC my freshman year, I joined Lunch Bunch and was able to meet two incredible women who I am happy to call my mentors. They took the time to talk about all of the diverse opportunities in tech and how WICC has allowed them to connect with other women in the field. WICC alumni are not only incredibly inspirational, but are also dedicated and down-to-earth. Looking forward to being a part of this admirable network after graduation.”
               </div>
-            </a>
-
-            <a href="/#programs" className="panel-link">
-              <div className="get-involved-column">
-
-                <Image
-                  className="arrow-img"
-                  style={{ maxWidth: "40px", float: "left" }}
-                  src={arrowbutton}
-                ></Image>
-
-                <small className="button-description">Work with us </small>
-                <h4 className="button-name">Programs</h4>
+            </div>
+            <div className="testimony">
+              <strong className="alumni-name">Karen Zhang '21</strong>
+              <div>
+                “I learned about the different fields of CS and how they're used, which I previously had many misconceptions about. Lunch Bunch truly let me cement my decision to major in CS, as through it I got an idea of the potential of the field.”
               </div>
-            </a>
+            </div>
           </div>
-        </ section>
+        </section>
 
-        <CurrentSponsors />
+        {/* Get Involved */}
+        <section className="get-involved">
+          <h2 className="get-involved-header">Get Involved</h2>
+          <div className="call-to-action-container" >
+            <div className="get-involved-grid">
+              {/* First Box */}
+              <a href="/#join" className="get-involved-columno">
+                <div className="get-involved-content">
+                  <Image
+                    className="arrow-img"
+                    style={{ maxWidth: "40px" }}
+                    src={arrowbutton}
+                  ></Image>
+                  <div>
+                    <small className="button-description">Learn About Us </small>
+                    <h4 className="button-name">Join Our Listserv</h4>
+                  </div>
+                </div>
+              </a>
+
+
+              {/* Second Box */}
+              <a
+                href="https://drive.google.com/file/d/1s_okJqDYmfD5-3jEPCPKvbtP_TYruXXD/view?usp=sharing"
+                className="get-involved-columne"
+              >
+                <div className="get-involved-content">
+                  <Image
+                    className="arrow-img"
+                    style={{ maxWidth: "40px" }}
+                    src={arrowbutton}
+                  ></Image>
+                  <div>
+                    <small className="button-description">
+                      Join Us
+                    </small>
+                    <h4 className="button-name">Active Membership</h4>
+                  </div>
+
+                </div>
+              </a>
+
+
+              {/* Third Box */}
+              <a href="/#programs" className="get-involved-columno">
+                <div className="get-involved-content" >
+                  <Image
+                    className="arrow-img"
+                    style={{ maxWidth: "40px" }}
+                    src={arrowbutton}
+                  ></Image>
+                  <div>
+                    <small className="button-description">Collaborate With Us</small>
+                    <h4 className="button-name">Sponsorship</h4>
+                  </div>
+
+                </div>
+              </a>
+
+              {/* Fourth Box */}
+
+              <a href="/#programs" className="get-involved-columne">
+                <div className="get-involved-content">
+                  <Image
+                    className="arrow-img"
+                    style={{ maxWidth: "40px" }}
+                    src={arrowbutton}
+                  ></Image>
+                  <div>
+                    <small className="button-description">Support Us</small>
+                    <h4 className="button-name">Alumni</h4>
+                  </div>
+
+                </div>
+              </a>
+
+
+            </div>
+          </ div>
+        </section>
+
+        {/* Sponsors */}
+        <section>
+          <CurrentSponsors />
+        </section>
+
 
       </div >
     </ >

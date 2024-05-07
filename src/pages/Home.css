@@ -33,134 +33,88 @@
   margin-left: 0;
 }
 
-.mission-container {
-  text-align: center;
-  margin-top: 5%;
-  display: flex;
-  flex-direction: row;
-}
-
-.heromission-content {
-  padding: 0;
-}
-
-#home-illustration {
-  width: 35%;
-  float: right;
-}
-
-.call-to-action-container {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-}
-
-.call-to-action-title {
-  padding-left: 80px;
+.mission-image {
+  width: 100%
 }
 
 .what-we-do-container {
   margin-top: 30px;
 }
 
-.title-with-line {
-  display: flex;
-  align-items: center;
-}
-
-.horizontal-line {
-  height: 1px;
-  width: 100%;
-  background-color: #000;
-  margin-left: 10px;
-}
-
-.title-text {
-  margin: 1em;
-  white-space: nowrap;
-}
-
-.alumni-testimonies-container {
-  padding-top: 10px;
-  background-size: cover;
-  background-position: center top;
-  position: relative;
-  min-height: 300px;
-  color: #000;
-}
-
-.alumni-testimonies-content {
-  padding: 3%;
-  background-color: #defff8;
-}
-
-.testimony-grid {
-  display: flex;
-  justify-content: space-around;
-  background-color: #dbfff8;
-  min-height: 300px;
-  background-size: cover;
-  background-position: center top;
-  padding: 32px;
-}
-
-.testimony-column {
-  padding: 16px;
-  background-color: #fff;
-  border-radius: 25px;
-  flex-basis: 30%;
-  box-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
-}
-
-.btn,
-.btn-primary {
+.btn {
   border-radius: 5em;
   color: black;
   background-color: #9CE2D3;
   border-color: #9CE2D3;
 }
 
-.headerName {
-  font-size: 300%;
+.call-to-action-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-left: 8rem;
+  padding-right: 8rem;
 }
 
-.sponsor-container {
-  padding: 3%;
-  padding-top: 40px;
-  text-align: center;
+.get-involved {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.get-involved-header {
+  text-align: left;
+  font-weight: bold;
+  margin-left: 9rem
 }
 
 .get-involved-grid {
   display: flex;
-  height: 100%;
-  width: 90%;
-  gap: 2rem;
+  width: 100%;
+  flex-wrap: wrap;
+
 }
 
-.get-involved-column {
+.get-involved-columno {
   display: flex;
+  flex: 1;
   flex-direction: column;
   background-color: #9ce2d3;
-  height: 100%;
+  min-height: 150px;
   border-radius: 25px;
-  padding: 1rem;
+  padding: 1.5rem;
+  margin: 10px;
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
 }
 
-.get-involved-column:hover {
-  background-color: #f8f8f8;
-  box-shadow: 0 0 40px rgba(0, 0, 0, 0.25);
+.get-involved-columne {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  background-color: white;
+  min-height: 150px;
+  border-radius: 25px;
+  padding: 1.5rem;
+  margin: 10px;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
+}
+
+.get-involved-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 }
 
 .arrow-img,
-.button-name,
 .button-description {
   display: flex;
   justify-content: flex-start;
 }
 
-.panel-link:hover {
-  color: #000;
+.button-name {
+  display: flex;
+  justify-content: flex-start;
+  font-weight: 800;
 }
 
 .carousel-wrapper {
@@ -194,4 +148,64 @@
   background-color: black;
   color: black;
   opacity: 0.8;
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 20px;
+  text-align: center;
+}
+
+.stat-item strong {
+  font-weight: bold;
+  color: #9CE2D3;
+  font-size: 2em;
+}
+
+.stat-item span {
+  font-weight: bold;
+}
+
+.alumni-section {
+  background-color: #FAFAFA;
+  width: 100%;
+  padding: 3em 0;
+}
+
+.alumni-header {
+  text-align: left;
+  font-weight: bold;
+  margin-left: 5em;
+}
+
+.testimony-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 8rem;
+  padding-right: 8rem;
+}
+
+.testimony {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background-color: #FFFFFF;
+  border-radius: 2rem;
+  padding: 2rem;
+  margin: 0 20px;
+}
+
+.alumni-name {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
