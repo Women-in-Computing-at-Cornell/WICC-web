@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import ReactDOM from "react-dom";
-//import Modal from "react-modal";
-//import { LazyLoadImage } from "react-lazy-load-image-component";
-//import "react-lazy-load-image-component/src/effects/blur.css";
+import Modal from "react-modal";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 import "./member.css";
 import defaultImage from "../images/noimage.png";
 import coffeeChatSVG from "../images/icons/coffee-chat-button.svg";
-import coffeeChatExpandedSVG from "../images/icons/coffee-chat-expanded.svg";  
+import coffeeChatExpandedSVG from "../images/icons/coffee-chat-expanded.svg";
 
-Modal.setAppElement("#root"); 
+Modal.setAppElement("#root");
 
 function Member({ name, title, netid, bio, img }) {
   const [showDetails, setShowDetails] = useState(false); // For Modal
@@ -17,17 +17,17 @@ function Member({ name, title, netid, bio, img }) {
 
   const toggleDetails = () => setShowDetails(!showDetails);
 
- // Hover state for button expansion
- const toggleButton = () => setIsHovered(!showDetails);
+  // Hover state for button expansion
+  const toggleButton = () => setIsHovered(!showDetails);
 
- // Coffee chat email button 
- const openEmail = (event) => {
-  // Prevent the click event from bubbling up to the parent elements
-  event.stopPropagation();
-  
-  const email = `${netid}@cornell.edu`; // Adjust according to your email format
-  window.location.href = `mailto:${email}`;
-};
+  // Coffee chat email button
+  const openEmail = (event) => {
+    // Prevent the click event from bubbling up to the parent elements
+    event.stopPropagation();
+
+    const email = `${netid}@cornell.edu`; // Adjust according to your email format
+    window.location.href = `mailto:${email}`;
+  };
 
   return (
     <>
@@ -37,20 +37,22 @@ function Member({ name, title, netid, bio, img }) {
             alt={name}
             src={img || defaultImage} // Fallback to defaultImage if img is not provided
             effect="blur"
-            className={`imageStyle profileImageStyle ${imageLoaded ? 'fadeIn' : ''}`}
+            className={`imageStyle profileImageStyle ${
+              imageLoaded ? "fadeIn" : ""
+            }`}
             onLoad={() => setImageLoaded(true)}
           />
           {/* Coffee Chat Button */}
-          <button 
+          <button
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
-            onClick={openEmail} 
+            onClick={openEmail}
             className={`coffeeChatButton ${isHovered ? "expanded" : ""}`}
           >
-            <img 
+            <img
               src={isHovered ? coffeeChatExpandedSVG : coffeeChatSVG}
-              alt="Coffee Chat" 
-            /> 
+              alt="Coffee Chat"
+            />
             {isHovered && <span>Coffee Chat</span>}
           </button>
         </div>
@@ -81,15 +83,23 @@ function Member({ name, title, netid, bio, img }) {
         }}
       >
         <div className="modalContent">
-          <img src={img || defaultImage} alt={name} className="profileImageStyle" />
+          <img
+            src={img || defaultImage}
+            alt={name}
+            className="profileImageStyle"
+          />
           <div className="modalTextContent">
             <h3 className="name">{name}</h3>
-            <p className="modalTextStyle"><b>Position:</b> {title}</p>
-            <p className="modalTextStyle"><b>Netid:</b> {netid}</p>
+            <p className="modalTextStyle">
+              <b>Position:</b> {title}
+            </p>
+            <p className="modalTextStyle">
+              <b>Netid:</b> {netid}
+            </p>
             <p className="modalTextStyle">{bio}</p>
           </div>
         </div>
-      </Modal> 
+      </Modal>
     </>
   );
 }
