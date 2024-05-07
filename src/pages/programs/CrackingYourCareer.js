@@ -26,6 +26,10 @@ import Image from "react-bootstrap/Image";
 import "./programPages.css";
 
 export default class CrackingYourCareer extends Component {
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
+
   render() {
     let directors = academic.members.filter(
       (record) => record.position === "Career Development Co-Director"

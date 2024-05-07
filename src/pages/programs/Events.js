@@ -14,6 +14,10 @@ import Button from "react-bootstrap/Button";
 import "./programPages.css";
 
 export default class Events extends Component {
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
+
   render() {
     return (
       <div class="page">

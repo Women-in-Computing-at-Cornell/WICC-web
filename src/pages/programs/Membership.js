@@ -9,6 +9,9 @@ import QuestionsCard from "./QuestionsCard.js";
 import "./programPages.css";
 
 export default class Membership extends Component {
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
 
   render() {
     let sec = operations.members.filter(
