@@ -2,12 +2,10 @@
   padding-bottom: 20px;
 }
 
-
-.hero-container {
-  /*  .call-to-action-container { */
+.hero-container,
+.call-to-action-container {
   margin: 3% 0;
 }
-
 
 .mission-container {
   text-align: center;
@@ -16,30 +14,24 @@
   flex-direction: row;
 }
 
-
 .heromission-content {
   padding: 0px
 }
-
 
 #home-illustration {
   width: 35%;
   float: right;
 }
 
-
 .call-to-action-container {
   /* margin-bottom: %; */
-  display: flex;
-  justify-content: center;
   text-align: center;
-
+  margin: 70px;
 }
 
 .call-to-action-title {
   padding-left: 80px;
 }
-
 
 /* start of what we do container */
 .what-we-do-container {
@@ -48,12 +40,10 @@
   /* Example margin */
 }
 
-
 .title-with-line {
   display: flex;
   align-items: center;
 }
-
 
 .horizontal-line {
   height: 1px;
@@ -66,16 +56,13 @@
 }
 
 .title-text {
-  margin: 1em;
+  margin: 0;
   white-space: nowrap;
 }
 
-
 /* end of what we do container */
 
-
 /* start of alumni testimony container */
-
 
 .alumni-testimonies-container {
   /* Adjust container styles as needed */
@@ -88,7 +75,6 @@
   /* Text color for testimonies */
 }
 
-
 .alumni-testimonies-content {
   /* Adjust container styles as needed */
   padding-left: 5%;
@@ -97,7 +83,6 @@
   padding-bottom: 2%;
   background-color: #defff8;
 }
-
 
 .testimony-grid {
   display: flex;
@@ -111,7 +96,6 @@
   padding-bottom: 32px;
 }
 
-
 .testimony-column {
   padding: 16px;
   background-color: #ffffff;
@@ -120,15 +104,12 @@
   box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
 }
 
-
 /* end of alumni testimony container */
-
 
 /* react-bootstrap button style overriding */
 .btn {
   border-radius: 5em;
 }
-
 
 .btn-primary {
   color: black;
@@ -136,66 +117,39 @@
   border-color: #9CE2D3;
 }
 
-
 .headerName {
   font-size: 300%;
 }
 
-
 .sponsor-container {
   padding: 3%;
   padding-bottom: 0.5%;
-  padding-top: 40px;
+  padding-top: 0px;
   text-align: center;
 }
 
+.get-involved {
+  padding-left: 90px;
+}
 
 .get-involved-grid {
   display: flex;
-  height: 100%;
-  width: 90%;
-  gap: 2rem;
+  justify-content: space-around;
+  /* background-image: url('../images/alumnitestimg.png'); /* Set your background image URL */
+  background-color: #ffffff;
+  min-height: 200px;
+  background-size: cover;
+  background-position: center top;
+  padding-top: 40px;
+  padding-bottom: 32px;
 }
 
 .get-involved-column {
-  display: flex;
-  flex-direction: column;
-  background-color: #9ce2d3;
-  height: 100%;
+  padding: 16px;
+  background-color: #defff8;
   border-radius: 25px;
-  padding: 1rem;
+  flex-basis: 30%;
   box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
-}
-
-
-.get-involved-column:hover {
-  background-color: #f8f8f8;
-  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.25);
-}
-
-*/ .arrow-img {
-  display: flex;
-  justify-content: flex-start;
-}
-
-.panel-link {
-  flex: 1;
-}
-
-.panel-link:hover {
-  color: #000000;
-}
-
-
-.button-name {
-  display: flex;
-  justify-content: flex-start;
-}
-
-.button-description {
-  display: flex;
-  justify-content: flex-start;
-  padding-top: 1rem;
 }
 
 .carousel-wrapper {
@@ -207,7 +161,6 @@
   /* Center the carousel */
 }
 
-
 .carousel-wrapper .carousel img {
   width: 100%;
   /* Set maximum width */
@@ -217,13 +170,11 @@
   /* Fit images within the dimensions without distortion */
 }
 
-
 /* Move the navigation elements outside the carousel */
 .carousel.carousel-slider .control-arrow {
   display: default;
   padding: 0px;
 }
-
 
 .carousel-wrapper .carousel .control-dots {
   position: absolute;
@@ -235,7 +186,6 @@
   z-index: 100;
   /* Ensure it's above the images */
 }
-
 
 .carousel .carousel-slider .control-dots .dot {
   background-color: black;

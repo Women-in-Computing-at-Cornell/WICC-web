@@ -46,6 +46,7 @@ import medal from "../../images/medal.jpg";
 import "./programPages.css";
 import "../discussions.css";
 
+
 export default class Discussions extends Component {
   render() {
     let discDirectors = community.members.filter(

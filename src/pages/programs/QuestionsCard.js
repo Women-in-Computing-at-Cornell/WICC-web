@@ -1,7 +1,5 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
 // import Modal from 'react-bootstrap/Modal';
 // import Button from 'react-bootstrap/Button';
 // import Container from 'react-bootstrap/Container';
@@ -16,15 +14,14 @@ class QuestionsCard extends React.Component {
     const { name, title, img, netId } = this.props;
     return (
       <div>
-        <Card style={{ width: "15rem", height: "80%", border: "none", backgroundColor: "transparent" }}>
+        <Card style={{ width: "15rem", height: "80%", border: "none" }}>
           <Card.Body>
-            <center>
-              <Card.Img variant="top" src={img} class="questionsImg" />
-            </center>
+            <Card.Img variant="top" src={img} class="questionsImg" />
             <br />
+            {/* <br /> */}
             <center>
-              <Card.Text class="font-weight-bold">
-                {name} {title}
+              <Card.Text>
+                {name}, {title}
               </Card.Text>
               <Card.Text>
                 <a
