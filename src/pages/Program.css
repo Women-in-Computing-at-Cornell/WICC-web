@@ -25,7 +25,8 @@ body {
   padding-left: 8%;
 }
 
-.hero-image {
+.programs-hero-image {
+  background-image: none;
   filter: brightness(40%);
   object-fit: cover;
   overflow: hidden;

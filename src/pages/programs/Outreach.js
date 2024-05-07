@@ -88,7 +88,7 @@ export default class Outreach extends Component {
               </a>
             </p>
           </div>
-          <div class="hero-image">
+          <div class="programs-hero-image">
             <img src={OutreachHero}
               style={{ width: "100%", height: "auto" }}
             >
