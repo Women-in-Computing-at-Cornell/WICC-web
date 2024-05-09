@@ -6,7 +6,7 @@ import iceskating from "../../images/programs/iceskatingsocial.jpg";
 import Dropdown from "../../components/Dropdown.jsx";
 import { operations } from "../boardData";
 import QuestionsCard from "./QuestionsCard.js";
-import "./programPages.css";
+import "./membership.css";
 
 export default class Membership extends Component {
   componentDidMount() {
@@ -245,18 +245,21 @@ export default class Membership extends Component {
               Reach out to the following WICC members for clarification
               regarding to Active Membership.
             </p>
+            <div style={{ display: "flex", flexDirection: "row", justifyContent: "center" }}>
+              {
+                sec.map((s, i) => (
+                  <QuestionsCard
+                    name={s.name}
+                    title={s.title}
+                    img={boardHeadshots[s.netId + ".jpg"]}
+                    netId={s.netId}
 
-            {
-              sec.map((s, i) => (
-                <QuestionsCard
-                  name={s.name}
-                  title={s.title}
-                  img={boardHeadshots[s.netId + ".jpg"]}
-                  netId={s.netId}
+                  />
+                ))
+              }
+            </div>
 
-                />
-              ))
-            }
+
           </div>
         </div>
       </>
