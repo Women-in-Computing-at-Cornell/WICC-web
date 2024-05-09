@@ -37,6 +37,7 @@
   padding-left: 116px;
   padding-right: 116px;
   padding-top: 80px;
+  text-align: left;
 }
 
 .sub {
@@ -217,11 +218,6 @@ img {
   font-weight: bold;
 }
 
-.container {
-  width: 100%;
-  filter: brightness(40%);
-}
-
 .banner-text {
   position: absolute;
   top: 55%;
@@ -247,9 +243,7 @@ img {
 .container {
   width: 100%;
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  /* padding-bottom: 40px; */
 }
 
 .testimonial-col {

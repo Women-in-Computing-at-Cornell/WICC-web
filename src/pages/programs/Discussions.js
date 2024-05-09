@@ -43,7 +43,6 @@ import social3 from "../../images/programs-pictures/socials/dodgeball1.JPG";
 
 import medal from "../../images/medal.jpg";
 
-import "./programPages.css";
 import "../discussions.css";
 
 export default class Discussions extends Component {
@@ -168,7 +167,7 @@ export default class Discussions extends Component {
           activeIndex={index}
           onSelect={handleSelect}
           indicators={false}
-          class="carousel"
+          class="carousel-item"
           controls={false}
         >
           {images.map((imageUrl, index) => (
@@ -226,7 +225,7 @@ export default class Discussions extends Component {
     return (
       <div class="body">
         {/* Hero Image */}
-        <div class="hero-image">
+        <div class="hero-image-discussion">
           <div class="title">
             <div class="typewriter">
               <b>
@@ -272,8 +271,12 @@ export default class Discussions extends Component {
           <br></br>
           <br></br>
           <center>
-            <h5 style={{ paddingTop: "5%" }}>Questions?</h5>
-            <Container style={{ paddingRight: "10%" }}>
+            <h3
+              style={{ paddingTop: "5%", margin: "32px", fontWeight: "bold" }}
+            >
+              Questions?
+            </h3>
+            <Container>
               <Row style={{ paddingBottom: "1%" }}>
                 <Col>
                   <QuestionsCard
