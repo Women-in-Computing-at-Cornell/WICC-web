@@ -89,6 +89,8 @@ li {
   gap: 40px;
   border-right: 4px solid #9ce2d3;
   height: 100%;
+  padding-left: 2rem;
+  padding-right: 3rem;
 }
 
 .column-header {
