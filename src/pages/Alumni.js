@@ -119,22 +119,6 @@ export default class Advisors extends Component {
             </Col>
           </Row>
         </Container>
-
-        {/* 
-        {facultyData.map((value) => {
-          console.log(value.bio.split('\n'))
-          return <Container class='facultyAdjust'>
-            <Row style={{ paddingBottom: "3%" }}>
-              <Col >
-
-
-              </Col>
-              <Col >
-              </Col>
-            </Row>
-          </Container>
-        })
-        } */}
       </div>
     );
   }

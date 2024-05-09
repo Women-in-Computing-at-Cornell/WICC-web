@@ -14,7 +14,11 @@ class Footer extends React.Component {
       <Navbar
         className="fixed-bottom color-nav "
         variant="light"
-        style={{ paddingTop: "1%" }}
+        style={{
+          paddingTop: "2%",
+          display: "flex",
+          flexDirection: "column",
+        }}
       >
         <Navbar.Brand className="mr-auto" href="/">
           Women in Computing at Cornell

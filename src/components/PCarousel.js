@@ -1,19 +1,9 @@
 import React from "react";
 import Image from "react-bootstrap/Image";
 import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-
-function importAll(r) {
-  let images = {};
-  r.keys().map((item, index) => {
-    images[item.replace("./", "")] = r(item);
-    return null;
-  });
-  return images;
-}
-
-const PCarousel = ({ imgNames, pics }) => {
+const PCarousel = ({ imgNames, pics, currentIndex, onChange }) => {
   const renderImages = () => {
     const imageGroups = [];
     for (let i = 0; i < imgNames.length; i += 5) {
@@ -27,7 +17,6 @@ const PCarousel = ({ imgNames, pics }) => {
               style={{ width: "80%", height: "100px", objectFit: "contain" }}
             />
           </div>
-
         );
       });
       imageGroups.push(imagesInGroup);
@@ -39,9 +28,25 @@ const PCarousel = ({ imgNames, pics }) => {
     ));
   };
 
+  const totalSlides = Math.ceil(imgNames.length / 5);
+  const progress = ((currentIndex + 1) / totalSlides) * 100;
+
   return (
     <div className="carousel-wrapper">
-      <Carousel showThumbs={false} showStatus={false} emulateTouch infiniteLoop>
+      <div className="progress-bar" style={{ width: '100%', backgroundColor: 'black', height: '5px', borderRadius: '5px', marginBottom: '20px' }}>
+        <div style={{ width: `${progress}%`, height: '100%', backgroundColor: '#9CE2D3', borderRadius: '5px' }}></div>
+      </div>
+      <Carousel
+        selectedItem={currentIndex}
+        showThumbs={false}
+        showStatus={false}
+        showIndicators={false}
+        emulateTouch
+        infiniteLoop
+        onChange={(index) => {
+          onChange(index);
+        }}
+      >
         {renderImages()}
       </Carousel>
     </div>

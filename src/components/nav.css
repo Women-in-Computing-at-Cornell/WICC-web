@@ -6,3 +6,27 @@
   text-decoration-thickness: 3px;
 }
 
+.navbar {
+  padding-left: 70px;
+  padding-right: 70px;
+  background-color: white !important;
+  outline: solid 1px rgb(219, 219, 219);
+}
+
+.navbar .navbar-brand {
+  display: flex;
+  flex-direction: row;
+  padding-top: 20px;
+}
+.navbar .navbar-brand .brand-text {
+  display: flex;
+  flex-direction: row;
+  margin-left: 10px; /* Adjust the margin as needed */
+  text-align: left;
+  font-size: 16px;
+}
+
+.navbar .join-us-button .btn {
+  background-color: #000;
+  color: white;
+}

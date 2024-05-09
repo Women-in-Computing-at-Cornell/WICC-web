@@ -15,12 +15,7 @@ import {
   advisors,
 } from "../boardData";
 import QuestionsCard from "./QuestionsCard.js";
-
-import Image from "react-bootstrap/Image";
-
-import medal from "../../images/medal.jpg";
-
-import "./programPages.css";
+import "./membership.css";
 
 export default class Membership extends Component {
   componentDidMount() {
@@ -61,118 +56,129 @@ export default class Membership extends Component {
           you can’t commit to being an active member.
         </p>
         <br />
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "space-around",
+              marginTop: "10%",
+              marginBottom: "10%",
+            }}
+          >
+            <img
+              src={eboard}
+              style={{ width: "45%", borderRadius: "20px", marginRight: "5%" }}
+            />
+            <div>
+              <p class="section-title">Perks</p>
+              <p>
+                As soon as you complete the requirements, you will be named an
+                Active Member. Enjoy the perks here after till the end of the
+                next semester.{" "}
+              </p>
+              <ul>
+                <li>Get access to the Active Member Slack.</li>
+                <li>Get access to the Alumni directory.</li>
+                <li>
+                  Be invited to a member-only social event at the end of the
+                  semester.
+                </li>
+                <li>Be able to take part in the active member initiative.</li>
+              </ul>
+            </div>
+          </div>
 
-        <Container>
-          <Row style={{ paddingBottom: "1%" }}>
-            <Col xs lg="3" style={{ paddingRight: "0%", paddingLeft: "0%" }}>
-              <h3>Perks</h3>
-              <div class="sub">
-                <p>
-                  As soon as you complete the requirements, you will be named an
-                  Active Member. Enjoy the perks hereafter till the end of the
-                  next semester.
-                </p>
-                <ul>
-                  <li>Get access to the Active Member Slack</li>
-                  <li>Get access to the Alumni directory</li>
-                  <li>
-                    Receive invitations to corporate events at the company’s
-                    request
-                  </li>
-                  <li>
-                    Be invited to a member-only social event at the end of the
-                    semester
-                  </li>
-                  <li>Be able to take part in the active member initiative </li>
-                </ul>
-                <center>
-                  <Image
-                    src={medal}
-                    height="50%"
-                    width="50%"
-                    style={{ marginTop: "3%" }}
-                  />
-                </center>
-              </div>
-            </Col>
-            <Col
-              xs
-              lg="6"
-              style={{
-                paddingLeft: "40px",
-                paddingRight: "40px",
-              }}
-            >
-              <h3>Requirements</h3>
-              <div class="sub">
-                <ul>
-                  <li>
-                    Have a positive and supportive outlook on all forms of
-                    diversity
-                  </li>
-                  <li>
-                    Develop a growth mindset in being an open, aware and helpful
-                    individual
-                  </li>
-                  <li>
-                    Represent WICC values in-person and online, knowing that
-                    what you say/post reflects both yourself and the
-                    organization
-                  </li>
-                  <li>
-                    <strong>Uphold the WICC mission statement:</strong> Women in
-                    Computing at Cornell strives to make computing inclusive for
-                    all. We aim to foster a supportive community of women* and
-                    allies equipped with the resources needed to recognize and
-                    overcome challenges. By creating opportunities for technical
-                    and leadership growth, we work to ensure that people of all
-                    identities are able to discover and pursue their interests
-                    and talents in order to positively impact the future of
-                    tech.
-                    <ul>*All gender identities are welcome and supported!</ul>
-                  </li>
-                  <li>
-                    Actively attend and engage at WICC events/programs
-                    throughout the semester. You must fulfill any one of the
-                    following to be considered an Active Member:
+          <p class="section-title">Requirements</p>
+          <p>
+            <strong>
+              As soon as you complete the requirements below, you will be named
+              an Active Member.
+              <br />
+              Enjoy the perks hereafter till the end of the next semester!
+            </strong>
+            <br />
+            (Example: If you sign-up in Fall 2023 and complete the requirements,
+            then you will receive the perks for the rest of the semester and in
+            Spring 2023.)
+          </p>
+          <br />
+          <div id="reqs">
+            <div class="container">
+              <div style={{ display: "flex" }}>
+                <div class="column">
+                  <div class="column-header">01</div>
+                  <div class="text-content">
                     <ul>
                       <li>
-                        Be part of the{" "}
-                        <span style={{ fontWeight: "bold" }}>
-                          Lunch Bunch, Mentorship Circles, Cornell Girls Who
-                          Code, Technical Committee, Photo & Video Committee,
-                          Cracking Your Career
-                        </span>{" "}
-                        or{" "}
-                        <span style={{ fontWeight: "bold" }}>
-                          Corporate Committee
-                        </span>
+                        Have a positive and supportive outlook on all forms of
+                        diversity.{" "}
                       </li>
                       <li>
-                        Attend{" "}
-                        <span style={{ fontWeight: "bold" }}>four events</span>{" "}
-                        of any type during the semester
+                        Develop a growth mindset in being an open, aware and
+                        helpful individual.{" "}
                       </li>
-                      {/* (Note: Maximum 2 Corporate Events would be counted towards this total) */}
+                      <li>
+                        Represent WICC values in-person and online, knowing that
+                        what you say/post reflects both yourself and the
+                        organization.{" "}
+                      </li>
                     </ul>
-                  </li>
-                </ul>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="column-header">02</div>
+                  <div class="text-content">
+                    Uphold the WICC mission statement: Women in Computing at
+                    Cornell strives to make computing inclusive for all. We aim to
+                    foster a supportive community of women* and allies equipped
+                    with the resources needed to recognize and overcome
+                    challenges. By creating opportunities for technical and
+                    leadership growth, we work to ensure that people of all
+                    identities are able to discover and pursue their interests and
+                    talents in order to positively impact the future of tech. *All
+                    gender identities are welcome and supported!{" "}
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="column-header">03</div>
+                  <div class="text-content">
+                    Actively attend and engage at more than 4 WICC events/programs
+                    throughout the semester. These events include:
+                    <ul>
+                      <li>Lunch Bunch </li>
+                      <li>Mentorship Circles</li>
+                      <li>Cornell Girls Who Code </li>
+                      <li>Technical Committee</li>
+                      <li>Photo & Video Committee</li>
+                      <li>Cracking Your Career</li>
+                      <li>Corporate Committee</li>
+                    </ul>
+                  </div>
+                </div>
               </div>
-              <br />
-            </Col>
-            <Col xs lg="3">
-              {" "}
-              <h3>Tracking and Progress</h3>
-              <p class="sub">
-                {" "}
-                Once you have filled the form and registered for the Active
-                Membership, we will track your attendance at events and see if
-                the above requirements are fulfilled. Be sure to sign-in when
-                you attend an event! We will inform you of the type of event you
-                are attending (Corporate Event or Non-Corporate Event). We will
-                also keep you updated with your progress monthly and give you an
-                opportunity to fill out a feedback form. Do let us know about
-                your experience!
+            </div>
+
+          </div>
+
+
+          <div
+            style={{
+              marginTop: "10%",
+              background: "#DCF3ED",
+              display: "flex",
+              flexDirection: "row",
+              padding: "2%",
+              borderRadius: "40px",
+              justifyContent: "space-between",
+            }}
+          >
+            <div style={{ flex: 1, padding: "1em" }}>
+              <p class="section-title">Track Your Progress</p>
+              <p>
+                Once you sign in at any event using the event attendance form,
+                we will track your attendance at events and see if the above
+                requirements are fulfilled. Be sure to sign-in when you attend
+                an event!{" "}
               </p>
               <h3>Validity of Active Membership</h3>
               <p class="sub">
@@ -195,80 +201,70 @@ export default class Membership extends Component {
                 width: "100%",
                 margin: "10px",
               }}
-            >
-              Active Member Guidelines and Requirements Fall 2023
-            </Button>
-          </Row>
-        </Container>
-        <h3 style={{ marginBottom: "3%" }}>FAQ</h3>
-        <p class="head">
-          What happens if you sign-up mid-way through a semester?
-        </p>
-        <p class="sub">
-          We welcome you to sign-up anytime during a semester. When you sign-up,
-          we add in all the events you attended since the start of that
-          semester. As mentioned before, you must complete the requirements
-          before you become an Active Member.
-        </p>
-        <br />
-        <p class="head">Is it mandatory to attend G-Body discussions?</p>
-        <p class="sub">
-          We highly encourage our members to attend our G-Body discussions but
-          it is not required. Our G-Body discussions are held monthly.
-        </p>
-        <br />
-        <p class="head">How can you keep up with our upcoming events?</p>
-        <p class="sub">For updates on our events, you can:</p>
-        <ul class="sub">
-          <li>
-            Subscribe to our listserv by sending an email titled ’join’ to
-            wicc-l-request@cornell.edu "{" "}
-            <Button
-              href="mailto:wicc-l-request@cornell.edu?subject=Join"
-              style={{
-                backgroundColor: "white",
-                width: "50%",
-                margin: "10px",
-                fontWeight: "bold",
-              }}
-            >
-              Join ListServe
-            </Button>
-          </li>
-          <li>
-            Check our{" "}
-            <Link to="/calendar">
-              {" "}
-              <strong> Calendar </strong>
-            </Link>
-          </li>
-          <li>
-            Follow us on{" "}
-            <a href="https://www.facebook.com/CornellWomenInComputing/">
-              <strong>Facebook</strong>
-            </a>{" "}
-            and{" "}
-            <a href="https://www.instagram.com/wiccornell/">
-              <strong>Instagram</strong>
-            </a>
-          </li>
-        </ul>
-        <p class="sub">
-          We will keep you updated with all the required information and
-          progress! Meanwhile, enjoy your experience with WICC and we look
-          forward to interacting with you!
-        </p>
+            />
+          </div>
 
-        <center>
-          <h5 style={{ paddingTop: "10%" }}>Questions?</h5>
-          <QuestionsCard
-            name={sec.name}
-            title={sec.title}
-            img={boardHeadshots[sec.netId + ".jpg"]}
-            netId={sec.netId}
-          />
-        </center>
-      </div>
+          <div style={{ marginTop: "10%" }}>
+            <p class="section-title">Frequently Asked Questions</p>
+          </div>
+
+          <div>
+            <Dropdown title="What happens if you sign-up mid-way through a semester?">
+              We welcome you to sign-up anytime during a semester. When you
+              sign-up, we add in all the events you attended since the start of
+              that semester. As mentioned before, you must complete the
+              requirements before you become an Active Member.
+            </Dropdown>
+            <Dropdown title="Is it mandatory to attend G-Body discussions?">
+              We highly encourage our members to attend our G-Body discussions
+              but it is not required. Our G-Body discussions are held monthly.
+            </Dropdown>
+            <Dropdown title="How can you keep up with our upcoming events?">
+              For updates on our events, you can:
+              <br />
+              <ul>
+                <li>
+                  Subscribe to our listserv by sending an email titled 'join' to
+                  wicc-l-request@cornell.edu "
+                </li>
+                <li>
+                  Check our{" "}
+                  <a href="https://wicc.cornell.edu/#/calendar">Calendar.</a>
+                </li>
+                <li>Follow us on Facebook and Instagram.</li>
+                <li>
+                  We will keep you updated with all the required information and
+                  progress! Meanwhile, enjoy your experience with WICC and we
+                  look forward to interacting with you!
+                </li>
+              </ul>
+            </Dropdown>
+          </div>
+
+          <div style={{ marginTop: "10%" }}>
+            <p class="section-title">Questions?</p>
+            <p>
+              Reach out to the following WICC members for clarification
+              regarding to Active Membership.
+            </p>
+            <div style={{ display: "flex", flexDirection: "row", justifyContent: "center" }}>
+              {
+                sec.map((s, i) => (
+                  <QuestionsCard
+                    name={s.name}
+                    title={s.title}
+                    img={boardHeadshots[s.netId + ".jpg"]}
+                    netId={s.netId}
+
+                  />
+                ))
+              }
+            </div>
+
+
+          </div>
+        </div>
+      </>
     );
   }
 }
