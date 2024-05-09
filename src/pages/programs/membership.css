@@ -74,9 +74,7 @@ li {
 
 .container {
   width: 100%;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  flex-direction: row;
   margin: 0;
   padding: 0;
 }
@@ -89,7 +87,10 @@ li {
   gap: 40px;
   border-right: 4px solid #9ce2d3;
   height: 100%;
+  padding-right: 2rem;
+  padding-left: 2rem;
 }
+
 
 .column-header {
   color: #212529;
