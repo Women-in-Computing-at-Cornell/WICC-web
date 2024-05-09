@@ -2,6 +2,7 @@
 
 .body {
   background-color: #f9f9f9cb;
+  text-align: left;
 }
 
 .title {
@@ -21,12 +22,14 @@
   font-weight: 450;
 }
 
-.hero-image {
+.hero-image-discussion {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: url('../images/programs/communityhero.jpg');
+  background-image: url("../images/programs/communityhero.jpg");
 
   /* Set a specific height */
-  height: 500px;
+  width: 100%;
+  height: 100%;
+  max-height: 700px;
 
   /* Position and center the image to scale nicely on all screens */
   background-position: center;
@@ -36,14 +39,15 @@
 }
 
 .header {
-  text-align: center;
+  text-align: left;
   align-items: center;
   box-sizing: content-box;
-  font-size: large;
+  font-size: 20px;
   width: 100%;
-  background-color: #c8efe1;
-  padding: 30px;
+  background-color: #ffffff;
+  padding: 32px;
   border-radius: 8px;
+  box-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.1);
 }
 
 /* DEMO-SPECIFIC STYLES */
@@ -54,36 +58,33 @@
   font-size: 45px;
   overflow: hidden;
   /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid rgb(0, 255, 162);
+  border-right: 0.15em solid rgb(0, 255, 162);
   /* The typwriter cursor */
   white-space: nowrap;
   /* Keeps the content on a single line */
   margin: 0 auto;
   /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em;
+  letter-spacing: 0.15em;
   /* Adjust as needed */
-  animation:
-    typing 2.5s steps(30, end),
-    blink-caret .5s step-end infinite;
+  animation: typing 2.5s steps(30, end), blink-caret 0.5s step-end infinite;
 }
 
 /* The typing effect */
 @keyframes typing {
   from {
-    width: 0
+    width: 0;
   }
 
   to {
-    width: 720px
+    width: 720px;
   }
 }
 
 /* The typewriter cursor effect */
 @keyframes blink-caret {
-
   from,
   to {
-    border-color: transparent
+    border-color: transparent;
   }
 
   50% {
@@ -125,11 +126,11 @@ body {
 .item h3 {
   margin: 0;
   display: block;
-  background-color: rgb(192, 244, 225);
-  padding: 1rem;
+  background-color: rgb(255, 255, 255);
+  padding: 24px;
   transform: translate3d(0, -100%, 0);
   transition: transform 300ms;
-  font-size: 25px;
+  font-size: 24px;
   overflow-y: hidden;
 }
 
@@ -142,19 +143,19 @@ body {
   z-index: 1;
 }
 
-.item a:hover~.item__overlay,
-.item a:focus~.item__overlay {
+.item a:hover ~ .item__overlay,
+.item a:focus ~ .item__overlay {
   transform: translate3d(0, 0, 0);
 }
 
-.item a:hover~.item__overlay h3,
-.item a:focus~.item__overlay h3 {
+.item a:hover ~ .item__overlay h3,
+.item a:focus ~ .item__overlay h3 {
   transform: translate3d(0, 0, 0);
   overflow-y: hidden;
 }
 
-.item a:hover~.item__overlay .item__body,
-.item a:focus~.item__overlay .item__body {
+.item a:hover ~ .item__overlay .item__body,
+.item a:focus ~ .item__overlay .item__body {
   opacity: 1;
   overflow-y: hidden;
 }
@@ -189,7 +190,7 @@ body {
 .item__body {
   flex-grow: 1;
   font-size: 18px;
-  padding: 1rem;
+  padding: 24px;
   opacity: 0;
   transition: opacity 500ms 100ms;
 }
@@ -207,34 +208,25 @@ body {
 
 .wicc-away {
   display: flex;
-  flex-direction: row
-}
-
-.left-half {
-  /* Styling for the elements */
-  flex: 1;
-  /* Equal width for both elements */
-  margin-right: 20px;
-  /* Margin between elements */
+  flex-direction: row;
 }
 
 .image-caption-container {
   display: flex;
-  margin: 20px auto;
+  margin-top: 32px;
+  padding: 8px;
   justify-content: space-between;
   align-items: center;
   border-radius: 8px;
-  background-color: #f0f0f0;
+  background-color: #ffffff;
 }
 
 /* Image styles */
 .image-caption-container img {
-  max-width: 91%;
-  /* padding: 20px; */
-  margin: 20px;
+  max-width: 90%;
+  height: 100%;
   justify-content: center;
   align-items: center;
-  margin-left: 25px;
   justify-content: space-between;
   align-items: center;
   flex: 1;
@@ -245,9 +237,13 @@ body {
 .image-caption-container .caption {
   flex: 1;
   max-width: 50%;
-  text-align: center;
-  padding: 50px;
-  background-color: #f0f0f0;
+  text-align: left;
+  background-color: #ffffff;
+  padding: 32px;
   border-radius: 8px;
   font-family: Mulish, sans-serif;
+}
+
+.carousel-item {
+  padding: 32px 0px 32px 32px;
 }

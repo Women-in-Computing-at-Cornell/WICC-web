@@ -19,7 +19,7 @@ class Footer extends React.Component {
         className="fixed-bottom color-nav footer"
         variant="light"
         style={{
-          paddingTop: "1%",
+          paddingTop: "2%",
           display: "flex",
           flexDirection: "column",
         }}

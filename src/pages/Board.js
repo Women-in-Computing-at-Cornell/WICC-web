@@ -16,26 +16,8 @@ import {
   advisors,
   faculty,
 } from "./boardData";
-import Sponsors from "./Sponsors";
-import Faculty from "./Faculty";
-import Alumni from "./Alumni";
-import Member from "../components/memberCard";
 import Subteam from "../components/Subteam";
 import hero from "../images/about-pictures/abouthero.jpg";
-
-function importAll(r) {
-  let images = {};
-  r.keys().forEach((item) => (images[item.replace("./", "")] = r(item)));
-  return images;
-}
-
-const boardHeadshots = importAll(
-  require.context("../images/headshots/board", false, /\.(jpg|JPG)/)
-);
-
-const advisorHeadshots = importAll(
-  require.context("../images/headshots/board/advisors", false, /\.(jpg|JPG)/)
-);
 
 const teams = [
   faculty,
@@ -56,14 +38,48 @@ export default class Board extends Component {
     super(props);
     this.state = {
       value: "pres",
+      scrollProgress: 0,
     };
+    this.handleScroll = this.handleScroll.bind(this);
   }
 
+  componentDidMount() {
+    window.addEventListener('scroll', this.handleScroll);
+  }
+  
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.handleScroll);
+  }
+  
+  handleScroll = () => {
+    const totalScroll = document.documentElement.scrollTop;
+    const windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    const scrollProgress = `${(totalScroll / windowHeight) * 100}`;
+  
+    this.setState({
+      scrollProgress
+    });
+  };
+  
   handleSelect = (e) => {
     this.setState({
       value: e,
     });
   };
+
+  renderProgressBar() {
+    return (
+      <div style={{
+        position: 'fixed',
+        top: 0,
+        left: 0,
+        width: `${this.state.scrollProgress}%`,
+        height: '5px',
+        backgroundColor: '#73CFBB',
+        zIndex: 1000 // Ensure it's above other content
+      }} />
+    );
+  }
 
   render() {
     const { value } = this.state;
@@ -95,11 +111,11 @@ export default class Board extends Component {
           </p>
           <div style={{ display: "flex" }}>
             <div style={{ flexGrow: 1 }}>
-              {teams.map((t, key) => (
+              {teams.map((team, key) => (
                 <div key={key} style={{ marginBottom: "20px" }}>
                   <div>
-                    {t.name}
-                    <Subteam team={t} />
+                  <span className="subteam-name">{team.name}</span>
+                    <Subteam team={team} />
                   </div>
                 </div>
               ))}
@@ -115,6 +131,7 @@ export default class Board extends Component {
                 top: "0px",
               }}
             >
+              {this.renderProgressBar()}
               <Nav
                 onSelect={this.handleSelect}
                 className="flex-column"

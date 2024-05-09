@@ -1,6 +1,7 @@
 import React from "react";
 import "./questionscard.css";
 
+
 class QuestionsCard extends React.Component {
   render() {
     const { name, title, img, netId } = this.props;

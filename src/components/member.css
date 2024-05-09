@@ -6,7 +6,27 @@
   cursor: pointer; /* Add cursor style for better UX */
 }
 
+.fadeIn {
+  animation: fadeInAnimation 1s forwards;  
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px); /* Adjust this value for more or less vertical movement */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .imageStyle {
+  position: relative;
+  animation-duration: 1s;        /* Duration of the animation */
+  animation-fill-mode: forwards; /* Ensures the component retains the style from the last keyframe when the animation ends */
+  animation-name: fadeInUp;      /* Name of the animation */
+  will-change: opacity, transform; /* Optimizes animations by letting the browser know what properties to expect changes in */
   width: 12vw; /* 10% of the viewport width */
   height: 12vw; /* Set height equal to width for 1:1 aspect ratio */
   border-radius: 10%;
@@ -14,10 +34,23 @@
   object-position: center; /* Adjust if needed */
 }
 
+.profileImageStyle {
+  width: 12vw; /* 10% of the viewport width */
+  aspect-ratio: 1 / 1;
+  object-fit: cover;  
+  border-radius: 10%;  
+}
+
+
 .modalContent {
   display: flex;
   align-items: center; 
 }
+
+.modalContent .imageStyle {
+  animation: none;  
+}
+
 
 .modalTextContent {
   padding: 20px;
@@ -33,8 +66,49 @@
   color: gray;
   padding-right: 35px;
   padding-top: 5px;
+  font-weight: bold;
 }
 
 .name {
   padding-bottom: 32px;
+  font-weight: bold;
+}
+
+.imageContainer {
+  position: relative;
+
+}
+
+.coffeeChatButton {
+  position: absolute;
+  bottom: 5px;
+  right: 25px;
+  width: 50px; /* Adjust based on the overall circle size in Figma */
+  height: 50px;
+  border-radius: 50%;
+  background-color: white;
+  border: 1px solid #73CFBB;
+  cursor: pointer;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* transition: transform 0.3s; */
+  transition: width 0.3s, height 0.3s, border-radius 0.3s;
+}
+
+.coffeeChatButton img {
+  position: absolute;
+  /* max-width: 100%;
+  max-height: 100%; */
+}
+
+/* .coffeeChatButton:hover {
+  transform: scale(1.5); 
+} */
+
+.coffeeChatButton.expanded {
+  width: 165px; /* Adjust this size based on your expanded button design */
+  height: 50px;
+  border-radius: 25px;
 }

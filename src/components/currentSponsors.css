@@ -1,5 +1,6 @@
 .sponsor-container {
   display: flex;
+  padding-top: 56px;
   padding-left: 9rem;
   padding-right: 9rem;
   flex-direction: column;
@@ -19,7 +20,7 @@
   text-align: left;
   font-weight: bold;
   color: #000;
-  font-family: 'Mulish', sans-serif;
+  font-family: "Mulish", sans-serif;
   font-size: 36px;
   font-style: normal;
   line-height: 150%;
