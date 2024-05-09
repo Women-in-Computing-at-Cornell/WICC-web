@@ -1,19 +1,10 @@
 import React, { Component } from "react";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import Button from "react-bootstrap/Button";
-import { Link } from "react-router-dom";
-import {
-  presidents,
-  operations,
-  corporate,
-  academic,
-  brand,
-  outreach,
-  community,
-  advisors,
-} from "../boardData";
+
+import banner from "../../images/programs/active_membership_banner.jpg";
+import eboard from "../../images/programs/active_member.png";
+import iceskating from "../../images/programs/iceskatingsocial.jpg";
+import Dropdown from "../../components/Dropdown.jsx";
+import { operations } from "../boardData";
 import QuestionsCard from "./QuestionsCard.js";
 import "./membership.css";
 
@@ -23,7 +14,9 @@ export default class Membership extends Component {
   }
 
   render() {
-    let sec = operations.members.find((record) => record.position === "Secretary");
+    let sec = operations.members.filter(
+      (record) => record.position === "Secretary"
+    );
 
     function importAll(r) {
       let images = {};
@@ -38,24 +31,34 @@ export default class Membership extends Component {
     );
 
     return (
-      <div class="page">
-        <h1>Active Membership</h1>
-        <p style={{ paddingRight: "5%", paddingTop: "2%" }}>
-          WICC Active Membership aims to provide anyone in our community with a
-          more personalised WICC experience. The guidelines and requirements for
-          becoming a WICC Active Member are created to help dedicated members
-          get the most out of the available opportunities. We would especially
-          like to thank the members who have completed the requirements below
-          with rewards delineated in the “Perks” section. We look forward to
-          your time with us!
-        </p>
-        <p style={{ fontSize: "100%", color: "#8A8A8A" }}>
-          We’d like to note that the WICC community is open to everyone
-          regardless of their major or gender or membership status. We still
-          welcome you to join us as a general body member at WICC events even if
-          you can’t commit to being an active member.
-        </p>
-        <br />
+      <>
+        <div class="full-width-banner">
+          <img src={banner} alt="Banner" class="banner" />
+          <div class="banner-text">
+            <p class="banner-header">Active Membership</p>
+            <p>
+              WICC Active Membership aims to provide anyone in our community
+              with a more personalized WICC experience.
+            </p>
+            <p>
+              The guidelines and requirements for becoming a WICC Active Member
+              are created to help dedicated members get the most out of the
+              available opportunities. We would especially like to thank the
+              members who have completed the requirements below with rewards
+              delineated in the “Perks” section. We look forward to your time
+              with us!
+            </p>
+          </div>
+        </div>
+        <div class="page">
+          <p class="section-title">Becoming an active WICC member</p>
+          <p>
+            The WICC community is open to everyone regardless of their major or
+            gender or membership status. We still welcome you to join us as a
+            general body member at WICC events even if you can't commit to being
+            an active member.
+          </p>
+
           <div
             style={{
               display: "flex",
@@ -154,11 +157,8 @@ export default class Membership extends Component {
                   </ul>
                 </div>
               </div>
-
             </div>
-
           </div>
-
 
           <div
             style={{
@@ -179,26 +179,21 @@ export default class Membership extends Component {
                 requirements are fulfilled. Be sure to sign-in when you attend
                 an event!{" "}
               </p>
-              <h3>Validity of Active Membership</h3>
-              <p class="sub">
-                {" "}
-                As soon as you complete the above requirements, you will be
-                named an Active Member. Enjoy the perks hereafter till the end
-                of the next semester.
-                <br />
-                <br />
-                Example: If you sign-up in Fall 2023 and complete the
-                requirements, then you will receive the perks for the rest of
-                the semester and in Spring 2023.
+              <p>
+                We will inform you of the type of event you are attending
+                (Corporate Event or Non- Corporate Event). We will also keep you
+                updated with your progress monthly and give you an opportunity
+                to fill out a feedback form.{" "}
               </p>
-            </Col>
-            <p>For more updated detail please have a look at: </p>
-            <Button
-              href="https://docs.google.com/document/d/1wSNiZxuY52rtOco0Vnq7-XGKzADbNxZoukmnFOX3BkI/edit"
+              <p>Do let us know about your experience!</p>
+            </div>
+            <img
+              src={iceskating}
               style={{
-                backgroundColor: "white",
-                width: "100%",
-                margin: "10px",
+                width: "35%",
+                borderRadius: "20px",
+                flex: 1,
+                marginLeft: "5%",
               }}
             />
           </div>
@@ -246,21 +241,22 @@ export default class Membership extends Component {
               Reach out to the following WICC members for clarification
               regarding to Active Membership.
             </p>
-            <div style={{ display: "flex", flexDirection: "row", justifyContent: "center" }}>
-              {
-                sec.map((s, i) => (
-                  <QuestionsCard
-                    name={s.name}
-                    title={s.title}
-                    img={boardHeadshots[s.netId + ".jpg"]}
-                    netId={s.netId}
-
-                  />
-                ))
-              }
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "row",
+                justifyContent: "center",
+              }}
+            >
+              {sec.map((s, i) => (
+                <QuestionsCard
+                  name={s.name}
+                  title={s.title}
+                  img={boardHeadshots[s.netId + ".jpg"]}
+                  netId={s.netId}
+                />
+              ))}
             </div>
-
-
           </div>
         </div>
       </>
