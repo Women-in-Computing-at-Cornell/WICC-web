@@ -1,9 +1,9 @@
-import React from "react";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
-import Watermark from "../images/thick-wicc-logo.png";
-import "./nav.css";
-import Button from "react-bootstrap/Button";
+import React from 'react';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import Watermark from '../images/thick-wicc-logo.png';
+import './nav.css';
+
 
 class NavBar extends React.Component {
   render() {
@@ -44,5 +44,6 @@ class NavBar extends React.Component {
     );
   }
 }
+//<Nav.Link href="/#resources">Resources</Nav.Link>//
 
 export default NavBar;

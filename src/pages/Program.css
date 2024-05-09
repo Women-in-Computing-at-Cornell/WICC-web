@@ -25,7 +25,8 @@ body {
   padding-left: 8%;
 }
 
-.hero-image {
+.programs-hero-image {
+  background-image: none;
   filter: brightness(40%);
   object-fit: cover;
   overflow: hidden;
@@ -58,8 +59,7 @@ body {
   margin: 7.5% 15%;
   overflow-x: hidden;
   display: grid;
-  /* grid-template-columns: auto auto auto; */
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: auto auto auto;
   gap: 30px;
   padding: 10px;
 }
@@ -145,8 +145,7 @@ body {
     grid-column-end: auto;
   }
 
-  .item1 h1,
-  .item1 p {
+  .item1 h1, .item1 p {
     /* color: #000;
 
     font-family: Mulish;

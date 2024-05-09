@@ -1,11 +1,9 @@
 import React from "react";
-import Button from "react-bootstrap/Button";
 import Image from "react-bootstrap/Image";
 import "./Home.css";
 import Sponsors from "../pages/Sponsors";
 import { Carousel } from "react-responsive-carousel";
 import semoutlook from "../images/semesteroutlookpic.png";
-import arrowbutton from "../images/icons/circle-arrows.png";
 import newmissionImg from "../images/wiccnewlogo.png";
 import PCarousel from "../components/PCarousel";
 import CurrentSponsors from "../components/currentSponsors.js"
@@ -25,43 +23,39 @@ function importAll(r) {
   return images;
 }
 
+const PCarousel = ({ imgNames, pics }) => {
+  const renderImages = () => {
+    const imageGroups = [];
+    for (let i = 0; i < imgNames.length; i += 4) {
+      const imagesInGroup = imgNames.slice(i, i + 4).map((img, index) => {
+        const imageSrc = pics[img];
+        return (
+          <div key={index} style={{ width: `${100 / 4}%` }}>
+            <Image
+              src={imageSrc}
+              alt={`Image ${i + index + 1}`}
+              style={{ width: "100%", height: "200px", objectFit: "contain" }}
+            />
+          </div>
+        );
+      });
+      imageGroups.push(imagesInGroup);
+    }
+    return imageGroups.map((group, index) => (
+      <div key={index} style={{ display: "flex" }}>
+        {group}
+      </div>
+    ));
+  };
 
-// const PCarousel = ({ imgNames, pics }) => {
-//   const renderImages = () => {
-//     const imageGroups = [];
-//     for (let i = 0; i < imgNames.length; i += 5) {
-//       const imagesInGroup = imgNames.slice(i, i + 5).map((img, index) => {
-//         const imageSrc = pics[img];
-//         return (
-//           <div key={index} style={{ width: `${100 / 5}%` }}>
-//             <Image
-//               src={imageSrc}
-//               alt={`Image ${i + index + 1}`}
-//               style={{ width: "80%", height: "100px", objectFit: "contain" }}
-//             />
-//           </div>
-
-//         );
-//       });
-//       imageGroups.push(imagesInGroup);
-//     }
-//     return imageGroups.map((group, index) => (
-//       <div key={index} style={{ display: "flex" }}>
-//         {group}
-//       </div>
-//     ));
-//   };
-
-
-//   return (
-//     <div className="carousel-wrapper">
-//       <Carousel showThumbs={false} showStatus={false} emulateTouch infiniteLoop>
-//         {renderImages()}
-//       </Carousel>
-//     </div>
-//   );
-// };
-
+  return (
+    <div className="carousel-wrapper">
+      <Carousel showThumbs={false} showStatus={false} emulateTouch infiniteLoop>
+        {renderImages()}
+      </Carousel>
+    </div>
+  );
+};
 
 const Home = () => {
   const homepicsname = importAll(
@@ -117,7 +111,7 @@ const Home = () => {
             alignContent: "left",
             justifyContent: "flex-start", // Update to flex-start
           }}
-          className="semout-container"
+          class="semout-container"
         >
           <div
             style={{
@@ -183,7 +177,6 @@ const Home = () => {
             </div>
           </div>
         </section>
-
         {/* What Our Alumni Says */}
         <section className="alumni-section">
           <h2 className="alumni-header">What Our Alumni Says</h2>
@@ -208,7 +201,6 @@ const Home = () => {
             </div>
           </div>
         </section>
-
         {/* Get Involved */}
         <section className="get-involved">
           <h2 className="get-involved-header">Get Involved</h2>
