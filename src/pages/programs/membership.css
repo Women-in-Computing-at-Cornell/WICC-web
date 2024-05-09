@@ -1,0 +1,119 @@
+/* General Page Styles */
+.page {
+  margin: 5% 10%;
+  padding: 80px 116px 0;
+}
+
+.sub,
+.localEvents p {
+  font-size: 90%;
+  color: #4d4d4d;
+}
+
+.head {
+  font-weight: bold;
+}
+
+/* Lists */
+li {
+  padding-bottom: 6px;
+}
+
+/* Banner and Images */
+.full-width-banner {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.banner {
+  width: 100%;
+  height: auto;
+  filter: brightness(50%);
+}
+
+.banner-text {
+  position: absolute;
+  top: 60%;
+  left: 0;
+  transform: translateY(-50%);
+  color: white;
+  text-align: left;
+  z-index: 2;
+  max-width: 40%;
+  padding-left: 8%;
+}
+
+.banner-header,
+.section-title {
+  font-weight: bold;
+}
+
+.banner-header {
+  font-size: 3em;
+}
+
+.section-title {
+  font-size: 1.5em;
+}
+
+/* Layouts */
+.container,
+.swiper,
+.outreachSlides,
+.column {
+  display: flex;
+}
+
+.swiper {
+  overflow-x: visible;
+  transition-property: transform;
+  will-change: transform;
+}
+
+.container {
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.column {
+  flex: 1 1 0%;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 40px;
+  border-right: 4px solid #9ce2d3;
+  height: 100%;
+}
+
+.column-header {
+  color: #212529;
+  font-size: 94px;
+  font-weight: 700;
+}
+
+.text-content {
+  align-self: left;
+  color: #4d4d4d;
+  font-size: 18px;
+  font-weight: 400;
+  word-wrap: break-word;
+  height: 100%;
+}
+
+/* Misc */
+img {
+  object-fit: contain;
+}
+
+.questionsImg {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+}

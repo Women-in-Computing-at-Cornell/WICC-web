@@ -1,0 +1,21 @@
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.name-text {
+  font-weight: bold;
+}
+
+.email-text {
+  margin-left: 2rem;
+}
