@@ -87,44 +87,44 @@
   }
 }
 #sponsorsTable {
-    border-style : hidden;
-    max-width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+  border-style: hidden;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 th {
-    font-weight: 900;
-    font-size: 24px;
-    padding-bottom: 20px !important;
+  font-weight: 900;
+  font-size: 24px;
+  padding-bottom: 20px !important;
 }
 
 tbody tr:nth-child(odd) {
-    background-color: rgb(156, 226, 211, 0.6);
-    border-style : hidden;
+  background-color: rgb(156, 226, 211, 0.6);
+  border-style: hidden;
 }
 
 tbody tr td {
-    padding: 16px 20px !important;
+  padding: 16px 20px !important;
 }
 
 td {
-    vertical-align: middle !important;
+  vertical-align: middle !important;
 }
 
 td:first-child {
-    border-radius: 20px 0 0 20px;
+  border-radius: 20px 0 0 20px;
 }
 
 td:last-child {
-    border-radius: 0 20px 20px 0;
+  border-radius: 0 20px 20px 0;
 }
 
 .center {
-    text-align: center;
+  text-align: center;
 }
 
 #sponsorsTable img {
-    width: 108px;
-    height: 40px;
+  width: 108px;
+  height: 40px;
 }
