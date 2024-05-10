@@ -6,7 +6,6 @@ import Facebook from "../images/social/facebook.png";
 import Instagram from "../images/social/instagram.png";
 import LinkedIn from "../images/social/linkedin.png";
 import Email from "../images/social/email.png";
-import Watermark from "../images/Thicc Wicc Logo 1.png";
 import "./footer.css";
 import wiccLogo from "../images/icons/wicc_thick_logo.png";
 
