@@ -17,7 +17,6 @@ import {
 import outreach3 from "../../images/outreach/outreach.jpg";
 import outreach1 from "../../images/outreach/outreach1.jpg";
 import OutreachHero from "../../images/outreach/OutreachHero.jpg"
-import outreach2 from "../../images/outreach/outreach2.jpg";
 import QuestionsCard from "./QuestionsCard.js";
 
 import Image from "react-bootstrap/Image";
