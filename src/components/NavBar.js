@@ -44,6 +44,5 @@ class NavBar extends React.Component {
     );
   }
 }
-//<Nav.Link href="/#resources">Resources</Nav.Link>//
 
 export default NavBar;

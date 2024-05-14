@@ -14,7 +14,6 @@
 }
 
 .hero-image {
-  background-image: none;
   filter: brightness(40%);
   object-fit: cover;
   overflow: hidden;
@@ -42,16 +41,14 @@
   text-align: left;
 }
 
-
 .sub {
-  font-Size: 90%;
-  color: #4D4D4D
+  font-size: 90%;
+  color: #4d4d4d;
 }
 
-.head{
+.head {
   font-weight: bold;
 }
-
 
 li {
   padding-bottom: 6px;
@@ -71,7 +68,7 @@ li {
   margin-bottom: 1%;
 }
 
-.localEvents p{
+.localEvents p {
   margin-bottom: 1%;
   font-size: 90%;
   color: #4d4d4d;
@@ -97,6 +94,12 @@ li {
   box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
 }
 
+.mentor-mentee-content {
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 2%;
+  background-color: #ffffff;
+}
 
 .main {
   background-color: #000;
@@ -116,14 +119,15 @@ img {
 }
 
 .outreachSlides {
- padding-right: 5%;
- padding-left: 6%;
-color: grey
+  padding-right: 5%;
+  padding-left: 6%;
+  color: grey;
 }
 
-.questionsImg{
+.questionsImg {
   width: 150px;
-  height:150px;
+  height: 150px;
+  height: 150px;
   object-fit: cover;
   border-radius: 50%;
 }

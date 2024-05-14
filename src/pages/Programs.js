@@ -14,7 +14,7 @@ import lunchbunch from "../images/programs/lunchbunch.jpg";
 import mentorship from "../images/programs/mentorship.jpg";
 import girlswhocode from "../images/programs/girlswhocode.jpg"
 import outreach from "../images/programs/outreach.jpg";
-import Programhero from "../images/programs/Programhero.jpeg";
+import Programhero from "../images/programs/Programhero.png";
 import EventCard from "../components/eventCard";
 import Card from "../components/Card";
 import { FaChevronRight, FaChevronLeft } from "react-icons/fa";
@@ -52,7 +52,7 @@ const Programs = () => {
             actively engage every participant.
           </p>
         </div>
-        <div className='programs-hero-image'>
+        <div className='hero-image'>
           <img
             src={Programhero}
             style={{ width: "100%", height: "auto" }}
