@@ -3,19 +3,23 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import banner from "../../images/programs/campaigns_banner.jpg"
-import zhalae from "../../images/headshots/board/zwd3.jpg"
-// import Button from 'react-bootstrap/Button';
-// import { Link } from 'react-router-dom';
-// import { boardData } from "../boardData";
-import Card from "react-bootstrap/Card";
+import {
+  presidents,
+  operations,
+  corporate,
+  academic,
+  brand,
+  outreach,
+  community,
+  advisors,
+} from "../boardData";
 
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 // import styles from 'react-responsive-carousel/lib/styles/carousel.min.css';
 // import { Carousel } from 'react-responsive-carousel';
 import Navbar from "react-bootstrap/Navbar";
 import { Nav, NavDropdown } from "react-bootstrap";
-
-import { community } from "../boardData";
+import QuestionsCard from "./QuestionsCard.js";
 import PhotoCarousel from "../PhotoCarousel";
 
 // import Image from "react-bootstrap/Image";
@@ -36,8 +40,8 @@ export default class Campaigns extends Component {
   }
 
   render() {
-    let cod = community.members.filter(
-      (record) => record.position === "Campaigns Co-Director"
+    let photoDirector = brand.members.filter(
+      (record) => record.position === "Photography Director"
     );
 
     function importAll(r) {
@@ -47,6 +51,10 @@ export default class Campaigns extends Component {
       });
       return images;
     }
+
+    const boardHeadshots = importAll(
+      require.context("../../images/headshots/board", false, /\.jpg/)
+    );
 
     function importAll(r) {
       let images = {};
@@ -98,9 +106,9 @@ export default class Campaigns extends Component {
     return (
       <>
         <div className="full-width-banner3">
-          <img src={banner} alt="Banner" class="banner4" />
-          <div class="banner-text3">
-            <p class="banner-header">Campaigns</p>
+          <img src={banner} alt="Banner" className="banner4" />
+          <div className="banner-text3">
+            <p className="banner-header">Campaigns</p>
             <p>
               WICC’s photo campaigns are a way for us to celebrate our community
               and allies, highlighting individuals and bringing awareness to
@@ -180,18 +188,18 @@ export default class Campaigns extends Component {
         <div className="questions-container2">
           <h5 className="questions-text1" style={{ paddingTop: "5%" }}>Questions?</h5>
           <p className="questions-text2">Reach out to the following WICC members for clarification regarding to Active Membership.</p>
-          <Row className="questions-profile">
-            <Card className="questions-card">
+          <Container>
               <Row>
-                <img className="questions-img" src={zhalae} />
                 <Col>
-                  <b>Zhalae Daneshvari</b>
-                  <p>zwd3@cornell.edu</p>
+                  <QuestionsCard
+                    name = {photoDirector[0].name}
+                    title = {photoDirector[0].title}
+                    img = {boardHeadshots[photoDirector[0].netId + ".jpg"]}
+                    netId = {photoDirector[0].netId}
+                  />
                 </Col>
-
               </Row>
-            </Card>
-          </Row>
+          </Container>
         </div>
       </>
     );

@@ -158,10 +158,10 @@ export default class Outreach extends Component {
             </p>
           </div>
           <div class="hero-image">
-            <img
-              src={OutreachHero}
-              style={{ width: "100%", height: "auto" }}
-            ></img>
+            <img src={OutreachHero}
+              style={{ width: "100%" }}
+            >
+            </img>
           </div>
         </div>
         <div class="page">
@@ -248,7 +248,7 @@ export default class Outreach extends Component {
             />
           </center>
 
-          <Container>
+          <Container style = {{ paddingTop: "56px", paddingBottom: "56px" }}>
             <h3 class="h3title">Past Projects</h3>
 
             <Row style={{ paddingBottom: "2%" }}>
@@ -340,7 +340,7 @@ export default class Outreach extends Component {
               </Col>
             </Row>
           </Container>
-          <Container>
+          <Container style = {{ paddingTop: "56px", paddingBottom: "56px" }}>
             <h3 class="h3title">Volunteers - Get Involved</h3>
             <br />
 
@@ -376,7 +376,7 @@ export default class Outreach extends Component {
               <Col></Col>
             </Row>
           </Container>
-          <Container>
+          <Container style = {{ paddingTop: "56px", paddingBottom: "56px" }}>
             <h3 class="h3title">More Outreach</h3>
             <br />
 
@@ -429,7 +429,7 @@ export default class Outreach extends Component {
 
           <center>
             <h3 style={{ paddingTop: "5%" }}>Questions?</h3>
-            <Container style={{ paddingRight: "5%" }}>
+            <Container style={{ paddingTop: "56px", paddingBottom: "56px", paddingRight: "5%" }}>
               <Row style={{ paddingBottom: "1%" }}>
                 <Col>
                   <QuestionsCard
