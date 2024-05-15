@@ -55,7 +55,7 @@ const Programs = () => {
         <div className='hero-image'>
           <img
             src={Programhero}
-            style={{ width: "100%", height: "auto" }}
+            style={{ width: "100%" }}
           ></img>
         </div>
 
