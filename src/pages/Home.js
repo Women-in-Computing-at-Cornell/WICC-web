@@ -25,41 +25,6 @@ function importAll(r) {
   return images;
 }
 
-// const PCarousel = ({ imgNames, pics }) => {
-//   const renderImages = () => {
-//     const imageGroups = [];
-//     for (let i = 0; i < imgNames.length; i += 5) {
-//       const imagesInGroup = imgNames.slice(i, i + 5).map((img, index) => {
-//         const imageSrc = pics[img];
-//         return (
-//           <div key={index} style={{ width: `${100 / 5}%` }}>
-//             <Image
-//               src={imageSrc}
-//               alt={`Image ${i + index + 1}`}
-//               style={{ width: "80%", height: "100px", objectFit: "contain" }}
-//             />
-//           </div>
-
-//         );
-//       });
-//       imageGroups.push(imagesInGroup);
-//     }
-//     return imageGroups.map((group, index) => (
-//       <div key={index} style={{ display: "flex" }}>
-//         {group}
-//       </div>
-//     ));
-//   };
-
-//   return (
-//     <div className="carousel-wrapper">
-//       <Carousel showThumbs={false} showStatus={false} emulateTouch infiniteLoop>
-//         {renderImages()}
-//       </Carousel>
-//     </div>
-//   );
-// };
-
 const Home = () => {
   const homepicsname = importAll(
     require.context(
@@ -201,8 +166,8 @@ const Home = () => {
                 allies can thrive and seize opportunities for{" "}
                 <strong>technical, academic, and leadership growth.</strong>
               </p>
-              <a
-                href="#"
+              <Button
+                href="#/programs"
                 className="btn"
                 style={{
                   marginLeft: "2em",
@@ -211,7 +176,7 @@ const Home = () => {
                 }}
               >
                 Learn More about Our Programs
-              </a>
+              </Button>
               <img src={www2} alt="Team meeting" style={commonImageStyle} />
               <p style={{ marginLeft: "2em", marginRight: "2em" }}>
                 We actively engage with the broader community to promote{" "}
@@ -222,13 +187,13 @@ const Home = () => {
                 Join us as we empower individuals to make a lasting impact on
                 the tech industry and beyond!
               </p>
-              <a
-                href="#"
+              <Button
+                href="#/join"
                 className="btn"
                 style={{ marginLeft: "2em", marginRight: "2em" }}
               >
                 Become a WICC member
-              </a>
+              </Button>
             </div>
           </div>
         </section>

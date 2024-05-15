@@ -246,6 +246,7 @@ export default class Membership extends Component {
                 display: "flex",
                 flexDirection: "row",
                 justifyContent: "center",
+                paddingTop: "48px",
               }}
             >
               {sec.map((s, i) => (

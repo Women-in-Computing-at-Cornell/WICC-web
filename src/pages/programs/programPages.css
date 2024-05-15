@@ -42,7 +42,7 @@
 }
 
 .sub {
-  font-size: 90%;
+  font-size: 16px;
   color: #4d4d4d;
 }
 
@@ -55,7 +55,7 @@ li {
 }
 
 .boardText {
-  font-size: 80%;
+  font-size: 16px;
 }
 
 .vertLine {
@@ -70,7 +70,7 @@ li {
 
 .localEvents p {
   margin-bottom: 1%;
-  font-size: 90%;
+  font-size: 16px;
   color: #4d4d4d;
 }
 
@@ -91,7 +91,6 @@ li {
   background-color: #dcf3ed;
   border-radius: 25px;
   flex-basis: 30%;
-  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
 }
 
 .mentor-mentee-content {
@@ -253,7 +252,7 @@ img {
 }
 
 .testimonial-person {
-  font-size: medium;
+  font-size: 16px;
   font-weight: bold;
 }
 
@@ -317,8 +316,12 @@ img {
 .text-content {
   align-self: left;
   color: #4d4d4d;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 400;
   word-wrap: break-word;
   height: 100%;
+}
+
+.questions-card {
+  padding-top: 16px;
 }
