@@ -70,7 +70,8 @@ class Footer extends React.Component {
           className="copyright"
           style={{ fontSize: "70%", color: "black" }}
         >
-          © 2024 Women in Computing at Cornell. All Rights Reserved.
+          © 2024 Women in Computing at Cornell. All Rights Reserved. Registered
+          Student Organization at Cornell University
         </Navbar.Text>
       </Navbar>
     );
