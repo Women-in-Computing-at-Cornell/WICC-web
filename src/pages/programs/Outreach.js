@@ -158,10 +158,7 @@ export default class Outreach extends Component {
             </p>
           </div>
           <div class="hero-image">
-            <img src={OutreachHero}
-              style={{ width: "100%" }}
-            >
-            </img>
+            <img src={OutreachHero} style={{ width: "100%" }}></img>
           </div>
         </div>
         <div class="page">
@@ -174,7 +171,7 @@ export default class Outreach extends Component {
             </h5>
             <Button
               style={{ marginBottom: "3%" }}
-              href="https://forms.gle/6pHLYpT3G2nVPhdD8"
+              href="https://docs.google.com/forms/d/1cHNFX7JopvVZiPAiaxEzIBvHHfiGwJTEm4N6a74uQR4/edit"
             >
               Register Now!
             </Button>
@@ -248,7 +245,7 @@ export default class Outreach extends Component {
             />
           </center>
 
-          <Container style = {{ paddingTop: "56px", paddingBottom: "56px" }}>
+          <Container style={{ paddingTop: "56px", paddingBottom: "56px" }}>
             <h3 class="h3title">Past Projects</h3>
 
             <Row style={{ paddingBottom: "2%" }}>
@@ -340,7 +337,7 @@ export default class Outreach extends Component {
               </Col>
             </Row>
           </Container>
-          <Container style = {{ paddingTop: "56px", paddingBottom: "56px" }}>
+          <Container style={{ paddingTop: "56px", paddingBottom: "56px" }}>
             <h3 class="h3title">Volunteers - Get Involved</h3>
             <br />
 
@@ -376,7 +373,7 @@ export default class Outreach extends Component {
               <Col></Col>
             </Row>
           </Container>
-          <Container style = {{ paddingTop: "56px", paddingBottom: "56px" }}>
+          <Container style={{ paddingTop: "56px", paddingBottom: "56px" }}>
             <h3 class="h3title">More Outreach</h3>
             <br />
 
@@ -429,7 +426,13 @@ export default class Outreach extends Component {
 
           <center>
             <h3 style={{ paddingTop: "5%" }}>Questions?</h3>
-            <Container style={{ paddingTop: "56px", paddingBottom: "56px", paddingRight: "5%" }}>
+            <Container
+              style={{
+                paddingTop: "56px",
+                paddingBottom: "56px",
+                paddingRight: "5%",
+              }}
+            >
               <Row style={{ paddingBottom: "1%" }}>
                 <Col>
                   <QuestionsCard
