@@ -119,6 +119,18 @@ export default class Mentorship extends Component {
                     biweekly.
                   </li>
                 </ul>
+                <div style={{ display: "flex", justifyContent: "center" }}>
+                  <Button
+                    style={{
+                      backgroundColor: "black",
+                      color: "white",
+                      ...linkStyle,
+                    }}
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSetjBeKhkapcHk0RtMoafbaE12gMS5kQ4qTLGWrjADagiTqvw/viewform"
+                  >
+                    Become a Mentor!
+                  </Button>
+                </div>
               </p>
             </div>
             <div className="mentor-mentee-column">
@@ -153,6 +165,19 @@ export default class Mentorship extends Component {
                     the group.
                   </li>
                 </ul>
+                <div style={{ display: "flex", justifyContent: "center" }}>
+                  <Button
+                    style={{
+                      backgroundColor: "black",
+                      color: "white",
+                      marginTop: 45,
+                      ...linkStyle,
+                    }}
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSeOZPJffYOUrGr65pawIY_YNJkax_ZEbxMmILyeIaxK356QWA/viewform"
+                  >
+                    Become a Mentee!
+                  </Button>
+                </div>
               </p>
             </div>
           </div>
