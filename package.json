@@ -54,9 +54,5 @@
   },
   "devDependencies": {
     "superagent": "^6.1.0"
-  },
-  "description": "Official repo for WICC website re-design",
-  "main": "index.js",
-  "author": "",
-  "license": "ISC"
+  }
 }
