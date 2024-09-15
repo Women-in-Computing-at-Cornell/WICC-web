@@ -49,6 +49,7 @@ export const presidents = {
       position: "Co-President",
       netId: "ns597",
       bio: " ",
+      // [TODO]
     },
   ],
 };
