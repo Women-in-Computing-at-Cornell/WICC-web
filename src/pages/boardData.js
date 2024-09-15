@@ -39,17 +39,16 @@ export const presidents = {
   description: " ",
   members: [
     {
-      name: "Jasmine Samadi",
+      name: "Jennifer Ai",
       position: "Co-President",
-      netId: "jns222",
-      bio: "WICC is the first place that made me feel like I belong in the computing field. After years of trying to find my path and being discouraged, I finally found a welcoming and supportive community of women and non-binary people in tech. I am so grateful for the warmth and guidance given to me from WICC members. I can only hope to extend a similar arm and welcome more people whose shoes I was in. ",
+      netId: "jla292",
+      bio: "",
     },
     {
       name: "Neha Sunkara",
       position: "Co-President",
       netId: "ns597",
       bio: " ",
-      // [TODO]
     },
   ],
 };
@@ -60,9 +59,9 @@ export const operations = {
   description: " ",
   members: [
     {
-      name: "Gaby Castro",
+      name: "Katherine Huang",
       position: "Co-Treasurer",
-      netId: "gc422",
+      netId: "kh784",
       bio: " ",
     },
     {
@@ -92,9 +91,9 @@ export const corporate = {
       bio: "An athlete who loves Data, Math and History. Fiction and Imagination for the future. Influence the youth. Impact the community.",
     },
     {
-      name: "Vicki Yang",
+      name: "Helen Bian",
       position: "Corporate Relations Co-Director",
-      netId: "vzy3",
+      netId: "hjb94",
       bio: " ",
     },
     {
@@ -104,22 +103,22 @@ export const corporate = {
       bio: " ",
     },
     {
-      name: "Rahma Abdullah",
+      name: "Kenza Daoudi",
       position: "Corporate Relations Co-Director",
-      netId: "ra567",
+      netId: "kd497",
       bio: "",
     },
     {
-      name: "Reva Jariwala",
+      name: "Sarah Young",
       position: "Alumni Relations Co-Director",
-      netId: "raj97",
-      bio: " ",
+      netId: "sy398",
+      bio: "",
     },
     {
-      name: "Diya Bansal",
+      name: "Selena Liu",
       position: "Alumni Relations Co-Director",
-      netId: "db688",
-      bio: "I am an undergraduate junior student in the College of Engineering at Cornell University pursuing a Bachelor of Science degree in Computer Science with a minor in Information Science (Data Science track).",
+      netId: "sl2663",
+      bio: "",
     },
   ],
 };
@@ -308,21 +307,21 @@ export const academic = {
   description: " ",
   members: [
     {
-      name: "Lauren Chan",
+      name: "Alina Yuan",
       position: "Vice President, Academic",
-      netId: "lac348",
-      bio: "Lauren is a junior from Princeton, NJ majoring in Information Science with minors in Business and Nutritional Sciences. This past summer, Lauren worked as a Digital Marketing Analytics Intern at Tarte Cosmetics. She first joined WICC in Fall 2022 under WICC's mentorship program as an ILR major looking to get more into the tech space and later joined board the following semester as Underclassmen Outreach Co-Director. After switching majors, she is now Vice President of the Academic Team for this semester. She has experience being an external and internal transfer and is involved in a business fraternity on campus along with Grub Ventures, a food and agriculture tech-focused venture capital club. In her free time, Lauren enjoys staying active, exploring national parks, trying out new recipes, and listening to true crime podcasts.",
+      netId: "ay332",
+      bio: "",
     },
     {
-      name: "Helen Bian",
+      name: "Rahma AAbdullah",
       position: "Faculty Relations Co-Director",
-      netId: "hjb94",
+      netId: "ra567",
       bio: " ",
     },
     {
-      name: "Victoria Yu",
+      name: "Sophia Wang",
       position: "Faculty Relations Co-Director",
-      netId: "vwy5",
+      netId: "sw895",
       bio: " ",
     },
     {
@@ -332,21 +331,21 @@ export const academic = {
       bio: " ",
     },
     {
-      name: "Alina Yuan",
+      name: "Ishita Yadav",
       position: "Career Development Co-Director",
-      netId: "ay332",
+      netId: "ily4",
       bio: " ",
     },
     {
-      name: "Sarah Young",
+      name: "Sreya Jonnalagadda",
       position: "Underclassmen Outreach Co-Director",
-      netId: "sy398",
+      netId: "sj652",
       bio: " ",
     },
     {
-      name: "Selena Liu",
+      name: "Arushi Jindal",
       position: "Underclassmen Outreach Co-Director",
-      netId: "sl2663",
+      netId: "aj443",
       bio: " ",
     },
   ],
