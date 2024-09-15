@@ -247,7 +247,11 @@ const Home = () => {
           <div className="call-to-action-container">
             <div className="get-involved-grid">
               {/* First Box */}
-              <Link to="/membership#reqs" className="get-involved-columno">
+              {/* <Link to="/membership#reqs" className="get-involved-columno"> */}
+              <a
+                href="mailto:wicc-l-request@cornell.edu?subject=Join"
+                className="get-involved-columno"
+              >
                 <div className="get-involved-content">
                   <Image
                     className="arrow-img"
@@ -261,7 +265,8 @@ const Home = () => {
                     <h4 className="button-name">Join Our Listserv</h4>
                   </div>
                 </div>
-              </Link>
+              </a>
+              {/* </Link> */}
 
               {/* Second Box */}
               <Link to="/membership" className="get-involved-columne">
