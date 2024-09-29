@@ -37,8 +37,67 @@
   width: 100%
 }
 
+.semout-container {
+  display: flex;
+  flex-direction: row;
+  align-content: left;
+  justify-content: flex-start;
+}
+
+.semout-content {
+  display: flex;
+  flex-direction: column;
+  align-content: left;
+  justify-content: center;
+  margin-top: 5em;
+  margin-left: 10em;
+  margin-bottom: 2em;
+}
+
+.semout-title {
+  text-align: left;
+  font-weight: bold;
+}
+
+.semout-description {
+  text-align: left;
+  max-width: 800px;
+}
+
 .what-we-do-container {
-  margin-top: 30px;
+  padding: 2em;
+}
+
+.what-we-do-header {
+  text-align: left;
+}
+
+.what-we-do-title {
+  font-weight: bold;
+  margin-left: 4em;
+}
+
+.what-we-do-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.what-we-do-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align items to the start */
+  margin-left: 3em; /* Adjust as needed */
+}
+
+.what-we-do-image {
+  width: 100%; /* Ensure images are responsive */
+  max-width: 400px; /* Limit max width */
+}
+
+.what-we-do-description,
+.what-we-do-text {
+  margin: 2em 0;
+  width: calc(100% - 4em); /* Account for margin */
 }
 
 .btn {
@@ -162,6 +221,7 @@
   align-items: center;
   margin: 0 20px;
   text-align: center;
+  margin-bottom: 1em;
 }
 
 .stat-item strong {
@@ -208,4 +268,57 @@
   margin-bottom: 1rem;
   font-size: 1.2rem;
   font-weight: bold;
+}
+
+@media (max-width: 760px) {
+  .hero-container {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+  }
+
+  .mission-image {
+    width: 100%; /* Make the image take full width */
+    height: 100%; /* Make the image take full height */
+    object-fit: cover; /* Cover the container */
+  }
+
+  .hero-content {
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%,  -50%);
+    z-index: 1;
+    text-align: left;
+    color: #fff;
+    padding: 20px;
+  }
+
+  .hero-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .semout-content {
+    margin-top: 2em;
+    margin-inline: 10px;
+  }
+
+  .what-we-do-content {
+    flex-direction: column; /* Stack columns */
+    align-items: center; /* Center content */
+  }
+
+  .what-we-do-column {
+    margin-left: 0; /* Remove left margin */
+    width: 100%; /* Full width */
+  }
+
+  .what-we-do-title {
+    margin-left: 0; /* Remove left margin */
+  }
+
+  .what-we-do-image {
+    max-width: 100%; /* Ensure images fit the screen */
+  }
+
 }

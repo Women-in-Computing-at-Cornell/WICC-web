@@ -72,132 +72,78 @@ const Home = () => {
         </section>
 
         {/* Semester Outlook */}
-        <section
-          style={{
-            display: "flex",
-            flexDirection: "row",
-            alignContent: "left",
-            justifyContent: "flex-start", // Update to flex-start
-          }}
-          className="semout-container"
-        >
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              alignContent: "left",
-              justifyContent: "center",
-              marginTop: "5em",
-              marginLeft: "10em",
-              marginBottom: "3em",
-            }}
-          >
-            <h2 style={{ textAlign: "left", fontWeight: "bold" }}>
-              Semester Outlook
-            </h2>
-            <p style={{ textAlign: "left", maxWidth: "800px" }}>
-              WICC is a place where women and gender minorities feel supported
-              throughout their academic journey and careers in technology. We
-              are a coalition of leaders who seek to make an impact on Cornell,
-              Ithaca and our greater community. Achieving this impact does not
-              just involve WICC e-board, but also you (g-body members), CIS
-              staff, Cornell, and the greater Ithaca community!
-            </p>
-          </div>
-        </section>
-        {/* What We Do */}
-        <section style={{}} className="what-we-do-container">
-          <div>
-            <h2
-              style={{
-                textAlign: "left",
-                fontWeight: "bold",
-                marginLeft: "5em",
-              }}
-            >
-              What we do
-            </h2>
-          </div>
-          <div style={containerStyle}>
-            {/* Left Column */}
-            <div style={commonFlexColumnStyle}>
-              <img src={www1} alt="Team celebration" style={commonImageStyle} />
-              <p style={{ width: "100%", marginLeft: "2em" }}>
-                The impact of WICC's initiatives reach far and wide across
-                Computing and Information Science.
-              </p>
-              <div className="stats">
-                <div className="stat-item">
-                  <strong>400+</strong>
-                  <span>Current Active Members</span>
-                </div>
-                <div className="stat-item">
-                  <strong>2000</strong>
-                  <span>Followers on Instagram</span>
-                </div>
-                <div className="stat-item">
-                  <strong>1700+</strong>
-                  <span>Newsletter Subscriber</span>
-                </div>
-              </div>
-              <img
-                src={www3}
-                alt="Working at computers"
-                style={commonImageStyle}
-              />
+        <section className="semout-container">
+        <div className="semout-content">
+          <h2 className="semout-title">Semester Outlook</h2>
+          <p className="semout-description">
+            WICC is a place where women and gender minorities feel supported
+            throughout their academic journey and careers in technology. We
+            are a coalition of leaders who seek to make an impact on Cornell,
+            Ithaca and our greater community. Achieving this impact does not
+            just involve WICC e-board, but also you (g-body members), CIS
+            staff, Cornell, and the greater Ithaca community!
+          </p>
+        </div>
+      </section>
+    {/* What We Do */}
+    <section className="what-we-do-container">
+      <div className="what-we-do-header">
+        <h2 className="what-we-do-title">What we do</h2>
+      </div>
+      <div className="what-we-do-content">
+        {/* Left Column */}
+        <div className="what-we-do-column">
+          <img src={www1} alt="Team celebration" className="what-we-do-image" />
+          <p className="what-we-do-description">
+            The impact of WICC's initiatives reach far and wide across Computing and Information Science.
+          </p>
+          <div className="stats">
+            <div className="stat-item">
+              <strong>400+</strong>
+              <span>Current Active Members</span>
             </div>
-            {/* Right Column */}
-            <div style={commonFlexColumnStyle}>
-              <p
-                style={{
-                  marginLeft: "2em",
-                  marginRight: "2em",
-                  marginTop: "3em",
-                  marginBottom: "2em",
-                }}
-              >
-                Through our programs in{" "}
-                <strong>
-                  academic development, community building, outreach,
-                  mentorship, corporate engagement, career development, and
-                  photo campaigns
-                </strong>
-                , we aim to cultivate a supportive environment where women and
-                allies can thrive and seize opportunities for{" "}
-                <strong>technical, academic, and leadership growth.</strong>
-              </p>
-              <Button
-                href="#/programs"
-                className="btn"
-                style={{
-                  marginLeft: "2em",
-                  marginRight: "2em",
-                  marginBottom: "2em",
-                }}
-              >
-                Learn More about Our Programs
-              </Button>
-              <img src={www2} alt="Team meeting" style={commonImageStyle} />
-              <p style={{ marginLeft: "2em", marginRight: "2em" }}>
-                We actively engage with the broader community to promote{" "}
-                <strong>diversity and inclusion</strong> in tech through
-                outreach.
-              </p>
-              <p style={{ marginLeft: "2em", marginRight: "2em" }}>
-                Join us as we empower individuals to make a lasting impact on
-                the tech industry and beyond!
-              </p>
-              <Button
-                href="#/join"
-                className="btn"
-                style={{ marginLeft: "2em", marginRight: "2em" }}
-              >
-                Become a WICC member
-              </Button>
+            <div className="stat-item">
+              <strong>2000</strong>
+              <span>Followers on Instagram</span>
+            </div>
+            <div className="stat-item">
+              <strong>1700+</strong>
+              <span>Newsletter Subscriber</span>
             </div>
           </div>
-        </section>
-
+          <img src={www3} alt="Working at computers" className="what-we-do-image" />
+        </div>
+        {/* Right Column */}
+        <div className="what-we-do-column">
+          <p className="what-we-do-text">
+            Through our programs in{" "}
+            <strong>
+              academic development, community building, outreach,
+              mentorship, corporate engagement, career development, and
+              photo campaigns
+            </strong>
+            , we aim to cultivate a supportive environment where women and
+            allies can thrive and seize opportunities for{" "}
+            <strong>technical, academic, and leadership growth.</strong>
+          </p>
+          <Button href="#/programs" className="btn what-we-do-button">
+            Learn More about Our Programs
+          </Button>
+          <img src={www2} alt="Team meeting" className="what-we-do-image" />
+          <p className="what-we-do-text">
+            We actively engage with the broader community to promote{" "}
+            <strong>diversity and inclusion</strong> in tech through outreach.
+          </p>
+          <p className="what-we-do-text">
+            Join us as we empower individuals to make a lasting impact on
+            the tech industry and beyond!
+          </p>
+          <Button href="#/join" className="btn what-we-do-button">
+            Become a WICC member
+          </Button>
+        </div>
+      </div>
+    </section>
         {/* What Our Alumni Says */}
         <section className="alumni-section">
           <h2 className="alumni-header">What Our Alumni Says</h2>
