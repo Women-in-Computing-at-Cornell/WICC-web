@@ -1,5 +1,5 @@
 .top-section {
-  padding-left: 140px;
+  padding-left: 10%;
   width: 100%;
   height: 100%;
   display: flex;
@@ -36,6 +36,7 @@
 }
 .benefits-section {
   display: flex;
+  flex-direction: row;
   width: 100%;
   padding: 96px 110px;
   align-items: center;
@@ -64,6 +65,17 @@
 
 /* Text Responsive smaller screen */
 @media screen and (max-width: 768px) {
+  .top-section,
+  .benefits-section {
+    flex-direction: column;
+    padding: 50px 50px;
+  }
+
+  .benefits-section {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+
   .top-header,
   .benefits-header {
     font-size: 24px;
