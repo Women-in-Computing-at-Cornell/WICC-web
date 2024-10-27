@@ -220,14 +220,14 @@ export const technical = {
       position: "Developer",
       bio: "Felicia is a sophomore majoring in computer science in Arts & Sciences and minoring (possibly majoring) in music.",
     },
-   
+
     {
       name: "Shriya Sudhakar",
       netId: "ss3576",
       position: "Developer",
       bio: "Shriya is a freshman in the College of Engineering majoring in Computer Science and minoring in Applied Math. She loves playing the violin, trying new puzzles, and hanging out with friends. She's super excited for an amazing year on Technical Committee!",
     },
-  
+
     {
       name: "Yuhan Sun",
       netId: "ys728",
@@ -273,9 +273,9 @@ export const academic = {
       bio: " ",
     },
     {
-      name: "Arshia Agrawal",
+      name: "Shriya Sudhakar",
       position: "Career Development Co-Director",
-      netId: "aa2443",
+      netId: "ss3576",
       bio: " ",
     },
     {
@@ -304,7 +304,6 @@ export const brand = {
   title: "Brand",
   description: " ",
   members: [
-
     {
       name: "Uyen Hoang",
       position: "Vice President, Brand",
@@ -503,6 +502,5 @@ export const advisors = {
       major: " ",
       bio: " ",
     },
-
   ],
 };
