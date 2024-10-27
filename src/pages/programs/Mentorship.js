@@ -36,9 +36,9 @@ export default class Mentorship extends Component {
     return (
       <>
         <div className="full-width-banner">
-          <img src={banner} alt="Banner" class="banner" />
-          <div class="banner-text">
-            <p class="banner-header">Mentorship</p>
+          <img src={banner} alt="Banner" className="banner" />
+          <div className="banner-text">
+            <p className="banner-header">Mentorship</p>
             <p>
               Our mentorship program strives to encourage and support students
               who are pursuing studies or future employment in computing by
@@ -49,6 +49,7 @@ export default class Mentorship extends Component {
             </p>
           </div>
         </div>
+
         <div
           style={{
             display: "flex",
@@ -155,36 +156,6 @@ export default class Mentorship extends Component {
             </div>
           </div>
         </div>
-        {/* <div
-          style={{
-            alignItems: "center",
-            background: "#f7f9f8",
-            padding: "3%",
-            paddingLeft: "8%",
-          }}
-        >
-          <h2>
-            <b>Questions?</b>
-          </h2>
-          <br />
-          <p>
-            Reach out to the following WICC members for clarification regarding
-            to Active Membership.
-          </p>
-          <div style={{ display: "flex", justifyContent: "center" }}>
-            {cod.map((s, i) => (
-              <div key={i} style={{ margin: "0 30px" }}>
-                <QuestionsCard
-                  name={s.name}
-                  title={s.title}
-                  img={boardHeadshots[s.netId + ".jpg"]}
-                  netId={s.netId}
-                  x
-                />
-              </div>
-            ))}
-          </div>
-        </div> */}
         <div className="questions-section">
           <h2>
             <b>Questions?</b>
