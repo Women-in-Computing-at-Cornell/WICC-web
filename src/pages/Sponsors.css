@@ -105,11 +105,12 @@ tbody tr:nth-child(odd) {
 }
 
 tbody tr td {
-  padding: 16px 20px !important;
+  padding: 16px 10px !important;
 }
 
 td {
   vertical-align: middle !important;
+
 }
 
 td:first-child {
