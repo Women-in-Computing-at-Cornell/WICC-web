@@ -62,3 +62,47 @@
 .footer {
   overflow: hidden !important;
 }
+
+
+@media (max-width: 760px) {
+  .copyright{
+    padding: 0;
+  }
+
+  .footerNav{
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .pages{
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 15px;
+    display: block;
+  }
+
+  .mr-auto{
+    justify-content: center;
+    margin: 0;
+  }
+
+  .navbar-nav {
+    margin-top: 10px;
+    justify-content: center;
+  }
+
+  .navbar .navbar-brand {
+    display: flex;
+    flex-direction: row;
+    padding-top: 5px;
+    justify-content: center;
+}
+  .copyright{
+    width: 100%;
+  }
+
+  .color-nav{
+    margin-top: 0px;
+  }
+
+}

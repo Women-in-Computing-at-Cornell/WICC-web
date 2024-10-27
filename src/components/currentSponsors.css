@@ -32,3 +32,16 @@
   padding-right: 5%;
   padding-top: 20px;
 }
+
+@media (max-width: 760px) {
+  .sponsor-container{
+    padding: 2em;
+  }
+
+  .sponsor-title {
+    font-size: 30px;
+  }
+  .sponsor-carousel-container {
+    padding-top: 0;
+  }
+}
