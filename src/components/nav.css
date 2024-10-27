@@ -1,6 +1,6 @@
 .navbar .navbar-nav .nav-link:hover {
   color: #000000;
-  transition: 0.5s ease;
+  transition: 0.3s ease;
   text-decoration: underline;
   text-decoration-color: #9ce2d3;
   text-decoration-thickness: 3px;
@@ -8,10 +8,12 @@
 }
 
 .navbar {
-  padding-left: 70px;
-  padding-right: 70px;
+  position: fixed;
+  top: 0;
+  z-index: 5;
+  width: 100%;
+  padding-inline: 60px;
   background-color: white !important;
-  outline: solid 1px rgb(219, 219, 219);
 }
 
 .navbar .navbar-brand {
@@ -22,12 +24,54 @@
 .navbar .navbar-brand .brand-text {
   display: flex;
   flex-direction: row;
-  margin-left: 10px; /* Adjust the margin as needed */
+  margin-left: 10px;
   text-align: left;
   font-size: 16px;
 }
 
 .navbar .join-us-button .btn {
-  background-color: #000;
+  background-color: black;
   color: white;
+  border: black;
+  width: 80%;
+}
+
+.navbar .join-us-button .btn:hover {
+  background-color: #9ce2d3;
+  color: black;
+  font-size: 16px;
+}
+
+@media (max-width: 760px) {
+  .navbar-collapse {
+    position: absolute;
+    top: 80%;
+    right: 0;
+    width: 180px;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #ddd;
+    z-index: 2;
+    border-radius: 30px;
+    font-size: 0.9em;
+    padding-bottom: 1.5em;
+  }
+
+  .navbar {
+    padding-inline: 40px;
+  }
+
+  .navbar-toggler {
+    border: none;
+    font-size: 1.5em;
+  }
+
+  .navbar-nav .nav-link {
+    width: 100%;
+    padding-left: 10px;
+  }
+
+  .navbar-nav .join-us-button {
+    margin-top: 8px;
+  }
 }
