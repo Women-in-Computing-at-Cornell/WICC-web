@@ -129,3 +129,12 @@ td:last-child {
   width: 108px;
   height: 40px;
 }
+
+.container-section {
+  background-color: #FBFBFB;
+  padding: 40px 10px; 
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}

@@ -79,18 +79,8 @@ const Sponsors = () => {
         </section>
       </div>
 
-      <section
-        style={{
-          backgroundColor: "#FBFBFB",
-          padding: "40px 10px", // Adjusted padding
-          display: "flex",
-          justifyContent: "space-between",
-          gap: "20px", // Reduced space between the boxes by half
-          flexWrap: "wrap",
-        }}
-      >
-        <div
-          style={{
+      <section className="container-section">
+        <div style={{
             background: "#FFF",
             borderRadius: "10px",
             boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.25)",
