@@ -165,7 +165,7 @@ export const photo = {
       bio: " ",
     },
     {
-      name: "Sommaya Haq",
+      name: "Sommaya Haque",
       position: "Photographer",
       netId: "sh847",
       bio: " ",
