@@ -13,17 +13,18 @@ body {
 
 .hero-text {
   position: absolute;
-  /* top: 15%; */
+  top: 40%; 
   margin-top: 5%;
-  /* left: 0; */
-  /* transform: translateY(-50%); */
+  left: 0; 
+  transform: translateY(-50%); 
   color: white;
   text-align: left;
   z-index: 2;
-  /* max-width: 40%; */
+  max-width: 40%; 
   margin-right: 60%;
   padding-left: 8%;
 }
+
 
 .hero-image {
   filter: brightness(40%);
