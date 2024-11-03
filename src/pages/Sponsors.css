@@ -138,3 +138,79 @@ td:last-child {
   gap: 20px;
   flex-wrap: wrap;
 }
+.description {
+  color: #212529;
+  font-family: Mulish;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.container-header {
+  color: #212529;
+  font-family: Mulish;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  text-align: left;
+}
+
+.container-subheader {
+  color: #212529;
+  font-family: Mulish;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.container1 {
+  background-color: #FFF;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  padding: 20px;
+  flex: 0 1 calc(25% - 20px);
+  max-width: calc(25% - 10px);
+  margin-left: 40px;
+}
+
+.container2{
+  background-color: #FFF;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  padding: 20px;
+  flex: 1 1 calc(40% - 20px);
+  max-width: calc(40% - 10px);
+  margin-right: 5px;
+}
+
+.container3{
+  background-color: #FFF;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  padding: 20px;
+  flex: 0 1 calc(25% - 20px);
+  max-width: calc(25% - 10px);
+  margin-right: 40px;
+}
+
+@media(max-width:768px) {
+  .container1, .container2, .container3 {
+    float:none;
+    display:block;
+    flex:none;
+    max-width:100%;
+    width:100%;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .container-section {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
