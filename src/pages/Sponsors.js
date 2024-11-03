@@ -4,6 +4,7 @@ import "./Sponsors.css";
 import Image from "react-bootstrap/Image";
 import { sponsorData } from "./sponsorData.js";
 //test comment
+// test comment 2
 import sponsorsImg from "../images/sponsors/sponsers_page_imgs/sponsors_img.jpg";
 import sponsorsCandid from "../images/sponsors/sponsorsCandid.png";
 import whiteCheck from "../images/icons/white-checkmark.svg";
