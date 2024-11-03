@@ -129,34 +129,58 @@ export const photo = {
   description: " ",
   members: [
     {
-      name: "Zhalae Daneshvari",
+      name: "Cynthia Lan",
       position: "Photographer Director",
-      netId: "zwd3",
-      bio: "Zhalae is a freshman at Cornell studying Info Sci in the College of Arts and Sciences. As part of the P+F committee, she loves to capture the welcoming nature of WICC’s community at events. In her free time she likes listening to music and her favorite artists are Taylor Swift and The Neighbourhood.",
+      netId: "cl2683",
+      bio: " ",
     },
     {
-      name: "Afsheen Alvi",
+      name: "Ayesha Abdiel",
       position: "Photographer",
-      netId: "aa2293",
-      bio: "Sophomore from Lucknow, India. Outside of academics, interested in baking, greek mythology, space law and exploration, travel and music",
+      netId: "asa253",
+      bio: " ",
     },
     {
-      name: "Amy Chitnumsab",
+      name: "Joey Zhou",
       position: "Photographer",
-      netId: "ac2295",
-      bio: "Amy is currently pursuing a career in Data Science with her Statistics major. Other than being part of the WICC Photo and Film Committee, she is also part of Cornell Data Journal (CDJ) and Cornell Innovative Film Tech Club (CIFT). ",
+      netId: "sz545",
+      bio: " ",
     },
     {
-      name: "Rachael Close",
+      name: "Katelyn Fu",
       position: "Photographer",
-      netId: "rlc355",
-      bio: "enthusiastic photographer, also likes to crochet, figure skate, and play tennis",
+      netId: "kcf44",
+      bio: " ",
     },
     {
-      name: "Sharafa Mohammed",
+      name: "Kiran Mitra",
       position: "Photographer",
-      netId: "sm2592",
-      bio: "Sharafa has been on the Photo & Film committee since Fall 2023. She is passionate about the world of machine learning and the application of computing in healthcare. Sharafa has enjoyed attending events and engaging with the WICC community, and she hopes to continue executing campaigns and contributing to events over the following semester.",
+      netId: "km936",
+      bio: " ",
+    },
+    {
+      name: "Rithya Sriram",
+      position: "Photographer",
+      netId: "ra596",
+      bio: " ",
+    },
+    {
+      name: "Sommaya Haque",
+      position: "Photographer",
+      netId: "sh847",
+      bio: " ",
+    },
+    {
+      name: "Vinesha Shaik",
+      position: "Photographer",
+      netId: "vs532",
+      bio: " ",
+    },
+    {
+      name: "Yawen Lin",
+      position: "Photographer",
+      netId: "yl3646",
+      bio: " ",
     },
   ],
 };
@@ -220,14 +244,14 @@ export const technical = {
       position: "Developer",
       bio: "Felicia is a sophomore majoring in computer science in Arts & Sciences and minoring (possibly majoring) in music.",
     },
-   
+
     {
       name: "Shriya Sudhakar",
       netId: "ss3576",
       position: "Developer",
       bio: "Shriya is a freshman in the College of Engineering majoring in Computer Science and minoring in Applied Math. She loves playing the violin, trying new puzzles, and hanging out with friends. She's super excited for an amazing year on Technical Committee!",
     },
-  
+
     {
       name: "Yuhan Sun",
       netId: "ys728",
@@ -273,9 +297,9 @@ export const academic = {
       bio: " ",
     },
     {
-      name: "Arshia Agrawal",
+      name: "Shriya Sudhakar",
       position: "Career Development Co-Director",
-      netId: "aa2443",
+      netId: "ss3576",
       bio: " ",
     },
     {
@@ -304,7 +328,6 @@ export const brand = {
   title: "Brand",
   description: " ",
   members: [
-
     {
       name: "Uyen Hoang",
       position: "Vice President, Brand",
@@ -503,6 +526,5 @@ export const advisors = {
       major: " ",
       bio: " ",
     },
-
   ],
 };
