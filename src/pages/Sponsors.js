@@ -6,7 +6,7 @@ import { sponsorData } from "./sponsorData.js";
 //test comment
 // test comment 2
 import sponsorsImg from "../images/sponsors/sponsers_page_imgs/sponsors_img.jpg";
-import sponsorsCandid from "../images/sponsors/sponsorsCandid.png";
+import sponsorsCandid from "../images/photo-campaigns/f16-dit/14856142_1303479296338000_1158762264361234190_o.jpg";
 import whiteCheck from "../images/icons/white-checkmark.svg";
 import grayCheck from "../images/icons/gray-checkmark.svg";
 import whiteX from "../images/icons/white-X.svg";
