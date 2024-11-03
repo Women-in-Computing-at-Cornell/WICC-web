@@ -1,0 +1,67 @@
+.floating-menu {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  /* Keeps it circular */
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.floating-menu.open {
+  border-radius: 10px;
+  width: 200px;
+  height: auto;
+  padding: 30px;
+  flex-direction: column;
+  align-items: left;
+}
+
+.menu-icon {
+  font-size: 20px;
+  /* Icon size */
+  transition: all 0.3s ease;
+  /* Smooth transition for repositioning */
+}
+
+.menu-icon.top-left {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.menu-icon {
+  font-size: 20px;
+  /* Icon size */
+}
+
+/* Styling for Nav when menu is open */
+.floating-menu .nav {
+  display: block;
+  margin-top: 20px;
+}
+
+/* Mobile Devices */
+@media (max-width: 600px) {
+  .floating-menu {
+    display: None;
+  }
+
+}
+
+/* Tablets */
+@media (min-width: 601px) and (max-width: 1140px) {}
+
+/* Desktops and larger screens */
+@media (min-width: 1140px) {
+  .floating-menu {
+    display: None;
+  }
+}

@@ -18,6 +18,7 @@ import {
 } from "./boardData";
 import Subteam from "../components/Subteam";
 import hero from "../images/about-pictures/abouthero.jpg";
+import FloatingMenu from "../components/BoardNav";
 
 const teams = [
   faculty,
@@ -120,6 +121,7 @@ export default class Board extends Component {
                 </div>
               ))}
             </div>
+            <FloatingMenu />
             <div
               className="right-sidebar"
             >
