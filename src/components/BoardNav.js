@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
-import { Nav } from 'react-bootstrap'; // Assuming you are using React Bootstrap
-import './FloatingMenu.css'; // Import the CSS for styling
+import { Nav } from 'react-bootstrap';
+import './FloatingMenu.css';
 
 function FloatingMenu() {
-  const [isOpen, setIsOpen] = useState(false); // State to manage the menu open/close
+  const [isOpen, setIsOpen] = useState(false);
 
-  // Toggle the menu open/close state
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
