@@ -5,15 +5,13 @@ body {
     "Rubik", "Lato", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overscroll-behavior: none;
+  height: 100%;
+  overflow-y: scroll;
+  padding-top: 7rem;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
-}
-
-body {
-  overscroll-behavior: none;
-  height: 100%;
-  overflow-y: scroll;
 }
