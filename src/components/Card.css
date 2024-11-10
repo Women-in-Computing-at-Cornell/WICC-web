@@ -28,7 +28,6 @@
   border-radius: 16px 16px 0px 0px;
 }
 
-
 .programs_title {
   display: flex;
   flex-direction: column;
@@ -66,8 +65,7 @@
   align-items: center;
 
   color: #000;
-  text-align: center;
-  margin-left: 0px;
+  text-align: left;
 
   /* Header-Paragraph */
   font-family: Mulish;
@@ -77,5 +75,5 @@
   line-height: 150%;
   /* 30px */
   /* margin: 20px auto; */
-  padding: 15px;
+  padding: 8px 24px 8px 24px;
 }

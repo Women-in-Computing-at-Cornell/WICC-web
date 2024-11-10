@@ -148,34 +148,30 @@ export default class Lunch extends Component {
             </Card>
           </Row>
         </Col>
-
-          <div className="questions-container">
+        
+        <Container>
           <h5 className="questions-text1" style={{ paddingTop: "5%" }}>Questions?</h5>
           <p className="questions-text2">Reach out to the following WICC members for clarification regarding to Active Membership.</p>
-          <Row className="questions-profile">
-          <Card className="questions-card">
-            <Row>
-            <img className="questions-img" src={sarah}/>
+          <Row>
             <Col>
-            <b>Sarah Young</b>
-            <p>sy398@cornell.edu</p>
+              <QuestionsCard
+                    name={directors[0].name}
+                    title={directors[0].title}
+                    img={boardHeadshots[directors[0].netId + ".jpg"]}
+                    netId={directors[0].netId}
+              />
             </Col>
-             
-            </Row>
-          </Card>
-          <Card className="questions-card">
-            <Row>
-            <img className="questions-img" src={tanisha}/>
             <Col>
-            <b>Tanisha Kore</b>
-            <p>tk494@cornell.edu</p>
-            </Col> 
-            </Row>
-            
-          </Card>
+              <QuestionsCard
+                name={directors[1].name}
+                title={directors[1].title}
+                img={boardHeadshots[directors[1].netId + ".jpg"]}
+                netId={directors[1].netId}
+              />
+            </Col>
           </Row>
           
-          </div>
+        </Container>
 
         {/* <Container>
           <Row style={{ paddingBottom: "1%" }}>

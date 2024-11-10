@@ -6,6 +6,7 @@ import Facebook from "../images/social/facebook.png";
 import Instagram from "../images/social/instagram.png";
 import LinkedIn from "../images/social/linkedin.png";
 import Email from "../images/social/email.png";
+import Watermark from "../images/Thicc Wicc Logo 1.png";
 import "./footer.css";
 import wiccLogo from "../images/icons/wicc_thick_logo.png";
 
@@ -69,7 +70,8 @@ class Footer extends React.Component {
           className="copyright"
           style={{ fontSize: "70%", color: "black" }}
         >
-          © 2024 Women in Computing at Cornell. All Rights Reserved.
+          © 2024 Women in Computing at Cornell. All Rights Reserved. Registered
+          Student Organization at Cornell University
         </Navbar.Text>
       </Navbar>
     );
