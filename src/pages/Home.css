@@ -14,6 +14,7 @@
   z-index: 1;
   text-align: left;
   color: #fff;
+  padding: 1rem;
 }
 
 .hero-content h2 {
@@ -260,6 +261,7 @@
   text-align: left;
   font-weight: bold;
   margin-left: 5em;
+  margin-bottom: 1.5rem;
 }
 
 .testimony-container {
@@ -291,6 +293,7 @@
     position: relative;
     height: 500px;
     overflow: hidden;
+    margin-top: -20px;
   }
 
   .mission-image {
@@ -301,7 +304,7 @@
 
   .hero-content {
     position: absolute;
-    top: 50%;
+    top: 53%;
     left: 35%;
     transform: translate(-50%, -50%);
     z-index: 1;
@@ -312,6 +315,10 @@
 
   .hero-content h2 {
     font-size: 1.5rem;
+  }
+
+  .hero-content p {
+    font-size: 0.9rem;
   }
 
   .semout-content {
@@ -431,7 +438,7 @@
   }
 
   .button-name {
-    font-size: 19px;
+    font-size: 18px;
     text-align: left;
   }
 

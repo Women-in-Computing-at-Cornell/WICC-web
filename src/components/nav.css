@@ -3,7 +3,7 @@
   top: 0;
   z-index: 5;
   width: 100%;
-  padding-inline: 60px;
+  padding-inline: 40px;
   background-color: white !important;
 }
 
@@ -30,9 +30,12 @@
 }
 
 .navbar .join-us-button .btn {
-  background-color: black;
-  color: white;
-  border: black;
+  background-color: white;
+    color: #00000080;
+    border: 0.1rem solid #00000080;
+    width: 90%;
+    margin: 2px 0;
+    padding-bottom: 0.5rem;
 }
 
 .navbar .join-us-button .btn:hover {
@@ -55,6 +58,14 @@
     font-size: 0.9em;
     padding-bottom: 1.5em;
   }
+
+  .navbar .navbar-brand{
+    font-size: 15px;
+  }
+
+  .navbar-brand p,img {
+    margin-top: 20px;
+  } 
 
   .navbar {
     padding-inline: 40px;

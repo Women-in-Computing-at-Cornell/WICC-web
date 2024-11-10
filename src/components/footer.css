@@ -75,11 +75,11 @@
 @media (max-width: 760px) {
   .copyright {
     padding: 0;
+    text-align: center;
   }
 
   .footerNav {
     flex-direction: column;
-    padding: 0;
   }
 
   .pages {
