@@ -125,6 +125,12 @@ img {
   border-radius: 50%;
 }
 
+#back {
+  all: unset;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
 .full-width-banner {
   position: relative;
   width: 100%;

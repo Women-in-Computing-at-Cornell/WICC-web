@@ -38,6 +38,9 @@ export default class Mentorship extends Component {
         <div className="full-width-banner">
           <img src={banner} alt="Banner" className="banner" />
           <div className="banner-text">
+            <a href="/#/programs">
+              <button id="back">&lt; Back to Programs Page</button>
+            </a>
             <p className="banner-header">Mentorship</p>
             <p>
               Our mentorship program strives to encourage and support students
