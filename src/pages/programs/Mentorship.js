@@ -45,10 +45,7 @@ export default class Mentorship extends Component {
             <p>
               Our mentorship program strives to encourage and support students
               who are pursuing studies or future employment in computing by
-              connecting them with more experienced upperclassmen. The role of
-              the mentor is to empower their mentees and enhance their interests
-              in computing. Mentors and mentees will be matched primarily based
-              on academic and career interests.
+              connecting them with more experienced upperclassmen. 
             </p>
           </div>
         </div>
@@ -72,11 +69,14 @@ export default class Mentorship extends Component {
           />
           <div>
             <p class="section-title">Mentorship Information</p>
-            <ul>
-              <li>Mondays 5:30 - 6:30</li>
-              <li>Thursdays 5:30 - 6:30</li>
-              <li>Find out more information from our kickoff slides!</li>
-            </ul>
+            <p>
+              The role of the mentor is to empower their mentees and enhance their interests
+              in computing. Mentors and mentees will be matched primarily based
+              on academic and career interests.
+            </p>
+            <p><b>Weekly activity time:</b></p>
+            <p><b>Mondays and Thursdays 17:30 - 18:30</b></p>
+            <p>Find out more information in our kickoff slides!</p>
             <div className="mentorship-button">
               <Button
                 style={linkStyle}
@@ -143,7 +143,7 @@ export default class Mentorship extends Component {
           <br />
           <p>
             Reach out to the following WICC members for clarification regarding
-            Active Membership.
+            Mentorship.
           </p>
           <div className="questions-cards-container">
             {cod.map((s, i) => (
