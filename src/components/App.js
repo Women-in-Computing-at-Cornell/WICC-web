@@ -27,7 +27,6 @@ function App() {
     <HashRouter>
       <div style={{ fontFamily: "Inter" }}>
         <NavBar />
-        <div style={{ paddingTop: "7rem" }}>
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/about" component={About} />
@@ -46,7 +45,6 @@ function App() {
           <Route path="/sponsors" component={Sponsors} />
           <Route path="/calendar" component={Calendar} />
         </Switch>
-        </div>
         <Footer />
       </div>
     </HashRouter>
