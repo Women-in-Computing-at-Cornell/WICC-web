@@ -6,8 +6,6 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import "./Program.css";
 import "./pages.css";
-import activemember from "../images/programs/activemember.jpg";
-import campaigns from "../images/programs/campaigns.jpg";
 import community from "../images/programs/community.jpg";
 import cyc from "../images/programs/cyc.jpg";
 import lunchbunch from "../images/programs/lunchbunch.jpg";
@@ -60,14 +58,22 @@ const Programs = () => {
           <h1>Get Involved</h1>
           <p>You get what you put in</p>
         </div>
-        <Link to="/membership" style={styles.link}>
+        {/* outreach, campaigns */}
+        <Link to="/outreach" style={styles.link}>
           <Card
-            title="Active Membership"
-            description="Make the most out of your experience with WICC"
-            imageUrl={activemember}
+            title="Outreach"
+            description="Be part of making a difference and empowering others"
+            imageUrl={outreach}
           />
         </Link>
-        {/* community discussion, lunch bunch, mentorship */}
+        <Link to="/crackingyourcareer" style={styles.link}>
+          <Card
+            title="Cracking Your Career (CYC)"
+            description="Prepare for interviews or recruitment for your target career with interview prep, resume workshops and more"
+            imageUrl={cyc}
+          />
+        </Link>
+        {/* community discussion, mentorship */}
         <Link to="/discussions" style={styles.link}>
           <Card
             title="Community Discussion"
@@ -76,35 +82,13 @@ const Programs = () => {
           />
         </Link>
         <Link to="/lunch" style={styles.link}>
-          <Card title="Lunch Bunch" description="" imageUrl={lunchbunch} />
+          <Card title="Lunch Bunch" description="Network with CIS Professors and Alumni" imageUrl={lunchbunch} />
         </Link>
         <Link to="/mentorship" style={styles.link}>
           <Card
             title="Mentorship"
             description="Navigate your career or studies with the help of upperclassmen"
             imageUrl={mentorship}
-          />
-        </Link>
-        {/* outreach, campaigns, cracking your career */}
-        <Link to="/outreach" style={styles.link}>
-          <Card
-            title="Girls Who Code"
-            description="Be part of making a difference and empowering others"
-            imageUrl={outreach}
-          />
-        </Link>
-        <Link to="/campaigns" style={styles.link}>
-          <Card
-            title="Campaigns"
-            description="Celebrate your community and raise awareness on relevant issues"
-            imageUrl={campaigns}
-          />
-        </Link>
-        <Link to="/crackingyourcareer" style={styles.link}>
-          <Card
-            title="Cracking Your Career (CYC)"
-            description="Prepare for interviews or recruitment for your target career with interview prep, resume workshops and more"
-            imageUrl={cyc}
           />
         </Link>
       </div>

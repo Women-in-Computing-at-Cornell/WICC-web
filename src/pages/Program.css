@@ -77,7 +77,7 @@ body {
 
 .item1 {
   grid-column-start: 1;
-  grid-column-end: 3;
+  grid-column-end: 2;
   background: var(--Cyan-2, #DCF3ED);
   border-radius: 20px;
 
@@ -97,38 +97,22 @@ body {
   font-weight: 700;
   line-height: 150%;
   /* 60px */
-  margin-left: 80px;
+  margin-left: auto;
+  margin-right: auto;
+
 }
 
 .item1 p {
   color: #000;
-
   /* Header-Paragraph */
   font-family: Mulish;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
-  margin-left: 80px;
+  margin-left: auto;
+  margin-right: auto;
 }
-
-/* .row-1 {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  gap: 40px;
-  flex: 1 0 0;
-  align-self: stretch;
-}
-
-.row-2 {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  gap: 40px;
-  flex: 1 0 0;
-  align-self: stretch;
-} */
 
 .small-card {
   display: flex;
