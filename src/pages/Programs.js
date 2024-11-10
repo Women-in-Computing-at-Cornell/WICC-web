@@ -39,7 +39,7 @@ const Programs = () => {
     <div>
       <div className="hero">
         <div className="hero-text">
-          <h1 style={{ marginBottom: "1.2rem" }}> Programs </h1>
+          <h1 style={{ marginBottom: "1.2rem", fontWeight: "900", fontSize: "3rem"}}> Programs </h1>
           <p>
             We are dedicated to fostering an inclusive and empowering community
             for women and non-binary students at Cornell. Each semester, we
