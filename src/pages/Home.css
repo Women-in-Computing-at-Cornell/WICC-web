@@ -34,7 +34,7 @@
 }
 
 .mission-image {
-  width: 100%
+  width: 100%;
 }
 
 .semout-container {
@@ -98,8 +98,8 @@
 }
 
 .what-we-do-image {
-  width: 100%; 
-  height: auto; 
+  width: 100%;
+  height: auto;
 }
 
 .what-we-do-description,
@@ -110,15 +110,15 @@
 .btn {
   border-radius: 5em;
   color: black;
-  background-color: #9CE2D3;
-  border-color: #9CE2D3;
+  background-color: #9ce2d3;
+  border-color: #9ce2d3;
 }
 
 .what-we-do-button {
   border-radius: 5em;
   color: black;
-  background-color: #9CE2D3;
-  border-color: #9CE2D3;
+  background-color: #9ce2d3;
+  border-color: #9ce2d3;
   margin-bottom: 2em;
   margin-left: 2em;
   width: 90%;
@@ -140,14 +140,13 @@
 .get-involved-header {
   text-align: left;
   font-weight: bold;
-  margin-left: 9rem
+  margin-left: 9rem;
 }
 
 .get-involved-grid {
   display: flex;
   width: 100%;
   flex-wrap: wrap;
-
 }
 
 .get-involved-columno {
@@ -243,7 +242,7 @@
 
 .stat-item strong {
   font-weight: bold;
-  color: #9CE2D3;
+  color: #9ce2d3;
   font-size: 2em;
 }
 
@@ -252,7 +251,7 @@
 }
 
 .alumni-section {
-  background-color: #FAFAFA;
+  background-color: #fafafa;
   width: 100%;
   padding: 3em 0;
 }
@@ -275,7 +274,7 @@
   display: flex;
   flex-direction: column;
   flex: 1;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-radius: 2rem;
   padding: 2rem;
   margin: 0 20px;
@@ -290,21 +289,21 @@
 @media (max-width: 760px) {
   .hero-container {
     position: relative;
-    height: 400px;
+    height: 500px;
     overflow: hidden;
   }
 
   .mission-image {
-    width: 100%; 
-    height: 100%; 
-    object-fit: cover; 
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
   .hero-content {
     position: absolute;
     top: 50%;
     left: 35%;
-    transform: translate(-50%,  -50%);
+    transform: translate(-50%, -50%);
     z-index: 1;
     text-align: left;
     color: #fff;
@@ -332,8 +331,8 @@
   .what-we-do-button {
     border-radius: 5em;
     color: black;
-    background-color: #9CE2D3;
-    border-color: #9CE2D3;
+    background-color: #9ce2d3;
+    border-color: #9ce2d3;
     margin-bottom: 2em;
     margin-left: 1em;
     width: 90%;
@@ -351,7 +350,6 @@
   .what-we-do-image {
     max-width: 100%; /* Ensure images fit the screen */
   }
-
 
   .alumni-section {
     padding: 2em;
@@ -409,7 +407,7 @@
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
     max-width: 45%;
   }
-  
+
   .get-involved-columne {
     display: flex;
     flex: 1;
@@ -423,7 +421,7 @@
     max-width: 45%;
   }
 
-  .arrow-img{
+  .arrow-img {
     margin-bottom: 1em;
   }
 
@@ -437,12 +435,11 @@
     text-align: left;
   }
 
-  .sponsor-container{
+  .sponsor-container {
     padding: 2em;
   }
 
   .home-container {
     padding-bottom: 0px;
   }
-
 }

@@ -10,6 +10,15 @@
   outline: solid 1px rgb(219, 219, 219);
 }
 
+.footer .navbar-brand:hover,
+.footer .nav-link:hover {
+  color: #000000;
+  transition: 0.3s ease;
+  text-decoration: underline;
+  text-decoration-color: #9ce2d3;
+  text-decoration-thickness: 3px;
+}
+
 .icon {
   border-radius: 19.286px;
   background: linear-gradient(
@@ -63,25 +72,24 @@
   overflow: hidden !important;
 }
 
-
 @media (max-width: 760px) {
-  .copyright{
+  .copyright {
     padding: 0;
   }
 
-  .footerNav{
+  .footerNav {
     flex-direction: column;
     padding: 0;
   }
 
-  .pages{
+  .pages {
     flex-direction: column;
     justify-content: center;
     margin-top: 15px;
     display: block;
   }
 
-  .mr-auto{
+  .mr-auto {
     justify-content: center;
     margin: 0;
   }
@@ -96,13 +104,12 @@
     flex-direction: row;
     padding-top: 5px;
     justify-content: center;
-}
-  .copyright{
+  }
+  .copyright {
     width: 100%;
   }
 
-  .color-nav{
+  .color-nav {
     margin-top: 0px;
   }
-
 }
