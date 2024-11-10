@@ -84,4 +84,14 @@
   .navbar-nav .join-us-button {
     margin-top: 8px;
   }
+
+  .navbar-light{
+    background-color: green;
+  }
+
+  .nav-link{
+    padding-left: 0;
+  }
+
+
 }
