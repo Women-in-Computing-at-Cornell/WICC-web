@@ -16,15 +16,6 @@ function FloatingMenu() {
         <Nav
           className="flex-column"
         >
-          <p
-            style={{
-              fontWeight: "bold"
-
-            }}
-          >
-            {" "}
-            ON THIS PAGE:
-          </p>
           <Nav.Link href="#board#faculty" eventKey="faculty">
             Faculty
           </Nav.Link>
