@@ -333,7 +333,7 @@ export const academic = {
       bio: "",
     },
     {
-      name: "Rahma AAbdullah",
+      name: "Rahma Abdullah",
       position: "Faculty Relations Co-Director",
       netId: "ra567",
       bio: " ",
