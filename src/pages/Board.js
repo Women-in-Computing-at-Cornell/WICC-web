@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./pages.css";
+import "./Board.css"; // Make sure this path is correct
 import BoardCard from "../components/BoardCard";
 import Navbar from "react-bootstrap/Navbar";
 import { Nav, NavDropdown } from "react-bootstrap";
@@ -18,6 +18,7 @@ import {
 } from "./boardData";
 import Subteam from "../components/Subteam";
 import hero from "../images/about-pictures/abouthero.jpg";
+import FloatingMenu from "../components/BoardNav";
 
 const teams = [
   faculty,
@@ -46,21 +47,21 @@ export default class Board extends Component {
   componentDidMount() {
     window.addEventListener('scroll', this.handleScroll);
   }
-  
+
   componentWillUnmount() {
     window.removeEventListener('scroll', this.handleScroll);
   }
-  
+
   handleScroll = () => {
     const totalScroll = document.documentElement.scrollTop;
     const windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
     const scrollProgress = `${(totalScroll / windowHeight) * 100}`;
-  
+
     this.setState({
       scrollProgress
     });
   };
-  
+
   handleSelect = (e) => {
     this.setState({
       value: e,
@@ -114,22 +115,15 @@ export default class Board extends Component {
               {teams.map((team, key) => (
                 <div key={key} style={{ marginBottom: "20px" }}>
                   <div>
-                  <span className="subteam-name">{team.name}</span>
+                    <span className="subteam-name">{team.name}</span>
                     <Subteam team={team} />
                   </div>
                 </div>
               ))}
             </div>
+            <FloatingMenu />
             <div
-              style={{
-                float: "right", // Float might not be necessary with flex layout
-                height: "100%",
-                display: "flex",
-                flexDirection: "column",
-                alignItems: "flex-end",
-                position: "sticky",
-                top: "0px",
-              }}
+              className="right-sidebar"
             >
               {this.renderProgressBar()}
               <Nav

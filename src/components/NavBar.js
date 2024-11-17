@@ -9,18 +9,19 @@ class NavBar extends React.Component {
   render() {
     const linkStyle = {
       marginLeft: "10px", // Adjust the right margin to space out the links
+      color: "white",
     };
     return (
       <Navbar bg="light" expand="lg">
         <Navbar.Brand className="mr-auto" href="/">
           <img src={Watermark} width="35" height="45" alt="WICC logo" />
-          <div className="brand-text">
+          <div className="brand-text text-white">
             <p>
               Women in Computing <br /> at Cornell
             </p>
           </div>
         </Navbar.Brand>
-        <Nav>
+        <Nav className="links">
           <Nav.Link style={linkStyle} href="/">
             Home
           </Nav.Link>
