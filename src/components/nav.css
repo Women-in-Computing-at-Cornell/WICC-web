@@ -46,7 +46,7 @@
 
 @media (max-width: 1080px) {
   .navbar {
-    background-color: #1e1e1e;
+    background-color: #1e1e1e !important;
   }
   .navbar-collapse {
     background-color: #1e1e1e;
@@ -94,13 +94,11 @@
     padding: 0.25rem;
   }
 
-  .navbar-light{
+  .navbar-light {
     background-color: green;
   }
 
-  .nav-link{
+  .nav-link {
     padding-left: 0;
   }
-
-
 }
