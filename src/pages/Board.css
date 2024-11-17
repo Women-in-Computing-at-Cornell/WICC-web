@@ -2,6 +2,37 @@ h2 {
   color: black;
 }
 
+.hero-container {
+  position: relative;
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  text-align: left;
+  color: #fff;
+}
+
+.hero-content h2 {
+  font-size: 3rem;
+  text-align: left;
+  color: #fff;
+  margin-left: 0;
+  max-width: 800px;
+  font-weight: bold;
+}
+
+.hero-content p {
+  font-size: 1rem;
+  text-align: left;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-left: 0;
+}
+
 .containerPage {
   margin: 5%;
   margin-left: 12%;
