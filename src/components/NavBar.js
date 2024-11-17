@@ -36,7 +36,7 @@ class NavBar extends React.Component {
           </Nav.Link>
 
           <div className="join-us-button">
-            <Button style={linkStyle} href="/#join">
+            <Button href="/#join">
               Join Us
             </Button>
           </div>
