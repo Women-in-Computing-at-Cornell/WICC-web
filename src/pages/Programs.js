@@ -54,8 +54,9 @@ const Programs = () => {
         </div>
       </div>
       <div className="events-grid">
-        <div className="item1">
-          <h1>Get Involved</h1>
+        <div className="item1" margin-left="20%">
+          <h1>Get</h1>
+          <h1>Involved</h1>
           <p>You get what you put in</p>
         </div>
         {/* outreach, campaigns */}
@@ -69,7 +70,7 @@ const Programs = () => {
         <Link to="/crackingyourcareer" style={styles.link}>
           <Card
             title="Cracking Your Career (CYC)"
-            description="Prepare for interviews or recruitment for your target career with interview prep, resume workshops and more"
+            description="Prepare for interviews or recruitment with interview prep, resume workshops and more!"
             imageUrl={cyc}
           />
         </Link>
