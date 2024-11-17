@@ -6,18 +6,18 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import "./Program.css";
 import "./pages.css";
-import community from "../images/programs/community.jpg";
+//import community from "../images/programs/community.jpg";
 import cyc from "../images/programs/cyc.jpg";
 import lunchbunch from "../images/programs/lunchbunch.jpg";
 import mentorship from "../images/programs/mentorship.jpg";
-import girlswhocode from "../images/programs/girlswhocode.jpg";
+//import girlswhocode from "../images/programs/girlswhocode.jpg";
 import outreach from "../images/programs/outreach.jpg";
 import Programhero from "../images/programs/Programhero.png";
-import EventCard from "../components/eventCard";
-import Card from "../components/Card";
-import { FaChevronRight, FaChevronLeft } from "react-icons/fa";
-import Progressbar from "../components/ProgressBar";
-import Calendar from "./Calendar";
+//import EventCard from "../components/eventCard";
+//import Card from "../components/Card";
+//import { FaChevronRight, FaChevronLeft } from "react-icons/fa";
+//import Progressbar from "../components/ProgressBar";
+//import Calendar from "./Calendar";
 
 let styles = {
   container: {
@@ -53,14 +53,54 @@ const Programs = () => {
           <img src={Programhero} style={{ width: "100%" }}></img>
         </div>
       </div>
-      <div className="events-grid">
-        <div className="item1" margin-left="20%">
-          <h1>Get</h1>
-          <h1>Involved</h1>
-          <p>You get what you put in</p>
-        </div>
-        {/* outreach, campaigns */}
-        <Link to="/outreach" style={styles.link}>
+      
+        <div className="events-grid">
+        <Link to="/outreach" className="card">
+          <div>
+            <img src={outreach} alt="Outreach" className="image" />
+            <div >
+              <h1>Outreach ↗</h1>
+              <p>
+                Be part of making a difference and empowering others.
+              </p>
+            </div>
+          </div>
+        </Link>
+        <Link to="/crackingyourcareer" className="card">
+          <div>
+            <img src={cyc} alt="crackingyourcareer" className="image" />
+            <div >
+              <h1>Cracking Your Career ↗</h1>
+              <p>
+                Prepare for recruitment with professional workshops and more!
+              </p>
+            </div>
+          </div>
+        </Link>
+        <Link to="/lunch" className="card">
+          <div>
+            <img src={lunchbunch} alt="lunchbunch" className="image" />
+            <div >
+              <h1>Lunch Bunch ↗</h1>
+              <p>
+                Network with CIS Professors and Alumni
+              </p>
+            </div>
+          </div>
+        </Link>
+        <Link to="/mentorship" className="card">
+          <div>
+            <img src={mentorship} alt="mentorship" className="image" />
+            <div >
+              <h1>Mentorship ↗</h1>
+              <p>
+                Navigate your career or studies with the help of upperclassmen
+              </p>
+            </div>
+          </div>
+        </Link>
+    </div>
+        {/* <Link to="/outreach" style={styles.link}>
           <Card
             title="Outreach"
             description="Be part of making a difference and empowering others"
@@ -74,14 +114,7 @@ const Programs = () => {
             imageUrl={cyc}
           />
         </Link>
-        {/* community discussion, mentorship */}
-        <Link to="/discussions" style={styles.link}>
-          <Card
-            title="Community Discussion"
-            description="Get involved; meet new people and voice your opinions"
-            imageUrl={community}
-          />
-        </Link>
+
         <Link to="/lunch" style={styles.link}>
           <Card title="Lunch Bunch" description="Network with CIS Professors and Alumni" imageUrl={lunchbunch} />
         </Link>
@@ -91,12 +124,26 @@ const Programs = () => {
             description="Navigate your career or studies with the help of upperclassmen"
             imageUrl={mentorship}
           />
-        </Link>
-      </div>
+        </Link> */}
 
-      <div>
-        <Calendar />
-      </div>
+      <div className="calendar-container">
+    <h1 className="upcoming-title">Upcoming Events</h1>
+    <div className="calendar-wrapper">
+        <iframe
+            src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FNew_York&showPrint=0&src=d2ljY2Nvcm5lbGxAZ21haWwuY29t&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=Y29ybmVsbC5lZHVfOTh0c2JvdWNtaTUzdjJybHQ3a2RqNDN2a2NAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23009688&color=%238E24AA&color=%2333B679"
+            style={{
+                border: 'solid 1px #777',
+            }}
+            width="900"
+            height="600"
+            title="Google Calendar"
+        ></iframe>
+    </div>
+</div>
+
+
+
+      
     </div>
   );
 };
