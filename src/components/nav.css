@@ -93,4 +93,14 @@
     width: 100px;
     padding: 0.25rem;
   }
+
+  .navbar-light{
+    background-color: green;
+  }
+
+  .nav-link{
+    padding-left: 0;
+  }
+
+
 }
