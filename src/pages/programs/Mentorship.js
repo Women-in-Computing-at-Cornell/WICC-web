@@ -4,8 +4,10 @@ import { community } from "../boardData";
 import QuestionsCard from "./QuestionsCard.js";
 import "./programPages.css";
 import banner from "../../images/programs/mentorship_cropped.jpg";
-import mentorshipInfo from "../../images/programs/mentorship-info.jpg";
+import mentorshipInfo from "../../images/programs/mentorship_caro/mentorship-info.jpg";
+import ImgCarousel from "../../components/ImgCarousel.jsx";
 import "./programPages.css";
+import Carousel from "react-bootstrap/Carousel";
 
 export default class Mentorship extends Component {
   componentDidMount() {
@@ -28,6 +30,12 @@ export default class Mentorship extends Component {
     const boardHeadshots = importAll(
       require.context("../../images/headshots/board", false, /\.jpg/)
     );
+
+    const carouselImages = importAll(
+      require.context("../../images/programs/mentorship_caro", false, /\.jpg/)
+    );
+
+    const imgNames = Object.keys(carouselImages);
 
     const linkStyle = {
       marginLeft: "10px", // Adjust the right margin to space out the links
@@ -61,7 +69,7 @@ export default class Mentorship extends Component {
             padding: "40px",
           }}
         >
-          <img
+          {/* <img
             src={mentorshipInfo}
             style={{
               width: "45%",
@@ -69,7 +77,26 @@ export default class Mentorship extends Component {
               marginRight: "5%",
               marginLeft: "8%",
             }}
-          />
+          /> */}
+          {/* <ImgCarousel imgNames={imgNames} pics={carouselImages} /> */}
+          <Carousel
+            style={{
+              width: "30%",
+              borderRadius: "0px",
+              boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
+            }}
+          >
+            {Object.values(carouselImages).map((src, index) => (
+              <Carousel.Item key={index}>
+                <img
+                  className="d-block w-100"
+                  src={src}
+                  alt={`Slide ${index + 1}`}
+                  style={{ borderRadius: "0px" }}
+                />
+              </Carousel.Item>
+            ))}
+          </Carousel>
           <div>
             <p class="section-title">Mentorship Information</p>
             <ul>

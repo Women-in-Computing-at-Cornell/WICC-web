@@ -253,7 +253,6 @@ export default class Outreach extends Component {
                 <a href="https://www.khanacademy.org/computer-programming/ashley-hs-fall-2018-shooting-star/5814504135491584">
                   <Image
                     src={projectImages["Ashley_Shooting Star.png"]}
-                    roundedCircle
                     style={{ width: "60%", height: "auto" }}
                   ></Image>
                 </a>
@@ -266,7 +265,6 @@ export default class Outreach extends Component {
                 <a href="https://www.khanacademy.org/computer-programming/teddy-ms-fall-2018-build-a-house/4719725664960512">
                   <Image
                     src={projectImages["Teddy_Build-A-House.png"]}
-                    roundedCircle
                     style={{ width: "60%", height: "auto" }}
                   ></Image>
                 </a>
@@ -276,11 +274,11 @@ export default class Outreach extends Component {
                 <p>Teddy</p>
                 <p>MS, Fall 2018</p>
               </Col>
+
               <Col style={{ paddingRight: "5%", paddingLeft: "0%" }}>
                 <a href="https://www.khanacademy.org/computer-programming/ania-hs-fall-2018-armageddon/6201068844384256">
                   <Image
                     src={projectImages["Ania_Armageddon.png"]}
-                    roundedCircle
                     style={{ width: "60%", height: "auto" }}
                   ></Image>
                 </a>
@@ -294,7 +292,6 @@ export default class Outreach extends Component {
                   {" "}
                   <Image
                     src={projectImages["Dax_Random Colour Generator.png"]}
-                    roundedCircle
                     style={{ width: "60%", height: "auto" }}
                   ></Image>
                 </a>
@@ -310,7 +307,6 @@ export default class Outreach extends Component {
                 <a href="https://www.khanacademy.org/computer-programming/audrey-hs-fall-2018-colorful-flashy-flashcard/5717846265593856">
                   <Image
                     src={projectImages["Audrey_Colorful Flashy Flashcard.png"]}
-                    roundedCircle
                     style={{ width: "60%", height: "auto" }}
                   ></Image>
                 </a>
@@ -325,7 +321,6 @@ export default class Outreach extends Component {
                 <a href="https://www.khanacademy.org/computer-programming/michael-ms-fall-2018-oh-noes/5878804048936960">
                   <Image
                     src={projectImages["Michael_Oh Noes.png"]}
-                    roundedCircle
                     style={{ width: "60%", height: "auto" }}
                   ></Image>
                 </a>
