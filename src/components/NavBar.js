@@ -14,7 +14,7 @@ const NavBar = () => {
   };
 
   return (
-    <Navbar bg="light" expand="lg" expanded={expanded}>
+    <Navbar expand="lg" expanded={expanded}>
       <Navbar.Brand className="mr-auto" href="/">
         <img src={Watermark} width="35" height="45" alt="WICC logo" />
         <div className="brand-text">

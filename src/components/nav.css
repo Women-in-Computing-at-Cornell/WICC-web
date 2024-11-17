@@ -4,11 +4,12 @@
   z-index: 5;
   width: 100%;
   padding-inline: 40px;
-  background-color: white !important;
+  background-color: white;
+  color: black;
 }
 
 .navbar .navbar-nav .nav-link:hover {
-  color: #000000;
+  color: white;
   transition: 0.3s ease;
   text-decoration: underline;
   text-decoration-color: #9ce2d3;
@@ -31,11 +32,10 @@
 
 .navbar .join-us-button .btn {
   background-color: white;
-    color: #00000080;
-    border: 0.1rem solid #00000080;
-    width: 90%;
-    margin: 2px 0;
-    padding-bottom: 0.5rem;
+  color: #00000080;
+  width: 90%;
+  margin: 2px 0;
+  padding: 0.5rem;
 }
 
 .navbar .join-us-button .btn:hover {
@@ -44,44 +44,53 @@
   font-size: 16px;
 }
 
-@media (max-width: 760px) {
+@media (max-width: 1080px) {
+  .navbar {
+    background-color: #1e1e1e;
+  }
   .navbar-collapse {
-    position: absolute;
-    top: 80%;
-    right: 0;
-    width: 180px;
-    background-color: white;
-    padding: 10px;
-    border: 1px solid #ddd;
+    background-color: #1e1e1e;
+    width: 100%;
+    color: white;
     z-index: 2;
-    border-radius: 30px;
-    font-size: 0.9em;
+    font-size: 1.1em;
     padding-bottom: 1.5em;
   }
 
-  .navbar .navbar-brand{
+  .navbar .navbar-nav .nav-link {
+    color: white;
+  }
+
+  .navbar .navbar-brand {
     font-size: 15px;
   }
 
-  .navbar-brand p,img {
+  .navbar-brand p,
+  img {
     margin-top: 20px;
-  } 
+  }
 
-  .navbar {
-    padding-inline: 40px;
+  .brand-text {
+    color: white;
   }
 
   .navbar-toggler {
     border: none;
     font-size: 1.5em;
+    color: white !important;
   }
 
   .navbar-nav .nav-link {
     width: 100%;
-    padding-left: 10px;
+    height: 50px;
   }
 
-  .navbar-nav .join-us-button {
-    margin-top: 8px;
+  .navbar-nav .join-us-button .btn {
+    margin-top: 16px;
+    border: 1px solid;
+    color: white;
+    background-color: transparent;
+    width: 100px;
+    padding: 0.25rem;
   }
 }

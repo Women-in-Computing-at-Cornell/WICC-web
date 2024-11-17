@@ -58,6 +58,7 @@
 .semout-title {
   text-align: left;
   font-weight: bold;
+  margin-bottom: 1em;
 }
 
 .semout-description {
@@ -321,15 +322,20 @@
     font-size: 0.9rem;
   }
 
+  .semout-title {
+    margin-bottom: 0.5em;
+  }
+
   .semout-content {
     margin-top: 2em;
     margin-inline: 2em;
-    margin-bottom: 0em;
+    margin-bottom: 0rem;
   }
 
   .what-we-do-content {
-    flex-direction: column; /* Stack columns */
-    align-items: center; /* Center content */
+    transform: translateY(-10px);
+    flex-direction: column;
+    align-items: center;
     padding-inline: 1em;
     padding-bottom: 1em;
     gap: 0em;
@@ -346,16 +352,16 @@
   }
 
   .what-we-do-column {
-    margin-left: 0; /* Remove left margin */
-    width: 100%; /* Full width */
+    margin-left: 0;
+    width: 100%;
   }
 
   .what-we-do-title {
-    margin-left: 0; /* Remove left margin */
+    margin-left: 0;
   }
 
   .what-we-do-image {
-    max-width: 100%; /* Ensure images fit the screen */
+    max-width: 100%;
   }
 
   .alumni-section {
