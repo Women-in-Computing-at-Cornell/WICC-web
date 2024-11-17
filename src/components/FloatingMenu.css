@@ -40,12 +40,7 @@
 }
 
 /* Mobile Devices */
-@media (max-width: 600px) {
-  .floating-menu {
-    display: None;
-  }
-
-}
+@media (max-width: 600px) {}
 
 /* Tablets */
 @media (min-width: 601px) and (max-width: 1140px) {}

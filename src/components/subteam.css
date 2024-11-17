@@ -1,14 +1,15 @@
 /* Base style for very small screens */
-.members-grid {
+/* .members-grid {
   display: grid;
-  grid-template-columns: 1fr;
-  /* 1 column for the smallest screens */
-  gap: 16px;
-}
+  grid-template-columns: 1fr; */
+/* 1 column for the smallest screens */
+/* gap: 10px; */
+/* } */
 
 /* Intermediate screens (e.g., large phones/small tablets) */
-@media (min-width: 480px) {
+@media (max-width: 768px) {
   .members-grid {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
     /* 2 columns for intermediate screens */
   }
@@ -17,6 +18,7 @@
 /* Medium screens (e.g., tablets) */
 @media (min-width: 768px) {
   .members-grid {
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
     /* 3 columns for medium screens */
   }
@@ -25,6 +27,7 @@
 /* Large screens (e.g., desktops) */
 @media (min-width: 1024px) {
   .members-grid {
+    display: grid;
     grid-template-columns: repeat(4, 1fr);
     /* 4 columns for large screens */
   }
