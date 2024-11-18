@@ -177,73 +177,6 @@ export default class Outreach extends Component {
             </Button>
           </center>
           <br />
-          <h3 class="h3title">Schedule and Class Slides</h3>
-
-          <Container style={{ paddingBottom: "2%" }}>
-            <Row style={{ paddingBottom: "1%" }}>
-              <Col style={{ paddingRight: "2%" }}>
-                <p
-                  style={{
-                    marginBottom: "1%",
-                    fontWeight: "bold",
-                    fontSize: 18,
-                  }}
-                >
-                  Beginner Level
-                </p>
-                <p style={{ marginBottom: "7%" }}>
-                  <strong>Sundays</strong> 1:00PM - 2:30PM
-                </p>
-                {/* <p>Online</p> */}
-
-                <p
-                  style={{
-                    marginBottom: "1%",
-                    fontWeight: "bold",
-                    fontSize: 18,
-                  }}
-                >
-                  Intermediate/Advanced Level
-                </p>
-                <p style={{ marginBottom: "0%" }}>
-                  <strong>Sundays</strong> 3:00pm-4:30pm
-                </p>
-                {/* <p>Online</p> */}
-              </Col>
-              <Col style={{ paddingRight: "0%", paddingLeft: "10%" }}>
-                <div class="outreachDates">
-                  <p>September 10</p>
-                  <p>September 17</p>
-                  <p>September 24</p>
-                  <p>October 1st</p>
-                  <p>October 15</p>
-                  {/*  /* <p><span style={{ textDecoration: "line-through" }}>Oct. 10</span>  NO CLASS *</p>*/}
-                </div>
-              </Col>
-
-              <Col style={{ paddingRight: "1%", paddingLeft: "0%" }}>
-                <div class="outreachDates">
-                  <p>October 22</p>
-                  <p>October 29</p>
-                  <p>November 5</p>
-                  <p>November 12</p>
-                  <p>December 3 - End-of-Year Celebration</p>
-                  {/*<span style={{ fontWeight: "bold" }}> Mid-Year Celebration</span>*/}
-                </div>
-              </Col>
-            </Row>
-            <center></center>
-          </Container>
-          <h3 class="h3title">Extra Resources</h3>
-          <center>
-            <h5>Technology Workshop</h5>
-            <ReactGoogleSlides
-              width={640}
-              height={480}
-              slidesLink="https://docs.google.com/presentation/d/1jDTdeZ5SSLfrTmPQoL4GqaEx4gwDAv39n7rXyeKyWYo/edit#slide=id.g8b238304a6_0_105"
-              showControls
-            />
-          </center>
 
           <Container style={{ paddingTop: "56px", paddingBottom: "56px" }}>
             <h3 class="h3title">Past Projects</h3>
@@ -253,7 +186,6 @@ export default class Outreach extends Component {
                 <a href="https://www.khanacademy.org/computer-programming/ashley-hs-fall-2018-shooting-star/5814504135491584">
                   <Image
                     src={projectImages["Ashley_Shooting Star.png"]}
-                    roundedCircle
                     style={{ width: "60%", height: "auto" }}
                   ></Image>
                 </a>
@@ -266,7 +198,6 @@ export default class Outreach extends Component {
                 <a href="https://www.khanacademy.org/computer-programming/teddy-ms-fall-2018-build-a-house/4719725664960512">
                   <Image
                     src={projectImages["Teddy_Build-A-House.png"]}
-                    roundedCircle
                     style={{ width: "60%", height: "auto" }}
                   ></Image>
                 </a>
@@ -276,11 +207,11 @@ export default class Outreach extends Component {
                 <p>Teddy</p>
                 <p>MS, Fall 2018</p>
               </Col>
+
               <Col style={{ paddingRight: "5%", paddingLeft: "0%" }}>
                 <a href="https://www.khanacademy.org/computer-programming/ania-hs-fall-2018-armageddon/6201068844384256">
                   <Image
                     src={projectImages["Ania_Armageddon.png"]}
-                    roundedCircle
                     style={{ width: "60%", height: "auto" }}
                   ></Image>
                 </a>
@@ -294,7 +225,6 @@ export default class Outreach extends Component {
                   {" "}
                   <Image
                     src={projectImages["Dax_Random Colour Generator.png"]}
-                    roundedCircle
                     style={{ width: "60%", height: "auto" }}
                   ></Image>
                 </a>
@@ -310,7 +240,6 @@ export default class Outreach extends Component {
                 <a href="https://www.khanacademy.org/computer-programming/audrey-hs-fall-2018-colorful-flashy-flashcard/5717846265593856">
                   <Image
                     src={projectImages["Audrey_Colorful Flashy Flashcard.png"]}
-                    roundedCircle
                     style={{ width: "60%", height: "auto" }}
                   ></Image>
                 </a>
@@ -325,7 +254,6 @@ export default class Outreach extends Component {
                 <a href="https://www.khanacademy.org/computer-programming/michael-ms-fall-2018-oh-noes/5878804048936960">
                   <Image
                     src={projectImages["Michael_Oh Noes.png"]}
-                    roundedCircle
                     style={{ width: "60%", height: "auto" }}
                   ></Image>
                 </a>
