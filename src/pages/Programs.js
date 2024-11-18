@@ -53,96 +53,68 @@ const Programs = () => {
           <img src={Programhero} style={{ width: "100%" }}></img>
         </div>
       </div>
-      
-        <div className="events-grid">
-        <Link to="/outreach" className="card">
-          <div>
+      <h2 className="what-we-do">What We Do</h2>
+      <div className="events-grid">
+        <Link to="/outreach">
+          <div className="card">
             <img src={outreach} alt="Outreach" className="image" />
-            <div >
-              <h1>Outreach ↗</h1>
-              <p>
-                Be part of making a difference and empowering others.
+            <div>
+              <h1 className="card-title">Outreach ↗</h1>
+              <p className="card-description">
+              Be a part of making a difference and empowering others
               </p>
             </div>
           </div>
         </Link>
-        <Link to="/crackingyourcareer" className="card">
-          <div>
-            <img src={cyc} alt="crackingyourcareer" className="image" />
-            <div >
-              <h1>Cracking Your Career ↗</h1>
-              <p>
+        <Link to="/crackingyourcareer">
+          <div className="card">
+            <img src={cyc} alt="Cracking Your Career" className="image" />
+            <div>
+              <h1 className="card-title">Cracking Your Career ↗</h1>
+              <p className="card-description">
                 Prepare for recruitment with professional workshops and more!
               </p>
             </div>
           </div>
         </Link>
-        <Link to="/lunch" className="card">
-          <div>
-            <img src={lunchbunch} alt="lunchbunch" className="image" />
-            <div >
-              <h1>Lunch Bunch ↗</h1>
-              <p>
+        <Link to="/lunch">
+          <div className="card">
+            <img src={lunchbunch} alt="Lunch Bunch" className="image" />
+            <div>
+              <h1 className="card-title">Lunch Bunch ↗</h1>
+              <p className="card-description">
                 Network with CIS Professors and Alumni
               </p>
             </div>
           </div>
         </Link>
-        <Link to="/mentorship" className="card">
-          <div>
-            <img src={mentorship} alt="mentorship" className="image" />
-            <div >
-              <h1>Mentorship ↗</h1>
-              <p>
+        <Link to="/mentorship">
+          <div className="card">
+            <img src={mentorship} alt="Mentorship" className="image" />
+            <div>
+              <h1 className="card-title">Mentorship ↗</h1>
+              <p className="card-description">
                 Navigate your career or studies with the help of upperclassmen
               </p>
             </div>
           </div>
         </Link>
-    </div>
-        {/* <Link to="/outreach" style={styles.link}>
-          <Card
-            title="Outreach"
-            description="Be part of making a difference and empowering others"
-            imageUrl={outreach}
-          />
-        </Link>
-        <Link to="/crackingyourcareer" style={styles.link}>
-          <Card
-            title="Cracking Your Career (CYC)"
-            description="Prepare for interviews or recruitment with interview prep, resume workshops and more!"
-            imageUrl={cyc}
-          />
-        </Link>
+      </div>
 
-        <Link to="/lunch" style={styles.link}>
-          <Card title="Lunch Bunch" description="Network with CIS Professors and Alumni" imageUrl={lunchbunch} />
-        </Link>
-        <Link to="/mentorship" style={styles.link}>
-          <Card
-            title="Mentorship"
-            description="Navigate your career or studies with the help of upperclassmen"
-            imageUrl={mentorship}
-          />
-        </Link> */}
-
+    <h2 className="upcoming-title">Upcoming Events</h2>
       <div className="calendar-container">
-    <h1 className="upcoming-title">Upcoming Events</h1>
-    <div className="calendar-wrapper">
-        <iframe
-            src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FNew_York&showPrint=0&src=d2ljY2Nvcm5lbGxAZ21haWwuY29t&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=Y29ybmVsbC5lZHVfOTh0c2JvdWNtaTUzdjJybHQ3a2RqNDN2a2NAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23009688&color=%238E24AA&color=%2333B679"
-            style={{
-                border: 'solid 1px #777',
-            }}
-            width="900"
-            height="600"
-            title="Google Calendar"
-        ></iframe>
-    </div>
-</div>
-
-
-
+        <div className="calendar-wrapper">
+            <iframe
+                src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FNew_York&showPrint=0&src=d2ljY2Nvcm5lbGxAZ21haWwuY29t&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=Y29ybmVsbC5lZHVfOTh0c2JvdWNtaTUzdjJybHQ3a2RqNDN2a2NAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23009688&color=%238E24AA&color=%2333B679"
+                style={{
+                  border: "solid 1px #777",
+                  width: "100%", 
+                  height: "600px", 
+                }}
+                title="Google Calendar"
+            ></iframe>
+          </div>
+      </div>
       
     </div>
   );
