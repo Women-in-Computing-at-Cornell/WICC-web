@@ -29,6 +29,9 @@ import "./programPages.css";
 import tanisha from "../../images/headshots/board/tk494.jpg"
 import sarah from "../../images/headshots/board/sy398.jpg"
 export default class Lunch extends Component {
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
   render() {
     let directors = academic.members.filter(
       (record) => record.position === "Faculty Relations Co-Director"

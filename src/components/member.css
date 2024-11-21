@@ -3,18 +3,46 @@
   height: 80%;
   border: none;
   min-width: 200px;
-  cursor: pointer; /* Add cursor style for better UX */
+  cursor: pointer;
+  /* Add cursor style for better UX */
 }
 
+/* Medium screens (e.g., tablets) */
+@media (min-width: 600px) {
+  .memberContainer {
+    width: 50%;
+    /* Two columns on medium screens */
+  }
+}
+
+/* Large screens (e.g., desktops) */
+@media (min-width: 1024px) {
+  .memberContainer {
+    width: 30%;
+    /* Three columns on large screens */
+  }
+}
+
+/* Extra large screens */
+@media (min-width: 1440px) {
+  .memberContainer {
+    width: 20%;
+    /* Five columns on extra large screens */
+  }
+}
+
+
 .fadeIn {
-  animation: fadeInAnimation 1s forwards;  
+  animation: fadeInAnimation 1s forwards;
 }
 
 @keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translateY(20px); /* Adjust this value for more or less vertical movement */
+    transform: translateY(20px);
+    /* Adjust this value for more or less vertical movement */
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -23,32 +51,51 @@
 
 .imageStyle {
   position: relative;
-  animation-duration: 1s;        /* Duration of the animation */
-  animation-fill-mode: forwards; /* Ensures the component retains the style from the last keyframe when the animation ends */
-  animation-name: fadeInUp;      /* Name of the animation */
-  will-change: opacity, transform; /* Optimizes animations by letting the browser know what properties to expect changes in */
-  width: 12vw; /* 10% of the viewport width */
-  height: 12vw; /* Set height equal to width for 1:1 aspect ratio */
+  animation-duration: 1s;
+  /* Duration of the animation */
+  animation-fill-mode: forwards;
+  /* Ensures the component retains the style from the last keyframe when the animation ends */
+  animation-name: fadeInUp;
+  /* Name of the animation */
+  will-change: opacity, transform;
+  /* Optimizes animations by letting the browser know what properties to expect changes in */
+  width: 12vw;
+  /* 10% of the viewport width */
+  height: 12vw;
+  /* Set height equal to width for 1:1 aspect ratio */
   border-radius: 10%;
   object-fit: cover;
-  object-position: center; /* Adjust if needed */
+  object-position: center;
+  /* Adjust if needed */
 }
 
 .profileImageStyle {
-  width: 12vw; /* 10% of the viewport width */
+  width: 12vw;
+  /* 10% of the viewport width */
   aspect-ratio: 1 / 1;
-  object-fit: cover;  
-  border-radius: 10%;  
+  object-fit: cover;
+  border-radius: 10%;
+}
+
+.imageStyle {
+  width: 80%;
+  /* Ensures the image scales with the container */
+  height: auto;
+  /* Maintains the aspect ratio */
+  border-radius: 10%;
+  object-fit: cover;
+  object-position: center;
+  /* Center the image within its container */
 }
 
 
 .modalContent {
   display: flex;
-  align-items: center; 
+  align-items: center;
 }
 
 .modalContent .imageStyle {
-  animation: none;  
+  animation: none;
 }
 
 
@@ -83,7 +130,8 @@
   position: absolute;
   bottom: 5px;
   right: 25px;
-  width: 50px; /* Adjust based on the overall circle size in Figma */
+  width: 50px;
+  /* Adjust based on the overall circle size in Figma */
   height: 50px;
   border-radius: 50%;
   background-color: white;
@@ -108,7 +156,8 @@
 } */
 
 .coffeeChatButton.expanded {
-  width: 165px; /* Adjust this size based on your expanded button design */
+  width: 165px;
+  /* Adjust this size based on your expanded button design */
   height: 50px;
   border-radius: 25px;
 }
