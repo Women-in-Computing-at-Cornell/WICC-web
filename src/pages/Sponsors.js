@@ -29,10 +29,9 @@ const Sponsors = () => {
         <div className="hero-text">
           <h1 style={{ marginBottom: "1.2rem" }}> Industry Partnerships </h1>
           <p>
-            WICC would not be where we are without our awesome
-            sponsors! By sponsoring us, you support many young
-            women with great aspirations for careers in industry and
-            academia.
+            WICC would not be where we are without our awesome sponsors! By
+            sponsoring us, you support many young women with great aspirations
+            for careers in industry and academia.
           </p>
         </div>
         <div className="hero-image">
@@ -75,9 +74,7 @@ const Sponsors = () => {
 
       <section className="container-section">
         <div className="container1">
-          <h2 className="container-header">
-            Listserv Fee
-          </h2>
+          <h2 className="container-header">Listserv Fee</h2>
           <p className="container-subheader">
             Want to publicize your company event to 2000+ WICC members?
           </p>
@@ -90,9 +87,7 @@ const Sponsors = () => {
         </div>
 
         <div className="container2">
-          <h2 className="container-header">
-            Other Ways to Support Us
-          </h2>
+          <h2 className="container-header">Other Ways to Support Us</h2>
           <ul style={{ listStyleType: "none", padding: 0 }}>
             <li className="container-subheader">
               -$1200/student Grace Hopper Scholarship
@@ -115,18 +110,10 @@ const Sponsors = () => {
         </div>
 
         <div className="container3">
-          <h2 className="container-header">
-            Tiers
-          </h2>
-          <p className="container-subheader">
-            Silver ($1000)
-          </p>
-          <p className="container-subheader">
-            Gold ($2000)
-          </p>
-          <p className="container-subheader">
-            Platinum ($3000)
-          </p>
+          <h2 className="container-header">Tiers</h2>
+          <p className="container-subheader">Silver ($1000)</p>
+          <p className="container-subheader">Gold ($2000)</p>
+          <p className="container-subheader">Platinum ($3000)</p>
           <br />
           <div className="description">
             We have varying levels of sponsorship with different benefits below.
