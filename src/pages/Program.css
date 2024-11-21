@@ -20,7 +20,7 @@ body {
   color: white;
   text-align: left;
   z-index: 2;
-  /* max-width: 40%; */
+  max-width: 40%;
   margin-right: 60%;
   padding-left: 8%;
 }
@@ -48,12 +48,11 @@ body {
   text-align: left;
   margin-top: 60px;
   margin-bottom: 30px;
-  margin-left: calc((100% - 1000px) / 2); 
+  margin-left: calc((100% - 1000px) / 2);
   max-width: 1000px;
   width: 100%;
 }
 
-  
 .card {
   position: relative;
   transition: transform 0.3s, box-shadow 0.3s;
@@ -67,62 +66,59 @@ body {
 }
 
 .card:hover .card-title {
-  color: #9CE2D3;
+  color: #9ce2d3;
 }
-
 
 .image {
   display: block;
   width: 100%;
-  aspect-ratio: 1 / 0.85; 
+  aspect-ratio: 1 / 0.85;
   object-fit: cover;
   border-radius: 10px;
   transition: filter 0.3s, transform 0.3s;
 }
-
 
 .card-title {
   padding-top: 10px;
   font-size: 18px;
   font-weight: bold;
   text-decoration: underline;
-  color: black; 
+  color: black;
   transition: color 0.3s ease;
 }
 
 .card-title:hover {
-  color: #9CE2D3; 
+  color: #9ce2d3;
   text-decoration: underline;
 }
 
 .upcoming-title {
-  font-size: 30px; 
+  font-size: 30px;
   font-weight: bold;
   text-align: left;
   margin-top: 80px;
   margin-bottom: 30px;
-  margin-left: calc((100% - 1000px) / 2); 
+  margin-left: calc((100% - 1000px) / 2);
   max-width: 1000px;
   width: 100%;
 }
 
 .calendar-wrapper {
   margin: 0 auto;
-  width: 100%; 
+  width: 100%;
 }
 
 .calendar-wrapper iframe {
-  width: 100%; 
+  width: 100%;
   border: solid 1px #777;
-  height: 600px; 
+  height: 600px;
 }
-
 
 .calendar-container {
   display: flex;
   flex-direction: column;
-  align-items: flex-start; 
-  margin-left: calc((100% - 1000px) / 2); 
+  align-items: flex-start;
+  margin-left: calc((100% - 1000px) / 2);
   max-width: 1000px;
 }
 
@@ -151,9 +147,9 @@ body {
 .item1 {
   grid-column-start: 1;
   grid-column-end: 2;
-  background: var(--Cyan-2, #DCF3ED);
+  background: var(--Cyan-2, #dcf3ed);
   border-radius: 20px;
-  height:80%;
+  height: 80%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -185,8 +181,6 @@ body {
   margin-left: 20%;
   text-align: left;
 }
-
-
 
 @media (max-width: 1000px) {
   .events-grid {

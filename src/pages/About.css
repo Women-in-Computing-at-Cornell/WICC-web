@@ -35,6 +35,22 @@
   font-size: 50px;
 } */
 
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100vw;
+  max-width: 100%;
+  overflow-x: hidden;
+}
 
 .column {
   float: left;
@@ -56,4 +72,15 @@
   content: "";
   display: table;
   clear: both;
+}
+
+.row {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }

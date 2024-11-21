@@ -48,6 +48,11 @@
   border-color: #9CE2D3;
 }
 
+.btn:hover {
+  background-color: black; /* Hover background color */
+  color: white; /* Hover text color */
+}
+
 .call-to-action-container {
   display: flex;
   justify-content: center;

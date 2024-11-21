@@ -32,7 +32,7 @@ function Subteam({ team }) {
   return (
     <>
       <div id={"board#" + team.title.toLowerCase().replaceAll(" ", "-")}>
-        <h3 style={{paddingBottom: "16px", fontWeight: "bold" }}>{team.title}</h3>
+        <h3 style={{ paddingBottom: "16px", fontWeight: "bold" }}>{team.title}</h3>
         <div className="members-grid">
           {team.members.map((member, index) => (
             <Member

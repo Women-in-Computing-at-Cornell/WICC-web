@@ -2,32 +2,57 @@
   color: #000000;
   transition: 0.5s ease;
   text-decoration: underline;
-  text-decoration-color: #9ce2d3;
+  text-decoration-color: #fff;
   text-decoration-thickness: 3px;
   font-size: 16px;
+  font-weight: bolder;
 }
 
 .navbar {
+  position: absolute;
+  top: 0;
   padding-left: 70px;
   padding-right: 70px;
-  background-color: white !important;
-  outline: solid 1px rgb(219, 219, 219);
+  background-color: transparent !important;
+  /* outline: solid 1px rgb(219, 219, 219); */
+  z-index: 50;
+  width: 100%;
 }
 
 .navbar .navbar-brand {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   padding-top: 20px;
 }
+
+.links {
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  justify-content: space-between;
+  /* background-color: #000000; */
+}
+
 .navbar .navbar-brand .brand-text {
   display: flex;
   flex-direction: row;
-  margin-left: 10px; /* Adjust the margin as needed */
+  margin-left: 10px;
+  /* Adjust the margin as needed */
   text-align: left;
   font-size: 16px;
 }
 
 .navbar .join-us-button .btn {
-  background-color: #000;
+  background-color: transparent;
   color: white;
+  border: 1px solid white;
+}
+
+.navbar .join-us-button .btn:hover {
+  /* transform: translateY(-2px); */
+  /* box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.2); */
+  cursor: pointer;
+  font-weight: bolder;
+  border: 3px solid white;
 }
