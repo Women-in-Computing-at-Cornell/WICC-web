@@ -4,8 +4,10 @@ import { community } from "../boardData";
 import QuestionsCard from "./QuestionsCard.js";
 import "./programPages.css";
 import banner from "../../images/programs/mentorship_cropped.jpg";
-import mentorshipInfo from "../../images/programs/mentorship-info.jpg";
+import mentorshipInfo from "../../images/programs/mentorship_caro/mentorship-info.jpg";
+import ImgCarousel from "../../components/ImgCarousel.jsx";
 import "./programPages.css";
+import Carousel from "react-bootstrap/Carousel";
 
 export default class Mentorship extends Component {
   componentDidMount() {
@@ -29,6 +31,12 @@ export default class Mentorship extends Component {
       require.context("../../images/headshots/board", false, /\.jpg/)
     );
 
+    const carouselImages = importAll(
+      require.context("../../images/programs/mentorship_caro", false, /\.jpg/)
+    );
+
+    const imgNames = Object.keys(carouselImages);
+
     const linkStyle = {
       marginLeft: "10px", // Adjust the right margin to space out the links
     };
@@ -45,7 +53,7 @@ export default class Mentorship extends Component {
             <p>
               Our mentorship program strives to encourage and support students
               who are pursuing studies or future employment in computing by
-              connecting them with more experienced upperclassmen. 
+              connecting them with more experienced upperclassmen.
             </p>
           </div>
         </div>
@@ -53,29 +61,52 @@ export default class Mentorship extends Component {
         <div
           style={{
             display: "flex",
+            justifyContent: "center",
             alignItems: "center",
             background: "#f7f9f8",
-            padding: "40px",
+            padding: "30px",
+            // gap: "30px",
           }}
         >
-          <img
-            src={mentorshipInfo}
+          <div
             style={{
-              width: "45%",
-              borderRadius: "20px",
-              marginRight: "5%",
-              marginLeft: "8%",
+              width: "60%",
+              maxWidth: "500px",
+              display: "flex",
+              justifyContent: "center",
             }}
-          />
+          >
+            <Carousel
+              style={{
+                width: "70%",
+                boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
+              }}
+            >
+              {Object.values(carouselImages).map((src, index) => (
+                <Carousel.Item key={index}>
+                  <img
+                    className="d-block w-100"
+                    src={src}
+                    alt={`Slide ${index + 1}`}
+                    style={{ objectFit: "cover" }}
+                  />
+                </Carousel.Item>
+              ))}
+            </Carousel>
+          </div>
           <div>
             <p class="section-title">Mentorship Information</p>
             <p>
-              The role of the mentor is to empower their mentees and enhance their interests
-              in computing. Mentors and mentees will be matched primarily based
-              on academic and career interests.
+              The role of the mentor is to empower their mentees and enhance
+              their interests in computing. Mentors and mentees will be matched
+              primarily based on academic and career interests.
             </p>
-            <p><b>Weekly activity time:</b></p>
-            <p><b>Mondays and Thursdays 17:30 - 18:30</b></p>
+            <p>
+              <b>Weekly activity time:</b>
+            </p>
+            <p>
+              <b>Mondays and Thursdays 17:30 - 18:30</b>
+            </p>
             <p>Find out more information in our kickoff slides!</p>
             <div className="mentorship-button">
               <Button
@@ -132,7 +163,6 @@ export default class Mentorship extends Component {
                   group.
                 </li>
               </ul>
-
             </div>
           </div>
         </div>

@@ -38,7 +38,7 @@ li {
 }
 
 .mentor-mentee-content {
-  padding: 2% 5%;
+  padding: 2% 10%;
   background-color: #ffffff;
   box-sizing: border-box;
 }
@@ -48,19 +48,25 @@ li {
   gap: 5%;
   justify-content: center;
   background-color: #ffffff;
-  padding: 5% 0;
+  padding: 80px 0px;
 }
 
 .mentor-mentee-column {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 24px;
+  padding: 42px 64px;
   background-color: #dcf3ed;
-  border-radius: 25px;
-  flex-basis: 30%;
+  /* flex-basis: 40%;
   min-height: 300px;
-  box-sizing: border-box;
+  box-sizing: border-box; */
+  align-items: flex-start;
+  gap: 16px;
+  flex: 1 0 0;
+  align-self: stretch;
+  border-radius: 30px;
+  background: var(--Cyan-2, #dcf3ed);
+  box-shadow: 10px 10px 40px 0px rgba(0, 0, 0, 0.1);
 }
 
 .mentor-mentee-header {
@@ -79,6 +85,7 @@ li {
 .requirements-header-mentor {
   font-size: 1em;
   margin-top: 16px;
+  margin-bottom: 20px;
 }
 
 .requirements-list-mentor {
