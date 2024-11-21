@@ -193,12 +193,12 @@ export const technical = {
     {
       name: "Sneha Rajaraman",
       netId: "sr934",
-      position: "Developer",
+      position: "Technical Director",
       bio: "Sneha is a sophomore from Northern Virginia in the College of Engineering majoring in Computer Science. She enjoys calligraphy, singing, dancing (pretty much anything music replated), and baking!",
     },
     {
       name: "Laura Wu",
-      position: "Head Designer",
+      position: "Lead Designer",
       netId: "sw2262",
       bio: "Laura is a junior in the College of Arts and Sciences studying Information Science. She enjoys listening to K-pop in her free time.",
     },
@@ -209,66 +209,16 @@ export const technical = {
       bio: "Abigail is a freshman from Northern Virginia majoring in Computer Science in the College of Engineering. She enjoys karaoke, exploring new cuisines, and traveling.",
     },
     {
-      name: "Amy Sharin",
-      netId: "ars369",
-      position: "Developer",
-      bio: "Amy is a junior from Long Island majoring in Computer Science. She loves hanging out with friends, baking, and basketball.",
-    },
-    {
-      name: "Dora Weng",
-      netId: "cw749",
-      position: "Developer",
-      bio: "Dora is a sophomore in the College of engineering studying Computer Science. She has an unhealthy obsession for coffee and you can find her working at Cafe Jennie!",
-    },
-    {
-      name: "Jessica Andrews",
-      netId: "jaa375",
-      position: "Designer",
-      bio: "Jessica is a Sophmore from Upstate NY, She is majoring in Information Science in the School of Engineering with a concentration in Interactive Technology and UX. In her free time she likes to play tennis, bake, and watch shows!",
-    },
-    {
-      name: "Kelly Tran",
-      netId: "kt457",
-      position: "Developer",
-      bio: "Kelly is a junior from the Greater Philadelphia area. She is in the College of Engineering studying computer science. She enjoys crocheting, eating good food, and meeting new people. Feel free to reach out to her for a quick coffee chat!",
-    },
-    {
-      name: "Omisha Sharma",
-      netId: "os226",
-      position: "Developer",
-      bio: "Omisha is a sophomore from Plainsboro, NJ in the College of Engineering student CS. She loves F1, playing piano, and hiking in Ithaca!",
-    },
-    {
-      name: "Felicia Chen",
-      netId: "rc753",
-      position: "Developer",
-      bio: "Felicia is a sophomore majoring in computer science in Arts & Sciences and minoring (possibly majoring) in music.",
-    },
-
-    {
-      name: "Shriya Sudhakar",
-      netId: "ss3576",
-      position: "Developer",
-      bio: "Shriya is a freshman in the College of Engineering majoring in Computer Science and minoring in Applied Math. She loves playing the violin, trying new puzzles, and hanging out with friends. She's super excited for an amazing year on Technical Committee!",
-    },
-
-    {
-      name: "Yuhan Sun",
-      netId: "ys728",
-      position: "Developer",
-      bio: "Yuhan is a sophomore from Nanjing, China studying Computer Science in the College of Arts and Science. She is a huge fan of Zhou Shen and anime!",
-    },
-    {
-      name: "Jasmine Dong",
-      netId: "jqd3",
-      position: "Developer",
-      bio: "",
-    },
-    {
       name: "Amelia Zheng",
       netId: "ayz23",
       position: "Developer",
       bio: "",
+    },
+    {
+      name: "Amy Sharin",
+      netId: "ars369",
+      position: "Developer",
+      bio: "Amy is a junior from Long Island majoring in Computer Science. She loves hanging out with friends, baking, and basketball.",
     },
     {
       name: "Angela Zhu",
@@ -289,6 +239,36 @@ export const technical = {
       bio: "",
     },
     {
+      name: "Dora Weng",
+      netId: "cw749",
+      position: "Developer",
+      bio: "Dora is a sophomore in the College of engineering studying Computer Science. She has an unhealthy obsession for coffee and you can find her working at Cafe Jennie!",
+    },
+    {
+      name: "Felicia Chen",
+      netId: "rc753",
+      position: "Developer",
+      bio: "Felicia is a sophomore majoring in computer science in Arts & Sciences and minoring (possibly majoring) in music.",
+    },
+    {
+      name: "Jasmine Dong",
+      netId: "jqd3",
+      position: "Developer",
+      bio: "",
+    },
+    {
+      name: "Jessica Andrews",
+      netId: "jaa375",
+      position: "Designer",
+      bio: "Jessica is a Sophmore from Upstate NY, She is majoring in Information Science in the School of Engineering with a concentration in Interactive Technology and UX. In her free time she likes to play tennis, bake, and watch shows!",
+    },
+    {
+      name: "Kelly Tran",
+      netId: "kt457",
+      position: "Developer",
+      bio: "Kelly is a junior from the Greater Philadelphia area. She is in the College of Engineering studying computer science. She enjoys crocheting, eating good food, and meeting new people. Feel free to reach out to her for a quick coffee chat!",
+    },
+    {
       name: "Lauren Ah-Hot",
       netId: "laa237",
       position: "Developer",
@@ -301,11 +281,23 @@ export const technical = {
       bio: "",
     },
     {
+      name: "Omisha Sharma",
+      netId: "os226",
+      position: "Developer",
+      bio: "Omisha is a sophomore from Plainsboro, NJ in the College of Engineering student CS. She loves F1, playing piano, and hiking in Ithaca!",
+    },
+    {
       name: "Saanvi Ibrahimpatnam",
       netId: "si292",
       position: "Developer",
       bio: "",
     },
+    // {
+    //   name: "Shriya Sudhakar",
+    //   netId: "ss3576",
+    //   position: "Developer",
+    //   bio: "Shriya is a freshman in the College of Engineering majoring in Computer Science and minoring in Applied Math. She loves playing the violin, trying new puzzles, and hanging out with friends. She's super excited for an amazing year on Technical Committee!",
+    // },
     {
       name: "Sonja Wong",
       netId: "sw2374",
@@ -317,6 +309,12 @@ export const technical = {
       netId: "yl3697",
       position: "Designer",
       bio: "",
+    },
+    {
+      name: "Yuhan Sun",
+      netId: "ys728",
+      position: "Developer",
+      bio: "Yuhan is a sophomore from Nanjing, China studying Computer Science in the College of Arts and Science. She is a huge fan of Zhou Shen and anime!",
     },
   ],
 };
