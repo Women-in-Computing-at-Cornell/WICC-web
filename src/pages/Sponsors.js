@@ -3,6 +3,8 @@ import "./pages.css";
 import "./Sponsors.css";
 import Image from "react-bootstrap/Image";
 import { sponsorData } from "./sponsorData.js";
+//test comment
+// test comment 2
 import sponsorsImg from "../images/sponsors/sponsers_page_imgs/sponsors_img.png";
 import sponsorsCandid from "../images/photo-campaigns/f16-dit/14856142_1303479296338000_1158762264361234190_o.jpg";
 import whiteCheck from "../images/icons/white-checkmark.svg";
@@ -120,8 +122,8 @@ const Sponsors = () => {
         </div>
       </section>
 
-      <section className="table-section" style={{ paddingTop: "56px" }}>
-        <table id="sponsorsTable">
+      <section style={{ paddingTop: "56px" }}>
+        <table className="table" id="sponsorsTable">
           <thead>
             <tr>
               <th>Specific Benefits</th>
