@@ -4,6 +4,11 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
+import amazonLogo from "../../images/sponsors/Amazon.jpg";
+import avalaraLogo from "../../images/sponsors/Avalara.jpg";
+import vangardLogo from "../../images/sponsors/Vanguard.jpg";
+import atlassianLogo from "../../images/sponsors/Atlassian.jpg";
+
 import {
   presidents,
   operations,
@@ -46,15 +51,15 @@ export default class CrackingYourCareer extends Component {
     const boardHeadshots = importAll(
       require.context("../../images/headshots/board", false, /\.jpg/)
     );
-
+    
     return (
       <div class="page">
-        <h1>Cracking Your Career</h1>
-
+         <h1 style={{ marginBottom: "1.2rem", fontWeight: "900", fontSize: "3rem"}}> Event Timeline </h1>
+       
         <Container>
           <Row style={{ paddingBottom: "1%" }}>
             <Col xs lg="6" style={{ paddingRight: "5%", paddingLeft: "0%" }}>
-              <p style={{ paddingRight: "5%", paddingTop: "2%" }}>
+              {/* <p style={{ paddingRight: "5%", paddingTop: "2%" }}>
                 Trying to find internships? Preparing for recruitment? Cracking
                 Your Career (CYC) is for you! CYC is a 4-week program intended
                 to expose students to career paths and recruitment preparation
@@ -65,7 +70,7 @@ export default class CrackingYourCareer extends Component {
                 catering to User Experience (UX) design. CYC Design will focus
                 on common stages: behaviorals, portfolio review and design
                 challenges.{" "}
-              </p>
+              </p> */}
               <br />
               {/* <h4 style={{ paddingTop: "5%" }} >Times</h4> */}
 
@@ -78,7 +83,7 @@ export default class CrackingYourCareer extends Component {
 
               {/* <h5 style={{ paddingTop: '25%' }}>Applications are closed for this semester.</h5> */}
             </Col>
-            <Col>
+            {/* <Col>
               <center>
                 <Image
                   src={crackingyourcareer}
@@ -89,7 +94,7 @@ export default class CrackingYourCareer extends Component {
                   Wednesdays Oct 4th - Oct 25th from 4:15 - 5:15pm
                 </p>
               </center>
-            </Col>
+            </Col> */}
           </Row>
         </Container>
         <br />
