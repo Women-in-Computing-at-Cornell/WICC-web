@@ -1,0 +1,71 @@
+.timeline {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  position: relative;
+  padding: 2rem 0;
+}
+
+.timeline-item {
+  align-items: flex-start;
+  display: flex;
+  position: relative; 
+  width: 100%;
+  max-width: 900px;
+}
+
+.timeline-item.alternate {
+  flex-direction: row-reverse; 
+}
+
+.timeline-circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #9CE2D3;
+}
+
+.timeline-line {
+  width: 4px;
+  height: 200px;
+  background-color: #ddd;
+}
+
+.timeline-content {
+  flex: 1;
+  background: #fff;
+  text-align: left;
+}
+
+.week-label {
+  color: #9CE2D3;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.timeline-image-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.timeline-image {
+  max-width: 200px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.timeline-marker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin: 0 1rem;
+}
+
+.description {
+  font-size: 0.8rem;
+  color: #555;
+}

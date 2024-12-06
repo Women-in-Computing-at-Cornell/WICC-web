@@ -6,8 +6,10 @@ import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 import amazonLogo from "../../images/sponsors/Amazon.jpg";
 import avalaraLogo from "../../images/sponsors/Avalara.jpg";
-import vangardLogo from "../../images/sponsors/Vanguard.jpg";
+import vanguardLogo from "../../images/sponsors/Vanguard.jpg";
 import atlassianLogo from "../../images/sponsors/Atlassian.jpg";
+import "./CrackingYourCareer.css";
+import weekzero from "../../images/timeline.jpg"
 
 import {
   presidents,
@@ -29,6 +31,72 @@ import Image from "react-bootstrap/Image";
 // import medal from "../../images/medal.jpg";
 
 import "./programPages.css";
+
+const TimelineItem = ({ week, imageSrc, description, alternate }) => {
+  return (
+    <div className={`timeline-item ${alternate ? "alternate" : ""}`}>
+      <div className="timeline-image-wrapper">
+        {imageSrc && <img src={imageSrc} alt={`${week} logo`} className="timeline-image" />}
+      </div>
+
+      <div className="timeline-marker">
+        <div className="timeline-circle"></div>
+        <div className="timeline-line"></div>
+      </div>
+
+      <div className="timeline-content">
+        <h3 className="week-label">{week}</h3>
+        <p className="description">{description}</p>
+      </div>
+    </div>
+  );
+};
+
+const Timeline = () => {
+  const events = [
+    {
+      week: "Week 0",
+      imageSrc: weekzero,
+      description: "STEMinist Movement x WICC Careers in STEM Panel",
+    },
+    {
+      week: "Week 1",
+      imageSrc: amazonLogo,
+      description: "WICC presents a UX/UI Designer at Amazon",
+    },
+    {
+      week: "Week 2",
+      imageSrc: avalaraLogo,
+      description: "WICC presents a Data Scientist and Ethical AI Advocate at Avalara",
+    },
+    {
+      week: "Week 3",
+      imageSrc: vanguardLogo,
+      description: "Cornell Fintech Club x WICC x Cornell Blockchain present a Senior Fintech Strategist at Vanguard",
+    },
+    {
+      week: "Week 5",
+      imageSrc: atlassianLogo,
+      description: "WICC presents a Product Manager at Atlassian (WICC’s Founder!)",
+    },
+  ];
+
+  return (
+    <div className="timeline">
+      {events.map((event, index) => (
+        <TimelineItem
+          key={index}
+          week={event.week}
+          imageSrc={event.imageSrc}
+          description={event.description}
+          alternate={index % 2 !== 0} 
+        />
+      ))}
+    </div>
+  );
+};
+
+
 
 export default class CrackingYourCareer extends Component {
   componentDidMount() {
@@ -52,11 +120,20 @@ export default class CrackingYourCareer extends Component {
       require.context("../../images/headshots/board", false, /\.jpg/)
     );
     
+      
     return (
-      <div class="page">
-         <h1 style={{ marginBottom: "1.2rem", fontWeight: "900", fontSize: "3rem"}}> Event Timeline </h1>
-       
-        <Container>
+      <div className="page">
+      <h1 style={{ marginBottom: "1.2rem", fontWeight: "900", fontSize: "2rem" }}>
+        Event Timeline
+      </h1>
+      <Container>
+        <Row>
+          <Col>
+            <Timeline />
+          </Col>
+        </Row>
+      </Container>
+         <Container>
           <Row style={{ paddingBottom: "1%" }}>
             <Col xs lg="6" style={{ paddingRight: "5%", paddingLeft: "0%" }}>
               {/* <p style={{ paddingRight: "5%", paddingTop: "2%" }}>
@@ -97,6 +174,9 @@ export default class CrackingYourCareer extends Component {
             </Col> */}
           </Row>
         </Container>
+
+
+        
         <br />
         {/* <h3>Testimonials</h3> */}
 
@@ -134,6 +214,7 @@ export default class CrackingYourCareer extends Component {
             </Col>
           </Row>
         </Container> */}
+          
         <center>
           <h5 style={{ paddingTop: "5%" }}>Questions?</h5>
           <Container style={{ paddingRight: "10%" }}>
