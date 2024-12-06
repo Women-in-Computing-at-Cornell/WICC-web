@@ -1,21 +1,30 @@
-.timeline {
-  display: flex;
-  flex-direction: column;
-  align-items: center; 
-  position: relative;
-  padding: 2rem 0;
-}
-
 .timeline-item {
-  align-items: flex-start;
   display: flex;
-  position: relative; 
+  align-items: flex-start; /* Vertically align items */
+  position: relative;
   width: 100%;
   max-width: 900px;
 }
 
 .timeline-item.alternate {
-  flex-direction: row-reverse; 
+  flex-direction: row-reverse; /* Flip layout for alternate items */
+}
+
+.timeline-image-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.timeline-marker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin: 0 1rem;
+  min-width: 40px;
 }
 
 .timeline-circle {
@@ -27,45 +36,41 @@
 
 .timeline-line {
   width: 4px;
-  height: 200px;
-  background-color: #ddd;
+  height: 260px;
+  background-color: hsl(0, 0%, 87%);
 }
 
 .timeline-content {
   flex: 1;
-  background: #fff;
   text-align: left;
 }
 
-.week-label {
-  color: #9CE2D3;
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
-}
-
-.timeline-image-wrapper {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.timeline-item.alternate .timeline-content {
+  text-align: right;
 }
 
 .timeline-image {
-  max-width: 200px;
+  max-width: 300px;
   height: auto;
-  border-radius: 8px;
+
 }
 
-.timeline-marker {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-  margin: 0 1rem;
+.left-image {
+  justify-content: flex-end; /* Position image to the right */
+}
+
+.right-image {
+  justify-content: flex-start; /* Position image to the left */
+}
+
+.week-label {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #9CE2D3;
 }
 
 .description {
-  font-size: 0.8rem;
+  font-size: 1rem;
   color: #555;
 }

@@ -32,18 +32,21 @@ import Image from "react-bootstrap/Image";
 
 import "./programPages.css";
 
-const TimelineItem = ({ week, imageSrc, description, alternate }) => {
+const TimelineItem = ({ week, imageSrc, description, alternate, isLast }) => {
   return (
     <div className={`timeline-item ${alternate ? "alternate" : ""}`}>
-      <div className="timeline-image-wrapper">
+      {/* Image Section */}
+      <div className={`timeline-image-wrapper ${alternate ? "right-image" : "left-image"}`}>
         {imageSrc && <img src={imageSrc} alt={`${week} logo`} className="timeline-image" />}
       </div>
 
+      {/* Marker Section */}
       <div className="timeline-marker">
         <div className="timeline-circle"></div>
-        <div className="timeline-line"></div>
+        {!isLast && <div className="timeline-line"></div>}
       </div>
 
+      {/* Content Section */}
       <div className="timeline-content">
         <h3 className="week-label">{week}</h3>
         <p className="description">{description}</p>
@@ -89,14 +92,13 @@ const Timeline = () => {
           week={event.week}
           imageSrc={event.imageSrc}
           description={event.description}
-          alternate={index % 2 !== 0} 
+          alternate={index % 2 !== 0} // Alternate layout for even/odd items
+          isLast={index === events.length - 1} // Add logic to detect last item
         />
       ))}
     </div>
   );
 };
-
-
 
 export default class CrackingYourCareer extends Component {
   componentDidMount() {
