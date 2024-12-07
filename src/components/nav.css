@@ -44,7 +44,7 @@
   font-size: 16px;
 }
 
-@media (max-width: 1080px) {
+@media (max-width: 992px) {
   .navbar {
     background-color: #1e1e1e !important;
   }
@@ -91,10 +91,6 @@
     background-color: transparent;
     width: 100px;
     padding: 0.25rem;
-  }
-
-  .navbar-light {
-    background-color: green;
   }
 
   .nav-link {

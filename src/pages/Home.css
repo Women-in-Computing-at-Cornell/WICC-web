@@ -322,6 +322,7 @@ body {
     text-align: left;
     color: #fff;
     padding: 20px;
+    margin-inline: 1rem;
   }
 
   .hero-content h2 {
@@ -338,7 +339,7 @@ body {
 
   .semout-content {
     margin-top: 2em;
-    margin-inline: 2em;
+    margin-inline: 4em;
     margin-bottom: 0rem;
   }
 
@@ -346,7 +347,7 @@ body {
     transform: translateY(-10px);
     flex-direction: column;
     align-items: center;
-    padding-inline: 1em;
+    padding-inline: 0em;
     padding-bottom: 1em;
     gap: 0em;
   }
@@ -367,7 +368,7 @@ body {
   }
 
   .what-we-do-title {
-    margin-left: 0;
+    margin-left: 1rem;
   }
 
   .what-we-do-image {
@@ -379,7 +380,7 @@ body {
   }
 
   .alumni-header {
-    margin-left: 0;
+    margin-left: 1rem;
   }
 
   .testimony-container {
@@ -398,7 +399,7 @@ body {
   }
 
   .get-involved-header {
-    margin-left: 1em;
+    margin-left: 1.5em;
     margin-bottom: 0;
   }
 
