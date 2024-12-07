@@ -27,7 +27,7 @@ const Sponsors = () => {
     <div>
       <div className="hero">
         <div className="hero-text">
-          <h1 style={{ marginBottom: "1.2rem" }}> Industry Partnerships </h1>
+          <h1 style={{ marginBottom: "1.2rem", fontWeight: "900"}}> Industry Partnerships </h1>
           <p>
             WICC would not be where we are without our awesome sponsors! By
             sponsoring us, you support many young women with great aspirations
