@@ -17,7 +17,6 @@
   align-items: center;
 }
 
-
 .timeline-marker {
   display: flex;
   flex-direction: column;
@@ -75,14 +74,37 @@
   color: #555;
 }
 
+.item1 p {
+  margin:0 auto;
+}
+
 .box1 {
   grid-column-start: 1;
   grid-column-end: 2;
-  background: var(--Cyan-2, #dcf3ed);
   border-radius: 20px;
-  height: 80%;
+  height: auto;
+  padding-block: 5%;
+  padding-inline: 5%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
-  align-self: stretch;
+  align-items: center;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 0 15px rgba(0,0,0,0.1); 
+}
+
+.box-title {
+  font-size: 2em;
+  font-weight: bold;
+  padding-bottom: 5%
+}
+
+.box-description{
+  font-size: 1em;
+  padding-right: 30%;
+}
+
+.page1 {
+  margin-top:5%;
+  margin-left: 10%;
+  margin-right: 10%;
 }

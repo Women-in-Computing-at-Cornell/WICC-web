@@ -3,7 +3,6 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import { Link } from "react-router-dom";
-import Card from "../../components/Card.js"
 import "./CrackingYourCareer.css";
 import weekzero from "../../images/timeline.jpg"
 import {academic} from "../boardData";
@@ -111,56 +110,72 @@ export default class CrackingYourCareer extends Component {
     
       
     return (
-      <div>
+    <div>
         {/* header */}
-      <div className="hero">
-        <div className="hero-text">
-        <Link to="/programs">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="25"
-                viewBox="0 0 24 25"
-                fill="none"
-              >
-                <path
-                  d="M15 18.5L9 12.5L15 6.5"
-                  stroke="white"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-              Back to Programs page
-            </Link>
-            <br/> <br/>
-          <h1 style={{ marginBottom: "1.2rem", fontWeight: "900", fontSize: "3rem"}}> Cracking Your Career (CYC) </h1>
-          <p>
-          Looking for Internships? Preparing for Recruitment?
-          <br/> <br/>
-          Cracking Your Career (CYC) is the program for you! CYC is a 4-week program 
-          intended to expose students to career paths and recruitment 
-          preparation for Software Engineering (SWE) and Design. 
-          </p>
-        </div>
+      <div>
+        <center className="hero-text">
+        {/* link to go back to Programs page */}
+          <Link to="/programs" >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="25"
+                  viewBox="0 0 24 25"
+                  fill="none"
+                >
+                  <path
+                    d="M15 18.5L9 12.5L15 6.5"
+                    stroke="white"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                Back to Programs page
+              </Link>
+            <h1 style={{ marginBlock: "2%", fontWeight: "900", fontSize: "3rem"}}> Cracking Your Career (CYC) </h1>
+            <p style={{marginBottom: "5%"}}> Looking for Internships? Preparing for Recruitment? </p>
+            <p>
+              Cracking Your Career (CYC) is the program for you! CYC is a 4-week program 
+              intended to expose students to career paths and recruitment 
+              preparation for Software Engineering (SWE) and Design. 
+            </p>
+        </center>
         <div className="hero-image">
           <img src={heroimage} style={{ width: "100%" }}></img>
         </div>
       </div>
 
       {/* page contents */}
-      <div className="page">
-      <div className="box1">
-            <img src={designimage} alt="Outreach" className="image" />
-            <div>
-              <h1 className="card-title">Outreach ↗</h1>
-              <p className="card-description">
-              Be a part of making a difference and empowering others
-              </p>
-            </div>
+      <div className="page1">
+        {/* Design box */}
+      <div style={{marginBottom: "10%"}}>
+        <div className="box1" style={{marginBlock: "5%", background: "var(--Cyan-2, #dcf3ed)"}}>
+          <div>
+            <h1 className="box-title">Design</h1>
+            <p className="box-description" >
+            Design CYC will focus on product roles catering to User Experience (UX) design.
+            </p>
+            <p className="box-description"> CYC Design will focus on common stages: behavioral, portfolio review, and design challenges. </p>
           </div>
+          <img src={designimage} alt="design" className="image" 
+          style={{width: "40%", height: "auto", aspectRatio: "1.5/1", objectFit: "cover"}} />
+          </div>
+          {/* SWE box */}
+          <div className="box1">
+          <div>
+            <h1 className="box-title">Software Engineering</h1>
+            <p className="box-description" >
+              The SWE section of CYC will focus on finding jobs and internships, preparing your resume,
+              getting experience, and tackling interviews/interview preperation.
+            </p>
+          </div>
+          <img src={designimage} alt="design" className="image" 
+          style={{width: "40%", height: "auto", aspectRatio: "1.5/1", objectFit: "cover"}} />
+        </div>
+      </div>
         {/* timeline */}
-      <h1 style={{ marginBottom: "1.2rem", fontWeight: "900", fontSize: "2rem" }}>
+      <h1 style={{ marginBlock: "3rem", fontWeight: "900", fontSize: "2rem" }}>
         Event Timeline
       </h1>
       <Container>
@@ -171,8 +186,10 @@ export default class CrackingYourCareer extends Component {
         </Row>
       </Container>
         <br />
-        <center>
-          <h5 style={{ paddingTop: "5%" }}>Questions?</h5>
+        <div style={{marginInline: "5%"}}>
+          <h2 style={{ paddingTop: "5%", fontWeight: "bold", textAlign: "left" }}>Questions?</h2>
+          <br/>
+          <p style={{textAlign: "left"}}> Reach out to the following WICC members for clarification regarding Cracking Your Career (CYC).</p>
           <Container style={{ paddingRight: "10%" }}>
             <Row style={{ paddingBottom: "1%" }}>
               <Col>
@@ -192,9 +209,9 @@ export default class CrackingYourCareer extends Component {
               </Row>
             </Row>
           </Container>
-        </center>
+        </div>
       </div>
-      </div>
+    </div>
     );
   }
 }
