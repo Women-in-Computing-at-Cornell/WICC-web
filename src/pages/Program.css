@@ -8,18 +8,22 @@ body {
 
 .hero {
   flex-shrink: 0;
+  flex-direction:column;
   color: white;
+  min-height: 60vh;
+  /*pushes everything down (doesnt help the text) */
 }
 
 .hero-text {
   position: absolute;
   /* top: 15%; */
-  margin-top: 5%;
+  margin-top: 5% 8%;
   /* left: 0; */
   /* transform: translateY(-50%); */
   color: white;
   text-align: left;
   z-index: 2;
+  padding:1rem;
   /* max-width: 40%; */
   margin-right: 60%;
   padding-left: 8%;
@@ -168,17 +172,18 @@ body {
     margin: 0 auto;
   }
 
+/*updated .hero-text. this made the text go to the top*/
   .hero-text {
     position: absolute;
     /* top: 15%; */
-    margin-top: 10%;
+    margin-top: 5% 4%;
     /* left: 0; */
     /* transform: translateY(-50%); */
     color: white;
     text-align: left;
     z-index: 2;
     /* max-width: 40%; */
-    margin-right: 20%;
+    margin-right: 10%;
     padding-left: 8%;
   }
 }
