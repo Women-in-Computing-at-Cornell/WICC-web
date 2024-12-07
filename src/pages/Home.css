@@ -1,3 +1,13 @@
+body {
+  margin: 0; /* Avoids any default body margins */
+  overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+
+.container {
+  max-width: 100%; /* Ensures content stays within the screen */
+  overflow-x: hidden; /* Forces no overflow horizontally */
+}
+
 .home-container {
   padding-bottom: 20px;
 }
