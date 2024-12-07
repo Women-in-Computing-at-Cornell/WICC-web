@@ -1,0 +1,88 @@
+.timeline-item {
+  display: flex;
+  align-items: flex-start; /* Vertically align items */
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+}
+
+.timeline-item.alternate {
+  flex-direction: row-reverse; /* Flip layout for alternate items */
+}
+
+.timeline-image-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.timeline-marker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin: 0 1rem;
+  min-width: 40px;
+}
+
+.timeline-circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #9CE2D3;
+}
+
+.timeline-line {
+  width: 4px;
+  height: 260px;
+  background-color: hsl(0, 0%, 87%);
+}
+
+.timeline-content {
+  flex: 1;
+  text-align: left;
+}
+
+.timeline-item.alternate .timeline-content {
+  text-align: right;
+}
+
+.timeline-image {
+  max-width: 300px;
+  height: auto;
+
+}
+
+.left-image {
+  justify-content: flex-end; /* Position image to the right */
+}
+
+.right-image {
+  justify-content: flex-start; /* Position image to the left */
+}
+
+.week-label {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #9CE2D3;
+}
+
+.description {
+  font-size: 1rem;
+  color: #555;
+}
+
+.box1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  background: var(--Cyan-2, #dcf3ed);
+  border-radius: 20px;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: stretch;
+}
