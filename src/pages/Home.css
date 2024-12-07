@@ -335,6 +335,7 @@ body {
 
   .semout-title {
     margin-bottom: 0.5em;
+    margin-left: -1rem;
   }
 
   .semout-content {
@@ -380,7 +381,7 @@ body {
   }
 
   .alumni-header {
-    margin-left: 1rem;
+    margin-left: 0.5rem;
   }
 
   .testimony-container {
