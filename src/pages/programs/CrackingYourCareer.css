@@ -74,3 +74,15 @@
   font-size: 1rem;
   color: #555;
 }
+
+.box1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  background: var(--Cyan-2, #dcf3ed);
+  border-radius: 20px;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: stretch;
+}
