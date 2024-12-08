@@ -11,8 +11,9 @@ import "./programPages.css";
 import heroimage from "../../images/programs-pictures/cyc/cyc-hero.png";
 import amazonLogo from "../../images/sponsors/Amazon.jpg";
 import avalaraLogo from "../../images/sponsors/Avalara.jpg";
-import vanguardLogo from "../../images/sponsors/Vanguard.jpg";
 import atlassianLogo from "../../images/sponsors/Atlassian.jpg";
+import googleLogo from "../../images/programs-pictures/cyc/google.png";
+import vanguardLogo from "../../images/sponsors/Vanguard.jpg";
 import designimage from "../../images/programs-pictures/cyc/design-image.png";
 import sweimage from "../../images/programs-pictures/cyc/swe-image.png";
 
@@ -44,29 +45,34 @@ const TimelineItem = ({ week, imageSrc, description, alternate, isLast }) => {
 const Timeline = () => {
   const events = [
     {
-      week: "Week 0",
+      week: "11/19/24",
       imageSrc: weekzero,
       description: "STEMinist Movement x WICC Careers in STEM Panel",
     },
     {
-      week: "Week 1",
-      imageSrc: amazonLogo,
-      description: "WICC presents a UX/UI Designer at Amazon",
+      week: "4/17/24",
+      imageSrc: atlassianLogo,
+      description: "WICC presents a Product Manager at Atlassian (WICC’s Founder!)",
     },
     {
-      week: "Week 2",
-      imageSrc: avalaraLogo,
-      description: "WICC presents a Data Scientist and Ethical AI Advocate at Avalara",
+      week: "4/10/24",
+      imageSrc: googleLogo,
+      description: "WICC presents a Senior Software Engineer at Google and former Co-President of WICC",
     },
     {
-      week: "Week 3",
+      week: "3/27/24",
       imageSrc: vanguardLogo,
       description: "Cornell Fintech Club x WICC x Cornell Blockchain present a Senior Fintech Strategist at Vanguard",
     },
     {
-      week: "Week 5",
-      imageSrc: atlassianLogo,
-      description: "WICC presents a Product Manager at Atlassian (WICC’s Founder!)",
+      week: "3/20/24",
+      imageSrc: avalaraLogo,
+      description: "WICC presents a Data Scientist and Ethical AI Advocate at Avalara",
+    },
+    {
+      week: "3/13/24",
+      imageSrc: amazonLogo,
+      description: "WICC presents a UX/UI Designer at Amazon",
     },
   ];
 
@@ -170,7 +176,7 @@ export default class CrackingYourCareer extends Component {
               getting experience, and tackling interviews/interview preperation.
             </p>
           </div>
-          <img src={designimage} alt="design" className="image" 
+          <img src={sweimage} alt="design" className="image" 
           style={{width: "40%", height: "auto", aspectRatio: "1.5/1", objectFit: "cover"}} />
         </div>
       </div>
