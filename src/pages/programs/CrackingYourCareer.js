@@ -182,7 +182,7 @@ export default class CrackingYourCareer extends Component {
       </div>
         {/* timeline */}
       <h1 style={{ marginBlock: "3rem", fontWeight: "900", fontSize: "2rem" }}>
-        Event Timeline
+        Past Events
       </h1>
       <Container>
         <Row>
