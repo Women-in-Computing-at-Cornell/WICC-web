@@ -22,13 +22,13 @@ li {
 }
 
 .vertLine {
-  border-left: 6px solid #9CE2D3;
-  border-left: 6px solid #9CE2D3;
-  padding-right: 1%
+  border-left: 6px solid #9ce2d3;
+  border-left: 6px solid #9ce2d3;
+  padding-right: 1%;
 }
 
 .outreachDates p {
-  margin-bottom: 1%
+  margin-bottom: 1%;
 }
 
 .localEvents p {
@@ -37,32 +37,69 @@ li {
   color: #4d4d4d;
 }
 
+.mentor-mentee-content {
+  padding: 2% 10%;
+  background-color: #ffffff;
+  box-sizing: border-box;
+}
+
 .mentor-mentee-grid {
   display: flex;
   gap: 5%;
   justify-content: center;
   background-color: #ffffff;
-  min-height: 300px;
-  background-size: cover;
-  background-position: center top;
-  padding-top: 5%;
-  padding-bottom: 5%;
+  padding: 80px 0px;
 }
 
 .mentor-mentee-column {
-  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 42px 64px;
   background-color: #dcf3ed;
-  border-radius: 25px;
-  flex-basis: 30%;
+  /* flex-basis: 40%;
+  min-height: 300px;
+  box-sizing: border-box; */
+  align-items: flex-start;
+  gap: 16px;
+  flex: 1 0 0;
+  align-self: stretch;
+  border-radius: 30px;
+  background: var(--Cyan-2, #dcf3ed);
+  box-shadow: 10px 10px 40px 0px rgba(0, 0, 0, 0.1);
 }
 
-.mentor-mentee-content {
-  padding-left: 5%;
-  padding-right: 5%;
-  padding-bottom: 2%;
-  background-color: #ffffff;
+.mentor-mentee-header {
+  font-size: 28px;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 10px;
 }
 
+.mentor-mentee-text {
+  font-size: 16px;
+  padding: 10px 0;
+  line-height: 1.5;
+}
+
+.requirements-header-mentor {
+  font-size: 1em;
+  margin-top: 16px;
+  margin-bottom: 20px;
+}
+
+.requirements-list-mentor {
+  margin-top: 8px;
+  padding-left: 20px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.button-container-mentor {
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+}
 
 .main {
   background-color: #000;
@@ -95,11 +132,18 @@ img {
   border-radius: 50%;
 }
 
+#back {
+  all: unset;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
 .full-width-banner {
   position: relative;
   width: 100%;
   margin: 0;
   padding: 0;
+  overflow: hidden;
 }
 
 .full-width-banner2 {
@@ -219,7 +263,7 @@ img {
   justify-content: flex-start;
   align-items: flex-start;
   gap: 40px;
-  border-right: 4px solid #9CE2D3;
+  border-right: 4px solid #9ce2d3;
   height: 100%;
 }
 
@@ -239,7 +283,6 @@ img {
 .img-col {
   padding-left: 19%;
   padding-bottom: 50px;
-
 }
 
 .times-col {
@@ -265,7 +308,6 @@ img {
   padding-left: 20%;
   padding-bottom: 8%;
   padding-top: 12%;
-
 }
 
 .times-content {
@@ -276,15 +318,14 @@ img {
   padding-left: 15%;
   padding-bottom: 5%;
   font-weight: bold;
-
 }
 
 .questions-container {
-  background-color: #F8F9FA;
+  background-color: #f8f9fa;
 }
 
 .questions-container2 {
-  background-color: #F8F9FA;
+  background-color: #f8f9fa;
   width: 100%;
 }
 
@@ -309,8 +350,8 @@ img {
 .questions-card {
   width: 25%;
   justify-content: center;
-  border: #F8F9FA;
-  background-color: #F8F9FA;
+  border: #f8f9fa;
+  background-color: #f8f9fa;
 }
 
 .questions-profile {
@@ -332,3 +373,50 @@ img {
   height: 100%;
 }
 
+/* todo add new questions styling to other programs page
+ currently in mentorship, can potentially automatically make other question sections mobile compatable*/
+.questions-section {
+  align-items: center;
+  background: #f7f9f8;
+  padding: 3%;
+  padding-left: 8%;
+}
+.questions-section h2 {
+  text-align: center;
+}
+
+.questions-section p {
+  text-align: center;
+}
+
+.questions-cards-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+/* mobile styling - mentorship at the moment */
+@media (max-width: 760px) {
+  .mentor-mentee-grid {
+    flex-direction: column; /* vertical stack of two columns*/
+    align-items: center;
+    gap: 20px;
+  }
+
+  .mentor-mentee-column {
+    flex-basis: 90%;
+    min-height: auto;
+  }
+
+  .mentor-mentee-header {
+    font-size: 24px;
+  }
+
+  .mentor-mentee-text {
+    font-size: 14px;
+  }
+  .question-card-container {
+    flex-direction: column; /* stack people */
+  }
+}
