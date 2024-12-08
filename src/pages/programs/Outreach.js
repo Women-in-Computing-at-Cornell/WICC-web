@@ -19,6 +19,8 @@ import outreach3 from "../../images/outreach/outreach.jpg";
 import outreach1 from "../../images/outreach/outreach1.jpg";
 import OutreachHero from "../../images/outreach/OutreachHero.jpg";
 import QuestionsCard from "./QuestionsCard.js";
+import ghc1 from "../../images/programs/ghc1.jpg";
+import ghc2 from "../../images/programs/ghc2.jpg";
 
 import Image from "react-bootstrap/Image";
 
@@ -162,8 +164,7 @@ export default class Outreach extends Component {
           </div>
         </div>
         <div class="page">
-          <center>
-            {/* <h5 style={{ fontWeight: "bold" }}>Registration for our Girls Who Code program for Spring 2021 has been closed! </h5>*/}
+          {/* <center>
 
             <h5 style={{ fontWeight: "bold" }}>
               Interested in our Girls Who Code program for this Spring 2024?
@@ -175,11 +176,92 @@ export default class Outreach extends Component {
             >
               Register Now!
             </Button>
-          </center>
+          </center> */}
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              justifyContent: "space-between",
+              alignItems: "center",
+              gap: "20px",
+              padding: "20px",
+            }}
+          >
+            {/* Left Section: Text and Button */}
+            <div style={{ flex: "1", textAlign: "left", maxWidth: "35%" }}>
+              <h5
+                style={{
+                  fontWeight: "bold",
+                  fontSize: "15px",
+                  marginBottom: "20px",
+                }}
+              >
+                Interested in our Girls Who Code program for Spring 2024? Join
+                us now!
+              </h5>
+              <Button
+                style={{
+                  marginBottom: "3%",
+                  paddingLeft: "22px",
+                  paddingRight: "22px",
+                }}
+                href="https://docs.google.com/forms/d/1cHNFX7JopvVZiPAiaxEzIBvHHfiGwJTEm4N6a74uQR4/edit"
+              >
+                Register Here
+              </Button>
+            </div>
+
+            {/* Right Section: Two Images */}
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "row",
+                gap: "0px",
+                padding: "0",
+                flex: "1",
+              }}
+            >
+              <img
+                src={ghc1}
+                alt="First Image"
+                style={{
+                  width: "100%", // Adjust as needed
+                  maxWidth: "55%",
+                }}
+              />
+              <img
+                src={ghc2}
+                alt="Second Image"
+                style={{
+                  width: "100%",
+                  maxWidth: "55%",
+                }}
+              />
+            </div>
+          </div>
+
           <br />
 
-          <Container style={{ paddingTop: "56px", paddingBottom: "56px" }}>
-            <h3 className="h3title">Past Projects</h3>
+          <Container
+            style={{
+              paddingTop: "56px",
+              paddingBottom: "56px",
+              display: "flex",
+              alignItems: "flex-start",
+              flexDirection: "row",
+              gap: "20px",
+            }}
+          >
+            <h3
+              style={{
+                fontFamily: "Mulish",
+                fontSize: "35px",
+                fontStyle: "normal",
+                fontWeight: "700",
+              }}
+            >
+              Past Projects
+            </h3>
 
             <Row>
               {[
@@ -187,37 +269,37 @@ export default class Outreach extends Component {
                   href: "https://www.khanacademy.org/computer-programming/ashley-hs-fall-2018-shooting-star/5814504135491584",
                   imgSrc: projectImages["Ashley_Shooting Star.png"],
                   title: "Shooting Star",
-                  year: "HS, Fall 2018",
+                  year: "Ashley | HS, Fall 2018",
                 },
                 {
                   href: "https://www.khanacademy.org/computer-programming/teddy-ms-fall-2018-build-a-house/4719725664960512",
                   imgSrc: projectImages["Teddy_Build-A-House.png"],
                   title: "Build-A-House",
-                  year: "MS, Fall 2018",
+                  year: "Teddy | MS, Fall 2018",
                 },
                 {
                   href: "https://www.khanacademy.org/computer-programming/ania-hs-fall-2018-armageddon/6201068844384256",
                   imgSrc: projectImages["Ania_Armageddon.png"],
                   title: "Armageddon",
-                  year: "HS, Fall 2018",
+                  year: "Ania | HS, Fall 2018",
                 },
                 {
                   href: "https://www.khanacademy.org/computer-programming/dax-ms-fall-2018-random-colour-generator/4720164017438720",
                   imgSrc: projectImages["Dax_Random Colour Generator.png"],
                   title: "Random Color Generator",
-                  year: "MS, Fall 2018",
+                  year: "Dax | MS, Fall 2018",
                 },
                 {
                   href: "https://www.khanacademy.org/computer-programming/audrey-hs-fall-2018-colorful-flashy-flashcard/5717846265593856",
                   imgSrc: projectImages["Audrey_Colorful Flashy Flashcard.png"],
                   title: "Colorful Flashy Flashcard",
-                  year: "HS, Fall 2018",
+                  year: "Ania | HS, Fall 2018",
                 },
                 {
                   href: "https://www.khanacademy.org/computer-programming/michael-ms-fall-2018-oh-noes/5878804048936960",
                   imgSrc: projectImages["Michael_Oh Noes.png"],
                   title: "Oh Noes",
-                  year: "MS, Fall 2018",
+                  year: "Michael | MS, Fall 2018",
                 },
               ].map((project, index) => (
                 <Col
@@ -257,12 +339,21 @@ export default class Outreach extends Component {
                           width: "100%",
                           padding: "10px",
                           fontSize: "12px",
+                          fontDamily: "Mulish",
                         }}
                       >
                         <p style={{ margin: 0, fontWeight: "bold" }}>
                           {project.title}
                         </p>
-                        <p style={{ margin: 0 }}>{project.year}</p>
+                        <p
+                          style={{
+                            margin: 0,
+                            fontFamily: "Mulish",
+                            fontSize: "8px",
+                          }}
+                        >
+                          {project.year}
+                        </p>
                       </div>
                     </div>
                   </a>
@@ -276,11 +367,19 @@ export default class Outreach extends Component {
               paddingTop: "56px",
               paddingBottom: "56px",
               gap: "42px",
+              // display: "flex",
+              // // width: "1728px",
+              // padding: "96px 200px",
+              // flexDirection: "row",
+              // alignItems: "flex-start",
+              // gap: "42px",
             }}
           >
             <Row>
               {/* First Box */}
               <Col
+                xs={12}
+                md={7}
                 style={{
                   padding: "48px",
                   border: "1px solid #ddd",
@@ -290,6 +389,12 @@ export default class Outreach extends Component {
                   background: "var(--3, #FFF)",
                   /* Image Shadow */
                   boxShadow: "0px 0px 40px 0px rgba(0, 0, 0, 0.15)",
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "flex-start",
+                  gap: "24px",
+                  flex: "1 0 0",
+                  // alignSelf: "stretch",
                 }}
               >
                 <h3
@@ -314,16 +419,23 @@ export default class Outreach extends Component {
 
               {/* Second Box */}
               <Col
+                xs={12}
+                md={7}
                 style={{
                   padding: "48px",
                   border: "1px solid #ddd",
-                  borderRadius: "8px",
                   backgroundColor: "#f9f9f9",
-                  marginLeft: "10px",
+                  // marginLeft: "10px",
                   borderRadius: "20px",
                   background: "var(--3, #FFF)",
                   /* Image Shadow */
                   boxShadow: "0px 0px 40px 0px rgba(0, 0, 0, 0.15)",
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "flex-start",
+                  gap: "24px",
+                  flex: "1 0 0",
+                  alignSelf: "stretch",
                 }}
               >
                 <h3
