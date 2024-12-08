@@ -192,11 +192,11 @@ export default class CrackingYourCareer extends Component {
         </Row>
       </Container>
         <br />
-        <div style={{marginInline: "5%"}}>
+        <div style={{marginInline: "30%"}}>
           <h2 style={{ paddingTop: "5%", fontWeight: "bold", textAlign: "left" }}>Questions?</h2>
           <br/>
           <p style={{textAlign: "left"}}> Reach out to the following WICC members for clarification regarding Cracking Your Career (CYC).</p>
-          <Container style={{ paddingRight: "10%" }}>
+          <Container style={{ alignItems: "center", justifyContent: "center" }}>
             <Row style={{ paddingBottom: "1%" }}>
               <Col>
                 <QuestionsCard
