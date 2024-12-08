@@ -1,23 +1,13 @@
 import React, { useState, useEffect, useLayoutEffect } from "react";
-import Image from "react-bootstrap/Image";
-import Container from "react-bootstrap/Container";
 import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
 import "./Program.css";
 import "./pages.css";
-//import community from "../images/programs/community.jpg";
 import cyc from "../images/programs/cyc.jpg";
 import lunchbunch from "../images/programs/lunchbunch.jpg";
 import mentorship from "../images/programs/mentorship.jpg";
-//import girlswhocode from "../images/programs/girlswhocode.jpg";
 import outreach from "../images/programs/outreach.jpg";
 import Programhero from "../images/programs/Programhero.png";
-//import EventCard from "../components/eventCard";
-//import Card from "../components/Card";
-//import { FaChevronRight, FaChevronLeft } from "react-icons/fa";
-//import Progressbar from "../components/ProgressBar";
-//import Calendar from "./Calendar";
+
 
 let styles = {
   container: {
@@ -31,6 +21,7 @@ let styles = {
     color: "black",
   },
 };
+
 
 const Programs = () => {
   return (
@@ -101,6 +92,7 @@ const Programs = () => {
         </Link>
       </div>
 
+
     <h2 className="upcoming-title">Upcoming Events</h2>
       <div className="calendar-container">
         <div className="calendar-wrapper">
@@ -108,14 +100,14 @@ const Programs = () => {
                 src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FNew_York&showPrint=0&src=d2ljY2Nvcm5lbGxAZ21haWwuY29t&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=Y29ybmVsbC5lZHVfOTh0c2JvdWNtaTUzdjJybHQ3a2RqNDN2a2NAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23009688&color=%238E24AA&color=%2333B679"
                 style={{
                   border: "solid 1px #777",
-                  width: "100%", 
-                  height: "600px", 
+                  width: "100%",
+                  height: "600px",
                 }}
                 title="Google Calendar"
             ></iframe>
           </div>
       </div>
-      
+     
     </div>
   );
 };
