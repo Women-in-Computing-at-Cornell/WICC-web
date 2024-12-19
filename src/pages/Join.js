@@ -10,11 +10,32 @@ import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import Sponsors from "./Sponsors";
 import axios from "axios";
+import joinushero from "../images/joinushero.png";
 
 import "./Join.css";
 // import { Center } from "devextreme-react/map";
 
 // const API_PATH = "http://localhost/WICC-WEB/src/action.php";
+
+const JoinUs = () => {
+  return (
+    <div style={styles.container}>
+      <div className="hero">
+        <div className="hero-text">
+          <h1 style={{ marginBottom: "1.2rem" }}>Join Us</h1>
+          <p>
+          Join us in empowering and uplifting students in the tech community at Cornell. At WICC, 
+          we are committed to providing a supportive space for growth, collaboration, and leadership. 
+          Connect with like-minded individuals, gain mentorship, and make a lasting impact in the tech world.
+          </p>
+        </div>
+        <div className="hero-image">
+          <img src={NewHeroImage} alt="Hero Image" style={{ width: "100%" }} />
+        </div>
+      </div>
+    </div>
+  );
+};
 
 export default class Join extends Component {
   constructor(props, context) {
@@ -81,6 +102,7 @@ export default class Join extends Component {
       },
     };
 
+    
     return (
       <div style={styles.container}>
         <h1 style={{ fontWeight: "bold" }}>Get Involved</h1>
