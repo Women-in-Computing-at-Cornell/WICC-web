@@ -10,7 +10,7 @@ import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import Sponsors from "./Sponsors";
 import axios from "axios";
-import joinushero from "../images/joinushero.png";
+import joinushero from "../images/joinushero.jpg";
 
 import "./Join.css";
 // import { Center } from "devextreme-react/map";
@@ -19,10 +19,10 @@ import "./Join.css";
 
 const JoinUs = () => {
   return (
-    <div style={styles.container}>
+    // <div style={styles.container}>
       <div className="hero">
         <div className="hero-text">
-          <h1 style={{ marginBottom: "1.2rem" }}>Join Us</h1>
+          <h1 style={{ fontWeight: "bold" }}>Join Us</h1>
           <p>
           Join us in empowering and uplifting students in the tech community at Cornell. At WICC, 
           we are committed to providing a supportive space for growth, collaboration, and leadership. 
@@ -30,10 +30,10 @@ const JoinUs = () => {
           </p>
         </div>
         <div className="hero-image">
-          <img src={NewHeroImage} alt="Hero Image" style={{ width: "100%" }} />
+          <img src={joinushero} alt="Hero Image" style={{ width: "100%" }} />
         </div>
       </div>
-    </div>
+    // </div>
   );
 };
 
@@ -105,6 +105,7 @@ export default class Join extends Component {
     
     return (
       <div style={styles.container}>
+        <JoinUs />
         <h1 style={{ fontWeight: "bold" }}>Get Involved</h1>
 
         <div style={styles.row}>
