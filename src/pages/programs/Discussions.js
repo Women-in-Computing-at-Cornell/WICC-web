@@ -46,6 +46,9 @@ import medal from "../../images/medal.jpg";
 import "../discussions.css";
 
 export default class Discussions extends Component {
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
   render() {
     let discDirectors = community.members.filter(
       (record) => record.position === "Social Co-Director"

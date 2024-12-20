@@ -8,7 +8,6 @@ body {
   overscroll-behavior: none;
   height: 100%;
   overflow-y: scroll;
-  padding-top: 5.5rem;
 }
 
 code {

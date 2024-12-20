@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./pages.css";
+import "./Board.css"; // Make sure this path is correct
 import BoardCard from "../components/BoardCard";
 import Navbar from "react-bootstrap/Navbar";
 import { Nav, NavDropdown } from "react-bootstrap";
@@ -17,7 +17,8 @@ import {
   faculty,
 } from "./boardData";
 import Subteam from "../components/Subteam";
-import hero from "../images/about-pictures/abouthero.jpg";
+import hero from "../images/about-pictures/abouthero.png";
+import FloatingMenu from "../components/BoardNav";
 
 const teams = [
   faculty,
@@ -46,21 +47,21 @@ export default class Board extends Component {
   componentDidMount() {
     window.addEventListener('scroll', this.handleScroll);
   }
-  
+
   componentWillUnmount() {
     window.removeEventListener('scroll', this.handleScroll);
   }
-  
+
   handleScroll = () => {
     const totalScroll = document.documentElement.scrollTop;
     const windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
     const scrollProgress = `${(totalScroll / windowHeight) * 100}`;
-  
+
     this.setState({
       scrollProgress
     });
   };
-  
+
   handleSelect = (e) => {
     this.setState({
       value: e,
@@ -86,50 +87,47 @@ export default class Board extends Component {
 
     return (
       <div>
-        <div>
+        <div className="hero-container">
           <img
             src={hero}
             style={{ maxWidth: "100%", height: "auto" }}
             alt="Description"
+
           />
+          <div className="hero-content">
+            <h2 style={{ fontWeight: "bold", marginBottom: "15px" }}>
+              Who We Are
+            </h2>
+            <p style={{ marginBottom: "20px" }}>
+              WICC was founded in March 2013 to bring together women and gender
+              minorities in computing fields at Cornell, expand their
+              opportunities and successes, provide a support network, and empower
+              them to encourage younger underrepresented students to consider
+              computing fields. We hope to create a budding community and promote
+              interaction on academic, social, and professional issues. By making
+              women and gender minorities in computing fields visible, providing
+              role models and dispelling stereotypes, WICC fosters a support
+              network to empower everyone and encourage young students to discover
+              their love for computing.
+            </p>
+          </div>
+
         </div>
         <div className="containerPage">
-          <h2 style={{ fontWeight: "bold", marginBottom: "15px" }}>
-            Who We Are
-          </h2>
-          <p style={{ marginBottom: "20px" }}>
-            WICC was founded in March 2013 to bring together women and gender
-            minorities in computing fields at Cornell, expand their
-            opportunities and successes, provide a support network, and empower
-            them to encourage younger underrepresented students to consider
-            computing fields. We hope to create a budding community and promote
-            interaction on academic, social, and professional issues. By making
-            women and gender minorities in computing fields visible, providing
-            role models and dispelling stereotypes, WICC fosters a support
-            network to empower everyone and encourage young students to discover
-            their love for computing.
-          </p>
           <div style={{ display: "flex" }}>
             <div style={{ flexGrow: 1 }}>
               {teams.map((team, key) => (
                 <div key={key} style={{ marginBottom: "20px" }}>
                   <div>
-                  <span className="subteam-name">{team.name}</span>
+                    <span className="subteam-name">{team.name}</span>
                     <Subteam team={team} />
                   </div>
                 </div>
               ))}
             </div>
+            <FloatingMenu />
             <div
-              style={{
-                float: "right", // Float might not be necessary with flex layout
-                height: "100%",
-                display: "flex",
-                flexDirection: "column",
-                alignItems: "flex-end",
-                position: "sticky",
-                top: "0px",
-              }}
+              className="right-sidebar"
             >
               {this.renderProgressBar()}
               <Nav
