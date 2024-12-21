@@ -1,5 +1,16 @@
+body {
+  margin: 0; /* Avoids any default body margins */
+  overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+
+.container {
+  max-width: 100%; /* Ensures content stays within the screen */
+  overflow-x: hidden; /* Forces no overflow horizontally */
+}
+
 .home-container {
   padding-bottom: 20px;
+  max-width: 100%;
 }
 
 .hero-container {
@@ -9,9 +20,8 @@
 .hero-content {
   position: absolute;
   top: 50%;
-  left: 35%;
-  transform: translate(-50%, -50%);
   z-index: 1;
+  padding-left: 4rem;
   text-align: left;
   color: #fff;
 }
@@ -20,7 +30,7 @@
   font-size: 3rem;
   text-align: left;
   color: #fff;
-  margin-left: 0;
+  margin-left: 2rem;
   max-width: 800px;
   font-weight: bold;
 }
@@ -34,18 +44,95 @@
 }
 
 .mission-image {
-  width: 100%
+  width: 100%;
 }
 
+.semout-container {
+  display: flex;
+  flex-direction: row;
+  align-content: left;
+  justify-content: flex-start;
+}
+
+.semout-content {
+  display: flex;
+  flex-direction: column;
+  align-content: left;
+  justify-content: center;
+  margin-top: 5em;
+  margin-left: 10em;
+  margin-bottom: 2em;
+}
+
+.semout-title {
+  text-align: left;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+
+.semout-description {
+  text-align: left;
+  max-width: 800px;
+}
+
+/* work starts here */
+
 .what-we-do-container {
-  margin-top: 30px;
+  padding: 2em;
+}
+
+.what-we-do-header {
+  text-align: left;
+}
+
+.what-we-do-title {
+  font-weight: bold;
+  margin-left: 4em;
+}
+
+.what-we-do-content {
+  padding-inline: 8em;
+  display: flex;
+  flex-direction: row;
+  gap: 8em;
+  display: flex;
+  justify-content: space-between;
+  margin-inline: auto;
+}
+
+.what-we-do-column {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: flex-start;
+  margin-inline: auto;
+}
+
+.what-we-do-image {
+  width: 100%;
+  height: auto;
+}
+
+.what-we-do-description,
+.what-we-do-text {
+  margin-inline: 2em;
 }
 
 .btn {
   border-radius: 5em;
   color: black;
-  background-color: #9CE2D3;
-  border-color: #9CE2D3;
+  background-color: #9ce2d3;
+  border-color: #9ce2d3;
+}
+
+.what-we-do-button {
+  border-radius: 5em;
+  color: black;
+  background-color: #9ce2d3;
+  border-color: #9ce2d3;
+  margin-bottom: 2em;
+  margin-left: 2em;
+  width: 90%;
 }
 
 .btn:hover {
@@ -69,14 +156,13 @@
 .get-involved-header {
   text-align: left;
   font-weight: bold;
-  margin-left: 9rem
+  margin-left: 9rem;
 }
 
 .get-involved-grid {
   display: flex;
   width: 100%;
   flex-wrap: wrap;
-
 }
 
 .get-involved-columno {
@@ -167,11 +253,12 @@
   align-items: center;
   margin: 0 20px;
   text-align: center;
+  margin-bottom: 1em;
 }
 
 .stat-item strong {
   font-weight: bold;
-  color: #9CE2D3;
+  color: #9ce2d3;
   font-size: 2em;
 }
 
@@ -180,7 +267,7 @@
 }
 
 .alumni-section {
-  background-color: #FAFAFA;
+  background-color: #fafafa;
   width: 100%;
   padding: 3em 0;
 }
@@ -189,6 +276,7 @@
   text-align: left;
   font-weight: bold;
   margin-left: 5em;
+  margin-bottom: 1.5rem;
 }
 
 .testimony-container {
@@ -203,7 +291,7 @@
   display: flex;
   flex-direction: column;
   flex: 1;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-radius: 2rem;
   padding: 2rem;
   margin: 0 20px;
@@ -213,4 +301,181 @@
   margin-bottom: 1rem;
   font-size: 1.2rem;
   font-weight: bold;
+}
+
+@media (max-width: 960px) {
+  .hero-container .hero-content h2 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 760px) {
+  .hero-container {
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+    margin-top: -20px;
+  }
+
+  .mission-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .hero-content {
+    position: absolute;
+    top: 53%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    text-align: left;
+    color: #fff;
+    padding: 20px;
+    margin-inline: 1rem;
+  }
+
+  .hero-container .hero-content h2 {
+    font-size: 1.5rem;
+    padding-top: 100px;
+  }
+
+  .hero-content p {
+    font-size: 0.9rem;
+  }
+
+  .semout-title {
+    margin-bottom: 0.5em;
+    margin-left: -1rem;
+  }
+
+  .semout-content {
+    margin-top: 2em;
+    margin-inline: 4em;
+    margin-bottom: 0rem;
+  }
+
+  .what-we-do-content {
+    transform: translateY(-10px);
+    flex-direction: column;
+    align-items: center;
+    padding-inline: 0em;
+    padding-bottom: 1em;
+    gap: 0em;
+  }
+
+  .what-we-do-button {
+    border-radius: 5em;
+    color: black;
+    background-color: #9ce2d3;
+    border-color: #9ce2d3;
+    margin-bottom: 2em;
+    margin-left: 1em;
+    width: 90%;
+  }
+
+  .what-we-do-column {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .what-we-do-title {
+    margin-left: 1rem;
+  }
+
+  .what-we-do-image {
+    max-width: 100%;
+  }
+
+  .alumni-section {
+    padding: 2em;
+  }
+
+  .alumni-header {
+    margin-left: 0.5rem;
+  }
+
+  .testimony-container {
+    flex-direction: column;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .testimony {
+    margin: 20px;
+  }
+
+  .get-involved {
+    padding-top: 2em;
+    padding-bottom: 2em;
+  }
+
+  .get-involved-header {
+    margin-left: 1.5em;
+    margin-bottom: 0;
+  }
+
+  .call-to-action-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    float: left;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 1.5em 2em;
+  }
+
+  .get-involved-grid {
+    display: flex;
+    width: auto;
+    flex-wrap: wrap;
+  }
+
+  .get-involved-columno {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    background-color: #9ce2d3;
+    min-height: 150px;
+    border-radius: 25px;
+    padding: 1.5rem;
+    margin: 0.5em;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
+    max-width: 45%;
+  }
+
+  .get-involved-columne {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    background-color: white;
+    min-height: 150px;
+    border-radius: 25px;
+    padding: 1.5rem;
+    margin: 0.5em;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
+    max-width: 45%;
+  }
+
+  .arrow-img {
+    margin-bottom: 1em;
+  }
+
+  .button-description {
+    text-align: left;
+    font-size: 12px;
+  }
+
+  .button-name {
+    font-size: 18px;
+    text-align: left;
+  }
+
+  .sponsor-container {
+    padding: 2em;
+  }
+
+  .home-container {
+    padding-bottom: 0px;
+  }
 }
