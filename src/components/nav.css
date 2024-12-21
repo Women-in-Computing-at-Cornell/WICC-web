@@ -63,8 +63,11 @@
 }
 
 @media (max-width: 960px) {
+  body {
+    margin-top: 20%;
+  }
   .navbar {
-    position: fixed;
+    position: relative;
     top: 0;
     z-index: 5;
     width: 100%;
