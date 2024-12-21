@@ -6,12 +6,10 @@ body {
   overflow-x: hidden;
 }
 
-
 .hero {
   flex-shrink: 0;
   color: white;
 }
-
 
 .hero-text {
   position: absolute;
@@ -27,7 +25,6 @@ body {
   padding-left: 8%;
 }
 
-
 .hero-image {
   filter: brightness(40%);
   object-fit: cover;
@@ -36,17 +33,20 @@ body {
   max-height: 700px;
 }
 
-
 .hero-text a {
   color: white;
   text-decoration: underline;
 }
 
+@media screen and (min-width: 731px) {
+  .responsive-text {
+    display: block;
+  }
+}
 
 .hero-text a:hover {
   box-shadow: 0px 1px 1px 1px rgb(68, 68, 68);
 }
-
 
 .what-we-do {
   font-size: 30px;
@@ -59,7 +59,6 @@ body {
   width: 100%;
 }
 
-
 .card {
   position: relative;
   transition: transform 0.3s, box-shadow 0.3s;
@@ -67,17 +66,14 @@ body {
   box-shadow: none;
 }
 
-
 .card:hover .image {
   filter: brightness(50%);
   transition: filter 0.3s, transform 0.3s;
 }
 
-
 .card:hover .card-title {
   color: #9ce2d3;
 }
-
 
 .image {
   display: block;
@@ -88,7 +84,6 @@ body {
   transition: filter 0.3s, transform 0.3s;
 }
 
-
 .card-title {
   padding-top: 10px;
   font-size: 18px;
@@ -98,12 +93,10 @@ body {
   transition: color 0.3s ease;
 }
 
-
 .card-title:hover {
   color: #9ce2d3;
   text-decoration: underline;
 }
-
 
 .upcoming-title {
   font-size: 30px;
@@ -116,19 +109,16 @@ body {
   width: 100%;
 }
 
-
 .calendar-wrapper {
   margin: 0 auto;
   width: 100%;
 }
-
 
 .calendar-wrapper iframe {
   width: 100%;
   border: solid 1px #777;
   height: 600px;
 }
-
 
 .calendar-container {
   display: flex;
@@ -138,7 +128,6 @@ body {
   max-width: 1000px;
 }
 
-
 .button-display {
   display: flex;
   justify-content: space-between;
@@ -146,13 +135,11 @@ body {
   margin-right: 30px;
 }
 
-
 .event-container {
   width: 100%;
   display: flex;
   justify-content: center;
 }
-
 
 .events-grid {
   margin: 0 auto;
@@ -162,7 +149,6 @@ body {
   gap: 30px;
   max-width: 1000px;
 }
-
 
 .item1 {
   grid-column-start: 1;
@@ -176,10 +162,8 @@ body {
   align-self: stretch;
 }
 
-
 .item1 h1 {
   color: #000;
-
 
   /* Sub Title - 1 */
   font-family: Mulish;
@@ -191,7 +175,6 @@ body {
   margin-left: 20%;
   text-align: left;
 }
-
 
 .item1 p {
   color: #000;
@@ -205,25 +188,21 @@ body {
   text-align: left;
 }
 
-
 @media (max-width: 1000px) {
   .events-grid {
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     margin: 7.5% 5%;
   }
 
-
   .item1 {
     grid-column-start: auto;
     grid-column-end: auto;
   }
 
-
   .item1 h1,
   .item1 p {
     margin: 0 auto;
   }
-
 
   .hero-text {
     position: absolute;

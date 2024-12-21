@@ -13,6 +13,17 @@ body {
   max-width: 100%;
 }
 
+.responsive-text {
+  display: none;
+}
+
+/* Show only for screens larger than 414px */
+@media screen and (min-width: 415px) {
+  .responsive-text {
+    display: block;
+  }
+}
+
 .hero-container {
   position: relative;
 }

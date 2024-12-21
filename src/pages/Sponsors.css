@@ -209,6 +209,12 @@ td:last-child {
   margin-right: 5px;
 }
 
+@media screen and (min-width: 571px) {
+  .responsive-text {
+    display: block;
+  }
+}
+
 .container3 {
   background-color: #fff;
   border-radius: 10px;

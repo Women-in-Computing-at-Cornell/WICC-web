@@ -45,20 +45,22 @@ export default class Board extends Component {
   }
 
   componentDidMount() {
-    window.addEventListener('scroll', this.handleScroll);
+    window.addEventListener("scroll", this.handleScroll);
   }
 
   componentWillUnmount() {
-    window.removeEventListener('scroll', this.handleScroll);
+    window.removeEventListener("scroll", this.handleScroll);
   }
 
   handleScroll = () => {
     const totalScroll = document.documentElement.scrollTop;
-    const windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    const windowHeight =
+      document.documentElement.scrollHeight -
+      document.documentElement.clientHeight;
     const scrollProgress = `${(totalScroll / windowHeight) * 100}`;
 
     this.setState({
-      scrollProgress
+      scrollProgress,
     });
   };
 
@@ -70,15 +72,17 @@ export default class Board extends Component {
 
   renderProgressBar() {
     return (
-      <div style={{
-        position: 'fixed',
-        top: 0,
-        left: 0,
-        width: `${this.state.scrollProgress}%`,
-        height: '5px',
-        backgroundColor: '#73CFBB',
-        zIndex: 1000 // Ensure it's above other content
-      }} />
+      <div
+        style={{
+          position: "fixed",
+          top: 0,
+          left: 0,
+          width: `${this.state.scrollProgress}%`,
+          height: "5px",
+          backgroundColor: "#73CFBB",
+          zIndex: 1000, // Ensure it's above other content
+        }}
+      />
     );
   }
 
@@ -92,26 +96,27 @@ export default class Board extends Component {
             src={hero}
             style={{ maxWidth: "100%", height: "auto" }}
             alt="Description"
-
           />
           <div className="hero-content">
-            <h2 style={{ fontWeight: "bold", marginBottom: "15px" }}>
+            <h2
+              className="responsive-title"
+              style={{ fontWeight: "bold", marginBottom: "15px" }}
+            >
               Who We Are
             </h2>
-            <p style={{ marginBottom: "20px" }}>
+            <p className="responsive-text" style={{ marginBottom: "20px" }}>
               WICC was founded in March 2013 to bring together women and gender
               minorities in computing fields at Cornell, expand their
-              opportunities and successes, provide a support network, and empower
-              them to encourage younger underrepresented students to consider
-              computing fields. We hope to create a budding community and promote
-              interaction on academic, social, and professional issues. By making
-              women and gender minorities in computing fields visible, providing
-              role models and dispelling stereotypes, WICC fosters a support
-              network to empower everyone and encourage young students to discover
-              their love for computing.
+              opportunities and successes, provide a support network, and
+              empower them to encourage younger underrepresented students to
+              consider computing fields. We hope to create a budding community
+              and promote interaction on academic, social, and professional
+              issues. By making women and gender minorities in computing fields
+              visible, providing role models and dispelling stereotypes, WICC
+              fosters a support network to empower everyone and encourage young
+              students to discover their love for computing.
             </p>
           </div>
-
         </div>
         <div className="containerPage">
           <div style={{ display: "flex" }}>
@@ -126,9 +131,7 @@ export default class Board extends Component {
               ))}
             </div>
             <FloatingMenu />
-            <div
-              className="right-sidebar"
-            >
+            <div className="right-sidebar">
               {this.renderProgressBar()}
               <Nav
                 onSelect={this.handleSelect}

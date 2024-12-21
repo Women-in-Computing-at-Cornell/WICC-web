@@ -67,7 +67,7 @@ const Home = () => {
               <h2>
                 Building a supportive tech community for women and allies.
               </h2>
-              <p>
+              <p class="responsive-text">
                 We provide resources to conquer challenges and create
                 opportunities for technical and leadership growth. We empower
                 people from diverse backgrounds to make a positive impact on the
