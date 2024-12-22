@@ -1,25 +1,13 @@
 import React, { useState, useEffect, useLayoutEffect } from "react";
-import Image from "react-bootstrap/Image";
-import Container from "react-bootstrap/Container";
 import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
 import "./Program.css";
 import "./pages.css";
-import activemember from "../images/programs/activemember.jpg";
-import campaigns from "../images/programs/campaigns.jpg";
-import community from "../images/programs/community.jpg";
 import cyc from "../images/programs/cyc.jpg";
 import lunchbunch from "../images/programs/lunchbunch.jpg";
 import mentorship from "../images/programs/mentorship.jpg";
-import girlswhocode from "../images/programs/girlswhocode.jpg";
 import outreach from "../images/programs/outreach.jpg";
 import Programhero from "../images/programs/Programhero.png";
-import EventCard from "../components/eventCard";
-import Card from "../components/Card";
-import { FaChevronRight, FaChevronLeft } from "react-icons/fa";
-import Progressbar from "../components/ProgressBar";
-import Calendar from "./Calendar";
+
 
 let styles = {
   container: {
@@ -34,12 +22,13 @@ let styles = {
   },
 };
 
+
 const Programs = () => {
   return (
     <div>
       <div className="hero">
         <div className="hero-text">
-          <h1 style={{ marginBottom: "1.2rem" }}> Programs </h1>
+          <h1 style={{ marginBottom: "1.2rem", fontWeight: "900", fontSize: "3rem"}}> Programs </h1>
           <p>
             We are dedicated to fostering an inclusive and empowering community
             for women and non-binary students at Cornell. Each semester, we
@@ -55,63 +44,70 @@ const Programs = () => {
           <img src={Programhero} style={{ width: "100%" }}></img>
         </div>
       </div>
+      <h2 className="what-we-do">What We Do</h2>
       <div className="events-grid">
-        <div className="item1">
-          <h1>Get Involved</h1>
-          <p>You get what you put in</p>
-        </div>
-        <Link to="/membership" style={styles.link}>
-          <Card
-            title="Active Membership"
-            description="Make the most out of your experience with WICC"
-            imageUrl={activemember}
-          />
+        <Link to="/outreach">
+          <div className="card">
+            <img src={outreach} alt="Outreach" className="image" />
+            <div>
+              <h1 className="card-title">Outreach ↗</h1>
+              <p className="card-description">
+              Be a part of making a difference and empowering others
+              </p>
+            </div>
+          </div>
         </Link>
-        {/* community discussion, lunch bunch, mentorship */}
-        <Link to="/discussions" style={styles.link}>
-          <Card
-            title="Community Discussion"
-            description="Get involved; meet new people and voice your opinions"
-            imageUrl={community}
-          />
+        <Link to="/crackingyourcareer">
+          <div className="card">
+            <img src={cyc} alt="Cracking Your Career" className="image" />
+            <div>
+              <h1 className="card-title">Cracking Your Career ↗</h1>
+              <p className="card-description">
+                Prepare for recruitment with professional workshops and more!
+              </p>
+            </div>
+          </div>
         </Link>
-        <Link to="/lunch" style={styles.link}>
-          <Card title="Lunch Bunch" description="" imageUrl={lunchbunch} />
+        <Link to="/lunch">
+          <div className="card">
+            <img src={lunchbunch} alt="Lunch Bunch" className="image" />
+            <div>
+              <h1 className="card-title">Lunch Bunch ↗</h1>
+              <p className="card-description">
+                Network with CIS Professors and Alumni
+              </p>
+            </div>
+          </div>
         </Link>
-        <Link to="/mentorship" style={styles.link}>
-          <Card
-            title="Mentorship"
-            description="Navigate your career or studies with the help of upperclassmen"
-            imageUrl={mentorship}
-          />
-        </Link>
-        {/* outreach, campaigns, cracking your career */}
-        <Link to="/outreach" style={styles.link}>
-          <Card
-            title="Girls Who Code"
-            description="Be part of making a difference and empowering others"
-            imageUrl={outreach}
-          />
-        </Link>
-        <Link to="/campaigns" style={styles.link}>
-          <Card
-            title="Campaigns"
-            description="Celebrate your community and raise awareness on relevant issues"
-            imageUrl={campaigns}
-          />
-        </Link>
-        <Link to="/crackingyourcareer" style={styles.link}>
-          <Card
-            title="Cracking Your Career (CYC)"
-            description="Prepare for interviews or recruitment for your target career with interview prep, resume workshops and more"
-            imageUrl={cyc}
-          />
+        <Link to="/mentorship">
+          <div className="card">
+            <img src={mentorship} alt="Mentorship" className="image" />
+            <div>
+              <h1 className="card-title">Mentorship ↗</h1>
+              <p className="card-description">
+                Navigate your career or studies with the help of upperclassmen
+              </p>
+            </div>
+          </div>
         </Link>
       </div>
 
-      <div>
-        <Calendar />
+
+    <h2 className="upcoming-title">Upcoming Events</h2>
+      <div className="calendar-container">
+        <div className="calendar-wrapper">
+            <iframe
+                src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FNew_York&showPrint=0&src=d2ljY2Nvcm5lbGxAZ21haWwuY29t&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=Y29ybmVsbC5lZHVfOTh0c2JvdWNtaTUzdjJybHQ3a2RqNDN2a2NAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23009688&color=%238E24AA&color=%2333B679"
+                style={{
+                  border: "solid 1px #777",
+                  width: "100%",
+                  height: "600px",
+                }}
+                title="Google Calendar"
+            ></iframe>
+          </div>
       </div>
+     
     </div>
   );
 };

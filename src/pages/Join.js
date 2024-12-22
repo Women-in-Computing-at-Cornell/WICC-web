@@ -17,12 +17,13 @@ import "./Join.css";
 
 // const API_PATH = "http://localhost/WICC-WEB/src/action.php";
 
+
 const JoinUs = () => {
   return (
-    // <div style={styles.container}>
+    //<div style={styles.container}>
       <div className="hero">
         <div className="hero-text">
-          <h1 style={{ fontWeight: "bold" }}>Join Us</h1>
+          <h1 style={{ marginBottom: "1.2rem", fontWeight: "900", fontSize: "3rem"}}>Join Us</h1>
           <p>
           Join us in empowering and uplifting students in the tech community at Cornell. At WICC, 
           we are committed to providing a supportive space for growth, collaboration, and leadership. 
@@ -30,10 +31,10 @@ const JoinUs = () => {
           </p>
         </div>
         <div className="hero-image">
-          <img src={joinushero} alt="Hero Image" style={{ width: "100%" }} />
+          <img src={joinushero} style={{ width: "100%" }} />
         </div>
       </div>
-    // </div>
+    //</div>
   );
 };
 
@@ -81,7 +82,7 @@ export default class Join extends Component {
   render() {
     let styles = {
       container: {
-        margin: "5%",
+        margin: "0%", //changes the top margin for hero image 
         fontFamily: "Inter",
       },
       row: {
@@ -101,12 +102,13 @@ export default class Join extends Component {
         textDecoration: "underline",
       },
     };
-
     
     return (
       <div style={styles.container}>
         <JoinUs />
+        <br />
         <h1 style={{ fontWeight: "bold" }}>Get Involved</h1>
+        <br />
 
         <div style={styles.row}>
           <div style={styles.col}>

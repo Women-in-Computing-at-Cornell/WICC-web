@@ -129,34 +129,58 @@ export const photo = {
   description: " ",
   members: [
     {
-      name: "Zhalae Daneshvari",
+      name: "Cynthia Lan",
       position: "Photographer Director",
-      netId: "zwd3",
-      bio: "Zhalae is a freshman at Cornell studying Info Sci in the College of Arts and Sciences. As part of the P+F committee, she loves to capture the welcoming nature of WICC’s community at events. In her free time she likes listening to music and her favorite artists are Taylor Swift and The Neighbourhood.",
+      netId: "cl2683",
+      bio: " ",
     },
     {
-      name: "Afsheen Alvi",
+      name: "Ayesha Abdiel",
       position: "Photographer",
-      netId: "aa2293",
-      bio: "Sophomore from Lucknow, India. Outside of academics, interested in baking, greek mythology, space law and exploration, travel and music",
+      netId: "asa253",
+      bio: " ",
     },
     {
-      name: "Amy Chitnumsab",
+      name: "Joey Zhou",
       position: "Photographer",
-      netId: "ac2295",
-      bio: "Amy is currently pursuing a career in Data Science with her Statistics major. Other than being part of the WICC Photo and Film Committee, she is also part of Cornell Data Journal (CDJ) and Cornell Innovative Film Tech Club (CIFT). ",
+      netId: "sz545",
+      bio: " ",
     },
     {
-      name: "Rachael Close",
+      name: "Katelyn Fu",
       position: "Photographer",
-      netId: "rlc355",
-      bio: "enthusiastic photographer, also likes to crochet, figure skate, and play tennis",
+      netId: "kcf44",
+      bio: " ",
     },
     {
-      name: "Sharafa Mohammed",
+      name: "Kiran Mitra",
       position: "Photographer",
-      netId: "sm2592",
-      bio: "Sharafa has been on the Photo & Film committee since Fall 2023. She is passionate about the world of machine learning and the application of computing in healthcare. Sharafa has enjoyed attending events and engaging with the WICC community, and she hopes to continue executing campaigns and contributing to events over the following semester.",
+      netId: "km936",
+      bio: " ",
+    },
+    {
+      name: "Rithya Sriram",
+      position: "Photographer",
+      netId: "ra596",
+      bio: " ",
+    },
+    {
+      name: "Sommaya Haque",
+      position: "Photographer",
+      netId: "sh847",
+      bio: " ",
+    },
+    {
+      name: "Vinesha Shaik",
+      position: "Photographer",
+      netId: "vs532",
+      bio: " ",
+    },
+    {
+      name: "Yawen Lin",
+      position: "Photographer",
+      netId: "yl3646",
+      bio: " ",
     },
   ],
 };
@@ -169,12 +193,12 @@ export const technical = {
     {
       name: "Sneha Rajaraman",
       netId: "sr934",
-      position: "Developer",
+      position: "Technical Director",
       bio: "Sneha is a sophomore from Northern Virginia in the College of Engineering majoring in Computer Science. She enjoys calligraphy, singing, dancing (pretty much anything music replated), and baking!",
     },
     {
       name: "Laura Wu",
-      position: "Head Designer",
+      position: "Lead Designer",
       netId: "sw2262",
       bio: "Laura is a junior in the College of Arts and Sciences studying Information Science. She enjoys listening to K-pop in her free time.",
     },
@@ -185,16 +209,52 @@ export const technical = {
       bio: "Abigail is a freshman from Northern Virginia majoring in Computer Science in the College of Engineering. She enjoys karaoke, exploring new cuisines, and traveling.",
     },
     {
+      name: "Amelia Zheng",
+      netId: "ayz23",
+      position: "Developer",
+      bio: "",
+    },
+    {
       name: "Amy Sharin",
       netId: "ars369",
       position: "Developer",
       bio: "Amy is a junior from Long Island majoring in Computer Science. She loves hanging out with friends, baking, and basketball.",
     },
     {
+      name: "Angela Zhu",
+      netId: "avz7",
+      position: "Developer",
+      bio: "",
+    },
+    {
+      name: "Arielle Nudelman",
+      netId: "an585",
+      position: "Developer",
+      bio: "",
+    },
+    {
+      name: "Deepa Pulugurtha",
+      netId: "udp3",
+      position: "Developer",
+      bio: "",
+    },
+    {
       name: "Dora Weng",
       netId: "cw749",
       position: "Developer",
       bio: "Dora is a sophomore in the College of engineering studying Computer Science. She has an unhealthy obsession for coffee and you can find her working at Cafe Jennie!",
+    },
+    {
+      name: "Felicia Chen",
+      netId: "rc753",
+      position: "Developer",
+      bio: "Felicia is a sophomore majoring in computer science in Arts & Sciences and minoring (possibly majoring) in music.",
+    },
+    {
+      name: "Jasmine Dong",
+      netId: "jqd3",
+      position: "Developer",
+      bio: "",
     },
     {
       name: "Jessica Andrews",
@@ -209,42 +269,52 @@ export const technical = {
       bio: "Kelly is a junior from the Greater Philadelphia area. She is in the College of Engineering studying computer science. She enjoys crocheting, eating good food, and meeting new people. Feel free to reach out to her for a quick coffee chat!",
     },
     {
+      name: "Lauren Ah-Hot",
+      netId: "laa237",
+      position: "Developer",
+      bio: "",
+    },
+    {
+      name: "Mini Ge",
+      netId: "mjg398",
+      position: "Developer",
+      bio: "",
+    },
+    {
       name: "Omisha Sharma",
       netId: "os226",
       position: "Developer",
       bio: "Omisha is a sophomore from Plainsboro, NJ in the College of Engineering student CS. She loves F1, playing piano, and hiking in Ithaca!",
     },
     {
-      name: "Felicia Chen",
-      netId: "rc753",
+      name: "Saanvi Ibrahimpatnam",
+      netId: "si292",
       position: "Developer",
-      bio: "Felicia is a sophomore majoring in computer science in Arts & Sciences and minoring (possibly majoring) in music.",
+      bio: "",
     },
-   
+    // {
+    //   name: "Shriya Sudhakar",
+    //   netId: "ss3576",
+    //   position: "Developer",
+    //   bio: "Shriya is a freshman in the College of Engineering majoring in Computer Science and minoring in Applied Math. She loves playing the violin, trying new puzzles, and hanging out with friends. She's super excited for an amazing year on Technical Committee!",
+    // },
     {
-      name: "Shriya Sudhakar",
-      netId: "ss3576",
+      name: "Sonja Wong",
+      netId: "sw2374",
       position: "Developer",
-      bio: "Shriya is a freshman in the College of Engineering majoring in Computer Science and minoring in Applied Math. She loves playing the violin, trying new puzzles, and hanging out with friends. She's super excited for an amazing year on Technical Committee!",
+      bio: "",
     },
-  
+    {
+      name: "Yoobin Lee",
+      netId: "yl3697",
+      position: "Designer",
+      bio: "",
+    },
     {
       name: "Yuhan Sun",
       netId: "ys728",
       position: "Developer",
       bio: "Yuhan is a sophomore from Nanjing, China studying Computer Science in the College of Arts and Science. She is a huge fan of Zhou Shen and anime!",
-    },
-    // {
-    //   name: "Zhalae Daneshvari",
-    //   netId: "zwd3",
-    //   position: "Developer",
-    //   bio: "Zhalae is a freshman from New Jersey studying Information Science in the College of Arts & Sciences. She enjoys photography, drawing, and eating food at new places!",
-    // },
-    {
-      name: "Jasmine Dong",
-      netId: "jqd3",
-      position: "Developer",
-      bio: "",
     },
   ],
 };
@@ -261,7 +331,7 @@ export const academic = {
       bio: "",
     },
     {
-      name: "Rahma AAbdullah",
+      name: "Rahma Abdullah",
       position: "Faculty Relations Co-Director",
       netId: "ra567",
       bio: " ",
@@ -279,9 +349,9 @@ export const academic = {
       bio: " ",
     },
     {
-      name: "Ishita Yadav",
+      name: "Alina Yuan",
       position: "Career Development Co-Director",
-      netId: "ily4",
+      netId: "ay332",
       bio: " ",
     },
     {
@@ -304,7 +374,6 @@ export const brand = {
   title: "Brand",
   description: " ",
   members: [
-
     {
       name: "Uyen Hoang",
       position: "Vice President, Brand",
@@ -503,6 +572,5 @@ export const advisors = {
       major: " ",
       bio: " ",
     },
-
   ],
 };
