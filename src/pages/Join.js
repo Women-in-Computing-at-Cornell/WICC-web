@@ -107,7 +107,7 @@ export default class Join extends Component {
       <div style={styles.container}>
         <JoinUs />
         <br />
-        <h1 style={{ fontWeight: "bold" }}>Get Involved</h1>
+        <h1 style={{ maxWidth: "100%", height: "auto", fontWeight: "bold", marginLeft: "calc((80% - 1000px) / 2)" }}>Get Involved</h1>
         <br />
 
         <div style={styles.row}>
