@@ -160,7 +160,15 @@ export default class Outreach extends Component {
             </p>
           </div>
           <div class="hero-image">
-            <img src={OutreachHero} style={{ width: "100%" }}></img>
+            <img
+              src={OutreachHero}
+              style={{
+                width: "100%",
+                height: "auto",
+                objectPosition: "0px -250px",
+                objectFit: "cover",
+              }}
+            ></img>
           </div>
         </div>
         <div class="page">
@@ -503,7 +511,7 @@ export default class Outreach extends Component {
                   />
                 </Col>
               </Row> */}
-              <div className="questions-cards-container">
+              <div className="questions-cards">
                 {vp.map((s, i) => (
                   <div key={i} className="question-card">
                     <QuestionsCard
@@ -516,7 +524,7 @@ export default class Outreach extends Component {
                   </div>
                 ))}
               </div>
-              <div className="questions-cards-container">
+              <div className="questions-cards">
                 {directors.map((s, i) => (
                   <div key={i} className="question-card">
                     <QuestionsCard
