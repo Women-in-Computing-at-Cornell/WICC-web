@@ -4,8 +4,10 @@ import { community } from "../boardData";
 import QuestionsCard from "./QuestionsCard.js";
 import "./programPages.css";
 import banner from "../../images/programs/mentorship_cropped.jpg";
-import mentorshipInfo from "../../images/programs/mentorship-info.jpg";
+import mentorshipInfo from "../../images/programs/mentorship_caro/mentorship-info.jpg";
+import ImgCarousel from "../../components/ImgCarousel.jsx";
 import "./programPages.css";
+import Carousel from "react-bootstrap/Carousel";
 
 export default class Mentorship extends Component {
   componentDidMount() {
@@ -29,6 +31,12 @@ export default class Mentorship extends Component {
       require.context("../../images/headshots/board", false, /\.jpg/)
     );
 
+    const carouselImages = importAll(
+      require.context("../../images/programs/mentorship_caro", false, /\.jpg/)
+    );
+
+    const imgNames = Object.keys(carouselImages);
+
     const linkStyle = {
       marginLeft: "10px", // Adjust the right margin to space out the links
     };
@@ -36,36 +44,69 @@ export default class Mentorship extends Component {
     return (
       <>
         <div className="full-width-banner">
-          <img src={banner} alt="Banner" class="banner" />
-          <div class="banner-text">
-            <p class="banner-header">Mentorship</p>
+          <img src={banner} alt="Banner" className="banner" />
+          <div className="banner-text">
+            <a href="/#/programs">
+              <button id="back">&lt; Back to Programs Page</button>
+            </a>
+            <p className="banner-header">Mentorship</p>
             <p>
               Our mentorship program strives to encourage and support students
               who are pursuing studies or future employment in computing by
-              connecting them with more experienced upperclassmen. The role of
-              the mentor is to empower their mentees and enhance their interests
-              in computing. Mentors and mentees will be matched primarily based
-              on academic and career interests.
+              connecting them with more experienced upperclassmen.
             </p>
           </div>
         </div>
+
         <div
           style={{
             display: "flex",
+            justifyContent: "center",
             alignItems: "center",
             background: "#f7f9f8",
-            padding: "40px",
+            padding: "30px",
+            // gap: "30px",
           }}
         >
-          <img
-            src={mentorshipInfo}
+          <div
             style={{
-              width: "45%",
-              borderRadius: "20px",
-              marginRight: "5%",
-              marginLeft: "8%",
+              width: "60%",
+              maxWidth: "500px",
+              display: "flex",
+              justifyContent: "center",
             }}
-          />
+          >
+            <Carousel
+              style={{
+                width: "70%",
+                // boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
+              }}
+            >
+              {Object.values(carouselImages).map((src, index) => (
+                <Carousel.Item key={index}>
+                  <div
+                    style={{
+                      display: "flex",
+                      justifyContent: "center",
+                      alignItems: "center",
+                      height: "100%",
+                    }}
+                  >
+                    <img
+                      className="d-block w-100"
+                      src={src}
+                      alt={`Slide ${index + 1}`}
+                      style={{
+                        objectFit: "cover",
+                        maxWidth: "100%",
+                        maxHeight: "100%",
+                      }}
+                    />
+                  </div>
+                </Carousel.Item>
+              ))}
+            </Carousel>
+          </div>
           <div>
             <p class="section-title">Mentorship Information</p>
             <ul>
@@ -86,30 +127,22 @@ export default class Mentorship extends Component {
         <div className="mentor-mentee-content">
           <div className="mentor-mentee-grid">
             <div className="mentor-mentee-column">
-              <h2
-                style={{
-                  padding: "10px",
-                  fontWeight: "bold",
-                  color: "black",
-                  fontSize: 28,
-                }}
-              >
-                Mentors
-              </h2>
-              <p style={{ padding: "16px", fontSize: 16 }}>
-                As a mentor you are expected to hold conversations with your
-                mentees monthly, help your mentees establish meaningful
-                connections, give advice on course selection, or otherwise. Any
-                motivated undergraduates, graduate students, and grads majoring
-                in or working CS or related technical fields can sign-up as a
-                mentor.
-                <br />
-                <br />
-                <h6>
+              <div>
+                <h2 className="mentor-mentee-header">Mentors</h2>
+                <p className="mentor-mentee-text">
+                  As a mentor, you are expected to hold conversations with your
+                  mentees monthly, help your mentees establish meaningful
+                  connections, give advice on course selection, or otherwise.
+                  Any motivated undergraduates, graduate students, and grads
+                  majoring in or working in CS or related technical fields can
+                  sign up as a mentor.
+                </p>
+              </div>
+              <div>
+                <h6 className="requirements-header-mentor">
                   <b>Requirements:</b>
                 </h6>
-                <ul></ul>
-                <ul>
+                <ul className="requirements-list-mentor">
                   <li>
                     Undergraduates must be sophomores, juniors, or seniors at
                     Cornell.
@@ -119,88 +152,46 @@ export default class Mentorship extends Component {
                     biweekly.
                   </li>
                 </ul>
-                <div style={{ display: "flex", justifyContent: "center" }}>
-                  <Button
-                    style={{
-                      backgroundColor: "black",
-                      color: "white",
-                      ...linkStyle,
-                    }}
-                    href="https://docs.google.com/forms/d/e/1FAIpQLSetjBeKhkapcHk0RtMoafbaE12gMS5kQ4qTLGWrjADagiTqvw/viewform"
-                  >
-                    Become a Mentor!
-                  </Button>
-                </div>
-              </p>
+              </div>
             </div>
+
             <div className="mentor-mentee-column">
-              <h2
-                style={{
-                  padding: "10px",
-                  fontWeight: "bold",
-                  color: "black",
-                  fontSize: 28,
-                }}
-              >
-                Mentees
-              </h2>
-              <p style={{ padding: "16px", fontSize: 16 }}>
-                Mentees are matched with experienced upperclassmen or alumni
-                mentors in groups of 2 mentors and 3-5 other mentees.
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <h6>
+              <div>
+                <h2 className="mentor-mentee-header">Mentees</h2>
+                <p className="mentor-mentee-text">
+                  Mentees are matched with experienced upperclassmen or alumni
+                  mentors in groups of 2 mentors and 3-5 other mentees.
+                </p>
+              </div>
+              <div>
+                <h6 className="requirements-header-mentor">
                   <b>Requirements:</b>
                 </h6>
-                <ul></ul>
-                <ul>
+                <ul className="requirements-list-mentor">
                   <li>
-                    Undergraduates must be freshman or sophomores at Cornell.
+                    Undergraduates must be freshmen or sophomores at Cornell.
                   </li>
                   <li>
                     Participate in five meetings throughout the semester with
                     the group.
                   </li>
                 </ul>
-                <div style={{ display: "flex", justifyContent: "center" }}>
-                  <Button
-                    style={{
-                      backgroundColor: "black",
-                      color: "white",
-                      marginTop: 45,
-                      ...linkStyle,
-                    }}
-                    href="https://docs.google.com/forms/d/e/1FAIpQLSeOZPJffYOUrGr65pawIY_YNJkax_ZEbxMmILyeIaxK356QWA/viewform"
-                  >
-                    Become a Mentee!
-                  </Button>
-                </div>
-              </p>
+              </div>
             </div>
           </div>
         </div>
-        <div
-          style={{
-            alignItems: "center",
-            background: "#f7f9f8",
-            padding: "3%",
-            paddingLeft: "8%",
-          }}
-        >
+        <div className="questions-section">
           <h2>
             <b>Questions?</b>
           </h2>
           <br />
           <p>
             Reach out to the following WICC members for clarification regarding
-            to Active Membership.
+            Active Membership.
           </p>
-          <div style={{ display: "flex", justifyContent: "center" }}>
+          <div className="questions-cards-container">
             {cod.map((s, i) => (
-              <div key={i} style={{ margin: "0 30px" }}>
+              <div key={i} className="question-card">
                 <QuestionsCard
                   name={s.name}
                   title={s.title}
