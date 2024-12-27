@@ -2,19 +2,46 @@ import React, { Component } from "react";
 // import Container from "react-bootstrap/Container";
 // import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
 import { Link } from "react-router-dom";
-
-// import Row from "react-bootstrap/Row";
-// import Col from "react-bootstrap/Col";
-// import Calendar from "@ericz1803/react-google-calendar";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import Sponsors from "./Sponsors";
 import axios from "axios";
+import joinushero from "../images/joinushero.jpg";
 
 import "./Join.css";
 // import { Center } from "devextreme-react/map";
 
 // const API_PATH = "http://localhost/WICC-WEB/src/action.php";
+
+const JoinUs = () => {
+  return (
+    //<div style={styles.container}>
+    <div className="hero">
+      <div className="hero-text">
+        <h1
+          style={{
+            marginBottom: "1.2rem",
+            fontWeight: "900",
+            fontSize: "3rem",
+          }}
+        >
+          Join Us
+        </h1>
+        <p>
+          Join us in empowering and uplifting students in the tech community at
+          Cornell. At WICC, we are committed to providing a supportive space for
+          growth, collaboration, and leadership. Connect with like-minded
+          individuals, gain mentorship, and make a lasting impact in the tech
+          world.
+        </p>
+      </div>
+      <div className="hero-image">
+        <img src={joinushero} style={{ width: "100%" }} />
+      </div>
+    </div>
+    //</div>
+  );
+};
 
 export default class Join extends Component {
   constructor(props, context) {
@@ -60,7 +87,7 @@ export default class Join extends Component {
   render() {
     let styles = {
       container: {
-        margin: "5%",
+        margin: "0%", //changes the top margin for hero image
         fontFamily: "Inter",
       },
       row: {
@@ -83,7 +110,19 @@ export default class Join extends Component {
 
     return (
       <div style={styles.container}>
-        <h1 style={{ fontWeight: "bold" }}>Get Involved</h1>
+        <JoinUs />
+        <br />
+        <h1
+          style={{
+            maxWidth: "100%",
+            height: "auto",
+            fontWeight: "bold",
+            marginLeft: "calc((80% - 1000px) / 2)",
+          }}
+        >
+          Get Involved
+        </h1>
+        <br />
 
         <div style={styles.row}>
           <div style={styles.col}>

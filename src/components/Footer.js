@@ -22,6 +22,7 @@ class Footer extends React.Component {
           paddingTop: "2%",
           display: "flex",
           flexDirection: "column",
+          backgroundColor: "#77AEA2"
         }}
       >
         <div className="footerNav">
@@ -32,6 +33,7 @@ class Footer extends React.Component {
               flexShrink: "0",
             }}
             src={wiccLogo}
+            className="footerwicc"
           ></Image>
           <div className="pages">
             <Navbar.Brand className="mr-auto" href="/">

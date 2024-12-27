@@ -1,22 +1,26 @@
-.navbar .navbar-nav .nav-link:hover {
-  color: #000000;
-  transition: 0.5s ease;
-  text-decoration: underline;
-  text-decoration-color: #fff;
-  text-decoration-thickness: 3px;
-  font-size: 16px;
-  font-weight: bolder;
-}
-
 .navbar {
   position: absolute;
   top: 0;
   padding-left: 70px;
   padding-right: 70px;
   background-color: transparent !important;
-  /* outline: solid 1px rgb(219, 219, 219); */
   z-index: 50;
   width: 100%;
+}
+
+.toggle-button:hover {
+  color: #9ce2d3 !important;
+  transition: 0.5s ease;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+  color: #9ce2d3 !important;
+  transition: 1s ease;
+  text-decoration: underline;
+  text-decoration-color: #fff;
+  text-decoration-thickness: 3px;
+  font-size: 16.5px;
+  font-weight: bolder;
 }
 
 .navbar .navbar-brand {
@@ -31,16 +35,14 @@
   flex-direction: row;
   width: 70%;
   justify-content: space-between;
-  /* background-color: #000000; */
 }
 
 .navbar .navbar-brand .brand-text {
   display: flex;
   flex-direction: row;
   margin-left: 10px;
-  /* Adjust the margin as needed */
   text-align: left;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .navbar .join-us-button .btn {
@@ -50,9 +52,57 @@
 }
 
 .navbar .join-us-button .btn:hover {
-  /* transform: translateY(-2px); */
-  /* box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.2); */
   cursor: pointer;
+  background-color: #9ce2d3 !important;
   font-weight: bolder;
-  border: 3px solid white;
+  color: black;
+}
+
+.navbar-logo {
+  padding-bottom: 1rem;
+}
+
+@media (max-width: 960px) {
+  body {
+    margin-top: 20%;
+  }
+  .navbar {
+    position: relative;
+    top: 0;
+    z-index: 5;
+    width: 100%;
+    padding-inline: 40px;
+    color: black;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .mobile-navbar {
+    background-color: white !important;
+    padding-inline: 30px;
+  }
+
+  .mobile-links {
+    background-color: white !important;
+    width: 100%;
+    top: 70px;
+    padding-bottom: 1.5rem;
+  }
+
+  .mobile-links .nav-link {
+    color: black !important;
+  }
+
+  .mobile-links .nav-link:hover {
+    color: #9ce2d3 !important;
+  }
+
+  .navbar .join-us-button {
+    padding-top: 0.8rem;
+  }
+
+  .navbar .join-us-button .btn {
+    background-color: black;
+    color: white;
+  }
 }

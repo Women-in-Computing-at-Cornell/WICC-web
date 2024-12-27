@@ -16,6 +16,21 @@ h2 {
   color: #fff;
 }
 
+.responsive-text {
+  display: none;
+}
+.responsive-title {
+  font-size: 3rem;
+  position: static;
+  text-align: left;
+}
+/* Show only for screens larger than 414px */
+@media screen and (min-width: 761px) {
+  .responsive-text {
+    display: block;
+  }
+}
+
 .hero-content h2 {
   font-size: 3rem;
   text-align: left;

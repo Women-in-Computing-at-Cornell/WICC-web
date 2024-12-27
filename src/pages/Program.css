@@ -8,7 +8,10 @@ body {
 
 .hero {
   flex-shrink: 0;
+  flex-direction:column;
   color: white;
+  min-height: 60vh;
+  /*pushes everything down (doesnt help the text) */
 }
 
 .hero-text {
@@ -36,6 +39,12 @@ body {
 .hero-text a {
   color: white;
   text-decoration: underline;
+}
+
+@media screen and (min-width: 731px) {
+  .responsive-text {
+    display: block;
+  }
 }
 
 .hero-text a:hover {
@@ -195,27 +204,20 @@ body {
 
   .item1 h1,
   .item1 p {
-    /* color: #000;
-
-    font-family: Mulish;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 150%; */
     margin: 0 auto;
   }
 
   .hero-text {
     position: absolute;
     /* top: 15%; */
-    margin-top: 10%;
+    margin-top: 5% 4%;
     /* left: 0; */
     /* transform: translateY(-50%); */
     color: white;
     text-align: left;
     z-index: 2;
     /* max-width: 40%; */
-    margin-right: 20%;
+    margin-right: 10%;
     padding-left: 8%;
   }
 }

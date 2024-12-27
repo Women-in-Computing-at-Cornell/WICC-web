@@ -343,15 +343,15 @@ export const academic = {
       bio: " ",
     },
     {
-      name: "Shriya Sudhakar",
+      name: "Arshia Agrawal",
       position: "Career Development Co-Director",
-      netId: "ss3576",
+      netId: "aa2443",
       bio: " ",
     },
     {
-      name: "Ishita Yadav",
+      name: "Alina Yuan",
       position: "Career Development Co-Director",
-      netId: "ily4",
+      netId: "ay332",
       bio: " ",
     },
     {

@@ -10,6 +10,15 @@
   outline: solid 1px rgb(219, 219, 219);
 }
 
+.footer .navbar-brand:hover,
+.footer .nav-link:hover {
+  color: #000000;
+  transition: 0.3s ease;
+  text-decoration: underline;
+  text-decoration-color: #9ce2d3;
+  text-decoration-thickness: 3px;
+}
+
 .icon {
   border-radius: 19.286px;
   background: linear-gradient(
@@ -61,4 +70,81 @@
 
 .footer {
   overflow: hidden !important;
+}
+
+@media (max-width: 760px) {
+
+  .fixed-bottom{
+    background-color: #77AEA2 !important;
+  }
+  .copyright {
+    padding: 0;
+    text-align: left;
+    color: white !important;
+  }
+
+  .navbar-text{
+    color: white;
+  }
+
+  .footerNav {
+    flex-direction: column;
+    padding: 15px 0;
+    width: auto;
+    margin: 0;
+    align-items: left;
+    display: inline;
+  }
+
+  .pages {
+    flex-direction: column;
+    justify-content: left;
+    margin-top: 15px;
+    display: block;
+    margin: 15 0 0 0;
+    padding: 0;
+    
+  }
+
+  .color-nav{
+    gap: 10px !important;
+  }
+
+  .mr-auto {
+    justify-content: left;
+    margin: 0;
+  }
+
+  .navbar-nav {
+    margin-top: 10px;
+    justify-content: left;
+    padding: 0;
+  }
+
+  .navbar .navbar-brand {
+    display: flex;
+    flex-direction: row;
+    padding-top: 15px;
+    justify-content: left;
+    color: white;
+    font-weight: bold;
+  }
+  .copyright {
+    width: 100%;
+    color: white;
+  }
+
+  
+
+  .nav-link{
+    padding-left: 0 !important;
+    padding-right: 15px !important;
+  }
+  .footerwicc{
+    display: none;
+  }
+
+  .color-nav {
+    margin-top: 0px;
+  }
 }
