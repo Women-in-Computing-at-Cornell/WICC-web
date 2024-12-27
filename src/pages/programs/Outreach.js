@@ -39,7 +39,7 @@ export default class Outreach extends Component {
     let vp = outreach.members.filter(
       (record) => record.position === "Vice President, Outreach"
     );
-    directors = directors.concat(vp);
+    // directors = directors.concat(vp);
 
     function importAll(r) {
       let images = {};
@@ -469,7 +469,7 @@ export default class Outreach extends Component {
                 paddingRight: "5%",
               }}
             >
-              <Row style={{ paddingBottom: "1%" }}>
+              {/* <Row style={{ paddingBottom: "1%" }}>
                 <Col>
                   <QuestionsCard
                     name={directors[3].name}
@@ -502,7 +502,33 @@ export default class Outreach extends Component {
                     netId={directors[2].netId}
                   />
                 </Col>
-              </Row>
+              </Row> */}
+              <div className="questions-cards-container">
+                {vp.map((s, i) => (
+                  <div key={i} className="question-card">
+                    <QuestionsCard
+                      name={s.name}
+                      title={s.title}
+                      img={boardHeadshots[s.netId + ".jpg"]}
+                      netId={s.netId}
+                      x
+                    />
+                  </div>
+                ))}
+              </div>
+              <div className="questions-cards-container">
+                {directors.map((s, i) => (
+                  <div key={i} className="question-card">
+                    <QuestionsCard
+                      name={s.name}
+                      title={s.title}
+                      img={boardHeadshots[s.netId + ".jpg"]}
+                      netId={s.netId}
+                      x
+                    />
+                  </div>
+                ))}
+              </div>
             </Container>
           </center>
         </div>

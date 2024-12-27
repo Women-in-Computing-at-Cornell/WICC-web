@@ -1,6 +1,4 @@
 import React, { Component } from "react";
-// import Container from "react-bootstrap/Container";
-// import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
 import { Link } from "react-router-dom";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
@@ -9,13 +7,9 @@ import axios from "axios";
 import joinushero from "../images/joinushero.jpg";
 
 import "./Join.css";
-// import { Center } from "devextreme-react/map";
-
-// const API_PATH = "http://localhost/WICC-WEB/src/action.php";
 
 const JoinUs = () => {
   return (
-    //<div style={styles.container}>
     <div className="hero">
       <div className="hero-text">
         <h1
