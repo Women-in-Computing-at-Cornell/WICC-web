@@ -24,8 +24,8 @@ import QuestionsCard from "./QuestionsCard.js";
 import Image from "react-bootstrap/Image";
 import medal from "../../images/medal.jpg";
 import "./programPages.css";
-import tanisha from "../../images/headshots/board/tk494.jpg"
-import sarah from "../../images/headshots/board/sy398.jpg"
+// import tanisha from "../../images/headshots/board/tk494.jpg"
+// import sarah from "../../images/headshots/board/sy398.jpg"
 export default class Lunch extends Component {
   componentDidMount() {
     window.scrollTo(0, 0);

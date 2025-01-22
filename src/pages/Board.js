@@ -93,8 +93,9 @@ export default class Board extends Component {
       <div>
         <div className="hero-container">
           <img
+            className="heroimg"
             src={hero}
-            style={{ maxWidth: "100%", height: "auto" }}
+            style={{ maxWidth: "100%", height: "100%" }}
             alt="Description"
           />
           <div className="hero-content">
@@ -117,6 +118,11 @@ export default class Board extends Component {
               students to discover their love for computing.
             </p>
           </div>
+          <img
+            src={require("../images/downarrow.png")}
+            alt="Scroll Down"
+            className="downward-arrow"
+          />
         </div>
         <div className="containerPage">
           <div style={{ display: "flex" }}>

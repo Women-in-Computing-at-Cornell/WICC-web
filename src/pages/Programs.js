@@ -25,7 +25,7 @@ const Programs = () => {
   return (
     <div>
       <div className="hero">
-        <div className="hero-text">
+        <div className="hero-text" style={{top:"27%"}}>
           <h1
             className="responsive-title"
             style={{
@@ -48,9 +48,14 @@ const Programs = () => {
             participant.
           </p>
         </div>
-        <div className="hero-image">
-          <img src={Programhero} style={{ width: "100%" }}></img>
+        <div className="hero-image" style={{width: "100vw", height: "100vh", minHeight: "100vh"}}>
+          <img src={Programhero} style={{ width: "100%", height:"100%" }}></img>
         </div>
+        <img
+            src={require("../images/downarrow.png")}
+            alt="Scroll Down"
+            className="downward-arrow"
+          />
       </div>
       <h2 className="what-we-do">What We Do</h2>
       <div className="events-grid">

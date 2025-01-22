@@ -17,7 +17,7 @@ body {
 .hero-text {
   position: absolute;
   /* top: 15%; */
-  margin-top: 12%;
+  margin-top: 30%;
   /* left: 0; */
   /* transform: translateY(-50%); */
   color: white;
@@ -39,6 +39,35 @@ body {
 .hero-text a {
   color: white;
   text-decoration: underline;
+}
+
+
+.downward-arrow {
+  position: absolute;
+  bottom: 40px;  /* Adjust position from the bottom */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;  /* Adjust size */
+  height: auto;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+  animation: bounce 1.5s infinite;
+  cursor: pointer;
+}
+
+/* Smooth hover effect */
+.downward-arrow:hover {
+  opacity: 1;
+}
+
+/* Bouncing animation */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  50% {
+    transform: translateX(-50%) translateY(10px);
+  }
 }
 
 @media screen and (min-width: 731px) {
