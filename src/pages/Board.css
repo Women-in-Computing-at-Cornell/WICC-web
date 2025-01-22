@@ -24,6 +24,36 @@ h2 {
   position: static;
   text-align: left;
 }
+
+.downward-arrow {
+  position: absolute;
+  bottom: 40px;  /* Adjust position from the bottom */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;  /* Adjust size */
+  height: auto;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+  animation: bounce 1.5s infinite;
+  cursor: pointer;
+}
+
+/* Smooth hover effect */
+.downward-arrow:hover {
+  opacity: 1;
+}
+
+/* Bouncing animation */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  50% {
+    transform: translateX(-50%) translateY(10px);
+  }
+}
+
+
 /* Show only for screens larger than 414px */
 @media screen and (min-width: 761px) {
   .responsive-text {
@@ -172,8 +202,8 @@ h2 {
     overflow: hidden;
   }
   .hero-container img {
-    width: 100%;
-    height: 100%;
+    /* width: 100%;
+    height: 100%; */
     object-fit: cover; /* Ensures the image covers the entire area without distortion */
   }
 }

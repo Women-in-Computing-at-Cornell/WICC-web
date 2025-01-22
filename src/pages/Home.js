@@ -62,7 +62,7 @@ const Home = () => {
       <div className="container">
         <div className="home-container">
           <section className="hero-container">
-            <Image src={banner} className="mission-image"></Image>
+            <Image src={banner} className="mission-image" style={{ width: "100%", height:"100%" }}></Image>
             <div className="hero-content">
               <h2>
                 Building a supportive tech community for women and allies.
@@ -74,6 +74,11 @@ const Home = () => {
                 future of tech. We embrace all gender identities.
               </p>
             </div>
+            <img
+            src={require("../images/downarrow.png")}
+            alt="Scroll Down"
+            className="downward-arrow"
+          />
           </section>
 
           {/* Semester Outlook */}

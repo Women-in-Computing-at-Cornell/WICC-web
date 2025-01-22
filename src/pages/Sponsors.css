@@ -5,7 +5,7 @@
 
 .hero-text {
   position: absolute;
-  top: 10%;
+  top: 30%;
   margin-top: 5%;
   /* left: 0; */
   /* transform: translateY(-50%); */
@@ -21,8 +21,9 @@
   filter: brightness(40%);
   object-fit: cover;
   overflow: hidden;
-  width: 100%;
-  max-height: 700px;
+  width: 100vw;
+  height:100vh;
+
 }
 
 .hero-text a {
@@ -32,6 +33,34 @@
 
 .hero-text a:hover {
   box-shadow: 0px 1px 1px 1px rgb(68, 68, 68);
+}
+
+.downward-arrow {
+  position: absolute;
+  bottom: 40px;  /* Adjust position from the bottom */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;  /* Adjust size */
+  height: auto;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+  animation: bounce 1.5s infinite;
+  cursor: pointer;
+}
+
+/* Smooth hover effect */
+.downward-arrow:hover {
+  opacity: 1;
+}
+
+/* Bouncing animation */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  50% {
+    transform: translateX(-50%) translateY(10px);
+  }
 }
 
 .carousel-wrapper {
@@ -70,6 +99,19 @@
   font-weight: 400;
   line-height: 150%;
 }
+
+.hero-img{
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+.hero img {
+  object-fit: cover; /* Ensures the image covers the entire area without distortion */
+}
+
+
+
+
 
 @media screen and (max-width: 1100px) {
   .benefits-section {
@@ -127,7 +169,7 @@ tbody tr:nth-child(odd) {
 }
 
 tbody tr td {
-  padding: 16px 10px !important;
+  padding: 5px 15px !important;
 }
 
 td {
@@ -147,8 +189,10 @@ td:last-child {
 }
 
 #sponsorsTable img {
-  width: 108px;
+  width: 60px;
   height: 40px;
+  display: block;
+  margin: auto;
 }
 
 .container-section {
@@ -242,4 +286,5 @@ td:last-child {
     padding-left: 30px;
     padding-right: 30px;
   }
+  
 }

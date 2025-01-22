@@ -26,7 +26,7 @@ const Sponsors = () => {
   return (
     <div>
       <div className="hero">
-        <div className="hero-text">
+        <div className="hero-text" style={{top: "30%"}}>
           <h1 style={{ marginBottom: "1.2rem", fontWeight: "900" }}>
             {" "}
             Industry Partnerships{" "}
@@ -37,9 +37,14 @@ const Sponsors = () => {
             for careers in industry and academia.
           </p>
         </div>
-        <div className="hero-image">
-          <img src={sponsorsImg} style={{ width: "100%" }}></img>
+        <div className="hero-image" style={{width: "100vw", height: "100vh", minHeight: "100vh"}}>
+          <img src={sponsorsImg} style={{ width: "100%", height: "100%" }}></img>
         </div>
+        <img
+            src={require("../images/downarrow.png")}
+            alt="Scroll Down"
+            className="downward-arrow"
+          />
       </div>
       <div>
         <section className="benefits-section">
