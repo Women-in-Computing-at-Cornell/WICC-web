@@ -16,7 +16,7 @@ import www2 from "../images/home/www2.png";
 import www3 from "../images/home/www3.png";
 import { Link } from "react-router-dom";
 
-//example!
+
 
 function importAll(r) {
   let images = {};
