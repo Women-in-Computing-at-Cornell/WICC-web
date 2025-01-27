@@ -93,9 +93,9 @@ export default class Board extends Component {
       <div>
         <div className="hero-container">
           <img
-            className="heroimg"
+            className="heroimg "
             src={hero}
-            style={{ maxWidth: "100%", height: "100%" }}
+            style={{height: "100%",objectFit:"cover" }}
             alt="Description"
           />
           <div className="hero-content">
@@ -105,7 +105,7 @@ export default class Board extends Component {
             >
               Who We Are
             </h2>
-            <p className="responsive-text" style={{ marginBottom: "20px" }}>
+            <p className="responsive-text wwa" style={{ marginBottom: "20px" }}>
               WICC was founded in March 2013 to bring together women and gender
               minorities in computing fields at Cornell, expand their
               opportunities and successes, provide a support network, and
@@ -116,6 +116,13 @@ export default class Board extends Component {
               visible, providing role models and dispelling stereotypes, WICC
               fosters a support network to empower everyone and encourage young
               students to discover their love for computing.
+            </p>
+            <p className="responsive-text wwa2" style={{ marginBottom: "20px", display:"none" }}>
+              WICC was founded in March 2013 to bring together women and gender
+              minorities in computing fields at Cornell, expand their
+              opportunities and successes, provide a support network, and
+              empower them to encourage younger underrepresented students to
+              consider computing fields. 
             </p>
           </div>
           <img

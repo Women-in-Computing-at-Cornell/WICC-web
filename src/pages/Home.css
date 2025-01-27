@@ -12,11 +12,14 @@ body {
   padding-bottom: 20px;
   max-width: 100%;
 }
-
+/* 
 .responsive-text {
   display: none;
-}
+} */
 
+.hero-content{
+  left: 35% !important;
+}
 
 .downward-arrow {
   position: absolute;
@@ -184,8 +187,8 @@ body {
   display: flex;
   justify-content: center;
   text-align: center;
-  padding-left: 8rem;
-  padding-right: 8rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
 }
 
 .get-involved {
@@ -196,7 +199,7 @@ body {
 .get-involved-header {
   text-align: left;
   font-weight: bold;
-  margin-left: 9rem;
+  margin-left: 5rem;
 }
 
 .get-involved-grid {
@@ -215,6 +218,8 @@ body {
   padding: 1.5rem;
   margin: 10px;
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
+  justify-content: flex-start; /* Prevents stretching */
+  min-height: auto; /* Ensures it only grows as needed */
 }
 
 .get-involved-columne {
@@ -227,25 +232,39 @@ body {
   padding: 1.5rem;
   margin: 10px;
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
+
+  justify-content: flex-start; /* Prevents stretching */
+  min-height: auto; /* Ensures it only grows as needed */
 }
 
 .get-involved-content {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
+  flex-grow: 1;
+  align-items: flex-start; /* Ensures everything inside is left-aligned */
+  justify-content: flex-end;
+  min-height: auto;
+
 }
 
-.arrow-img,
+
+
+.button-name,
 .button-description {
   display: flex;
   justify-content: flex-start;
+  margin-top: auto; /* Pushes text to the bottom */
+  align-self: flex-end;
 }
+
+
 
 .button-name {
   display: flex;
   justify-content: flex-start;
   font-weight: 800;
+  text-align: left;
+  margin-top: auto;
 }
 
 .carousel-wrapper {
@@ -352,7 +371,7 @@ body {
 @media (max-width: 760px) {
   .hero-container {
     position: relative;
-    height: 500px;
+    height: 100vh;
     overflow: hidden;
     margin-top: -20px;
   }
@@ -365,7 +384,7 @@ body {
 
   .hero-content {
     position: absolute;
-    top: 53%;
+    top: 40% !important;
     left: 35%;
     transform: translate(-50%, -50%);
     z-index: 1;
@@ -373,6 +392,8 @@ body {
     color: #fff;
     padding: 20px;
     margin-inline: 1rem;
+    margin-left: 0;
+    top:40%;
   }
 
   .hero-container .hero-content h2 {
@@ -478,7 +499,7 @@ body {
     background-color: #9ce2d3;
     min-height: 150px;
     border-radius: 25px;
-    padding: 1.5rem;
+    padding: 1.2rem;
     margin: 0.5em;
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
     max-width: 45%;
@@ -491,7 +512,7 @@ body {
     background-color: white;
     min-height: 150px;
     border-radius: 25px;
-    padding: 1.5rem;
+    padding: 1.2rem;
     margin: 0.5em;
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
     max-width: 45%;

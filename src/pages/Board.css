@@ -15,10 +15,10 @@ h2 {
   text-align: left;
   color: #fff;
 }
-
+/* 
 .responsive-text {
   display: none;
-}
+} */
 .responsive-title {
   font-size: 3rem;
   position: static;
@@ -148,6 +148,13 @@ h2 {
 
   p {
     font-size: smaller;
+  }
+
+  .wwa {
+    display: none;
+  }
+  .wwa2{
+    display: flex !important;
   }
 }
 

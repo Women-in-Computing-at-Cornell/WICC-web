@@ -1,3 +1,60 @@
 /* .container {
   
 } */
+
+.shorthero{
+    height: 100% !important;
+}
+
+.ht{
+        position: absolute;
+        top: 250px;
+        transform: translateY(-50%); /* Centers it vertically */
+        color: white;
+        text-align: left;
+        z-index: 2;
+        max-width: 40%;
+        margin-right: 60%;
+        padding-left: 8%;
+}
+
+@media (max-width: 1300px){
+    .joinContainer h2{
+        font-size: 22px;
+    }
+
+}
+
+@media (max-width: 700px){
+    .h{
+        font-size: 22px;
+        margin-left: 20px
+    }
+
+    .shorthero{
+        height: 50vh !important;
+    }
+
+}
+
+.scroll-container {
+    overflow-x: auto;  /* Enables horizontal scrolling */
+    scrollbar-width: thin; /* Custom scrollbar styling */
+    scrollbar-color: #ccc transparent;
+    padding-bottom: 10px;
+  }
+  
+  /* For Webkit browsers (Chrome, Safari) */
+  .scroll-container::-webkit-scrollbar {
+    height: 8px;
+  }
+  
+  .scroll-container::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 5px;
+  }
+  
+  .scroll-container::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  

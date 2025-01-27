@@ -75,7 +75,7 @@
   display: flex;
   flex-direction: row;
   width: 100%;
-  padding: 96px 110px;
+  padding: 10vw;
   align-items: center;
   gap: 160px;
   background: var(--3, #fff);
@@ -109,6 +109,9 @@
   object-fit: cover; /* Ensures the image covers the entire area without distortion */
 }
 
+.hero hi{
+  min-height: 400px;
+}
 
 
 

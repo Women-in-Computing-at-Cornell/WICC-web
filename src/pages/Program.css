@@ -10,7 +10,7 @@ body {
   flex-shrink: 0;
   flex-direction:column;
   color: white;
-  min-height: 60vh;
+  min-height: 300px;
   /*pushes everything down (doesnt help the text) */
 }
 
@@ -84,9 +84,9 @@ body {
   font-size: 30px;
   font-weight: bold;
   text-align: left;
-  margin-top: 60px;
-  margin-bottom: 30px;
-  margin-left: calc((100% - 1000px) / 2);
+  margin-top: 5%;
+  margin-bottom: 0;
+  margin-left: 5%;
   max-width: 1000px;
   width: 100%;
 }
@@ -134,9 +134,7 @@ body {
   font-size: 30px;
   font-weight: bold;
   text-align: left;
-  margin-top: 80px;
-  margin-bottom: 30px;
-  margin-left: calc((100% - 1000px) / 2);
+  margin: 5%;
   max-width: 1000px;
   width: 100%;
 }
@@ -156,7 +154,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-left: calc((100% - 1000px) / 2);
+  margin: 0 5% 5% 5%;
   max-width: 1000px;
 }
 
@@ -174,7 +172,7 @@ body {
 }
 
 .events-grid {
-  margin: 0 auto;
+  margin: 4% 5%;
   overflow-x: hidden;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -220,10 +218,17 @@ body {
   text-align: left;
 }
 
+@media (max-width: 1300px){
+  .hero-text{
+    margin-right: 0 !important;
+    max-width: 80% !important;
+  }
+}
+
 @media (max-width: 1000px) {
   .events-grid {
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    margin: 7.5% 5%;
+    margin: 4% 5%;
   }
 
   .item1 {

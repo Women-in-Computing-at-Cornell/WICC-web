@@ -38,7 +38,7 @@ const Sponsors = () => {
           </p>
         </div>
         <div className="hero-image" style={{width: "100vw", height: "100vh", minHeight: "100vh"}}>
-          <img src={sponsorsImg} style={{ width: "100%", height: "100%" }}></img>
+          <img src={sponsorsImg} style={{ width: "100%", height: "100%" }} className="hi"></img>
         </div>
         <img
             src={require("../images/downarrow.png")}

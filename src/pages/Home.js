@@ -249,7 +249,7 @@ const Home = () => {
                     ></Image>
                     <div>
                       <small className="button-description">Join Us</small>
-                      <h4 className="button-name">Active Membership</h4>
+                      <h4 className="button-name">Join The Team</h4>
                     </div>
                   </div>
                 </Link>

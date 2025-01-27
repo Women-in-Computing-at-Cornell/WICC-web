@@ -11,7 +11,7 @@ import "./Join.css";
 const JoinUs = () => {
   return (
     <div className="hero">
-      <div className="hero-text">
+      <div className="ht hero-text">
         <h1
           style={{
             marginBottom: "1.2rem",
@@ -29,7 +29,7 @@ const JoinUs = () => {
           world.
         </p>
       </div>
-      <div className="hero-image">
+      <div className="hero-image shorthero">
         <img src={joinushero} style={{ width: "100%" }} />
       </div>
     </div>
@@ -81,21 +81,30 @@ export default class Join extends Component {
   render() {
     let styles = {
       container: {
-        margin: "0%", //changes the top margin for hero image
+        margin: "0%", // Changes the top margin for hero image
         fontFamily: "Inter",
+        paddingBottom: "5%",
       },
       row: {
-        margin: "0",
         display: "flex",
-        justifyContent: "space-evenly",
+        flexWrap: "nowrap",  // Prevents wrapping into multiple rows
+        overflowX: "auto",  // Enables horizontal scrolling if content overflows
+        whiteSpace: "nowrap",
+        gap: "50px",  // Adds 50px gap between columns
+        paddingBottom: "10px",  // Prevents scrollbar from overlapping content
+        margin: "0% 4%",
       },
       col: {
-        width: "20%",
-        margin: "2.3% 0",
+        minWidth: "320px",  // Each column has a fixed minimum width
+        maxWidth: "320px",
+        flex: "0 0 auto",  // Prevents columns from shrinking or growing
         backgroundColor: "#9CE2D3",
-        padding: "2.5%",
-        paddingBottom: "5%",
+        padding: "30px",
         borderRadius: ".5em",
+        textAlign: "center",
+        wordWrap: "break-word",  // Ensures text wraps inside the column
+        overflowWrap: "break-word",
+        whiteSpace: "normal",  // Allows text to wrap instead of staying on one line
       },
       link: {
         textDecoration: "underline",
@@ -103,7 +112,7 @@ export default class Join extends Component {
     };
 
     return (
-      <div style={styles.container}>
+      <div style={styles.container} className="joinContainer">
         <JoinUs />
         <br />
         <h1
@@ -111,20 +120,17 @@ export default class Join extends Component {
             maxWidth: "100%",
             height: "auto",
             fontWeight: "bold",
-            marginLeft: "calc((80% - 1000px) / 2)",
-          }}
+            margin: "3% 4% 0 4%",
+          }} className="h"
         >
           Get Involved
         </h1>
         <br />
 
-        <div style={styles.row}>
+        <div style={styles.row} className="scroll-container">
           <div style={styles.col}>
             <h2>Students</h2>
-            <p>
-              Join Our Listserve and Slack! Click on the link and press send to
-              join for the Listserve!{" "}
-            </p>
+            <p>Join Our Listserve and Slack! Click on the link and press send to join for the Listserve!</p>
             <center>
               <Button
                 href="mailto:wicc-l-request@cornell.edu?subject=Join"
@@ -137,7 +143,7 @@ export default class Join extends Component {
               >
                 ListServe
               </Button>
-              <p></p>
+              {/* <p></p> */}
               <Button
                 href="https://join.slack.com/t/wiccgbodymember/shared_invite/zt-1t2uwgfld-dPVydWuvlnK4N2om4UIIcg"
                 style={{
@@ -151,12 +157,10 @@ export default class Join extends Component {
               </Button>
             </center>
           </div>
+
           <div style={styles.col}>
             <h2>Corporate</h2>
-            <p>
-              Interested in hosting an event with us? Contact us at{" "}
-              <a href="mailto:wicc@cornell.edu">wicc@cornell.edu</a>
-            </p>
+            <p>Interested in hosting an event with us? Contact us at <a href="mailto:wicc@cornell.edu">wicc@cornell.edu</a></p>
             <center>
               <p> </p>
               <Button
@@ -172,14 +176,14 @@ export default class Join extends Component {
               </Button>
             </center>
           </div>
+
           <div style={styles.col}>
             <Link to="/membership" style={styles.link}>
               <h2>Active Membership</h2>
             </Link>
             <p>Learn how to become a WICC Active Member</p>
           </div>
-        </div>
-        <div style={styles.row}>
+
           <div style={styles.col}>
             <h2>Alumni</h2>
             <p>Join our alumni network to stay involved with WICC!</p>
@@ -196,6 +200,7 @@ export default class Join extends Component {
               </Button>
             </center>
           </div>
+
           {/* <div style={styles.col}>
             <Link to="/prospective" style={styles.link}><h2>Prospective Students</h2>
             </Link>
