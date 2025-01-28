@@ -13,6 +13,12 @@ export const faculty = {
         "\nBala is committed to increasing diversity in computer science. As the only woman in her undergraduate CS class, she appreciates the progress that has been made in the past decade, but there is more work to be done in academia and particularly in industry.",
     },
     {
+      name: "Dr. LeeAnn Roberts",
+      netId: "leeann.roberts",
+      position: "Director of DEIB at College of Computing and Information Science",
+      bio: "Dr. LeeAnn Roberts collaborates with collegiate, corporate, and community partners to broaden participation in tech and promote a cultural climate that celebrates diversity, equity, inclusion, and belonging.",
+    },
+    {
       name: "Anne Bracy",
       netId: "awb93",
       position: "Senior Lecturer",
@@ -284,6 +290,24 @@ export const technical = {
     {
       name: "Tina Chen",
       netId: "tc663",
+      position: "Designer",
+      bio: " ",
+    },
+    {
+      name: "Yuhan Sun",
+      netId: "ys728",
+      position: "Developer",
+      bio: " ",
+    },
+    {
+      name: "Genie Kang",
+      netId: "elk84",
+      position: "Designer",
+      bio: " ",
+    },
+    {
+      name: "Leah Kim",
+      netId: "lk552",
       position: "Designer",
       bio: " ",
     },

@@ -9,6 +9,12 @@ export const facultyData = [
       "\nBala is committed to increasing diversity in computer science. As the only woman in her undergraduate CS class, she appreciates the progress that has been made in the past decade, but there is more work to be done in academia and particularly in industry.",
   },
   {
+    name: "Dr. LeeAnn Roberts",
+    img: "leeann.roberts.jpg",
+    title: "Director of DEIB at Bowers College of Computing and Information Science",
+    bio: "Dr. LeeAnn Roberts collaborates with collegiate, corporate, and community partners to broaden participation in tech and promote a cultural climate that celebrates diversity, equity, inclusion, and belonging.",
+  },
+  {
     name: "Anne Bracy",
     img: "AnneBracy.jpg",
     title: "Senior Lecturer",
@@ -26,4 +32,5 @@ export const facultyData = [
     title: "Assistant Professor",
     bio: "Karen Levy is an assistant professor in the Department of Information Science at Cornell University and associated faculty at Cornell Law School. She researches the social, legal, and ethical implications of new technologies, with particular focus on inequality, labor, and intimacy. She holds a Ph.D. in Sociology from Princeton University and a J.D. from Indiana University Maurer School of Law. She is currently at work on a book tracing the emergence of monitoring technologies in the United States long-haul trucking industries. \nI am committed to supporting diversity in CIS because we can't find solutions to the social or technical problems we work on without the benefit of multiple perspectives and lived experiences. Computing touches every part of life and every social institution, and it's key that we have diverse voices represented to ensure that new technology is developed and used in ways that address the entrenched histories of inequality and injustice in our society.I am committed to opening up space for all students to participate fully in CIS disciplines, and feel a strong personal commitment to ensuring that ours is a community in which each person's expertise and experiences are valued.",
   },
+  
 ];
