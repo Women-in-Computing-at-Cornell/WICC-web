@@ -141,6 +141,7 @@ img {
 .full-width-banner {
   position: relative;
   width: 100%;
+  height: auto;
   margin: 0;
   padding: 0;
   overflow: hidden;
@@ -164,7 +165,9 @@ img {
 
 .banner3 {
   width: 100%;
-  object-fit: cover;
+  height: 100%;
+  object-fit: cover; /* Ensure the image scales correctly */
+  display: block;
   filter: brightness(40%);
 }
 
@@ -207,6 +210,29 @@ img {
   font-size: 3em;
   font-weight: bold;
 }
+
+
+/* Make responsive on mobile */
+@media (max-width: 768px) {
+  .full-width-banner3 {
+    height: 300px;  
+  }
+
+  .banner-text3 {
+    width: 80%;  
+    left: 5%;
+    top: 50%;
+  }
+
+  .banner-header {
+    font-size: 2.2em;  
+  }
+
+  .banner-text3 p {
+    font-size: 14px;  
+  }
+}
+
 
 .section-title {
   font-size: 1.5em;
@@ -280,6 +306,7 @@ img {
   border-radius: 20px;
 }
 
+ 
 .img-col {
   padding-left: 19%;
   padding-bottom: 50px;
