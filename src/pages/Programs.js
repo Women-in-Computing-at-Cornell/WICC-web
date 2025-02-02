@@ -63,7 +63,7 @@ const Programs = () => {
           <div className="card">
             <img src={outreach} alt="Outreach" className="image" />
             <div>
-              <h1 className="card-title">Outreach ↗</h1>
+              <h1 className="card-title">Girls Who Code↗</h1>
               <p className="card-description">
                 Be a part of making a difference and empowering others
               </p>
