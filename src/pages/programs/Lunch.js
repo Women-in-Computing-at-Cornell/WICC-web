@@ -159,13 +159,16 @@ export default class Lunch extends Component {
         </Col>
 
         <Container>
-          <h5 className="questions-text1" style={{ paddingTop: "5%" }}>
-            Questions?
-          </h5>
-          <p className="questions-text2">
-            Reach out to the following WICC members for clarification regarding
-            to Active Membership.
-          </p>
+          <div className="questions-textdiv">
+            <h5 className="questions-text1" style={{ paddingTop: "5%" }}>
+              Questions?
+            </h5>
+            <p className="questions-text2">
+              Reach out to the following WICC members for clarification
+              regarding Active Membership or applications.
+            </p>
+          </div>
+
           <Row>
             <Col>
               <QuestionsCard

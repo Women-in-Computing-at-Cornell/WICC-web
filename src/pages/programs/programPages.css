@@ -232,7 +232,7 @@ img {
 }
 
 .testimonial-row {
-  padding-left: 18%;
+  justify-content: center;
 }
 
 .testimonial-card {
@@ -330,14 +330,18 @@ img {
 }
 
 .questions-text1 {
-  padding-left: 20%;
   font-size: x-large;
   padding-bottom: 1.5%;
 }
 
 .questions-text2 {
-  padding-left: 20%;
   padding-bottom: 1%;
+}
+
+.questions-textdiv {
+  flex-direction: row;
+  justify-items: center;
+  max-width: 85%;
 }
 
 .questions-img {
@@ -418,5 +422,25 @@ img {
   }
   .question-card-container {
     flex-direction: column; /* stack people */
+  }
+}
+
+/** lunch brunch mobile styling **/
+@media (max-width: 760px) {
+  .testimonial-title {
+    justify-content: center;
+    margin-left: 0;
+  }
+  .testimonial-row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .testimonial-card {
+    width: 80%;
+    margin-bottom: 15px;
+    padding: 15px;
+  }
+  .questions-text2 {
+    /* padding: 10px; */
   }
 }
