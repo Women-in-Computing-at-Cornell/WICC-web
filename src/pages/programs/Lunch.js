@@ -26,6 +26,7 @@ import medal from "../../images/medal.jpg";
 import "./programPages.css";
 // import tanisha from "../../images/headshots/board/tk494.jpg"
 // import sarah from "../../images/headshots/board/sy398.jpg"
+//here
 export default class Lunch extends Component {
   componentDidMount() {
     window.scrollTo(0, 0);
@@ -51,22 +52,22 @@ export default class Lunch extends Component {
         <div className="full-width-banner3">
           <img src={lunch} alt="Banner" className="banner3" />
           <div className="banner-text3">
-              <p className="banner-header">Lunch Bunch</p>
-              <p >
-                WICC’s weekly Lunch Bunch program is an exceptional opportunity
-                for underclassmen women and minorities to make new friends and
-                network within the computing community while learning from CIS
-                professors and WICC alumni in a casual, conversational setting.
-                <br/>Over free catered lunch, members talk about various disciplines
-                in technology with professors, including David Gries, Jon
-                Kleinberg, Eva Tardos, and Walker White.
-              </p>
+            <p className="banner-header">Lunch Bunch</p>
+            <p>
+              WICC’s weekly Lunch Bunch program is an exceptional opportunity
+              for underclassmen women and minorities to make new friends and
+              network within the computing community while learning from CIS
+              professors and WICC alumni in a casual, conversational setting.
+              <br />
+              Over free catered lunch, members talk about various disciplines in
+              technology with professors, including David Gries, Jon Kleinberg,
+              Eva Tardos, and Walker White.
+            </p>
           </div>
         </div>
-          {/* <Row> */}
-          
+        {/* <Row> */}
 
-            {/* <Col>
+        {/* <Col>
 
             
               
@@ -101,65 +102,77 @@ export default class Lunch extends Component {
                 <Button href='https://forms.gle/vZeTVhGveoqZ8AWs9'>Apply</Button> 
               </center>
     </Col>  */}
-              
-           {/* </Row>  */}
-        
+
+        {/* </Row>  */}
 
         <br />
         <Row className="times-row">
-            <Col className="img-col">
-               <Image className="lunch-img" src={lunchbunch3}/> 
-            </Col>
-            <Col className="times-col">
-                <h3 className="times-text">Meeting Times</h3>
-                <Card className = "times-card">
-                <div className = "times-list">
-                  <p className = "times-content">Mondays, 12:10PM-1:10PM EST </p>
-                <p className = "times-content">Tuesdays, 1:25PM-2:15PM EST</p>
-                  <p className = "times-content">Fridays, 12:20PM-1:10PM EST</p> 
-                </div>
-              </Card>
-            </Col>
-        </Row>
-        
-        <Col className = "testimonial-col">
-          <Row>
-            <h3 className = "testimonial-title">What Alumni Have Said</h3>
-          </Row>
-          <Row className = "testimonial-row">
-            <Card className = "testimonial-card">
-            <h4 className = "testimonial-person">Candice ’22</h4>
-            <p className = "testimonial-quote"> "The program was a unique and enriching opportunity to connect
-                with faculty. I’ve learned a great deal about different journeys
-                in tech and feel more inspired to forge my own path."</p>
+          <Col className="img-col">
+            <Image className="lunch-img" src={lunchbunch3} />
+          </Col>
+          <Col className="times-col">
+            <h3 className="times-text">Meeting Times</h3>
+            <Card className="times-card">
+              <div className="times-list">
+                <p className="times-content">Mondays, 12:10PM-1:10PM EST </p>
+                <p className="times-content">Tuesdays, 1:25PM-2:15PM EST</p>
+                <p className="times-content">Fridays, 12:20PM-1:10PM EST</p>
+              </div>
             </Card>
-            <Card className = "testimonial-card">
-            <h4 className = "testimonial-person">Emory ’24</h4>
-            <p className = "testimonial-quote"> "I loved Lunch Bunch! I found a community of hardworking and
+          </Col>
+        </Row>
+
+        <Col className="testimonial-col">
+          <Row>
+            <h3 className="testimonial-title">What Alumni Have Said</h3>
+          </Row>
+          <Row className="testimonial-row">
+            <Card className="testimonial-card">
+              <h4 className="testimonial-person">Candice ’22</h4>
+              <p className="testimonial-quote">
+                {" "}
+                "The program was a unique and enriching opportunity to connect
+                with faculty. I’ve learned a great deal about different journeys
+                in tech and feel more inspired to forge my own path."
+              </p>
+            </Card>
+            <Card className="testimonial-card">
+              <h4 className="testimonial-person">Emory ’24</h4>
+              <p className="testimonial-quote">
+                {" "}
+                "I loved Lunch Bunch! I found a community of hardworking and
                 inspiring women, and got to learn about the journey of many
                 successful professors and the cool projects that they’re working
-                on."</p>
+                on."
+              </p>
             </Card>
-            <Card className = "testimonial-card">
-            <h4 className = "testimonial-person">Shreya ’24</h4>
-            <p className = "testimonial-quote">"Lunch Bunch was an incredible opportunity for me to directly
+            <Card className="testimonial-card">
+              <h4 className="testimonial-person">Shreya ’24</h4>
+              <p className="testimonial-quote">
+                "Lunch Bunch was an incredible opportunity for me to directly
                 hear from professors in Cornell Computing, and take away
                 valuable lessons from their varied experiences, journeys and
-                advice!"</p>
+                advice!"
+              </p>
             </Card>
           </Row>
         </Col>
-        
+
         <Container>
-          <h5 className="questions-text1" style={{ paddingTop: "5%" }}>Questions?</h5>
-          <p className="questions-text2">Reach out to the following WICC members for clarification regarding to Active Membership.</p>
+          <h5 className="questions-text1" style={{ paddingTop: "5%" }}>
+            Questions?
+          </h5>
+          <p className="questions-text2">
+            Reach out to the following WICC members for clarification regarding
+            to Active Membership.
+          </p>
           <Row>
             <Col>
               <QuestionsCard
-                    name={directors[0].name}
-                    title={directors[0].title}
-                    img={boardHeadshots[directors[0].netId + ".jpg"]}
-                    netId={directors[0].netId}
+                name={directors[0].name}
+                title={directors[0].title}
+                img={boardHeadshots[directors[0].netId + ".jpg"]}
+                netId={directors[0].netId}
               />
             </Col>
             <Col>
@@ -171,7 +184,6 @@ export default class Lunch extends Component {
               />
             </Col>
           </Row>
-          
         </Container>
 
         {/* <Container>
@@ -247,7 +259,7 @@ export default class Lunch extends Component {
               </Col>
             </Row>
           </Container> */}
-          </>
+      </>
     );
   }
 }
