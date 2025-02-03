@@ -10,6 +10,11 @@
   color: #4d4d4d;
 }
 
+.imagediv{
+  margin-top: 0 !important;
+  padding: 0 !important;
+}
+
 .head {
   font-weight: bold;
 }
@@ -79,6 +84,20 @@ li {
   padding: 0;
 }
 
+.divrowa:hover {
+  color: #000000;
+  transition: 0.3s ease;
+  text-decoration: underline;
+  text-decoration-color: #9ce2d3;
+  text-decoration-thickness: 3px;
+  font-weight: bolder;
+}
+
+
+.divrow{
+  margin: 0 4% !important;
+  gap: 3% !important;
+}
 .column {
   flex: 1 1 0%;
   flex-direction: column;

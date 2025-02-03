@@ -21,6 +21,9 @@ import OutreachHero from "../../images/outreach/OutreachHero.jpg";
 import QuestionsCard from "./QuestionsCard.js";
 import ghc1 from "../../images/programs/ghc1.jpg";
 import ghc2 from "../../images/programs/ghc2.jpg";
+import fa241 from "../../images/outreach/gwc/FA24_GWC_Beginner_Class_Volunteers.png"
+import fa242 from "../../images/outreach/gwc/FA24_GWC_Intermediate_Class_Volunteers.png"
+import fa243 from "../../images/outreach/gwc/FA24_Outreach_Volunteer_Social.png"
 
 import Image from "react-bootstrap/Image";
 
@@ -90,22 +93,18 @@ export default class Outreach extends Component {
             </h1>
             <p
               style={{
-                paddingRight: "5%",
+                paddingRight: "1%",
                 paddingTop: "2%",
                 marginRight: "20%",
               }}
             >
-              We provide free Computer Science classes for middle and high
-              school students in the greater Ithaca community through Cornell
-              Girls Who Code. Students learn the fundamentals of computing as
-              well as cool technologies like Arduinos, web programming, and
-              Ozobots.
+              WICC Outreach plans events and programs related to spreading computer science to the greater Ithaca community. We organize a weekly Girls Who Code program on campus and several general outreach workshops involving other organizations, typically off campus.
             </p>
             <p>
-              Check out more details on the{" "}
+              More details on the{" "}
               <a href="https://girlswhocode.com/">
                 <span style={{ fontWeight: "bold" }}>Girls Who Code</span>{" "}
-                official website
+  website
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -165,13 +164,46 @@ export default class Outreach extends Component {
               style={{
                 width: "100%",
                 height: "auto",
-                objectPosition: "0px -250px",
                 objectFit: "cover",
               }}
             ></img>
           </div>
         </div>
-        <div class="page">
+        <div
+              style={{
+                textAlign: "center",
+                fontSize: "18px",
+                fontWeight: "bold",
+                margin: "5vw 10vw",
+                padding: "30px",
+                backgroundColor: "#ffffff",
+                borderRadius: "20px",
+                boxShadow: "0px 0px 40px 0px rgba(0, 0, 0, 0.15)",
+              }}
+            >
+              <h3
+                  style={{
+                    color: "#212529",
+                    fontFamily: "Mulish",
+                    fontSize: "40px",
+                    fontStyle: "normal",
+                    fontWeight: "700",
+                    lineHeight: "150%",
+                  
+                  }}
+                >
+                  Schedule (Spring 2025)
+                </h3>
+              <p>
+                Feb 9th, Feb 23rd, Mar 2nd, Mar 9th, Mar 16th, Mar 23rd,
+                Apr 13th, Apr 20th, Apr 27th, May 4th 
+              </p>
+              <p style={{ fontWeight: "normal", fontSize: "16px", color: "#dc3545" }}>
+                Please note that registration has closed for the Spring 2025 semester. <br></br>
+                Registration will open again at the beginning of next semester.
+              </p>
+            </div>
+        <div class="page imagediv">
           {/* <center>
 
             <h5 style={{ fontWeight: "bold" }}>
@@ -185,6 +217,8 @@ export default class Outreach extends Component {
               Register Now!
             </Button>
           </center> */}
+
+
           <div
             style={{
               display: "flex",
@@ -192,11 +226,11 @@ export default class Outreach extends Component {
               justifyContent: "space-between",
               alignItems: "center",
               gap: "20px",
-              padding: "20px",
+              padding: "0px",
             }}
           >
             {/* Left Section: Text and Button */}
-            <div style={{ flex: "1", textAlign: "left", maxWidth: "35%" }}>
+            {/* <div style={{ flex: "1", textAlign: "left", maxWidth: "35%" }}>
               <h5
                 style={{
                   fontWeight: "bold",
@@ -217,32 +251,46 @@ export default class Outreach extends Component {
               >
                 Register Here
               </Button>
-            </div>
+            </div> */}
 
             {/* Right Section: Two Images */}
             <div
               style={{
                 display: "flex",
                 flexDirection: "row",
-                gap: "0px",
-                padding: "0",
+                gap: "5%",
+                padding: "5%",
                 flex: "1",
-              }}
+                marginTop: "0",
+                paddingTop: "0",
+                
+              }} 
             >
               <img
-                src={ghc1}
+                src={fa241}
                 alt="First Image"
                 style={{
                   width: "100%", // Adjust as needed
-                  maxWidth: "55%",
+                  maxWidth: "32%",
+                  borderRadius: "5px"
                 }}
               />
               <img
-                src={ghc2}
+                src={fa242}
+                alt="First Image"
+                style={{
+                  width: "100%", // Adjust as needed
+                  maxWidth: "27%",
+                  borderRadius: "15px"
+                }}
+              />
+              <img
+                src={fa243}
                 alt="Second Image"
                 style={{
                   width: "100%",
-                  maxWidth: "55%",
+                  maxWidth: "32%",
+                  borderRadius: "15px"
                 }}
               />
             </div>
@@ -382,8 +430,9 @@ export default class Outreach extends Component {
               // alignItems: "flex-start",
               // gap: "42px",
             }}
+            
           >
-            <Row>
+            <Row className="divrow">
               {/* First Box */}
               <Col
                 xs={12}
@@ -418,10 +467,8 @@ export default class Outreach extends Component {
                   Volunteers
                 </h3>
                 <p>
-                  Interested in sponsoring Girls Who Code? <br />
-                  Think you would make a good guest speaker? <br />
-                  Want to be a general volunteer at workshops around the local
-                  community?
+                Our Girls Who Code program, which is for middle and high school students, consists of 10 Sunday classes at Mann Library on campus. Beginner and intermediate classes (taught in Python) are from 1-2:30, and advanced classes (topics include game dev, web dev, data science) are from 3-4:30. Each class typically consists of an icebreaker activity, a lesson, and coding exercises/final project. 
+
                 </p>
               </Col>
 
@@ -456,20 +503,18 @@ export default class Outreach extends Component {
                     lineHeight: "150%",
                   }}
                 >
-                  More Outreach
+                  Outreach
                 </h3>
                 <p>
-                  Our teaching team has participated in a number of local events
-                  promoting STEM education and career development. Looking for
-                  volunteers or a CS workshop at your event? Contact the
-                  Outreach Directors!
+                General Outreach organizes workshops/events that we hold with external organizations (like the Tompkins County Public Library and Sciencenter). We have workshops for adults and also workshops for kids. Past workshops include teaching data visualization and web development. Here are the scheduled events for this semester: <a href="https://docs.google.com/spreadsheets/d/1uta_807tnsUrJRrAxbRN2iUabScbH0gLjH61wiGL1CQ/edit?usp=sharing" style={{color: "#7db5a9", textDecoration: "underline", fontWeight: "bold"}} className="divrowa">Spring 2025 General Outreach Events</a>. 
+
                 </p>
               </Col>
             </Row>
           </Container>
 
           <center>
-            <h3 style={{ paddingTop: "5%" }}>Questions?</h3>
+            <h4 style={{ paddingTop: "5%" }}>Questions? Email <a href="mailto:girlswhocode@cornell.edu">girlswhocode@cornell.edu</a></h4>
             <Container
               style={{
                 paddingTop: "56px",
@@ -511,7 +556,7 @@ export default class Outreach extends Component {
                   />
                 </Col>
               </Row> */}
-              <div className="questions-cards">
+              {/* <div className="questions-cards">
                 {vp.map((s, i) => (
                   <div key={i} className="question-card">
                     <QuestionsCard
@@ -536,7 +581,7 @@ export default class Outreach extends Component {
                     />
                   </div>
                 ))}
-              </div>
+              </div> */}
             </Container>
           </center>
         </div>
