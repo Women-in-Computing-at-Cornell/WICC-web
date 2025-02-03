@@ -37,9 +37,19 @@ export default class Mentorship extends Component {
 
     const imgNames = Object.keys(carouselImages);
 
-    const linkStyle = {
-      marginLeft: "10px", // Adjust the right margin to space out the links
+    //styling for the kickoff slides button
+    const kickoffStyle = {
+      width: "30%",
     };
+
+    //sstyle for the mentor apply buttons
+    const applyStyle = {
+      color: "white",
+      width: "120%",
+      fontWeight: "bold",
+      backgroundColor: "black",
+      marginLeft: "10px", // Adjust the right margin to space out the links
+    }
 
     return (
       <>
@@ -58,28 +68,28 @@ export default class Mentorship extends Component {
           </div>
         </div>
 
+        {/* Mentorship Information Section  */}
         <div
           style={{
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
             background: "#f7f9f8",
-            padding: "30px",
-            // gap: "30px",
+            padding: "5%",
           }}
         >
+          {/* image carousel */}
           <div
             style={{
-              width: "60%",
-              maxWidth: "500px",
+              width: "100%",
+              maxWidth: "700px",
               display: "flex",
               justifyContent: "center",
             }}
           >
             <Carousel
               style={{
-                width: "70%",
-                // boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
+                width: "80%",
               }}
             >
               {Object.values(carouselImages).map((src, index) => (
@@ -100,6 +110,8 @@ export default class Mentorship extends Component {
                         objectFit: "cover",
                         maxWidth: "100%",
                         maxHeight: "100%",
+                        borderRadius: "25px",
+
                       }}
                     />
                   </div>
@@ -107,16 +119,19 @@ export default class Mentorship extends Component {
               ))}
             </Carousel>
           </div>
-          <div>
+
+          {/* text for mentorship information */}
+          <div style={{
+            paddingRight: "10%",
+          }}>
             <p class="section-title">Mentorship Information</p>
-            <ul>
-              <li>Mondays 5:30 - 6:30</li>
-              <li>Thursdays 5:30 - 6:30</li>
-              <li>Find out more information from our kickoff slides!</li>
-            </ul>
+            <p>The role of the mentor is to empower their mentees and enhance their interests in computing.
+              Mentors and mentees will be matched primarily based on academic and career interests.</p>
+            <p style={{ fontWeight: "bold" }}> Weekly activity time: <br></br> Wednesdays 5-6pm</p>
+            <p>Find out more information from our kickoff slides!</p>
             <div className="mentorship-button">
               <Button
-                style={linkStyle}
+                style={kickoffStyle}
                 href="https://docs.google.com/presentation/d/10qt0XGzXejU2yxcj3yZWgZgom5MxcnecLqlItQoKwGU/edit#slide=id.g1134089c044_0_0"
               >
                 Kickoff Slides
@@ -124,6 +139,7 @@ export default class Mentorship extends Component {
             </div>
           </div>
         </div>
+
         <div className="mentor-mentee-content">
           <div className="mentor-mentee-grid">
             <div className="mentor-mentee-column">
@@ -153,6 +169,14 @@ export default class Mentorship extends Component {
                   </li>
                 </ul>
               </div>
+              <div className="apply-button">
+                <Button
+                  style={applyStyle}
+                  href="https://forms.gle/5vAdekmMTXEf8NCT6"
+                >
+                  Apply to Mentor!
+                </Button>
+              </div>
             </div>
 
             <div className="mentor-mentee-column">
@@ -176,6 +200,13 @@ export default class Mentorship extends Component {
                     the group.
                   </li>
                 </ul>
+              </div>
+              <div>
+                <Button style={applyStyle}
+                  href="https://forms.gle/Hm9nxLHkJX7x9ayg7"
+                >
+                  Apply to be a Mentee!
+                </Button>
               </div>
             </div>
           </div>
