@@ -24,6 +24,9 @@ import ghc2 from "../../images/programs/ghc2.jpg";
 import fa241 from "../../images/outreach/gwc/FA24_GWC_Beginner_Class_Volunteers.png"
 import fa242 from "../../images/outreach/gwc/FA24_GWC_Intermediate_Class_Volunteers.png"
 import fa243 from "../../images/outreach/gwc/FA24_Outreach_Volunteer_Social.png"
+import gwc1 from "../../images/outreach/gwc/gwc1.png"
+import gwc2 from "../../images/outreach/gwc/gwc2.png"
+import gwc3 from "../../images/outreach/gwc/gwc3.png"
 
 import Image from "react-bootstrap/Image";
 
@@ -203,6 +206,58 @@ export default class Outreach extends Component {
                 Registration will open again at the beginning of next semester.
               </p>
             </div>
+        <div class="page imagediv">
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              justifyContent: "space-between",
+              alignItems: "center",
+              gap: "20px",
+              padding: "0px",
+            }}
+          >
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              gap: "5%",
+              padding: "5%",
+              flex: "1",
+              marginTop: "0",
+              paddingTop: "0",
+            }} 
+          >
+            <img
+              src={gwc1}
+              alt="First Image"
+              style={{
+                width: "100%", // Adjust as needed
+                maxWidth: "32%",
+                borderRadius: "5px"
+              }}
+            />
+            <img
+              src={gwc2}
+              alt="First Image"
+              style={{
+                width: "100%", // Adjust as needed
+                maxWidth: "27%",
+                borderRadius: "15px"
+              }}
+            />
+            <img
+              src={gwc3}
+              alt="Second Image"
+              style={{
+                width: "100%",
+                maxWidth: "32%",
+                borderRadius: "15px"
+              }}
+            />
+          </div>
+        </div>
+        </div>
         <div class="page imagediv">
           {/* <center>
 
