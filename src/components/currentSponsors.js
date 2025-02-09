@@ -25,37 +25,57 @@ const sponsorpicsplatinum = importAll(
 const allSponsorPics = {
   ...sponsorpicsplatinum,
   ...sponsorpicsgold,
-  ...sponsorpicssilver
+  ...sponsorpicssilver,
 };
 
 const allImgNames = [
   ...Object.keys(sponsorpicsplatinum),
   ...Object.keys(sponsorpicsgold),
-  ...Object.keys(sponsorpicssilver)
+  ...Object.keys(sponsorpicssilver),
 ];
+
+const sponsorLinks = {
+  "Bloomberg.jpg": "https://www.linkedin.com/company/bloomberg/",
+  "Capital One.jpg": "https://www.linkedin.com/company/capital-one/",
+  "DE Shaw.jpg": "https://www.linkedin.com/company/d.-e.-shaw-&-co./",
+  "Jane Street.jpg": "https://www.linkedin.com/company/jane-street-global/",
+  "pwc.jpg": "https://www.linkedin.com/company/pwc/",
+  "Millennium Management.jpg":
+    "https://www.linkedin.com/company/millennium-partners/",
+  "Accenture.jpg": "https://www.linkedin.com/company/accenture/",
+  "HRT.jpg": "https://www.linkedin.com/company/hudson-river-trading/",
+  "MathWorks.jpg": "https://www.linkedin.com/company/the-mathworks_2/",
+  "Roblox.jpg": "https://www.linkedin.com/company/roblox/",
+};
 
 export default function CurrentSponsors() {
   const [carouselIndex, setCarouselIndex] = useState(0);
 
   const nextSlide = () => {
-    setCarouselIndex(prev => prev + 1);
+    setCarouselIndex((prev) => prev + 1);
   };
 
   return (
     <div>
       <section className="sponsor-container">
         <div className="sponsor-header">
-          <h2 className="sponsor-title">
-            Sponsors
-          </h2>
-          <button onClick={nextSlide} style={{ background: 'none', border: 'none' }}>
+          <h2 className="sponsor-title">Sponsors</h2>
+          <button
+            onClick={nextSlide}
+            style={{ background: "none", border: "none" }}
+          >
             <img src={arrow} alt="Next" />
           </button>
         </div>
-        <PCarousel imgNames={allImgNames} pics={allSponsorPics} currentIndex={carouselIndex} onChange={setCarouselIndex} />
+        <PCarousel
+          imgNames={allImgNames}
+          pics={allSponsorPics}
+          links={sponsorLinks}
+          currentIndex={carouselIndex}
+          onChange={setCarouselIndex}
+        />
       </section>
-      <section className="sponsor-carousel-container">
-      </section>
+      <section className="sponsor-carousel-container"></section>
     </div>
   );
 }
