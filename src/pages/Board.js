@@ -21,7 +21,6 @@ import hero from "../images/about-pictures/abouthero.png";
 import FloatingMenu from "../components/BoardNav";
 
 const teams = [
-  faculty,
   presidents,
   operations,
   corporate,
@@ -32,6 +31,7 @@ const teams = [
   technical,
   photo,
   advisors,
+  faculty
 ];
 
 export default class Board extends Component {
@@ -162,9 +162,7 @@ export default class Board extends Component {
                   {" "}
                   ON THIS PAGE:
                 </p>
-                <Nav.Link href="#board#faculty" eventKey="faculty">
-                  Faculty
-                </Nav.Link>
+                
                 <Nav.Link href="#board#presidents" eventKey="pres">
                   Presidents
                 </Nav.Link>
@@ -194,6 +192,9 @@ export default class Board extends Component {
                 </Nav.Link>
                 <Nav.Link href="#board#advisors" eventKey="advisors">
                   Advisors
+                </Nav.Link>
+                <Nav.Link href="#board#faculty" eventKey="faculty">
+                  Faculty
                 </Nav.Link>
               </Nav>
             </div>

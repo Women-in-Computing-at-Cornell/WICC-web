@@ -3,15 +3,7 @@ export const faculty = {
   title: "Faculty",
   description: "",
   members: [
-    {
-      name: "Kavita Bala",
-      netId: "kb97",
-      position:
-        "Dean of Ann S. Bowers \n College of Computing and Information Science",
-      bio:
-        "Kavita Bala is a Professor in the Computer Science Department and Program of Computer Graphics at Cornell University. She received her S.M. and Ph.D. from the Massachusetts Institute of Technology (MIT), and her B.Tech. from the Indian Institute of Technology (IIT, Bombay). She co-founded GrokStyle, and serves as Chief Scientist (2015-), and is a faculty Fellow with the Atkinson Center. \n Bala's work is inter-disciplinary, spanning the areas of computer graphics, computer vision, human perception, and architecture. Her research has had significant industrial impact, including the core rendering engine in Autodesk's 360 cloud renderer, and GrokStyle's visual search engine. Bala's 3D Mandala reconstruction was installed at the Rubin Museum of Art in New York, and demonstrated to the Dalai Lama." +
-        "\nBala is committed to increasing diversity in computer science. As the only woman in her undergraduate CS class, she appreciates the progress that has been made in the past decade, but there is more work to be done in academia and particularly in industry.",
-    },
+
     {
       name: "Dr. LeeAnn Roberts",
       netId: "leeann.roberts",
@@ -238,18 +230,18 @@ export const technical = {
       position: "Developer",
       bio: "",
     },
-    {
-      name: "Dora Weng",
-      netId: "cw749",
-      position: "Developer",
-      bio: "Dora is a sophomore in the College of engineering studying Computer Science. She has an unhealthy obsession for coffee and you can find her working at Cafe Jennie!",
-    },
-    {
-      name: "Jasmine Dong",
-      netId: "jqd3",
-      position: "Developer",
-      bio: "",
-    },
+    // {
+    //   name: "Dora Weng",
+    //   netId: "cw749",
+    //   position: "Developer",
+    //   bio: "Dora is a sophomore in the College of engineering studying Computer Science. She has an unhealthy obsession for coffee and you can find her working at Cafe Jennie!",
+    // },
+    // {
+    //   name: "Jasmine Dong",
+    //   netId: "jqd3",
+    //   position: "Developer",
+    //   bio: "",
+    // },
     {
       name: "Jessica Andrews",
       netId: "jaa375",
@@ -281,12 +273,12 @@ export const technical = {
     //   bio: "Shriya is a freshman in the College of Engineering majoring in Computer Science and minoring in Applied Math. She loves playing the violin, trying new puzzles, and hanging out with friends. She's super excited for an amazing year on Technical Committee!",
     // },
   
-    {
-      name: "Yoobin Lee",
-      netId: "yl3697",
-      position: "Designer",
-      bio: "",
-    },
+    // {
+    //   name: "Yoobin Lee",
+    //   netId: "yl3697",
+    //   position: "Designer",
+    //   bio: "",
+    // },
     {
       name: "Tina Chen",
       netId: "tc663",

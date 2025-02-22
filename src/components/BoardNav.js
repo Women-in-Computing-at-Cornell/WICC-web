@@ -16,9 +16,7 @@ function FloatingMenu() {
         <Nav
           className="flex-column"
         >
-          <Nav.Link href="#board#faculty" eventKey="faculty">
-            Faculty
-          </Nav.Link>
+          
           <Nav.Link href="#board#presidents" eventKey="pres">
             Presidents
           </Nav.Link>
@@ -48,6 +46,9 @@ function FloatingMenu() {
           </Nav.Link>
           <Nav.Link href="#board#advisors" eventKey="advisors">
             Advisors
+          </Nav.Link>
+          <Nav.Link href="#board#faculty" eventKey="faculty">
+            Faculty
           </Nav.Link>
         </Nav >
       )
