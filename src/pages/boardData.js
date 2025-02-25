@@ -507,7 +507,7 @@ export const advisors = {
       year: " ",
       position: "Advisor, VP Academic",
       netId: "lac348",
-      name: "Laura Chan",
+      name: "Lauren Chan",
       major: " ",
       bio: " ",
     },
