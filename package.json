@@ -4,6 +4,7 @@
   "private": true,
   "type": "module",
   "dependencies": {
+    "16": "^0.0.2",
     "@devexpress/dx-react-core": "^2.7.5",
     "@devexpress/dx-react-scheduler": "^2.7.5",
     "@emotion/react": "^11.1.5",

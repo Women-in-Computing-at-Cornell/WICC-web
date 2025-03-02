@@ -62,32 +62,44 @@ export default class Membership extends Component {
           <div
             style={{
               display: "flex",
-              alignItems: "center",
-              justifyContent: "space-around",
-              marginTop: "10%",
-              marginBottom: "10%",
+              alignItems: "flex-start",
+              justifyContent: "flex-start",
+              // marginTop: "10%",
+              // marginBottom: "10%",
             }}
           >
-            <img
-              src={eboard}
-              style={{ width: "45%", borderRadius: "20px", marginRight: "5%" }}
-            />
-            <div>
+    
+            {/* <div>
               <p class="section-title">Perks</p>
+                <div class="perks-left">
               <p>
-                As soon as you complete the requirements, you will be named an
-                Active Member. Enjoy the perks here after till the end of the
-                next semester.{" "}
+                As soon as you complete the requirements, you will be named an<br />
+                Active Member.<br />*Example: If you sign-up in Fall 2023 and complete the<br />
+                requirements, then you will receive the perks for the rest of the<br />
+                semester and Spring 2023.{" "}
               </p>
-              <ul>
-                <li>Get access to the Active Member Slack.</li>
-                <li>Get access to the Alumni directory.</li>
-                <li>
-                  Be invited to a member-only social event at the end of the
-                  semester.
-                </li>
-                <li>Be able to take part in the active member initiative.</li>
-              </ul>
+                </div>
+                <div class="perks-right">
+                  Enjoy these perks until the end of the next semester*:{" "}
+                </div>
+            </div> */}
+            <div class="perks-section">
+              <div class="perks-left">
+                <p class="section-title">Perks</p>
+                <p>
+                  As soon as you complete the requirements, you will be named an<br />
+                  Active Member.<br />*Example: If you sign-up in Fall 2023 and complete the<br />
+                  requirements, then you will receive the perks for the rest of the<br />
+                  semester and Spring 2023.{" "}
+                </p>
+                <p class="perks-header">Enjoy these perks until the end of the next semester*:{" "}
+                </p>
+              </div>
+              <div class="perks-right">
+                <div class="perks-grid">
+                  <div class="perk-box">Get access</div>
+                </div>
+              </div>
             </div>
           </div>
 
