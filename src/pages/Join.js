@@ -5,7 +5,6 @@ import Modal from "react-bootstrap/Modal";
 import Sponsors from "./Sponsors";
 import axios from "axios";
 import joinushero from "../images/joinushero.jpg";
-
 import "./Join.css";
 
 const JoinUs = () => {
@@ -33,7 +32,6 @@ const JoinUs = () => {
         <img src={joinushero} style={{ width: "100%" }} />
       </div>
     </div>
-    //</div>
   );
 };
 
@@ -52,6 +50,7 @@ export default class Join extends Component {
       message: "",
       mailSent: false,
       error: null,
+      openFAQ: null,
     };
   }
   handleClose() {
@@ -60,6 +59,10 @@ export default class Join extends Component {
 
   handleShow() {
     this.setState({ show: true });
+  }
+
+  toggleFAQ(index) {
+    this.setState({ openFAQ: this.state.openFAQ === index ? null : index });
   }
 
   handleFormSubmit = (e) => {
@@ -81,187 +84,107 @@ export default class Join extends Component {
   render() {
     let styles = {
       container: {
-        margin: "0%", // Changes the top margin for hero image
+        margin: "0%",
         fontFamily: "Inter",
         paddingBottom: "5%",
       },
-      row: {
+      faqItem: {
+        borderBottom: "1px solid #9CE2D3",
+        padding: "10px",
+        cursor: "pointer",
+      },
+      faqContent: {
+        padding: "10px",
+        display: "none",
+      },
+      faqContentOpen: {
+        padding: "10px",
+        display: "block",
+      },
+      timelineContainer: {
         display: "flex",
-        flexWrap: "nowrap",  // Prevents wrapping into multiple rows
-        overflowX: "auto",  // Enables horizontal scrolling if content overflows
-        whiteSpace: "nowrap",
-        gap: "50px",  // Adds 50px gap between columns
-        paddingBottom: "10px",  // Prevents scrollbar from overlapping content
-        margin: "0% 4%",
+        gap: "20px",
+        marginInline: "5%",
+        paddingTop: "5%",
       },
-      col: {
-        minWidth: "320px",  // Each column has a fixed minimum width
-        maxWidth: "320px",
-        flex: "0 0 auto",  // Prevents columns from shrinking or growing
-        backgroundColor: "#9CE2D3",
-        padding: "30px",
-        borderRadius: ".5em",
-        textAlign: "center",
-        wordWrap: "break-word",  // Ensures text wraps inside the column
-        overflowWrap: "break-word",
-        whiteSpace: "normal",  // Allows text to wrap instead of staying on one line
-      },
-      link: {
-        textDecoration: "underline",
+      timelineBox: {
+        flex: 1,
+        border: "2px solid #9CE2D3",
+        padding: "20px",
+        borderRadius: "10px",
       },
     };
+
+    const faqs = [
+      {
+        question: "What to expect if you were made an active member in Spring 2024?",
+        answer: "As an active member, you will have access to exclusive events, mentorship opportunities, and leadership programs.",
+      },
+      {
+        question: "What happens if you sign-up mid-way through a semester?",
+        answer: "If you sign up mid-semester, you will still be able to participate in events but may need to complete extra steps to become an active member.",
+      },
+      {
+        question: "Is it mandatory to attend G-Body discussions?",
+        answer: "G-Body discussions are encouraged for community building but are not mandatory.",
+      },
+      {
+        question: "How can you keep up with our upcoming events?",
+        answer: "Stay updated through our email newsletters and social media channels.",
+      },
+    ];
 
     return (
       <div style={styles.container} className="joinContainer">
         <JoinUs />
         <br />
-        <h1
-          style={{
-            maxWidth: "100%",
-            height: "auto",
-            fontWeight: "bold",
-            margin: "3% 4% 0 4%",
-          }} className="h"
-        >
-          Get Involved
-        </h1>
-        <br />
 
-        <div style={styles.row} className="scroll-container">
-          <div style={styles.col}>
-            <h2>Students</h2>
-            <p>Join Our Listserve and Slack! Click on the link and press send to join for the Listserve!</p>
-            <center>
-              <Button
-                href="mailto:wicc-l-request@cornell.edu?subject=Join"
-                style={{
-                  backgroundColor: "white",
-                  width: "100%",
-                  marginTop: "10%",
-                  fontWeight: "bold",
-                }}
-              >
-                ListServe
-              </Button>
-              {/* <p></p> */}
-              <Button
-                href="https://join.slack.com/t/wiccgbodymember/shared_invite/zt-1t2uwgfld-dPVydWuvlnK4N2om4UIIcg"
-                style={{
-                  backgroundColor: "white",
-                  width: "100%",
-                  marginTop: "10%",
-                  fontWeight: "bold",
-                }}
-              >
-                G-Body Slack
-              </Button>
-            </center>
+        <div className="page1">
+          <h1
+            style={{
+              maxWidth: "100%",
+              height: "auto",
+              fontWeight: "bold",
+              margin: "3% 4% 0 4%",
+              fontSize: "56px",
+            }}
+            className="h"
+          >
+            Membership Opportunities
+          </h1>
+          <br />
+          <div style={styles.timelineContainer}>
+            <div style={styles.timelineBox}>
+              <h3>Track Your Own Progress</h3><br />
+              <p>Be sure to sign-in when you attend an event!. We will also keep you updated with your progress every month and give you an opportunity to fill out a feedback form. Do let us know about your experience!</p>
+            </div>
+            <div style={styles.timelineBox}>
+              <h3>Validity of Active Membership</h3><br />
+              <p>As soon as you complete the above requirements, you will be named an Active Member. Enjoy the perks hereafter till the end of the next semester.</p>
+            </div>
           </div>
-
-          <div style={styles.col}>
-            <h2>Corporate</h2>
-            <p>Interested in hosting an event with us? Contact us at <a href="mailto:wicc@cornell.edu">wicc@cornell.edu</a></p>
-            <center>
-              <p> </p>
-              <Button
-                href="https://drive.google.com/file/d/1s_okJqDYmfD5-3jEPCPKvbtP_TYruXXD/view?usp=sharing"
-                style={{
-                  backgroundColor: "white",
-                  width: "100%",
-                  marginTop: "10%",
-                  fontWeight: "bold",
-                }}
-              >
-                Current Sponsors
-              </Button>
-            </center>
+          <br />
+          <div style={{ marginInline: "5%" }}>
+            <h2 style={{ paddingTop: "5%", fontWeight: "bold", textAlign: "left", fontSize: "36px" }}>Frequently Asked Questions</h2>
+            {faqs.map((faq, index) => (
+              <div key={index} style={styles.faqItem} onClick={() => this.toggleFAQ(index)}>
+                <p style={{ fontSize: "18px", fontWeight: "bold", display: "flex", justifyContent: "space-between" }}>
+                  {faq.question}
+                  <span>{this.state.openFAQ === index ? "▲" : "▼"}</span>
+                </p>
+                <div style={this.state.openFAQ === index ? styles.faqContentOpen : styles.faqContent}>{faq.answer}</div>
+              </div>
+            ))}
           </div>
-
-          <div style={styles.col}>
-            <Link to="/membership" style={styles.link}>
-              <h2>Active Membership</h2>
-            </Link>
-            <p>Learn how to become a WICC Active Member</p>
+          <br />
+          <div style={{ marginInline: "5%" }}>
+            <h2 style={{ paddingTop: "5%", fontWeight: "bold", textAlign: "left", fontSize: "36px" }}>More Questions?</h2>
+            <br />
+            <p style={{ textAlign: "left", fontSize: "18px" }}>
+              Reach out to WICC via email @wicc.cornell.edu for clarification regarding Active Membership.
+            </p>
           </div>
-
-          <div style={styles.col}>
-            <h2>Alumni</h2>
-            <p>Join our alumni network to stay involved with WICC!</p>
-            <center>
-              <Button
-                href="https://docs.google.com/forms/d/e/1FAIpQLSe_QtYzpq9knpmjDAj0bV3MwcsBtOy8IX7XhOHoroq0801sNw/viewform"
-                style={{
-                  backgroundColor: "white",
-                  width: "100%",
-                  fontWeight: "bold",
-                }}
-              >
-                Join
-              </Button>
-            </center>
-          </div>
-
-          {/* <div style={styles.col}>
-            <Link to="/prospective" style={styles.link}><h2>Prospective Students</h2>
-            </Link>
-            <p>Learn more about CIS at Cornell!</p>
-          </div> */}
-          {/* <div style={styles.col}>
-            <Link to="/mentorship" style={styles.link}><h2>Mentorship</h2>
-            </Link>
-            <p>Learn how to become a mentor or a mentee</p>
-          </div> */}
         </div>
-
-        <Modal
-          show={this.state.show}
-          onHide={this.handleClose}
-          size="lg"
-          aria-labelledby="contained-modal-title-vcenter"
-          centered
-          contentClassName="custom-modal-style"
-        >
-          <Modal.Header closeButton></Modal.Header>
-          <Modal.Body>
-            <center>
-              <Sponsors />
-            </center>
-          </Modal.Body>
-        </Modal>
-
-        {/* <form action="#" >
-          <label>First Name</label>
-          <input type="text" id="fname" name="firstname" placeholder="Your name.."
-            value={this.state.fname}
-            onChange={e => this.setState({ fname: e.target.value })}
-          />
-          <label>Last Name</label>
-          <input type=" text" id="lname" name="lastname" placeholder="Your last name.."
-            value={this.state.lname}
-            onChange={e => this.setState({ lname: e.target.value })}
-          />
-
-
-          <label>Email</label>
-          <input type="email" id="email" name="email" placeholder="Your email"
-            value={this.state.email}
-            onChange={e => this.setState({ email: e.target.value })}
-          />
-
-
-          <label>Message</label>
-          <textarea id="message" name="message" placeholder="Write something.."
-            onChange={e => this.setState({ message: e.target.value })}
-            value={this.state.message}
-          ></textarea>
-          <input type="submit" onClick={e => this.handleFormSubmit(e)} value="Submit" />
-          <div>
-            {this.state.mailSent &&
-              <div>Thank you for contcting us.</div>
-            }
-          </div>
-
-        </form > */}
       </div>
     );
   }
