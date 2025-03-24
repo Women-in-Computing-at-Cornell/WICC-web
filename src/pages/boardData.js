@@ -545,7 +545,7 @@ export const advisors = {
     },
     {
       year: " ",
-      position: "Advisor, Allyship",
+      position: "Advisor, VP Corp",
       netId: "hlb88",
       name: "Hermione Bossolina",
       major: " ",
@@ -553,7 +553,7 @@ export const advisors = {
     },
     {
       year: " ",
-      position: "Advisor, Allyship",
+      position: "Advisor, VP Brand, Design",
       netId: "umh4",
       name: "Uyen Hoang",
       major: " ",
@@ -561,7 +561,7 @@ export const advisors = {
     },
     {
       year: " ",
-      position: "Advisor, Allyship",
+      position: "Advisor, Alumni Relations",
       netId: "sy398",
       name: "Sarah Young",
       major: " ",
@@ -569,7 +569,7 @@ export const advisors = {
     },
     {
       year: " ",
-      position: "Advisor, Allyship",
+      position: "Advisor, VP Outreach",
       netId: "ct556",
       name: "Claire Tan",
       major: " ",
@@ -577,7 +577,7 @@ export const advisors = {
     },
     {
       year: " ",
-      position: "Advisor, Allyship",
+      position: "Advisor, Outreach",
       netId: "mta63",
       name: "Miriam Alex",
       major: " ",
@@ -585,11 +585,19 @@ export const advisors = {
     },
     {
       year: " ",
-      position: "Advisor, Allyship",
+      position: "Advisor, Secretary",
       netId: "cac499",
       name: "Chloe Chan",
       major: " ",
       bio: " ",
     },
+    {
+      year: " ",
+      position: "Advisor, Co-Pres",
+      netId: "ns597",
+      name: "Neha Sunkara",
+      major: " ",
+      bio: " ",
+}
   ],
 };
