@@ -141,6 +141,7 @@ img {
 .full-width-banner {
   position: relative;
   width: 100%;
+  height: auto;
   margin: 0;
   padding: 0;
   overflow: hidden;
@@ -164,7 +165,9 @@ img {
 
 .banner3 {
   width: 100%;
-  object-fit: cover;
+  height: 100%;
+  object-fit: cover; /* Ensure the image scales correctly */
+  display: block;
   filter: brightness(40%);
 }
 
@@ -208,6 +211,29 @@ img {
   font-weight: bold;
 }
 
+
+/* Make responsive on mobile */
+@media (max-width: 768px) {
+  .full-width-banner3 {
+    height: 300px;  
+  }
+
+  .banner-text3 {
+    width: 80%;  
+    left: 5%;
+    top: 50%;
+  }
+
+  .banner-header {
+    font-size: 2.2em;  
+  }
+
+  .banner-text3 p {
+    font-size: 14px;  
+  }
+}
+
+
 .section-title {
   font-size: 1.5em;
   font-weight: bold;
@@ -232,7 +258,7 @@ img {
 }
 
 .testimonial-row {
-  padding-left: 18%;
+  justify-content: center;
 }
 
 .testimonial-card {
@@ -280,6 +306,7 @@ img {
   border-radius: 20px;
 }
 
+ 
 .img-col {
   padding-left: 19%;
   padding-bottom: 50px;
@@ -330,14 +357,18 @@ img {
 }
 
 .questions-text1 {
-  padding-left: 20%;
   font-size: x-large;
   padding-bottom: 1.5%;
 }
 
 .questions-text2 {
-  padding-left: 20%;
   padding-bottom: 1%;
+}
+
+.questions-textdiv {
+  flex-direction: row;
+  justify-items: center;
+  max-width: 85%;
 }
 
 .questions-img {
@@ -418,5 +449,25 @@ img {
   }
   .question-card-container {
     flex-direction: column; /* stack people */
+  }
+}
+
+/** lunch brunch mobile styling **/
+@media (max-width: 760px) {
+  .testimonial-title {
+    justify-content: center;
+    margin-left: 0;
+  }
+  .testimonial-row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .testimonial-card {
+    width: 80%;
+    margin-bottom: 15px;
+    padding: 15px;
+  }
+  .questions-text2 {
+    /* padding: 10px; */
   }
 }
