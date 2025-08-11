@@ -17,6 +17,41 @@ body {
   display: none;
 } */
 
+
+.equal-education-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: left;
+  padding: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.equal-education-header {
+  text-align: left;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  
+}
+
+.equal-education-header a {
+  pointer-events: none; /* Prevents link clicks */
+  color: inherit; /* Keeps the text color consistent */
+}
+
+.equal-education-header {
+  text-align: left;
+  font-weight: bold;
+  color: #000;
+  font-family: "Mulish", sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  line-height: 150%;
+}
+
 .hero-content{
   left: 35% !important;
 }

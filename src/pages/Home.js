@@ -297,6 +297,19 @@ const Home = () => {
           <section>
             <CurrentSponsors />
           </section>
+          
+          {/* Equal Education and Employment */}
+          <section>
+            <div className="equal-education-container">
+              <h2 className="equal-education-header">
+                <a href="https://hr.cornell.edu/about/workplace-rights/equal-education-and-employment">Equal Education and Employment Opportunity (EEEO) Statement</a>
+              </h2>
+              <p className="equal-education-text">
+                In 1868, Ezra Cornell wrote, "I would found an institution where any person can find instruction in any study!" More than 150 years later, the "... any person ….. any study" principle continues to guide the university community. Cornell welcomes students, faculty, and staff with diverse backgrounds from across the globe to pursue world-
+  class education and career opportunities...</p>
+            </div>
+          </section>
+
         </div>
       </div>
     </>
