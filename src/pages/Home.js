@@ -305,8 +305,15 @@ const Home = () => {
                 <a href="https://hr.cornell.edu/about/workplace-rights/equal-education-and-employment">Equal Education and Employment Opportunity (EEEO) Statement</a>
               </h2>
               <p className="equal-education-text">
-                In 1868, Ezra Cornell wrote, "I would found an institution where any person can find instruction in any study!" More than 150 years later, the "... any person ….. any study" principle continues to guide the university community. Cornell welcomes students, faculty, and staff with diverse backgrounds from across the globe to pursue world-
-  class education and career opportunities...</p>
+                In 1868, Ezra Cornell wrote, "I would found an institution where any person can find instruction in any study!" More than 150 years later, the "any person any study" principle continues to guide the university community. Cornell welcomes students, faculty, and staff with diverse backgrounds from across the globe to pursue world-class education... (click{" "}
+                <a
+                  href="https://hr.cornell.edu/about/workplace-rights/equal-education-and-employment"
+                  style={{ fontWeight: "bold", textDecoration: "underline" }}
+                >
+                  here
+                </a>{" "}
+                to read more)
+              </p>
             </div>
           </section>
 

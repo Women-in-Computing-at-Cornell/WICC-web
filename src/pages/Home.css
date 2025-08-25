@@ -17,7 +17,6 @@ body {
   display: none;
 } */
 
-
 .equal-education-container{
   display: flex;
   flex-direction: column;
@@ -37,10 +36,6 @@ body {
   
 }
 
-.equal-education-header a {
-  pointer-events: none; /* Prevents link clicks */
-  color: inherit; /* Keeps the text color consistent */
-}
 
 .equal-education-header {
   text-align: left;
