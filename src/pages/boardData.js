@@ -231,23 +231,65 @@ export const technical = {
       bio: " ",
     },
     {
-      name: "Tina Chen",
-      netId: "tc663",
-      position: "Designer",
+      name: "Elizabeth Woo",
+      netId: "erw96",
+      position: "",
       bio: " ",
     },
     {
-      name: "Yuhan Sun",
-      netId: "ys728",
+      name: "Audrey Ghosh",
+      netId: "ag2635",
       position: "Developer",
       bio: " ",
     },
     {
-      name: "Leah Kim",
-      netId: "lk552",
-      position: "Designer",
+      name: "Clarissa McGhee",
+      netId: "cm2259",
+      position: "Developer",
       bio: " ",
     },
+    {
+      name: "Katherine Hu",
+      netId: "kyh29",
+      position: "Developer",
+      bio: " ",
+    },
+    {
+      name: "Neha Bommireddy",
+      netId: "nb644",
+      position: "Developer",
+      bio: " ",
+    },
+    {
+      name: "Sophia Liu",
+      netId: "sl3632",
+      position: "Developer",
+      bio: " ",
+    },
+    {
+      name: "Enaika Kishnani",
+      netId: "ek756",
+      position: "Developer",
+      bio: " ",
+    },
+    {
+      name: "Sophia Evans",
+      netId: "sle68",
+      position: "Developer",
+      bio: " ",
+    },
+    {
+      name: "Rinah Zhang",
+      netId: "rxz4",
+      position: "Developer",
+      bio: " ",
+    },
+    {
+      name: "Manya Pradeep Narayan",
+      netId: "mp2343",
+      position: "Developer",
+      bio: " ",
+    }
   ],
 };
 
