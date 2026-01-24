@@ -13,14 +13,20 @@ export const sponsorData = [
     "platinum": true
   },
   {
-    "name": "Host event over the year without hosting charge * 1",
+    "name": "Host 1 event over the year without hosting charge",
     "silver": true,
     "gold": true,
     "platinum": true
   },
   {
-    "name": "Host event over the year without hosting charge * 2",
+    "name": "Can publicize programs/job postings to our Listserv of 2000+ members",
     "silver": true,
+    "gold": true,
+    "platinum": true
+  },
+  {
+    "name": "Host 2 events over the year without hosting charge",
+    "silver": false,
     "gold": true,
     "platinum": true
   },
@@ -49,7 +55,13 @@ export const sponsorData = [
     "platinum": true
   },
   {
-    "name": "Publicity on WICC LinkedIn + post(s) with event photos",
+    "name": "Publicity on WICC LinkedIn - post(s) with event photos",
+    "silver": false,
+    "gold": false,
+    "platinum": true
+  },
+  {
+    "name": "Potential organized visit to the company's offices",
     "silver": false,
     "gold": false,
     "platinum": true

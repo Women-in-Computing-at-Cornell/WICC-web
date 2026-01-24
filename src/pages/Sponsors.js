@@ -119,9 +119,9 @@ const Sponsors = () => {
 
         <div className="container3">
           <h2 className="container-header">Tiers</h2>
-          <p className="container-subheader">Silver ($1000)</p>
-          <p className="container-subheader">Gold ($2000)</p>
-          <p className="container-subheader">Platinum ($3000)</p>
+          <p className="container-subheader">Silver ($1250)</p>
+          <p className="container-subheader">Gold ($2500)</p>
+          <p className="container-subheader">Platinum ($4000)</p>
           <br />
           <div className="description">
             We have varying levels of sponsorship with different benefits below.
