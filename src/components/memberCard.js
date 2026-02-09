@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import ReactDOM from "react-dom";
 import Modal from "react-modal";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
@@ -16,9 +15,6 @@ function Member({ name, title, netid, bio, img }) {
   const [isHovered, setIsHovered] = useState(false);
 
   const toggleDetails = () => setShowDetails(!showDetails);
-
-  // Hover state for button expansion
-  const toggleButton = () => setIsHovered(!showDetails);
 
   // Coffee chat email button
   const openEmail = (event) => {

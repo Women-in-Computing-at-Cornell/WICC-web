@@ -15,7 +15,7 @@ export default class Membership extends Component {
 
   render() {
     let sec = operations.members.filter(
-      (record) => record.position === "Secretary"
+      (record) => record.position === "Secretary",
     );
 
     function importAll(r) {
@@ -27,7 +27,7 @@ export default class Membership extends Component {
     }
 
     const boardHeadshots = importAll(
-      require.context("../../images/headshots/board", false, /\.jpg/)
+      require.context("../../images/headshots/board", false, /\.jpg/),
     );
 
     return (
@@ -70,6 +70,7 @@ export default class Membership extends Component {
           >
             <img
               src={eboard}
+              alt="WICC Eboard"
               style={{ width: "45%", borderRadius: "20px", marginRight: "5%" }}
             />
             <div>
@@ -189,6 +190,7 @@ export default class Membership extends Component {
             </div>
             <img
               src={iceskating}
+              alt="Ice Skating Social"
               style={{
                 width: "35%",
                 borderRadius: "20px",
@@ -252,7 +254,6 @@ export default class Membership extends Component {
               {sec.map((s, i) => (
                 <QuestionsCard
                   name={s.name}
-                  title={s.title}
                   img={boardHeadshots[s.netId + ".jpg"]}
                   netId={s.netId}
                 />

@@ -1,5 +1,5 @@
-import React, { useState, useEffect, useLayoutEffect } from "react";
-import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
+import React from "react";
+import { Link } from "react-router-dom";
 import "./Program.css";
 import "./pages.css";
 import cyc from "../images/programs/cyc.jpg";
@@ -8,24 +8,11 @@ import mentorship from "../images/programs/mentorship.jpg";
 import outreach from "../images/programs/outreach.jpg";
 import Programhero from "../images/programs/Programhero.png";
 
-let styles = {
-  container: {
-    margin: "3%",
-  },
-  col: {
-    borderRadius: ".5em",
-    margin: "0px",
-  },
-  link: {
-    color: "black",
-  },
-};
-
 const Programs = () => {
   return (
     <div>
       <div className="hero">
-        <div className="hero-text" style={{top:"27%"}}>
+        <div className="hero-text" style={{ top: "27%" }}>
           <h1
             className="responsive-title"
             style={{
@@ -48,14 +35,21 @@ const Programs = () => {
             participant.
           </p>
         </div>
-        <div className="hero-image" style={{width: "100vw", height: "100vh", minHeight: "100vh"}}>
-          <img src={Programhero} style={{ width: "100%", height:"100%" }}></img>
+        <div
+          className="hero-image"
+          style={{ width: "100vw", height: "100vh", minHeight: "100vh" }}
+        >
+          <img
+            src={Programhero}
+            alt="Dodgeball Social"
+            style={{ width: "100%", height: "100%" }}
+          ></img>
         </div>
         <img
-            src={require("../images/downarrow.png")}
-            alt="Scroll Down"
-            className="downward-arrow"
-          />
+          src={require("../images/downarrow.png")}
+          alt="Scroll Down"
+          className="downward-arrow"
+        />
       </div>
       <h2 className="what-we-do">What We Do</h2>
       <div className="events-grid">

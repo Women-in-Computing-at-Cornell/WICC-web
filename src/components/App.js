@@ -6,15 +6,12 @@ import Home from "../pages/Home";
 import About from "../pages/About";
 import Board from "../pages/Board";
 import Programs from "../pages/Programs";
-//import Resources from '../pages/Resources';
 import Campaigns from "../pages/programs/Campaigns";
-import Discussions from "../pages/programs/Discussions";
 import Events from "../pages/programs/Events";
 import Lunch from "../pages/programs/Lunch";
 import Membership from "../pages/programs/Membership";
 import Mentorship from "../pages/programs/Mentorship";
 import Outreach from "../pages/programs/Outreach";
-import Prospective from "../pages/programs/Prospective";
 import Calendar from "../pages/Calendar";
 import Sponsors from "../pages/Sponsors";
 import CrackingYourCareer from "../pages/programs/CrackingYourCareer";
@@ -35,13 +32,11 @@ function App() {
           <Route path="/join" component={Join} />
           <Route path="/membership" component={Membership} />
           <Route path="/campaigns" component={Campaigns} />
-          <Route path="/discussions" component={Discussions} />
           <Route path="/crackingyourcareer" component={CrackingYourCareer} />
           <Route path="/events" component={Events} />
           <Route path="/lunch" component={Lunch} />
           <Route path="/mentorship" component={Mentorship} />
           <Route path="/outreach" component={Outreach} />
-          <Route path="/prospective" component={Prospective} />
           <Route path="/sponsors" component={Sponsors} />
           <Route path="/calendar" component={Calendar} />
         </Switch>
@@ -53,4 +48,3 @@ function App() {
 //          <Route path="/resources" component={Resources} />
 
 export default App;
-
