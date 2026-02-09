@@ -53,4 +53,3 @@ function App() {
 //          <Route path="/resources" component={Resources} />
 
 export default App;
-
