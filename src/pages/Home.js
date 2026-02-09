@@ -2,67 +2,26 @@ import React from "react";
 import Button from "react-bootstrap/Button";
 import Image from "react-bootstrap/Image";
 import "./Home.css";
-import Sponsors from "../pages/Sponsors";
-import { Carousel } from "react-responsive-carousel";
-import semoutlook from "../images/semesteroutlookpic.png";
 import arrowbutton from "../images/icons/circle-arrows.png";
-import newmissionImg from "../images/wiccnewlogo.png";
-import PCarousel from "../components/PCarousel";
 import CurrentSponsors from "../components/currentSponsors.js";
-import ImgCarousel from "../components/ImgCarousel.jsx";
 import banner from "../images/home/home.png";
 import www1 from "../images/home/www1.png";
 import www2 from "../images/home/www2.png";
 import www3 from "../images/home/www3.png";
 import { Link } from "react-router-dom";
 
-
-
-function importAll(r) {
-  let images = {};
-  r.keys().map((item, index) => {
-    images[item.replace("./", "")] = r(item);
-    return null;
-  });
-  return images;
-}
-
 const Home = () => {
-  const homepicsname = importAll(
-    require.context(
-      "../images/photo-campaigns/hp-recentevents",
-      false,
-      /\.(jpg|png)$/i
-    )
-  );
-  const homepics = Object.keys(homepicsname);
-
-  console.log(homepics);
-  const commonFlexColumnStyle = {
-    display: "flex",
-    flexDirection: "column",
-    flex: "1",
-  };
-
-  const commonImageStyle = {
-    width: "100%",
-    height: "auto",
-  };
-
-  const containerStyle = {
-    display: "flex",
-    flexDirection: "row",
-    marginLeft: "10em",
-    marginRight: "10em",
-    gap: "8em",
-  };
   return (
     <>
       {/* Hero Image */}
       <div className="container">
         <div className="home-container">
           <section className="hero-container">
-            <Image src={banner} className="mission-image" style={{ width: "100%", height:"100%" }}></Image>
+            <Image
+              src={banner}
+              className="mission-image"
+              style={{ width: "100%", height: "100%" }}
+            ></Image>
             <div className="hero-content">
               <h2>
                 Building a supportive tech community for women and allies.
@@ -75,10 +34,10 @@ const Home = () => {
               </p>
             </div>
             <img
-            src={require("../images/downarrow.png")}
-            alt="Scroll Down"
-            className="downward-arrow"
-          />
+              src={require("../images/downarrow.png")}
+              alt="Scroll Down"
+              className="downward-arrow"
+            />
           </section>
 
           {/* Semester Outlook */}
@@ -297,15 +256,22 @@ const Home = () => {
           <section>
             <CurrentSponsors />
           </section>
-          
+
           {/* Equal Education and Employment */}
           <section>
             <div className="equal-education-container">
               <h2 className="equal-education-header">
-                <a href="https://hr.cornell.edu/about/workplace-rights/equal-education-and-employment">Equal Education and Employment Opportunity (EEEO) Statement</a>
+                <a href="https://hr.cornell.edu/about/workplace-rights/equal-education-and-employment">
+                  Equal Education and Employment Opportunity (EEEO) Statement
+                </a>
               </h2>
               <p className="equal-education-text">
-                In 1868, Ezra Cornell wrote, "I would found an institution where any person can find instruction in any study!" More than 150 years later, the "any person any study" principle continues to guide the university community. Cornell welcomes students, faculty, and staff with diverse backgrounds from across the globe to pursue world-class education... (click{" "}
+                In 1868, Ezra Cornell wrote, "I would found an institution where
+                any person can find instruction in any study!" More than 150
+                years later, the "any person any study" principle continues to
+                guide the university community. Cornell welcomes students,
+                faculty, and staff with diverse backgrounds from across the
+                globe to pursue world-class education... (click{" "}
                 <a
                   href="https://hr.cornell.edu/about/workplace-rights/equal-education-and-employment"
                   style={{ fontWeight: "bold", textDecoration: "underline" }}
@@ -316,7 +282,6 @@ const Home = () => {
               </p>
             </div>
           </section>
-
         </div>
       </div>
     </>

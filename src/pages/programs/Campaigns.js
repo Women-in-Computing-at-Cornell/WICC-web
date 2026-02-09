@@ -2,17 +2,8 @@ import React, { Component } from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import banner from "../../images/programs/campaigns_banner.jpg"
-import {
-  presidents,
-  operations,
-  corporate,
-  academic,
-  brand,
-  outreach,
-  community,
-  advisors,
-} from "../boardData";
+import banner from "../../images/programs/campaigns_banner.jpg";
+import { brand } from "../boardData";
 
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 // import styles from 'react-responsive-carousel/lib/styles/carousel.min.css';
@@ -27,7 +18,6 @@ import PhotoCarousel from "../PhotoCarousel";
 import "./programPages.css";
 
 export default class Campaigns extends Component {
-
   componentDidMount() {
     window.scrollTo(0, 0);
   }
@@ -41,7 +31,7 @@ export default class Campaigns extends Component {
 
   render() {
     let photoDirector = brand.members.filter(
-      (record) => record.position === "Photography Director"
+      (record) => record.position === "Photography Director",
     );
 
     function importAll(r) {
@@ -53,38 +43,30 @@ export default class Campaigns extends Component {
     }
 
     const boardHeadshots = importAll(
-      require.context("../../images/headshots/board", false, /\.jpg/)
+      require.context("../../images/headshots/board", false, /\.jpg/),
     );
-
-    function importAll(r) {
-      let images = {};
-      r.keys().forEach((item) => {
-        images[item.replace("./", "")] = r(item);
-      });
-      return images;
-    }
     const sp19Dit = importAll(
-      require.context("../../images/photo-campaigns/sp19-dit", false, /\.png/)
+      require.context("../../images/photo-campaigns/sp19-dit", false, /\.png/),
     );
     let imgNamesSp19 = Object.keys(sp19Dit);
 
     const sp18Fit = importAll(
-      require.context("../../images/photo-campaigns/sp18-fit", false, /\.png/)
+      require.context("../../images/photo-campaigns/sp18-fit", false, /\.png/),
     );
     let imgNamesSp18 = Object.keys(sp18Fit);
 
     const fa18Dit = importAll(
-      require.context("../../images/photo-campaigns/f18-dit", false, /\.jpg/)
+      require.context("../../images/photo-campaigns/f18-dit", false, /\.jpg/),
     );
     let imgNamesfa18 = Object.keys(fa18Dit);
 
     const fa17Dit = importAll(
-      require.context("../../images/photo-campaigns/f17-dit", false, /\.jpg/)
+      require.context("../../images/photo-campaigns/f17-dit", false, /\.jpg/),
     );
     let imgNamesfa17 = Object.keys(fa17Dit);
 
     const fa16Dit = importAll(
-      require.context("../../images/photo-campaigns/f16-dit", false, /\.jpg/)
+      require.context("../../images/photo-campaigns/f16-dit", false, /\.jpg/),
     );
     let imgNamesfa16 = Object.keys(fa16Dit);
 
@@ -92,8 +74,8 @@ export default class Campaigns extends Component {
       require.context(
         "../../images/photo-campaigns/f15-looklikeeng",
         false,
-        /\.jpg/
-      )
+        /\.jpg/,
+      ),
     );
     let imgNamesfa15 = Object.keys(fa15);
 
@@ -115,9 +97,8 @@ export default class Campaigns extends Component {
               relevant issues in the tech industry.
             </p>
           </div>
-        </div >
+        </div>
         <div class="page">
-
           <Container>
             <Row style={{ paddingBottom: "1%" }}>
               <Col xs lg="6" style={{ paddingRight: "5%", paddingLeft: "0%" }}>
@@ -183,22 +164,25 @@ export default class Campaigns extends Component {
           {this.state.value === "fa15" && (
             <PhotoCarousel imgNames={imgNamesfa15} pics={fa15} />
           )}
-
         </div>
         <div className="questions-container2">
-          <h5 className="questions-text1" style={{ paddingTop: "5%" }}>Questions?</h5>
-          <p className="questions-text2">Reach out to the following WICC members for clarification regarding to Active Membership.</p>
+          <h5 className="questions-text1" style={{ paddingTop: "5%" }}>
+            Questions?
+          </h5>
+          <p className="questions-text2">
+            Reach out to the following WICC members for clarification regarding
+            to Active Membership.
+          </p>
           <Container>
-              <Row>
-                <Col>
-                  <QuestionsCard
-                    name = {photoDirector[0].name}
-                    title = {photoDirector[0].title}
-                    img = {boardHeadshots[photoDirector[0].netId + ".jpg"]}
-                    netId = {photoDirector[0].netId}
-                  />
-                </Col>
-              </Row>
+            <Row>
+              <Col>
+                <QuestionsCard
+                  name={photoDirector[0].name}
+                  img={boardHeadshots[photoDirector[0].netId + ".jpg"]}
+                  netId={photoDirector[0].netId}
+                />
+              </Col>
+            </Row>
           </Container>
         </div>
       </>

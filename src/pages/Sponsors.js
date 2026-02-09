@@ -3,8 +3,6 @@ import "./pages.css";
 import "./Sponsors.css";
 import Image from "react-bootstrap/Image";
 import { sponsorData } from "./sponsorData.js";
-//test comment
-// test comment 2
 import sponsorsImg from "../images/sponsors/sponsers_page_imgs/sponsors_img.png";
 import sponsorsCandid from "../images/photo-campaigns/f16-dit/14856142_1303479296338000_1158762264361234190_o.jpg";
 import whiteCheck from "../images/icons/white-checkmark.svg";
@@ -26,7 +24,7 @@ const Sponsors = () => {
   return (
     <div>
       <div className="hero">
-        <div className="hero-text" style={{top: "30%"}}>
+        <div className="hero-text" style={{ top: "30%" }}>
           <h1 style={{ marginBottom: "1.2rem", fontWeight: "900" }}>
             {" "}
             Industry Partnerships{" "}
@@ -37,14 +35,22 @@ const Sponsors = () => {
             for careers in industry and academia.
           </p>
         </div>
-        <div className="hero-image" style={{width: "100vw", height: "100vh", minHeight: "100vh"}}>
-          <img src={sponsorsImg} style={{ width: "100%", height: "100%" }} className="hi"></img>
+        <div
+          className="hero-image"
+          style={{ width: "100vw", height: "100vh", minHeight: "100vh" }}
+        >
+          <img
+            src={sponsorsImg}
+            alt="Networking Event"
+            style={{ width: "100%", height: "100%" }}
+            className="hi"
+          ></img>
         </div>
         <img
-            src={require("../images/downarrow.png")}
-            alt="Scroll Down"
-            className="downward-arrow"
-          />
+          src={require("../images/downarrow.png")}
+          alt="Scroll Down"
+          className="downward-arrow"
+        />
       </div>
       <div>
         <section className="benefits-section">
@@ -145,13 +151,22 @@ const Sponsors = () => {
               <tr key={key}>
                 <td>{benefit.name}</td>
                 <td className="center">
-                  <img src={getBenefitImage(key, benefit, "silver")} />
+                  <img
+                    src={getBenefitImage(key, benefit, "silver")}
+                    alt="Silver Benefits"
+                  />
                 </td>
                 <td className="center">
-                  <img src={getBenefitImage(key, benefit, "gold")} />
+                  <img
+                    src={getBenefitImage(key, benefit, "gold")}
+                    alt="Gold Benefits"
+                  />
                 </td>
                 <td className="center">
-                  <img src={getBenefitImage(key, benefit, "platinum")} />
+                  <img
+                    src={getBenefitImage(key, benefit, "platinum")}
+                    alt="Platinum Benefits"
+                  />
                 </td>
               </tr>
             ))}

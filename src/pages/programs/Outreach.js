@@ -2,31 +2,14 @@ import React, { Component } from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
-import {
-  presidents,
-  operations,
-  corporate,
-  academic,
-  brand,
-  outreach,
-  community,
-  advisors,
-} from "../boardData";
-import ReactGoogleSlides from "react-google-slides";
-import outreach3 from "../../images/outreach/outreach.jpg";
-import outreach1 from "../../images/outreach/outreach1.jpg";
 import OutreachHero from "../../images/outreach/OutreachHero.jpg";
-import QuestionsCard from "./QuestionsCard.js";
-import ghc1 from "../../images/programs/ghc1.jpg";
-import ghc2 from "../../images/programs/ghc2.jpg";
-import fa241 from "../../images/outreach/gwc/FA24_GWC_Beginner_Class_Volunteers.png"
-import fa242 from "../../images/outreach/gwc/FA24_GWC_Intermediate_Class_Volunteers.png"
-import fa243 from "../../images/outreach/gwc/FA24_Outreach_Volunteer_Social.png"
-import gwc1 from "../../images/outreach/gwc/gwc1.png"
-import gwc2 from "../../images/outreach/gwc/gwc2.png"
-import gwc3 from "../../images/outreach/gwc/gwc3.png"
+import fa241 from "../../images/outreach/gwc/FA24_GWC_Beginner_Class_Volunteers.png";
+import fa242 from "../../images/outreach/gwc/FA24_GWC_Intermediate_Class_Volunteers.png";
+import fa243 from "../../images/outreach/gwc/FA24_Outreach_Volunteer_Social.png";
+import gwc1 from "../../images/outreach/gwc/gwc1.png";
+import gwc2 from "../../images/outreach/gwc/gwc2.png";
+import gwc3 from "../../images/outreach/gwc/gwc3.png";
 
 import Image from "react-bootstrap/Image";
 
@@ -39,14 +22,6 @@ export default class Outreach extends Component {
   }
 
   render() {
-    let directors = outreach.members.filter(
-      (record) => record.position === "Outreach Co-Director"
-    );
-    let vp = outreach.members.filter(
-      (record) => record.position === "Vice President, Outreach"
-    );
-    // directors = directors.concat(vp);
-
     function importAll(r) {
       let images = {};
       r.keys().forEach((item) => {
@@ -55,11 +30,8 @@ export default class Outreach extends Component {
       return images;
     }
 
-    const boardHeadshots = importAll(
-      require.context("../../images/headshots/board", false, /\.jpg|\.JPG/)
-    );
     const projectImages = importAll(
-      require.context("../../images/outreach/pastprojects", false, /\.png/)
+      require.context("../../images/outreach/pastprojects", false, /\.png/),
     );
 
     return (
@@ -101,13 +73,17 @@ export default class Outreach extends Component {
                 marginRight: "20%",
               }}
             >
-              WICC Outreach plans events and programs related to spreading computer science to the greater Ithaca community. We organize a weekly Girls Who Code program on campus and several general outreach workshops involving other organizations, typically off campus.
+              WICC Outreach plans events and programs related to spreading
+              computer science to the greater Ithaca community. We organize a
+              weekly Girls Who Code program on campus and several general
+              outreach workshops involving other organizations, typically off
+              campus.
             </p>
             <p>
               More details on the{" "}
               <a href="https://girlswhocode.com/">
                 <span style={{ fontWeight: "bold" }}>Girls Who Code</span>{" "}
-  website
+                website
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -164,6 +140,7 @@ export default class Outreach extends Component {
           <div class="hero-image">
             <img
               src={OutreachHero}
+              alt="WICC Talk"
               style={{
                 width: "100%",
                 height: "auto",
@@ -173,39 +150,41 @@ export default class Outreach extends Component {
           </div>
         </div>
         <div
-              style={{
-                textAlign: "center",
-                fontSize: "18px",
-                fontWeight: "bold",
-                margin: "5vw 10vw",
-                padding: "30px",
-                backgroundColor: "#ffffff",
-                borderRadius: "20px",
-                boxShadow: "0px 0px 40px 0px rgba(0, 0, 0, 0.15)",
-              }}
-            >
-              <h3
-                  style={{
-                    color: "#212529",
-                    fontFamily: "Mulish",
-                    fontSize: "40px",
-                    fontStyle: "normal",
-                    fontWeight: "700",
-                    lineHeight: "150%",
-                  
-                  }}
-                >
-                  Schedule (Spring 2025)
-                </h3>
-              <p>
-                Feb 9th, Feb 23rd, Mar 2nd, Mar 9th, Mar 16th, Mar 23rd,
-                Apr 13th, Apr 20th, Apr 27th, May 4th 
-              </p>
-              <p style={{ fontWeight: "normal", fontSize: "16px", color: "#dc3545" }}>
-                Please note that registration has closed for the Spring 2025 semester. <br></br>
-                Registration will open again at the beginning of next semester.
-              </p>
-            </div>
+          style={{
+            textAlign: "center",
+            fontSize: "18px",
+            fontWeight: "bold",
+            margin: "5vw 10vw",
+            padding: "30px",
+            backgroundColor: "#ffffff",
+            borderRadius: "20px",
+            boxShadow: "0px 0px 40px 0px rgba(0, 0, 0, 0.15)",
+          }}
+        >
+          <h3
+            style={{
+              color: "#212529",
+              fontFamily: "Mulish",
+              fontSize: "40px",
+              fontStyle: "normal",
+              fontWeight: "700",
+              lineHeight: "150%",
+            }}
+          >
+            Schedule (Spring 2025)
+          </h3>
+          <p>
+            Feb 9th, Feb 23rd, Mar 2nd, Mar 9th, Mar 16th, Mar 23rd, Apr 13th,
+            Apr 20th, Apr 27th, May 4th
+          </p>
+          <p
+            style={{ fontWeight: "normal", fontSize: "16px", color: "#dc3545" }}
+          >
+            Please note that registration has closed for the Spring 2025
+            semester. <br></br>
+            Registration will open again at the beginning of next semester.
+          </p>
+        </div>
         <div class="page imagediv">
           <div
             style={{
@@ -217,46 +196,46 @@ export default class Outreach extends Component {
               padding: "0px",
             }}
           >
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "row",
-              gap: "5%",
-              padding: "5%",
-              flex: "1",
-              marginTop: "0",
-              paddingTop: "0",
-            }} 
-          >
-            <img
-              src={gwc1}
-              alt="First Image"
+            <div
               style={{
-                width: "100%", // Adjust as needed
-                maxWidth: "32%",
-                borderRadius: "5px"
+                display: "flex",
+                flexDirection: "row",
+                gap: "5%",
+                padding: "5%",
+                flex: "1",
+                marginTop: "0",
+                paddingTop: "0",
               }}
-            />
-            <img
-              src={gwc2}
-              alt="First Image"
-              style={{
-                width: "100%", // Adjust as needed
-                maxWidth: "27%",
-                borderRadius: "15px"
-              }}
-            />
-            <img
-              src={gwc3}
-              alt="Second Image"
-              style={{
-                width: "100%",
-                maxWidth: "32%",
-                borderRadius: "15px"
-              }}
-            />
+            >
+              <img
+                src={gwc1}
+                alt="GWC Group 1"
+                style={{
+                  width: "100%", // Adjust as needed
+                  maxWidth: "32%",
+                  borderRadius: "5px",
+                }}
+              />
+              <img
+                src={gwc2}
+                alt="GWC Group 2"
+                style={{
+                  width: "100%", // Adjust as needed
+                  maxWidth: "27%",
+                  borderRadius: "15px",
+                }}
+              />
+              <img
+                src={gwc3}
+                alt="GWC Group 3"
+                style={{
+                  width: "100%",
+                  maxWidth: "32%",
+                  borderRadius: "15px",
+                }}
+              />
+            </div>
           </div>
-        </div>
         </div>
         <div class="page imagediv">
           {/* <center>
@@ -272,7 +251,6 @@ export default class Outreach extends Component {
               Register Now!
             </Button>
           </center> */}
-
 
           <div
             style={{
@@ -318,34 +296,33 @@ export default class Outreach extends Component {
                 flex: "1",
                 marginTop: "0",
                 paddingTop: "0",
-                
-              }} 
+              }}
             >
               <img
                 src={fa241}
-                alt="First Image"
+                alt="GWC Beginner Volunteer Group"
                 style={{
                   width: "100%", // Adjust as needed
                   maxWidth: "32%",
-                  borderRadius: "5px"
+                  borderRadius: "5px",
                 }}
               />
               <img
                 src={fa242}
-                alt="First Image"
+                alt="GWC Intermediate Volunteer Group"
                 style={{
                   width: "100%", // Adjust as needed
                   maxWidth: "27%",
-                  borderRadius: "15px"
+                  borderRadius: "15px",
                 }}
               />
               <img
                 src={fa243}
-                alt="Second Image"
+                alt="GWC Volunteer Social"
                 style={{
                   width: "100%",
                   maxWidth: "32%",
-                  borderRadius: "15px"
+                  borderRadius: "15px",
                 }}
               />
             </div>
@@ -485,7 +462,6 @@ export default class Outreach extends Component {
               // alignItems: "flex-start",
               // gap: "42px",
             }}
-            
           >
             <Row className="divrow">
               {/* First Box */}
@@ -522,8 +498,13 @@ export default class Outreach extends Component {
                   Volunteers
                 </h3>
                 <p>
-                Our Girls Who Code program, which is for middle and high school students, consists of 10 Sunday classes at Mann Library on campus. Beginner and intermediate classes (taught in Python) are from 1-2:30, and advanced classes (topics include game dev, web dev, data science) are from 3-4:30. Each class typically consists of an icebreaker activity, a lesson, and coding exercises/final project. 
-
+                  Our Girls Who Code program, which is for middle and high
+                  school students, consists of 10 Sunday classes at Mann Library
+                  on campus. Beginner and intermediate classes (taught in
+                  Python) are from 1-2:30, and advanced classes (topics include
+                  game dev, web dev, data science) are from 3-4:30. Each class
+                  typically consists of an icebreaker activity, a lesson, and
+                  coding exercises/final project.
                 </p>
               </Col>
 
@@ -561,15 +542,36 @@ export default class Outreach extends Component {
                   Outreach
                 </h3>
                 <p>
-                General Outreach organizes workshops/events that we hold with external organizations (like the Tompkins County Public Library and Sciencenter). We have workshops for adults and also workshops for kids. Past workshops include teaching data visualization and web development. Here are the scheduled events for this semester: <a href="https://docs.google.com/spreadsheets/d/1uta_807tnsUrJRrAxbRN2iUabScbH0gLjH61wiGL1CQ/edit?usp=sharing" style={{color: "#7db5a9", textDecoration: "underline", fontWeight: "bold"}} className="divrowa">Spring 2025 General Outreach Events</a>. 
-
+                  General Outreach organizes workshops/events that we hold with
+                  external organizations (like the Tompkins County Public
+                  Library and Sciencenter). We have workshops for adults and
+                  also workshops for kids. Past workshops include teaching data
+                  visualization and web development. Here are the scheduled
+                  events for this semester:{" "}
+                  <a
+                    href="https://docs.google.com/spreadsheets/d/1uta_807tnsUrJRrAxbRN2iUabScbH0gLjH61wiGL1CQ/edit?usp=sharing"
+                    style={{
+                      color: "#7db5a9",
+                      textDecoration: "underline",
+                      fontWeight: "bold",
+                    }}
+                    className="divrowa"
+                  >
+                    Spring 2025 General Outreach Events
+                  </a>
+                  .
                 </p>
               </Col>
             </Row>
           </Container>
 
           <center>
-            <h4 style={{ paddingTop: "5%" }}>Questions? Email <a href="mailto:girlswhocode@cornell.edu">girlswhocode@cornell.edu</a></h4>
+            <h4 style={{ paddingTop: "5%" }}>
+              Questions? Email{" "}
+              <a href="mailto:girlswhocode@cornell.edu">
+                girlswhocode@cornell.edu
+              </a>
+            </h4>
             <Container
               style={{
                 paddingTop: "56px",
