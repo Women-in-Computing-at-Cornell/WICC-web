@@ -30,6 +30,7 @@ const teams = [
   photo,
   advisors,
   faculty,
+  faculty,
 ];
 
 export default class Board extends Component {
@@ -92,6 +93,7 @@ export default class Board extends Component {
             className="heroimg "
             src={hero}
             style={{ height: "100%", objectFit: "cover" }}
+            style={{ height: "100%", objectFit: "cover" }}
             alt="Description"
           />
           <div className="hero-content">
@@ -117,10 +119,15 @@ export default class Board extends Component {
               className="responsive-text wwa2"
               style={{ marginBottom: "20px", display: "none" }}
             >
+            <p
+              className="responsive-text wwa2"
+              style={{ marginBottom: "20px", display: "none" }}
+            >
               WICC was founded in March 2013 to bring together women and gender
               minorities in computing fields at Cornell, expand their
               opportunities and successes, provide a support network, and
               empower them to encourage younger underrepresented students to
+              consider computing fields.
               consider computing fields.
             </p>
           </div>
@@ -161,6 +168,7 @@ export default class Board extends Component {
                   {" "}
                   ON THIS PAGE:
                 </p>
+
 
                 <Nav.Link href="#board#presidents" eventKey="pres">
                   Presidents
