@@ -1,5 +1,5 @@
-import React, { useState, useEffect, useLayoutEffect } from "react";
-import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
+import React from "react";
+import { Link } from "react-router-dom";
 import "./Program.css";
 import "./pages.css";
 import cyc from "../images/programs/cyc.jpg";
@@ -7,19 +7,6 @@ import lunchbunch from "../images/programs/lunchbunch.jpg";
 import mentorship from "../images/programs/mentorship.jpg";
 import outreach from "../images/programs/outreach.jpg";
 import Programhero from "../images/programs/Programhero.png";
-
-let styles = {
-  container: {
-    margin: "3%",
-  },
-  col: {
-    borderRadius: ".5em",
-    margin: "0px",
-  },
-  link: {
-    color: "black",
-  },
-};
 
 const Programs = () => {
   return (

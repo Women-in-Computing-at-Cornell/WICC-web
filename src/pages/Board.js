@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 import "./Board.css"; // Make sure this path is correct
-import BoardCard from "../components/BoardCard";
-import Navbar from "react-bootstrap/Navbar";
-import { Nav, NavDropdown } from "react-bootstrap";
+import { Nav } from "react-bootstrap";
 import {
   presidents,
   operations,
@@ -31,7 +29,7 @@ const teams = [
   technical,
   photo,
   advisors,
-  faculty
+  faculty,
 ];
 
 export default class Board extends Component {
@@ -87,15 +85,13 @@ export default class Board extends Component {
   }
 
   render() {
-    const { value } = this.state;
-
     return (
       <div>
         <div className="hero-container">
           <img
             className="heroimg "
             src={hero}
-            style={{height: "100%",objectFit:"cover" }}
+            style={{ height: "100%", objectFit: "cover" }}
             alt="Description"
           />
           <div className="hero-content">
@@ -117,12 +113,15 @@ export default class Board extends Component {
               fosters a support network to empower everyone and encourage young
               students to discover their love for computing.
             </p>
-            <p className="responsive-text wwa2" style={{ marginBottom: "20px", display:"none" }}>
+            <p
+              className="responsive-text wwa2"
+              style={{ marginBottom: "20px", display: "none" }}
+            >
               WICC was founded in March 2013 to bring together women and gender
               minorities in computing fields at Cornell, expand their
               opportunities and successes, provide a support network, and
               empower them to encourage younger underrepresented students to
-              consider computing fields. 
+              consider computing fields.
             </p>
           </div>
           <img
@@ -162,7 +161,7 @@ export default class Board extends Component {
                   {" "}
                   ON THIS PAGE:
                 </p>
-                
+
                 <Nav.Link href="#board#presidents" eventKey="pres">
                   Presidents
                 </Nav.Link>

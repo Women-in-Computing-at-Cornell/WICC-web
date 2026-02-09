@@ -301,7 +301,6 @@ export default class Join extends Component {
               padding: "20 px 0px",
               gap: "50px",
               alignSelf: "center",
-             
             }}
           >
             <div style={styles.reqCol}>
@@ -380,9 +379,8 @@ export default class Join extends Component {
                 style={{
                   borderRadius: " 30px",
                   background: " #9CE2D3",
-                  border: "0px", 
-                  padding: "5px"
-  
+                  border: "0px",
+                  padding: "5px",
                 }}
               >
                 Send the Auto Join Email
@@ -390,9 +388,13 @@ export default class Join extends Component {
             </div>
           </div>
           <p>
-            For more detailed information, please check the {" "}
-            <a href="" target="_blank" style={{ textDecoration: "underline", fontWeight:"800"}}>
-               Active Member Guidelines and Requirements
+            For more detailed information, please check the{" "}
+            <a
+              href="#/membership"
+              target="_blank"
+              style={{ textDecoration: "underline", fontWeight: "800" }}
+            >
+              Active Member Guidelines and Requirements
             </a>
           </p>
         </section>

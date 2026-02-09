@@ -2,27 +2,10 @@ import React, { Component } from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Button from "react-bootstrap/Button";
-import {
-  presidents,
-  operations,
-  corporate,
-  academic,
-  brand,
-  outreach,
-  community,
-  advisors,
-} from "../boardData";
-import discussion from "../../images/programs-pictures/discussions.jpg";
-import ReactGoogleSlides from "react-google-slides";
+import { community } from "../boardData";
 import QuestionsCard from "./QuestionsCard.js";
-
-import Image from "react-bootstrap/Image";
 import { useState } from "react";
 import Carousel from "react-bootstrap/Carousel";
-import { Link } from "react-router-dom";
-import { boardData } from "../boardData";
-import communityhero from "../../images/programs/communityhero.jpg";
 
 //wicc away imports (note: use a function instead)
 import group1 from "../../images/programs-pictures/wiccaway/group1.JPG";
@@ -41,8 +24,6 @@ import social1 from "../../images/programs-pictures/socials/dodgeball2.JPG";
 import social2 from "../../images/programs-pictures/socials/tree1.JPG";
 import social3 from "../../images/programs-pictures/socials/dodgeball1.JPG";
 
-import medal from "../../images/medal.jpg";
-
 import "../discussions.css";
 
 export default class Discussions extends Component {
@@ -51,45 +32,20 @@ export default class Discussions extends Component {
   }
   render() {
     let discDirectors = community.members.filter(
-      (record) => record.position === "Social Co-Director"
+      (record) => record.position === "Social Co-Director",
     );
 
     function importAll(r) {
       let images = {};
-      r.keys().map((item, index) => {
+      r.keys().map((item, _) => {
         images[item.replace("./", "")] = r(item);
       });
       return images;
     }
 
     const boardHeadshots = importAll(
-      require.context("../../images/headshots/board", false, /\.jpg/)
+      require.context("../../images/headshots/board", false, /\.jpg/),
     );
-
-    const images = [
-      {
-        src: "https://c2.staticflickr.com/9/8817/28973449265_07e3aa5d2e_b.jpg",
-        width: 320,
-        height: 174,
-        isSelected: true,
-        caption: "After Rain (Jeshu John - designerspics.com)",
-      },
-      {
-        src: "https://c2.staticflickr.com/9/8356/28897120681_3b2c0f43e0_b.jpg",
-        width: 320,
-        height: 212,
-        tags: [
-          { value: "Ocean", title: "Ocean" },
-          { value: "People", title: "People" },
-        ],
-        alt: "Boats (Jeshu John - designerspics.com)",
-      },
-      {
-        src: "https://c4.staticflickr.com/9/8887/28897124891_98c4fdd82b_b.jpg",
-        width: 320,
-        height: 212,
-      },
-    ];
 
     const GBodyCardData = [
       {
@@ -120,7 +76,6 @@ export default class Discussions extends Component {
     ];
 
     const GBodyCard = ({ src, title, caption }) => {
-      //random comment lol
       return (
         <div class="item">
           <a aria-labelledby="person"></a>

@@ -4,8 +4,6 @@ import { community } from "../boardData";
 import QuestionsCard from "./QuestionsCard.js";
 import "./programPages.css";
 import banner from "../../images/programs/mentorship_cropped.jpg";
-import mentorshipInfo from "../../images/programs/mentorship_caro/mentorship-info.jpg";
-import ImgCarousel from "../../components/ImgCarousel.jsx";
 import "./programPages.css";
 import Carousel from "react-bootstrap/Carousel";
 
@@ -16,7 +14,7 @@ export default class Mentorship extends Component {
 
   render() {
     let cod = community.members.filter(
-      (record) => record.position === "Mentorship Co-Director"
+      (record) => record.position === "Mentorship Co-Director",
     );
 
     function importAll(r) {
@@ -28,14 +26,12 @@ export default class Mentorship extends Component {
     }
 
     const boardHeadshots = importAll(
-      require.context("../../images/headshots/board", false, /\.jpg/)
+      require.context("../../images/headshots/board", false, /\.jpg/),
     );
 
     const carouselImages = importAll(
-      require.context("../../images/programs/mentorship_caro", false, /\.jpg/)
+      require.context("../../images/programs/mentorship_caro", false, /\.jpg/),
     );
-
-    const imgNames = Object.keys(carouselImages);
 
     //styling for the kickoff slides button
     const kickoffStyle = {
@@ -49,7 +45,7 @@ export default class Mentorship extends Component {
       fontWeight: "bold",
       backgroundColor: "black",
       marginLeft: "10px", // Adjust the right margin to space out the links
-    }
+    };
 
     return (
       <>
@@ -111,7 +107,6 @@ export default class Mentorship extends Component {
                         maxWidth: "100%",
                         maxHeight: "100%",
                         borderRadius: "25px",
-
                       }}
                     />
                   </div>
@@ -121,13 +116,21 @@ export default class Mentorship extends Component {
           </div>
 
           {/* text for mentorship information */}
-          <div style={{
-            paddingRight: "10%",
-          }}>
+          <div
+            style={{
+              paddingRight: "10%",
+            }}
+          >
             <p class="section-title">Mentorship Information</p>
-            <p>The role of the mentor is to empower their mentees and enhance their interests in computing.
-              Mentors and mentees will be matched primarily based on academic and career interests.</p>
-            <p style={{ fontWeight: "bold" }}> Weekly activity time: <br></br> Wednesdays 5-6pm</p>
+            <p>
+              The role of the mentor is to empower their mentees and enhance
+              their interests in computing. Mentors and mentees will be matched
+              primarily based on academic and career interests.
+            </p>
+            <p style={{ fontWeight: "bold" }}>
+              {" "}
+              Weekly activity time: <br></br> Wednesdays 5-6pm
+            </p>
             <p>Find out more information from our kickoff slides!</p>
             <div className="mentorship-button">
               <Button
@@ -202,7 +205,8 @@ export default class Mentorship extends Component {
                 </ul>
               </div>
               <div>
-                <Button style={applyStyle}
+                <Button
+                  style={applyStyle}
                   href="https://forms.gle/Hm9nxLHkJX7x9ayg7"
                 >
                   Apply to be a Mentee!

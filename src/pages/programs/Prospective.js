@@ -3,29 +3,14 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
-import { Link } from "react-router-dom";
-import {
-  presidents,
-  operations,
-  corporate,
-  academic,
-  brand,
-  outreach,
-  community,
-  advisors,
-} from "../boardData";
+import { academic } from "../boardData";
 import QuestionsCard from "./QuestionsCard.js";
-
-import Image from "react-bootstrap/Image";
-
-import medal from "../../images/medal.jpg";
-
 import "./programPages.css";
 
 export default class Prospective extends Component {
   render() {
     let directors = academic.filter(
-      (record) => record.position === "Underclassmen Outreach Director"
+      (record) => record.position === "Underclassmen Outreach Director",
     );
 
     function importAll(r) {
@@ -37,7 +22,7 @@ export default class Prospective extends Component {
     }
 
     const boardHeadshots = importAll(
-      require.context("../../images/headshots/board", false, /\.jpg/)
+      require.context("../../images/headshots/board", false, /\.jpg/),
     );
 
     return (

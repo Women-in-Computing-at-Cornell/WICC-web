@@ -1,14 +1,13 @@
 import React from "react";
 import "./questionscard.css";
 
-
 class QuestionsCard extends React.Component {
   render() {
-    const { name, title, img, netId } = this.props;
+    const { name, img, netId } = this.props;
     return (
       <>
         <div className="card-container">
-          <img src={img} alt = "" className="profile-pic" />
+          <img src={img} alt="" className="profile-pic" />
           <div className="email-text">
             <div className="name-text">{name}</div>
             <div>{netId}@cornell.edu</div>

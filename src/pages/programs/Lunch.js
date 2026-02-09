@@ -3,26 +3,11 @@ import Container from "react-bootstrap/Container";
 import Card from "react-bootstrap/Card";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Button from "react-bootstrap/Button";
-import { Link } from "react-router-dom";
-import banner from "../../images/programs/active_membership_banner.jpg";
-import {
-  presidents,
-  operations,
-  corporate,
-  academic,
-  brand,
-  outreach,
-  community,
-  advisors,
-} from "../boardData";
-import lunchbunch1 from "../../images/programs-pictures/lunchbunch/lunchbunch1.jpg";
-import lunchbunch2 from "../../images/programs-pictures/lunchbunch/lunchbunch2.jpg";
+import { academic } from "../boardData";
 import lunchbunch3 from "../../images/programs-pictures/lunchbunch/lunchbunch3.jpg";
 import lunch from "../../images/programs/lunchbunchcropped2.jpg";
 import QuestionsCard from "./QuestionsCard.js";
 import Image from "react-bootstrap/Image";
-import medal from "../../images/medal.jpg";
 import "./programPages.css";
 // import tanisha from "../../images/headshots/board/tk494.jpg"
 // import sarah from "../../images/headshots/board/sy398.jpg"
@@ -33,7 +18,7 @@ export default class Lunch extends Component {
   }
   render() {
     let directors = academic.members.filter(
-      (record) => record.position === "Faculty Relations Co-Director"
+      (record) => record.position === "Faculty Relations Co-Director",
     );
 
     function importAll(r) {
@@ -45,7 +30,7 @@ export default class Lunch extends Component {
     }
 
     const boardHeadshots = importAll(
-      require.context("../../images/headshots/board", false, /\.jpg/)
+      require.context("../../images/headshots/board", false, /\.jpg/),
     );
     return (
       <>
