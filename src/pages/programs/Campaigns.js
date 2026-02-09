@@ -4,18 +4,11 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import banner from "../../images/programs/campaigns_banner.jpg";
 import { brand } from "../boardData";
-import banner from "../../images/programs/campaigns_banner.jpg";
-import { brand } from "../boardData";
-
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-// import styles from 'react-responsive-carousel/lib/styles/carousel.min.css';
-// import { Carousel } from 'react-responsive-carousel';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Navbar from "react-bootstrap/Navbar";
 import { Nav, NavDropdown } from "react-bootstrap";
 import QuestionsCard from "./QuestionsCard.js";
 import PhotoCarousel from "../PhotoCarousel";
-
-// import Image from "react-bootstrap/Image";
 
 import "./programPages.css";
 
@@ -34,7 +27,6 @@ export default class Campaigns extends Component {
   render() {
     let photoDirector = brand.members.filter(
       (record) => record.position === "Photography Director",
-      (record) => record.position === "Photography Director",
     );
 
     function importAll(r) {
@@ -47,34 +39,28 @@ export default class Campaigns extends Component {
 
     const boardHeadshots = importAll(
       require.context("../../images/headshots/board", false, /\.jpg/),
-      require.context("../../images/headshots/board", false, /\.jpg/),
     );
     const sp19Dit = importAll(
-      require.context("../../images/photo-campaigns/sp19-dit", false, /\.png/),
       require.context("../../images/photo-campaigns/sp19-dit", false, /\.png/),
     );
     let imgNamesSp19 = Object.keys(sp19Dit);
 
     const sp18Fit = importAll(
       require.context("../../images/photo-campaigns/sp18-fit", false, /\.png/),
-      require.context("../../images/photo-campaigns/sp18-fit", false, /\.png/),
     );
     let imgNamesSp18 = Object.keys(sp18Fit);
 
     const fa18Dit = importAll(
-      require.context("../../images/photo-campaigns/f18-dit", false, /\.jpg/),
       require.context("../../images/photo-campaigns/f18-dit", false, /\.jpg/),
     );
     let imgNamesfa18 = Object.keys(fa18Dit);
 
     const fa17Dit = importAll(
       require.context("../../images/photo-campaigns/f17-dit", false, /\.jpg/),
-      require.context("../../images/photo-campaigns/f17-dit", false, /\.jpg/),
     );
     let imgNamesfa17 = Object.keys(fa17Dit);
 
     const fa16Dit = importAll(
-      require.context("../../images/photo-campaigns/f16-dit", false, /\.jpg/),
       require.context("../../images/photo-campaigns/f16-dit", false, /\.jpg/),
     );
     let imgNamesfa16 = Object.keys(fa16Dit);
@@ -83,8 +69,6 @@ export default class Campaigns extends Component {
       require.context(
         "../../images/photo-campaigns/f15-looklikeeng",
         false,
-        /\.jpg/,
-      ),
         /\.jpg/,
       ),
     );
@@ -108,7 +92,6 @@ export default class Campaigns extends Component {
               relevant issues in the tech industry.
             </p>
           </div>
-        </div>
         </div>
         <div class="page">
           <Container>
@@ -178,13 +161,6 @@ export default class Campaigns extends Component {
           )}
         </div>
         <div className="questions-container2">
-          <h5 className="questions-text1" style={{ paddingTop: "5%" }}>
-            Questions?
-          </h5>
-          <p className="questions-text2">
-            Reach out to the following WICC members for clarification regarding
-            to Active Membership.
-          </p>
           <h5 className="questions-text1" style={{ paddingTop: "5%" }}>
             Questions?
           </h5>

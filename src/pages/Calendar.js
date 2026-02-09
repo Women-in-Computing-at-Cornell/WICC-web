@@ -1,5 +1,4 @@
 import React from "react";
-import React from "react";
 import "./pages.css";
 import "./Calendar.css";
 import calendarImg from "../images/calendar_heroimage.JPG";

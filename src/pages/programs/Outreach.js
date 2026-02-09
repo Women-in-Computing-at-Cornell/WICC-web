@@ -32,7 +32,6 @@ export default class Outreach extends Component {
 
     const projectImages = importAll(
       require.context("../../images/outreach/pastprojects", false, /\.png/),
-      require.context("../../images/outreach/pastprojects", false, /\.png/),
     );
 
     return (
@@ -79,17 +78,11 @@ export default class Outreach extends Component {
               weekly Girls Who Code program on campus and several general
               outreach workshops involving other organizations, typically off
               campus.
-              WICC Outreach plans events and programs related to spreading
-              computer science to the greater Ithaca community. We organize a
-              weekly Girls Who Code program on campus and several general
-              outreach workshops involving other organizations, typically off
-              campus.
             </p>
             <p>
               More details on the{" "}
               <a href="https://girlswhocode.com/">
                 <span style={{ fontWeight: "bold" }}>Girls Who Code</span>{" "}
-                website
                 website
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -147,7 +140,7 @@ export default class Outreach extends Component {
           <div class="hero-image">
             <img
               src={OutreachHero}
-              alt="WICC Talk"
+              alt="Girls Who Code"
               style={{
                 width: "100%",
                 height: "auto",
@@ -157,41 +150,6 @@ export default class Outreach extends Component {
           </div>
         </div>
         <div
-          style={{
-            textAlign: "center",
-            fontSize: "18px",
-            fontWeight: "bold",
-            margin: "5vw 10vw",
-            padding: "30px",
-            backgroundColor: "#ffffff",
-            borderRadius: "20px",
-            boxShadow: "0px 0px 40px 0px rgba(0, 0, 0, 0.15)",
-          }}
-        >
-          <h3
-            style={{
-              color: "#212529",
-              fontFamily: "Mulish",
-              fontSize: "40px",
-              fontStyle: "normal",
-              fontWeight: "700",
-              lineHeight: "150%",
-            }}
-          >
-            Schedule (Spring 2025)
-          </h3>
-          <p>
-            Feb 9th, Feb 23rd, Mar 2nd, Mar 9th, Mar 16th, Mar 23rd, Apr 13th,
-            Apr 20th, Apr 27th, May 4th
-          </p>
-          <p
-            style={{ fontWeight: "normal", fontSize: "16px", color: "#dc3545" }}
-          >
-            Please note that registration has closed for the Spring 2025
-            semester. <br></br>
-            Registration will open again at the beginning of next semester.
-          </p>
-        </div>
           style={{
             textAlign: "center",
             fontSize: "18px",
@@ -251,7 +209,7 @@ export default class Outreach extends Component {
             >
               <img
                 src={gwc1}
-                alt="GWC Group 1"
+                alt="Girls Who Code Group 1"
                 style={{
                   width: "100%", // Adjust as needed
                   maxWidth: "32%",
@@ -260,7 +218,7 @@ export default class Outreach extends Component {
               />
               <img
                 src={gwc2}
-                alt="GWC Group 2"
+                alt="Girls Who Code Group 2"
                 style={{
                   width: "100%", // Adjust as needed
                   maxWidth: "27%",
@@ -269,7 +227,7 @@ export default class Outreach extends Component {
               />
               <img
                 src={gwc3}
-                alt="GWC Group 3"
+                alt="Girls Who Code Group 3"
                 style={{
                   width: "100%",
                   maxWidth: "32%",
@@ -339,35 +297,31 @@ export default class Outreach extends Component {
                 marginTop: "0",
                 paddingTop: "0",
               }}
-              }}
             >
               <img
                 src={fa241}
-                alt="GWC Beginner Volunteer Group"
+                alt="Girls Who Code Beginner Volunteer Group"
                 style={{
                   width: "100%", // Adjust as needed
                   maxWidth: "32%",
-                  borderRadius: "5px",
                   borderRadius: "5px",
                 }}
               />
               <img
                 src={fa242}
-                alt="GWC Intermediate Volunteer Group"
+                alt="Girls Who Code Intermediate Volunteer Group"
                 style={{
                   width: "100%", // Adjust as needed
                   maxWidth: "27%",
-                  borderRadius: "15px",
                   borderRadius: "15px",
                 }}
               />
               <img
                 src={fa243}
-                alt="GWC Volunteer Social"
+                alt="Girls Who Code Volunteer Social"
                 style={{
                   width: "100%",
                   maxWidth: "32%",
-                  borderRadius: "15px",
                   borderRadius: "15px",
                 }}
               />
@@ -551,13 +505,6 @@ export default class Outreach extends Component {
                   game dev, web dev, data science) are from 3-4:30. Each class
                   typically consists of an icebreaker activity, a lesson, and
                   coding exercises/final project.
-                  Our Girls Who Code program, which is for middle and high
-                  school students, consists of 10 Sunday classes at Mann Library
-                  on campus. Beginner and intermediate classes (taught in
-                  Python) are from 1-2:30, and advanced classes (topics include
-                  game dev, web dev, data science) are from 3-4:30. Each class
-                  typically consists of an icebreaker activity, a lesson, and
-                  coding exercises/final project.
                 </p>
               </Col>
 
@@ -613,36 +560,12 @@ export default class Outreach extends Component {
                     Spring 2025 General Outreach Events
                   </a>
                   .
-                  General Outreach organizes workshops/events that we hold with
-                  external organizations (like the Tompkins County Public
-                  Library and Sciencenter). We have workshops for adults and
-                  also workshops for kids. Past workshops include teaching data
-                  visualization and web development. Here are the scheduled
-                  events for this semester:{" "}
-                  <a
-                    href="https://docs.google.com/spreadsheets/d/1uta_807tnsUrJRrAxbRN2iUabScbH0gLjH61wiGL1CQ/edit?usp=sharing"
-                    style={{
-                      color: "#7db5a9",
-                      textDecoration: "underline",
-                      fontWeight: "bold",
-                    }}
-                    className="divrowa"
-                  >
-                    Spring 2025 General Outreach Events
-                  </a>
-                  .
                 </p>
               </Col>
             </Row>
           </Container>
 
           <center>
-            <h4 style={{ paddingTop: "5%" }}>
-              Questions? Email{" "}
-              <a href="mailto:girlswhocode@cornell.edu">
-                girlswhocode@cornell.edu
-              </a>
-            </h4>
             <h4 style={{ paddingTop: "5%" }}>
               Questions? Email{" "}
               <a href="mailto:girlswhocode@cornell.edu">

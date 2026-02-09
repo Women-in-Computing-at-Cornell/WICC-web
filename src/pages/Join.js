@@ -381,8 +381,6 @@ export default class Join extends Component {
                   background: " #9CE2D3",
                   border: "0px",
                   padding: "5px",
-                  border: "0px",
-                  padding: "5px",
                 }}
               >
                 Send the Auto Join Email

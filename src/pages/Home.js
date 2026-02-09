@@ -22,11 +22,6 @@ const Home = () => {
               className="mission-image"
               style={{ width: "100%", height: "100%" }}
             ></Image>
-            <Image
-              src={banner}
-              className="mission-image"
-              style={{ width: "100%", height: "100%" }}
-            ></Image>
             <div className="hero-content">
               <h2>
                 Building a supportive tech community for women and allies.
@@ -39,10 +34,6 @@ const Home = () => {
               </p>
             </div>
             <img
-              src={require("../images/downarrow.png")}
-              alt="Scroll Down"
-              className="downward-arrow"
-            />
               src={require("../images/downarrow.png")}
               alt="Scroll Down"
               className="downward-arrow"
@@ -266,7 +257,6 @@ const Home = () => {
             <CurrentSponsors />
           </section>
 
-
           {/* Equal Education and Employment */}
           <section>
             <div className="equal-education-container">
@@ -274,17 +264,8 @@ const Home = () => {
                 <a href="https://hr.cornell.edu/about/workplace-rights/equal-education-and-employment">
                   Equal Education and Employment Opportunity (EEEO) Statement
                 </a>
-                <a href="https://hr.cornell.edu/about/workplace-rights/equal-education-and-employment">
-                  Equal Education and Employment Opportunity (EEEO) Statement
-                </a>
               </h2>
               <p className="equal-education-text">
-                In 1868, Ezra Cornell wrote, "I would found an institution where
-                any person can find instruction in any study!" More than 150
-                years later, the "any person any study" principle continues to
-                guide the university community. Cornell welcomes students,
-                faculty, and staff with diverse backgrounds from across the
-                globe to pursue world-class education... (click{" "}
                 In 1868, Ezra Cornell wrote, "I would found an institution where
                 any person can find instruction in any study!" More than 150
                 years later, the "any person any study" principle continues to
