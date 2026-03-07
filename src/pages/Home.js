@@ -4,7 +4,7 @@ import Image from "react-bootstrap/Image";
 import "./Home.css";
 import arrowbutton from "../images/icons/circle-arrows.png";
 import CurrentSponsors from "../components/currentSponsors.js";
-import banner from "../images/home/home.png";
+import banner from "../images/home/home.jpg";
 import www1 from "../images/home/www1.png";
 import www2 from "../images/home/www2.png";
 import www3 from "../images/home/www3.png";
@@ -20,8 +20,12 @@ const Home = () => {
             <Image
               src={banner}
               className="mission-image"
-              style={{ width: "100%", height: "100%" }}
-            ></Image>
+              style={{
+                width: "100%",
+                height: "100%",
+                filter: "brightness(40%)", // Lower = darker, 0% = solid black
+              }}
+            />
             <div className="hero-content">
               <h2>
                 Building a supportive tech community for women and allies.
