@@ -143,6 +143,12 @@ export const photo = {
       netId: "au99",
       bio: " ",
     },
+    {
+      name: "Dora Zhang",
+      position: "Photographer",
+      netId: "dz366",
+      bio: " ",
+    },
   ],
 };
 
