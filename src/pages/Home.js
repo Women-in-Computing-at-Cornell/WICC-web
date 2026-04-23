@@ -237,7 +237,7 @@ const Home = () => {
                 {/* Fourth Box */}
 
                 <a
-                  href="https://docs.google.com/forms/d/e/1FAIpQLSe_QtYzpq9knpmjDAj0bV3MwcsBtOy8IX7XhOHoroq0801sNw/viewform"
+                  href="https://airtable.com/appNFj0F5obtPWeDL/shrJzr8x6Ruj2XnER"
                   className="get-involved-columne"
                 >
                   <div className="get-involved-content">
