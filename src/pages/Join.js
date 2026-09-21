@@ -141,12 +141,14 @@ export default class Join extends Component {
           <div style={styles.col}>
             <h2>Students</h2>
             <p>
-              Join Our Listserve and Slack! Click on the link and press send to
-              join for the Listserve!
+              Join Our Listserve and Slack! To join the Listserve, clink on the 
+              link below and enter your information. After subscribing, you should 
+              receive a confirmation email letting you know your subscription was 
+              successful. 
             </p>
             <center>
               <Button
-                href="mailto:wicc-l-request@cornell.edu?subject=Join"
+                href="https://lists.cornell.edu/WICC-L/subscribe/"
                 style={{
                   backgroundColor: "white",
                   width: "100%",

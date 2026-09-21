@@ -220,8 +220,12 @@ export default class Membership extends Component {
               <br />
               <ul>
                 <li>
-                  Subscribe to our listserv by sending an email titled 'join' to
-                  wicc-l-request@cornell.edu "
+                  Subscribe to our{""}
+                  <a href="https://lists.cornell.edu/WICC-L/subscribe/">
+                  ListServe
+                  </a>
+                  . After subscribing, you should receive a confirmation email 
+                  letting you know your subscription was successful.
                 </li>
                 <li>
                   Check our{" "}
