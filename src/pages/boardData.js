@@ -24,10 +24,10 @@ export const presidents = {
   description: " ",
   members: [
     {
-      name: "Douae Maarouf",
+      name: "Muskan Gupta",
       position: "Co-President",
-      netId: "dm927",
-      bio: "",
+      netId: "mg2479",
+      bio: " ",
     },
     {
       name: "Kenza Daoudi",
@@ -56,9 +56,9 @@ export const operations = {
       bio: " ",
     },
     {
-      name: "Muskan Gupta",
+      name: "Priya Gokhale",
       position: "Co-Treasurer",
-      netId: "mg2479",
+      netId: "pg492",
       bio: " ",
     },
     {
@@ -76,9 +76,9 @@ export const corporate = {
   description: " ",
   members: [
     {
-      name: "Sonja Wong",
+      name: "Anna Sahakyan",
       position: "Vice President, Corporate Relations",
-      netId: "sw2374",
+      netId: "as4275",
       bio: " ",
     },
     {
@@ -94,22 +94,16 @@ export const corporate = {
       bio: " ",
     },
     {
-      name: "Anna Sahakyan",
+      name: "Sonja Wong",
       position: "Corporate Relations Co-Director",
-      netId: "as4275",
-      bio: "",
-    },
-    {
-      name: "Sabrina Ning",
-      position: "Alumni Relations Co-Director",
-      netId: "sn634",
-      bio: "",
+      netId: "sw2374",
+      bio: " ",
     },
     {
       name: "Kaavya Paladugu",
       position: "Alumni Relations Co-Director",
       netId: "kp627",
-      bio: "",
+      bio: " ",
     },
   ],
 };
@@ -262,21 +256,21 @@ export const academic = {
   description: " ",
   members: [
     {
-      name: "Shriya Sudhakar",
+      name: "Rachel Kan",
       position: "Vice President, Academic",
-      netId: "ss3576",
-      bio: "",
-    },
-    {
-      name: "Sylvia Zhang",
-      position: "Faculty Relations Co-Director",
-      netId: "sz737",
+      netId: "rk778",
       bio: " ",
     },
     {
-      name: "Charlotte Li",
+      name: "Ridwanah Haque",
       position: "Faculty Relations Co-Director",
-      netId: "ccl247",
+      netId: "rh736",
+      bio: " ",
+    },
+    {
+      name: "Sophia Liu",
+      position: "Faculty Relations Co-Director",
+      netId: "sl3632",
       bio: " ",
     },
     {
@@ -286,25 +280,20 @@ export const academic = {
       bio: " ",
     },
     {
-      name: "Hasset Daniel",
+      name: "Annalisa Abbate",
       position: "Career Development Co-Director",
+      netId: "aa2723",
+      bio: " ",
+    },
+    {
+      name: "Hasset Daniel",
+      position: "Underclassmen Outreach Co-Director",
       netId: "hsd42",
-      bio: " ",
-    },
-    {
-      name: "Priya Gokhale",
-      position: "Underclassmen Outreach Co-Director",
-      netId: "pg492",
-      bio: " ",
-    },
-    {
-      name: "Rachel Kan",
-      position: "Underclassmen Outreach Co-Director",
-      netId: "rk778",
       bio: " ",
     },
   ],
 };
+
 
 //BRAND
 export const brand = {
@@ -319,14 +308,14 @@ export const brand = {
     },
     {
       name: "Saanvi Ibrahimpatnam",
-      position: "Technical Co-Director",
+      position: "Technical Director",
       netId: "si292",
       bio: " ",
     },
     {
-      name: "Meg Isohata",
-      position: "Technical Co-Director",
-      netId: "msi32",
+      name: "Adya Uppal",
+      position: "Technical Director",
+      netId: "au99",
       bio: " ",
     },
     {
@@ -336,9 +325,9 @@ export const brand = {
       bio: " ",
     },
     {
-      name: "Dana Ryu",
+      name: "Sandy Yang",
       position: "Photography Director",
-      netId: "er559",
+      netId: "syy6",
       bio: " ",
     },
     {
@@ -362,15 +351,15 @@ export const outreach = {
   description: " ",
   members: [
     {
-      name: "Ahlaam Sebri",
+      name: "Julia Meved",
       position: "Vice President, Outreach",
-      netId: "ans264",
-      bio: "",
+      netId: "jgm268",
+      bio: " ",
     },
     {
-      name: "Anisha Tehim",
+      name: "Lyudmila Kaneva",
       position: "GWC Beginner Co-Director",
-      netId: "abt65",
+      netId: "ldk66",
       bio: " ",
     },
     {
@@ -386,9 +375,9 @@ export const outreach = {
       bio: " ",
     },
     {
-      name: "Julia Meved",
+      name: "Renee Gowda",
       position: "General Outreach Co-Director",
-      netId: "jgm268",
+      netId: "rsg276",
       bio: " ",
     },
   ],
@@ -400,39 +389,39 @@ export const community = {
   description: " ",
   members: [
     {
-      name: "Varija Mehta",
-      position: "Vice President, Community",
-      netId: "vvm26",
-      bio: " ",
-    },
-    {
-      name: "Renee Gowda",
-      position: "Social Co-Director",
-      netId: "rsg276",
-      bio: " ",
-    },
-    {
-      name: "Phoebe Wang",
-      position: "Social Co-Director",
-      netId: "pw483",
-      bio: " ",
-    },
-    {
-      name: "Kyleena Xin",
-      position: "Mentorship Co-Director",
-      netId: "kx63",
-      bio: " ",
-    },
-    {
-      name: "Elli Belyarchik",
-      position: "Mentorship Co-Director",
-      netId: "emb427",
-      bio: " ",
-    },
-    {
       name: "Arshdeep Kaur",
-      position: "Allyship Co-Director",
+      position: "Vice President, Community",
       netId: "ak2676",
+      bio: " ",
+    },
+    {
+      name: "Claire Cheng",
+      position: "Social Co-Director",
+      netId: "cqc6",
+      bio: " ",
+    },
+    {
+      name: "Dana Ryu",
+      position: "Social Co-Director",
+      netId: "er559",
+      bio: " ",
+    },
+    {
+      name: "Charlotte Li",
+      position: "Mentorship Co-Director",
+      netId: "ccl247",
+      bio: " ",
+    },
+    {
+      name: "Sylvia Zhang",
+      position: "Mentorship Co-Director",
+      netId: "sz737",
+      bio: " ",
+    },
+    {
+      name: "Samira Maria",
+      position: "Allyship Co-Director",
+      netId: "sbm233",
       bio: " ",
     },
     {
